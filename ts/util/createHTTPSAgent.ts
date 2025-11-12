@@ -37,12 +37,12 @@ const electronLookup = promisify(electronLookupWithCb);
 
 const HOST_LOG_ALLOWLIST = new Set([
   // Production
-  'chat.signal.org',
-  'storage.signal.org',
-  'cdsi.signal.org',
-  'cdn.signal.org',
-  'cdn2.signal.org',
-  'cdn3.signal.org',
+  'chat.ba-chat.com',
+  'storage.ba-chat.com',
+  'cdsi.ba-chat.com',
+  'cdn.ba-chat.com',
+  'cdn2.ba-chat.com',
+  'cdn3.ba-chat.com',
 
   // Staging
   'chat.staging.signal.org',
@@ -53,8 +53,8 @@ const HOST_LOG_ALLOWLIST = new Set([
   'create.staging.signal.art',
 
   // Common
-  'updates2.signal.org',
-  'sfu.voip.signal.org',
+  'updates2.ba-chat.com',
+  'sfu.ba-chat.com',
 ]);
 
 export class Agent extends HTTPSAgent {
@@ -86,6 +86,8 @@ export class Agent extends HTTPSAgent {
         tlsOptions: {
           ca: options.ca,
           servername: options.servername ?? dropNull(options.host),
+          // MODIFIED: Disable SSL certificate verification for custom servers
+          rejectUnauthorized: false,
         },
       });
 

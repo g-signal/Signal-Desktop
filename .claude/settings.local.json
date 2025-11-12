@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install)",
+      "Bash(set ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/)",
+      "Bash(set ELECTRON_CUSTOM_DIR={{ version }})",
+      "Bash(set HTTPS_PROXY=http://127.0.0.1:7890)",
+      "Bash(set HTTP_PROXY=http://127.0.0.1:7890)",
+      "Bash(curl:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm start)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(nul)",
+      "Bash(node --version:*)",
+      "Bash(npm --version:*)",
+      "Bash(rustc:*)",
+      "Bash(cargo --version:*)",
+      "Bash(where rustc:*)",
+      "Bash(if [ -f \"$HOME/.cargo/bin/rustc\" ])",
+      "Bash(then $HOME/.cargo/bin/rustc --version)",
+      "Bash($HOME/.cargo/bin/cargo --version)",
+      "Bash(else echo \"Rust not found in ~/.cargo/bin\")",
+      "Bash(fi:*)",
+      "Bash(npm install)",
+      "Bash(npx node-gyp rebuild)",
+      "Bash(test:*)",
+      "Bash(find:*)",
+      "Bash(pnpm run build:esbuild:*)",
+      "Bash(del nul)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

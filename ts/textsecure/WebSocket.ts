@@ -63,6 +63,8 @@ export function connect<Resource extends IResource>({
     tlsOptions: {
       ca: certificateAuthority,
       agent: proxyAgent ?? createHTTPSAgent(),
+      // MODIFIED: Disable SSL certificate verification for custom servers
+      rejectUnauthorized: false,
     },
     maxReceivedFrameSize: 0x210000,
   });

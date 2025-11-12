@@ -357,6 +357,8 @@ async function getFetchOptions<Type extends ResponseType, OutputShape>(
     redirect: options.redirect,
     agent,
     ca: options.certificateAuthority,
+    // MODIFIED: Disable SSL certificate verification for custom servers
+    rejectUnauthorized: false,
     timeout,
     signal: options.abortSignal,
   };

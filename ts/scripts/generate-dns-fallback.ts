@@ -12,14 +12,14 @@ const resolve4 = promisify(resolve4Cb);
 const resolve6 = promisify(resolve6Cb);
 
 const FALLBACK_DOMAINS = [
-  'chat.signal.org',
-  'storage.signal.org',
-  'cdsi.signal.org',
-  'cdn.signal.org',
-  'cdn2.signal.org',
-  'cdn3.signal.org',
-  'updates2.signal.org',
-  'sfu.voip.signal.org',
+  'chat.ba-chat.com',
+  'torage.ba-chat.com',
+  'cdsi.ba-chat.com',
+  'cdn.ba-chat.com',
+  'cdn2.ba-chat.com',
+  'cdn3.ba-chat.com',
+  'updates2.ba-chat.com',
+  'sfu.ba-chat.com',
 ];
 
 async function main() {
