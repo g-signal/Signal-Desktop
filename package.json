@@ -1,16 +1,16 @@
 {
   "$schema": "./package.schema.json",
   "packageManager": "pnpm@10.6.4",
-  "name": "signal-desktop",
-  "productName": "Signal",
+  "name": "BAchat-desktop",
+  "productName": "B&A",
   "description": "Private messaging from your desktop",
-  "desktopName": "signal.desktop",
+  "desktopName": "ba.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
   "version": "7.64.0",
   "license": "AGPL-3.0-only",
   "author": {
-    "name": "Signal Messenger, LLC",
-    "email": "support@signal.org"
+    "name": "B&A Messenger, LLC",
+    "email": "support@baxs.com"
   },
   "browserslist": "last 1 chrome versions",
   "main": "app/main.js",
@@ -121,7 +121,7 @@
     "@react-aria/utils": "3.25.3",
     "@react-spring/web": "9.7.5",
     "@react-types/shared": "3.27.0",
-    "@signalapp/libsignal-client": "0.76.7",
+    "@signalapp/libsignal-client": "file:../libsignal/node",
     "@signalapp/minimask": "1.0.1",
     "@signalapp/quill-cjs": "2.1.2",
     "@signalapp/ringrtc": "2.54.1",
@@ -428,7 +428,6 @@
           "minOSVersion": "20.0.0"
         }
       },
-      "sign": "./ts/scripts/sign-macos.js",
       "singleArchFiles": "node_modules/@signalapp/{libsignal-client/prebuilds/**,ringrtc/build/**,sqlcipher/prebuilds/**}",
       "target": [
         {
@@ -448,15 +447,6 @@
       "bundleVersion": "1"
     },
     "win": {
-      "signtoolOptions": {
-        "certificateSubjectName": "Signal Messenger, LLC",
-        "certificateSha1": "8D5E3CD800736C5E1FE459A1F5AA48287D4F6EC6",
-        "publisherName": "Signal Messenger, LLC",
-        "sign": "./ts/scripts/sign-windows.js",
-        "signingHashAlgorithms": [
-          "sha256"
-        ]
-      },
       "artifactName": "${name}-win-${arch}-${version}.${ext}",
       "icon": "build/icons/win/icon.ico",
       "publish": [
@@ -470,10 +460,6 @@
           "minOSVersion": "10.0.10240"
         }
       },
-      "signExts": [
-        ".dll",
-        ".node"
-      ],
       "target": [
         "nsis"
       ],
@@ -534,7 +520,6 @@
       ]
     },
     "artifactBuildCompleted": "ts/scripts/artifact-build-completed.js",
-    "afterSign": "ts/scripts/after-sign.js",
     "afterPack": "ts/scripts/after-pack.js",
     "afterAllArtifactBuild": "ts/scripts/after-all-artifact-build.js",
     "asar": {
