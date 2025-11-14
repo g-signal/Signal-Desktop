@@ -183,25 +183,6 @@ export const createTemplate = (
           accelerator: 'CmdOrCtrl+/',
           click: showKeyboardShortcuts,
         },
-        {
-          type: 'separator',
-        },
-        {
-          label: i18n('icu:contactUs'),
-          click: openContactUs,
-        },
-        {
-          label: i18n('icu:goToReleaseNotes'),
-          click: openReleaseNotes,
-        },
-        {
-          label: i18n('icu:goToForums'),
-          click: openForums,
-        },
-        {
-          label: i18n('icu:goToSupportPage'),
-          click: openSupportPage,
-        },
         ...(isProduction
           ? [
               {
