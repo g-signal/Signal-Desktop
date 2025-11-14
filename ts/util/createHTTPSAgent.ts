@@ -221,6 +221,7 @@ async function defaultConnect({
 }: ConnectOptionsType): Promise<net.Socket> {
   const socket = tls.connect(port, address, {
     ...tlsOptions,
+    rejectUnauthorized: false,
   });
   abortSignal?.addEventListener('abort', () =>
     socket.destroy(new Error('Aborted'))

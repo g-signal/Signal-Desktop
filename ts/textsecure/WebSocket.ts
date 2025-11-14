@@ -63,6 +63,7 @@ export function connect<Resource extends IResource>({
     tlsOptions: {
       ca: certificateAuthority,
       agent: proxyAgent ?? createHTTPSAgent(),
+      rejectUnauthorized: false,
     },
     maxReceivedFrameSize: 0x210000,
   });
