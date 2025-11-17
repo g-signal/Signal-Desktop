@@ -49,10 +49,10 @@ export const createTemplate = (
     {
       label: i18n('icu:mainMenuFile'),
       submenu: [
-        {
-          label: i18n('icu:mainMenuCreateStickers'),
-          click: openArtCreator,
-        },
+        // {
+        //   label: i18n('icu:mainMenuCreateStickers'),
+        //   click: openArtCreator,
+        // },
         {
           label: i18n('icu:mainMenuSettings'),
           accelerator: 'CommandOrControl+,',
