@@ -6,7 +6,7 @@
   "description": "Private messaging from your desktop",
   "desktopName": "ba.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
-  "version": "7.64.0",
+  "version": "7.64.1",
   "license": "AGPL-3.0-only",
   "author": {
     "name": "B&A Messenger, LLC",
@@ -419,7 +419,7 @@
       "publish": [
         {
           "provider": "generic",
-          "url": "https://updates.signal.org/desktop"
+          "url": "https://updates.ba-chat.com/desktop"
         }
       ],
       "mergeASARs": true,
@@ -447,12 +447,12 @@
       "bundleVersion": "1"
     },
     "win": {
-      "artifactName": "${name}-win-${arch}-${version}.${ext}",
+      "artifactName": "BAchat-win-${arch}-${version}.${ext}",
       "icon": "build/icons/win/icon.ico",
       "publish": [
         {
           "provider": "generic",
-          "url": "https://updates.signal.org/desktop"
+          "url": "https://updates.ba-chat.com/desktop"
         }
       ],
       "releaseInfo": {
@@ -469,14 +469,14 @@
     },
     "nsis": {
       "deleteAppDataOnUninstall": true,
-      "differentialPackage": true,
+      "differentialPackage": false,
       "customNsisBinary": {
-        "url": "https://updates.signal.org/desktop/nsis/nsis-3.0.4.1.7z",
+        "url": "https://updates.ba-chat.com/desktop/nsis/nsis-3.0.4.1.7z",
         "version": "3.0.4.1-signal",
         "checksum": "D6XH03F8A4Vzfjpq6zS9eZYXGXktdoaeQh5QgxAZ01pdts3KaDfMilem0x+HUzn9FpzfpgZrD8MVTcFlcPfcWg=="
       },
       "customNsisResources": {
-        "url": "https://updates.signal.org/desktop/nsis/nsis-resources-3.4.1.7z",
+        "url": "https://updates.ba-chat.com/desktop/nsis/nsis-resources-3.4.1.7z",
         "version": "3.4.1-signal",
         "checksum": "KmySC53iz92XNYVgEy5gc0/cpXiyWsxxOX5UETBAt889TIvsNlUx7uKBxkQVf3D2Ycex0D2IPGjRdGYr1bftrw=="
       }
