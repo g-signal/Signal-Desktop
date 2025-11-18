@@ -47,19 +47,19 @@ export function About({
         <div className="environment">{env}</div>
         <br />
         <div>
-          <a href="https://signal.org">signal.org</a>
+          <a href="https://ba-chat.com">ba-chat.com</a>
         </div>
         <br />
         <div>
           <a
             className="acknowledgments"
-            href="https://github.com/signalapp/Signal-Desktop/blob/main/ACKNOWLEDGMENTS.md"
+            href="https://github.com/g-signal/Signal-Desktop/blob/main/README.md"
           >
             {i18n('icu:softwareAcknowledgments')}
           </a>
         </div>
         <div>
-          <a className="privacy" href="https://signal.org/legal">
+          <a className="privacy" href="https://cdn.ba-chat.com/legal/index.html">
             {i18n('icu:privacyPolicy')}
           </a>
         </div>
