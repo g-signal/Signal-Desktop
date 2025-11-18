@@ -26,7 +26,7 @@ function toUrl(input: URL | string): URL | null {
 /**
  * List of protocols that are used by Signal routes.
  */
-const SignalRouteProtocols = ['https:', 'sgnl:', 'signalcaptcha:'] as const;
+const SignalRouteProtocols = ['https:', 'baxs:', 'baxscaptcha:'] as const;
 
 /**
  * List of hostnames that are used by Signal routes.
@@ -218,7 +218,7 @@ const paramSchema = z.string().min(1);
 export const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
   patterns: [
     _pattern('https:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
-    _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('baxs:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
   ],
   schema: z.object({
     phoneNumber: paramSchema, // E164 (with +)
@@ -232,7 +232,7 @@ export const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
     return new URL(`https://signal.me/#p/${args.phoneNumber}`);
   },
   toAppUrl(args) {
-    return new URL(`sgnl://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`baxs://signal.me/#p/${args.phoneNumber}`);
   },
 });
 
@@ -253,7 +253,7 @@ export const contactByEncryptedUsernameRoute = _route(
       _pattern('https:', 'signal.me', '{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
-      _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
+      _pattern('baxs:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
     ],
     schema: z.object({
       encryptedUsername: paramSchema, // base64url (32 bytes of entropy + 16 bytes of big-endian UUID)
@@ -267,7 +267,7 @@ export const contactByEncryptedUsernameRoute = _route(
       return new URL(`https://signal.me/#eu/${args.encryptedUsername}`);
     },
     toAppUrl(args) {
-      return new URL(`sgnl://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`baxs://signal.me/#eu/${args.encryptedUsername}`);
     },
   }
 );
@@ -284,13 +284,13 @@ export const contactByEncryptedUsernameRoute = _route(
  */
 export const groupInvitesRoute = _route('groupInvites', {
   patterns: [
-    _pattern('https:', 'signal.group', '{/}?', {
+    _pattern('https:', 'group.baxs.com', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('sgnl:', 'signal.group', '{/}?', {
+    _pattern('baxs:', 'group.baxs.com', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('sgnl:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
+    _pattern('baxs:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
   ],
   schema: z.object({
     inviteCode: paramSchema, // base64url (GroupInviteLink proto)
@@ -301,10 +301,10 @@ export const groupInvitesRoute = _route('groupInvites', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.group/#${args.inviteCode}`);
+    return new URL(`https://group.baxs.com/#${args.inviteCode}`);
   },
   toAppUrl(args) {
-    return new URL(`sgnl://signal.group/#${args.inviteCode}`);
+    return new URL(`baxs://group.baxs.com/#${args.inviteCode}`);
   },
 });
 
@@ -321,7 +321,7 @@ export const groupInvitesRoute = _route('groupInvites', {
  * ```
  */
 export const linkDeviceRoute = _route('linkDevice', {
-  patterns: [_pattern('sgnl:', 'linkdevice', '{/}?', { search: ':params' })],
+  patterns: [_pattern('baxs:', 'linkdevice', '{/}?', { search: ':params' })],
   schema: z.object({
     uuid: paramSchema, // base64url?
     pubKey: paramSchema, // percent-encoded base64 (with padding) of PublicKey with type byte included
@@ -341,7 +341,7 @@ export const linkDeviceRoute = _route('linkDevice', {
       pub_key: args.pubKey,
       capabilities: args.capabilities.join(','),
     });
-    return new URL(`sgnl://linkdevice?${params.toString()}`);
+    return new URL(`baxs://linkdevice?${params.toString()}`);
   },
 });
 
@@ -352,12 +352,12 @@ export const linkDeviceRoute = _route('linkDevice', {
  * captchaRoute.toAppUrl({
  *   captchaId: "123",
  * })
- * // URL { "signalcaptcha://123" }
+ * // URL { "baxscaptcha://123" }
  * ```
  */
 export const captchaRoute = _route('captcha', {
   // needs `(.+)` to capture `.` in hostname
-  patterns: [_pattern('signalcaptcha:', ':captchaId(.+)', '{/}?', {})],
+  patterns: [_pattern('baxscaptcha:', ':captchaId(.+)', '{/}?', {})],
   schema: z.object({
     captchaId: paramSchema, // opaque
   }),
@@ -367,7 +367,7 @@ export const captchaRoute = _route('captcha', {
     };
   },
   toAppUrl(args) {
-    return new URL(`signalcaptcha://${args.captchaId}`);
+    return new URL(`baxscaptcha://${args.captchaId}`);
   },
 });
 
@@ -382,8 +382,8 @@ export const captchaRoute = _route('captcha', {
  */
 export const linkCallRoute = _route('linkCall', {
   patterns: [
-    _pattern('https:', 'signal.link', '/call{/}?', { hash: ':params' }),
-    _pattern('sgnl:', 'signal.link', '/call{/}?', { hash: ':params' }),
+    _pattern('https:', 'link.baxs.com', '/call{/}?', { hash: ':params' }),
+    _pattern('baxs:', 'link.baxs.com', '/call{/}?', { hash: ':params' }),
   ],
   schema: z.object({
     key: paramSchema, // ConsonantBase16
@@ -396,11 +396,11 @@ export const linkCallRoute = _route('linkCall', {
   },
   toWebUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`https://signal.link/call/#${params.toString()}`);
+    return new URL(`https://link.baxs.com/call/#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`sgnl://signal.link/call/#${params.toString()}`);
+    return new URL(`baxs://link.baxs.com/call/#${params.toString()}`);
   },
 });
 
@@ -417,8 +417,8 @@ export const linkCallRoute = _route('linkCall', {
  */
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
-    _pattern('https:', 'signal.art', '/addstickers{/}?', { hash: ':params' }),
-    _pattern('sgnl:', 'addstickers', '{/}?', { search: ':params' }),
+    _pattern('https:', 'sticker.baxs.com', '/addstickers{/}?', { hash: ':params' }),
+    _pattern('baxs:', 'addstickers', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     packId: paramSchema, // hexadecimal
@@ -438,14 +438,14 @@ export const artAddStickersRoute = _route('artAddStickers', {
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`https://signal.art/addstickers#${params.toString()}`);
+    return new URL(`https://sticker.baxs.com/addstickers#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`sgnl://addstickers?${params.toString()}`);
+    return new URL(`baxs://addstickers?${params.toString()}`);
   },
 });
 
@@ -461,7 +461,7 @@ export const artAddStickersRoute = _route('artAddStickers', {
  */
 export const showConversationRoute = _route('showConversation', {
   patterns: [
-    _pattern('sgnl:', 'show-conversation', '{/}?', { search: ':params' }),
+    _pattern('baxs:', 'show-conversation', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     token: paramSchema,
@@ -474,7 +474,7 @@ export const showConversationRoute = _route('showConversation', {
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ token: args.token });
-    return new URL(`sgnl://show-conversation?${params.toString()}`);
+    return new URL(`baxs://show-conversation?${params.toString()}`);
   },
 });
 
@@ -490,7 +490,7 @@ export const showConversationRoute = _route('showConversation', {
  */
 export const startCallLobbyRoute = _route('startCallLobby', {
   patterns: [
-    _pattern('sgnl:', 'start-call-lobby', '{/}?', { search: ':params' }),
+    _pattern('baxs:', 'start-call-lobby', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
     token: paramSchema,
@@ -503,7 +503,7 @@ export const startCallLobbyRoute = _route('startCallLobby', {
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ token: args.token });
-    return new URL(`sgnl://start-call-lobby?${params.toString()}`);
+    return new URL(`baxs://start-call-lobby?${params.toString()}`);
   },
 });
 
@@ -515,13 +515,13 @@ export const startCallLobbyRoute = _route('startCallLobby', {
  * // URL { "sgnl://show-window" }
  */
 export const showWindowRoute = _route('showWindow', {
-  patterns: [_pattern('sgnl:', 'show-window', '{/}?', {})],
+  patterns: [_pattern('baxs:', 'show-window', '{/}?', {})],
   schema: z.object({}),
   parse() {
     return {};
   },
   toAppUrl() {
-    return new URL('sgnl://show-window');
+    return new URL('baxs://show-window');
   },
 });
 
@@ -534,13 +534,13 @@ export const showWindowRoute = _route('showWindow', {
  * ```
  */
 export const cancelPresentingRoute = _route('cancelPresenting', {
-  patterns: [_pattern('sgnl:', 'cancel-presenting', '{/}?', {})],
+  patterns: [_pattern('baxs:', 'cancel-presenting', '{/}?', {})],
   schema: z.object({}),
   parse() {
     return {};
   },
   toAppUrl() {
-    return new URL('sgnl://cancel-presenting');
+    return new URL('baxs://cancel-presenting');
   },
 });
 
@@ -558,7 +558,7 @@ export const donationValidationCompleteRoute = _route(
   'donationValidationComplete',
   {
     patterns: [
-      _pattern('sgnl:', 'donation-validation-complete', '{/}?', {
+      _pattern('baxs:', 'donation-validation-complete', '{/}?', {
         search: ':params',
       }),
     ],
@@ -574,7 +574,7 @@ export const donationValidationCompleteRoute = _route(
     toAppUrl(args) {
       const params = new URLSearchParams({ token: args.token });
       return new URL(
-        `sgnl://donation-validation-complete?${params.toString()}`
+        `baxs://donation-validation-complete?${params.toString()}`
       );
     },
   }

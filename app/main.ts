@@ -2534,9 +2534,8 @@ app.on(
     contents.setWindowOpenHandler(() => ({ action: 'deny' }));
   }
 );
-
-app.setAsDefaultProtocolClient('sgnl');
-app.setAsDefaultProtocolClient('signalcaptcha');
+app.setAsDefaultProtocolClient('baxs');
+app.setAsDefaultProtocolClient('baxscaptcha');
 
 ipc.on(
   'set-badge',
