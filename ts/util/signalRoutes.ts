@@ -217,8 +217,8 @@ const paramSchema = z.string().min(1);
  */
 export const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
   patterns: [
-    _pattern('https:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
-    _pattern('baxs:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('https:', 'me.baxs.com', '{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('baxs:', 'me.baxs.com', '{/}?', { hash: 'p/:phoneNumber' }),
   ],
   schema: z.object({
     phoneNumber: paramSchema, // E164 (with +)
@@ -229,10 +229,10 @@ export const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`https://me.baxs.com/#p/${args.phoneNumber}`);
   },
   toAppUrl(args) {
-    return new URL(`baxs://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`baxs://me.baxs.com/#p/${args.phoneNumber}`);
   },
 });
 
@@ -250,10 +250,10 @@ export const contactByEncryptedUsernameRoute = _route(
   'contactByEncryptedUsername',
   {
     patterns: [
-      _pattern('https:', 'signal.me', '{/}?', {
+      _pattern('https:', 'me.baxs.com', '{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
-      _pattern('baxs:', 'signal.me', '{/}?', { hash: 'eu/:encryptedUsername' }),
+      _pattern('baxs:', 'me.baxs.com', '{/}?', { hash: 'eu/:encryptedUsername' }),
     ],
     schema: z.object({
       encryptedUsername: paramSchema, // base64url (32 bytes of entropy + 16 bytes of big-endian UUID)
@@ -264,10 +264,10 @@ export const contactByEncryptedUsernameRoute = _route(
       };
     },
     toWebUrl(args) {
-      return new URL(`https://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`https://me.baxs.com/#eu/${args.encryptedUsername}`);
     },
     toAppUrl(args) {
-      return new URL(`baxs://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`baxs://me.baxs.com/#eu/${args.encryptedUsername}`);
     },
   }
 );
