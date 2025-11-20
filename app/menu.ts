@@ -132,13 +132,15 @@ export const createTemplate = (
           role: 'togglefullscreen',
           label: i18n('icu:viewMenuToggleFullScreen'),
         },
-        {
-          type: 'separator',
-        },
-        {
-          label: i18n('icu:debugLog'),
-          click: showDebugLog,
-        },
+        // Hidden: Debug Log separator
+        // {
+        //   type: 'separator',
+        // },
+        // Hidden: Debug Log
+        // {
+        //   label: i18n('icu:debugLog'),
+        //   click: showDebugLog,
+        // },
         ...(devTools
           ? [
               {
