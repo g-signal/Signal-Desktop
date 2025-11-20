@@ -183,14 +183,15 @@ export const createTemplate = (
           accelerator: 'CmdOrCtrl+/',
           click: showKeyboardShortcuts,
         },
-        ...(isProduction
-          ? [
-              {
-                label: i18n('icu:joinTheBeta'),
-                click: openJoinTheBeta,
-              },
-            ]
-          : []),
+        // Hidden: Join The Beta
+        // ...(isProduction
+        //   ? [
+        //       {
+        //         label: i18n('icu:joinTheBeta'),
+        //         click: openJoinTheBeta,
+        //       },
+        //     ]
+        //   : []),
         {
           type: 'separator',
         },

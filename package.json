@@ -2,11 +2,11 @@
   "$schema": "./package.schema.json",
   "packageManager": "pnpm@10.6.4",
   "name": "BAchat-desktop",
-  "productName": "B&A",
+  "productName": "BA",
   "description": "Private messaging from your desktop",
   "desktopName": "ba.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
-  "version": "7.64.1",
+  "version": "7.64.0",
   "license": "AGPL-3.0-only",
   "author": {
     "name": "B&A Messenger, LLC",
@@ -20,6 +20,7 @@
     "start": "electron .",
     "generate": "npm-run-all build-protobuf build:esbuild build:icu-types build:compact-locales sass get-expire-time copy-components",
     "build-release": "pnpm run build",
+    "generate-keypair": "node ts/updater/generateKeyPair.js",
     "sign-release": "node ts/updater/generateSignature.js",
     "notarize": "echo 'No longer necessary'",
     "get-strings": "ts-node ts/scripts/get-strings.ts && ts-node ts/scripts/gen-nsis-script.ts && ts-node ts/scripts/gen-locales-config.ts && run-p get-strings:locales get-strings:countries get-strings:emoji mark-unusued-strings-deleted && run-p build:compact-locales",
@@ -447,7 +448,7 @@
       "bundleVersion": "1"
     },
     "win": {
-      "artifactName": "BAchat-win-${arch}-${version}.${ext}",
+      "artifactName": "BA-win-${arch}-${version}.${ext}",
       "icon": "build/icons/win/icon.ico",
       "publish": [
         {

@@ -5,7 +5,6 @@ import React from 'react';
 import moment from 'moment';
 
 import type { LocalizerType } from '../types/Util';
-import { UNSUPPORTED_OS_URL } from '../types/support';
 import { missingCaseError } from '../util/missingCaseError';
 import type { WidthBreakpoint } from './_util';
 import { I18n } from './I18n';
@@ -28,14 +27,7 @@ export function UnsupportedOSDialog({
   OS,
 }: PropsType): JSX.Element | null {
   const learnMoreLink = (parts: Array<string | JSX.Element>) => (
-    <a
-      key="signal-support"
-      href={UNSUPPORTED_OS_URL}
-      rel="noreferrer"
-      target="_blank"
-    >
-      {parts}
-    </a>
+    <span key="signal-support">{parts}</span>
   );
 
   let body: JSX.Element;

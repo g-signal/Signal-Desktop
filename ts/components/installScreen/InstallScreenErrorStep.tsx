@@ -9,7 +9,6 @@ import { openLinkInWebBrowser } from '../../util/openLinkInWebBrowser';
 import { Button, ButtonVariant } from '../Button';
 import { TitlebarDragArea } from '../TitlebarDragArea';
 import { InstallScreenSignalLogo } from './InstallScreenSignalLogo';
-import { LINK_SIGNAL_DESKTOP } from '../../types/support';
 import { InstallScreenError } from '../../types/InstallScreen';
 
 export type Props = Readonly<{
@@ -46,11 +45,8 @@ export function InstallScreenErrorStep({
       errorMessage = i18n('icu:installConnectionFailed');
       break;
     case InstallScreenError.QRCodeFailed:
-      buttonText = i18n('icu:Install__learn-more');
+      buttonText = i18n('icu:installTryAgain');
       errorMessage = i18n('icu:installUnknownError');
-      onClickButton = () => {
-        openLinkInWebBrowser(LINK_SIGNAL_DESKTOP);
-      };
       shouldShowQuitButton = true;
       break;
     default:

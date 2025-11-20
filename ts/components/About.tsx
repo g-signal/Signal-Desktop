@@ -51,14 +51,6 @@ export function About({
         </div>
         <br />
         <div>
-          <a
-            className="acknowledgments"
-            href="https://github.com/g-signal/Signal-Desktop/blob/main/README.md"
-          >
-            {i18n('icu:softwareAcknowledgments')}
-          </a>
-        </div>
-        <div>
           <a className="privacy" href="https://cdn.ba-chat.com/legal/index.html">
             {i18n('icu:privacyPolicy')}
           </a>

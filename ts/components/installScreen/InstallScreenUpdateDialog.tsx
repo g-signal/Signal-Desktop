@@ -10,7 +10,6 @@ import type { LocalizerType } from '../../types/Util';
 import {
   PRODUCTION_DOWNLOAD_URL,
   BETA_DOWNLOAD_URL,
-  UNSUPPORTED_OS_URL,
 } from '../../types/support';
 import type { UpdatesStateType } from '../../state/ducks/updates';
 import { isBeta } from '../../util/version';
@@ -46,14 +45,7 @@ export function InstallScreenUpdateDialog({
   onClose = noop,
 }: PropsType): JSX.Element | null {
   const learnMoreLink = (parts: Array<string | JSX.Element>) => (
-    <a
-      key="signal-support"
-      href={UNSUPPORTED_OS_URL}
-      rel="noreferrer"
-      target="_blank"
-    >
-      {parts}
-    </a>
+    <span key="signal-support">{parts}</span>
   );
 
   const dialogName = `InstallScreenUpdateDialog.${dialogType}`;

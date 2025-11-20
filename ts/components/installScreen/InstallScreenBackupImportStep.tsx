@@ -17,7 +17,6 @@ import { ConfirmationDialog } from '../ConfirmationDialog';
 import { InstallScreenSignalLogo } from './InstallScreenSignalLogo';
 import { roundFractionForProgressBar } from '../../util/numbers';
 import { missingCaseError } from '../../util/missingCaseError';
-import { SYNCING_MESSAGES_SECURITY_URL } from '../../types/support';
 import { I18n } from '../I18n';
 import { InstallScreenUpdateDialog } from './InstallScreenUpdateDialog';
 
@@ -87,9 +86,7 @@ export function InstallScreenBackupImportStep(props: PropsType): JSX.Element {
   }, [onRetry]);
 
   const learnMoreLink = (parts: Array<string | JSX.Element>) => (
-    <a href={SYNCING_MESSAGES_SECURITY_URL} rel="noreferrer" target="_blank">
-      {parts}
-    </a>
+    <span>{parts}</span>
   );
 
   let errorElem: JSX.Element | undefined;
