@@ -56,8 +56,8 @@ const PRODUCTION_PRODUCT_NAME = 'Signal';
 const ADHOC_PRODUCT_NAME = `Signal Adhoc ${formattedDate}.${shortSha}`;
 
 const APP_ID_PATH = 'build.appId';
-const PRODUCTION_APP_ID = 'org.whispersystems.signal-desktop';
-const ADHOC_APP_ID = `org.whispersystems.signal-desktop-adhoc-${formattedDate}-${shortSha}`;
+const PRODUCTION_APP_ID = 'com.baxs.bachat-desktop';
+const ADHOC_APP_ID = `com.baxs.bachat-desktop-adhoc-${formattedDate}-${shortSha}`;
 
 const DESKTOP_NAME_PATH = 'desktopName';
 

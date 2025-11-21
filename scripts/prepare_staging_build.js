@@ -36,8 +36,8 @@ const PRODUCTION_PRODUCT_NAME = 'Signal';
 const STAGING_PRODUCT_NAME = 'Signal Staging';
 
 const APP_ID_PATH = 'build.appId';
-const PRODUCTION_APP_ID = 'org.whispersystems.signal-desktop';
-const STAGING_APP_ID = 'org.whispersystems.signal-desktop-staging';
+const PRODUCTION_APP_ID = 'com.baxs.bachat-desktop';
+const STAGING_APP_ID = 'com.baxs.bachat-desktop-staging';
 
 const DESKTOP_NAME_PATH = 'desktopName';
 

@@ -33,8 +33,8 @@ const PRODUCTION_PRODUCT_NAME = 'Signal';
 const AXOLOTL_PRODUCT_NAME = 'Signal Axolotl';
 
 const APP_ID_PATH = 'build.appId';
-const PRODUCTION_APP_ID = 'org.whispersystems.signal-desktop';
-const AXOLOTL_APP_ID = 'org.whispersystems.signal-desktop-axolotl';
+const PRODUCTION_APP_ID = 'com.baxs.bachat-desktop';
+const AXOLOTL_APP_ID = 'com.baxs.bachat-desktop-axolotl';
 
 const DESKTOP_NAME_PATH = 'desktopName';
 
