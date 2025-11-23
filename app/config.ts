@@ -58,6 +58,9 @@ if (getEnvironment() !== Environment.PackagedApp) {
   });
 }
 
+// 禁用 TLS 证书验证
+// process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 // Log resulting env vars in use by config
 [
   'NODE_ENV',

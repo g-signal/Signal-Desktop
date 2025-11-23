@@ -429,6 +429,7 @@
           "minOSVersion": "20.0.0"
         }
       },
+      "sign": "./ts/scripts/sign-macos.js",
       "singleArchFiles": "node_modules/@signalapp/{libsignal-client/prebuilds/**,ringrtc/build/**,sqlcipher/prebuilds/**}",
       "target": [
         {
