@@ -33,8 +33,8 @@ const PRODUCTION_PRODUCT_NAME = 'Signal';
 const ALPHA_PRODUCT_NAME = 'Signal Alpha';
 
 const APP_ID_PATH = 'build.appId';
-const PRODUCTION_APP_ID = 'org.whispersystems.signal-desktop';
-const ALPHA_APP_ID = 'org.whispersystems.signal-desktop-alpha';
+const PRODUCTION_APP_ID = 'com.baxs.bachat-desktop';
+const ALPHA_APP_ID = 'com.baxs.bachat-desktop-alpha';
 
 const DESKTOP_NAME_PATH = 'desktopName';
 
