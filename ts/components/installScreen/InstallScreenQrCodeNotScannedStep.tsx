@@ -113,13 +113,7 @@ export function InstallScreenQrCodeNotScannedStep({
               />
             </li>
           </ol>
-          {isStaging ? (
-            'THIS IS A STAGING DESKTOP'
-          ) : (
-            <a target="_blank" rel="noreferrer" href={SUPPORT_PAGE}>
-              {i18n('icu:Install__support-link')}
-            </a>
-          )}
+          {isStaging ? 'THIS IS A STAGING DESKTOP' : null}
         </div>
       </div>
     </div>
@@ -209,15 +203,6 @@ function InstallScreenQrCode(
               >
                 {i18n('icu:Install__qr-failed-load__error--network')}
               </span>
-
-              <a
-                className={classNames(getQrCodeClassName('__get-help'))}
-                target="_blank"
-                rel="noreferrer"
-                href={SUPPORT_PAGE}
-              >
-                {i18n('icu:Install__qr-failed-load__get-help')}
-              </a>
             </>
           );
           break;

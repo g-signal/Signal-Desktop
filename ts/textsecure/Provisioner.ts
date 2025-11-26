@@ -457,12 +457,21 @@ export class Provisioner {
     }
 
     if (isActive) {
-      log.info(`${logId}: active socket closed`);
+      log.info(`${logId}: active socket closed unexpectedly, state=${state}`);
+
+      // If socket closes while waiting for envelope (user is actively scanning),
+      // don't show error - just restart the loop to get a new QR code immediately
+      // This prevents "unexpected error" messages during normal operation
+      if (state === SocketState.WaitingForEnvelope) {
+        log.info(`${logId}: socket closed while waiting for scan, restarting to get new QR code`);
+        // Restart immediately to show new QR code
+        this.#start();
+        return;
+      }
+
+      // Only show error if we haven't even gotten the UUID yet
       this.#notify({
-        kind:
-          state === SocketState.WaitingForUuid
-            ? EventKind.ConnectError
-            : EventKind.EnvelopeError,
+        kind: EventKind.ConnectError,
         error: new Error(
           `Socket ${index} closed, code=${code}, reason=${reason}`
         ),
