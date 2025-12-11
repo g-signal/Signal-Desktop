@@ -4133,11 +4133,11 @@
     "description": "Shown as a button to share your profile, necessary to continue messaging in a conversation"
   },
   "icu:MessageRequests--profile-sharing--group--link": {
-    "messageformat": "Continue your chat with this group and share your name and photo with its members? <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "Continue your chat with this group and share your name and photo with its members? ",
     "description": "Shown when user hasn't shared their profile in a group yet"
   },
   "icu:MessageRequests--profile-sharing--direct--link": {
-    "messageformat": "Continue this chat with {firstName} and share your name and photo with them? <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Continue this chat with {firstName} and share your name and photo with them? ",
     "description": "Shown when user hasn't shared their profile in a 1:1 conversation yet"
   },
   "icu:ConversationHero--members": {
@@ -5357,7 +5357,7 @@
     "description": "When rejoining a group, any detected changes are collapsed down into this summary"
   },
   "icu:GroupV1--Migration--disabled--link": {
-    "messageformat": "Upgrade this group to activate new features like @mentions and admins. Members who have not shared their name or photo in this group will be invited to join. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "Upgrade this group to activate new features like @mentions and admins. Members who have not shared their name or photo in this group will be invited to join. ",
     "description": "Shown instead of composition area when user is forced to migrate a legacy group (GV1)."
   },
   "icu:GroupV1--Migration--was-upgraded": {
@@ -5529,7 +5529,7 @@
     "description": "Text of the cancel button at the bottom of backup import screen"
   },
   "icu:BackupImportScreen__security-description": {
-    "messageformat": "Messages and chat info are protected by end-to-end encryption, including the sync process. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Messages and chat info are protected by end-to-end encryption, including the sync process. ",
     "description": "Text shown while importing messages & chats from the user's primary device."
   },
   "icu:BackupImportScreen__cancel-confirmation__title": {
@@ -5617,7 +5617,7 @@
     "description": "Text for button to cancel media (attachment) download after backup import"
   },
   "icu:BackupMediaDownloadCancelConfirmation__description": {
-    "messageformat": "Your media has not completed syncing. If you choose to cancel, you can sync again by re-linking this device. <learnMoreLink>Learn more</learnMoreLink>.",
+    "messageformat": "Your media has not completed syncing. If you choose to cancel, you can sync again by re-linking this device. ",
     "description": "Text for button to cancel media (attachment) download after backup import"
   },
   "icu:BackupMediaDownloadCancelConfirmation__button-continue": {
@@ -5657,7 +5657,7 @@
     "description": "Title for modal shown when a user must use their idle primary device to retain their account"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "You must open B&A on your phone to continue using this account. If you do not open B&A on your phone, your account will be deleted soon. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "You must open B&A on your phone to continue using this account. If you do not open B&A on your phone, your account will be deleted soon.",
     "description": "Description for modal shown when a user must use their idle primary device to retain their account. Learn more link will link to a support page"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
@@ -6997,7 +6997,7 @@
     "description": "Feature name for message backups using the B&A service."
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatic backups with B&A’s secure, end-to-end encrypted storage service. Get started on your phone. <learnMoreLink>Learn more</learnMoreLink>.",
+    "messageformat": "Automatic backups with B&A’s secure, end-to-end encrypted storage service. Get started on your phone. ",
     "description": "Description for message backups using the B&A service."
   },
   "icu:Preferences--backup-section-description": {
@@ -7069,7 +7069,7 @@
     "description": "Description for on-device local message backups when the feature is off."
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "To restore a backup, install a new copy of B&A. Open the app and tap Restore backup, then locate the backup folder. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "To restore a backup, install a new copy of B&A. Open the app and tap Restore backup, then locate the backup folder. ",
     "description": "Description for how to restore on-device local message backups."
   },
   "icu:Preferences--local-backups-setup-folder": {
@@ -7101,7 +7101,7 @@
     "description": "Title for viewing the backup key for local message backups."
   },
   "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "This key is required to recover your account and data. Store this key somewhere safe. If you lose it, you won’t be able to recover your account. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "This key is required to recover your account and data. Store this key somewhere safe. If you lose it, you won’t be able to recover your account. ",
     "description": "Description for viewing the backup key for local message backups."
   },
   "icu:Preferences--local-backups-confirm-backup-key": {
@@ -7357,7 +7357,7 @@
     "description": "Title of a banner alerting users if their primary device (e.g. phone) has not been logged into recently."
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Your account will be deleted soon unless you open B&A on your phone. This message will go away if you've done it successfully. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "Your account will be deleted soon unless you open B&A on your phone. This message will go away if you've done it successfully. ",
     "description": "The text in a banner alerting users if their primary device (e.g. phone) has not been logged into recently. "
   },
   "icu:IdlePrimaryDevice__body": {
@@ -7911,7 +7911,7 @@
     "description": "Input label to create an exclude list"
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "Choose who can view your story. Changes won't affect stories you've already sent. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "Choose who can view your story. Changes won't affect stories you've already sent. ",
     "description": "Disclaimer on how changes to story settings work"
   },
   "icu:StoriesSettings__context-menu": {
@@ -8003,7 +8003,7 @@
     "description": "Modal title for setting privacy for My Story"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Choose which B&A connections can view your story. You can always change this in privacy settings. <learnMoreLink>Learn more.</learnMoreLink>",
+    "messageformat": "Choose which B&A connections can view your story. You can always change this in privacy settings. ",
     "description": "Disclaimer on how changes to story settings work"
   },
   "icu:SendStoryModal__delete-story": {
@@ -8443,11 +8443,11 @@
     "description": "Text of the secondary button on username megaphone"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "B&A desktop will no longer support your computer’s version of {OS} soon. To keep using B&A, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "B&A desktop will no longer support your computer’s version of {OS} soon. To keep using B&A, update your computer’s operating system by {expirationDate}. ",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "B&A desktop no longer works on this computer. To use B&A desktop again, update your computer’s version of {OS}. <learnMoreLink>Learn more</learnMoreLink>",
+    "messageformat": "B&A desktop no longer works on this computer. To use B&A desktop again, update your computer’s version of {OS}. ",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:UnsupportedOSErrorToast": {
