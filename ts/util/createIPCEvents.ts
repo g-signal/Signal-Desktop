@@ -409,12 +409,32 @@ export function createIPCEvents(
       showWhatsNewModal();
     },
     showStickerPack: (packId, key) => {
+      console.log('[DeepLink] showStickerPack called', {
+        packId,
+        keyLength: key?.length,
+        isRegistered: Registration.everDone()
+      });
+
       // We can get these events even if the user has never linked this instance.
       if (!Registration.everDone()) {
+        console.error('[DeepLink] Not registered, returning early');
         log.warn('showStickerPack: Not registered, returning early');
         return;
       }
-      window.reduxActions.globalModals.showStickerPackPreview(packId, key);
+
+      console.log('[DeepLink] Registration check passed');
+      console.log('[DeepLink] Checking reduxActions.globalModals:', {
+        hasReduxActions: !!window.reduxActions,
+        hasGlobalModals: !!window.reduxActions?.globalModals,
+        hasShowStickerPackPreview: typeof window.reduxActions?.globalModals?.showStickerPackPreview
+      });
+
+      try {
+        window.reduxActions.globalModals.showStickerPackPreview(packId, key);
+        console.log('[DeepLink] showStickerPackPreview called successfully');
+      } catch (error) {
+        console.error('[DeepLink] Error calling showStickerPackPreview:', error);
+      }
     },
     shutdown: () => Promise.resolve(),
     startCallingLobbyViaToken(token: string) {

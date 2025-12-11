@@ -346,7 +346,23 @@ ipc.on('remove-dark-overlay', () => {
 });
 
 ipc.on('show-sticker-pack', (_event, info) => {
-  window.Events.showStickerPack?.(info.packId, info.packKey);
+  console.log('[DeepLink] IPC received: show-sticker-pack', {
+    packId: info.packId,
+    packKeyLength: info.packKey?.length,
+    hasEvents: !!window.Events,
+    hasShowStickerPack: typeof window.Events?.showStickerPack
+  });
+
+  if (window.Events?.showStickerPack) {
+    console.log('[DeepLink] Calling window.Events.showStickerPack');
+    window.Events.showStickerPack(info.packId, info.packKey);
+    console.log('[DeepLink] window.Events.showStickerPack called');
+  } else {
+    console.error('[DeepLink] window.Events.showStickerPack not found!', {
+      Events: window.Events,
+      EventsKeys: window.Events ? Object.keys(window.Events) : 'undefined'
+    });
+  }
 });
 
 ipc.on('show-group-via-link', (_event, info) => {

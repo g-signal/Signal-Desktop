@@ -418,6 +418,7 @@ export const linkCallRoute = _route('linkCall', {
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
     _pattern('https:', 'sticker.baxs.com', '/addstickers{/}?', { hash: ':params' }),
+    _pattern('baxs:', 'sticker.baxs.com', '/addstickers{/}?', { hash: ':params' }),
     _pattern('baxs:', 'addstickers', '{/}?', { search: ':params' }),
   ],
   schema: z.object({

@@ -2867,18 +2867,30 @@ function maybeGetIncomingSignalRoute(argv: Array<string>) {
 }
 
 function handleSignalRoute(route: ParsedSignalRoute) {
+  log.info('[DeepLink] handleSignalRoute called:', {
+    key: route.key,
+    args: route.args
+  });
+
   if (mainWindow == null || !mainWindow.webContents) {
-    log.error('handleSignalRoute: mainWindow is null or missing webContents');
+    log.error('[DeepLink] handleSignalRoute: mainWindow is null or missing webContents');
     return;
   }
 
-  log.info('handleSignalRoute: Matched signal route:', route.key);
+  log.info('[DeepLink] handleSignalRoute: Matched signal route:', route.key);
 
   if (route.key === 'artAddStickers') {
+    log.info('[DeepLink] Handling artAddStickers:', {
+      packId: route.args.packId,
+      packKey: route.args.packKey.substring(0, 20) + '...'
+    });
+
     mainWindow.webContents.send('show-sticker-pack', {
       packId: route.args.packId,
       packKey: Buffer.from(route.args.packKey, 'hex').toString('base64'),
     });
+
+    log.info('[DeepLink] IPC message "show-sticker-pack" sent successfully');
   } else if (route.key === 'groupInvites') {
     mainWindow.webContents.send('show-group-via-link', {
       value: route.args.inviteCode,

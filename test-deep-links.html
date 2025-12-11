@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BA Chat 深层链接测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #3a76f0;
+        }
+        .link-test {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .link-test h3 {
+            margin-top: 0;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3a76f0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        a:hover {
+            background: #2c5fd0;
+        }
+        .expected {
+            background: #f0f0f0;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 3px;
+        }
+        .instructions {
+            background: #fff3cd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BA Chat 深层链接测试页面</h1>
+
+    <div class="instructions">
+        <h3>测试前准备：</h3>
+        <ol>
+            <li>确保 BA Chat 应用正在运行</li>
+            <li>在应用中按 <code>Ctrl + Shift + I</code> 打开开发者工具</li>
+            <li>切换到 <strong>Console</strong> 标签</li>
+            <li>然后点击下面的链接进行测试</li>
+        </ol>
+    </div>
+
+    <div class="link-test">
+        <h3>1. 贴纸包链接测试</h3>
+        <p>点击下面的链接应该唤醒应用并打开贴纸包预览：</p>
+        <a href="baxs://sticker.baxs.com/addstickers/#pack_id=9acc9e8aba563d26a4994e69263e3b25&pack_key=5a6dff3948c28efb9b7aaf93ecc375c69fc316e78077ed26867a14d10a0f6a12">
+            点击测试贴纸链接
+        </a>
+
+        <div class="expected">
+            <strong>预期行为：</strong>
+            <ul>
+                <li>应用被激活/唤醒</li>
+                <li>打开贴纸包预览界面</li>
+                <li>显示贴纸内容</li>
+            </ul>
+            <strong>控制台应该显示：</strong>
+            <pre>handleSignalRoute: Matched signal route: artAddStickers</pre>
+        </div>
+    </div>
+
+    <div class="link-test">
+        <h3>2. 用户名链接测试</h3>
+        <p>点击下面的链接应该唤醒应用并查找联系人：</p>
+        <a href="baxs://me.baxs.com/#eu/MeiiKvEPyO2YE5ii14nFE9S88FeG-VkHi5LAVHrmA8CVVYQlcUZJi6DzND4yAagh">
+            点击测试用户名链接
+        </a>
+
+        <div class="expected">
+            <strong>预期行为：</strong>
+            <ul>
+                <li>应用被激活/唤醒</li>
+                <li>查询用户名</li>
+                <li>打开对话界面（如果找到）</li>
+                <li>或显示"用户未找到"（如果不存在）</li>
+            </ul>
+            <strong>控制台应该显示：</strong>
+            <pre>handleSignalRoute: Matched signal route: contactByEncryptedUsername</pre>
+        </div>
+    </div>
+
+    <div class="link-test">
+        <h3>3. 简化贴纸链接测试</h3>
+        <p>测试简化格式的贴纸链接：</p>
+        <a href="baxs://addstickers?pack_id=9acc9e8aba563d26a4994e69263e3b25&pack_key=5a6dff3948c28efb9b7aaf93ecc375c69fc316e78077ed26867a14d10a0f6a12">
+            点击测试简化贴纸链接
+        </a>
+
+        <div class="expected">
+            <strong>预期行为：</strong> 与测试1相同
+        </div>
+    </div>
+
+    <div class="link-test">
+        <h3>4. 测试窗口唤醒链接</h3>
+        <p>这个链接只是唤醒应用窗口：</p>
+        <a href="baxs://show-window">
+            点击测试窗口唤醒
+        </a>
+
+        <div class="expected">
+            <strong>预期行为：</strong>
+            <ul>
+                <li>应用窗口被激活</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="instructions">
+        <h3>如果链接无法点击：</h3>
+        <ol>
+            <li>右键点击链接 → 复制链接地址</li>
+            <li>打开命令提示符（CMD）</li>
+            <li>粘贴链接并按回车</li>
+        </ol>
+        <p>例如：</p>
+        <pre>baxs://show-window</pre>
+    </div>
+
+    <div class="instructions">
+        <h3>故障排查：</h3>
+        <ul>
+            <li>如果点击后没有反应 → 检查 <code>baxs://</code> 协议是否已注册</li>
+            <li>如果应用唤醒但没有跳转 → 查看控制台是否有 <code>handleSignalRoute</code> 日志</li>
+            <li>如果看到错误 → 复制错误信息并发送给开发者</li>
+        </ul>
+    </div>
+</body>
+</html>
