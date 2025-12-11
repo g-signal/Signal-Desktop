@@ -19,7 +19,7 @@ function contactSupportLink(parts: ReactNode): JSX.Element {
   return (
     <a
       key="signal-support"
-      href="https://support.signal.org/hc/requests/new?desktop"
+      href="https://support.ba-chat.com/"
       rel="noreferrer"
       target="_blank"
     >

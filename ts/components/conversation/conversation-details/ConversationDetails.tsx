@@ -533,7 +533,7 @@ export function ConversationDetails({
               label={i18n('icu:contactUs')}
               onClick={() => {
                 openLinkInWebBrowser(
-                  'https://support.signal.org/hc/requests/new?desktop'
+                  'https://support.ba-chat.com/'
                 );
               }}
             />
