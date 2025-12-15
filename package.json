@@ -465,6 +465,9 @@
       "target": [
         "nsis"
       ],
+      "sign": "./ts/scripts/sign-windows.js",
+      "signingHashAlgorithms": ["sha256"],
+      "signDlls": true,
       "asarUnpack": [
         "build/icons/win/icon.ico"
       ]
