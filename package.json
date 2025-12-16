@@ -9,7 +9,7 @@
   "version": "7.64.0",
   "license": "AGPL-3.0-only",
   "author": {
-    "name": "B&A Messenger, LLC",
+    "name": "B&A Group Limited",
     "email": "support@baxs.com"
   },
   "browserslist": "last 1 chrome versions",
@@ -465,6 +465,18 @@
       "target": [
         "nsis"
       ],
+
+
+  "signtoolOptions": {
+   "publisherName": "B&A Group Limited",
+  
+    "sign": "./ts/scripts/sign-windows.js",
+    "signingHashAlgorithms": ["sha256"],
+    "timeStampServer": "http://timestamp.globalsign.com/tsa/r6advanced1"
+},
+"signExts" :[".dll",".node"
+],
+
       "asarUnpack": [
         "build/icons/win/icon.ico"
       ]
@@ -521,7 +533,7 @@
       ]
     },
     "protocols": {
-      "name": "sgnl-url-scheme",
+      "name": "baxs-url-scheme",
       "schemes": [
         "baxs",
         "baxscaptcha"
