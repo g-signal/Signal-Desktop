@@ -4,8 +4,8 @@
 # DO NOT EDIT. This is a generated file.
 
 # en_US
-LangString signalMinWinVersionErr 1033 "Signal desktop no longer works on this computer. To use Signal desktop again, update your computer’s version of Windows."
-LangString signalMinAppVersionErr 1033 "A newer version of Signal is already installed. Are you sure you want to continue?"
+LangString signalMinWinVersionErr 1033 "B&A desktop no longer works on this computer. To use B&A desktop again, update your computer’s version of Windows."
+LangString signalMinAppVersionErr 1033 "A newer version of B&A is already installed. Are you sure you want to continue?"
 # de_DE
 LangString signalMinWinVersionErr 1031 "Signal Desktop funktioniert auf diesem Computer nicht mehr. Um Signal Desktop wieder verwenden zu können, aktualisiere die Windows-Version deines Computers."
 LangString signalMinAppVersionErr 1031 "Eine neuere Version von Signal ist bereits installiert. Möchtest du wirklich fortfahren?"
@@ -16,11 +16,11 @@ LangString signalMinAppVersionErr 1036 "Une version plus récente de Signal est 
 LangString signalMinWinVersionErr 3082 "Signal Desktop ya no funciona en este dispositivo. Para volver a usar Signal Desktop, actualiza la versión del Windows de tu equipo de escritorio."
 LangString signalMinAppVersionErr 3082 "Ya está instalada una versión más reciente de Signal. ¿Continuar de todos modos?"
 # zh_CN
-LangString signalMinWinVersionErr 2052 "Signal desktop 无法在此电脑上运行。如您希望再次使用 Signal desktop，请更新您电脑的 Windows 版本。"
-LangString signalMinAppVersionErr 2052 "更新版 Signal 已安装完毕。您确定要继续吗？"
+LangString signalMinWinVersionErr 2052 "B&A desktop 无法在此电脑上运行。如您希望再次使用 B&A desktop，请更新您电脑的 Windows 版本。"
+LangString signalMinAppVersionErr 2052 "更新版 B&A 已安装完毕。您确定要继续吗？"
 # zh_TW
-LangString signalMinWinVersionErr 1028 "Signal 桌面版不再適用於此電腦。如要再次使用 Signal 桌面版，請更新電腦的 Windows 版本。"
-LangString signalMinAppVersionErr 1028 "已安裝較新版本的 Signal。你確定要繼續嗎？"
+LangString signalMinWinVersionErr 1028 "B&A 桌面版不再適用於此電腦。如要再次使用 B&A 桌面版，請更新電腦的 Windows 版本。"
+LangString signalMinAppVersionErr 1028 "已安裝較新版本的 B&A。你確定要繼續嗎？"
 # ja_JP
 LangString signalMinWinVersionErr 1041 "このコンピュータではSignal desktopは動作しなくなりました。Signal desktopを再びご利用になる場合は、お使いのコンピュータのバージョンWindowsをアップデートしてください。"
 LangString signalMinAppVersionErr 1041 "Signal の新しいバージョンがすでにインストールされています。本当にインストールしますか？"
