@@ -6,7 +6,7 @@
   "description": "Private messaging from your desktop",
   "desktopName": "ba.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
-  "version": "7.64.0",
+  "version": "7.64.0-beta.5",
   "license": "AGPL-3.0-only",
   "author": {
     "name": "B&A Group Limited",
@@ -449,6 +449,15 @@
       "bundleVersion": "1"
     },
     "win": {
+        "signtoolOptions": {
+        "certificateSubjectName": "B&A Group Limited",
+        "certificateSha1": "4BE061C90FFDD76EFFA6DE3A2CA8C4B73A32B911",
+        "publisherName": "B&A Group Limited",
+        "sign": "./ts/scripts/sign-windows.js",
+        "signingHashAlgorithms": [
+          "sha256"
+        ]
+      },
       "artifactName": "BA-win-${arch}-${version}.${ext}",
       "icon": "build/icons/win/icon.ico",
       "publish": [
