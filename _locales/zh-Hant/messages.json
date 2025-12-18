@@ -3114,10 +3114,10 @@
     "messageformat": "繼續"
   },
   "icu:MessageRequests--profile-sharing--group--link": {
-    "messageformat": "繼續與該群群組聊天，並與其成員分享你的名字和照片嗎？ <learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "繼續與該群群組聊天，並與其成員分享你的名字和照片嗎？ "
   },
   "icu:MessageRequests--profile-sharing--direct--link": {
-    "messageformat": "繼續與{firstName}聊天，並與他們分享你的名字和照片嗎？ <learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "繼續與{firstName}聊天，並與他們分享你的名字和照片嗎？ "
   },
   "icu:ConversationHero--members": {
     "messageformat": "{count, plural, other {{count,number} 個成員}}"
@@ -3534,7 +3534,7 @@
     "messageformat": "{max, plural, other {只有 {max,number} 項編輯能套用到此訊息。}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "抱歉，該 sgnl://link 沒有任何意義！"
+    "messageformat": "抱歉，該 baxs://link 沒有任何意義！"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "你無法向該群組傳送訊息。"
@@ -4032,7 +4032,7 @@
     "messageformat": "此群組的成員或設定已經變更。"
   },
   "icu:GroupV1--Migration--disabled--link": {
-    "messageformat": "升級此群組以啟用「@提及」和管理員等新功能。尚未在此群組中分享名字或照片的成員將會獲邀加入。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "升級此群組以啟用「@提及」和管理員等新功能。尚未在此群組中分享名字或照片的成員將會獲邀加入。"
   },
   "icu:GroupV1--Migration--was-upgraded": {
     "messageformat": "該群組已升級為新版群組。"
@@ -4161,7 +4161,7 @@
     "messageformat": "取消"
   },
   "icu:BackupImportScreen__security-description": {
-    "messageformat": "訊息和聊天資訊均受端對端加密的保護，包括同步過程。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "訊息和聊天資訊均受端對端加密的保護，包括同步過程。"
   },
   "icu:BackupImportScreen__cancel-confirmation__title": {
     "messageformat": "要取消裝置連結嗎？"
@@ -4227,7 +4227,7 @@
     "messageformat": "要取消媒體同步嗎？"
   },
   "icu:BackupMediaDownloadCancelConfirmation__description": {
-    "messageformat": "你的媒體同步尚未完成。如果你選擇取消，可以透過再次連結此裝置來重新同步。<learnMoreLink>了解更多</learnMoreLink>。"
+    "messageformat": "你的媒體同步尚未完成。如果你選擇取消，可以透過再次連結此裝置來重新同步。"
   },
   "icu:BackupMediaDownloadCancelConfirmation__button-continue": {
     "messageformat": "繼續同步"
@@ -4257,7 +4257,7 @@
     "messageformat": "需為帳戶採取行動"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "你必須在手機上開啟 B&A 才能繼續使用此帳戶。如果你沒有在手機上開啟 B&A，你的帳戶將很快被刪除。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "你必須在手機上開啟 B&A 才能繼續使用此帳戶。如果你沒有在手機上開啟 B&A，你的帳戶將很快被刪除。"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "無法還原媒體"
@@ -5262,7 +5262,7 @@
     "messageformat": "B&A 備份"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "使用 B&A 的安全端對端加密儲存服務自動備份。就從你的手機開始。<learnMoreLink>了解更多</learnMoreLink>。"
+    "messageformat": "使用 B&A 的安全端對端加密儲存服務自動備份。就從你的手機開始。"
   },
   "icu:Preferences--backup-section-description": {
     "messageformat": "備份你的訊息紀錄，讓你在使用新手機或重新安裝 B&A 時，絕不會遺失資料。"
@@ -5316,7 +5316,7 @@
     "messageformat": "建立可在手機上還原的端對端加密備份。 "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "如要還原備份，請安裝全新的 B&A 。然後開啟應用程式並輕按「還原備份」，再找出備份資料夾位置。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "如要還原備份，請安裝全新的 B&A 。然後開啟應用程式並輕按「還原備份」，再找出備份資料夾位置。"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "選擇資料夾"
@@ -5340,7 +5340,7 @@
     "messageformat": "記錄你的備份金鑰"
   },
   "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "需要此金鑰才能恢復你的帳戶和資料。將此金鑰存放在安全的地方。如果你將其遺失，你將會無法恢復帳戶。 <learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "需要此金鑰才能恢復你的帳戶和資料。將此金鑰存放在安全的地方。如果你將其遺失，你將會無法恢復帳戶。 "
   },
   "icu:Preferences--local-backups-confirm-backup-key": {
     "messageformat": "確認你的備份金鑰"
@@ -5532,7 +5532,7 @@
     "messageformat": "在手機上開啟 B&A"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "如果你沒在手機上開啟 B&A，你的帳戶很快會被刪除。如你已成功開啟，此訊息就會消失。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "如果你沒在手機上開啟 B&A，你的帳戶很快會被刪除。如你已成功開啟，此訊息就會消失。"
   },
   "icu:IdlePrimaryDevice__body": {
     "messageformat": "在手機上打開 B&A 以保持你的帳戶活躍"
@@ -5949,7 +5949,7 @@
     "messageformat": "僅和這些人分享…"
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "選擇誰可瀏覽你的限時動態。此變更不會影響你已發布的限時動態。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "選擇誰可瀏覽你的限時動態。此變更不會影響你已發布的限時動態。"
   },
   "icu:StoriesSettings__context-menu": {
     "messageformat": "限動隱私"
@@ -6018,7 +6018,7 @@
     "messageformat": "我的限動隱私設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇哪些 B&A 人脈可以瀏覽你的限時動態。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "選擇哪些 B&A 人脈可以瀏覽你的限時動態。你可以隨時在隱私設定中進行更改。"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "刪除限動"
@@ -6349,10 +6349,10 @@
     "messageformat": "解除"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "B&A 桌面版即將停止支援你的電腦使用的 {OS} 版本。如要繼續使用 B&A，請在 {expirationDate}前更新電腦的作業系統。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "B&A 桌面版即將停止支援你的電腦使用的 {OS} 版本。如要繼續使用 B&A，請在 {expirationDate}前更新電腦的作業系統。"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "B&A 桌面版不再適用於此電腦。如要再次使用 B&A 桌面版，請更新電腦的 {OS} 版本。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "B&A 桌面版不再適用於此電腦。如要再次使用 B&A 桌面版，請更新電腦的 {OS} 版本。"
   },
   "icu:UnsupportedOSErrorToast": {
     "messageformat": "B&A 桌面版不再適用於此電腦。如要再次使用 B&A 桌面版，請更新電腦的 {OS} 版本。"

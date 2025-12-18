@@ -61,7 +61,7 @@ import {
 } from './preferences/donations/DonateInputCardCvc';
 import { I18n } from './I18n';
 
-const SUPPORT_URL = 'https://support.signal.org/hc/requests/new?desktop';
+const SUPPORT_URL = 'https://support.ba-chat.com/';
 
 export type PropsDataType = {
   i18n: LocalizerType;

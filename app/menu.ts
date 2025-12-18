@@ -141,29 +141,30 @@ export const createTemplate = (
         //   label: i18n('icu:debugLog'),
         //   click: showDebugLog,
         // },
-        ...(devTools
-          ? [
-              {
-                type: 'separator' as const,
-              },
-              {
-                role: 'toggleDevTools' as const,
-                label: i18n('icu:viewMenuToggleDevTools'),
-              },
-              {
-                label: i18n('icu:viewMenuOpenCallingDevTools'),
-                click: showCallingDevTools,
-              },
-            ]
-          : []),
-        ...(devTools && platform !== 'linux'
-          ? [
-              {
-                label: i18n('icu:forceUpdate'),
-                click: forceUpdate,
-              },
-            ]
-          : []),
+        // Hidden: Developer Tools
+        // ...(devTools
+        //   ? [
+        //       {
+        //         type: 'separator' as const,
+        //       },
+        //       {
+        //         role: 'toggleDevTools' as const,
+        //         label: i18n('icu:viewMenuToggleDevTools'),
+        //       },
+        //       {
+        //         label: i18n('icu:viewMenuOpenCallingDevTools'),
+        //         click: showCallingDevTools,
+        //       },
+        //     ]
+        //   : []),
+        // ...(devTools && platform !== 'linux'
+        //   ? [
+        //       {
+        //         label: i18n('icu:forceUpdate'),
+        //         click: forceUpdate,
+        //       },
+        //     ]
+        //   : []),
       ],
     },
     {
