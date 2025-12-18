@@ -7,7 +7,7 @@
   "description": "Private messaging from your desktop",
   "desktopName": "ba.desktop",
   "repository": "https://github.com/signalapp/Signal-Desktop.git",
-  "version": "7.64.0-beta.6",
+  "version": "7.64.0",
   "license": "AGPL-3.0-only",
   "author": {
     "name": "B&A Group Limited",
@@ -475,10 +475,10 @@
       "target": [
         "nsis"
       ],
-
-"signExts" :[".dll",".node"
-],
-
+      "signExts": [
+        ".dll",
+        ".node"
+      ],
       "asarUnpack": [
         "build/icons/win/icon.ico"
       ]
