@@ -28,12 +28,12 @@ const VERSION_PATH = 'version';
 const STAGING_VERSION = version.replace('alpha', 'staging');
 
 const NAME_PATH = 'name';
-const PRODUCTION_NAME = 'signal-desktop';
-const STAGING_NAME = 'signal-desktop-staging';
+const PRODUCTION_NAME = 'BA-desktop';
+const STAGING_NAME = 'BA-desktop-staging';
 
 const PRODUCT_NAME_PATH = 'productName';
-const PRODUCTION_PRODUCT_NAME = 'Signal';
-const STAGING_PRODUCT_NAME = 'Signal Staging';
+const PRODUCTION_PRODUCT_NAME = 'BA';
+const STAGING_PRODUCT_NAME = 'BA Staging';
 
 const APP_ID_PATH = 'build.appId';
 const PRODUCTION_APP_ID = 'com.baxs.bachat-desktop';
@@ -43,8 +43,8 @@ const DESKTOP_NAME_PATH = 'desktopName';
 
 // Note: we're avoiding dashes in our .desktop name due to xdg-settings behavior
 //   https://github.com/signalapp/Signal-Desktop/issues/3602
-const PRODUCTION_DESKTOP_NAME = 'signal.desktop';
-const STAGING_DESKTOP_NAME = 'signalstaging.desktop';
+const PRODUCTION_DESKTOP_NAME = 'ba.desktop';
+const STAGING_DESKTOP_NAME = 'bastaging.desktop';
 
 // -------
 
