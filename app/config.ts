@@ -18,7 +18,14 @@ const log = createLogger('config');
 
 // In production mode, NODE_ENV cannot be customized by the user
 if (app.isPackaged) {
-  setEnvironment(Environment.PackagedApp, false);
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const packageJson = require('../package.json');
+  const embeddedEnv = packageJson.environment;
+  if (embeddedEnv === 'staging') {
+    setEnvironment(Environment.Staging, false);
+  } else {
+    setEnvironment(Environment.PackagedApp, false);
+  }
 } else {
   setEnvironment(
     parseEnvironment(process.env.NODE_ENV || 'development'),
