@@ -957,6 +957,7 @@ export type ProfileType = Readonly<{
   capabilities?: CapabilitiesType;
   paymentAddress?: string;
   badges?: unknown;
+  gextTags?: unknown;
 }>;
 
 export type GetAccountForUsernameOptionsType = Readonly<{

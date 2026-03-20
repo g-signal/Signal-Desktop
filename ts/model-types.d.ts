@@ -30,6 +30,7 @@ import type { StorySendMode } from './types/Stories';
 import type { MIMEType } from './types/MIME';
 import type { DurationInSeconds } from './util/durations';
 import type { AnyPaymentEvent } from './types/Payment';
+import type { GextTag } from './types/GextTag';
 
 import AccessRequiredEnum = Proto.AccessControl.AccessRequired;
 import MemberRoleEnum = Proto.Member.Role;
@@ -424,6 +425,7 @@ export type ConversationAttributesType = {
   unreadCount?: number;
   unreadMentionsCount?: number;
   version: number;
+  gextTags?: ReadonlyArray<GextTag>;
 
   // Private core info
   serviceId?: ServiceIdString;

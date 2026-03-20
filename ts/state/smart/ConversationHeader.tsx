@@ -311,6 +311,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
       setLocalDeleteWarningShown={setLocalDeleteWarningShown}
       sharedGroupNames={conversation.sharedGroupNames}
       theme={theme}
+      gextTags={conversation.gextTags}
     />
   );
 });

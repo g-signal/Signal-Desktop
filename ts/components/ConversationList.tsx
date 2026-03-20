@@ -484,6 +484,7 @@ export function ConversationList({
             'unreadCount',
             'unreadMentionsCount',
             'serviceId',
+            'gextTags',
           ]);
           const { badges, title, unreadCount, lastMessage } = itemProps;
           result = (

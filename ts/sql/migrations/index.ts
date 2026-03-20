@@ -117,10 +117,11 @@ import { updateToSchemaVersion1380 } from './1380-donation-receipts';
 import { updateToSchemaVersion1390 } from './1390-attachment-download-keys';
 import { updateToSchemaVersion1400 } from './1400-simplify-receipts';
 import { updateToSchemaVersion1410 } from './1410-remove-wallpaper';
+import { updateToSchemaVersion1420 } from './1420-backup-downloads';
 import {
-  updateToSchemaVersion1420,
+  updateToSchemaVersion1421,
   version as MAX_VERSION,
-} from './1420-backup-downloads';
+} from './1421-gext-tags';
 
 import { DataWriter } from '../Server';
 
@@ -2117,6 +2118,7 @@ export const SCHEMA_VERSIONS = [
   updateToSchemaVersion1400,
   updateToSchemaVersion1410,
   updateToSchemaVersion1420,
+  updateToSchemaVersion1421,
 ];
 
 export class DBVersionFromFutureError extends Error {

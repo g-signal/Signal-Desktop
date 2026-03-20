@@ -28,6 +28,7 @@ import {
 } from '../util/zkgroup';
 import { isMe } from '../util/whatTypeOfConversation';
 import { parseBadgesFromServer } from '../badges/parseBadgesFromServer';
+import { parseGExtTagsFromServer } from '../util/parseGExtTags';
 import { strictAssert } from '../util/assert';
 import { drop } from '../util/drop';
 import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError';
@@ -725,6 +726,16 @@ async function doGetProfile(
     });
   } else {
     c.unset('badges');
+  }
+
+  // Step #: Save profile `gextTags` to gextRecipient table
+  if (profile.gextTags !== undefined) {
+    const serviceId = c.getServiceId();
+    if (serviceId != null) {
+      const gextTags = parseGExtTagsFromServer(profile.gextTags);
+      await DataWriter.setGExtTags(serviceId, gextTags);
+      log.info(`${logId}: Saved ${gextTags.length} gextTags`);
+    }
   }
 
   // Step #: Save updated (or clear if missing) profile `credential` to conversation
