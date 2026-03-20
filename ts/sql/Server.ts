@@ -237,6 +237,11 @@ import {
   getGroupSendMemberEndorsement,
   replaceAllEndorsementsForGroup,
 } from './server/groupSendEndorsements';
+import {
+  getGExtTagsByServiceId,
+  setGExtTags,
+  deleteGExtTags,
+} from './server/gextTags';
 import { INITIAL_EXPIRE_TIMER_VERSION } from '../util/expirationTimer';
 import type { GifType } from '../components/fun/panels/FunPanelGifs';
 import type { NotificationProfileType } from '../types/NotificationProfile';
@@ -668,6 +673,10 @@ export const DataWriter: ServerWritableInterface = {
 
   processGroupCallRingCancellation,
   cleanExpiredGroupCallRingCancellations,
+
+  getGExtTagsByServiceId,
+  setGExtTags,
+  deleteGExtTags,
 
   disableMessageInsertTriggers,
   enableMessageInsertTriggersAndBackfill,
