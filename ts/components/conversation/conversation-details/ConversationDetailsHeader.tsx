@@ -16,7 +16,7 @@ import type { BadgeType } from '../../../badges/types';
 import { UserText } from '../../UserText';
 import { isInSystemContacts } from '../../../util/isInSystemContacts';
 import { InContactsIcon } from '../../InContactsIcon';
-
+import { GextTagList } from '../../GextTagList';
 export type Props = {
   areWeASubscriber: boolean;
   badges?: ReadonlyArray<BadgeType>;
@@ -267,6 +267,12 @@ export function ConversationDetailsHeader({
       {modal}
       {avatar}
       {title}
+      {!isGroup && !isMe && conversation.gextTags && conversation.gextTags.length > 0   && (
+        <div className="ConversationDetailsHeader__tags">
+          <GextTagList tags={conversation.gextTags} style={{ marginInlineStart: 0 }} 
+      />
+        </div>
+      )}
       <div className="ConversationDetailsHeader__subtitle">{subtitle}</div>
     </div>
   );

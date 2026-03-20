@@ -139,6 +139,12 @@ $secondary-text-color: light-dark(
       overflow-wrap: anywhere;
       text-overflow: ellipsis;
     }
+    &__tags {
+      margin-top: 2px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
     &__number {
       @include mixins.font-body-small;
       margin-top: 2px;

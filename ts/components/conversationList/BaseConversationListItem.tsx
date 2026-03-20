@@ -13,10 +13,13 @@ import { isConversationUnread } from '../../util/isConversationUnread';
 import { cleanId } from '../_util';
 import type { LocalizerType, ThemeType } from '../../types/Util';
 import type { ConversationType } from '../../state/ducks/conversations';
+import { ConversationTypes } from '../../state/ducks/conversations';
 import { Spinner } from '../Spinner';
 import { Time } from '../Time';
 import { formatDateTimeShort } from '../../util/timestamp';
 import * as durations from '../../util/durations';
+import type { GextTag } from '../../types/GextTag';
+import { GextTagList } from '../GextTagList';
 
 const BASE_CLASS_NAME =
   'module-conversation-list__item--contact-or-conversation';
@@ -56,6 +59,7 @@ type PropsType = {
   unreadMentionsCount?: number;
   avatarSize?: AvatarSize;
   testId?: string;
+  gextTags?: ReadonlyArray<GextTag>;
 } & Pick<
   ConversationType,
   | 'avatarPlaceholderGradient'
@@ -112,6 +116,7 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
       unreadCount,
       unreadMentionsCount,
       serviceId,
+      gextTags,
     } = props;
 
     const identifier = id ? cleanId(id) : undefined;
@@ -222,7 +227,25 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
           )}
         >
           <div className={HEADER_CLASS_NAME}>
-            <div className={`${HEADER_CLASS_NAME}__name`}>{headerName}</div>
+            <div
+              style={{
+                flex: '1 1 0',
+                minWidth: 0,
+                display: 'flex',
+                alignItems: 'center',
+                overflow: 'hidden',
+              }}
+            >
+              <div
+                className={`${HEADER_CLASS_NAME}__name`}
+                style={{ flexGrow: 0 }}
+              >
+                {headerName}
+              </div>
+              {!isMe && ConversationTypes[0] === conversationType && gextTags && gextTags.length > 0 && (
+                <GextTagList tags={gextTags} />
+              )}
+            </div>
             <Timestamp timestamp={headerDate} i18n={i18n} />
           </div>
           {messageText || isUnread ? (
