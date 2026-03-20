@@ -18,7 +18,6 @@ import type {
   MessageTimestamps,
   PreJoinConversationType,
 } from '../ducks/conversations';
-import type { GextTag } from '../../types/GextTag';
 import type { StoriesStateType, StoryDataType } from '../ducks/stories';
 import {
   ComposerStep,
@@ -936,7 +935,7 @@ export const getConversationSelector = createSelector(
 export const getConversationByIdSelector = createSelector(
   getConversationLookup,
   conversationLookup =>
-    (id: string): undefined | ConversationType =>{
+    (id: string): undefined | ConversationType => {
       return getOwn(conversationLookup, id);
     }
 );
