@@ -67,6 +67,7 @@ export type PropsData = Pick<
   | 'unreadCount'
   | 'unreadMentionsCount'
   | 'serviceId'
+  | 'gextTags'
 > & {
   badge?: BadgeType;
 };
@@ -115,6 +116,7 @@ export const ConversationListItem: FunctionComponent<Props> = React.memo(
     unreadCount,
     unreadMentionsCount,
     serviceId,
+    gextTags,
   }) {
     const isMuted = Boolean(muteExpiresAt && Date.now() < muteExpiresAt);
     const isSomeoneTyping =
@@ -243,6 +245,7 @@ export const ConversationListItem: FunctionComponent<Props> = React.memo(
         unreadCount={unreadCount}
         unreadMentionsCount={unreadMentionsCount}
         serviceId={serviceId}
+        gextTags={gextTags}
       />
     );
   }
