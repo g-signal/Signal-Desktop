@@ -54,7 +54,6 @@ import type { GifType } from '../components/fun/panels/FunPanelGifs';
 import type { NotificationProfileType } from '../types/NotificationProfile';
 import type { DonationReceipt } from '../types/Donations';
 import type { InsertOrUpdateCallLinkFromSyncResult } from './server/callLinks';
-import type { GExtTag } from '../types/GExtTag';
 
 export type ReadableDB = Database & { __readable_db: never };
 export type WritableDB = ReadableDB & { __writable_db: never };
@@ -900,9 +899,6 @@ type ReadableInterface = {
     version: number
   ) => Array<MessageAttributesType>;
 
-  getGExtTagsByServiceId: (
-    serviceId: string
-  ) => Array<GExtTag> | undefined;
 };
 
 type WritableInterface = {
@@ -1214,8 +1210,6 @@ type WritableInterface = {
   processGroupCallRingCancellation(ringId: bigint): void;
   cleanExpiredGroupCallRingCancellations(): void;
 
-  setGExtTags(serviceId: string, tags: Array<GExtTag>): void;
-  deleteGExtTags(serviceId: string): void;
 };
 
 // Adds a database argument

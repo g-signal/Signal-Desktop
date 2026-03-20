@@ -269,9 +269,7 @@ export function ConversationDetailsHeader({
       {title}
       {!isGroup && !isMe && conversation.gextTags && conversation.gextTags.length > 0   && (
         <div className="ConversationDetailsHeader__tags">
-          <GextTagList tags={conversation.gextTags} style={{ marginInlineStart: 0 }} 
-      />
-        </div>
+          <GextTagList tags={conversation.gextTags} />        </div>
       )}
       <div className="ConversationDetailsHeader__subtitle">{subtitle}</div>
     </div>

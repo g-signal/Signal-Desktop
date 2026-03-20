@@ -363,63 +363,6 @@ type LeftPaneLists = Readonly<{
   pinnedConversations: ReadonlyArray<ConversationType>;
 }>;
 
-// TODO(BA): Remove fake tags once server sends real gextTags
-const FAKE_GEXT_TAGS: ReadonlyArray<GextTag> = [
-  {
-    tagId: '1481965355772549930',
-    tagType: 1,
-    text: null,
-    imgBase64: "data:image/png;base64,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",
-    cssBackgroundColor: '#409eff',
-    cssColor: '#ffffff',
-    cssOpacity: 1.0,
-    cssBorderWidth: 0,
-    cssBorderRadius: 4,
-    cssBorderColor: '#409eff',
-    cssBorderStyle: 'solid',
-  },
-  {
-    tagId: '1481961823916923690',
-    tagType: 1,
-    text: null,
-    imgBase64: "data:image/png;base64,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",
-    cssBackgroundColor: '#409eff',
-    cssColor: '#ffffff',
-    cssOpacity: 1.0,
-    cssBorderWidth: 0,
-    cssBorderRadius: 4,
-    cssBorderColor: '#409eff',
-    cssBorderStyle: 'solid',
-  },
-  {
-    tagId: '1481956788533336874',
-    tagType: 0,
-    text: 'Lock',
-    imgBase64: null,
-    cssBackgroundColor: '#409eff',
-    cssColor: '#ffffff',
-    cssOpacity: 1.0,
-    cssBorderWidth: 0,
-    cssBorderRadius: 4,
-    cssBorderColor: '#409eff',
-    cssBorderStyle: 'solid',
-  },
-  {
-    tagId: '1481956726503775018',
-    tagType: 0,
-    text: 'External',
-    imgBase64: null,
-    cssBackgroundColor: '#409eff',
-    cssColor: '#ffffff',
-    cssOpacity: 1.0,
-    cssBorderWidth: 0,
-    cssBorderRadius: 4,
-    cssBorderColor: '#409eff',
-    cssBorderStyle: 'solid',
-  },
-];
-const fakeGextTagConversationIds = new Set<string>();
-
 export const _getLeftPaneLists = (
   lookup: ConversationLookupType,
   comparator: (left: ConversationType, right: ConversationType) => number,
@@ -439,12 +382,6 @@ export const _getLeftPaneLists = (
         ...conversation,
         isSelected: true,
       };
-    }
-
-    // Inject fake tags on all active conversations for testing
-    if (conversation.activeAt) {
-      fakeGextTagConversationIds.add(conversation.id);
-      conversation = { ...conversation, gextTags: FAKE_GEXT_TAGS };
     }
 
     // We always show pinned conversations
@@ -526,9 +463,7 @@ export const getMe = createSelector(
       return getPlaceholderContact();
     }
     const me = lookup[ourConversationId] || getPlaceholderContact();
-    // TODO(BA): remove when server sends real gextTags
-    return me.gextTags ? me : { ...me, gextTags: FAKE_GEXT_TAGS };
-    // return lookup[ourConversationId] || getPlaceholderContact();
+    return me;
   }
 );
 
@@ -908,10 +843,6 @@ export function _conversationSelector(
   // userNumber: string
 ): ConversationType {
   if (conversation) {
-    // TODO(BA): Inject fake tags for testing; remove once server sends real gextTags
-    if (!conversation.gextTags && fakeGextTagConversationIds.has(conversation.id)) {
-      return { ...conversation, gextTags: FAKE_GEXT_TAGS };
-    }
     return conversation;
   }
 
@@ -1006,13 +937,7 @@ export const getConversationByIdSelector = createSelector(
   getConversationLookup,
   conversationLookup =>
     (id: string): undefined | ConversationType =>{
-      const convo = getOwn(conversationLookup, id);
-      // TODO(BA): remove when server sends real gextTags
-      if (convo && !convo.gextTags && fakeGextTagConversationIds.has(id)) {    
-        return { ...convo, gextTags: FAKE_GEXT_TAGS };
-      }
-      return convo;
-      // return getOwn(conversationLookup, id)
+      return getOwn(conversationLookup, id);
     }
 );
 

@@ -28,7 +28,7 @@ import {
 } from '../util/zkgroup';
 import { isMe } from '../util/whatTypeOfConversation';
 import { parseBadgesFromServer } from '../badges/parseBadgesFromServer';
-import { parseGExtTagsFromServer } from '../util/parseGExtTags';
+import { parseGextTagsFromServer } from '../util/parseGextTags';
 import { strictAssert } from '../util/assert';
 import { drop } from '../util/drop';
 import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError';
@@ -728,14 +728,11 @@ async function doGetProfile(
     c.unset('badges');
   }
 
-  // Step #: Save profile `gextTags` to gextRecipient table
+  // Step #: Save profile `gextTags` to conversation attributes
   if (profile.gextTags !== undefined) {
-    const serviceId = c.getServiceId();
-    if (serviceId != null) {
-      const gextTags = parseGExtTagsFromServer(profile.gextTags);
-      await DataWriter.setGExtTags(serviceId, gextTags);
-      log.info(`${logId}: Saved ${gextTags.length} gextTags`);
-    }
+    const gextTags = parseGextTagsFromServer(profile.gextTags);
+    c.set({ gextTags });
+    log.info(`${logId}: Saved ${gextTags.length} gextTags`);
   }
 
   // Step #: Save updated (or clear if missing) profile `credential` to conversation

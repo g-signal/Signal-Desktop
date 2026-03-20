@@ -2253,7 +2253,7 @@ export function Preferences({
                   </div>
                   {me.gextTags && me.gextTags.length > 0 && (
                     <div className="Preferences__profile-chip__tags">
-                      <GextTagList tags={me.gextTags} style={{ marginInlineStart: 0 }} />
+                      <GextTagList tags={me.gextTags} />
                     </div>
                   )}
                   <div className="Preferences__profile-chip__number">
