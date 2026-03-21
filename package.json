@@ -92,7 +92,7 @@
     "build:esbuild:prod": "node scripts/esbuild.js --prod",
     "build:electron": "electron-builder --config.extraMetadata.environment=$SIGNAL_ENV",
     "build:release": "cross-env SIGNAL_ENV=production pnpm run build:electron --config.directories.output=release",
-    "build:staging": "cross-env SIGNAL_ENV=staging pnpm run build:electron --config.directories.output=release",
+    "build:staging": "cross-env SIGNAL_ENV=staging electron-builder --config.extraMetadata.environment=staging --config.directories.output=release",
     "build:release-win32-all": "pnpm run build:release --arm64 --x64",
     "build:preload-cache": "node ts/scripts/generate-preload-cache.js",
     "build:emoji": "run-p build:emoji:32 build:emoji:64",
