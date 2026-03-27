@@ -3047,7 +3047,6 @@ export async function waitThenMaybeUpdateGroup(
     log.info(
       `${logId}: group update was fetched recently, skipping for ${waitTime}ms`
     );
-    log.info(`${logId}: [DEBUG] lastSuccessfulGroupFetch=${lastSuccessfulGroupFetch}, skipping fetchGroupGextTags too`);
     return;
   }
 
