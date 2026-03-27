@@ -10,7 +10,11 @@ import { IdentityChange } from '@signalapp/libsignal-client';
 
 import type { ReadonlyDeep } from 'type-fest';
 import type { ConversationModel } from '../models/conversations';
-import type { CapabilitiesType, GextGroupProfileType, ProfileType } from '../textsecure/WebAPI';
+import type {
+  CapabilitiesType,
+  GextGroupProfileType,
+  ProfileType,
+} from '../textsecure/WebAPI';
 import MessageSender from '../textsecure/SendMessage';
 import type { ServiceIdString } from '../types/ServiceId';
 import { DataWriter } from '../sql/Client';
