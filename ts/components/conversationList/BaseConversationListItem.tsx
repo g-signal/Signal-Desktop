@@ -13,7 +13,6 @@ import { isConversationUnread } from '../../util/isConversationUnread';
 import { cleanId } from '../_util';
 import type { LocalizerType, ThemeType } from '../../types/Util';
 import type { ConversationType } from '../../state/ducks/conversations';
-import { ConversationTypes } from '../../state/ducks/conversations';
 import { Spinner } from '../Spinner';
 import { Time } from '../Time';
 import { formatDateTimeShort } from '../../util/timestamp';
@@ -242,7 +241,7 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
               >
                 {headerName}
               </div>
-              {!isMe && ConversationTypes[0] === conversationType && gextTags && gextTags.length > 0 && (
+              {!isMe && gextTags && gextTags.length > 0 && (
                 <GextTagList tags={gextTags} />
               )}
             </div>

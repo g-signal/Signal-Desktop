@@ -10,20 +10,18 @@ type Props = {
 
 export function GextTagBadge({ tag }: Props): JSX.Element {
   if (tag.tagType === 1) {
+    const src = tag.imgBase64?.startsWith('data:')
+      ? tag.imgBase64
+      : `data:image/png;base64,${tag.imgBase64}`;
+
     return (
       <img
-        src={tag.imgBase64 ?? ''}
+        src={src}
         alt=""
         style={{
-          width: 14,
+          width: 'auto',
           height: 14,
-          objectFit: 'cover',
           flexShrink: 0,
-          opacity: tag.cssOpacity,
-          borderRadius: tag.cssBorderRadius,
-          borderWidth: tag.cssBorderWidth,
-          borderColor: tag.cssBorderColor,
-          borderStyle: tag.cssBorderStyle || 'solid',
         }}
       />
     );

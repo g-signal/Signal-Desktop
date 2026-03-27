@@ -184,6 +184,11 @@ export function ConversationDetailsHeader({
             <UserText text={conversation.title} />
           </div>
         </button>
+        {conversation.gextTags && conversation.gextTags.length > 0 && (
+          <div className="ConversationDetailsHeader__tags">
+            <GextTagList tags={conversation.gextTags} />
+          </div>
+        )}
         {hasNestedButton ? (
           <div className="ConversationDetailsHeader__subtitle">{subtitle}</div>
         ) : (
@@ -267,7 +272,7 @@ export function ConversationDetailsHeader({
       {modal}
       {avatar}
       {title}
-      {!isGroup && !isMe && conversation.gextTags && conversation.gextTags.length > 0   && (
+      {!isMe && conversation.gextTags && conversation.gextTags.length > 0 && (
         <div className="ConversationDetailsHeader__tags">
           <GextTagList tags={conversation.gextTags} />        </div>
       )}

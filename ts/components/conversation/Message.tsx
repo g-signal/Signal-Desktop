@@ -122,6 +122,8 @@ import {
   isEmojiVariantValue,
 } from '../fun/data/emojis';
 import { useGroupedAndOrderedReactions } from '../../util/groupAndOrderReactions';
+import { GextTagList } from '../GextTagList';
+import type { GextTag } from '../../types/GextTag';
 
 const log = createLogger('Message');
 
@@ -282,6 +284,7 @@ export type PropsData = {
   direction: DirectionType;
   timestamp: number;
   receivedAtMS?: number;
+  authorGextTags?: ReadonlyArray<GextTag>;
   status?: MessageStatusType;
   contact?: ReadonlyDeep<EmbeddedContactForUIType>;
   author: Pick<
@@ -1165,7 +1168,8 @@ export class Message extends React.PureComponent<Props, State> {
   }
 
   #renderAuthor(): ReactNode {
-    const { author, contactNameColor, i18n, isSticker } = this.props;
+    const { author, contactNameColor, authorGextTags, i18n, isSticker } =
+      this.props;
 
     if (!this.#shouldRenderAuthor()) {
       return null;
@@ -1181,6 +1185,19 @@ export class Message extends React.PureComponent<Props, State> {
           title={author.isMe ? i18n('icu:you') : author.title}
           module={moduleName}
         />
+        {!author.isMe && authorGextTags && authorGextTags.length > 0 && (
+          <span
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              flexShrink: 0,
+              marginLeft: '4px',
+              minWidth: 'max-content',
+            }}
+          >
+            <GextTagList tags={authorGextTags} />
+          </span>
+        )}
       </div>
     );
   }

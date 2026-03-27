@@ -10,7 +10,7 @@ import { IdentityChange } from '@signalapp/libsignal-client';
 
 import type { ReadonlyDeep } from 'type-fest';
 import type { ConversationModel } from '../models/conversations';
-import type { CapabilitiesType, ProfileType } from '../textsecure/WebAPI';
+import type { CapabilitiesType, GextGroupProfileType, ProfileType } from '../textsecure/WebAPI';
 import MessageSender from '../textsecure/SendMessage';
 import type { ServiceIdString } from '../types/ServiceId';
 import { DataWriter } from '../sql/Client';
@@ -817,6 +817,34 @@ async function doGetProfile(
   }
 
   await DataWriter.updateConversation(c.attributes);
+}
+
+export async function fetchGroupGextTags(
+  conversation: ConversationModel
+): Promise<void> {
+  const logId = `fetchGroupGextTags(${conversation.idForLogging()})`;
+  const groupId = conversation.get('groupId');
+  if (!groupId) {
+    return;
+  }
+
+  const { messaging } = window.textsecure;
+  if (!messaging) {
+    return;
+  }
+
+  try {
+    const result: GextGroupProfileType =
+      await messaging.server.getGextGroupProfile(groupId);
+    if (result.gextTags !== undefined) {
+      const gextTags = parseGextTagsFromServer(result.gextTags);
+      conversation.set({ gextTags });
+      log.info(`${logId}: Saved ${gextTags.length} gextTags`);
+      await DataWriter.updateConversation(conversation.attributes);
+    }
+  } catch (error) {
+    log.warn(`${logId}: Failed to fetch gextTags`, Errors.toLogFormat(error));
+  }
 }
 
 export type UpdateIdentityKeyOptionsType = Readonly<{

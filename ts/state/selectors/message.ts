@@ -796,6 +796,8 @@ export const getPropsForMessage = (
     textDirection: getTextDirection(message.body),
     timestamp: getMessageSentTimestamp(message, { includeEdits: false, log }),
     receivedAtMS: message.received_at_ms,
+    authorGextTags:
+      isGroup && authorId ? conversationSelector(authorId).gextTags : undefined,
   };
 };
 

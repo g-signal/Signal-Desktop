@@ -33,7 +33,6 @@ import { DisappearingTimeDialog } from '../DisappearingTimeDialog';
 import { InContactsIcon } from '../InContactsIcon';
 import { UserText } from '../UserText';
 import type { ContactNameData } from './ContactName';
-import { ConversationTypes } from "../../state/ducks/conversations";
 import {
   MessageRequestActionsConfirmation,
   MessageRequestState,
@@ -78,7 +77,6 @@ function HeaderInfoTitle({
           <UserText text={title} />
         </span>
         <span className="ContactModal__official-badge" />
-        {/* {type === ConversationTypes[0] && gextTags && gextTags.length > 0 && <GextTagList tags={gextTags} />} */}
       </div>
     );
   }
@@ -98,7 +96,6 @@ function HeaderInfoTitle({
           {i18n('icu:noteToSelf')}
         </span>
         <span className="ContactModal__official-badge" />
-        {/* {type === ConversationTypes[0] && gextTags && gextTags.length > 0 && <GextTagList tags={gextTags} />} */}
       </div>
     );
   }
@@ -123,7 +120,7 @@ function HeaderInfoTitle({
           tooltipContainerRef={headerRef}
         />
       ) : null}
-      {type === ConversationTypes[0] && gextTags && gextTags.length > 0 && <GextTagList tags={gextTags} />}
+      {gextTags && gextTags.length > 0 && <GextTagList tags={gextTags} />}
     </div>
   );
 }

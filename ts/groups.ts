@@ -101,6 +101,7 @@ import {
   validateGroupSendEndorsementsExpiration,
 } from './util/groupSendEndorsements';
 import { getProfile } from './util/getProfile';
+import { fetchGroupGextTags } from './services/profiles';
 import { generateMessageId } from './util/generateMessageId';
 import { postSaveUpdates } from './util/cleanup';
 import { MessageModel } from './models/messages';
@@ -3046,10 +3047,9 @@ export async function waitThenMaybeUpdateGroup(
     log.info(
       `${logId}: group update was fetched recently, skipping for ${waitTime}ms`
     );
+    log.info(`${logId}: [DEBUG] lastSuccessfulGroupFetch=${lastSuccessfulGroupFetch}, skipping fetchGroupGextTags too`);
     return;
   }
-
-  log.info(`${logId}: group update was not fetched recently, queuing update`);
 
   // Then wait to process all outstanding messages for this conversation
   await conversation.queueJob('waitThenMaybeUpdateGroup', async () => {
@@ -3095,6 +3095,8 @@ export async function maybeUpdateGroup(
       { conversation, receivedAt, sentAt, updates },
       { viaFirstStorageSync }
     );
+
+    drop(fetchGroupGextTags(conversation));
   } catch (error) {
     log.error(`${logId}: Failed to update group:`, Errors.toLogFormat(error));
     throw error;

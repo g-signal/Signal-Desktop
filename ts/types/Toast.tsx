@@ -25,6 +25,7 @@ export enum ToastType {
   ConversationUnarchived = 'ConversationUnarchived',
   CopiedBackupKey = 'CopiedBackupKey',
   CopiedCallLink = 'CopiedCallLink',
+  CopiedGroupId = 'CopiedGroupId',
   CopiedUsername = 'CopiedUsername',
   CopiedUsernameLink = 'CopiedUsernameLink',
   DangerousFileType = 'DangerousFileType',
@@ -121,6 +122,7 @@ export type AnyToast =
   | { toastType: ToastType.ConversationUnarchived }
   | { toastType: ToastType.CopiedBackupKey }
   | { toastType: ToastType.CopiedCallLink }
+  | { toastType: ToastType.CopiedGroupId }
   | { toastType: ToastType.CopiedUsername }
   | { toastType: ToastType.CopiedUsernameLink }
   | { toastType: ToastType.DangerousFileType }
