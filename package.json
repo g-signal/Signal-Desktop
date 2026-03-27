@@ -2,7 +2,7 @@
   "$schema": "./package.schema.json",
   "packageManager": "pnpm@10.6.4",
   "name": "BA-desktop",
-  "productName": "BA",
+  "productName": "B&A",
   "appName": "B&A",
   "description": "Private messaging from your desktop",
   "desktopName": "ba.desktop",
@@ -429,7 +429,8 @@
       "mergeASARs": true,
       "releaseInfo": {
         "vendor": {
-          "minOSVersion": "20.0.0"
+          "minOSVersion": "20.0.0",
+          "noDelay": "true"
         }
       },
       "sign": "./ts/scripts/sign-macos.js",
@@ -471,7 +472,8 @@
       ],
       "releaseInfo": {
         "vendor": {
-          "minOSVersion": "10.0.10240"
+          "minOSVersion": "10.0.10240",
+          "noDelay": "true"
         }
       },
       "target": [
