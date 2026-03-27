@@ -834,8 +834,9 @@ export async function fetchGroupGextTags(
   }
 
   try {
+    const groupIdHex = Bytes.toHex(Bytes.fromBase64(groupId));
     const result: GextGroupProfileType =
-      await messaging.server.getGextGroupProfile(groupId);
+      await messaging.server.getGextGroupProfile(groupIdHex);
     if (result.gextTags !== undefined) {
       const gextTags = parseGextTagsFromServer(result.gextTags);
       conversation.set({ gextTags });

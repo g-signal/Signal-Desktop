@@ -489,7 +489,7 @@ export function ConversationDetails({
         )}
       </div>
 
-      {isGroup && conversation.groupId && (
+      {isGroup && conversation?.groupVersion === 2 && conversation.groupId && (
         <PanelSection>
           <PanelRow
             label="Group ID"
