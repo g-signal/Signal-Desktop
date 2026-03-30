@@ -7,9 +7,10 @@ import { GextTagBadge } from './GextTagBadge';
 
 type Props = {
   tags: ReadonlyArray<GextTag>;
+  height?: number;
 };
 
-export function GextTagList({ tags }: Props): JSX.Element | null {
+export function GextTagList({ tags, height }: Props): JSX.Element | null {
   if (!tags.length) {
     return null;
   }
@@ -26,7 +27,7 @@ export function GextTagList({ tags }: Props): JSX.Element | null {
       }}
     >
       {tags.map(tag => (
-        <GextTagBadge key={tag.tagId} tag={tag} />
+        <GextTagBadge key={tag.tagId} tag={tag} height={height} />
       ))}
     </div>
   );

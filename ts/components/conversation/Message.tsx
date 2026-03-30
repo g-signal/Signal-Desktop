@@ -1195,7 +1195,7 @@ export class Message extends React.PureComponent<Props, State> {
               minWidth: 'max-content',
             }}
           >
-            <GextTagList tags={authorGextTags} />
+            <GextTagList tags={authorGextTags} height={13} />
           </span>
         )}
       </div>

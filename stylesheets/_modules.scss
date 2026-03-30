@@ -1112,7 +1112,10 @@ $message-padding-horizontal: 12px;
 .module-message__author {
   @include mixins.font-body-2-bold;
 
+  display: flex;
+  align-items: center;
   height: 18px;
+  min-width: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
@@ -1123,7 +1126,10 @@ $message-padding-horizontal: 12px;
 .module-message__author_with_sticker {
   @include mixins.font-body-2-bold;
 
+  display: flex;
+  align-items: center;
   height: 18px;
+  min-width: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
