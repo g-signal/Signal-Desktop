@@ -898,6 +898,7 @@ type ReadableInterface = {
   getMessageSampleForSchemaVersion: (
     version: number
   ) => Array<MessageAttributesType>;
+
 };
 
 type WritableInterface = {
@@ -1208,6 +1209,7 @@ type WritableInterface = {
 
   processGroupCallRingCancellation(ringId: bigint): void;
   cleanExpiredGroupCallRingCancellations(): void;
+
 };
 
 // Adds a database argument

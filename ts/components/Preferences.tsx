@@ -104,6 +104,7 @@ import {
 } from '../types/ChatFolder';
 import type { GetConversationByIdType } from '../state/selectors/conversations';
 import type { ProfileEditorPage } from '../types/Nav';
+import { GextTagList } from "./GextTagList";
 
 type CheckboxChangeHandlerType = (value: boolean) => unknown;
 type SelectChangeHandlerType<T = string | number> = (value: T) => unknown;
@@ -2250,6 +2251,11 @@ export function Preferences({
                   <div className="Preferences__profile-chip__name">
                     {me.title}
                   </div>
+                  {me.gextTags && me.gextTags.length > 0 && (
+                    <div className="Preferences__profile-chip__tags">
+                      <GextTagList tags={me.gextTags} />
+                    </div>
+                  )}
                   <div className="Preferences__profile-chip__number">
                     {me.phoneNumber}
                   </div>

@@ -495,6 +495,14 @@ export function renderToast({
     );
   }
 
+  if (toastType === ToastType.CopiedGroupId) {
+    return (
+      <Toast onClose={hideToast} timeout={3 * SECOND}>
+        {i18n('icu:ConversationDetails--group-id-copied')}
+      </Toast>
+    );
+  }
+
   if (toastType === ToastType.DecryptionError) {
     assertDev(
       toast.toastType === ToastType.DecryptionError,

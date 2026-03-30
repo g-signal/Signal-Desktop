@@ -129,8 +129,8 @@ importers:
         specifier: 3.27.0
         version: 3.27.0(react@18.3.1)
       '@signalapp/libsignal-client':
-        specifier: file:../libsignal/node
-        version: file:../libsignal/node
+        specifier: npm:@gg-signal/libsignal-client@0.76.7
+        version: '@gg-signal/libsignal-client@0.76.7'
       '@signalapp/minimask':
         specifier: 1.0.1
         version: 1.0.1
@@ -1450,6 +1450,9 @@ packages:
 
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
+
+  '@gg-signal/libsignal-client@0.76.7':
+    resolution: {integrity: sha512-s0Hey0OvAerP9DSdkl2SrOeMQ6HXBSymjoUqlkOMoTz6fCDjFah/60Sev1K+8YVhYC5gUq9N3aFQk3JflKeyRQ==}
 
   '@gitbeaker/core@38.12.1':
     resolution: {integrity: sha512-8XMVcBIdVAAoxn7JtqmZ2Ee8f+AZLcCPmqEmPFOXY2jPS84y/DERISg/+sbhhb18iRy+ZsZhpWgQ/r3CkYNJOQ==}
@@ -2775,9 +2778,6 @@ packages:
 
   '@signalapp/libsignal-client@0.60.2':
     resolution: {integrity: sha512-tU4kNP/yCwkFntb2ahXOSQJtzdy+YifAB2yv5hw0qyKSidRHLn6bYiz4Zo2tjxLDRoBLAUxCRsQramStiqNZdA==}
-
-  '@signalapp/libsignal-client@file:../libsignal/node':
-    resolution: {directory: ../libsignal/node, type: directory}
 
   '@signalapp/minimask@1.0.1':
     resolution: {integrity: sha512-QAwo0joA60urTNbW9RIz6vLKQjy+jdVtH7cvY0wD9PVooD46MAjE40MLssp4xUJrph91n2XvtJ3pbEUDrmT2AA==}
@@ -10580,6 +10580,12 @@ snapshots:
 
   '@gar/promisify@1.1.3': {}
 
+  '@gg-signal/libsignal-client@0.76.7':
+    dependencies:
+      node-gyp-build: 4.8.4
+      type-fest: 4.26.1
+      uuid: 11.0.2
+
   '@gitbeaker/core@38.12.1':
     dependencies:
       '@gitbeaker/requester-utils': 38.12.1
@@ -12477,12 +12483,6 @@ snapshots:
       node-gyp-build: 4.8.4
       type-fest: 4.26.1
       uuid: 8.3.2
-
-  '@signalapp/libsignal-client@file:../libsignal/node':
-    dependencies:
-      node-gyp-build: 4.8.4
-      type-fest: 4.26.1
-      uuid: 11.0.2
 
   '@signalapp/minimask@1.0.1': {}
 

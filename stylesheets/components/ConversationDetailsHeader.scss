@@ -38,7 +38,13 @@
     height: 22px;
     background-color: currentColor;
   }
-
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding-bottom: 8px;
+  }
   &__subtitle {
     @include mixins.font-body-1;
     color: variables.$color-gray-60;

@@ -461,8 +461,8 @@ export const getMe = createSelector(
     if (!ourConversationId) {
       return getPlaceholderContact();
     }
-
-    return lookup[ourConversationId] || getPlaceholderContact();
+    const me = lookup[ourConversationId] || getPlaceholderContact();
+    return me;
   }
 );
 
@@ -935,8 +935,9 @@ export const getConversationSelector = createSelector(
 export const getConversationByIdSelector = createSelector(
   getConversationLookup,
   conversationLookup =>
-    (id: string): undefined | ConversationType =>
-      getOwn(conversationLookup, id)
+    (id: string): undefined | ConversationType => {
+      return getOwn(conversationLookup, id);
+    }
 );
 
 export const getConversationByServiceIdSelector = createSelector(

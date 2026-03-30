@@ -40,6 +40,8 @@ import {
 import type { MinimalConversation } from '../../hooks/useMinimalConversation';
 import { LocalDeleteWarningModal } from '../LocalDeleteWarningModal';
 import { InAnotherCallTooltip } from './InAnotherCallTooltip';
+import type { GextTag } from '../../types/GextTag';
+import { GextTagList } from '../GextTagList';
 
 function HeaderInfoTitle({
   name,
@@ -49,6 +51,7 @@ function HeaderInfoTitle({
   isMe,
   isSignalConversation,
   headerRef,
+  gextTags,
 }: {
   name: string | null;
   title: string;
@@ -57,11 +60,22 @@ function HeaderInfoTitle({
   isMe: boolean;
   isSignalConversation: boolean;
   headerRef: React.RefObject<HTMLDivElement>;
+  gextTags?: ReadonlyArray<GextTag>;
 }) {
   if (isSignalConversation) {
     return (
       <div className="module-ConversationHeader__header__info__title">
-        <UserText text={title} />
+        <span
+          style={{
+            flex: '0 1 auto',
+            minWidth: 0,
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          <UserText text={title} />
+        </span>
         <span className="ContactModal__official-badge" />
       </div>
     );
@@ -70,7 +84,17 @@ function HeaderInfoTitle({
   if (isMe) {
     return (
       <div className="module-ConversationHeader__header__info__title">
-        {i18n('icu:noteToSelf')}
+        <span
+          style={{
+            flex: '0 1 auto',
+            minWidth: 0,
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {i18n('icu:noteToSelf')}
+        </span>
         <span className="ContactModal__official-badge" />
       </div>
     );
@@ -78,7 +102,17 @@ function HeaderInfoTitle({
 
   return (
     <div className="module-ConversationHeader__header__info__title">
-      <UserText text={title} />
+      <span
+        style={{
+          flex: '0 1 auto',
+          minWidth: 0,
+          overflow: 'hidden',
+          textOverflow: 'ellipsis',
+          whiteSpace: 'nowrap',
+        }}
+      >
+        <UserText text={title} />
+      </span>
       {isInSystemContacts({ name: name ?? undefined, type }) ? (
         <InContactsIcon
           className="module-ConversationHeader__header__info__title__in-contacts-icon"
@@ -86,6 +120,7 @@ function HeaderInfoTitle({
           tooltipContainerRef={headerRef}
         />
       ) : null}
+      {gextTags && gextTags.length > 0 && <GextTagList tags={gextTags} />}
     </div>
   );
 }
@@ -115,6 +150,7 @@ export type PropsDataType = {
   outgoingCallButtonStyle: OutgoingCallButtonStyle;
   sharedGroupNames: ReadonlyArray<string>;
   theme: ThemeType;
+  gextTags?: ReadonlyArray<GextTag>;
 };
 
 export type PropsActionsType = {
@@ -198,6 +234,7 @@ export const ConversationHeader = memo(function ConversationHeader({
   setLocalDeleteWarningShown,
   sharedGroupNames,
   theme,
+  gextTags,
 }: PropsType): JSX.Element | null {
   // Comes from a third-party dependency
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -306,6 +343,7 @@ export const ConversationHeader = memo(function ConversationHeader({
               onViewUserStories={onViewUserStories}
               onViewConversationDetails={onViewConversationDetails}
               isSignalConversation={isSignalConversation ?? false}
+              gextTags={gextTags}
             />
             {!isSmsOnlyOrUnregistered && !isSignalConversation && (
               <OutgoingCallButtons
@@ -430,6 +468,7 @@ function HeaderContent({
   isSignalConversation,
   onViewUserStories,
   onViewConversationDetails,
+  gextTags,
 }: {
   conversation: MinimalConversation;
   badge: BadgeType | null;
@@ -441,6 +480,7 @@ function HeaderContent({
   isSignalConversation: boolean;
   onViewUserStories: () => void;
   onViewConversationDetails: () => void;
+  gextTags?: ReadonlyArray<GextTag>;
 }) {
   let onClick: undefined | (() => void);
   const { type } = conversation;
@@ -495,6 +535,7 @@ function HeaderContent({
         isMe={conversation.isMe}
         isSignalConversation={isSignalConversation}
         headerRef={headerRef}
+        gextTags={gextTags}
       />
       {(conversation.expireTimer != null || conversation.isVerified) && (
         <div className="module-ConversationHeader__header__info__subtitle">

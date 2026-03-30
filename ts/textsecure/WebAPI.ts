@@ -719,6 +719,7 @@ const CHAT_CALLS = {
   multiRecipient: 'v1/messages/multi_recipient',
   phoneNumberDiscoverability: 'v2/accounts/phone_number_discoverability',
   profile: 'v1/profile',
+  gextGroupProfile: 'v1/gext/group/profile',
   backup: 'v1/archives',
   backupMedia: 'v1/archives/media',
   backupMediaBatch: 'v1/archives/media/batch',
@@ -957,6 +958,11 @@ export type ProfileType = Readonly<{
   capabilities?: CapabilitiesType;
   paymentAddress?: string;
   badges?: unknown;
+  gextTags?: unknown;
+}>;
+
+export type GextGroupProfileType = Readonly<{
+  gextTags?: unknown;
 }>;
 
 export type GetAccountForUsernameOptionsType = Readonly<{
@@ -1635,6 +1641,7 @@ export type WebAPIType = {
     serviceId: ServiceIdString,
     options: ProfileFetchAuthRequestOptions
   ) => Promise<ProfileType>;
+  getGextGroupProfile: (groupId: string) => Promise<GextGroupProfileType>;
   getAccountForUsername: (
     options: GetAccountForUsernameOptionsType
   ) => Promise<GetAccountForUsernameResultType>;
@@ -2194,6 +2201,7 @@ export function initialize({
       getMyKeyCounts,
       getOnboardingStoryManifest,
       getProfile,
+      getGextGroupProfile,
       getProfileUnauth,
       getProvisioningResource,
       getReleaseNote,
@@ -2771,6 +2779,19 @@ export function initialize({
         // TODO DESKTOP-8719
         zodSchema: z.unknown(),
       })) as ProfileType;
+    }
+
+    async function getGextGroupProfile(
+      groupId: string
+    ): Promise<GextGroupProfileType> {
+      return (await _ajax({
+        host: 'chatService',
+        call: 'gextGroupProfile',
+        httpType: 'GET',
+        urlParameters: `/${groupId}`,
+        responseType: 'json',
+        zodSchema: z.unknown(),
+      })) as GextGroupProfileType;
     }
 
     async function getTransferArchive({

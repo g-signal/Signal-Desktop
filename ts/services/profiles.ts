@@ -10,7 +10,11 @@ import { IdentityChange } from '@signalapp/libsignal-client';
 
 import type { ReadonlyDeep } from 'type-fest';
 import type { ConversationModel } from '../models/conversations';
-import type { CapabilitiesType, ProfileType } from '../textsecure/WebAPI';
+import type {
+  CapabilitiesType,
+  GextGroupProfileType,
+  ProfileType,
+} from '../textsecure/WebAPI';
 import MessageSender from '../textsecure/SendMessage';
 import type { ServiceIdString } from '../types/ServiceId';
 import { DataWriter } from '../sql/Client';
@@ -28,6 +32,7 @@ import {
 } from '../util/zkgroup';
 import { isMe } from '../util/whatTypeOfConversation';
 import { parseBadgesFromServer } from '../badges/parseBadgesFromServer';
+import { parseGextTagsFromServer } from '../util/parseGextTags';
 import { strictAssert } from '../util/assert';
 import { drop } from '../util/drop';
 import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError';
@@ -727,6 +732,13 @@ async function doGetProfile(
     c.unset('badges');
   }
 
+  // Step #: Save profile `gextTags` to conversation attributes
+  if (profile.gextTags !== undefined) {
+    const gextTags = parseGextTagsFromServer(profile.gextTags);
+    c.set({ gextTags });
+    log.info(`${logId}: Saved ${gextTags.length} gextTags`);
+  }
+
   // Step #: Save updated (or clear if missing) profile `credential` to conversation
   if (options.profileCredentialRequestContext != null) {
     if (profile.credential != null && profile.credential.length > 0) {
@@ -809,6 +821,35 @@ async function doGetProfile(
   }
 
   await DataWriter.updateConversation(c.attributes);
+}
+
+export async function fetchGroupGextTags(
+  conversation: ConversationModel
+): Promise<void> {
+  const logId = `fetchGroupGextTags(${conversation.idForLogging()})`;
+  const groupId = conversation.get('groupId');
+  if (!groupId) {
+    return;
+  }
+
+  const { messaging } = window.textsecure;
+  if (!messaging) {
+    return;
+  }
+
+  try {
+    const groupIdHex = Bytes.toHex(Bytes.fromBase64(groupId));
+    const result: GextGroupProfileType =
+      await messaging.server.getGextGroupProfile(groupIdHex);
+    if (result.gextTags !== undefined) {
+      const gextTags = parseGextTagsFromServer(result.gextTags);
+      conversation.set({ gextTags });
+      log.info(`${logId}: Saved ${gextTags.length} gextTags`);
+      await DataWriter.updateConversation(conversation.attributes);
+    }
+  } catch (error) {
+    log.warn(`${logId}: Failed to fetch gextTags`, Errors.toLogFormat(error));
+  }
 }
 
 export type UpdateIdentityKeyOptionsType = Readonly<{

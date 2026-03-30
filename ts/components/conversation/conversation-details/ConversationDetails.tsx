@@ -15,6 +15,7 @@ import type { SmartChooseGroupMembersModalPropsType } from '../../../state/smart
 import type { SmartConfirmAdditionsModalPropsType } from '../../../state/smart/ConfirmAdditionsModal';
 import { assertDev } from '../../../util/assert';
 import { getMutedUntilText } from '../../../util/getMutedUntilText';
+import * as Bytes from '../../../Bytes';
 
 import type { LocalizerType, ThemeType } from '../../../types/Util';
 import type { BadgeType } from '../../../badges/types';
@@ -54,6 +55,7 @@ import { ConversationDetailsGroups } from './ConversationDetailsGroups';
 import { PanelType } from '../../../types/Panels';
 import { type CallHistoryGroup } from '../../../types/CallDisposition';
 import { NavTab } from '../../../types/Nav';
+import { ToastType } from '../../../types/Toast';
 import { ContextMenu } from '../../ContextMenu';
 import { canHaveNicknameAndNote } from '../../../util/nicknames';
 import { CallHistoryGroupPanelSection } from './CallHistoryGroupPanelSection';
@@ -486,6 +488,64 @@ export function ConversationDetails({
           </Button>
         )}
       </div>
+
+      {isGroup && conversation?.groupVersion === 2 && conversation.groupId && (
+        <PanelSection>
+          <PanelRow
+            label="Group ID"
+            right={
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                  fontSize: 12,
+                  color: 'var(--color-gray-45)',
+                  fontFamily: 'monospace',
+                }}
+              >
+                <span
+                  style={{
+                    maxWidth: 180,
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {Bytes.toHex(Bytes.fromBase64(conversation.groupId))}
+                </span>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    color: 'var(--color-ultramarine)',
+                    fontSize: 12,
+                    padding: 0,
+                    flexShrink: 0,
+                  }}
+                  onClick={() => {
+                    void navigator.clipboard
+                      .writeText(
+                        Bytes.toHex(
+                          Bytes.fromBase64(conversation.groupId ?? '')
+                        )
+                      )
+                      .then(() => {
+                        window.reduxActions.toast.showToast({
+                          toastType: ToastType.CopiedGroupId,
+                        });
+                      });
+                  }}
+                >
+                  {i18n('icu:copy')}
+                </button>
+              </span>
+            }
+          />
+        </PanelSection>
+      )}
 
       {isSignalConversation && (
         <>

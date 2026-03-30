@@ -23,7 +23,7 @@ export function DialogExpiredBuild({
       containerWidthBreakpoint={containerWidthBreakpoint}
       type="error"
       onClick={() => {
-        openLinkInWebBrowser('https://signal.org/download/');
+        openLinkInWebBrowser('https://ba-chat.com/download/');
       }}
       clickLabel={i18n('icu:upgrade')}
       hasAction
