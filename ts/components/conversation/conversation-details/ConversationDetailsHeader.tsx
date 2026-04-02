@@ -186,7 +186,7 @@ export function ConversationDetailsHeader({
         </button>
         {conversation.gextTags && conversation.gextTags.length > 0 && (
           <div className="ConversationDetailsHeader__tags">
-            <GextTagList tags={conversation.gextTags} />
+            <GextTagList tags={conversation.gextTags} height={26} />
           </div>
         )}
         {hasNestedButton ? (
@@ -274,7 +274,8 @@ export function ConversationDetailsHeader({
       {title}
       {!isMe && conversation.gextTags && conversation.gextTags.length > 0 && (
         <div className="ConversationDetailsHeader__tags">
-          <GextTagList tags={conversation.gextTags} />        </div>
+          <GextTagList tags={conversation.gextTags} height={26} />
+        </div>
       )}
       <div className="ConversationDetailsHeader__subtitle">{subtitle}</div>
     </div>

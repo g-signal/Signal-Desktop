@@ -6,9 +6,10 @@ import type { GextTag } from '../types/GextTag';
 
 type Props = {
   tag: GextTag;
+  height?: number;
 };
 
-export function GextTagBadge({ tag }: Props): JSX.Element {
+export function GextTagBadge({ tag, height = 14 }: Props): JSX.Element {
   if (tag.tagType === 1) {
     const src = tag.imgBase64?.startsWith('data:')
       ? tag.imgBase64
@@ -20,7 +21,7 @@ export function GextTagBadge({ tag }: Props): JSX.Element {
         alt=""
         style={{
           width: 'auto',
-          height: 14,
+          height,
           flexShrink: 0,
         }}
       />
@@ -32,8 +33,8 @@ export function GextTagBadge({ tag }: Props): JSX.Element {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        height: 14,
-        fontSize: 10,
+        height,
+        fontSize: Math.round(height * (10 / 14)),
         lineHeight: 1,
         flexShrink: 0,
         padding: '2px 4px',
