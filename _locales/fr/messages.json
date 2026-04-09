@@ -3954,7 +3954,7 @@
     "messageformat": "La demande d'adhésion de {joinerName} a été refusée."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} a envoyé et annulé sa demande d'adhésion via le lien du groupe.} other {{joinerName} a envoyé et annulé {numberOfRequests,number} demandes d'adhésion via le lien du groupe.}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} a envoyé puis annulé sa demande d'adhésion via le lien du groupe.} other {{joinerName} a envoyé puis annulé {numberOfRequests,number} demandes d'adhésion via le lien du groupe.}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Vous avez activé le lien du groupe sans exiger l'approbation des nouveaux membres par un admin."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Réinitialisation du nom d'utilisateur requise"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Afficher le lien associé au nom d'utilisateur"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Afficher le lien associé au nom d'utilisateur"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Partagez votre nom d'utilisateur"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Un souci ? <contactSupportLink>Contactez l'assistance</contactSupportLink>."
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Saisir un montant personnalisé"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Carte de crédit ou de débit"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Veuillez saisir les informations de votre carte bancaire. Signal ne collecte pas et ne stocke pas vos informations personnelles. <learnMoreLink>En savoir plus</learnMoreLink>."
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Numéro de carte"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Date d'expiration"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Faire un don de {formattedCurrencyAmount} à Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Numéro de carte incorrect"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Carte arrivée à expiration"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Veuillez indiquer une année."
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Non valide"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Code trop court"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Gagnez le macaron Coup de pouce pour 30 jours"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Reçu de don"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Merci de soutenir Signal. Votre contribution nous aide à mener à bien notre mission : protéger la liberté d'expression et offrir des communications sécurisées à des millions de personnes à travers le monde grâce à une technologie open source. Si vous résidez aux États-Unis, conservez ce reçu pour le communiquer aux services fiscaux. La Signal Technology Foundation est un organisme à but non lucratif, régi par le code fédéral des impôts des États-Unis. Notre numéro d'identification fiscale est le suivant : 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Don annulé"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Un don en cours de traitement nécessite une vérification supplémentaire."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Un don en cours de traitement nécessite une vérification."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Don suspendu"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Votre don n'a pas été traité et vous n'avez pas été débité. Voulez-vous réessayer ?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Réessayer"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Mode de paiement refusé"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Votre don est en cours de traitement. Cela peut prendre quelques minutes."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Don annulé"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Oups ! Le délai imparti pour finaliser l'opération est écoulé. Veuillez recommencer."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Encore une petite vérification..."
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Avant, quand on appuyait sur la touche Échap dans la barre de recherche d'émojis, cela pouvait générer une erreur. Mais ce bug n'a pas échappé à la règle : nos ingénieurs l'ont pulvérisé."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Cette mise à jour éradique quelques bugs mineurs. L'un d'entre eux affichait parfois les émojis dans un joyeux désordre quand on voulait réagir à un message. On l'a remis à sa place. Et ça, ça mérite bien un émoji flamme."
   }
 }

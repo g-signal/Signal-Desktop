@@ -3954,7 +3954,7 @@
     "messageformat": "A request to join the group from {joinerName} was denied."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {Rinne {joinerName} iarratas ar dhul isteach tríd an nasc grúpa agus chuir sé/sí an t-iarratas sin ar ceal} two {Rinne {joinerName} {numberOfRequests,number} iarratas ar dhul isteach tríd an nasc grúpa agus chuir sé/sí na hiarratais sin ar ceal} few {Rinne {joinerName} {numberOfRequests,number} iarratas ar dhul isteach tríd an nasc grúpa agus chuir sé/sí na hiarratais sin ar ceal} many {Rinne {joinerName} {numberOfRequests,number} n-iarratas ar dhul isteach tríd an nasc grúpa agus chuir sé/sí na hiarratais sin ar ceal} other {Rinne {joinerName} {numberOfRequests,number} iarratas ar dhul isteach tríd an nasc grúpa agus chuir sé/sí na hiarratais sin ar ceal}}"
+    "messageformat": "{numberOfRequests, plural, one {Rinne {joinerName} iarratas ar dhul isteach tríd an nasc grúpa agus cuireadh an t-iarratas sin ar ceal} two {Rinne {joinerName} {numberOfRequests,number} iarratas ar dhul isteach tríd an nasc grúpa agus cuireadh na hiarratais sin ar ceal} few {Rinne {joinerName} {numberOfRequests,number} iarratas ar dhul isteach tríd an nasc grúpa agus cuireadh na hiarratais sin ar ceal} many {Rinne {joinerName} {numberOfRequests,number} n-iarratas ar dhul isteach tríd an nasc grúpa agus cuireadh na hiarratais sin ar ceal} other {Rinne {joinerName} {numberOfRequests,number} iarratas ar dhul isteach tríd an nasc grúpa agus cuireadh na hiarratais sin ar ceal}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Chas tú air an nasc grúpa le faomhadh riarthóra díchumasaithe."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Ní mór nasc an ainm úsáideora a athshocrú"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Oscail scáileán nasc an ainm úsáideora"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Oscail scáileán nasc an ainm úsáideora"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Comhroinn d'ainm úsáideora"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Fadhbanna agat? <contactSupportLink>Déan teagmháil leis an bhfoireann tacaíochta</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Cuir isteach méid saincheaptha"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Cárta creidmheasa nó dochair"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Cuir isteach sonraí do chárta creidmheasa nó dochair. Ní dhéanann Signal d'fhaisnéis phearsanta a bhailiú ná a stóráil. <learnMoreLink>Tuilleadh faisnéise</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Uimhir an chárta"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Dáta as Feidhm"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Tabhair {formattedCurrencyAmount} do Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Uimhir chárta neamhbhailí"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Tá an cárta imithe as feidhm"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Bliain de dhíth"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Neamhbhailí"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Cód róghearr"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Faigh Suaitheantas spreagtha Signal go ceann 30 lá"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Admháil tabhartais"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Go raibh maith agat as tacú le Signal. Cabhraíonn do dheonachán cur leis an misean chun saoirse cainte a chosaint agus chun cur ar ár gcumas cumarsáid dhomhanda a chur ar fáil ag na milliúin ar fud an domhan, trí theicneolaíocht phríobháideachta foinse oscailte. Más cónaitheoir sna Stáit Aontaithe thú, coinnigh an admháil seo do do thaifid chánach. Eagraíocht neamhbhrabúis díolmhaithe ó cháin sna Stáit Aontaithe faoi alt 501c3 den Internal Revenue Code is ea Signal Technology Foundation. Is é 82–4506840 ár nUimhir Aitheantais Cánach Feidearálaí."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Tabhartas curtha ar ceal"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Tá tabhartas ar bun agat a bhfuil fíorú sa bhreis ag teastáil ina leith."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Tá tabhartas ar bun agat a éilíonn fíorú."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Cuireadh isteach ar an tabhartas"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Níor gearradh táille ar do chárta. An bhfuil fonn ort an tabhartas a atriail?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Triail arís é"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Diúltaíodh don mhodh íocaíochta"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Tá do thabhartas á phróiseáil fós. Tógann sé seo nóiméad nó dhó."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Tabhartas curtha ar ceal"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Tá sé rófhada ó thosaigh tú ar do thabhartas. Tosaigh air arís."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Fíorú breise ag teastáil"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Réitíomar fabht sa bhosca cuardaigh emoji."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Cúpla réiteach bheaga ar fhabhtanna."
   }
 }

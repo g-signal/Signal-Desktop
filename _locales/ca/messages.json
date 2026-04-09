@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Cal restablir l'enllaç de l'àlies"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Obrir pantalla d'enllaç de l'àlies"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Obrir pantalla d'enllaç de l'àlies"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Comparteix el teu àlies"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Tens problemes? <contactSupportLink>Posa't amb contacte amb el servei d'assistència</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Introdueix la quantitat personalitzada"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Targeta de crèdit o dèbit"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Introdueix la informació de la teva targeta de crèdit o dèbit. Signal no recopila ni emmagatzema la teva informació personal. <learnMoreLink>Més informació</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Número de targeta"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Data de caducitat"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Fes una donació de {formattedCurrencyAmount} a Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Número de targeta no vàlid"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "La targeta ha vençut."
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Has d'introduir l'any"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "No vàlid"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Codi massa curt"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Aconsegueix una insígnia Boost de Signal durant 30 dies"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Rebut de la donació"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Gràcies per donar suport a Signal. Amb la teva contribució, ens ajudes en la nostra missió de protegir la llibertat d'expressió i permetre una comunicació global segura per a milions de persones arreu del món gràcies a una tecnologia de codi obert centrada en la privacitat. Si vius als Estats Units, conserva aquest rebut per als teus registres fiscals. Signal Technology Foundation és una organització sense ànim de lucre exempta d'impostos als Estats Units segons la secció 501c3 del codi tributari dels Estats Units (Internal Revenue Code). El nostre número d'identificació fiscal federal és el 82–4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Donació cancel·lada"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Tens una donació en curs que necessita verificació addicional."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Tens una donació en curs que necessita confirmació."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Donació interrompuda"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "No s'ha efectuat el càrrec a la teva targeta.  Vols tornar a intentar fer la donació?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Torna a provar-ho"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Mètode de pagament rebutjat"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "La teva donació encara s'està processant. Això pot trigar uns minuts."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Donació cancel·lada"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Ha passat massa temps des que vas començar la teva donació. Si us plau, torna a començar."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Cal verificació addicional"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Hem corregit un error al quadre de cerca d'emoji."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Unes quantes correccions d'errors menors."
   }
 }

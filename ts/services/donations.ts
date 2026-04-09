@@ -85,7 +85,39 @@ export async function initialize(): Promise<void> {
     return;
   }
 
-  if (didResumeWorkflowAtStartup() && !isDonationPageVisible()) {
+  const shouldShowToast =
+    didResumeWorkflowAtStartup() && !isDonationPageVisible();
+  const isTooOld = isOlderThan(workflow.timestamp, DAY);
+
+  if (
+    isTooOld &&
+    (workflow.type === donationStateSchema.Enum.INTENT_METHOD ||
+      workflow.type === donationStateSchema.Enum.INTENT_REDIRECT)
+  ) {
+    log.info(
+      `initialize: Workflow at ${workflow.type} is too old, canceling donation.`
+    );
+    await clearDonation();
+    await failDonation(donationErrorTypeSchema.Enum.TimedOut);
+
+    return;
+  }
+
+  if (workflow.type === donationStateSchema.Enum.INTENT_METHOD) {
+    if (shouldShowToast) {
+      log.info(
+        'initialize: Showing confirmation toast, workflow is at INTENT_METHOD.'
+      );
+      window.reduxActions.toast.showToast({
+        toastType: ToastType.DonationConfirmationNeeded,
+      });
+    }
+
+    // Note that we are not starting the workflow here
+    return;
+  }
+
+  if (shouldShowToast) {
     log.info(
       'initialize: We resumed at startup and donation page not visible. Showing processing toast.'
     );
@@ -97,7 +129,7 @@ export async function initialize(): Promise<void> {
   await _runDonationWorkflow();
 }
 
-// These are the four moments the user provides input to the donation workflow. So,
+// These are the five moments the user provides input to the donation workflow. So,
 // UI calls these methods directly; everything else happens automatically.
 
 export async function startDonation({
@@ -167,6 +199,15 @@ export async function finish3dsValidation(token: string): Promise<void> {
 export async function clearDonation(): Promise<void> {
   runDonationAbortController?.abort();
   await _saveWorkflow(undefined);
+}
+
+export async function resumeDonation(): Promise<void> {
+  const existing = _getWorkflowFromRedux();
+  if (!existing) {
+    throw new Error('resumeDonation: Cannot finish nonexistent workflow!');
+  }
+
+  await _saveAndRunWorkflow(existing);
 }
 
 // For testing
@@ -295,6 +336,13 @@ export async function _runDonationWorkflow(): Promise<void> {
           return;
         }
         if (type === donationStateSchema.Enum.INTENT_METHOD) {
+          if (didResumeWorkflowAtStartup()) {
+            log.info(
+              `${logId}: Resumed after startup and haven't charged payment method. Waiting for user confirmation.`
+            );
+            return;
+          }
+
           log.info(`${logId}: Attempting to confirm payment`);
           updated = await _confirmPayment(existing);
           // continuing
@@ -320,7 +368,21 @@ export async function _runDonationWorkflow(): Promise<void> {
           updated = await _redeemReceipt(existing);
           // continuing
         } else if (type === donationStateSchema.Enum.DONE) {
-          if (!isDonationPageVisible()) {
+          if (isDonationPageVisible()) {
+            if (isDonationsDonateFlowVisible()) {
+              window.reduxActions.nav.changeLocation({
+                tab: NavTab.Settings,
+                details: {
+                  page: SettingsPage.Donations,
+                },
+              });
+
+              // TODO: Replace with DESKTOP-8959
+              window.reduxActions.toast.showToast({
+                toastType: ToastType.DonationCompleted,
+              });
+            }
+          } else {
             log.info(
               `${logId}: Donation page not visible. Showing complete toast.`
             );
@@ -750,6 +812,13 @@ async function failDonation(errorType: DonationErrorType): Promise<void> {
       window.reduxActions.toast.showToast({
         toastType: ToastType.DonationVerificationFailed,
       });
+    } else if (errorType === donationErrorTypeSchema.Enum.TimedOut) {
+      log.info(
+        `${logId}: Donation page not visible. Showing 'donation canceled w/view' toast.`
+      );
+      window.reduxActions.toast.showToast({
+        toastType: ToastType.DonationCanceledWithView,
+      });
     } else {
       log.info(
         `${logId}: Donation page not visible. Showing 'error processing donation' toast.`
@@ -858,8 +927,17 @@ function isDonationPageVisible() {
   const { selectedLocation } = window.reduxStore.getState().nav;
   return (
     selectedLocation.tab === NavTab.Settings &&
-    (selectedLocation.details.page === SettingsPage.DonationsDonateFlow ||
+    (selectedLocation.details.page === SettingsPage.Donations ||
+      selectedLocation.details.page === SettingsPage.DonationsDonateFlow ||
       selectedLocation.details.page === SettingsPage.DonationsReceiptList)
+  );
+}
+
+function isDonationsDonateFlowVisible() {
+  const { selectedLocation } = window.reduxStore.getState().nav;
+  return (
+    selectedLocation.tab === NavTab.Settings &&
+    selectedLocation.details.page === SettingsPage.DonationsDonateFlow
   );
 }
 

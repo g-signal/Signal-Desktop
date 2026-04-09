@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Линкот за корисничкото име треба да се ресетира"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Отворање на екранот со линкот за корисничко име"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Отворање на екранот со линкот за корисничко име"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Споделете го вашето корисничко име"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Наидовте на проблеми? <contactSupportLink>Контактирајте го тимот за корисничка поддршка</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Внесете износ"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Кредитна или дебитна картичка"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Внесете ги податоците од вашата кредитна или дебитна картичка. Signal не ги собира ниту сочувува вашите лични податоци. <learnMoreLink>Дознајте повеќе</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Број на картичка"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Датум на истекување"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Донирајте {formattedCurrencyAmount} на Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Неважечки број на картичка"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Картичката е истечена"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Годината е задолжителна"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Невалидно"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Кодот е прекраток"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Добијте Signal Беџ за поддршка за времетраење од 30 дена"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Потврда за донација"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Ви благодариме што го поддржувате Signal. Вашиот придонес ја поддржува мисијата за заштита на слободното изразување и овозможува безбедна глобална комуникација за милиони луѓе низ целиот свет, преку технологија за приватност со отворен код. Ако сте жител на Соединетите Американски Држави, ве молиме чувајте ја оваа потврда за вашите даночни пријави. Signal Technology Foundation е непрофитна организација која е ослбодена од даночни обврски според делот 501c3 од Законикот за федералната даночна служба. Нашиот федерален даночен број е 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Донацијата е откажана"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Имате донација во тек која бара дополнителна верификација."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Имате донација во тек која бара потврда."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Донацијата е прекината"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Не ви е наплатено. Сакате повторно да се обидете да донирате?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Обиди се повторно"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Начинот на плаќање е одбиен"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Вашата донација сѐ уште се обработува. Ова може да потрае неколку минути."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Донацијата е откажана"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Помина предолго време откако почнавте со донирањето. Ве молиме почнете одново."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Потребна е дополнителна проверка"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Решивме грешка во полето за пребарување емотикони."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Поправени се неколку мали грешки."
   }
 }

@@ -3954,7 +3954,7 @@
     "messageformat": "Permintaan untuk menyertai kumpulan daripada {joinerName} telah ditolak."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, other {{joinerName} meminta dan telah membatalkan {numberOfRequests,number} permintaan untuk menyertai melalui pautan kumpulan}}"
+    "messageformat": "{numberOfRequests, plural, other {{joinerName} telah meminta dan membatalkan {numberOfRequests,number} permintaan untuk menyertai melalui pautan kumpulan}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Anda telah menghidupkan pautan kumpulan dengan kelulusan pentadbir dinyahdayakan."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Pautan nama pengguna perlu ditetapkan semula"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Buka skrin pautan nama pengguna"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Buka skrin pautan nama pengguna"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Kongsi Nama Pengguna Anda"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Menghadapi masalah? <contactSupportLink>Hubungi sokongan</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Masukkan Jumlah Tersuai"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kad kredit atau debit"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Masukkan butiran kad kredit atau debit anda. Signal tidak mengumpul atau menyimpan maklumat peribadi anda. <learnMoreLink>Ketahui lagi</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Nombor kad"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Tarikh Tamat Tempoh"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Derma {formattedCurrencyAmount} kepada Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Nombor kad tidak sah"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kad telah tamat tempoh"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Tahun diperlukan"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Tidak Sah"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kod terlalu pendek"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Dapatkan lencana Signal Boost selama 30 hari"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Resit derma"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Terima kasih kerana menyokong Signal. Sumbangan anda membantu menyokong misi melindungi kebebasan bersuara dan membolehkan komunikasi global yang selamat untuk jutaan orang di seluruh dunia, melalui teknologi privasi sumber terbuka. Jika anda penduduk Amerika Syarikat, sila simpan resit ini untuk rekod cukai anda. Signal Technology Foundation merupakan organisasi bukan berasaskan keuntungan yang dikecualikan cukai di Amerika Syarikat di bawah seksyen 501c3 Kod Hasil dalam Negeri. ID Cukai Persekutuan kami ialah 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Derma dibatalkan"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Anda mempunyai derma yang sedang diproses dan memerlukan pengesahan tambahan."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Anda mempunyai derma yang sedang diproses dan memerlukan pengesahan."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Derma terganggu"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Kad anda tidak dicaj. Adakah anda mahu cuba semula derma ini?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Cuba lagi"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Kaedah pembayaran ditolak"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Derma anda sedang diproses. Ini boleh mengambil masa beberapa minit"
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Derma dibatalkan"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Sudah terlalu lama sejak anda memulakan derma. Sila mulakan semula."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Pengesahan tambahan diperlukan"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Kami membetulkan pepijat dalam kotak carian emoji."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Beberapa pembetulan pepijat kecil."
   }
 }

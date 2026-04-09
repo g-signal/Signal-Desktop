@@ -3954,7 +3954,7 @@
     "messageformat": "A request to join the group from {joinerName} was denied."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} solicitou e cancelou a súa solicitude para unirse a través da ligazón de grupo.} other {{joinerName} solicitou e cancelou {numberOfRequests,number} solicitudes para unirse a través da ligazón de grupo.}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} solicitou e cancelou a súa solicitude para unirse a través da ligazón de grupo} other {{joinerName} solicitou e cancelou {numberOfRequests,number} solicitudes para unirse a través da ligazón de grupo}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Activaches a ligazón do grupo coa aprobación dos administradores desactivada."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "A ligazón do nome de usuario ten que restablecerse"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Abre a pantalla de ligazón do usuario"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Abre a pantalla de ligazón do usuario"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Comparte o teu nome de usuario"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Tes algún problema? <contactSupportLink>Contacta co centro de axuda</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Inserir cantidade personalizada"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Tarxeta de débito ou crédito"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Escribe os datos da túa tarxeta de crédito ou débito. Signal non recolle nin almacena a túa información persoal. <learnMoreLink>Máis información</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Número de tarxeta"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Data de caducidade"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Doar {formattedCurrencyAmount} a Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Número de tarxeta non válido"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "A tarxeta caducou"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Ano obrigatorio"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Incorrecto"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Código demasiado curto"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Obtén a insignia de doante de Signal durante 30 días"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Comprobante de donativo"
   },
@@ -6693,8 +6735,8 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Grazas por apoiar a Signal. A túa contribución impulsa a nosa misión de protexer a liberdade de expresión e asegurar a comunicación global para millóns de persoas arredor do mundo mediante unha tecnoloxía privada de código aberto. Se es residente dos Estados Unidos, garda este comprobante para para a túa declaración fiscal. Signal Technology Foundation é una organización benéfica independente sen ánimo de lucro e está exenta de impostos de acordo coa sección 501c3 do Código de impostos internos dos Estados Unidos. O noso número de identificación fiscal federal é 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
-    "messageformat": "Doazón mensual cancelada"
+  "icu:Donations__Toast__Canceled": {
+    "messageformat": "Donativo cancelado"
   },
   "icu:Donations__Toast__Completed": {
     "messageformat": "Doazón completada"
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Tes unha doazón pendente que precisa verificación adicional."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Tes un donativo pendente que precisa confirmación."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Donativo interrompido"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Non se fixo o cargo na túa tarxeta. Queres tentalo de novo?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Volver tentar"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Método de pagamento rexeitado"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "A túa doazón segue procesándose. Isto pode tardar uns minutos."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Donativo cancelado"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Tardaches moito en completar o donativo. Comeza de novo."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Necesítase verificación adicional"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Arranxamos un erro que afectaba a busca de emoticonas."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Arranxamos erros menores."
   }
 }

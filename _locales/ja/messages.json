@@ -3954,7 +3954,7 @@
     "messageformat": "{joinerName} からのグループ参加申請が拒否されました。"
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, other {{joinerName} がグループリンクから参加を申請して、{numberOfRequests,number}件の申請をキャンセルしました。}}"
+    "messageformat": "{numberOfRequests, plural, other {{joinerName} がグループリンクから参加を申請して、{numberOfRequests,number}件の申請をキャンセルしました}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "管理者承認が不要なグループリンクを有効にしました。"
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "ユーザーネームのリンクをリセットする必要があります"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "ユーザー名のリンク画面を開く"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "ユーザー名のリンク画面を開く"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "ユーザーネームを共有する"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "お困りですか？<contactSupportLink>サポートに問い合わせる</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "金額を入力してください"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "クレジットカードまたはデビットカード"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "クレジットカードまたはデビットカード情報を入力してください。Signalがお客様の個人情報を収集したり保存したりすることはありません。<learnMoreLink>さらに詳しく</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "カード番号"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "有効期限"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Signalに {formattedCurrencyAmount}を寄付する"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "無効なカード番号です"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "カードの有効期限が切れています"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "年の入力は必須です"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "無効"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "コードが短すぎます"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "30日間のSignalブーストバッジを獲得しましょう"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "寄付の領収書"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Signalをサポートしていただきありがとうございます。皆様のご寄付は、オープンソースのプライバシー技術を通して表現の自由を守り、世界中の何百万人もの人々に安全なグローバルコミュニケーションを可能にするというミッションを推進する原動力となるものです。米国にお住まいの方は、この領収書を税務記録のために保管しておいてください。Signal Technology Foundationは、米国内国歳入法第501c3条に基づく非課税の非営利団体です。連邦税IDは82-4506840です。"
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "寄付がキャンセルされました"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "寄付のお手続き中です。追加の認証が必要です。"
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "確認が必要な寄付のお手続き中です。"
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "寄付が中断されました"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "カードには請求されていません。寄付を再試行しますか？"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "もう一度試す"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "支払い方法が承認されませんでした"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "寄付の処理は完了していません。数分かかるかも知れません。"
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "寄付がキャンセルされました"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "寄付を開始してから一定時間を過ぎました。最初からやり直してください。"
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "追加の認証手続きが必要です"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "絵文字検索ボックスに関する不具合を解消しました。"
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "いくつかの小規模なバグの修正。"
   }
 }

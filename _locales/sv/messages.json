@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Användarnamnslänken behöver återställas"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Öppna skärmen för användarnamnslänk"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Öppna skärmen för användarnamnslänk"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Dela ditt användarnamn"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Har det uppstått problem? <contactSupportLink>Kontakta supporten</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Ange anpassat belopp"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Betalkort"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Ange dina kredit- eller betalkortsuppgifter. Signal samlar inte in eller lagrar dina personuppgifter. <learnMoreLink>Läs mer</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kortnummer"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Utgångsdatum"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Donera {formattedCurrencyAmount} till Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Ogiltigt kortnummer"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kortet har gått ut"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "År krävs"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Ogiltig"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Koden är för kort"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Få Signal Boost-märket i 30 dagar"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Donationskvitto"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Tack för att du stöder Signal. Ditt bidrag hjälper till att främja uppdraget att skydda yttrandefriheten och möjliggöra säker global kommunikation för miljontals människor runt om i världen, genom öppen källkod för integritetsskydd. Spara detta kvitto för dina skatteuppgifter om du är bosatt i USA. Signal Technology Foundation är en skattebefriad ideell organisation i USA enligt avsnitt 501c3 i Internal Revenue Code. Vårt federala skatte-ID är 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Donationen avbruten"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Du har en pågående donation som behöver ytterligare verifiering."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Du har en pågående donation som kräver bekräftelse."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Donationen avbröts"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Ditt kort debiterades inte. Vill du försöka donera igen?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Försök igen"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Betalningsmetod avvisad"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Din donation bearbetas fortfarande. Detta kan ta några minuter."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Donationen avbruten"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Det har gått för lång tid sedan du började din donation. Börja om."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Ytterligare verifiering krävs"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Vi har åtgärdat ett fel i emoji-sökrutan."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Några små buggfixar."
   }
 }

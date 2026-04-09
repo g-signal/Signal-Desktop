@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Link do nazwy użytkownika wymaga zresetowania"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Otwórz ekran z linkiem do nazwy użytkownika"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Otwórz ekran z linkiem do nazwy użytkownika"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Udostępnij swoją nazwę użytkownika"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Wystąpiły problemy? <contactSupportLink>Skontaktuj się z pomocą techniczną</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Podaj inną kwotę"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Karta kredytowa lub debetowa"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Podaj dane karty kredytowej lub debetowej. Signal nie gromadzi ani nie przechowuje Twoich danych osobowych. <learnMoreLink>Dowiedz się więcej</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Numer karty"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Data ważności"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Wpłać {formattedCurrencyAmount} i wesprzyj Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Nieprawidłowy numer karty"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Karta jest nieważna"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Musisz podać rok"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Nieprawidłowe dane"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Za krótki kod"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Zdobądź odznakę za wsparcie na 30 dni"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Potwierdzenie darowizny"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Dziękujemy za wsparcie aplikacji Signal. Twoja darowizna wspomaga rozwój otwartoźródłowej technologii, która zapewnia prywatność, chroni wolność słowa i umożliwia bezpieczną komunikację milionom osób na całym świecie. Jeśli mieszkasz w Stanach Zjednoczonych, zachowaj to potwierdzenie, aby uwzględnić wpłatę w zeznaniu podatkowym. Signal Technology Foundation jest organizacją non profit zwolnioną z podatku w USA na podstawie zapisu 501c3 Internal Revenue Code (Kodeksu Podatkowego). Nasz federalny numer identyfikacji podatkowej to 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Darowizna anulowana"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Twoja darowizna jest realizowana, ale wymaga dodatkowej weryfikacji."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Twoja darowizna jest realizowana, ale wymaga jeszcze potwierdzenia."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Wpłata darowizny przerwana"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Twoja karta nie została obciążona. Czy chcesz spróbować jeszcze raz?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Spróbuj ponownie"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Metoda płatności została odrzucona"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Twoja darowizna jest jeszcze przetwarzana. Może to zająć kilka minut."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Darowizna anulowana"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Od rozpoczęcia wpłaty darowizny minęło zbyt dużo czasu. Spróbuj jeszcze raz od nowa."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Wymagana dodatkowa weryfikacja"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Naprawiliśmy błąd, który występował czasem po naciśnięciu klawisza Esc w polu wyszukiwania emoji. Teraz możesz znów skupić się na najważniejszym: znalezieniu idealnej emotki."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "W ramach tej aktualizacji usunęliśmy kilka mniejszych błędów – między innymi ten, przez który reakcje emoji czasem nie były prawidłowo grupowane."
   }
 }

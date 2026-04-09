@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Erabiltzaile-izenaren esteka berrezarri egin behar da"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Ireki erabiltzaile-izenaren estekaren pantaila"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Ireki erabiltzaile-izenaren estekaren pantaila"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Partekatu zure erabiltzaile-izena"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Arazoak dituzu? <contactSupportLink>Jarri harremanetan laguntza-zerbitzuarekin</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Adierazi zenbateko pertsonalizatu bat"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kreditu- edo zordunketa-txartela"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Sartu kreditu- edo zordunketa-txartelaren xehetasunak. Signal-ek ez du biltzen edo gordetzen zure informazio pertsonala. <learnMoreLink>Informazio gehiago</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Txartel-zenbakia"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Iraungitze-data"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Eman {formattedCurrencyAmount} Signal-i"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Txartel-zenbaki baliogabea"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Txartela iraungita dago"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Urtea beharrezkoa da"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Baliogabea"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kodea laburregia da"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Lortu Signal-en bultzada-bereizgarria 30 egunez"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Dohaintzaren ordainagiria"
   },
@@ -6693,8 +6735,8 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Eskerrik asko Signal-i laguntzeagatik. Zure ekarpenarekin, kode irekiko pribatutasun-teknologiaren bidez adierazpen-askatasuna babesteko eta mundu osoko milioika pertsonarentzako komunikazio segurua ahalbidetzeko dugun misioa bultzatuko duzu. Ameriketako Estatu Batuetan bizi bazara, gorde ordainagiri hau, zerga-aitorpenetarako. Signal Technology Foundation zergak ordaintzetik salbuetsita dagoen AEBko erakunde bat da, Internal Revenue Code-ko 501c3 sekzioari jarraikiz. Gure IFZa federala 82-4506840 da."
   },
-  "icu:Donations__Toast__Cancelled": {
-    "messageformat": "Dohaintza utzi da"
+  "icu:Donations__Toast__Canceled": {
+    "messageformat": "Dohaintza bertan behera utzi da"
   },
   "icu:Donations__Toast__Completed": {
     "messageformat": "Dohaintza egin da"
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Dohaintza bat martxan duzu, eta egiaztapen gehigarria behar du."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Berretsi beharreko dohaintza bat duzu abian."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Dohaintza eten egin da"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Ez da kargurik egin txartelean. Berriro saiatu nahi duzu dohaintza egiten?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Saiatu berriro"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Ordainketa-metodo baztertu egin da"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Dohaintza prozesatzen ari da oraindik. Baliteke minutu batzuk behar izatea."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Dohaintza bertan behera utzi da"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Denbora gehiegi igaro da dohaintza egiten hasi zarenetik. Hasi berriro."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Egiaztapen osagarria behar da"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Emojiak bilatzeko kutxako akats bat konpondu dugu."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Zenbait akats txiki konpondu dira."
   }
 }

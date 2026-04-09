@@ -3954,7 +3954,7 @@
     "messageformat": "Një kërkesë nga 1{joinerName} për t’u bërë pjesë e grupit u hodh poshtë."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} kërkoi dhe anuloi kërkesën e vet për t'u bashkuar përmes lidhjes së grupit} other {{joinerName} kërkuan dhe anuluan{numberOfRequests,number} kërkesat për t'u bashkuar përmes lidhjes së grupit}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} kërkoi dhe anuloi kërkesën për t'u bashkuar përmes lidhjes së grupit} other {{joinerName} kërkuan dhe anuluan{numberOfRequests,number} kërkesat për t'u bashkuar përmes lidhjes së grupit}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Aktivizuat lidhjen e grupit me miratim nga përgjegjësi të çaktivizuar."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Lidhja e emrit të përdoruesit duhet të rivendoset"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Hap ekranin e lidhjes së emrit të përdoruesit"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Hap ekranin e lidhjes së emrit të përdoruesit"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Shpërndaj emrin tënd të përdoruesit"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Po has probleme? <contactSupportLink>Kontakto ndihmën</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Vendos shumën e personalizuar"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kartë krediti ose debiti"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Vendos të dhënat e kartës së kreditit ose debitit. Signal nuk mbledh dhe as nuk ruan të dhënat personale. <learnMoreLink>Mëso më shumë</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Numri i kartës"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Data e skadencës"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Dhuro {formattedCurrencyAmount} te Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Numri i kartës është i pavlefshëm"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Karta ka skaduar"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Kërkohet viti"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "I pavlefshëm"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kodi është shumë i shkurtër"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Merr distinktivin shtesë të Signal për 30 ditë"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Fatura e dhurimit"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Faleminderit që mbështet Signal! Kontributi yt ndihmon në nxitjen e misionit të mbrojtjes së shprehjes së lirë dhe mundësimit të komunikimit të sigurt global për miliona njerëz në mbarë botën, përmes teknologjisë së privatësisë me burim të hapur. Nëse je banor i Shteteve të Bashkuara, të lutem, ruaje këtë faturë për të dhënat e tua tatimore. Signal Technology Foundation është një ent jofitimprurës, i përjashtuar nga taksat, në Shtetet e Bashkuara sipas seksionit 501c3 të Kodit të të Ardhurave të Brendshme. Numri i ID-së federale të tatimeve është 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Dhurimi u anulua"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Ke një dhurim në proces që ka nevojë për verifikim shtesë."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Ke një dhurim në proces që kërkon konfirmim."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Dhurimi u ndërpre"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Karta nuk u faturua. Dëshirosh ta provosh sërish dhurimin?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Riprovo"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Metoda e pagesës u refuzua"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Dhurimi është ende duke u përpunuar. Kjo mund të zgjasë disa minuta."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Dhurimi u anulua"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Ka kaluar shumë kohë që kur e nise dhurimin. Të lutem, fillo nga e para."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Kërkohet verifikim shtesë"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Gjetja e emoxhit të duhur mund të përngjajë me një luftë të pashmangshme, megjithatë gabimi që mund të shkaktohej pas shtypjes së tastit \"Escape\" në kutinë e kërkimit të emoxhive u rregullua."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Ky përditësim rregullon disa gabime të vogla, përfshirë një ku reagimet ndaj emoxhive nuk grupoheshin siç duhet në disa raste."
   }
 }

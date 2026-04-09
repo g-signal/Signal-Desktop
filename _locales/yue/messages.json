@@ -3954,7 +3954,7 @@
     "messageformat": "{joinerName} 加入呢個谷嘅請求已被拒。"
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, other {{joinerName} 透過群組連結請求完又撤回咗 {numberOfRequests,number} 個加入請求}}"
+    "messageformat": "{numberOfRequests, plural, other {{joinerName} 透過群組連結請求同撤回咗 {numberOfRequests,number} 個加入請求}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "你啟用咗唔使管理員批准嘅群組連結。"
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "需要重設用戶名稱連結"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "打開用戶名稱連結畫面"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "打開用戶名稱連結畫面"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "分享你嘅用戶名稱"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "遇到問題？<contactSupportLink>聯絡支援團隊</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "輸入自訂金額"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "信用卡或扣帳卡"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "請輸入你嘅信用卡或扣帳卡資料。Signal 唔會收集或者儲存你嘅個人資料。<learnMoreLink>了解詳情</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "付款卡號碼"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "到期日"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "向 Signal 捐款 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "付款卡號碼無效"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "付款卡已經過咗期"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "請輸入年份"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "無效"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "代碼太短"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "獲取為期 30 日嘅 Signal 捐款徽章"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收據"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "多謝你撐 Signal。你嘅捐款係我哋嘅原動力，推動我哋透過開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 Signal 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。Signal Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構。聯邦稅識別號碼係 82-4506840。"
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "已經取消捐款"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "你有一筆處理緊嘅捐贈需要額外驗證。"
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "你有一筆處理緊嘅捐贈需要確認。"
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "捐款中斷"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "你嘅付款卡未有扣數。係咪要重新捐款？"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "再試一次"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "唔接受呢個付款方法"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "仲處理緊你嘅捐款。可能要幾分鐘時間。"
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "捐款已經取消"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "你開始咗捐款之後已經過咗好耐。請重新開始。"
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "需要額外驗證"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "搵表情符號搵到懷疑人生？我們修正咗一個錯誤﹐以後喺表情符號搜尋框入面㩒 Esc 退出鍵之後都唔會出現問題。"
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "呢次更新修正咗一啲小錯誤，包括表情符號心情回應嘅分類有時會出錯。"
   }
 }

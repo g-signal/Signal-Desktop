@@ -3954,7 +3954,7 @@
     "messageformat": "Požadavek na připojení ke skupině od {joinerName} byl zamítnut."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} požádal/a a zrušil/a žádost o připojení ke skupině pomocí skupinového odkazu.} few {{joinerName} požádal/a a zrušil/a {numberOfRequests,number} žádosti o připojení ke skupině pomocí skupinového odkazu.} many {{joinerName} požádal/a a zrušil/a {numberOfRequests,number} žádostí o připojení ke skupině pomocí skupinového odkazu.} other {{joinerName} požádal/a a zrušil/a {numberOfRequests,number} žádostí o připojení ke skupině pomocí skupinového odkazu.}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} požádal/a a zrušil/a žádost o připojení ke skupině pomocí skupinového odkazu} few {{joinerName} požádal/a a zrušil/a {numberOfRequests,number} žádosti o připojení ke skupině pomocí skupinového odkazu} many {{joinerName} požádal/a a zrušil/a {numberOfRequests,number} žádostí o připojení ke skupině přes odkaz skupiny} other {{joinerName} požádal/a a zrušil/a {numberOfRequests,number} žádostí o připojení ke skupině pomocí skupinového odkazu}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Zapnuli jste odkaz skupiny bez schvalování správcem."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Odkaz na uživatelské jméno je potřeba resetovat"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Otevřít obrazovku s odkazem na uživatelské jméno"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Otevřít obrazovku s odkazem na uživatelské jméno"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Sdílení uživatelského jména"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Máte problémy? <contactSupportLink>Kontaktujte podporu</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Zadat vlastní částku"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kreditní nebo debetní karta"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Zadejte údaje o své platební kartě. Signal neshromažďuje ani neukládá vaše osobní údaje. <learnMoreLink>Zjistit více</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Číslo karty"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Datum vypršení platnosti"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Přispět částkou {formattedCurrencyAmount} na aplikaci Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Neplatné číslo platební karty"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Platnost platební karty vypršela"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Je nutné zadat rok"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Neplatné"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kód je příliš krátký"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Získejte odznak Signal Boost na 30 dní"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Potvrzení o příspěvku"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Děkujeme, že podporujete Signal. Váš příspěvek pomáhá podporovat naše poslání chránit svobodu projevu a umožnit bezpečnou komunikaci milionům lidí na celém světě prostřednictvím technologie ochrany soukromí s otevřeným zdrojovým kódem. Pokud jste obyvatelem Spojených států, uschovejte si toto potvrzení pro své daňové záznamy. Nadace Signal Technology Foundation je nezisková organizace osvobozená od daní ve Spojených státech amerických podle § 501c3 daňového zákona. Naše daňové identifikační číslo je 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Příspěvek zrušen"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Váš příspěvek se zpracovává, ale potřebuje další ověření."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Váš příspěvek se zpracovává a je třeba jej potvrdit."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Příspěvek přerušen"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Částka nebyla z vaší karty stržena. Chcete zkusit zadat příspěvek znovu?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Zkusit znovu"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Platební metoda byla zamítnuta"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Váš příspěvek se stále zpracovává. To může trvat několik minut."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Příspěvek zrušen"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Od zahájení zadání příspěvku uplynula příliš dlouhá doba. Začněte prosím znovu."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Je vyžadováno dodatečné ověření"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Opravili jsme chybu ve vyhledávacím poli emoji."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Oprava několika drobných chyb."
   }
 }

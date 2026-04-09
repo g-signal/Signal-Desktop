@@ -3954,7 +3954,7 @@
     "messageformat": "A request to join the group from {joinerName} was denied."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} поиска и отмени своята заявка за присъединяване чрез линка на групата} other {{joinerName} поиска и отмени {numberOfRequests,number} заявки за присъединяване чрез линка на групата}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} поиска и отмени заявка за присъединяване чрез линка на групата} other {{joinerName} поиска и отмени {numberOfRequests,number} заявки за присъединяване чрез линка на групата}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Включили сте линка на групата с деактивирано одобрение от администратор."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Линкът за потребителско име трябва да се нулира"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Отваряне на екрана с линк към потребителското име"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Отваряне на екрана с линк към потребителското име"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Споделете потребителското си име"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Срещнахте проблем? <contactSupportLink>Свържете се с отдела за поддръжка</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Въведете индивидуална сума"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Кредитна или дебитна карта"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Въведете информацията за вашата кредитна или дебитна карта. Signal не събира и не съхранява личната ви информация. <learnMoreLink>Научете повече</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Номер на карта"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Дата на изтичане"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Дарете {formattedCurrencyAmount} на Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Невалиден номер на карта"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Картата е изтекла"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Годината е задължителна"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Невалидно"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Прекалено кратък код"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Получете Супер значката на Signal за 30 дни"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Разписка за дарение"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Благодарим ви, че подкрепяте Signal. Вашият принос помага за изпълнението на мисията за защитаване на свободата на изразяване и позволяване на сигурна глобална комуникация на милиони хора по света чрез технология за поверителност с отворен код. Ако сте жител на Съединените щати, моля, запазете тази разписка за данъчните си документи. Фондация Signal Technology Foundation е освободена от данъци организация с нестопанска цел в САЩ съгласно член 501c3 от Данъчния кодекс на САЩ. Нашият федерален данъчен номер е 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Дарението е отменено"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Имате дарение, което се обработва и се нуждае от допълнителна проверка."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Имате дарение, което изисква допълнително потвърждение."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Дарението е прекъснато"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Картата ви не е таксувана. Искате ли да опитате да направите дарение отново?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Опитайте отново"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Платежният метод е отказан"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Дарението ви все още се обработва. Това може да отнеме няколко минути."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Дарението е отменено"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Изминало е твърде много време, откакто сте започнали дарението. Моля, започнете отначало."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Изисква се допълнителна проверка"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Отстранихме бъг в полето за търсене на емоджи."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Отстраняване няколко малки бъга."
   }
 }

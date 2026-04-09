@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "用户名链接需要重置"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "打开用户名链接页面"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "打开用户名链接页面"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "分享您的用户名"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "遇到问题？<contactSupportLink>联系支持人员</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "输入自定义金额"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "信用卡或借记卡"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "请输入您的信用卡或借记卡信息。Signal 不会收集或储存您的个人信息。<learnMoreLink>了解更多</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "卡号"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "有效期"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "给 Signal 捐款 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "卡号无效"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "卡片已过期"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "年份为必填项"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "无效"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "代码太短"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "获得 30 天的 Signal 随手捐徽章"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收据"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "感谢您支持 B&A。您的捐款将助力我们履行使命：保护自由表达，通过开源隐私技术让全球数百万用户享受全球安全通信。如果您是美国居民，请保留此收据作为您的税务记录。B&A 技术基金会是美国国内税收法第 501c3 条定义的美国免税非营利组织。我们的联邦税号为 82-4506840。"
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "捐款已取消"
   },
   "icu:Donations__Toast__Completed": {
@@ -6756,6 +6798,12 @@
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "您的捐款仍在处理中。这可能需要几分钟。"
   },
+  "icu:Donations__TimedOut": {
+    "messageformat": "捐款已取消"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "捐款操作用时过久。请重新开始。"
+  },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "需要进行额外验证"
   },
@@ -6807,5 +6855,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "我们修复了表情符号搜索框中的一个漏洞。"
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "此次更新修复了一些小漏洞。"
   }
 }

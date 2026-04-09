@@ -3954,7 +3954,7 @@
     "messageformat": "Permintaan bergabung ke grup dari {joinerName} telah ditolak."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, other {{joinerName} mengajukan dan membatalkan {numberOfRequests,number} permintaan untuk bergabung lewat tautan grup}}"
+    "messageformat": "{numberOfRequests, plural, other {{joinerName} mengajukan dan membatalkan {numberOfRequests,number} permintaan bergabung lewat tautan grup}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Anda menyalakan tautan grup tanpa persetujuan admin."
@@ -4122,7 +4122,7 @@
     "messageformat": "Berdonasi ke Signal"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal didukung olejh orang seperti Anda. Berkontribusi dan dapatkan sebuah lencana."
+    "messageformat": "Signal didukung oleh orang-orang seperti Anda. Berkontribusi dan dapatkan sebuah lencana."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
     "messageformat": "Buka Signal di ponsel Anda"
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Tautan nama pengguna perlu direset"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Buka layar tautan nama pengguna"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Buka layar tautan nama pengguna"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Bagikan Nama Pengguna Anda"
@@ -6634,7 +6640,7 @@
     "messageformat": "Donasi {formattedCurrencyAmount}"
   },
   "icu:PreferencesDonations__mobile-info": {
-    "messageformat": "Badge dan donasi bulanan dapat dikelola dari perangkat seluler Anda."
+    "messageformat": "Lencana dan donasi bulanan dapat dikelola dari perangkat seluler Anda."
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Informasi Anda bersifat privat"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Ada masalah? <contactSupportLink>Hubungi Tim Dukungan</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Masukkan Jumlah Kustom"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kartu Kredit atau Debit"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Masukkan detail kartu kredit atau debit. Signal tidak mengumpulkan atau menyimpan informasi pribadi Anda. <learnMoreLink>Pelajari selengkapnya</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Nomor Kartu"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Tanggal Kedaluwarsa"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Donasi {formattedCurrencyAmount} ke Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Nomor kartu tidak valid"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kartu telah kedaluwarsa"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Tahun wajib diisi"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Tidak valid"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kode terlalu pendek"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Dapatkan lencana Boost Signal selama 30 hari"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Struk donasi"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Terima kasih telah mendukung Signal. Kontribusi Anda membantu misi perlindungan terhadap kebebasan berekspresi dan mendukung teknologi privasi sumber terbuka yang memungkinkan komunikasi yang aman bagi jutaan pengguna di seluruh dunia. Jika Anda warga Amerika Serikat, harap simpan struk ini untuk pencatatan pajak. Signal Technology Foundation adalah organisasi nirlaba bebas pajak di Amerika Serikat menurut pasal 501c3 di Internal Revenue Code (IRC). ID Pajak Federal kami adalah 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Donasi dibatalkan"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Ada donasi yang sedang diproses yang memerlukan verifikasi tambahan."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Ada donasi yang sedang diproses dan memerlukan konfirmasi lebih lanjut."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Proses donasi terganggu"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Kartu belum dikenakan tagihan. Mau coba berdonasi lagi?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Coba lagi"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Metode pembayaran ditolak"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Donasi Anda sedang diproses. Perlu waktu beberapa menit."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Donasi dibatalkan"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Batas waktu penyelesaian proses donasi telah berakhir. Silakan mulai dari awal."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Diperlukan verifikasi tambahan"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Menemukan emoji yang tepat bisa sangat sulit, kadang terjadi masalah setelah Anda menekan tombol escape di kotak pencarian. Tapi tenang, kami sudah memperbaiki bug ini."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Dalam pembaruan kali ini kami memperbaiki beberapa bug kecil, antara lain tanggapan emoji yang kadang tidak dikelompokkan dengan benar."
   }
 }

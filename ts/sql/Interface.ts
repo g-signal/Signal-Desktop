@@ -959,6 +959,8 @@ type WritableInterface = {
   createOrUpdateSession: (data: SessionType) => void;
   createOrUpdateSessions: (array: Array<SessionType>) => void;
   commitDecryptResult(options: {
+    kyberPreKeysToRemove: Array<PreKeyIdType>;
+    preKeysToRemove: Array<PreKeyIdType>;
     senderKeys: Array<SenderKeyType>;
     sessions: Array<SessionType>;
     unprocessed: Array<UnprocessedType>;

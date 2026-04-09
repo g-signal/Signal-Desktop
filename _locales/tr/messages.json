@@ -3954,7 +3954,7 @@
     "messageformat": "{joinerName} kişisinin gruba katılma isteği reddedildi."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} grup bağlantısı üzerinden katılma talebinde bulundu, ancak talebini iptal etti} other {{joinerName}, grup bağlantısı aracılığıyla {numberOfRequests,number} katılma isteğini talep etti ve iptal etti}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} grup bağlantısı aracılığıyla katılma isteğini talep etti ve iptal etti} other {{joinerName}, grup bağlantısı aracılığıyla {numberOfRequests,number} katılma isteğini talep etti ve iptal etti}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Grup bağlantısını, yönetici onayı olmadan etkinleştirdiniz."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Kullanıcı adı bağlantısının sıfırlanması gerekiyor"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Kullanıcı adı bağlantı ekranını aç"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Kullanıcı adı bağlantı ekranını aç"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Kullanıcı Adını Paylaş"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Sorun mu yaşıyorsun? <contactSupportLink>Destekle iletişime geç</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Farklı Bir Miktar Gir"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kredi veya banka kartı"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Kredi veya banka kartı bilgilerini gir. Signal, kişisel bilgilerini toplamaz veya saklamaz. <learnMoreLink>Dahasını öğren</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kart numarası"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Son Kullanma Tarihi"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Signal'e {formattedCurrencyAmount} bağış yap"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Geçersiz kart numarası"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kartın süresi doldu"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Yıl bilgisi gerekli"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Geçersiz"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kod çok kısa"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "30 gün boyunca Signal Öne Çıkarma Rozetini kazan"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Bağış makbuzu"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Signal'ı desteklediğin için teşekkürler. Katkın açık kaynak gizlilik teknolojisi aracılığıyla, ifade özgürlüğünü koruma ve dünya çapında milyonlarca kişi için güvenli küresel iletişim sağlama misyonunu desteklemeye yardımcı olur. Amerika Birleşik Devletleri'nde ikamet ediyorsan, lütfen bu makbuzu vergi kayıtların için sakla. Signal Technology Foundation, Amerika Birleşik Devletleri'nde İç Gelir Yasası'nın 501c3 numaralı bölümü kapsamında vergiden muaf, kar amacı gütmeyen bir kuruluştur. Federal Vergi Kimlik Numaramız 82-4506840'tır."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Bağış iptal edildi"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Ek doğrulama gerektiren ve sürmekte olan bir bağış işlemin var."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Onaylanması gereken bir bağış işlemin var."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Bağış kesildi"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Kartından ödeme alınmadı. Bağışı tekrar denemek ister misin?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Tekrar dene"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Ödeme yöntemi reddedildi"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Bağışın hâlâ işleniyor. Bu birkaç dakika sürebilir."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Bağış iptal edildi"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Bağış işlemine başlamanın üzerinden çok zaman geçti. Lütfen baştan başla."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Ek doğrulama gerekli"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Emoji arama kutusundaki bir hatayı düzelttik. Böylece sıkılmadan istediğin emojiyi hemen bulabileceksin."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Birkaç küçük hata düzeltmesi."
   }
 }

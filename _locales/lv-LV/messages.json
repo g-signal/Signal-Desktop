@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Lietotājvārda saite ir jāatiestata"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Atvērt lietotājvārda saites ekrānu"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Atvērt lietotājvārda saites ekrānu"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Kopīgojiet savu lietotājvārdu"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Vai radušās problēmas? <contactSupportLink>Sazināties ar atbalstu</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Ievadīt pielāgotu summu"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kredītkarte vai debetkarte"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Ievadiet savu kredītkartes vai debetkartes informāciju. Signal neapkopo un neuzglabā jūsu personas informāciju. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kartes numurs"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Derīguma termiņš"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Ziedot Signal {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Nederīgs kartes numurs"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kartes derīguma termiņš ir beidzies"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Nepieciešams gads"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Nederīgs"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kods ir pārāk īss"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Iegūstiet Signal Boost nozīmīti uz 30 dienām"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Ziedojuma kvīts"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Pateicamies, ka atbalstāt Signal. Jūsu atbalsts palīdz īstenot mūsu misiju: aizsargāt vārda brīvību un nodrošināt drošu saziņu miljoniem cilvēku visā pasaulē. Mēs to darām, izmantojot atvērtā pirmkoda privātuma tehnoloģijas. Ja jūs esat Amerikas Savienoto valstu iedzīvotājs, lūdzu, saglabājiet šo kvīti nodokļu uzskaitei. Signal Technology Foundation ir no nodokļu maksāšanas atbrīvota bezpeļnas organizācija Amerikas Savienotajās valstīs saskaņā ar Iekšējo ieņēmumu likuma 501c3 sadaļu. Mūsu federālais nodokļu ID ir 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Ziedojums atcelts"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Jūsu ziedojuma apstrādei nepieciešama papildu verifikācija."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Jums ir nepabeigts ziedojums, kuram nepieciešams apstiprinājums."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Ziedojums pārtraukts"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Maksājums no jūsu kartes netika iekasēts. Vai vēlaties mēģināt ziedot vēlreiz?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Mēģiniet vēlreiz"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Maksājuma veids noraidīts"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Jūsu ziedojums joprojām tiek apstrādāts. Process var ilgt dažas minūtes."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Ziedojums atcelts"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Ir pagājis pārāk ilgs laiks, kopš uzsākāt ziedojumu. Lūdzu, sāciet vēlreiz."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Nepieciešama papildu verifikācija"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Pareizās emocijzīmes atrašana reizēm šķiet kā neizbēgama cīņa. Tagad no tās varēs izbēgt vieglāk, jo mēs izlabojām kļūdu, kas radās emocijzīmju meklēšanas lodziņā, nospiežot taustiņu Escape."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Šis atjauninājums izlabo dažas nelielas kļūdas, tostarp kļūdu, kuras dēļ dažos gadījumos emocijzīmju reakcijas netika pareizi sagrupētas."
   }
 }

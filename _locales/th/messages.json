@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "จำเป็นต้องรีเซ็ตลิงก์ชื่อผู้ใช้"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "เปิดหน้าจอลิงก์ชื่อผู้ใช้"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "เปิดหน้าจอลิงก์ชื่อผู้ใช้"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "แชร์ชื่อผู้ใช้ของคุณ"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "หากประสบปัญหา <contactSupportLink>โปรดติดต่อฝ่ายสนับสนุน</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "กรอกจำนวนเอง"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "บัตรเครดิตหรือบัตรเดบิต"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "โปรดกรอกรายละเอียดบัตรเครดิตหรือบัตรเดบิตของคุณ โดย Signal จะไม่รวบรวมหรือจัดเก็บข้อมูลส่วนบุคคลของคุณ <learnMoreLink>เรียนรู้เพิ่มเติม</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "หมายเลขบัตร"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "วันหมดอายุ"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "บริจาค {formattedCurrencyAmount} ให้ Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "หมายเลขบัตรไม่ถูกต้อง"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "บัตรหมดอายุแล้ว"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "ต้องระบุปี"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "ไม่ถูกรูปแบบ"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "รหัสสั้นเกินไป"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "รับโล่บูสต์ของ Signal เป็นเวลา 30 วัน"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "ใบเสร็จรับเงินบริจาค"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "ขอบคุณที่ร่วมสนับสนุน Signal การบริจาคของคุณจะช่วยเป็นพลังให้กับภารกิจในการปกป้องการแสดงออกอย่างอิสระ พร้อมมอบการสื่อสารที่ปลอดภัยและไร้พรมแดนให้แก่ผู้คนหลายล้านทั่วโลกผ่านเทคโนโลยีความเป็นส่วนตัวแบบโอเพนซอร์ส หากคุณเป็นผู้พำนักอาศัยในสหรัฐอเมริกา โปรดเก็บใบเสร็จนี้ไว้เพื่อเป็นหลักฐานในการชำระภาษี โดย Signal Technology Foundation เป็นองค์กรที่ไม่แสวงหากำไรและได้รับการยกเว้นภาษีภายใต้มาตรา 501c3 ของประมวลกฎหมายภาษีอากรของสหรัฐอเมริกา หมายเลขประจำตัวผู้เสียภาษีให้แก่รัฐบาลกลางของเราคือ 82-4506840"
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "การบริจาคถูกยกเลิกแล้ว"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "คุณมีการบริจาคที่ยังรอดำเนินการเนื่องจากต้องยืนยันตัวตนเพิ่มเติม"
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "คุณมีการบริจาคที่ยังรอการยืนยันตัวตน"
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "การบริจาคยังไม่เสร็จสมบูรณ์"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "บัตรของคุณยังไม่ถูกเรียกเก็บเงิน คุณต้องการดำเนินการบริจาคอีกครั้งหรือไม่"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "ลองอีกครั้ง"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "วิธีการชำระเงินถูกปฏิเสธ"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "การบริจาคของคุณยังอยู่ระหว่างดำเนินการ นี่อาจใช้เวลาสองสามนาที"
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "การบริจาคถูกยกเลิกแล้ว"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "คุณใช้เวลาดำเนินการนานเกินไปนับตั้งแต่เริ่มการบริจาค โปรดเริ่มใหม่อีกครั้ง"
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "ต้องมีการตรวจยืนยันเพิ่มเติม"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "แก้ไขบั๊กที่อยู่ในช่องค้นหาอีโมจิ"
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "แก้ไขบั๊กตัวเล็กตัวน้อยในหลายๆ จุดเพื่อการใช้งานที่ดียิ่งขึ้นอีก"
   }
 }

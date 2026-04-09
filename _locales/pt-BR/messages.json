@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "O link do nome de usuário precisa ser redefinido"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Abrir tela de link de nome de usuário"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Abrir tela de link de nome de usuário"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Compartilhe seu nome de usuário"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Está tendo dificuldades? <contactSupportLink>Fale com o suporte</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Insira o valor"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Cartão de crédito ou débito"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Insira as informações do seu cartão de crédito ou débito. O Signal não coleta nem armazena suas informações pessoais. <learnMoreLink>Saiba mais</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Número do cartão"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Data de validade"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Doar {formattedCurrencyAmount} para o Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Número de cartão inválido"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "O cartão expirou"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Ano obrigatório"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Inválido"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Código muito curto"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Receba o selo de Boost do Signal por 30 dias"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Nota fiscal da doação"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Obrigado por apoiar o Signal. Sua contribuição ajuda na nossa missão de proteger a liberdade de expressão e permite a comunicação global segura para milhões de pessoas em todo o mundo, por meio da tecnologia de privacidade open source. Se você mora nos Estados Unidos, guarde a nota para seus registros fiscais. A Signal Technology Foundation é uma organização sem fins lucrativos, isenta de impostos nos Estados Unidos, sob a seção 501c3 do Código da Receita Federal. Nossa identificação fiscal nos EUA é 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Doação cancelada"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Você tem uma doação em andamento que precisa de verificação adicional."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Você tem uma doação em andamento que precisa de confirmação."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Doação interrompida"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Seu cartão não foi cobrado. Você quer tentar fazer a doação novamente?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Tentar novamente"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Forma de pagamento recusada"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Sua doação ainda está sendo processada. Isso pode levar alguns minutos."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Doação cancelada"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Já faz muito tempo que você iniciou sua doação. Comece de novo."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Verificação adicional obrigatória"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Corrigimos um erro que às vezes ocorria ao pressionar a tecla Esc na busca de emojis. "
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Esta atualização corrige alguns pequenos bugs, incluindo um que, em alguns casos, fazia as reações com emoji não serem agrupadas corretamente. "
   }
 }

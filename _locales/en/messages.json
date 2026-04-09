@@ -5257,7 +5257,7 @@
     "description": "Shown in timeline or conversation preview when v2 group changes"
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{joinerName} requested and cancelled {numberOfRequests, plural, one {their request} other {# requests}} to join via the group link",
+    "messageformat": "{joinerName} requested and canceled {numberOfRequests, plural, one {their request} other {# requests}} to join via the group link",
     "description": "Shown in timeline or conversation preview when v2 group changes"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
@@ -6639,6 +6639,14 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Username link needs reset",
     "description": "Accessibility title of an icon in profile editor"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Open username link screen",
+    "description": "Accessibility title for the small qr code icon in the preferences pane list"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Open username link screen",
+    "description": "Accessibility title for the small qr code icon in the preferences pane list"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Share your username",
@@ -8882,6 +8890,54 @@
     "messageformat": "Having issues? <contactSupportLink>Contact support</contactSupportLink>",
     "description": "In the Donations settings section, this footer text appears during parts of the donation workflow such as when picking a donation currency and amount, or entering the credit card info."
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Enter Custom Amount",
+    "description": "When selecting currency and amount for a donation, this is the placeholder text in the custom amount input box."
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Credit or Debit Card",
+    "description": "When entering payment card details for a donation, this heading indicates the section for credit or debit cards."
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Enter your credit or debit card details. Signal does not collect or store your personal information. <learnMoreLink>Learn more</learnMoreLink>",
+    "description": "When entering payment card details for a donation, these instructions explain how to use the entry form and how payment information is protected."
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Card Number",
+    "description": "When entering payment card details for a donation, this label is for the credit card account number input box."
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Expiration Date",
+    "description": "When entering payment card details for a donation, this label is for the credit card expiration date input box."
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Donate {formattedCurrencyAmount} to Signal",
+    "description": "Title above the payment card entry form after selecting a donation amount. Amount includes the currency symbol and is formatted in the locale's standard format. Examples: Donate $10; Donate ¥1000; Donate €10"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Invalid card number",
+    "description": "When entering payment card details, this error appears when the card number was entered incorrectly."
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Card has expired",
+    "description": "When entering payment card expiration date, this error appears when the card has expired."
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Year required",
+    "description": "When entering payment card expiration date, this error appears when year was not entered but the user changed focus from the input box."
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Invalid",
+    "description": "When entering payment card details, this error appears when validation fails but we do not have a specific string for the failure case. For example, a card expiration date was mistyped with non-numeric digits."
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Code too short",
+    "description": "When entering payment card CVC/CVV code, this error appears when the code entered did not include all digits in the CVC/CVV code."
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Get the Signal Boost badge for 30 days",
+    "description": "Info text above the payment card entry form when making a one time donation. Explains the in-app badge which you can receive after donating."
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Donation receipt",
     "description": "Title shown at the top of donation receipt documents"
@@ -8910,9 +8966,9 @@
     "messageformat": "Donation cancelled",
     "description": "Toast shown when a donation was manually cancelled by the user"
   },
-  "icu:Donations__Toast__Cancelled": {
-    "messageformat": "Donation cancelled",
-    "description": "Toast shown when a donation was manually cancelled by the user"
+  "icu:Donations__Toast__Canceled": {
+    "messageformat": "Donation canceled",
+    "description": "Toast shown when a donation was manually canceled by the user"
   },
   "icu:Donations__Toast__Completed": {
     "messageformat": "Donation completed",
@@ -8933,6 +8989,22 @@
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "You have a donation in progress that needs additional verification.",
     "description": "Shown when the user is not on the Preferences/Donations screen, and donation verification is needed. Like when resuming from startup."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "You have a donation in progress that requires confirmation.",
+    "description": "Shown when the user is not on the Preferences/Donations screen, and donation verification is needed. Like when resuming from startup."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Donation interrupted",
+    "description": "Title of the dialog shown when starting up if a donation had been started, and we've saved payment information, but the charge hasn't happened yet"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Your card was not charged. Do you want to retry the donation?",
+    "description": "An explanation for the 'donation interrupted' dialog"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Try again",
+    "description": "The button in the 'donation interrupted' dialog which allows the user to move forward with the donation."
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Payment method declined",
@@ -8969,6 +9041,14 @@
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Your donation is still being processed. This can take a few minutes.",
     "description": "An explanation for the 'still processing' dialog"
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Donation canceled",
+    "description": "Title of the dialog shown when the it's been too long since the last step in the donation process"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "It has been too long since you started your donation. Please start over.",
+    "description": "An explanation for the 'donation timed out' dialog"
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Additional verification required",
@@ -9035,6 +9115,10 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Finding the right emoji can feel like an inescapable struggle, but we fixed a bug that could cause an error to occur after pressing the escape key in the emoji search box.",
+    "description": "(Deleted 2025/08/06) Release notes for version 7.65"
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "This update fixes a few small bugs, including one where emoji reactions weren't being grouped together correctly in some cases.",
     "description": "Release notes for version 7.65"
   }
 }

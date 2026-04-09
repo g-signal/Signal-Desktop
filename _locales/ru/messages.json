@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Ссылку на имя пользователя необходимо сбросить"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Открыть экран со ссылкой на имя пользователя"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Открыть экран со ссылкой на имя пользователя"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Поделитесь вашим именем пользователя"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Возникли проблемы? <contactSupportLink>Связаться с поддержкой</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Ввести сумму"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Кредитная или дебетовая карта"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Введите данные вашей кредитной или дебетовой карты. Signal не собирает и не хранит вашу личную информацию. <learnMoreLink>Узнать больше</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Номер карты"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Срок действия"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Пожертвовать Signal {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Неверный номер карты"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Срок действия карты истек"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Требуется год"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Недействительный"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Код слишком короткий"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Получите значок буста Signal на 30 дней"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Квитанция о пожертвовании"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Спасибо, что поддерживаете Signal. Ваш вклад помогает поддерживать миссию по защите свободы слова и делает возможным безопасное общение между миллионами людей по всему миру благодаря технологии конфиденциальности с открытым исходным кодом. Если вы проживаете в США, пожалуйста, сохраните эту квитанцию для своего налогового учёта. Signal Technology Foundation — это некоммерческая организация, освобождённая от налогов в США со статусом 501c3. Наш ИНН: 82–4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Пожертвование отменено"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "У вас есть незавершённое пожертвование, требующее дополнительной проверки."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "У вас есть незавершённое пожертвование, требующее подтверждения."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Пожертвование прервано"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Средства с вашей карты не были списаны. Вы действительно хотите повторить пожертвование?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Попробовать ещё раз"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Способ оплаты отклонён"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Ваше пожертвование всё ещё обрабатывается. Это может занять несколько минут."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Пожертвование отменено"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Прошло слишком много времени с тех пор, как вы начали оформление пожертвования. Пожалуйста, начните сначала."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Требуется дополнительная проверка"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Поиск подходящего эмодзи бывает нелёгкой задачей, но мы исправили ошибку, из-за которой могло возникать затруднение после нажатия клавиши Escape в окне поиска эмодзи."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "В этом обновлении исправлено несколько небольших ошибок, в том числе та, из-за которой реакции эмодзи иногда группировались неправильно."
   }
 }

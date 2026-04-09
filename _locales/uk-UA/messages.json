@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Посилання на ім'я користувача потрібно скинути"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Відкрити екран з посиланням на ім'я користувача"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Відкрити екран з посиланням на ім'я користувача"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Повідомте своє ім'я користувача"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Виникли проблеми? <contactSupportLink>Зверніться до служби підтримки</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Інша сума"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Кредитна / Дебетова картка"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Введіть дані кредитної / дебетової картки. Signal не збирає і не зберігає вашу особисту інформацію. <learnMoreLink>Докладніше</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Номер картки"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Термін дії"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Задонатити Signal {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Неправильний номер картки"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Картка недійсна"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Зазначте рік"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Неналежний платіж"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Код закороткий"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Отримайте значок за підтримку Signal на 30 днів"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Підтвердження донату"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Дякуємо за підтримку Signal. Ваш внесок допомагає реалізувати нашу місію: захищати свободу слова і робити можливим безпечне спілкування для мільйонів людей у всьому світі за допомогою технології конфіденційності з відкритим кодом. Якщо ви резидент Сполучених Штатів Америки, збережіть цю квитанцію для звітування в податкові органи. Signal Technology Foundation — звільнена від оподаткування неприбуткова організація, створена відповідно до розділу 501c3 податкового кодексу США. Наш федеральний податковий номер: 82–4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Донат скасовано"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Ви оформлюєте донат, для якого потрібне додаткове підтвердження."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Ваш донат очікує на підтвердження."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Донат перервано"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Кошти з картки не було стягнуто. Бажаєте спробувати задонатити знов?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Спробувати знов"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Платіжний засіб відхилено"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Опрацювання вашого донату ще триває. Воно займе кілька хвилин."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Донат скасовано"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "З початку оформлення донату пройшло забагато часу. Будь ласка, почніть знову."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Необхідна додаткова перевірка"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Якщо ви помітили, що після натискання клавіші Escape у полі пошуку емоджі з'являлася помилка, не хвилюйтеся. Це була не агресивна агітація за використання емоджі, а просто помилка, яку ми вже виправили."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "У цьому оновленні ми виправили кілька незначних помилок, як-от некоректне групування емоджі-реакцій."
   }
 }

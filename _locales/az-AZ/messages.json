@@ -3954,7 +3954,7 @@
     "messageformat": "{joinerName} tərəfindən göndərilən qrupa qoşulma tələbi rədd edildi."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} onların qrup keçidi vasitəsilə qoşulmaq üçün sorğu göndərdi və ləğv etdi.} other {{joinerName} qrup keçidi vasitəsilə qoşulmaq üçün göndərdiyi {numberOfRequests,number} sorğunu ləğv etdi.}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} sorğu göndərdi və qrup keçidi vasitəsilə qoşulma sorğusunu ləğv etdi} other {{joinerName} sorğu göndərdi və qrup keçidi vasitəsilə qoşulmaq üçün göndərdiyi {numberOfRequests,number} sorğunu ləğv etdi}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Qrup bağlantısını, admin təsdiqi bağlı olaraq işə saldınız."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "İstifadəçi adının keçidi sıfırlanmalıdır"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "İstifadəçi adı keçid ekranını aç"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "İstifadəçi adı keçid ekranını aç"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "İstifadəçi adınızı paylaşın"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Problem yaşayırsınız? <contactSupportLink>Dəstək xidməti ilə əlaqə saxlayın</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Xüsusi məbləğ daxil et"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kredit və ya debet kartı"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Kredit və ya debet kart məlumatlarını daxil edin. Signal şəxsi məlumatlarınızı toplamır və ya saxlamır. <learnMoreLink>Daha ətraflı</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kart nömrəsi"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Bitmə tarixi"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Signal-a {formattedCurrencyAmount} ianə verin"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Etibarsız kart nömrəsi"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kartın etibarlılıq müddəti bitib"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "İl məlumatı tələb olunur"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Səhvdir"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kod çox qısadır"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "30 günlük Signal Boost nişanı alın"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "İanə qəbzi"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Signal-ı dəstəklədiyiniz üçün təşəkkürlər. Töhfəniz, açıq mənbəli məxfilik texnologiyası vasitəsilə dünyadakı milyonlarla insan üçün azad ifadəni qoruyan və etibarlı qlobal ünsiyyəti təmin edən inkişaf missiyasını dəstəkləməyə kömək edir. Əgər Amerika Birləşmiş Ştatlarında yaşayırsınızsa, bu qəbzi vergi qeydlərinizin arasında saxlayın. Signal Texnologiya Fondu, Daxili Gəlir Məcəlləsinin 501c3 maddəsinə əsasən Amerika Birləşmiş Ştatlarında vergidən azad edilmiş qeyri-kommersiya təşkilatıdır. Federal Vergi Ödəyicisi Nömrəmiz: 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "İanə ləğv edildi"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Əlavə yoxlama tələb olunan ianəniz var."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Təsdiq tələbi gözləyən və davam edən ianəniz var."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "İanə kəsildi"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Kartınızdan pul çıxılmadı. İanəni təkrarlamaq istəyirsinizmi?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Yenidən sına"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Ödəniş üsulu rədd edildi"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "İanəniz hələ də emal edilir. Bu, bir neçə dəqiqə çəkə bilər."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "İanə ləğv edildi"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "İanənizi başlatdıqdan sonra uzun müddət gözlədiniz. Yenidən başlayın."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Əlavə təsdiqləmə tələb olunur"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Düzgün emojinizi tapmaq bəzən çıxılmaz bir məsələyə çevrilə bilər, ancaq biz emoji axtarış qutusunda çıxış düyməsinə basdıqdan sonra baş verən nasazlığı aradan qaldırdıq."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Bu yeniləmə ilə bəzi hallarda düzgün qruplaşmayan emoji reaksiyaları daxil olmaqla, bir neçə nasazlıq aradan qaldırıldı."
   }
 }

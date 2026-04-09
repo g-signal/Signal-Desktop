@@ -3954,7 +3954,7 @@
     "messageformat": "En anmodning fra {joinerName} om at deltage i gruppen blev afvist"
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} anmodede og annullerede deres sin om at blive medlem via gruppelinket} other {{joinerName} anmodede og annullerede {numberOfRequests,number} anmodninger om at blive medlem via gruppelinket}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} anmodede om og annullerede anmodningen om at deltage via gruppelinket} other {{joinerName} anmodede og annullerede {numberOfRequests,number} anmodninger om at deltage via gruppelinket}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Du aktiverede gruppelinket med administratorgodkendelse slået fra."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Link til brugernavnet skal nulstilles"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Åbn skærmen med brugernavnslinket"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Åbn skærmen med brugernavnslinket"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Del dit brugernavn"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Har du problemer? <contactSupportLink>Kontakt support</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Angiv tilpasset beløb"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Kredit- eller debetkort"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Angiv dine kredit- eller betalingskortoplysninger. Signal indsamler eller opbevarer ikke dine personlige oplysninger. <learnMoreLink>Få mere at vide</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kortnummer"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Udløbsdato"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Donér {formattedCurrencyAmount} til Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Ugyldigt kortnummer"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kortet er udløbet"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "År påkrævet"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Ugyldig"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Koden er for kort"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Få et Signal Boost-badge i 30 dage"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Kvittering for donation"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Tak, fordi du støtter Signal! Dit bidrag er med til at fremme missionen om at beskytte ytringsfriheden og muliggøre sikker global kommunikation for millioner af mennesker verden over gennem open source-privatlivsteknologi. Hvis du er bosiddende i USA, bedes du gemme denne kvittering til dine skatteoptegnelser. Signal Technology Foundation er en skattefritaget nonprofitorganisation i USA i henhold til paragraf 501c3 i Internal Revenue Code. Vores føderale skatte-id er 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Donation annulleret"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Du har en igangværende donation, der kræver yderligere verificering."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Du har en igangværende donation, der kræver bekræftelse."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Donationen afbrudt"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Dit kort blev ikke debiteret. Vil du prøve at donere igen?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Prøv igen"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Betalingsmetode blev afvist"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Din donation er stadig under behandling. Dette kan tage et par minutter"
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Donation annulleret"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Det er for længe siden, du startede din donation. Prøv igen."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Yderligere verificering er påkrævet"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Det kan føles som en uundgåelig kamp at finde den rigtige emoji, men vi har rettet en fejl, der kunne forårsage en fejl, efter at man havde trykket på escape-tasten i emoji-søgefeltet."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Denne opdatering retter et par små fejl, herunder en hvor emoji-reaktioner i nogle tilfælde ikke blev grupperet korrekt."
   }
 }

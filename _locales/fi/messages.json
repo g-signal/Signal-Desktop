@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Käyttäjänimen linkki on nollattava"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Avaa käyttäjänimen yhdistämisen näyttö"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Avaa käyttäjänimen yhdistämisen näyttö"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Jaa käyttäjänimesi"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Ongelmia? <contactSupportLink>Ota yhteyttä tukeen</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Syötä uusi summa"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Luotto- tai pankkikortti"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Anna pankki- tai luottokortin tiedot. Signal ei kerää tai tallenna henkilötietojasi. <learnMoreLink>Lue lisää</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kortin numero"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Voimassaolopäivä"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Lahjoita Signalille {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Virheellinen kortin numero"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kortti on vanhentunut"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Vuosi vaaditaan"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Virheellinen"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Koodi on liian lyhyt"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Hanki Signal Boost -merkki 30 päiväksi"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Lahjoituskuitti"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Kiitos Signalin tukemisesta. Lahjoituksesi auttaa edistämään tavoitettamme suojata sananvapautta ja mahdollistaa turvallinen maailmanlaajuinen viestintä miljoonille käyttäjille ympäri maailmaa avoimen lähdekoodin tietosuojateknologialla. Jos asut Yhdysvalloissa, säilytä tämä kuitti verotusta varten. Signal Technology Foundation on verovapaa voittoa tavoittelematon organisaatio Yhdysvaltojen Internal Revenue Code -pykälän 501c3 mukaisesti. Liittovaltion verotunnuksemme on 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Lahjoitus peruttu"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Sinulla on käynnissä lahjoitus, joka vaatii lisävahvistusta."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Sinulla on käynnissä lahjoitus, joka edellyttää vahvistamista."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Lahjoitus keskeytetty"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Korttiasi ei veloitettu. Haluatko yrittää lahjoitusta uudelleen?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Yritä uudelleen"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Maksutapa hylätty"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Lahjoitusta käsitellään vielä. Tämä saattaa kestää muutaman minuutin."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Lahjoitus peruttu"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Lahjoituksen aloittamisesta on kulunut liian kauan. Aloita alusta."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Lisävahvistus vaaditaan"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Korjasimme virheen emoji-hakukentässä."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Muutamia pieniä virheenkorjauksia."
   }
 }

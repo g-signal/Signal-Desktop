@@ -3954,7 +3954,7 @@
     "messageformat": "’n Versoek van {joinerName} om by die groep aan te sluit is geweier."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} het d.m.v. die groepskakel versoek om aan te sluit en het dit gekanselleer} other {{joinerName} het d.m.v. die groepskakel {numberOfRequests,number} versoeke gerig om aan te sluit en het dit gekanselleer}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} het d.m.v. die groepskakel 'n versoek gerig om aan te sluit en het dit gekanselleer} other {{joinerName} het d.m.v. die groepskakel {numberOfRequests,number} versoeke gerig om aan te sluit en het dit gekanselleer}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Jy het die groepskakel geaktiveer met admingoedkeuring gedeaktiveer."
@@ -4990,6 +4990,12 @@
   },
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Gebruikernaamskakel moet teruggestel word"
+  },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Maak skerm met gebruikersnaam-skakel oop"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Maak skerm met gebruikersnaam-skakel oop"
   },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Deel jou gebruikersnaam"
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Ondervind jy probleme? <contactSupportLink>Kontak Steundiens</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Voer Eie Bedrag in"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Krediet- of debietkaart"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Voer jou krediet- of debietkaartbesonderhede in. Signal versamel of stoor nie jou persoonlike inligting nie. <learnMoreLink>Vind meer uit</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kaartnommer"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Vervaldatum"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Skenk {formattedCurrencyAmount} aan Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Ongeldige kaartnommer"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Kaart het verval"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Jaar vereis"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Ongeldig"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Kode te kort"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Kry die Signal-Hupstoot-wapen vir 30 dae"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Skenkingskwitansie"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Dankie vir jou ondersteuning van Signal. Jou bydrae help om deur oopbron-privaatheidstegnologie die missie van die beskerming van vryheid van uitdrukking te befonds en veilige globale kommunikasie vir miljoene mense regoor die wêreld moontlik maak. Indien jy 'n inwoner van die Verenigde State is, behou asseblief hierdie kwitansie vir jou belastingrekords. Signal Technology Foundation is 'n niewinsgewende organisasie in die Verenigde State wat van belasting vrygestel is ingevolge artikel 501c3 van die Internal Revenue Code. Ons Federale Belasting-ID is 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Skenking gekanselleer"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Jy het 'n skenking wat in proses is en bykomende verifiëring benodig."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Jy het 'n skenking wat in proses is en bykomende bevestiging benodig."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Skenking onderbreek"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Jou kaart is nie gedebiteer nie. Wil jy die skenking weer probeer?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Probeer weer"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Betalingsmetode geweier"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Jou skenking word nog verwerk. Dit kan 'n paar minute neem."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Skenking gekanselleer"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Dit is te lank sedert jy met jou skenking begin het. Begin asseblief van voor af."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Bykomende verifiëring word vereis"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Ons het 'n fout in die emoji-soekblokkie reggestel."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "'n Paar klein foutregstellings."
   }
 }

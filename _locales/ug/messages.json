@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "ئىشلەتكۈچى نامى ئۇلانمىسىنى قايتا بېكىتىش كېرەك"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "«ئىشلەتكۈچى نامى» ئۇلىنىش ئېكرانىنى ئېچىڭ"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "«ئىشلەتكۈچى نامى» ئۇلىنىش ئېكرانىنى ئېچىڭ"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "ئەزالىق ئىسمىڭىزنى پايلىشىڭ"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "مەسىلىگە يولۇقتىڭىزمۇ؟ <contactSupportLink>ياردەمچى خادىم بىلەن ئالاقىلىشىڭ</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "ئىختىيارىچە سومما كىرگۈزۈڭ"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "ئىناۋەتلىك كارتا ياكى بانكا كارتىسى"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "ئىناۋەتلىك كارتا ياكى بانكا كارتىڭىزنىڭ تەپسىلاتلىرىنى كىرگۈزۈڭ. Signal شەخسىي ئۇچۇرلىرىڭىزنى توپلىمايدۇ ياكى ساقلىمايدۇ. <learnMoreLink>تەپسىلاتى</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "كارتا نومۇرى"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "مۇددىتى توشىدىغان ۋاقىت"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "‫Signal غا {formattedCurrencyAmount} ئىئانە قىلىمەن"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "كارتا نومۇرى ئىناۋەتسىز"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "كارتىنىڭ ۋاقتى ئۆتكەن"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "يىل تەلەپ قىلىنىدۇ"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "ئىناۋەتسىز"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "كود بەك قىسقا"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "30 كۈنلۈك Signal ئىئانە ئىزنىكىنى تاپشۇرۇۋېلىڭ"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "ئىئانە تالونى"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Signalنى قوللىغانلىقىڭىزغا رەھمەت. سىزنىڭ ئىئانىڭىز ، ئوچۇق مەنبە مەخپىيەتلىك تېخنىكىسى ئارقىلىق ئەركىن ئىپادىلەش ھوقۇقىنى قوغدايدۇ ۋە دۇنيادىكى مىليونلىغان كىشىلەرنىڭ ئالاقىلىشىش بىخەتەرلىكىگە كاپالەتلىك قىلىدۇ. ئەگەر سىز ئامېرىكىنىڭ ئاھالىسى بولسىڭىز ، باج خاتىرىلىرى ئۈچۈن بۇ تالوننى ساقلاپ قويۇڭ. Signal Technology Foundation بولسا ئامېرىكا دۆلەت ئىچى باج قانۇنى 501c3 ماددىسىدىكى بەلگىلىمە بويىچە باجدىن كەچۈرۈم قىلىنىدىغان تاپاۋەتسىز ئورگان بولۇپ ھېسابلىنىدۇ. فېدېراتسىيە باج ID نومۇرىمىز 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "ئىئانە ئەمەلدىن قالدۇرۇلدى"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "قوشۇمچە دەلىللەشكە ئېھتىياجلىق بىر ئىئانىڭىز بار."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "دەلىللەشكە ئېھتىياجلىق بىر ئىئانىڭىز بار."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "ئىئانە قىلىش ئۈزۈلۈپ قالدى"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "كارتىڭىزدا پۇل يوق. ئىئانىنى قايتا سىناپ باقامسىز؟"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "قايتا سىناڭ"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "پۇل تۆلەش ئۇسۇلى رەت قىلىندى"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "ئىئانىڭىزنى تېخىچە بىر تەرەپ قىلىۋاتىدۇ. بۇنىڭغا بىر مىنۇتتەك ۋەقىت كېتىشى مۇمكىن."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "ئىئانە ئەمەلدىن قالدۇرۇلدى"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "ئىئانە قىلىشنى باشلىغان جەريان بەك ئۇزۇنغا سۇزۇلغان. ئېغىر ئالماي قايتىدىن باشلىشىڭىزنى ئۈمۈد قىلىمىز."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "قوشۇمچە دەلىللەش تەلەپ قىلىنىدۇ"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "بىز emoji ئىزدەش رامكىسىدىكى بىر كەمتۈكلۈكنى ئوڭشىدۇق. 7.65چى نەشىر نۇسخىسى ئۈچۈن تارقىتىلدى."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "بۇ قېتىملىق يېڭىلاشتا بىر قانچە كىچىك كەمتۈكلەرنى ئوڭشىدۇق. 7.65نەشىر نۇسخىسى ئۈچۈن تارقىتىلدى."
   }
 }

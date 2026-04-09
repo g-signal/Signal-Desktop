@@ -50,7 +50,7 @@ import { PreferencesInternal } from './PreferencesInternal';
 import { FunEmojiLocalizationProvider } from './fun/FunEmojiLocalizationProvider';
 import { Avatar, AvatarSize } from './Avatar';
 import { NavSidebar } from './NavSidebar';
-import { SettingsPage } from '../types/Nav';
+import { SettingsPage, ProfileEditorPage } from '../types/Nav';
 
 import type { MediaDeviceSettings } from '../types/Calling';
 import type { ValidationResultType as BackupValidationResultType } from '../services/backups';
@@ -257,7 +257,7 @@ type PropsFunctionType = {
       value: CustomColorType;
     }
   ) => unknown;
-  setPage: (page: SettingsPage) => unknown;
+  setPage: (page: SettingsPage, editState?: ProfileEditorPage) => unknown;
   showToast: (toast: AnyToast) => unknown;
   validateBackup: () => Promise<BackupValidationResultType>;
 
@@ -2220,14 +2220,12 @@ export function Preferences({
               </div>
             ) : null}
             <div className="Preferences__scroll-area">
-              <button
-                type="button"
+              <div
                 className={classNames({
                   'Preferences__profile-chip': true,
                   'Preferences__profile-chip--selected':
                     page === SettingsPage.Profile,
                 })}
-                onClick={() => setPage(SettingsPage.Profile)}
               >
                 <div className="Preferences__profile-chip__avatar">
                   <Avatar
@@ -2265,10 +2263,32 @@ export function Preferences({
                     </div>
                   )}
                 </div>
-                <div className="Preferences__profile-chip__qr-icon-container">
+                <button
+                  type="button"
+                  className="Preferences__profile-chip__button"
+                  aria-label={i18n('icu:ProfileEditor__open')}
+                  onClick={() => {
+                    setPage(SettingsPage.Profile);
+                  }}
+                >
+                  <span className="Preferences__profile-chip__screenreader-only">
+                    {i18n('icu:ProfileEditor__open')}
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  className="Preferences__profile-chip__qr-icon-button"
+                  aria-label={i18n('icu:ProfileEditor__username-link__open')}
+                  onClick={() => {
+                    setPage(
+                      SettingsPage.Profile,
+                      ProfileEditorPage.UsernameLink
+                    );
+                  }}
+                >
                   <div className="Preferences__profile-chip__qr-icon" />
-                </div>
-              </button>
+                </button>
+              </div>
               <button
                 type="button"
                 className={classNames({
@@ -2370,7 +2390,7 @@ export function Preferences({
                   type="button"
                   className={classNames({
                     Preferences__button: true,
-                    'Preferences__button--appearance': true,
+                    'Preferences__button--donations': true,
                     'Preferences__button--selected': isDonationsPage(page),
                   })}
                   onClick={() => setPage(SettingsPage.Donations)}

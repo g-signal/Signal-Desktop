@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Ο σύνδεσμος ονόματος χρήστη χρειάζεται επαναφορά"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Οθόνη ανοίγματος συνδέσμου ονόματος χρήστη"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Οθόνη ανοίγματος συνδέσμου ονόματος χρήστη"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Μοιράσου το όνομα χρήστη σου"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Αντιμετωπίζεις προβλήματα; <contactSupportLink>Επικοινώνησε με την υποστήριξη</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Εισαγωγή προσαρμοσμένου ποσού"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Πιστωτική ή χρεωστική κάρτα"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Πρόσθεσε τα στοιχεία της πιστωτικής ή χρεωστικής κάρτας σου. Το Signal δεν συλλέγει ούτε αποθηκεύει τα προσωπικά στοιχεία σου. <learnMoreLink>Μάθε περισσότερα</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Αριθμός κάρτας"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Ημερομηνία λήξης"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Κάνε μια δωρεά {formattedCurrencyAmount} στο Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Μη έγκυρος αριθμός κάρτας"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Η κάρτα έχει λήξει"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Απαιτείται έτος"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Μη έγκυρο"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Ο κωδικός είναι πολύ μικρός"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Πάρε το σήμα Signal Boost για 30 ημέρες"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Απόδειξη δωρεάς"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Σε ευχαριστούμε που στηρίζεις το Signal. Η συνεισφορά σου βοηθά στην ανάπτυξη της τεχνολογίας απορρήτου ανοιχτού κώδικα, που προστατεύει την ελευθερία της έκφρασης και δίνει τη δυνατότητα ασφαλών διεθνών επικοινωνιών για εκατομμύρια ανθρώπους σε όλο τον κόσμο. Αν είσαι κάτοικος των Ηνωμένων Πολιτειών, παρακαλούμε κράτα αυτή την απόδειξη για τα φορολογικά σου αρχεία. Το Signal Technology Foundation είναι ένας μη κερδοσκοπικός οργανισμός στις Ηνωμένες Πολιτείες, που έχει φοροαπαλλαγή σύμφωνα με την ενότητα 501c3 του Internal Revenue Code. Το Federal Tax ID μας είναι 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Η δωρεά ακυρώθηκε"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Έχεις μια δωρεά σε εξέλιξη που χρειάζεται επιπλέον επαλήθευση."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Έχεις μια δωρεά σε εξέλιξη που χρειάζεται επιβεβαιώση."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Η δωρεά διακόπηκε"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Η κάρτα σου δεν χρεώθηκε. Θέλεις να προσπαθήσεις ξανά για τη δωρεά;"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Ξαναπροσπάθησε"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Η μέθοδος πληρωμής απορρίφθηκε"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Η δωρεά σου είναι ακόμη σε επεξεργασία. Αυτό μπορεί να πάρει μερικά λεπτά."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Η δωρεά ακυρώθηκε"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Έχει περάσει πολλή ώρα από τότε που ξεκίνησες τη δωρεά σου. Ξεκίνησε από την αρχή."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Απαιτείται πρόσθετη επαλήθευση"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Διορθώσαμε ένα σφάλμα στο πλαίσιο αναζήτησης emoji."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Λίγες επιδιορθώσεις μικρών σφαλμάτων."
   }
 }

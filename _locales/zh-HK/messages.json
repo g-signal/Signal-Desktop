@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "需要重設用戶名稱連結"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "開啟用戶名稱連結畫面"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "開啟用戶名稱連結畫面"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "分享你的用戶名稱"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "遇到問題？<contactSupportLink>請聯絡支援團隊</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "請輸入自訂金額"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "信用卡或簽帳金融卡"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "請輸入信用卡或簽帳金融卡詳情。Signal 不會收集或儲存你的個人資料。<learnMoreLink>了解更多</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "付款卡號碼"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "到期日"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "捐款 {formattedCurrencyAmount} 給 Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "付款卡號碼無效"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "付款卡已過期"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "必須填寫年份"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "無效"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "代碼太短"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "獲取為期 30 天的 Signal 捐款徽章"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收據"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "感謝你對 B&A 的支持。你的捐款有助於推動保護自由表達的使命，並透過開放原始碼隱私技術，讓全球數百萬人能夠進行安全的全球通訊。若你是美國居民，請保留此收據作為你的稅務紀錄。B&A Technology Foundation 是在美國依據《國稅法規》(IRC) 第 501c3 條的免稅非盈利組織。我們的聯邦稅識別號碼為 82-4506840。"
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "已取消捐款"
   },
   "icu:Donations__Toast__Completed": {
@@ -6756,6 +6798,12 @@
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "你的捐款仍在處理中。 可能需要數分鐘。"
   },
+  "icu:Donations__TimedOut": {
+    "messageformat": "已取消捐款"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "距你開始進行捐款已經過太長時間。請重新開始。"
+  },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "需要額外驗證"
   },
@@ -6807,5 +6855,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "我們修正了一個錯誤﹐以後在表情符號搜尋框中按下 Esc 退出鍵後，便不會再出現問題。"
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "此更新修正了一些小錯誤，包括某些情況下表情符號心情回應分類出錯。"
   }
 }

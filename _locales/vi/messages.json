@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "Cần đặt lại đường dẫn tên người dùng"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Mở màn hình đường dẫn tên người dùng"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Mở màn hình đường dẫn tên người dùng"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Chia sẻ tên người dùng của bạn"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Bạn gặp vấn đề? <contactSupportLink>Liên hệ hỗ trợ</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Nhập vào Số tiền Tuỳ chọn"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Thẻ tín dụng hoặc ghi nợ"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Nhập thông tin thẻ tín dụng hoặc thẻ ghi nợ của bạn. Signal không thu thập hay lưu trữ thông tin cá nhân của bạn. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Số thẻ"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Ngày hết hạn"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Ủng hộ {formattedCurrencyAmount} cho Signal"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Số thẻ không hợp lệ"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "Thẻ đã hết hạn"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Cần có thông tin năm"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Không hợp lệ"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "Mã quá ngắn"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Sở hữu huy hiệu Nhà Ủng hộ trong 30 ngày"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Biên lai ủng hộ"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Cảm ơn bạn đã hỗ trợ Signal. Đóng góp của bạn giúp duy trì sứ mệnh bảo vệ việc tự biểu đạt và cung cấp nền tảng giao tiếp bảo mật cho hàng triệu người trên thế giới, thông qua công nghệ mã nguồn mở hướng tới quyền riêng tư. Nếu bạn là một cư dân của Hoa Kỳ, vui lòng giữ biên lai này cho hồ sơ thuế. Signal Technology Foundation là một tổ chức phi lợi nhuận được miễn trừ nghĩa vụ thuế ở Hoa Kỳ theo mục 501c3 của Internal Revenue Code. ID Thuế Liên bang của chúng tôi là 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Đã hủy khoản ủng hộ"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Bạn đang thực hiện một khoản ủng hộ cần được xác minh thêm."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Bạn có một khoản ủng hộ đang tiến hành cần được xác nhận."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Quá trình bị gián đoạn"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "Thẻ của bạn chưa bị trừ tiền. Bạn có muốn tiến hành ủng hộ lại?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Thử lại"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Phương thức thanh toán bị từ chối"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Khoản ủng hộ của bạn vẫn đang được xử lý. Quá trình này có thể mất ít phút."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Đã hủy khoản ủng hộ"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Đã quá lâu kể từ lúc bạn bắt đầu tiến hành ủng hộ. Vui lòng bắt đầu lại."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "Cần thêm bước xác minh"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Chúng tôi đã sửa lỗi liên quan đến hộp tìm kiếm emoji."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Sửa một số lỗi nhỏ."
   }
 }

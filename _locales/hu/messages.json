@@ -4991,6 +4991,12 @@
   "icu:ProfileEditor__username-link__error-icon": {
     "messageformat": "A felhasználónévhez tartozó hivatkozást vissza kell állítani"
   },
+  "icu:ProfileEditor__open": {
+    "messageformat": "Felhasználónév linkjét tartalmazó képernyő megnyitása"
+  },
+  "icu:ProfileEditor__username-link__open": {
+    "messageformat": "Felhasználónév linkjét tartalmazó képernyő megnyitása"
+  },
   "icu:ProfileEditor__username-link__tooltip__title": {
     "messageformat": "Felhasználónév megosztása"
   },
@@ -6675,6 +6681,42 @@
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "Problémába ütköztél? <contactSupportLink>Segítségkérés</contactSupportLink>"
   },
+  "icu:DonateFlow__amount-picker-custom-amount-placeholder": {
+    "messageformat": "Egyedi összeg megadása"
+  },
+  "icu:DonateFlow__credit-or-debit-card": {
+    "messageformat": "Hitel- vagy betéti kártya"
+  },
+  "icu:DonateFlow__card-form-instructions": {
+    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A Signal nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+  },
+  "icu:DonateFlow__card-form-card-number": {
+    "messageformat": "Kártyaszám"
+  },
+  "icu:DonateFlow__card-form-expiration-date": {
+    "messageformat": "Lejárati idő"
+  },
+  "icu:DonateFlow__card-form-title-donate-with-amount": {
+    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a Signalnak"
+  },
+  "icu:DonateFlow__card-form-error-invalid-card-number": {
+    "messageformat": "Érvénytelen kártyaszám"
+  },
+  "icu:DonateFlow__card-form-error-expiration-expired": {
+    "messageformat": "A kártya lejárt"
+  },
+  "icu:DonateFlow__card-form-error-year-missing": {
+    "messageformat": "Év megadása kötelező"
+  },
+  "icu:DonateFlow__card-form-error-invalid": {
+    "messageformat": "Érvénytelen"
+  },
+  "icu:DonateFlow__card-form-error-cvc-too-short": {
+    "messageformat": "A kód túl rövid"
+  },
+  "icu:DonateFlow__one-time-donation-boost-badge-info": {
+    "messageformat": "Szerezd meg a Signal Boost-jelvényt 30 napra"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Adomány nyugta"
   },
@@ -6693,7 +6735,7 @@
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Köszönjük, hogy támogatod a Signalt! Adományoddal hozzájárulsz a szabad véleménynyilvánítást és milliók számára biztonságos kommunikációt biztosító, nyílt forrású, magánéletet védő technológiák fejlesztéséhez. Ha az Egyesült Államokban adózol, kérünk, őrizd meg ezt a nyugtát adóbevallásodhoz. A Signal Technology Foundation egy adómentes, non-profit szervezet, amely az USA területén az 501c3 Internal Revenue Code hatálya alá tartozik. Federal Tax ID: 82-4506840."
   },
-  "icu:Donations__Toast__Cancelled": {
+  "icu:Donations__Toast__Canceled": {
     "messageformat": "Adományozás visszavonva"
   },
   "icu:Donations__Toast__Completed": {
@@ -6710,6 +6752,18 @@
   },
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "Van egy folyamatban lévő adományod, amely további ellenőrzést igényel."
+  },
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "Van egy folyamatban lévő adományozásod, amely megerősítést igényel."
+  },
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "Adományozás megszakadt"
+  },
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "A kártyádat nem terhelték meg. Szeretnéd újra megpróbálni az adományozást?"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "Újra"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Fizetési mód elutasítva"
@@ -6737,6 +6791,12 @@
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Az adományod feldolgozása még folyamatban van. Ez pár percet is igénybe vehet."
+  },
+  "icu:Donations__TimedOut": {
+    "messageformat": "Adományozás visszavonva"
+  },
+  "icu:Donations__TimedOut__Description": {
+    "messageformat": "Túl sok idő telt el az adományozás indítása óta. Kérjük, kezdd újra."
   },
   "icu:Donations__3dsValidationNeeded": {
     "messageformat": "További ellenőrzés szükséges"
@@ -6789,5 +6849,8 @@
   },
   "icu:WhatsNew__v7.65--0": {
     "messageformat": "Kijavítottunk egy hibát az emoji keresőmezőben."
+  },
+  "icu:WhatsNew__v7.66--0": {
+    "messageformat": "Néhány apróbb hibajavítás."
   }
 }
