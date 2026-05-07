@@ -50,13 +50,6 @@ export function WarningIdlePrimaryDeviceDialog({
           })}
     >
       {i18n('icu:IdlePrimaryDevice__body')}
-      {containerWidthBreakpoint !== WidthBreakpoint.Narrow ? (
-        <div>
-          <a href={SUPPORT_PAGE} rel="noreferrer" target="_blank">
-            {i18n('icu:IdlePrimaryDevice__learnMore')}
-          </a>
-        </div>
-      ) : null}
     </LeftPaneDialog>
   );
 }
