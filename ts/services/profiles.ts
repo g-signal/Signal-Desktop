@@ -33,6 +33,7 @@ import {
 import { isMe } from '../util/whatTypeOfConversation';
 import { parseBadgesFromServer } from '../badges/parseBadgesFromServer';
 import { parseGextTagsFromServer } from '../util/parseGextTags';
+import { parseGextRobotFromServer } from '../util/parseGextRobot';
 import { strictAssert } from '../util/assert';
 import { drop } from '../util/drop';
 import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError';
@@ -743,6 +744,17 @@ async function doGetProfile(
     const gextTags = parseGextTagsFromServer(profile.gextTags);
     c.set({ gextTags });
     log.info(`${logId}: Saved ${gextTags.length} gextTags`);
+  }
+
+  // Step #: Save profile `gextRobot` to conversation attributes
+  if (profile.gextRobot !== undefined) {
+    const gextRobot = parseGextRobotFromServer(profile.gextRobot);
+    if (gextRobot != null) {
+      c.set({ gextRobot });
+      log.info(`${logId}: Saved gextRobot (robot=${gextRobot.robot})`);
+    } else {
+      c.unset('gextRobot');
+    }
   }
 
   // Step #: Save updated (or clear if missing) profile `credential` to conversation

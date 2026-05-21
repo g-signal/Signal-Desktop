@@ -25,6 +25,7 @@ export type Props = {
   i18n: LocalizerType;
   isGroup: boolean;
   isMe: boolean;
+  isRobot?: boolean;
   isSignalConversation: boolean;
   membersCount: number | null;
   pendingAvatarDownload: boolean;
@@ -47,6 +48,7 @@ export function ConversationDetailsHeader({
   i18n,
   isGroup,
   isMe,
+  isRobot,
   isSignalConversation,
   membersCount,
   pendingAvatarDownload,
@@ -237,7 +239,20 @@ export function ConversationDetailsHeader({
       </div>
     );
   } else {
-    title = (
+    title = isRobot ? (
+      <div className="ConversationDetailsHeader__title">
+        <UserText text={conversation.title} />
+        {isInSystemContacts(conversation) && (
+          <span>
+            {' '}
+            <InContactsIcon
+              className="ConversationDetailsHeader__title-contact-icon"
+              i18n={i18n}
+            />
+          </span>
+        )}
+      </div>
+    ) : (
       <button
         type="button"
         onClick={ev => {

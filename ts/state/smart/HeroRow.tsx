@@ -121,6 +121,7 @@ export const SmartHeroRow = memo(function SmartHeroRow({
       isDirectConvoAndHasNickname={isDirectConvoAndHasNickname}
       isMe={isMe}
       invitesCount={invitesCount}
+      isRobot={conversation.gextRobot?.robot === true}
       isSignalConversation={isSignalConversationValue}
       membersCount={membersCount}
       memberships={memberships}

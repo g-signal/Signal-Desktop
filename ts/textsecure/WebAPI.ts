@@ -959,6 +959,7 @@ export type ProfileType = Readonly<{
   paymentAddress?: string;
   badges?: unknown;
   gextTags?: unknown;
+  gextRobot?: unknown;
 }>;
 
 export type GextGroupProfileType = Readonly<{

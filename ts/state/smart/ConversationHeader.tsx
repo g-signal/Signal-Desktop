@@ -1,7 +1,7 @@
 // Copyright 2020 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import React, { memo, useCallback, useMemo } from 'react';
+import React, { memo, useCallback, useEffect, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { useContactNameData } from '../../components/conversation/ContactName';
 import {
@@ -46,6 +46,9 @@ import { getDeleteSyncSendEnabled } from '../selectors/items-extra';
 import { isConversationEverUnregistered } from '../../util/isConversationUnregistered';
 import { isDirectConversation } from '../../util/whatTypeOfConversation';
 import type { DurationInSeconds } from '../../util/durations';
+import { createLogger } from '../../logging/log';
+
+const log = createLogger('SmartConversationHeader');
 
 export type OwnProps = {
   id: string;
@@ -257,6 +260,13 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
 
   const minimalConversation = useMinimalConversation(conversation);
 
+  useEffect(() => {
+    log.info(
+      `gextRobot for conversation ${conversation.id}:`,
+      JSON.stringify(conversation.gextRobot)
+    );
+  }, [conversation.id, conversation.gextRobot]);
+
   const localDeleteWarningShown = useSelector(getLocalDeleteWarningShown);
   const { putItem } = useItemsActions();
   const setLocalDeleteWarningShown = () =>
@@ -283,6 +293,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
         (isConversationSMSOnly(conversation) ||
           isConversationEverUnregistered(conversation))
       }
+      isRobot={conversation.gextRobot?.robot === true}
       onConversationAccept={onConversationAccept}
       onConversationArchive={onConversationArchive}
       onConversationBlock={onConversationBlock}

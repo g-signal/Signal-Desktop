@@ -382,6 +382,8 @@ export const SmartCompositionArea = memo(function SmartCompositionArea({
       toggleForwardMessagesModal={toggleForwardMessagesModal}
       // DraftGifMessageSendModal
       toggleDraftGifMessageSendModal={toggleDraftGifMessageSendModal}
+      // GextRobot — controls entry visibility when peer is a robot
+      gextRobot={conversation.gextRobot}
       // Dispatch
       onEmojiSkinToneDefaultChange={onEmojiSkinToneDefaultChange}
       clearShowIntroduction={clearShowIntroduction}

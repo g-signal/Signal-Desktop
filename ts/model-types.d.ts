@@ -31,6 +31,7 @@ import type { MIMEType } from './types/MIME';
 import type { DurationInSeconds } from './util/durations';
 import type { AnyPaymentEvent } from './types/Payment';
 import type { GextTag } from './types/GextTag';
+import type { GextRobot } from './types/GextRobot';
 
 import AccessRequiredEnum = Proto.AccessControl.AccessRequired;
 import MemberRoleEnum = Proto.Member.Role;
@@ -426,6 +427,7 @@ export type ConversationAttributesType = {
   unreadMentionsCount?: number;
   version: number;
   gextTags?: ReadonlyArray<GextTag>;
+  gextRobot?: GextRobot;
 
   // Private core info
   serviceId?: ServiceIdString;

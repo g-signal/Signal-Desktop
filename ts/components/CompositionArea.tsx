@@ -9,6 +9,7 @@ import type {
   HydratedBodyRangesType,
 } from '../types/BodyRange';
 import type { LocalizerType, ThemeType } from '../types/Util';
+import type { GextRobot } from '../types/GextRobot';
 import type { ErrorDialogAudioRecorderType } from '../types/AudioRecorder';
 import { RecordingState } from '../types/AudioRecorder';
 import type { imageToBlurHash } from '../util/imageToBlurHash';
@@ -214,6 +215,8 @@ export type OwnProps = Readonly<{
   // StickerButton
   installedPacks: ReadonlyArray<StickerPackType>;
   recentStickers: ReadonlyArray<StickerType>;
+  // GextRobot — when robot, hide entries according to msgButtonVisible
+  gextRobot?: GextRobot;
 }>;
 
 export type Props = Pick<
@@ -373,7 +376,14 @@ export const CompositionArea = memo(function CompositionArea({
   toggleForwardMessagesModal,
   // DraftGifMessageSendModal
   toggleDraftGifMessageSendModal,
+  // GextRobot
+  gextRobot,
 }: Props): JSX.Element | null {
+  const isRobot = gextRobot?.robot === true;
+  const msgButtonVisible = isRobot ? gextRobot?.msgButtonVisible : undefined;
+  const hideStickerButton = msgButtonVisible?.sticker === false;
+  const hideMicrophoneButton = msgButtonVisible?.microphone === false;
+  const hideFileButton = msgButtonVisible?.file === false;
   const [dirty, setDirty] = useState(false);
   const [large, setLarge] = useState(false);
   const [attachmentToEdit, setAttachmentToEdit] = useState<
@@ -601,7 +611,8 @@ export const CompositionArea = memo(function CompositionArea({
     setLarge(l => !l);
   }, [setLarge]);
 
-  const shouldShowMicrophone = !large && isComposerEmpty;
+  const shouldShowMicrophone =
+    !large && isComposerEmpty && !hideMicrophoneButton;
 
   const showMediaQualitySelector = draftAttachments.some(isImageAttachment);
 
@@ -788,7 +799,10 @@ export const CompositionArea = memo(function CompositionArea({
 
   const isRecording = recordingState === RecordingState.Recording;
   const attButton =
-    draftEditMessage || linkPreviewResult || isRecording ? undefined : (
+    draftEditMessage ||
+    linkPreviewResult ||
+    isRecording ||
+    hideFileButton ? undefined : (
       <div className="CompositionArea__button-cell">
         <button
           type="button"
@@ -815,7 +829,10 @@ export const CompositionArea = memo(function CompositionArea({
 
   const stickerButtonPlacement = large ? 'top-start' : 'top-end';
   const stickerButtonFragment =
-    !isFunPickerEnabled() && !draftEditMessage && withStickers ? (
+    !isFunPickerEnabled() &&
+    !draftEditMessage &&
+    withStickers &&
+    !hideStickerButton ? (
       <div className="CompositionArea__button-cell">
         <StickerButton
           i18n={i18n}

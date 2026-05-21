@@ -20,6 +20,7 @@ import type { ReadonlyDeep } from 'type-fest';
 import { DataReader, DataWriter } from '../../sql/Client';
 import type { AttachmentType } from '../../types/Attachment';
 import type { GextTag } from '../../types/GextTag';
+import type { GextRobot } from '../../types/GextRobot';
 import type { StateType as RootStateType } from '../reducer';
 import * as groups from '../../groups';
 import { createLogger } from '../../logging/log';
@@ -408,6 +409,7 @@ export type ConversationType = ReadonlyDeep<
         }
     >;
     gextTags?: ReadonlyArray<GextTag>;
+    gextRobot?: GextRobot;
   } & (
     | {
         type: 'direct';

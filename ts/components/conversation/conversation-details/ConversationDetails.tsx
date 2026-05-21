@@ -234,6 +234,8 @@ export function ConversationDetails({
     throw new Error('ConversationDetails rendered without a conversation');
   }
 
+  const isRobot = conversation.gextRobot?.robot === true;
+
   useEffect(() => {
     getProfilesForConversation(conversation.id);
   }, [conversation.id, getProfilesForConversation]);
@@ -413,6 +415,7 @@ export function ConversationDetails({
         i18n={i18n}
         isMe={conversation.isMe}
         isGroup={isGroup}
+        isRobot={isRobot}
         isSignalConversation={isSignalConversation}
         membersCount={conversation.membersCount ?? null}
         pendingAvatarDownload={pendingAvatarDownload ?? false}
@@ -443,7 +446,7 @@ export function ConversationDetails({
             {i18n('icu:ConversationDetails__HeaderButton--Message')}
           </Button>
         )}
-        {!conversation.isMe && !isSignalConversation && (
+        {!conversation.isMe && !isSignalConversation && !isRobot && (
           <>
             <ConversationDetailsCallButton
               hasActiveCall={hasActiveCall}
@@ -653,7 +656,7 @@ export function ConversationDetails({
               }
             />
           ) : null}
-          {canHaveNicknameAndNote(conversation) && (
+          {canHaveNicknameAndNote(conversation) && !isRobot && (
             <PanelRow
               icon={
                 <ConversationDetailsIcon
@@ -751,7 +754,7 @@ export function ConversationDetails({
               }
             />
           )}
-          {!isGroup && !conversation.isMe && (
+          {!isGroup && !conversation.isMe && !isRobot && (
             <PanelRow
               onClick={() => toggleSafetyNumberModal(conversation.id)}
               icon={
@@ -851,7 +854,7 @@ export function ConversationDetails({
         showLightbox={showLightbox}
       />
 
-      {!isGroup && !conversation.isMe && !isSignalConversation && (
+      {!isGroup && !conversation.isMe && !isSignalConversation && !isRobot && (
         <ConversationDetailsGroups
           contactId={conversation.id}
           i18n={i18n}
@@ -861,7 +864,7 @@ export function ConversationDetails({
         />
       )}
 
-      {!conversation.isMe && (
+      {!conversation.isMe && !isRobot && (
         <ConversationDetailsActions
           acceptConversation={acceptConversation}
           blockConversation={blockConversation}

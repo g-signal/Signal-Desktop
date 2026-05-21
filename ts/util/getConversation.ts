@@ -270,5 +270,6 @@ export function getConversation(model: ConversationModel): ConversationType {
         }),
     voiceNotePlaybackRate: attributes.voiceNotePlaybackRate,
     gextTags: attributes.gextTags,
+    gextRobot: attributes.gextRobot,
   };
 }

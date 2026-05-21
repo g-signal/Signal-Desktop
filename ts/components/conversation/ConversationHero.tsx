@@ -31,6 +31,7 @@ export type Props = {
   isDirectConvoAndHasNickname?: boolean;
   isMe: boolean;
   invitesCount?: number;
+  isRobot?: boolean;
   isSignalConversation?: boolean;
   membersCount?: number;
   memberships: ReadonlyArray<GroupV2Membership>;
@@ -247,6 +248,7 @@ export function ConversationHero({
   isMe,
   invitesCount,
   openConversationDetails,
+  isRobot,
   isSignalConversation,
   membersCount,
   memberships,
@@ -307,7 +309,9 @@ export function ConversationHero({
       />
     );
   } else if (title) {
-    titleElem = (
+    titleElem = isRobot ? (
+      <ContactName title={title} />
+    ) : (
       <button
         type="button"
         className="module-conversation-hero__title"

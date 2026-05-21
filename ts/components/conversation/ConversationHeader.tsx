@@ -147,6 +147,7 @@ export type PropsDataType = {
   isSelectMode: boolean;
   isSignalConversation?: boolean;
   isSmsOnlyOrUnregistered?: boolean;
+  isRobot?: boolean;
   outgoingCallButtonStyle: OutgoingCallButtonStyle;
   sharedGroupNames: ReadonlyArray<string>;
   theme: ThemeType;
@@ -207,6 +208,7 @@ export const ConversationHeader = memo(function ConversationHeader({
   isSelectMode,
   isSignalConversation,
   isSmsOnlyOrUnregistered,
+  isRobot,
   localDeleteWarningShown,
   onConversationAccept,
   onConversationArchive,
@@ -345,7 +347,7 @@ export const ConversationHeader = memo(function ConversationHeader({
               isSignalConversation={isSignalConversation ?? false}
               gextTags={gextTags}
             />
-            {!isSmsOnlyOrUnregistered && !isSignalConversation && (
+            {!isSmsOnlyOrUnregistered && !isSignalConversation && !isRobot && (
               <OutgoingCallButtons
                 conversation={conversation}
                 hasActiveCall={hasActiveCall}
@@ -389,6 +391,7 @@ export const ConversationHeader = memo(function ConversationHeader({
               isMissingMandatoryProfileSharing={
                 isMissingMandatoryProfileSharing ?? false
               }
+              isRobot={isRobot}
               isSelectMode={isSelectMode}
               isSignalConversation={isSignalConversation ?? false}
               onChangeDisappearingMessages={
@@ -584,6 +587,7 @@ function HeaderMenu({
   conversation,
   i18n,
   isMissingMandatoryProfileSharing,
+  isRobot,
   isSelectMode,
   isSignalConversation,
   onChangeDisappearingMessages,
@@ -610,6 +614,7 @@ function HeaderMenu({
   conversation: MinimalConversation;
   i18n: LocalizerType;
   isMissingMandatoryProfileSharing: boolean;
+  isRobot?: boolean;
   isSelectMode: boolean;
   isSignalConversation: boolean;
   onChangeDisappearingMessages: (seconds: DurationInSeconds) => void;
@@ -772,12 +777,12 @@ function HeaderMenu({
     <ContextMenu id={triggerId} rtl={isRTL}>
       {!conversation.acceptedMessageRequest && (
         <>
-          {!conversation.isBlocked && (
+          {!conversation.isBlocked && !isRobot && (
             <MenuItem onClick={onConversationBlock}>
               {i18n('icu:ConversationHeader__MenuItem--Block')}
             </MenuItem>
           )}
-          {conversation.isBlocked && (
+          {conversation.isBlocked && !isRobot && (
             <MenuItem onClick={onConversationUnblock}>
               {i18n('icu:ConversationHeader__MenuItem--Unblock')}
             </MenuItem>
@@ -790,9 +795,11 @@ function HeaderMenu({
           <MenuItem onClick={onConversationReportAndMaybeBlock}>
             {i18n('icu:ConversationHeader__MenuItem--ReportSpam')}
           </MenuItem>
-          <MenuItem onClick={onConversationDelete}>
-            {i18n('icu:ConversationHeader__MenuItem--DeleteChat')}
-          </MenuItem>
+          {!isRobot && (
+            <MenuItem onClick={onConversationDelete}>
+              {i18n('icu:ConversationHeader__MenuItem--DeleteChat')}
+            </MenuItem>
+          )}
         </>
       )}
       {conversation.acceptedMessageRequest && (
@@ -853,19 +860,21 @@ function HeaderMenu({
               {i18n('icu:archiveConversation')}
             </MenuItem>
           )}
-          {!conversation.isBlocked && (
+          {!conversation.isBlocked && !isRobot && (
             <MenuItem onClick={onConversationBlock}>
               {i18n('icu:ConversationHeader__MenuItem--Block')}
             </MenuItem>
           )}
-          {conversation.isBlocked && (
+          {conversation.isBlocked && !isRobot && (
             <MenuItem onClick={onConversationUnblock}>
               {i18n('icu:ConversationHeader__MenuItem--Unblock')}
             </MenuItem>
           )}
-          <MenuItem onClick={onConversationDeleteMessages}>
-            {i18n('icu:deleteConversation')}
-          </MenuItem>
+          {!isRobot && (
+            <MenuItem onClick={onConversationDeleteMessages}>
+              {i18n('icu:deleteConversation')}
+            </MenuItem>
+          )}
           {isGroup && (
             <MenuItem onClick={onConversationLeaveGroup}>
               {i18n(
