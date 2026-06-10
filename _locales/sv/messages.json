@@ -42,7 +42,7 @@
     "messageformat": "Att skicka media av hög kvalitet kommer att använda mer data."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Donera till Signal"
+    "messageformat": "Donera till B&A"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standard"
@@ -78,10 +78,10 @@
     "messageformat": "Okänd grupp"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Det går inte att öppna Signal"
+    "messageformat": "Det går inte att öppna B&A"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "För att lösa problemet, följ återställningsguiden på supportsidan eller kontakta Signal-supporten.\n\nOm du behöver använda Signal på en gång kan du radera dina data och länka om det här skrivbordet. Du kommer att ha möjlighet att överföra meddelandehistorik från din telefon."
+    "messageformat": "För att lösa problemet, följ återställningsguiden på supportsidan eller kontakta B&A-supporten.\n\nOm du behöver använda B&A på en gång kan du radera dina data och länka om det här skrivbordet. Du kommer att ha möjlighet att överföra meddelandehistorik från din telefon."
   },
   "icu:databaseError": {
     "messageformat": "Databasfel"
@@ -93,16 +93,16 @@
     "messageformat": "Ta bort alla data permanent"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "All din meddelandehistorik och media kommer att tas bort permanent från den här enheten. Detta tar inte bort några data från din telefon.\n\nDu kommer att kunna använda Signal på den här enheten efter att du har länkat om den. Du kommer att ha möjlighet att överföra meddelandehistorik från din telefon."
+    "messageformat": "All din meddelandehistorik och media kommer att tas bort permanent från den här enheten. Detta tar inte bort några data från din telefon.\n\nDu kommer att kunna använda B&A på den här enheten efter att du har länkat om den. Du kommer att ha möjlighet att överföra meddelandehistorik från din telefon."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Versionen av din databas matchar inte den här versionen av Signal. Se till att du öppnar den senaste versionen av Signal på din dator."
+    "messageformat": "Versionen av din databas matchar inte den här versionen av B&A. Se till att du öppnar den senaste versionen av B&A på din dator."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Det går inte att komma åt databasens krypteringsnyckel eftersom OS-krypteringsnyckelns backend har ändrats från {previousBackend} till {currentBackend}. Detta kan inträffa om skrivbordsmiljön ändras, t.ex. mellan GNOME och KDE.\n\nByt till den tidigare skrivbordsmiljön."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Det går inte att komma åt databasens krypteringsnyckel eftersom OS-krypteringsnyckelns backend har ändrats från {previousBackend} till {currentBackend}. Detta kan inträffa om skrivbordsmiljön ändras, t.ex. mellan GNOME och KDE.\n\nByt till föregående skrivbordsmiljö eller försök att köra Signal med kommandoradsflaggan --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Det går inte att komma åt databasens krypteringsnyckel eftersom OS-krypteringsnyckelns backend har ändrats från {previousBackend} till {currentBackend}. Detta kan inträffa om skrivbordsmiljön ändras, t.ex. mellan GNOME och KDE.\n\nByt till föregående skrivbordsmiljö eller försök att köra B&A med kommandoradsflaggan --password-store=\"{previousBackendFlag}\""
   },
   "icu:mainMenuFile": {
     "messageformat": "&Arkiv"
@@ -138,7 +138,7 @@
     "messageformat": "Visa alla"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Avsluta Signal"
+    "messageformat": "Avsluta B&A"
   },
   "icu:editMenuUndo": {
     "messageformat": "Ångra"
@@ -429,10 +429,10 @@
     "messageformat": "Du markerade ditt Säkerhetsnummer med {name} som inte verifierat från en annan enhet"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Säkerhetsnumret du försöker verifiera har ändrats. Se över ditt nya säkerhetsnummer med {name1}. Kom ihåg att den här förändringen kan innebära att någon försöker avläsa din kommunikation eller att {name2} helt enkelt har installerat om Signal."
+    "messageformat": "Säkerhetsnumret du försöker verifiera har ändrats. Se över ditt nya säkerhetsnummer med {name1}. Kom ihåg att den här förändringen kan innebära att någon försöker avläsa din kommunikation eller att {name2} helt enkelt har installerat om B&A."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Följande personer kan ha ominstallerat Signal eller bytt enheter. Klicka på en mottagare för att bekräfta deras nya säkerhetsnummer. Detta är valfritt."
+    "messageformat": "Följande personer kan ha ominstallerat B&A eller bytt enheter. Klicka på en mottagare för att bekräfta deras nya säkerhetsnummer. Detta är valfritt."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Skicka väntande meddelanden"
@@ -441,7 +441,7 @@
     "messageformat": "Granska"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Du har {count,number} förbindelse som kan ha installerat om Signal eller bytt enheter. Du kan göra en valfri granskning av deras säkerhetsnummer innan du skickar.} other {Du har {count,number} förbindelser som kan ha installerat om Signal eller bytt enheter. Du kan göra en valfri granskning av deras säkerhetsnummer innan du skickar.}}"
+    "messageformat": "{count, plural, one {Du har {count,number} förbindelse som kan ha installerat om B&A eller bytt enheter. Du kan göra en valfri granskning av deras säkerhetsnummer innan du skickar.} other {Du har {count,number} förbindelser som kan ha installerat om B&A eller bytt enheter. Du kan göra en valfri granskning av deras säkerhetsnummer innan du skickar.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Alla förbindelser har granskats. Klicka på skicka för att fortsätta."
@@ -483,7 +483,7 @@
     "messageformat": "När du klickar på Skicka kommer din logg att läggas upp på nätet i 30 dagar på en unik, opublicerad webbadress. Du kan spara den lokalt först."
   },
   "icu:debugLogError": {
-    "messageformat": "Något gick fel med sändningen! Skicka e-post till support@signal.org och bifoga din logg som en textfil."
+    "messageformat": "Något gick fel med sändningen! Skicka e-post till support@baxs.com och bifoga din logg som en textfil."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Felsökningslogg har skickats"
@@ -672,7 +672,7 @@
     "messageformat": "Skapare av klistermärkepaket"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Om Signal Desktop"
+    "messageformat": "Om B&A Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Skärmdelning"
@@ -696,7 +696,7 @@
     "messageformat": "Avsluta"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "Sök"
@@ -750,7 +750,7 @@
     "messageformat": "Hitta via telefonnummer"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Välkommen till Signal"
+    "messageformat": "Välkommen till B&A"
   },
   "icu:whatsNew": {
     "messageformat": "Se {whatsNew} i den här uppdateringen"
@@ -837,13 +837,13 @@
     "messageformat": "Du"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "För att skicka röstmeddelanden, tillåt Signal Desktop att få åtkomst till din mikrofon."
+    "messageformat": "För att skicka röstmeddelanden, tillåt B&A Desktop att få åtkomst till din mikrofon."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "För att ringa måste du tillåta att Signal Desktop får åtkomst till din mikrofon."
+    "messageformat": "För att ringa måste du tillåta att B&A Desktop får åtkomst till din mikrofon."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "För videosamtal måste du tillåta att Signal Desktop får åtkomst till din kamera."
+    "messageformat": "För videosamtal måste du tillåta att B&A Desktop får åtkomst till din kamera."
   },
   "icu:allowAccess": {
     "messageformat": "Tillåt åtkomst"
@@ -867,13 +867,13 @@
     "messageformat": "Tysta"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal kunde inte uppdateras. <retryUpdateButton>Försök uppdatera igen</retryUpdateButton> eller besök {url} för att installera manuellt. <contactSupportLink>Kontakta sedan supporten</contactSupportLink> om detta problem"
+    "messageformat": "B&A kunde inte uppdateras. <retryUpdateButton>Försök uppdatera igen</retryUpdateButton> eller besök {url} för att installera manuellt. <contactSupportLink>Kontakta sedan supporten</contactSupportLink> om detta problem"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal kunde inte uppdateras. Besök {url} för att installera manuellt. <contactSupportLink>Kontakta sedan supporten</contactSupportLink> om detta problem"
+    "messageformat": "B&A kunde inte uppdateras. Besök {url} för att installera manuellt. <contactSupportLink>Kontakta sedan supporten</contactSupportLink> om detta problem"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop är sannolikt i en MacOS-karantän och kan inte uppdateras automatiskt. Försök att flytta {app} till {folder} med Finder."
+    "messageformat": "B&A Desktop är sannolikt i en MacOS-karantän och kan inte uppdateras automatiskt. Försök att flytta {app} till {folder} med Finder."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -918,7 +918,7 @@
     "messageformat": "Det här meddelandet tas bort från den här enheten."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Detta meddelande tas bort för alla i chatten om de använder en ny version av Signal. De kommer att kunna se att du har tagit bort ett meddelande."
+    "messageformat": "Detta meddelande tas bort för alla i chatten om de använder en ny version av B&A. De kommer att kunna se att du har tagit bort ett meddelande."
   },
   "icu:from": {
     "messageformat": "Från"
@@ -960,7 +960,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" är profilnamnet som den här personen har valt i Signal."
+    "messageformat": "\"{title}\" är profilnamnet som den här personen har valt i B&A."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Verifierat"
@@ -975,7 +975,7 @@
     "messageformat": "Inga direktmeddelanden med {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal-förbindelse"
+    "messageformat": "B&A-förbindelse"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} finns i dina systemkontakter"
@@ -1068,7 +1068,7 @@
     "messageformat": "Läs mer"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal använder end-to-end-kryptering och det kan behöva uppdatera din chattsession ibland. Detta påverkar inte din chatts säkerhet, men du kan ha missat ett meddelande från den här kontakten och du kan behöva be dem skicka det igen."
+    "messageformat": "B&A använder end-to-end-kryptering och det kan behöva uppdatera din chattsession ibland. Detta påverkar inte din chatts säkerhet, men du kan ha missat ett meddelande från den här kontakten och du kan behöva be dem skicka det igen."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Kontakta support"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} ändrade sitt telefonnummer"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontakt anslöt sig till Signal"
+    "messageformat": "Kontakt anslöt sig till B&A"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} och {conversationTitle} är samma konto. Din meddelandehistorik för båda chattarna finns här."
@@ -1215,7 +1215,7 @@
     "messageformat": "Det går inte att ladda ned media"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Kontrollera din dators och telefonens internetanslutning. Öppna Signal på din telefon och försök sedan ladda ner igen."
+    "messageformat": "Kontrollera din dators och telefonens internetanslutning. Öppna B&A på din telefon och försök sedan ladda ner igen."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Den här mediefilen är inte längre tillgänglig på din telefon och kan inte laddas ner."
@@ -1236,10 +1236,10 @@
     "messageformat": "Läs mer"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skanna den här koden i Signal-appen på din telefon"
+    "messageformat": "Skanna den här koden i B&A-appen på din telefon"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Öppna Signal på din telefon"
+    "messageformat": "Öppna B&A på din telefon"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Tryck på {settings}, tryck sedan på {linkedDevices}"
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>Ett oväntat fel uppstod.</paragraph><paragraph>Försök igen.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signalen kan inte länka den här enheten med ditt nuvarande nätverk."
+    "messageformat": "B&Aen kan inte länka den här enheten med ditt nuvarande nätverk."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Försök igen"
@@ -1281,7 +1281,7 @@
     "messageformat": "Enhetsnamn"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "För att ändra namnet på den här enheten öppnar du Signal på din telefon och navigerar till Inställningar > Länkade enheter"
+    "messageformat": "För att ändra namnet på den här enheten öppnar du B&A på din telefon och navigerar till Inställningar > Länkade enheter"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji-hudton"
@@ -1461,7 +1461,7 @@
     "messageformat": "Tyvärr har du för många enheter redan länkade. Försök att ta bort några."
   },
   "icu:installTooOld": {
-    "messageformat": "Uppdatera Signal på den här enheten för att länka din telefon."
+    "messageformat": "Uppdatera B&A på den här enheten för att länka din telefon."
   },
   "icu:installErrorHeader": {
     "messageformat": "Något gick fel!"
@@ -1512,7 +1512,7 @@
     "messageformat": "Den här samtalslänken är inte längre giltig."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Ring med Signal"
+    "messageformat": "Ring med B&A"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Det går inte att ta bort länken. Kontrollera din anslutning och försök igen."
@@ -1584,10 +1584,10 @@
     "messageformat": "Gruppen är för stor för att ringa deltagarna."
   },
   "icu:CallingButton__ring-off": {
-    "messageformat": "Stäng av ringsignal"
+    "messageformat": "Stäng av ringB&A"
   },
   "icu:CallingButton--ring-on": {
-    "messageformat": "Slå på ringsignal"
+    "messageformat": "Slå på ringB&A"
   },
   "icu:CallingButton--more-options": {
     "messageformat": "Fler alternativ"
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, one {{count,number} person är med i det här samtalet} other {{count,number} personer är med i det här samtalet}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal ringer {person}"
+    "messageformat": "B&A ringer {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal ringer {first} och {second}"
+    "messageformat": "B&A ringer {first} och {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal ringer {first}, {second} och {third}"
+    "messageformat": "B&A ringer {first}, {second} och {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal kommer att ringa {first}, {second} och {others,number} annan} other {Signal kommer att ringa {first}, {second} och {others,number} andra}}"
+    "messageformat": "{others, plural, one {B&A kommer att ringa {first}, {second} och {others,number} annan} other {B&A kommer att ringa {first}, {second} och {others,number} andra}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} kommer att meddelas"
@@ -1725,13 +1725,13 @@
     "messageformat": "Återansluter …"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Din anslutning har förlorats. Signal återansluts."
+    "messageformat": "Din anslutning har förlorats. B&A återansluts."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal delar {window}."
+    "messageformat": "B&A delar {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal-skärmdelning är aktiv"
+    "messageformat": "B&A-skärmdelning är aktiv"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Återansluter …"
@@ -1752,7 +1752,7 @@
     "messageformat": "Behörighet behövs"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal behöver tillstånd för att komma åt datorns skärminspelning."
+    "messageformat": "B&A behöver tillstånd för att komma åt datorns skärminspelning."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Gå till systeminställningar."
@@ -1761,7 +1761,7 @@
     "messageformat": "Klicka på låsikonen längst ned till vänster och ange datorns lösenord."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Till höger markerar du rutan bredvid Signal. Om du inte ser Signal i listan klickar du på + för att lägga till den."
+    "messageformat": "Till höger markerar du rutan bredvid B&A. Om du inte ser B&A i listan klickar du på + för att lägga till den."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Öppna systeminställningar"
@@ -1773,7 +1773,7 @@
     "messageformat": "Slussa alltid samtal"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Slussa alla samtal via Signal-servern för att undvika att avslöja din IP-adress för din kontakt. Aktivering försämrar samtalskvaliteten."
+    "messageformat": "Slussa alla samtal via B&A-servern för att undvika att avslöja din IP-adress för din kontakt. Aktivering försämrar samtalskvaliteten."
   },
   "icu:permissions": {
     "messageformat": "Behörigheter"
@@ -1791,10 +1791,10 @@
     "messageformat": "Visa flytande fönster för textformatering när text är markerad"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Stavningskontrollen aktiveras nästa gång Signal startas."
+    "messageformat": "Stavningskontrollen aktiveras nästa gång B&A startas."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Stavningskontrollen inaktiveras nästa gång Signal startas."
+    "messageformat": "Stavningskontrollen inaktiveras nästa gång B&A startas."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimera till systemfältet"
@@ -1818,13 +1818,13 @@
     "messageformat": "Ta bort alla data?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Ta bort alla data och meddelanden från den här versionen av Signal Desktop? Ditt Signal-konto och dina data på din telefon eller andra länkade enheter raderas inte."
+    "messageformat": "Ta bort alla data och meddelanden från den här versionen av B&A Desktop? Ditt B&A-konto och dina data på din telefon eller andra länkade enheter raderas inte."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Kopplar bort och tar bort alla data …"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Du har föråldrade data från en tidigare installation av Signal Desktop. Om du väljer att fortsätta kommer det att tas bort och du kommer att börja från början."
+    "messageformat": "Du har föråldrade data från en tidigare installation av B&A Desktop. Om du väljer att fortsätta kommer det att tas bort och du kommer att börja från början."
   },
   "icu:deleteOldData": {
     "messageformat": "Ta bort gamla data"
@@ -1866,10 +1866,10 @@
     "messageformat": "Delvis borttagen, klicka för att försöka igen"
   },
   "icu:expiredWarning": {
-    "messageformat": "Den här versionen av Signal Desktop har upphört att gälla. Uppgradera till den senaste versionen för att fortsätta chatta."
+    "messageformat": "Den här versionen av B&A Desktop har upphört att gälla. Uppgradera till den senaste versionen för att fortsätta chatta."
   },
   "icu:upgrade": {
-    "messageformat": "Klicka för att gå till signal.org/download"
+    "messageformat": "Klicka för att gå till ba-chat.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediameddelande"
@@ -1878,7 +1878,7 @@
     "messageformat": "Importera kontakter"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importera alla grupper och kontakter från Signal på din mobil."
+    "messageformat": "Importera alla grupper och kontakter från B&A på din mobil."
   },
   "icu:syncNow": {
     "messageformat": "Importera nu"
@@ -1914,7 +1914,7 @@
     "messageformat": "Igår {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal kanske inte kan behandla ett inkommande meddelande."
+    "messageformat": "B&A kanske inte kan behandla ett inkommande meddelande."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Meddelandekroppen är för lång."
@@ -2067,10 +2067,10 @@
     "messageformat": "Redigeringar kan bara tillämpas inom 24 timmar från det att du skickade det här meddelandet."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} är inte en Signal-användare. Kontrollera att du har angett hela användarnamnet."
+    "messageformat": "{atUsername} är inte en B&A-användare. Kontrollera att du har angett hela användarnamnet."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Användaren hittades inte. \"{phoneNumber}\" är inte en Signal-användare."
+    "messageformat": "Användaren hittades inte. \"{phoneNumber}\" är inte en B&A-användare."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Användaren hittades inte. \"{phoneNumber}\" är inte ett giltigt telefonnummer."
@@ -2091,13 +2091,13 @@
     "messageformat": "Störst gruppstorlek uppnådd"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal-grupper kan ha högst {max,number} medlemmar."
+    "messageformat": "B&A-grupper kan ha högst {max,number} medlemmar."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Rekommenderad medlemsgräns uppnådd"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal-grupper fungerar bäst med {max,number} medlemmar eller mindre. Om du lägger till fler medlemmar kommer det att orsaka förseningar när du skickar och tar emot meddelanden."
+    "messageformat": "B&A-grupper fungerar bäst med {max,number} medlemmar eller mindre. Om du lägger till fler medlemmar kommer det att orsaka förseningar när du skickar och tar emot meddelanden."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Namnge den här gruppen"
@@ -2127,7 +2127,7 @@
     "messageformat": "Det gick inte att uppdatera gruppen. Kontrollera din anslutning och försök igen."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Klicka för att återlänka Signal Desktop till din mobila enhet för att fortsätta skicka meddelanden."
+    "messageformat": "Klicka för att återlänka B&A Desktop till din mobila enhet för att fortsätta skicka meddelanden."
   },
   "icu:unlinked": {
     "messageformat": "Inte länkad"
@@ -2139,16 +2139,16 @@
     "messageformat": "Försök att uppdatera igen"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Klicka för att starta om Signal"
+    "messageformat": "Klicka för att starta om B&A"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Klicka för att hämta uppdateringen"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal kunde inte uppdateras. Klicka för att försöka igen."
+    "messageformat": "B&A kunde inte uppdateras. Klicka för att försöka igen."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Starta om Signal"
+    "messageformat": "Starta om B&A"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignorera uppdatering"
@@ -2247,7 +2247,7 @@
     "messageformat": "Vissa bifogade filer är för stora för att visas."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Använd den här länken för att gå med i ett Signal-samtal"
+    "messageformat": "Använd den här länken för att gå med i ett B&A-samtal"
   },
   "icu:donation--missing": {
     "messageformat": "Det gick inte att hämta information om donationen"
@@ -2259,7 +2259,7 @@
     "messageformat": "Tryck på det här meddelandet på mobilen för att visa din donation"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} har donerat till Signal å dina vägnar"
+    "messageformat": "{sender} har donerat till B&A å dina vägnar"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Kontrollera din telefon för att öppna den här donationen"
@@ -2310,7 +2310,7 @@
     "messageformat": "Tack för ditt stöd!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} har gjort en donation till Signal för din räkning. De får möjlighet att visa sitt stöd på sin profil."
+    "messageformat": "{name} har gjort en donation till B&A för din räkning. De får möjlighet att visa sitt stöd på sin profil."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Klistermärkespaketet kan inte installeras"
@@ -2325,10 +2325,10 @@
     "messageformat": "Inga klistermärken installerade"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal-artistserier"
+    "messageformat": "B&A-artistserier"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Inga Signal-artistklistermärken tillgängliga"
+    "messageformat": "Inga B&A-artistklistermärken tillgängliga"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Klistermärken du fått"
@@ -2670,19 +2670,19 @@
     "messageformat": "Meddelandet är för långt för att visa mer"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} skickade dig ett meddelande som inte kan bearbetas eller visas eftersom det använder en ny Signal-funktion."
+    "messageformat": "{contact} skickade dig ett meddelande som inte kan bearbetas eller visas eftersom det använder en ny B&A-funktion."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Du kan fråga {contact} om att skicka om det här meddelandet nu när du använder en uppdaterad version av Signal."
+    "messageformat": "Du kan fråga {contact} om att skicka om det här meddelandet nu när du använder en uppdaterad version av B&A."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "En av dina enheter skickade ett meddelande som inte kan bearbetas eller visas eftersom den använder en ny Signal-funktion."
+    "messageformat": "En av dina enheter skickade ett meddelande som inte kan bearbetas eller visas eftersom den använder en ny B&A-funktion."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Framtida meddelanden som detta synkroniseras nu när du använder en uppdaterad version av Signal."
+    "messageformat": "Framtida meddelanden som detta synkroniseras nu när du använder en uppdaterad version av B&A."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Uppdatera Signal"
+    "messageformat": "Uppdatera B&A"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Sett"
@@ -2946,7 +2946,7 @@
     "messageformat": "Chatt markerad oläst"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Ställ in Signal på din telefon och ditt skrivbord för att använda skaparen av klistermärkespaket"
+    "messageformat": "Ställ in B&A på din telefon och ditt skrivbord för att använda skaparen av klistermärkespaket"
   },
   "icu:Reactions--remove": {
     "messageformat": "Ta bort reaktionen"
@@ -2970,7 +2970,7 @@
     "messageformat": "Falska namn och konton"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal kommer aldrig att kontakta dig för din registreringskod eller pinkod. Var försiktig med förfrågningar där någon utger sig för att vara en annan person. Profilnamn väljs av deras kontoinnehavare och är inte verifierade."
+    "messageformat": "B&A kommer aldrig att kontakta dig för din registreringskod eller pinkod. Var försiktig med förfrågningar där någon utger sig för att vara en annan person. Profilnamn väljs av deras kontoinnehavare och är inte verifierade."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Krypto- eller penningbedrägerier"
@@ -3060,13 +3060,13 @@
     "messageformat": "Rapportera som skräppost?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal kommer att meddelas om att denna person kanske skickar skräppost. Signal kan inte se innehållet i några chattar."
+    "messageformat": "B&A kommer att meddelas om att denna person kanske skickar skräppost. B&A kan inte se innehållet i några chattar."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal kommer att meddelas om att den person som bjöd in dig till denna grupp kanske skickar skräppost. Signal kan inte se innehållet i några chattar."
+    "messageformat": "B&A kommer att meddelas om att den person som bjöd in dig till denna grupp kanske skickar skräppost. B&A kan inte se innehållet i några chattar."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal kommer att meddelas om att {name}, som bjöd in dig till denna grupp, kanske skickar skräppost. Signal kan inte se innehållet i några chattar."
+    "messageformat": "B&A kommer att meddelas om att {name}, som bjöd in dig till denna grupp, kanske skickar skräppost. B&A kan inte se innehållet i några chattar."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Rapportera skräppost"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>Profilnamn</clickable> verifieras inte"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Det här är den officiella och enda chatten från Signal"
+    "messageformat": "Det här är den officiella och enda chatten från B&A"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Håll dig uppdaterad med nyheter och versionsinformation."
@@ -3228,10 +3228,10 @@
     "messageformat": "Obesvarat videosamtal"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal körs fortfarande"
+    "messageformat": "B&A körs fortfarande"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal fortsätter att köras i aviseringsfältet. Du kan ändra detta i Signal-inställningarna."
+    "messageformat": "B&A fortsätter att köras i aviseringsfältet. Du kan ändra detta i B&A-inställningarna."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Inkommande röstsamtal"
@@ -3333,10 +3333,10 @@
     "messageformat": "Ta ner"
   },
   "icu:CallControls__RingingToast--ringing-on": {
-    "messageformat": "Ringsignal på"
+    "messageformat": "RingB&A på"
   },
   "icu:CallControls__RingingToast--ringing-off": {
-    "messageformat": "Ringsignal av"
+    "messageformat": "RingB&A av"
   },
   "icu:CallControls__RaiseHandsToast--you": {
     "messageformat": "Du räcker upp handen."
@@ -3441,7 +3441,7 @@
     "messageformat": "Kopiera samtalslänk"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Dela samtalslänk via Signal"
+    "messageformat": "Dela samtalslänk via B&A"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Ta bort den här personen från samtalet"
@@ -3561,7 +3561,7 @@
     "messageformat": "Okänd länkversion"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Den här länken stöds inte av den här versionen av Signal Desktop."
+    "messageformat": "Den här länken stöds inte av den här versionen av B&A Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Det går inte att gå med i gruppen"
@@ -4116,22 +4116,22 @@
     "messageformat": "Detta kan ta några minuter"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Donera till Signal"
+    "messageformat": "Donera till B&A"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Donera till Signal"
+    "messageformat": "Donera till B&A"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal drivs av människor som du. Bidra och få ett märke."
+    "messageformat": "B&A drivs av människor som du. Bidra och få ett märke."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Öppna Signal på din telefon"
+    "messageformat": "Öppna B&A på din telefon"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Tryck på ditt profilfoto längst upp till vänster för att öppna Inställningar"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Tryck på \"Donera till Signal\" och prenumerera"
+    "messageformat": "Tryck på \"Donera till B&A\" och prenumerera"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Din profil har flyttats"
@@ -4257,7 +4257,7 @@
     "messageformat": "Kontoåtgärd krävs"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Du måste öppna Signal på din telefon för att fortsätta använda det här kontot. Om du inte öppnar Signal på din telefon kommer ditt konto att tas bort snart. <learnMoreLink>Läs mer</learnMoreLink>"
+    "messageformat": "Du måste öppna B&A på din telefon för att fortsätta använda det här kontot. Om du inte öppnar B&A på din telefon kommer ditt konto att tas bort snart. <learnMoreLink>Läs mer</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Det går inte att återställa media"
@@ -4272,10 +4272,10 @@
     "messageformat": "Bifoga fil"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Den här personen använder inte Signal"
+    "messageformat": "Den här personen använder inte B&A"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop stöder inte sändning av meddelanden till icke Signal-kontakter. Be den här personen att installera Signal för en säkrare meddelandeupplevelse."
+    "messageformat": "B&A Desktop stöder inte sändning av meddelanden till icke B&A-kontakter. Be den här personen att installera B&A för en säkrare meddelandeupplevelse."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Kontrollerar kontaktens registreringsstatus"
@@ -4461,7 +4461,7 @@
     "messageformat": "Smeknamn"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Smeknamn och anteckningar lagras hos Signal och är totalsträckskrypterade. De är endast synliga för dig."
+    "messageformat": "Smeknamn och anteckningar lagras hos B&A och är totalsträckskrypterade. De är endast synliga för dig."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Förnamn"
@@ -4512,7 +4512,7 @@
     "messageformat": "Kräv att en administratör ska godkänna nya medlemmar som går med via grupplänken"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiera signal.group-länk till urklipp"
+    "messageformat": "Kopiera B&A.group-länk till urklipp"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Förfrågningar ({count,number})"
@@ -4716,13 +4716,13 @@
     "messageformat": "Det går inte att vidarebefordra tomma eller raderade meddelanden"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Använd den här länken för att gå med i ett Signal-samtal: {url}"
+    "messageformat": "Använd den här länken för att gå med i ett B&A-samtal: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Säkerhetstips"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Granska förfrågningar noggrant. Signal hittade en annan kontakt med samma namn. <reviewRequestLink>Granska förfrågan</reviewRequestLink>"
+    "messageformat": "Granska förfrågningar noggrant. B&A hittade en annan kontakt med samma namn. <reviewRequestLink>Granska förfrågan</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} gruppmedlem har samma namn. <reviewRequestLink>Granska medlemmar</reviewRequestLink>} other {{count,number} gruppmedlemmar har samma namn. <reviewRequestLink>Granska medlemmar</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "Inga andra grupper gemensamt"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal-förbindelse"
+    "messageformat": "B&A-förbindelse"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Nyligen ändrat sitt profilnamn från {oldName} till {newName}"
@@ -4773,7 +4773,7 @@
     "messageformat": "Verifiera för att fortsätta skicka meddelanden"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "För att förhindra skräppost på Signal, slutför verifieringen."
+    "messageformat": "För att förhindra skräppost på B&A, slutför verifieringen."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Efter verifiering kan du fortsätta skicka meddelanden. Alla pausade meddelanden skickas automatiskt."
@@ -5079,7 +5079,7 @@
     "messageformat": "Vill du slänga dessa ändringar?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Stäng Signal och avsluta samtalet?"
+    "messageformat": "Stäng B&A och avsluta samtalet?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Inte nu"
@@ -5166,7 +5166,7 @@
     "messageformat": "Allmänt"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Donera till Signal"
+    "messageformat": "Donera till B&A"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Utseende"
@@ -5247,7 +5247,7 @@
     "messageformat": "Skapa länkförhandsgranskningar"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Om du vill ändra den här inställningen öppnar du Signal-appen på din mobila enhet och navigerar till Inställningar > Chattar"
+    "messageformat": "Om du vill ändra den här inställningen öppnar du B&A-appen på din mobila enhet och navigerar till Inställningar > Chattar"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Konvertera skrivna uttryckssymboler till emojier"
@@ -5265,13 +5265,13 @@
     "messageformat": "Blockerade"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Säkerhetskopiering av Signal"
+    "messageformat": "Säkerhetskopiering av B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatiska säkerhetskopieringar med Signals säkra totalsträckskrypterade lagringstjänst. Kom igång på din telefon. <learnMoreLink>Läs mer</learnMoreLink>."
+    "messageformat": "Automatiska säkerhetskopieringar med B&As säkra totalsträckskrypterade lagringstjänst. Kom igång på din telefon. <learnMoreLink>Läs mer</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Säkerhetskopiera din meddelandehistorik så att du aldrig förlorar data när du skaffar en ny telefon eller installerar om Signal."
+    "messageformat": "Säkerhetskopiera din meddelandehistorik så att du aldrig förlorar data när du skaffar en ny telefon eller installerar om B&A."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Information om säkerhetskopiering"
@@ -5280,7 +5280,7 @@
     "messageformat": "Säkerhetskopiering av textmeddelanden + alla mediefiler"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Ditt abonnemang hittades inte. Förnya för att fortsätta använda Säkerhetskopiering av Signal."
+    "messageformat": "Ditt abonnemang hittades inte. Förnya för att fortsätta använda Säkerhetskopiering av B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Säkerhetskopiering av textmeddelanden + {mediaDayCount,number} dags media} other {Säkerhetskopiering av textmeddelanden + {mediaDayCount,number} dagars media}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "Abonnemanget uppsagt"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Du kan hantera eller avbryta ditt Säkerhetskopiering av Signal-abonnemang på din telefon."
+    "messageformat": "Du kan hantera eller avbryta ditt Säkerhetskopiering av B&A-abonnemang på din telefon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Du kan hantera eller uppgradera ditt Säkerhetskopiering av Signal på din telefon."
+    "messageformat": "Du kan hantera eller uppgradera ditt Säkerhetskopiering av B&A på din telefon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Du kan hantera eller förnya ditt Säkerhetskopiering av Signal-abonnemang på din telefon."
+    "messageformat": "Du kan hantera eller förnya ditt Säkerhetskopiering av B&A-abonnemang på din telefon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Senaste säkerhetskopia"
@@ -5322,7 +5322,7 @@
     "messageformat": "Skapa en totalsträckskrypterad säkerhetskopia som du kan återställa på din telefon. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Installera en ny kopia av Signal för att återställa en säkerhetskopia. Öppna appen och tryck på Återställ säkerhetskopia. Leta sedan upp mappen för säkerhetskopian. <learnMoreLink>Läs mer.</learnMoreLink>"
+    "messageformat": "Installera en ny kopia av B&A för att återställa en säkerhetskopia. Öppna appen och tryck på Återställ säkerhetskopia. Leta sedan upp mappen för säkerhetskopian. <learnMoreLink>Läs mer.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Välj en mapp"
@@ -5358,7 +5358,7 @@
     "messageformat": "Förvara din nyckel säkert"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal kommer inte att kunna hjälpa dig att återställa din säkerhetskopia om du förlorar din nyckel. Spara den någonstans säkert och dela den inte med andra."
+    "messageformat": "B&A kommer inte att kunna hjälpa dig att återställa din säkerhetskopia om du förlorar din nyckel. Spara den någonstans säkert och dela den inte med andra."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Fortsätt"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, one {{num,number} kontakt} other {{num,number} kontakter}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "För att ändra dessa inställningar, öppna appen Signal på din mobila enhet och navigera till Inställningar > Integritet"
+    "messageformat": "För att ändra dessa inställningar, öppna appen B&A på din mobila enhet och navigera till Inställningar > Integritet"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Telefonnummer"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Välj vem som kan se ditt telefonnummer och vem som kan använda det för att kontakta dig på Signal."
+    "messageformat": "Välj vem som kan se ditt telefonnummer och vem som kan använda det för att kontakta dig på B&A."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Ändra …"
@@ -5430,10 +5430,10 @@
     "messageformat": "Vem kan hitta mig med nummer"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Alla som har ditt telefonnummer ser att du är på Signal och kan börja chatta med dig."
+    "messageformat": "Alla som har ditt telefonnummer ser att du är på B&A och kan börja chatta med dig."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Ingen kommer att kunna se att du är på Signal om du inte skickar ett meddelande eller har en befintlig chatt med dem."
+    "messageformat": "Ingen kommer att kunna se att du är på B&A om du inte skickar ett meddelande eller har en befintlig chatt med dem."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Alla"
@@ -5445,7 +5445,7 @@
     "messageformat": "Är du säker?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Om du ändrar \"{settingTitle}\" till \"{nobodyLabel}\" blir det svårare för andra att hitta dig på Signal."
+    "messageformat": "Om du ändrar \"{settingTitle}\" till \"{nobodyLabel}\" blir det svårare för andra att hitta dig på B&A."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Meddelanden"
@@ -5499,7 +5499,7 @@
     "messageformat": "Ställ in"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Starta om Signal för att tillämpa"
+    "messageformat": "Starta om B&A för att tillämpa"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Appen måste startas om för att ändra språk."
@@ -5514,13 +5514,13 @@
     "messageformat": "Skärmsäkerhet"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Förhindra skärmdumpar av Signal på den här datorn för ökad integritet."
+    "messageformat": "Förhindra skärmdumpar av B&A på den här datorn för ökad integritet."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Inaktivera skärmsäkerhet?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Om detta är inaktiverat kan Microsoft Windows ta skärmdumpar av Signal och använda dem för funktioner som kanske inte är privata."
+    "messageformat": "Om detta är inaktiverat kan Microsoft Windows ta skärmdumpar av B&A och använda dem för funktioner som kanske inte är privata."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Inaktivera"
@@ -5535,25 +5535,25 @@
     "messageformat": "Uppdatering nedladdad"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Öppna Signal på din telefon"
+    "messageformat": "Öppna B&A på din telefon"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Ditt konto kommer snart att raderas om du inte öppnar Signal på din telefon. Det här meddelandet försvinner när du har gjort det. <learnMoreLink>Läs mer</learnMoreLink>"
+    "messageformat": "Ditt konto kommer snart att raderas om du inte öppnar B&A på din telefon. Det här meddelandet försvinner när du har gjort det. <learnMoreLink>Läs mer</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Öppna Signal på din telefon för att hålla ditt konto aktivt"
+    "messageformat": "Öppna B&A på din telefon för att hålla ditt konto aktivt"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Läs mer"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal har tekniska problem. Vi arbetar för fullt med att få igång tjänsten så snabbt vi kan."
+    "messageformat": "B&A har tekniska problem. Vi arbetar för fullt med att få igång tjänsten så snabbt vi kan."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Uppdatering krävs"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Uppdatera Signal Desktop nu för att slutföra synkroniseringen av dina meddelanden."
+    "messageformat": "Uppdatera B&A Desktop nu för att slutföra synkroniseringen av dina meddelanden."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Uppdatera"
@@ -5562,19 +5562,19 @@
     "messageformat": "Uppdatering krävs"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "För att fortsätta använda Signal måste du uppdatera till den senaste versionen."
+    "messageformat": "För att fortsätta använda B&A måste du uppdatera till den senaste versionen."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Ladda ner {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Starta om Signal för att installera uppdateringen."
+    "messageformat": "Starta om B&A för att installera uppdateringen."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop kunde inte uppdateras men det finns en ny version tillgänglig. Gå till {downloadUrl} och installera den nya versionen manuellt, kontakta sedan antingen supporten eller skicka ett felmeddelande om det här problemet."
+    "messageformat": "B&A Desktop kunde inte uppdateras men det finns en ny version tillgänglig. Gå till {downloadUrl} och installera den nya versionen manuellt, kontakta sedan antingen supporten eller skicka ett felmeddelande om det här problemet."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal går inte att stängas.",
+    "messageformat": "B&A går inte att stängas.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "En nyare version av Signal är redan installerad. Är du säker på att du vill fortsätta?",
+    "messageformat": "En nyare version av B&A är redan installerad. Är du säker på att du vill fortsätta?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Applikationen kraschade"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal startade om efter en krasch. Du kan skicka in en kraschrapport för att hjälpa Signal att undersöka problemet."
+    "messageformat": "B&A startade om efter en krasch. Du kan skicka in en kraschrapport för att hjälpa B&A att undersöka problemet."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Skicka"
@@ -5706,7 +5706,7 @@
     "messageformat": "Klicka på {buttonName} nedan"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Slå på Signal"
+    "messageformat": "Slå på B&A"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Gå till inställningar"
@@ -5796,7 +5796,7 @@
     "messageformat": "Läs mer"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal-förbindelser"
+    "messageformat": "B&A-förbindelser"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} är personer som du har valt att lita på, antingen genom att:"
@@ -5946,7 +5946,7 @@
     "messageformat": "Dölj story från"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Alla Signal-förbindelser"
+    "messageformat": "Alla B&A-förbindelser"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Alla utom …"
@@ -5964,7 +5964,7 @@
     "messageformat": "Visa kvitton"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Om du vill ändra den här inställningen öppnar du Signal-appen på din mobila enhet och navigerar till Inställningar > Stories"
+    "messageformat": "Om du vill ändra den här inställningen öppnar du B&A-appen på din mobila enhet och navigerar till Inställningar > Stories"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Vem kan visa den här storyn"
@@ -6024,7 +6024,7 @@
     "messageformat": "Min story-integritet"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Välj vilka Signal-förbindelser som kan se din story. Du kan alltid ändra detta i integritetsinställningarna. <learnMoreLink>Läs mer.</learnMoreLink>"
+    "messageformat": "Välj vilka B&A-förbindelser som kan se din story. Du kan alltid ändra detta i integritetsinställningarna. <learnMoreLink>Läs mer.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Ta bort story"
@@ -6093,7 +6093,7 @@
     "messageformat": "Hämta bilaga"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Aktivera läs kvitton för att se vem som har visat dina stories. Öppna Signal-appen på din mobila enhet och navigera till Inställningar > Stories."
+    "messageformat": "Aktivera läs kvitton för att se vem som har visat dina stories. Öppna B&A-appen på din mobila enhet och navigera till Inställningar > Stories."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Inga svar ännu"
@@ -6279,7 +6279,7 @@
     "messageformat": "Din QR-kod och länk har återställts och ditt användarnamn är {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skanna denna QR-kod med din telefon för att chatta med mig på Signal.",
+    "messageformat": "Skanna denna QR-kod med din telefon för att chatta med mig på B&A.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "Avfärda"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Snart stöder Signal Desktop inte längre din dators version av{OS}. Uppdatera datorns operativsystem senast den {expirationDate} för att fortsätta använda Signal. <learnMoreLink>Läs mer</learnMoreLink>"
+    "messageformat": "Snart stöder B&A Desktop inte längre din dators version av{OS}. Uppdatera datorns operativsystem senast den {expirationDate} för att fortsätta använda B&A. <learnMoreLink>Läs mer</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal Desktop fungerar inte längre på den här datorn. Uppdatera datorns version av {OS} för att använda Signal Desktop igen. <learnMoreLink>Läs mer</learnMoreLink>"
+    "messageformat": "B&A Desktop fungerar inte längre på den här datorn. Uppdatera datorns version av {OS} för att använda B&A Desktop igen. <learnMoreLink>Läs mer</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal Desktop fungerar inte längre på den här datorn. Uppdatera datorns version av {OS} för att använda Signal Desktop igen."
+    "messageformat": "B&A Desktop fungerar inte längre på den här datorn. Uppdatera datorns version av {OS} för att använda B&A Desktop igen."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Redigerad"
@@ -6529,7 +6529,7 @@
     "messageformat": "Kopiera länk"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Dela länk via Signal"
+    "messageformat": "Dela länk via B&A"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Ta bort länk"
@@ -6595,7 +6595,7 @@
     "messageformat": "Om du vill ändra den här inställningen ställer du in Vem kan se mitt nummer till Ingen."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Profilnamn på Signal väljs av kontoinnehavaren:"
+    "messageformat": "Profilnamn på B&A väljs av kontoinnehavaren:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Profilnamn verifieras inte"
@@ -6628,7 +6628,7 @@
     "messageformat": "Integritet före profit"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Privata meddelanden, finansierade av dig. Inga annonser, ingen spårning, ingen kompromiss. Donera nu för att stödja Signal. <readMoreLink>Läs mer</readMoreLink>"
+    "messageformat": "Privata meddelanden, finansierade av dig. Inga annonser, ingen spårning, ingen kompromiss. Donera nu för att stödja B&A. <readMoreLink>Läs mer</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Donera"
@@ -6646,7 +6646,7 @@
     "messageformat": "Dina uppgifter är privata"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal samlar inte in eller lagrar någon av dina personuppgifter när du gör en donation.</paragraph><paragraph>Vi använder Stripe som vår betalningstjänst för att ta emot dina donationer. Vi kommer varken åt, lagrar eller sparar någon av de uppgifter du lämnar till dem.</paragraph><paragraph>Signal kopplar inte och kan inte koppla din donation till ditt Signal-konto.</paragraph><paragraph>Tack för ditt stöd!</paragraph>"
+    "messageformat": "<paragraph>B&A samlar inte in eller lagrar någon av dina personuppgifter när du gör en donation.</paragraph><paragraph>Vi använder Stripe som vår betalningstjänst för att ta emot dina donationer. Vi kommer varken åt, lagrar eller sparar någon av de uppgifter du lämnar till dem.</paragraph><paragraph>B&A kopplar inte och kan inte koppla din donation till ditt B&A-konto.</paragraph><paragraph>Tack för ditt stöd!</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kvitton"
@@ -6655,7 +6655,7 @@
     "messageformat": "Vanliga frågor om donationer"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvitton synkroniseras inte mellan enheter. Om du har installerat om Signal kommer kvitton från tidigare donationer inte vara tillgängliga."
+    "messageformat": "Kvitton synkroniseras inte mellan enheter. Om du har installerat om B&A kommer kvitton från tidigare donationer inte vara tillgängliga."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Inga kvitton"
@@ -6688,7 +6688,7 @@
     "messageformat": "Betalkort"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Ange dina kredit- eller betalkortsuppgifter. Signal samlar inte in eller lagrar dina personuppgifter. <learnMoreLink>Läs mer</learnMoreLink>"
+    "messageformat": "Ange dina kredit- eller betalkortsuppgifter. B&A samlar inte in eller lagrar dina personuppgifter. <learnMoreLink>Läs mer</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kortnummer"
@@ -6697,7 +6697,7 @@
     "messageformat": "Utgångsdatum"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Donera {formattedCurrencyAmount} till Signal"
+    "messageformat": "Donera {formattedCurrencyAmount} till B&A"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Ogiltigt kortnummer"
@@ -6715,7 +6715,7 @@
     "messageformat": "Koden är för kort"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Få Signal Boost-märket i 30 dagar"
+    "messageformat": "Få B&A Boost-märket i 30 dagar"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "Donationskvitto"
@@ -6733,7 +6733,7 @@
     "messageformat": "En gång"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Tack för att du stöder Signal. Ditt bidrag hjälper till att främja uppdraget att skydda yttrandefriheten och möjliggöra säker global kommunikation för miljontals människor runt om i världen, genom öppen källkod för integritetsskydd. Spara detta kvitto för dina skatteuppgifter om du är bosatt i USA. Signal Technology Foundation är en skattebefriad ideell organisation i USA enligt avsnitt 501c3 i Internal Revenue Code. Vårt federala skatte-ID är 82-4506840."
+    "messageformat": "Tack för att du stöder B&A. Ditt bidrag hjälper till att främja uppdraget att skydda yttrandefriheten och möjliggöra säker global kommunikation för miljontals människor runt om i världen, genom öppen källkod för integritetsskydd. Spara detta kvitto för dina skatteuppgifter om du är bosatt i USA. B&A Technology Foundation är en skattebefriad ideell organisation i USA enligt avsnitt 501c3 i Internal Revenue Code. Vårt federala skatte-ID är 82-4506840."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donationen avbruten"
@@ -6781,7 +6781,7 @@
     "messageformat": "Ett fel uppstod med din donation"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Din donation kanske inte har behandlats. Klicka på Donera till Signal och sedan på Donationskvitton för att kontrollera dina kvitton och bekräfta."
+    "messageformat": "Din donation kanske inte har behandlats. Klicka på Donera till B&A och sedan på Donationskvitton för att kontrollera dina kvitton och bekräfta."
   },
   "icu:Donations__Processing": {
     "messageformat": "Bearbetar donation …"
@@ -6817,11 +6817,11 @@
     "messageformat": "Avbryt donation"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Den här versionen innehåller ett antal små justeringar och felrättningar för att Signal ska fungera smidigt.",
+    "messageformat": "Den här versionen innehåller ett antal små justeringar och felrättningar för att B&A ska fungera smidigt.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Ytterligare små justeringer, buggfixar och prestandaförbättringar. Tack för att du använder Signal!",
+    "messageformat": "Ytterligare små justeringer, buggfixar och prestandaförbättringar. Tack för att du använder B&A!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Små justeringer, buggfixar och prestandaförbättringar. Tack för att du använder Signal!",
+    "messageformat": "Små justeringer, buggfixar och prestandaförbättringar. Tack för att du använder B&A!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {

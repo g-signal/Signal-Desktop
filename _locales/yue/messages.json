@@ -42,7 +42,7 @@
     "messageformat": "發送高畫質嘅多媒體檔案會用多啲數據。"
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "捐款俾 Signal"
+    "messageformat": "捐款俾 B&A"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "標準"
@@ -78,10 +78,10 @@
     "messageformat": "不明嘅群組"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "開唔到 Signal"
+    "messageformat": "開唔到 B&A"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "要解決呢個問題，請依照支援頁面嘅復原指南操作，或者聯絡 Signal 支援幫手。\n\n如果你需要即刻用 Signal，可以選擇刪除資料，然後重新連結呢部桌面電腦。你可以選擇由手機轉移訊息紀錄。"
+    "messageformat": "要解決呢個問題，請依照支援頁面嘅復原指南操作，或者聯絡 B&A 支援幫手。\n\n如果你需要即刻用 B&A，可以選擇刪除資料，然後重新連結呢部桌面電腦。你可以選擇由手機轉移訊息紀錄。"
   },
   "icu:databaseError": {
     "messageformat": "資料庫錯誤"
@@ -93,16 +93,16 @@
     "messageformat": "永久刪除所有資料"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "你嘅所有訊息紀錄同媒體將會喺呢部機度永久刪除。呢個操作唔會刪除你手機嘅任何資料。\n\n重新連結之後，你就可以喺呢部機度用 Signal 喇。你可以選擇由手機轉移訊息紀錄。"
+    "messageformat": "你嘅所有訊息紀錄同媒體將會喺呢部機度永久刪除。呢個操作唔會刪除你手機嘅任何資料。\n\n重新連結之後，你就可以喺呢部機度用 B&A 喇。你可以選擇由手機轉移訊息紀錄。"
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "你嘅資料庫版本同呢個 Signal 版本唔相符。請確定你喺電腦用緊嘅係最新版本嘅 Signal。"
+    "messageformat": "你嘅資料庫版本同呢個 B&A 版本唔相符。請確定你喺電腦用緊嘅係最新版本嘅 B&A。"
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "存取唔到資料庫加密金鑰，因為作業系統嘅加密金鑰環後端由 {previousBackend} 改咗做 {currentBackend}。如果桌面環境有變（例如由 GNOME 轉用 KDE，或者調返轉），就有可能發生呢種情況。\n\n請轉返去之前嘅桌面環境。"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "存取唔到資料庫加密金鑰，因為作業系統嘅加密金鑰環後端由 {previousBackend} 改咗做 {currentBackend}。如果桌面環境有變（例如由 GNOME 轉用 KDE，或者調返轉），就有可能發生呢種情況。\n\n請轉返去之前嘅桌面環境，或者試吓用命令列標幟 --password-store=\"{previousBackendFlag}\" 執行 Signal"
+    "messageformat": "存取唔到資料庫加密金鑰，因為作業系統嘅加密金鑰環後端由 {previousBackend} 改咗做 {currentBackend}。如果桌面環境有變（例如由 GNOME 轉用 KDE，或者調返轉），就有可能發生呢種情況。\n\n請轉返去之前嘅桌面環境，或者試吓用命令列標幟 --password-store=\"{previousBackendFlag}\" 執行 B&A"
   },
   "icu:mainMenuFile": {
     "messageformat": "&File"
@@ -138,7 +138,7 @@
     "messageformat": "顯示全部"
   },
   "icu:appMenuQuit": {
-    "messageformat": "關閉 Signal"
+    "messageformat": "關閉 B&A"
   },
   "icu:editMenuUndo": {
     "messageformat": "還原"
@@ -429,10 +429,10 @@
     "messageformat": "你已經喺另一部裝置度將你同 {name} 嘅安全碼標記咗做未驗證"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "你嘗試驗證嘅安全碼已經改咗。請檢查你同 {name1} 嘅新安全碼。要記住，安全碼唔同咗可能代表有人嘗試截取你哋嘅通訊，又或者只係 {name2} 重新安裝咗 Signal。"
+    "messageformat": "你嘗試驗證嘅安全碼已經改咗。請檢查你同 {name1} 嘅新安全碼。要記住，安全碼唔同咗可能代表有人嘗試截取你哋嘅通訊，又或者只係 {name2} 重新安裝咗 B&A。"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "以下嘅聯絡人可能重新安裝咗 Signal 或者更換咗裝置。你可以㩒一吓接收者嚟確認佢嘅新安全碼。呢個操作係選擇性嘅。"
+    "messageformat": "以下嘅聯絡人可能重新安裝咗 B&A 或者更換咗裝置。你可以㩒一吓接收者嚟確認佢嘅新安全碼。呢個操作係選擇性嘅。"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "傳送未處理嘅訊息"
@@ -441,7 +441,7 @@
     "messageformat": "檢查"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {你有 {count,number} 個人脈可能重新安裝咗 Signal 或者更換咗裝置。同佢哋通訊之前，你可以選擇先檢查佢哋嘅安全碼。}}"
+    "messageformat": "{count, plural, other {你有 {count,number} 個人脈可能重新安裝咗 B&A 或者更換咗裝置。同佢哋通訊之前，你可以選擇先檢查佢哋嘅安全碼。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "你已經檢查晒所有人脈，㩒一吓傳送就可以繼續。"
@@ -483,7 +483,7 @@
     "messageformat": "當你㩒咗提交之後，你嘅記錄會透過一個專屬而且未經發佈嘅網址喺網上發佈 30 日。你可以事先喺你部機度儲存記錄。"
   },
   "icu:debugLogError": {
-    "messageformat": "上載嘅時候出現咗問題！請你電郵去 support@signal.org，同埋用文字檔案交埋你嘅記錄檔俾我哋。"
+    "messageformat": "上載嘅時候出現咗問題！請你電郵去 support@baxs.com，同埋用文字檔案交埋你嘅記錄檔俾我哋。"
   },
   "icu:debugLogSuccess": {
     "messageformat": "已經提交咗除錯記錄"
@@ -672,7 +672,7 @@
     "messageformat": "貼圖包製作工具"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "關於 Signal 桌面版"
+    "messageformat": "關於 B&A 桌面版"
   },
   "icu:screenShareWindow": {
     "messageformat": "分享畫面"
@@ -696,7 +696,7 @@
     "messageformat": "離開"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal 桌面版"
+    "messageformat": "B&A 桌面版"
   },
   "icu:search": {
     "messageformat": "搜尋"
@@ -750,7 +750,7 @@
     "messageformat": "用電話冧把嚟搵"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "歡迎使用 Signal"
+    "messageformat": "歡迎使用 B&A"
   },
   "icu:whatsNew": {
     "messageformat": "睇吓今次更新有咩{whatsNew}"
@@ -837,13 +837,13 @@
     "messageformat": "你"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "你要允許 Signal 桌面版存取你個咪，先可以傳送語音訊息㗎。"
+    "messageformat": "你要允許 B&A 桌面版存取你個咪，先可以傳送語音訊息㗎。"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "你一定要允許咗 Signal 桌面版存取你個咪，先用到通話功能㗎。"
+    "messageformat": "你一定要允許咗 B&A 桌面版存取你個咪，先用到通話功能㗎。"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "你一定要允許咗 Signal 桌面版存取你個咪，先用到視像通話㗎。"
+    "messageformat": "你一定要允許咗 B&A 桌面版存取你個咪，先用到視像通話㗎。"
   },
   "icu:allowAccess": {
     "messageformat": "允許存取"
@@ -867,13 +867,13 @@
     "messageformat": "靜音"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "更新唔到 Signal。<retryUpdateButton>試吓更新多次</retryUpdateButton>或者去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
+    "messageformat": "更新唔到 B&A。<retryUpdateButton>試吓更新多次</retryUpdateButton>或者去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "更新唔到 Signal。你可以去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
+    "messageformat": "更新唔到 B&A。你可以去 {url} 手動安裝，然後<contactSupportLink>聯絡支援團隊</contactSupportLink>報告呢個問題"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal 桌面版似乎喺 macOS 隔離區，而且冇辦法自動更新。請你嘗試用 Finder 將 {app} 移去 {folder}。"
+    "messageformat": "B&A 桌面版似乎喺 macOS 隔離區，而且冇辦法自動更新。請你嘗試用 Finder 將 {app} 移去 {folder}。"
   },
   "icu:ok": {
     "messageformat": "確定"
@@ -918,7 +918,7 @@
     "messageformat": "呢個訊息會喺呢部裝置度刪除。"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "呢個訊息會喺聊天入面所有用緊 Signal 最新版本嘅人部機度刪除。佢哋會見到你刪除咗一個訊息。"
+    "messageformat": "呢個訊息會喺聊天入面所有用緊 B&A 最新版本嘅人部機度刪除。佢哋會見到你刪除咗一個訊息。"
   },
   "icu:from": {
     "messageformat": "來自"
@@ -960,7 +960,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "「 {title} 」係呢個人喺 Signal 度幫自己改嘅個人檔名。"
+    "messageformat": "「 {title} 」係呢個人喺 B&A 度幫自己改嘅個人檔名。"
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "已驗證"
@@ -975,7 +975,7 @@
     "messageformat": "冇同{name}嘅直接訊息"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "B&A 人脈"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} 係你嘅聯絡人"
@@ -1068,7 +1068,7 @@
     "messageformat": "了解詳情"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal 採用端對端加密，間中可能要重新整理吓你嘅聊天對話。呢個過程唔會影響聊天嘅安全性，但可能會令你錯失咗呢位聯絡人俾你嘅訊息。你可以請佢再傳送多次。"
+    "messageformat": "B&A 採用端對端加密，間中可能要重新整理吓你嘅聊天對話。呢個過程唔會影響聊天嘅安全性，但可能會令你錯失咗呢位聯絡人俾你嘅訊息。你可以請佢再傳送多次。"
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "聯絡支援團隊"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} 已經轉咗電話冧把"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "聯絡人開咗 Signal"
+    "messageformat": "聯絡人開咗 B&A"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} 同 {conversationTitle} 係同一個帳戶。兩個聊天嘅訊息紀錄都喺晒度。"
@@ -1215,7 +1215,7 @@
     "messageformat": "下載唔到媒體"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "檢查桌面電腦同手機嘅網絡連線。喺你部舊機度打開 Signal，然後再嘗試下載多次。"
+    "messageformat": "檢查桌面電腦同手機嘅網絡連線。喺你部舊機度打開 B&A，然後再嘗試下載多次。"
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "呢個媒體已經唔再喺你部手機度出現，亦都冇得下載。"
@@ -1236,10 +1236,10 @@
     "messageformat": "了解多啲"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "用手機嘅 Signal 應用程式掃瞄呢個二維碼"
+    "messageformat": "用手機嘅 B&A 應用程式掃瞄呢個二維碼"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "喺手機度打開 Signal"
+    "messageformat": "喺手機度打開 B&A"
   },
   "icu:Install__instructions__2": {
     "messageformat": "㩒一吓 {settings}，然後再㩒 {linkedDevices}"
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>發生未預期嘅錯誤。</paragraph><paragraph>請你再試多次啦。</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal 用唔到你用緊嘅網絡去連結呢部機。"
+    "messageformat": "B&A 用唔到你用緊嘅網絡去連結呢部機。"
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "再試多次"
@@ -1281,7 +1281,7 @@
     "messageformat": "裝置名稱"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "如果想改咗呢部機個名，請喺手機打開 Signal，然後去「設定」>「連結咗嘅裝置」"
+    "messageformat": "如果想改咗呢部機個名，請喺手機打開 B&A，然後去「設定」>「連結咗嘅裝置」"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "表情符號膚色"
@@ -1461,7 +1461,7 @@
     "messageformat": "唔好意思，你連結咗太多部機。請你試吓移除返一啲裝置。"
   },
   "icu:installTooOld": {
-    "messageformat": "喺呢部機度更新 Signal 嚟連結你部手機。"
+    "messageformat": "喺呢部機度更新 B&A 嚟連結你部手機。"
   },
   "icu:installErrorHeader": {
     "messageformat": "系統出現咗啲問題！"
@@ -1512,7 +1512,7 @@
     "messageformat": "呢條通話連結已經失效。"
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal 通話"
+    "messageformat": "B&A 通話"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "刪除唔到連結。請檢查你嘅連線，然後再試多次。"
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, other {有 {count,number} 個人喺通話入面}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal 會打俾 {person}"
+    "messageformat": "B&A 會打俾 {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal 會打俾 {first} 同 {second}"
+    "messageformat": "B&A 會打俾 {first} 同 {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal 會打俾 {first}、{second} 同 {third}"
+    "messageformat": "B&A 會打俾 {first}、{second} 同 {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {Signal 將會打電話俾 {first}、{second} 同另外 {others,number} 個人}}"
+    "messageformat": "{others, plural, other {B&A 將會打電話俾 {first}、{second} 同另外 {others,number} 個人}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} 會收到通知"
@@ -1725,13 +1725,13 @@
     "messageformat": "重新連緊線..."
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "你斷咗線。Signal 而家重新連緊線。"
+    "messageformat": "你斷咗線。B&A 而家重新連緊線。"
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal 分享緊 {window}。"
+    "messageformat": "B&A 分享緊 {window}。"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal 嘅螢幕分享功能已經啟用"
+    "messageformat": "B&A 嘅螢幕分享功能已經啟用"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "重新連緊線..."
@@ -1752,7 +1752,7 @@
     "messageformat": "需要權限"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal 要有存取權先可以錄到電腦螢幕。"
+    "messageformat": "B&A 要有存取權先可以錄到電腦螢幕。"
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "去系統偏好設定。"
@@ -1761,7 +1761,7 @@
     "messageformat": "㩒左下角嘅鎖定圖示，然後輸入你嘅電腦密碼。"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "喺右邊剔 Signal 隔離嗰個格仔。如果你喺清單度搵唔到 Signal 嘅話，可以㩒個加號嚟新增 Signal。"
+    "messageformat": "喺右邊剔 B&A 隔離嗰個格仔。如果你喺清單度搵唔到 B&A 嘅話，可以㩒個加號嚟新增 B&A。"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "打開系統偏好設定"
@@ -1773,7 +1773,7 @@
     "messageformat": "一律轉駁通話"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "經由 Signal 嘅伺服器轉駁所有通話就可以避免向聯絡人透露你嘅 IP 位址。啟用嘅時候通話質素會降低。"
+    "messageformat": "經由 B&A 嘅伺服器轉駁所有通話就可以避免向聯絡人透露你嘅 IP 位址。啟用嘅時候通話質素會降低。"
   },
   "icu:permissions": {
     "messageformat": "權限"
@@ -1791,10 +1791,10 @@
     "messageformat": "喺揀選咗文字嘅時候，顯示文字格式彈出式選單"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "下次啟動 Signal 嗰陣就會啟用拼寫檢查。"
+    "messageformat": "下次啟動 B&A 嗰陣就會啟用拼寫檢查。"
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "下次啟動 Signal 嗰陣就會停用拼寫檢查。"
+    "messageformat": "下次啟動 B&A 嗰陣就會停用拼寫檢查。"
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "縮細放入系統匣"
@@ -1818,13 +1818,13 @@
     "messageformat": "係咪要清除所有資料呀？"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "係咪要刪除呢個 Signal 桌面版版本嘅所有資料同訊息？你嘅 Signal 帳戶同埋手機或者其他已連結裝置上面嘅資料係唔會刪除嘅。"
+    "messageformat": "係咪要刪除呢個 B&A 桌面版版本嘅所有資料同訊息？你嘅 B&A 帳戶同埋手機或者其他已連結裝置上面嘅資料係唔會刪除嘅。"
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "中斷緊連接，同刪除緊資料…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "你之前安裝嘅 Signal 桌面版入面有過時嘅資料。如果你選擇繼續，呢啲資料就會被刪除，你就會從頭開始過喇。"
+    "messageformat": "你之前安裝嘅 B&A 桌面版入面有過時嘅資料。如果你選擇繼續，呢啲資料就會被刪除，你就會從頭開始過喇。"
   },
   "icu:deleteOldData": {
     "messageformat": "刪除舊資料"
@@ -1866,10 +1866,10 @@
     "messageformat": "刪除咗一部分，㩒一吓再試多次"
   },
   "icu:expiredWarning": {
-    "messageformat": "呢個 Signal 桌面版本已經過咗期。請你升級到最新版本嚟繼續收發訊息啦。"
+    "messageformat": "呢個 B&A 桌面版本已經過咗期。請你升級到最新版本嚟繼續收發訊息啦。"
   },
   "icu:upgrade": {
-    "messageformat": "㩒呢度去 signal.org/download"
+    "messageformat": "㩒呢度去 ba-chat.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "媒體訊息"
@@ -1878,7 +1878,7 @@
     "messageformat": "匯入聯絡人"
   },
   "icu:syncExplanation": {
-    "messageformat": "由你部流動裝置匯入所有 Signal 群組同聯絡人。"
+    "messageformat": "由你部流動裝置匯入所有 B&A 群組同聯絡人。"
   },
   "icu:syncNow": {
     "messageformat": "即刻匯入"
@@ -1914,7 +1914,7 @@
     "messageformat": "琴日 {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal 可能處理唔到一個收到嘅訊息。"
+    "messageformat": "B&A 可能處理唔到一個收到嘅訊息。"
   },
   "icu:messageBodyTooLong": {
     "messageformat": "訊息太長。"
@@ -2067,10 +2067,10 @@
     "messageformat": "你只可以喺傳送訊息後 24 個鐘內套用編輯。"
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} 唔係 Signal 嘅用戶。請確認你輸入嘅用戶名稱係咪完整。"
+    "messageformat": "{atUsername} 唔係 B&A 嘅用戶。請確認你輸入嘅用戶名稱係咪完整。"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係 Signal 嘅用戶。"
+    "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係 B&A 嘅用戶。"
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "搵唔到呢個用戶。「{phoneNumber}」唔係有效嘅電話冧把。"
@@ -2091,13 +2091,13 @@
     "messageformat": "已經到咗群組人數嘅上限喇"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal 群組最多可以有 {max,number} 個成員。"
+    "messageformat": "B&A 群組最多可以有 {max,number} 個成員。"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "已經到咗我哋建議嘅人數上限喇"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal 群組喺人數唔超過 {max,number} 個成員嘅時候表現最好。加多啲人就會令收發訊息慢咗。"
+    "messageformat": "B&A 群組喺人數唔超過 {max,number} 個成員嘅時候表現最好。加多啲人就會令收發訊息慢咗。"
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "幫呢個群組起個名"
@@ -2127,7 +2127,7 @@
     "messageformat": "更新唔到呢個群組。請檢查吓網絡連線然後再試過啦。"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "㩒一吓再重新將 Signal 桌面版連去你嘅流動裝置，方便你繼續收發訊息。"
+    "messageformat": "㩒一吓再重新將 B&A 桌面版連去你嘅流動裝置，方便你繼續收發訊息。"
   },
   "icu:unlinked": {
     "messageformat": "解除咗連結"
@@ -2139,16 +2139,16 @@
     "messageformat": "再試吓更新"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "㩒一吓嚟重新啟動 Signal"
+    "messageformat": "㩒一吓嚟重新啟動 B&A"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "㩒一吓嚟下載更新"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "更新唔到 Signal。㩒一吓再試過啦。"
+    "messageformat": "更新唔到 B&A。㩒一吓再試過啦。"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "重新啟動 Signal"
+    "messageformat": "重新啟動 B&A"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "忽略更新"
@@ -2247,7 +2247,7 @@
     "messageformat": "有啲附件太大顯示唔到。"
   },
   "icu:message--call-link-description": {
-    "messageformat": "用呢條連結嚟加入 Signal 通話"
+    "messageformat": "用呢條連結嚟加入 B&A 通話"
   },
   "icu:donation--missing": {
     "messageformat": "攞唔到捐款詳情"
@@ -2259,7 +2259,7 @@
     "messageformat": "喺流動裝置㩒一吓呢個訊息就可以睇到你嘅捐款"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} 代表你向 Signal 作出咗捐款"
+    "messageformat": "{sender} 代表你向 B&A 作出咗捐款"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "喺手機度打開呢個捐款"
@@ -2310,7 +2310,7 @@
     "messageformat": "多謝您嘅鼎力支持！"
   },
   "icu:modal--donation--description": {
-    "messageformat": "你代表 {name} 向 Signal 作出咗捐款。對方可以選擇喺個人檔案度展示佢嘅支持。"
+    "messageformat": "你代表 {name} 向 B&A 作出咗捐款。對方可以選擇喺個人檔案度展示佢嘅支持。"
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "安裝唔到貼圖包"
@@ -2325,10 +2325,10 @@
     "messageformat": "冇安裝任何貼圖"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal 藝術家系列"
+    "messageformat": "B&A 藝術家系列"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "冇任何 Signal 藝術家貼圖提供"
+    "messageformat": "冇任何 B&A 藝術家貼圖提供"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "你收到嘅貼圖"
@@ -2670,19 +2670,19 @@
     "messageformat": "訊息太長，顯示唔到更多"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} 傳送咗一個訊息俾你。呢個訊息用咗 Signal 嘅全新功能，所以冇辦法處理或者顯示出嚟。"
+    "messageformat": "{contact} 傳送咗一個訊息俾你。呢個訊息用咗 B&A 嘅全新功能，所以冇辦法處理或者顯示出嚟。"
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "你而家用緊最新版本嘅 Signal 喇，你可以叫 {contact} 傳送多次呢個訊息俾你。"
+    "messageformat": "你而家用緊最新版本嘅 B&A 喇，你可以叫 {contact} 傳送多次呢個訊息俾你。"
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "你有一部裝置用咗 Signal 嘅全新功能傳送訊息，我哋冇辦法處理或者顯示出嚟。"
+    "messageformat": "你有一部裝置用咗 B&A 嘅全新功能傳送訊息，我哋冇辦法處理或者顯示出嚟。"
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "你而家用緊最新版本嘅 Signal，以後呢類訊息會自動同步㗎喇。"
+    "messageformat": "你而家用緊最新版本嘅 B&A，以後呢類訊息會自動同步㗎喇。"
   },
   "icu:Message--update-signal": {
-    "messageformat": "更新 Signal"
+    "messageformat": "更新 B&A"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "睇咗"
@@ -2946,7 +2946,7 @@
     "messageformat": "聊天已經標記咗做未睇"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "如果要用貼圖包製作器嘅話，請你喺手機同桌面電腦設定 Signal。"
+    "messageformat": "如果要用貼圖包製作器嘅話，請你喺手機同桌面電腦設定 B&A。"
   },
   "icu:Reactions--remove": {
     "messageformat": "移除心情回應"
@@ -2970,7 +2970,7 @@
     "messageformat": "假名同帳戶"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal 從來唔會問你攞註冊碼或者 PIN 碼。請小心防範冒充他人嘅請求。個人檔名係由帳戶持有人自己揀，冇經過驗證㗎。"
+    "messageformat": "B&A 從來唔會問你攞註冊碼或者 PIN 碼。請小心防範冒充他人嘅請求。個人檔名係由帳戶持有人自己揀，冇經過驗證㗎。"
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "加密貨幣或者金錢詐騙"
@@ -3060,13 +3060,13 @@
     "messageformat": "係咪舉報垃圾訊息？"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal 將會收到通知，指呢個人可能發送垃圾訊息。Signal 睇唔到任何聊天內容。"
+    "messageformat": "B&A 將會收到通知，指呢個人可能發送垃圾訊息。B&A 睇唔到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal 將會收到通知，指邀請你加入呢個群組嘅人可能發送垃圾訊息。Signal 睇唔到任何聊天內容。"
+    "messageformat": "B&A 將會收到通知，指邀請你加入呢個群組嘅人可能發送垃圾訊息。B&A 睇唔到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal 將會收到通知，指邀請你加入呢個群組嘅 {name} 可能發送垃圾訊息。Signal 睇唔到任何聊天內容。"
+    "messageformat": "B&A 將會收到通知，指邀請你加入呢個群組嘅 {name} 可能發送垃圾訊息。B&A 睇唔到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "舉報垃圾訊息"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>個人檔名</clickable>冇經過驗證"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "呢個係 Signal 官方同唯一嘅聊天"
+    "messageformat": "呢個係 B&A 官方同唯一嘅聊天"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "緊貼最新消息同版本資訊。"
@@ -3228,10 +3228,10 @@
     "messageformat": "未接嘅視像通話"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal 仍然運作緊"
+    "messageformat": "B&A 仍然運作緊"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal 會繼續喺通知區域運作。你可以喺 Signal 設定入面更改呢個設定。"
+    "messageformat": "B&A 會繼續喺通知區域運作。你可以喺 B&A 設定入面更改呢個設定。"
   },
   "icu:incomingAudioCall": {
     "messageformat": "語音通話來電"
@@ -3441,7 +3441,7 @@
     "messageformat": "複製通話連結"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "透過 Signal 分享通話連結"
+    "messageformat": "透過 B&A 分享通話連結"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "喺通話度移除呢個人"
@@ -3561,7 +3561,7 @@
     "messageformat": "不明嘅連結版本"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "呢個 Signal 桌面版嘅版本唔支援呢條連結。"
+    "messageformat": "呢個 B&A 桌面版嘅版本唔支援呢條連結。"
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "加入唔到群組"
@@ -4116,22 +4116,22 @@
     "messageformat": "可能要幾分鐘時間"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "捐款俾 Signal"
+    "messageformat": "捐款俾 B&A"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "捐款俾 Signal"
+    "messageformat": "捐款俾 B&A"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal 嘅日常運作全靠您嘅支持。 捐款支持我哋，仲可以得到徽章以示感謝添。"
+    "messageformat": "B&A 嘅日常運作全靠您嘅支持。 捐款支持我哋，仲可以得到徽章以示感謝添。"
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "喺手機度打開 Signal"
+    "messageformat": "喺手機度打開 B&A"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "㩒左上角嘅個人檔案相片嚟打開「設定」"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "㩒一下「捐款俾 Signal」定期贊助"
+    "messageformat": "㩒一下「捐款俾 B&A」定期贊助"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "個人資料已經搬咗位"
@@ -4257,7 +4257,7 @@
     "messageformat": "帳戶有嘢要你做"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "你一定要喺手機上面打開 Signal 先至可以繼續用呢個帳戶。如果你唔喺手機上面打開 Signal，你嘅帳戶就會好快被刪除。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "你一定要喺手機上面打開 B&A 先至可以繼續用呢個帳戶。如果你唔喺手機上面打開 B&A，你嘅帳戶就會好快被刪除。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "還原唔到媒體"
@@ -4272,10 +4272,10 @@
     "messageformat": "附加檔案"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "呢個人冇用緊 Signal 喎"
+    "messageformat": "呢個人冇用緊 B&A 喎"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal 桌面版係唔可以用嚟同冇用緊 Signal 嘅聯絡人通訊㗎。你可以請佢安裝 Signal，享受吓更加安全嘅通訊體驗。"
+    "messageformat": "B&A 桌面版係唔可以用嚟同冇用緊 B&A 嘅聯絡人通訊㗎。你可以請佢安裝 B&A，享受吓更加安全嘅通訊體驗。"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "檢查緊聯絡人嘅註冊狀態"
@@ -4461,7 +4461,7 @@
     "messageformat": "綽號"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "綽號同備註都係用 Signal 嘅端對端加密方式儲存。只有你先睇到。"
+    "messageformat": "綽號同備註都係用 B&A 嘅端對端加密方式儲存。只有你先睇到。"
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "名"
@@ -4512,7 +4512,7 @@
     "messageformat": "用群組連結加入嘅新成員需要經過管理員嘅批准"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "將 signal.group 連結複製到剪貼簿"
+    "messageformat": "將 B&A.group 連結複製到剪貼簿"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "請求（{count,number} 個）"
@@ -4716,13 +4716,13 @@
     "messageformat": "空白或者刪除咗嘅訊息唔可以轉寄"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "用呢條連結加入 Signal 通話：{url}"
+    "messageformat": "用呢條連結加入 B&A 通話：{url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "安全貼士"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "請仔細審查請求。Signal 搵到另一位同名嘅聯絡人。<reviewRequestLink>審查請求</reviewRequestLink>"
+    "messageformat": "請仔細審查請求。B&A 搵到另一位同名嘅聯絡人。<reviewRequestLink>審查請求</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {有 {count,number} 位同名嘅群組成員。<reviewRequestLink>審查成員</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "冇其他共同群組"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "B&A 人脈"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近將佢嘅個人檔名由 {oldName} 改咗做 {newName}"
@@ -4773,7 +4773,7 @@
     "messageformat": "驗證完再繼續通訊"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "為咗防止喺 Signal 收到垃圾訊息，請你完成驗證。"
+    "messageformat": "為咗防止喺 B&A 收到垃圾訊息，請你完成驗證。"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "驗證完之後，你就可以繼續通訊㗎喇。之前暫停咗嘅任何訊息都會自動傳送返出去。"
@@ -5079,7 +5079,7 @@
     "messageformat": "你係咪想取消呢啲變更呀？"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "係咪要閂咗 Signal 同收線？"
+    "messageformat": "係咪要閂咗 B&A 同收線？"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "遲啲先啦"
@@ -5166,7 +5166,7 @@
     "messageformat": "一般"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "捐款俾 Signal"
+    "messageformat": "捐款俾 B&A"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "外觀"
@@ -5247,7 +5247,7 @@
     "messageformat": "產生連結預覽"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "如果要更改設定，請你喺流動裝置打開 Signal 應用程式，然後去設定 > 聊天"
+    "messageformat": "如果要更改設定，請你喺流動裝置打開 B&A 應用程式，然後去設定 > 聊天"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "自動將輸入嘅表情字符變成表情符號"
@@ -5265,13 +5265,13 @@
     "messageformat": "封鎖咗"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal 備份"
+    "messageformat": "B&A 備份"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "用 Signal 嘅端對端加密儲存服務安全自動備份。拎部你部手機出嚟開始備份。<learnMoreLink>了解詳情</learnMoreLink>。"
+    "messageformat": "用 B&A 嘅端對端加密儲存服務安全自動備份。拎部你部手機出嚟開始備份。<learnMoreLink>了解詳情</learnMoreLink>。"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "備份你嘅訊息紀錄，當你換新手機或者重新安裝 Signal 嗰陣，就唔會冇咗啲資料啦。"
+    "messageformat": "備份你嘅訊息紀錄，當你換新手機或者重新安裝 B&A 嗰陣，就唔會冇咗啲資料啦。"
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "備份詳情"
@@ -5280,7 +5280,7 @@
     "messageformat": "備份文字訊息 + 全部媒體"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "搵唔到你嘅課金計劃。即刻續期嚟繼續用 Signal 備份啦。"
+    "messageformat": "搵唔到你嘅課金計劃。即刻續期嚟繼續用 B&A 備份啦。"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {備份文字訊息 + {mediaDayCount,number} 日嘅媒體}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "取消咗課金計劃"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "你可以喺手機度管理或者取消「Signal 備份」課金計劃。"
+    "messageformat": "你可以喺手機度管理或者取消「B&A 備份」課金計劃。"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "你可以喺手機度管理或者升級「Signal 備份」課金計劃。"
+    "messageformat": "你可以喺手機度管理或者升級「B&A 備份」課金計劃。"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "你可以喺手機度管理「Signal 備份」課金計劃或者續期。"
+    "messageformat": "你可以喺手機度管理「B&A 備份」課金計劃或者續期。"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "上一次備份"
@@ -5322,7 +5322,7 @@
     "messageformat": "建立可以喺手機上面還原嘅端對端加密備份。 "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "要還原一個備份嘅話，請首先重新再裝過 Signal。開返個 APP 出嚟，㩒一下「還原備份」，然後揀返嗰一個備份資料夾。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "要還原一個備份嘅話，請首先重新再裝過 B&A。開返個 APP 出嚟，㩒一下「還原備份」，然後揀返嗰一個備份資料夾。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "揀一個資料夾"
@@ -5358,7 +5358,7 @@
     "messageformat": "安全儲存你嘅金鑰"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "如果你唔見咗個金鑰，Signal 就冇辦法幫你還原備份喇。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾其他人知。"
+    "messageformat": "如果你唔見咗個金鑰，B&A 就冇辦法幫你還原備份喇。請將佢儲存喺安全嘅地方，同埋千祈唔好講俾其他人知。"
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "繼續"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, other {{num,number} 個聯絡人}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "如果要更改呢啲設定，請你喺流動裝置打開 Signal 應用程式，然後去「設定」入面嘅「私隱」"
+    "messageformat": "如果要更改呢啲設定，請你喺流動裝置打開 B&A 應用程式，然後去「設定」入面嘅「私隱」"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "電話冧把"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "選擇邊個可以睇到你嘅電話冧把，同埋喺 Signal 度用電話冧把聯絡你。"
+    "messageformat": "選擇邊個可以睇到你嘅電話冧把，同埋喺 B&A 度用電話冧把聯絡你。"
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "改一改..."
@@ -5430,10 +5430,10 @@
     "messageformat": "邊個可以用手機號碼搵到我"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "任何有你電話冧把嘅人都會睇到你用緊 Signal，同埋可以開始聊天。"
+    "messageformat": "任何有你電話冧把嘅人都會睇到你用緊 B&A，同埋可以開始聊天。"
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "除非你向對方傳送訊息或者雙方已經有聊天紀錄，如果唔係冇人會睇到你用緊 Signal。"
+    "messageformat": "除非你向對方傳送訊息或者雙方已經有聊天紀錄，如果唔係冇人會睇到你用緊 B&A。"
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "任何人都得"
@@ -5445,7 +5445,7 @@
     "messageformat": "你係咪確定？"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "如果你將「{settingTitle}」改做「{nobodyLabel}」，其他人就會冇咁易喺 Signal 搵到你。"
+    "messageformat": "如果你將「{settingTitle}」改做「{nobodyLabel}」，其他人就會冇咁易喺 B&A 搵到你。"
   },
   "icu:Preferences--messaging": {
     "messageformat": "通訊"
@@ -5499,7 +5499,7 @@
     "messageformat": "設定"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "重新打開 Signal 嚟套用"
+    "messageformat": "重新打開 B&A 嚟套用"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "要轉語言，需要重新開過個 app。"
@@ -5514,13 +5514,13 @@
     "messageformat": "防止畫面截圖"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "防止呢部電腦用 Signal 嘅時候截圖，以增加私隱。"
+    "messageformat": "防止呢部電腦用 B&A 嘅時候截圖，以增加私隱。"
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "係咪要停用防止畫面截圖？"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "如果停用，Microsoft Windows 有機會攞到 Signal 嘅畫面截圖，然後用喺私隱唔受保障嘅功能度。"
+    "messageformat": "如果停用，Microsoft Windows 有機會攞到 B&A 嘅畫面截圖，然後用喺私隱唔受保障嘅功能度。"
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "停用"
@@ -5535,25 +5535,25 @@
     "messageformat": "已經下載咗更新"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "喺手機度打開 Signal"
+    "messageformat": "喺手機度打開 B&A"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "如果你再唔喺手機度打開 Signal，你個帳戶好快會被刪除。成功開返之後，呢個訊息就會消失。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "如果你再唔喺手機度打開 B&A，你個帳戶好快會被刪除。成功開返之後，呢個訊息就會消失。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "喺手機度開吓 Signal，等你個帳戶唔好摺埋"
+    "messageformat": "喺手機度開吓 B&A，等你個帳戶唔好摺埋"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "了解多啲"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal 發生技術問題。我哋現正搶修，務求儘快回復服務。"
+    "messageformat": "B&A 發生技術問題。我哋現正搶修，務求儘快回復服務。"
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "需要更新"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "如果想完成同步訊息，請立即更新 Signal 桌面版。"
+    "messageformat": "如果想完成同步訊息，請立即更新 B&A 桌面版。"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "更新"
@@ -5562,19 +5562,19 @@
     "messageformat": "需要更新"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "想繼續用 Signal 嘅話，請先更新至最新版本。"
+    "messageformat": "想繼續用 B&A 嘅話，請先更新至最新版本。"
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "下載 {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "重新啟動 Signal 嚟安裝更新版本。"
+    "messageformat": "重新啟動 B&A 嚟安裝更新版本。"
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal 桌面版更新唔到，但係有新版本可以用。你可以去 {downloadUrl} 手動安裝新版本，然後聯絡支援團隊或者就呢個問題回報錯誤。"
+    "messageformat": "B&A 桌面版更新唔到，但係有新版本可以用。你可以去 {downloadUrl} 手動安裝新版本，然後聯絡支援團隊或者就呢個問題回報錯誤。"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "閂唔到 Signal。",
+    "messageformat": "閂唔到 B&A。",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "已經安裝咗較新嘅 Signal 版本。你係咪確定要繼續？",
+    "messageformat": "已經安裝咗較新嘅 B&A 版本。你係咪確定要繼續？",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "應用程式故障"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal 故障之後重新啟動過。你可以提交故障報告，幫 Signal 調查問題。"
+    "messageformat": "B&A 故障之後重新啟動過。你可以提交故障報告，幫 B&A 調查問題。"
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "傳送"
@@ -5706,7 +5706,7 @@
     "messageformat": "㩒下面嘅「{buttonName}」"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "打開「Signal」"
+    "messageformat": "打開「B&A」"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "前往設定"
@@ -5796,7 +5796,7 @@
     "messageformat": "了解詳情"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "B&A 人脈"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}係你透過以下方式揀過而值得信任嘅人："
@@ -5946,7 +5946,7 @@
     "messageformat": "隱藏是日花生唔俾佢睇"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "所有 Signal 人脈"
+    "messageformat": "所有 B&A 人脈"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "All Except..."
@@ -5964,7 +5964,7 @@
     "messageformat": "瀏覽標記"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "如果要更改設定，請你喺流動裝置度打開 Signal 應用程式，然後去「設定」->「限時動態」"
+    "messageformat": "如果要更改設定，請你喺流動裝置度打開 B&A 應用程式，然後去「設定」->「限時動態」"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "邊個可以睇到呢個限時動態"
@@ -6024,7 +6024,7 @@
     "messageformat": "「我嘅限時動態」私隱設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇邊啲 Signal 人脈可以睇到你嘅限時動態。你可以隨時喺私隱設定度更改呢個設定。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "選擇邊啲 B&A 人脈可以睇到你嘅限時動態。你可以隨時喺私隱設定度更改呢個設定。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "刪除限時動態"
@@ -6093,7 +6093,7 @@
     "messageformat": "下載附件"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "啟用「瀏覽標記」就可以知道邊個睇過你嘅限時動態。喺你嘅流動裝置度打開 Signal 應用程式，然後去「設定」>「限時動態」。"
+    "messageformat": "啟用「瀏覽標記」就可以知道邊個睇過你嘅限時動態。喺你嘅流動裝置度打開 B&A 應用程式，然後去「設定」>「限時動態」。"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "未有回覆"
@@ -6279,7 +6279,7 @@
     "messageformat": "你嘅二維碼同連結已經重設，你嘅用戶名稱係 {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "用電話掃描呢個二維碼，就開始喺 Signal 同我聊天喇。",
+    "messageformat": "用電話掃描呢個二維碼，就開始喺 B&A 同我聊天喇。",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "關閉"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal 桌面版即將停止支援 {OS} 電腦版本。要繼續用 Signal 嘅話，請你喺 {expirationDate} 之前更新電腦嘅作業系統。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "B&A 桌面版即將停止支援 {OS} 電腦版本。要繼續用 B&A 嘅話，請你喺 {expirationDate} 之前更新電腦嘅作業系統。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal 桌面版唔可以再喺呢部電腦運作。要再次使用 Signal 桌面版嘅話，請更新你嘅 {OS} 電腦版本。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "B&A 桌面版唔可以再喺呢部電腦運作。要再次使用 B&A 桌面版嘅話，請更新你嘅 {OS} 電腦版本。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal 桌面版唔可以再喺呢部電腦運作。要再次使用 Signal 桌面版嘅話，請更新你嘅 {OS} 電腦版本。"
+    "messageformat": "B&A 桌面版唔可以再喺呢部電腦運作。要再次使用 B&A 桌面版嘅話，請更新你嘅 {OS} 電腦版本。"
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "編輯咗"
@@ -6529,7 +6529,7 @@
     "messageformat": "複製連結"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "透過 Signal 分享連結"
+    "messageformat": "透過 B&A 分享連結"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "刪除連結"
@@ -6595,7 +6595,7 @@
     "messageformat": "要更改呢個設定，請將「邊個可以睇到我嘅手機號碼」設定為「邊個都唔得」。"
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal 嘅個人檔名係由帳戶持有人自己揀嘅："
+    "messageformat": "B&A 嘅個人檔名係由帳戶持有人自己揀嘅："
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "個人檔名冇經過驗證"
@@ -6628,7 +6628,7 @@
     "messageformat": "重視私隱多過利潤"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "由你贊助嘅私密通訊軟件。冇廣告、冇追蹤、絕不妥協。請立即捐款支持 Signal。<readMoreLink>睇多啲</readMoreLink>"
+    "messageformat": "由你贊助嘅私密通訊軟件。冇廣告、冇追蹤、絕不妥協。請立即捐款支持 B&A。<readMoreLink>睇多啲</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "立即捐款"
@@ -6646,7 +6646,7 @@
     "messageformat": "你嘅資料已經保密"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal 唔會喺你捐款嗰陣收集或者儲存任何個人資料。</paragraph><paragraph>我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。</paragraph><paragraph>Signal 唔會亦冇辦法將你嘅捐款連結至你嘅 Signal 帳戶。</paragraph><paragraph>多謝你嘅支持！</paragraph>"
+    "messageformat": "<paragraph>B&A 唔會喺你捐款嗰陣收集或者儲存任何個人資料。</paragraph><paragraph>我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。</paragraph><paragraph>B&A 唔會亦冇辦法將你嘅捐款連結至你嘅 B&A 帳戶。</paragraph><paragraph>多謝你嘅支持！</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "收據"
@@ -6655,7 +6655,7 @@
     "messageformat": "捐款常見問題"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "收據唔會喺唔同裝置之間同步。若然您重新裝過 Signal，先前嘅捐款恕未能提供收據。"
+    "messageformat": "收據唔會喺唔同裝置之間同步。若然您重新裝過 B&A，先前嘅捐款恕未能提供收據。"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "冇收據"
@@ -6688,7 +6688,7 @@
     "messageformat": "信用卡或扣帳卡"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "請輸入你嘅信用卡或扣帳卡資料。Signal 唔會收集或者儲存你嘅個人資料。<learnMoreLink>了解詳情</learnMoreLink>"
+    "messageformat": "請輸入你嘅信用卡或扣帳卡資料。B&A 唔會收集或者儲存你嘅個人資料。<learnMoreLink>了解詳情</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "付款卡號碼"
@@ -6697,7 +6697,7 @@
     "messageformat": "到期日"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "向 Signal 捐款 {formattedCurrencyAmount}"
+    "messageformat": "向 B&A 捐款 {formattedCurrencyAmount}"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "付款卡號碼無效"
@@ -6715,7 +6715,7 @@
     "messageformat": "代碼太短"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "獲取為期 30 日嘅 Signal 捐款徽章"
+    "messageformat": "獲取為期 30 日嘅 B&A 捐款徽章"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收據"
@@ -6733,7 +6733,7 @@
     "messageformat": "一次性"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "多謝你撐 Signal。你嘅捐款係我哋嘅原動力，推動我哋透過開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 Signal 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。Signal Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構。聯邦稅識別號碼係 82-4506840。"
+    "messageformat": "多謝你撐 B&A。你嘅捐款係我哋嘅原動力，推動我哋透過開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 B&A 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。B&A Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構。聯邦稅識別號碼係 82-4506840。"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "已經取消捐款"
@@ -6781,7 +6781,7 @@
     "messageformat": "捐款過程出現錯誤"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "可能未處理到你嘅捐款。點擊「捐款俾 Signal」，跟住點擊「捐款收據」檢查你嘅收據，然後確認。"
+    "messageformat": "可能未處理到你嘅捐款。點擊「捐款俾 B&A」，跟住點擊「捐款收據」檢查你嘅收據，然後確認。"
   },
   "icu:Donations__Processing": {
     "messageformat": "處理緊捐款……"
@@ -6817,11 +6817,11 @@
     "messageformat": "取消捐款"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "呢個版本包含咗少少調整同埋錯誤修復，等 Signal 可以順暢運作。",
+    "messageformat": "呢個版本包含咗少少調整同埋錯誤修復，等 B&A 可以順暢運作。",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "我哋額外做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 Signal！",
+    "messageformat": "我哋額外做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 B&A！",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "我哋做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 Signal！",
+    "messageformat": "我哋做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 B&A！",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {

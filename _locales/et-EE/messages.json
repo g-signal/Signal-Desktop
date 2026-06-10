@@ -42,7 +42,7 @@
     "messageformat": "Kõrge kvaliteediga meedia saatmine kasutab rohkem andmesidet."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta B&Aile"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standardne"
@@ -78,10 +78,10 @@
     "messageformat": "Tundmatu grupp"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signalit ei saa avada"
+    "messageformat": "B&Ait ei saa avada"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Selle probleemi lahendamiseks järgi kasutajatoe lehel toodud juhiseid või võta Signaliga ühendust abi saamiseks.\n\nKui sul on vaja Signalit kohe kasutada, saad oma andmed kustutada ja selle arvuti uuesti siduda. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
+    "messageformat": "Selle probleemi lahendamiseks järgi kasutajatoe lehel toodud juhiseid või võta B&Aiga ühendust abi saamiseks.\n\nKui sul on vaja B&Ait kohe kasutada, saad oma andmed kustutada ja selle arvuti uuesti siduda. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
   },
   "icu:databaseError": {
     "messageformat": "Andmebaasi tõrge"
@@ -93,16 +93,16 @@
     "messageformat": "Kustuta jäädavalt kõik andmed"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Kogu sinu sõnumiajalugu ja meedia kustutatakse sellest seadmest jäädavalt. Selle käigus ei kustutata andmeid sinu telefonist.\n\nSaad Signalit selles seadmes kasutada, kui selle taasühendad. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
+    "messageformat": "Kogu sinu sõnumiajalugu ja meedia kustutatakse sellest seadmest jäädavalt. Selle käigus ei kustutata andmeid sinu telefonist.\n\nSaad B&Ait selles seadmes kasutada, kui selle taasühendad. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Sinu andmebaasi versioon ei klapi selle Signali versiooniga. Veendu, et avasid oma arvutis uusima Signali versiooni."
+    "messageformat": "Sinu andmebaasi versioon ei klapi selle B&Ai versiooniga. Veendu, et avasid oma arvutis uusima B&Ai versiooni."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Andmebaasi krüptimisvõtmele ei pääsenud ligi, sest operatsioonisüsteemi krüptimise võtmerõngas {previousBackend} asendus uuega {currentBackend}. See võib juhtuda, kui töölauakeskkond muutub, näiteks GNOME'i ja KDE vahel.\n\nPalun pöördu tagasi endise töölauakeskkonna juurde."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Andmebaasi krüpteerimisvõtmele ei pääsenud ligi, sest operatsioonisüsteemi krüpteerimise võtmerõngas {previousBackend} asendus uuega {currentBackend}. See võib juhtuda, kui töölauakeskkond muutub, näiteks GNOME'i ja KDE vahel.\n\nPalun naase endisse töölauakeskkonda või proovi käivitada Signalit käsurea lipuga --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Andmebaasi krüpteerimisvõtmele ei pääsenud ligi, sest operatsioonisüsteemi krüpteerimise võtmerõngas {previousBackend} asendus uuega {currentBackend}. See võib juhtuda, kui töölauakeskkond muutub, näiteks GNOME'i ja KDE vahel.\n\nPalun naase endisse töölauakeskkonda või proovi käivitada B&Ait käsurea lipuga --password-store=\"{previousBackendFlag}\""
   },
   "icu:mainMenuFile": {
     "messageformat": "&Fail"
@@ -138,7 +138,7 @@
     "messageformat": "Näita kõiki"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Välju Signalist"
+    "messageformat": "Välju B&Aist"
   },
   "icu:editMenuUndo": {
     "messageformat": "Võta tagasi"
@@ -429,10 +429,10 @@
     "messageformat": "Sa märkisid teisest seadmest turvanumbri kasutajaga {name} mittekinnitatuks"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Turvanumber, mida püüad kinnitada, on muutunud. Palun vaata üle uus turvanumber kasutajaga {name1}. Jäta meelde, et see muudatus võib tähendada, et keegi püüab teie suhtlust pealt kuulata või on {name2} lihtsalt Signali uuesti paigaldanud."
+    "messageformat": "Turvanumber, mida püüad kinnitada, on muutunud. Palun vaata üle uus turvanumber kasutajaga {name1}. Jäta meelde, et see muudatus võib tähendada, et keegi püüab teie suhtlust pealt kuulata või on {name2} lihtsalt B&Ai uuesti paigaldanud."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Järgmised inimesed võivad olla Signali uuesti alla laadinud või seadet vahetanud. Klõpsa saajale, et kinnitada tema uus turvanumber. See on valikuline."
+    "messageformat": "Järgmised inimesed võivad olla B&Ai uuesti alla laadinud või seadet vahetanud. Klõpsa saajale, et kinnitada tema uus turvanumber. See on valikuline."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Saada ootel sõnumid"
@@ -441,7 +441,7 @@
     "messageformat": "Ülevaade"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Sul on {count,number} kontakt, kes võib olla Signali uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida tema turvanumbrit.} other {Sul on {count,number} kontakti, kes võivad olla Signali uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida nende turvanumbreid.}}"
+    "messageformat": "{count, plural, one {Sul on {count,number} kontakt, kes võib olla B&Ai uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida tema turvanumbrit.} other {Sul on {count,number} kontakti, kes võivad olla B&Ai uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida nende turvanumbreid.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Kõik kontaktid on kontrollitud, jätkamiseks toksa „Saada“."
@@ -483,7 +483,7 @@
     "messageformat": "Kui klõpsad \"Saada\", postitatakse sinu logi 30 päevaks veebi unikaalsele avaldamata URL-aadressile. Soovi korral võid selle enne kohalikult salvestada."
   },
   "icu:debugLogError": {
-    "messageformat": "Midagi läks üleslaadimisega kehvasti! Palun saada kiri aadressile support@signal.org ja lisa logifailid tekstifailina."
+    "messageformat": "Midagi läks üleslaadimisega kehvasti! Palun saada kiri aadressile support@baxs.com ja lisa logifailid tekstifailina."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Silumislogi postitatud"
@@ -672,7 +672,7 @@
     "messageformat": "Kleebisepaki looja"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Teave Signal Desktopi kohta"
+    "messageformat": "Teave B&A Desktopi kohta"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ekraani jagamine"
@@ -696,7 +696,7 @@
     "messageformat": "Välju"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "Otsi"
@@ -750,7 +750,7 @@
     "messageformat": "Otsi telefoninumbri järgi"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Tere tulemast Signalisse"
+    "messageformat": "Tere tulemast B&Aisse"
   },
   "icu:whatsNew": {
     "messageformat": "Vaata {whatsNew} selles versioonis"
@@ -837,13 +837,13 @@
     "messageformat": "Sina"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Häälsõnumite saatmiseks luba Signal Desktopil oma mikrofoni kasutada."
+    "messageformat": "Häälsõnumite saatmiseks luba B&A Desktopil oma mikrofoni kasutada."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Häälkõnede tegemiseks pead andma Signal Desktop-ile mikrofonile ligipääsu."
+    "messageformat": "Häälkõnede tegemiseks pead andma B&A Desktop-ile mikrofonile ligipääsu."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Videokõnede tegemiseks pead andma Signal Desktop-ile kaamerale ligipääsu."
+    "messageformat": "Videokõnede tegemiseks pead andma B&A Desktop-ile kaamerale ligipääsu."
   },
   "icu:allowAccess": {
     "messageformat": "Luba ligipääs"
@@ -867,13 +867,13 @@
     "messageformat": "Vaigista"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signalit ei saanud uuendada. <retryUpdateButton>Proovi uuesti uuendada</retryUpdateButton> või külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
+    "messageformat": "B&Ait ei saanud uuendada. <retryUpdateButton>Proovi uuesti uuendada</retryUpdateButton> või külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signalit ei saanud uuendada. Külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
+    "messageformat": "B&Ait ei saanud uuendada. Külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop on tõenäoliselt macOS-i karantiinis ja seda pole võimalik automaatselt uuendada. Palun teisalda {app} kausta {folder} Finderi abil."
+    "messageformat": "B&A Desktop on tõenäoliselt macOS-i karantiinis ja seda pole võimalik automaatselt uuendada. Palun teisalda {app} kausta {folder} Finderi abil."
   },
   "icu:ok": {
     "messageformat": "Sobib"
@@ -918,7 +918,7 @@
     "messageformat": "See sõnum kustutatakse sellest seadmest."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "See sõnum kustutatakse kõigilt vestluse liikmetelt, kui nad kasutavad Signali värsket versiooni. Nad näevad, et sa kustutasid sõnumi."
+    "messageformat": "See sõnum kustutatakse kõigilt vestluse liikmetelt, kui nad kasutavad B&Ai värsket versiooni. Nad näevad, et sa kustutasid sõnumi."
   },
   "icu:from": {
     "messageformat": "Saatja"
@@ -960,7 +960,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "„{title}“ on isiku enda lisatud Signali profiilinimi."
+    "messageformat": "„{title}“ on isiku enda lisatud B&Ai profiilinimi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Kontrollitud"
@@ -975,7 +975,7 @@
     "messageformat": "Sinul ja kasutajal {name} ei ole otsesõnumeid"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signali kontakt"
+    "messageformat": "B&Ai kontakt"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} on sinu süsteemi kontaktide hulgas"
@@ -1068,7 +1068,7 @@
     "messageformat": "Uuri lähemalt"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal kasutab otspunktkrüptimist ja võib mõnikord vajada vestluse seansi värskendamist. See ei mõjuta vestluse turvalisust, aga sa võisid mõnest selle kontakti sõnumist ilma jääda, seepärast palu tal vajadusel see uuesti saata."
+    "messageformat": "B&A kasutab otspunktkrüptimist ja võib mõnikord vajada vestluse seansi värskendamist. See ei mõjuta vestluse turvalisust, aga sa võisid mõnest selle kontakti sõnumist ilma jääda, seepärast palu tal vajadusel see uuesti saata."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Võta ühendust kasutajatoega"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} muutis enda telefoninumbrit"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontakt liitus Signaliga"
+    "messageformat": "Kontakt liitus B&Aiga"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} ja {conversationTitle} on sama konto. Sinu mõlema vestluse sõnumiajalugu on siin."
@@ -1215,7 +1215,7 @@
     "messageformat": "Meediat ei saa alla laadida"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Kontrolli oma arvuti ja telefoni internetiühendust. Ava Signal oma telefonis ja proovi see uuesti alla laadida."
+    "messageformat": "Kontrolli oma arvuti ja telefoni internetiühendust. Ava B&A oma telefonis ja proovi see uuesti alla laadida."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "See meedia ei ole enam su telefonis saadaval ning seda ei saa alla laadida."
@@ -1236,10 +1236,10 @@
     "messageformat": "Rohkem infot"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skanni see kood enda telefonis oleva Signal rakendusega"
+    "messageformat": "Skanni see kood enda telefonis oleva B&A rakendusega"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava B&A enda telefonis"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Toksa {settings} ja seejärel {linkedDevices}"
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>Tekkis ootamatu tõrge.</paragraph><paragraph>Palun proovi uuesti.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal ei saa seda seadet sinu praeguse võrgu kaudu linkida."
+    "messageformat": "B&A ei saa seda seadet sinu praeguse võrgu kaudu linkida."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Proovi uuesti"
@@ -1281,7 +1281,7 @@
     "messageformat": "Seadme nimi"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Selle seadme nime muutmiseks ava Signal oma telefonis ja vali Sätted > Lingitud seadmed"
+    "messageformat": "Selle seadme nime muutmiseks ava B&A oma telefonis ja vali Sätted > Lingitud seadmed"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji nahatoon"
@@ -1461,7 +1461,7 @@
     "messageformat": "Kahjuks on sul juba liiga palju ühendatud seadmeid. Proovi mõni eemaldada."
   },
   "icu:installTooOld": {
-    "messageformat": "Telefoni ühendamiseks pead selles seadmes Signalit uuendama."
+    "messageformat": "Telefoni ühendamiseks pead selles seadmes B&Ait uuendama."
   },
   "icu:installErrorHeader": {
     "messageformat": "Midagi läks valesti!"
@@ -1512,7 +1512,7 @@
     "messageformat": "See kõnelink ei kehti enam."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signali kõne"
+    "messageformat": "B&Ai kõne"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Linki ei saa kustutada. Kontrolli oma ühendust ja proovi uuesti."
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, one {Selles kõnes on {count,number} inimene} other {Selles kõnes on {count,number} inimest}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal helistab isikule {person}"
+    "messageformat": "B&A helistab isikule {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal helistab isikutele {first} ja {second}"
+    "messageformat": "B&A helistab isikutele {first} ja {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal helistab isikutele {first}, {second} ja {third}"
+    "messageformat": "B&A helistab isikutele {first}, {second} ja {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal helistab isikutele {first}, {second} ja {others,number} muule} other {Signal helistab isikutele {first}, {second} ja {others,number} muule}}"
+    "messageformat": "{others, plural, one {B&A helistab isikutele {first}, {second} ja {others,number} muule} other {B&A helistab isikutele {first}, {second} ja {others,number} muule}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} saab teavituse"
@@ -1725,13 +1725,13 @@
     "messageformat": "Ühenduse taastamine…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Sinu ühendus katkes. Signal proovib ühendust taastada."
+    "messageformat": "Sinu ühendus katkes. B&A proovib ühendust taastada."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal jagab {window}."
+    "messageformat": "B&A jagab {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signali ekraanijagamine on aktiivne"
+    "messageformat": "B&Ai ekraanijagamine on aktiivne"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Ühenduse taastamine…"
@@ -1752,7 +1752,7 @@
     "messageformat": "Juurdepääs on vajalik"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal vajab juurdepääsu sinu arvuti ekraanisalvestusele."
+    "messageformat": "B&A vajab juurdepääsu sinu arvuti ekraanisalvestusele."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Mine süsteemi sätetesse (System Preferences)."
@@ -1761,7 +1761,7 @@
     "messageformat": "Klõpsa vasakul all asuval lukuikoonil ja sisesta enda parool selles arvutis."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Paremal pool märgista Signali kõrval olev kasti. Kui sa ei näe Signalit nimekirjas, siis klõpsa \"+\" ja lisa see."
+    "messageformat": "Paremal pool märgista B&Ai kõrval olev kasti. Kui sa ei näe B&Ait nimekirjas, siis klõpsa \"+\" ja lisa see."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Ava süsteemi sätted (System Preferences)"
@@ -1773,7 +1773,7 @@
     "messageformat": "Alati vahenda kõned"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Vahenda kõnesid Signali serveri kaudu, et hoiduda oma IP-aadressi paljastamisest enda kontaktile. Selle lubamine vähendab kõne kvaliteeti."
+    "messageformat": "Vahenda kõnesid B&Ai serveri kaudu, et hoiduda oma IP-aadressi paljastamisest enda kontaktile. Selle lubamine vähendab kõne kvaliteeti."
   },
   "icu:permissions": {
     "messageformat": "Õigused"
@@ -1791,10 +1791,10 @@
     "messageformat": "Võimalda teksti vormindamise hüpikaken, kui tekst on valitud"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Õigekirja kontroll lubatakse järgmisel Signali käivitamisel."
+    "messageformat": "Õigekirja kontroll lubatakse järgmisel B&Ai käivitamisel."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Õigekirja kontroll keelatakse järgmisel Signali käivitamisel."
+    "messageformat": "Õigekirja kontroll keelatakse järgmisel B&Ai käivitamisel."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimeeri süsteemisalve"
@@ -1818,13 +1818,13 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Kas kustutada sellest Signal Desktopi versioonist kõik andmed ja sõnumid? Sinu Signali kontot ja telefonis või muudes lingitud seadmetes olevaid andmeid ei kustutata."
+    "messageformat": "Kas kustutada sellest B&A Desktopi versioonist kõik andmed ja sõnumid? Sinu B&Ai kontot ja telefonis või muudes lingitud seadmetes olevaid andmeid ei kustutata."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Ühenduse lõpetamine ja kõigi andmete kustutamine …"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Sul on Signal Desktop-i varasematest paigaldustest jäänud üleliigseid andmeid. Kui valid jätkamise, siis need andmed kustutatakse ja sa alustad algusest peale."
+    "messageformat": "Sul on B&A Desktop-i varasematest paigaldustest jäänud üleliigseid andmeid. Kui valid jätkamise, siis need andmed kustutatakse ja sa alustad algusest peale."
   },
   "icu:deleteOldData": {
     "messageformat": "Kustuta vanad andmed"
@@ -1866,10 +1866,10 @@
     "messageformat": "Osaliselt kustutatud, klõpsa uuesti proovimiseks"
   },
   "icu:expiredWarning": {
-    "messageformat": "See Signal Desktopi versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
+    "messageformat": "See B&A Desktopi versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
   },
   "icu:upgrade": {
-    "messageformat": "Klõpsa aadressile signal.org/download minemiseks"
+    "messageformat": "Klõpsa aadressile ba-chat.com/download minemiseks"
   },
   "icu:mediaMessage": {
     "messageformat": "Meediasõnum"
@@ -1878,7 +1878,7 @@
     "messageformat": "Impordi kontaktid"
   },
   "icu:syncExplanation": {
-    "messageformat": "Impordi kõik Signali grupid ja kontaktid enda nutiseadmest."
+    "messageformat": "Impordi kõik B&Ai grupid ja kontaktid enda nutiseadmest."
   },
   "icu:syncNow": {
     "messageformat": "Impordi nüüd"
@@ -1914,7 +1914,7 @@
     "messageformat": "Eile {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signalil võib olla probleeme sissetuleva sõnumi töötlemisega."
+    "messageformat": "B&Ail võib olla probleeme sissetuleva sõnumi töötlemisega."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Sõnumi sisu on liiga pikk."
@@ -2067,10 +2067,10 @@
     "messageformat": "Muutmine on võimalik vaid 24 tunni jooksul alates sõnumi saatmisest."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} ei ole Signali kasutaja. Veendu, et sisestasid kasutajanime täielikult."
+    "messageformat": "{atUsername} ei ole B&Ai kasutaja. Veendu, et sisestasid kasutajanime täielikult."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Kasutajat ei leitud. \"{phoneNumber}\" ei ole Signali kasutaja."
+    "messageformat": "Kasutajat ei leitud. \"{phoneNumber}\" ei ole B&Ai kasutaja."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Kasutajat ei leitud. \"{phoneNumber}\" ei ole kehtiv telefoninumber."
@@ -2091,13 +2091,13 @@
     "messageformat": "Maksimaalne grupisuurus täitunud"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signali grupis võib olla maksimaalselt {max,number} liiget."
+    "messageformat": "B&Ai grupis võib olla maksimaalselt {max,number} liiget."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Jõuti soovitatava liikmete arvu piirini"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signali grupid toimivad kõige paremini {max,number} või vähema liikmega. Rohkem liikmete lisamine põhjustab viivitusi sõnumite saatmises ja saamises."
+    "messageformat": "B&Ai grupid toimivad kõige paremini {max,number} või vähema liikmega. Rohkem liikmete lisamine põhjustab viivitusi sõnumite saatmises ja saamises."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Lisa grupile nimi"
@@ -2127,7 +2127,7 @@
     "messageformat": "Grupi uuendamine ei õnnestunud. Kontrolli internetiühendust ja proovi uuesti."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Klõpsa Signal Desktopi nutiseadmega ühendamiseks, et jätkata sõnumite saatmisega."
+    "messageformat": "Klõpsa B&A Desktopi nutiseadmega ühendamiseks, et jätkata sõnumite saatmisega."
   },
   "icu:unlinked": {
     "messageformat": "Ühendus eemaldatud"
@@ -2139,16 +2139,16 @@
     "messageformat": "Proovi uuesti uuendada"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Klõpsa Signali taaskäivitamiseks"
+    "messageformat": "Klõpsa B&Ai taaskäivitamiseks"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Klõpsa uuenduse allalaadimiseks"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signalit ei saanud uuendada. Klõpsa, et uuesti proovida."
+    "messageformat": "B&Ait ei saanud uuendada. Klõpsa, et uuesti proovida."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Taaskäivita Signal"
+    "messageformat": "Taaskäivita B&A"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignoreeri uuendust"
@@ -2247,7 +2247,7 @@
     "messageformat": "Mõned manused on kuvamiseks liiga suured."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Kasuta Signali kõnega liitumiseks seda linki"
+    "messageformat": "Kasuta B&Ai kõnega liitumiseks seda linki"
   },
   "icu:donation--missing": {
     "messageformat": "Annetuse andmeid ei õnnestunud saada"
@@ -2259,7 +2259,7 @@
     "messageformat": "Oma annetuse nägemiseks toksa mobiilis seda sõnumit"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} annetas Signalile sinu nimel"
+    "messageformat": "{sender} annetas B&Aile sinu nimel"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Selle annetuse avamiseks kontrolli oma telefoni"
@@ -2310,7 +2310,7 @@
     "messageformat": "Aitäh sinu toetuse eest!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Tegid Signalile kasutaja {name} nimel annetuse. Pakume talle võimalust oma profiilil toetust avaldada."
+    "messageformat": "Tegid B&Aile kasutaja {name} nimel annetuse. Pakume talle võimalust oma profiilil toetust avaldada."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Kleebisepaki paigaldamine ei õnnestunud"
@@ -2325,10 +2325,10 @@
     "messageformat": "Kleebiseid pole paigaldatud"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signali artisti seeria"
+    "messageformat": "B&Ai artisti seeria"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal Artist kleebiseid pole saadaval"
+    "messageformat": "B&A Artist kleebiseid pole saadaval"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Vastuvõetud kleebised"
@@ -2670,19 +2670,19 @@
     "messageformat": "Sõnum on edasi kuvamiseks liiga pikk"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} saatis sulle sõnumi, mida ei saa töödelda või kuvada, sest see kasutab Signali uut funktsionaalsust."
+    "messageformat": "{contact} saatis sulle sõnumi, mida ei saa töödelda või kuvada, sest see kasutab B&Ai uut funktsionaalsust."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Nüüd, kui kasutad Signali uuendatud versiooni, siis palu kontaktil {contact} sõnum uuesti saata."
+    "messageformat": "Nüüd, kui kasutad B&Ai uuendatud versiooni, siis palu kontaktil {contact} sõnum uuesti saata."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Üks sinu seadmetest saatis sõnumi, mida ei saa töödelda või kuvada, sest see kasutab Signali uut funktsionaalsust."
+    "messageformat": "Üks sinu seadmetest saatis sõnumi, mida ei saa töödelda või kuvada, sest see kasutab B&Ai uut funktsionaalsust."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Tulevikusõnumid nagu see sünkroniseeritakse nüüd, kui kasutad värskendatud Signali versiooni."
+    "messageformat": "Tulevikusõnumid nagu see sünkroniseeritakse nüüd, kui kasutad värskendatud B&Ai versiooni."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Uuenda Signalit"
+    "messageformat": "Uuenda B&Ait"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Vaadatud"
@@ -2946,7 +2946,7 @@
     "messageformat": "Vestlus märgiti mitteloetuks"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Kleebiste komplekti loomiskeskkonna kasutamiseks pead seadistama Signali nii enda telefonis kui arvutis"
+    "messageformat": "Kleebiste komplekti loomiskeskkonna kasutamiseks pead seadistama B&Ai nii enda telefonis kui arvutis"
   },
   "icu:Reactions--remove": {
     "messageformat": "Eemalda reaktsioon"
@@ -2970,7 +2970,7 @@
     "messageformat": "Valenimed ja -kontod"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi või PIN-koodi küsimiseks. Ole ettevaatlik taotluste suhtes, kus esinetakse kellegi teisena. Profiilinimed valib iga konto omanik ise ja need ei ole kinnitatud."
+    "messageformat": "B&A ei võta sinuga kunagi ühendust registreerimiskoodi või PIN-koodi küsimiseks. Ole ettevaatlik taotluste suhtes, kus esinetakse kellegi teisena. Profiilinimed valib iga konto omanik ise ja need ei ole kinnitatud."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Krüpto- või rahapettused"
@@ -3060,13 +3060,13 @@
     "messageformat": "Kas teatada rämpspostist?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "B&Ait teavitatakse, et see isik võib olla rämpsposti edastaja. B&A ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "B&Ait teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. B&A ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signalit teavitatakse, et {name}, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "B&Ait teavitatakse, et {name}, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. B&A ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Teata rämpspostist"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>Profiilinimesid</clickable> ei kinnitata"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "See on üks ja ainus ametlik vestlus Signaliga"
+    "messageformat": "See on üks ja ainus ametlik vestlus B&Aiga"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Hoia end kursis uudiste ja väljalaskeinfoga."
@@ -3228,10 +3228,10 @@
     "messageformat": "Vastamata videokõne"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal töötab endiselt"
+    "messageformat": "B&A töötab endiselt"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal jääb teavituste alal tööle. Saad seda Signali sätete alt muuta."
+    "messageformat": "B&A jääb teavituste alal tööle. Saad seda B&Ai sätete alt muuta."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Sissetulev häälkõne"
@@ -3441,7 +3441,7 @@
     "messageformat": "Kopeeri kõnelink"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Jaga kõnelinki Signali kaudu"
+    "messageformat": "Jaga kõnelinki B&Ai kaudu"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Eemalda see isik kõnest"
@@ -3561,7 +3561,7 @@
     "messageformat": "Tundmatu lingi versioon"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "See Signal Desktop ei toeta seda linki."
+    "messageformat": "See B&A Desktop ei toeta seda linki."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Grupiga ei saa liituda"
@@ -4116,22 +4116,22 @@
     "messageformat": "Selleks võib kuluda mõni minut"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta B&Aile"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta B&Aile"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal toimib tänu inimestele nagu sina. Anneta, et saada toetaja märk."
+    "messageformat": "B&A toimib tänu inimestele nagu sina. Anneta, et saada toetaja märk."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava B&A enda telefonis"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Sätete avamiseks klõpsa enda profiilifotol üleval vasakul"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Toksa \"Anneta Signalile\" ja liitu"
+    "messageformat": "Toksa \"Anneta B&Aile\" ja liitu"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Sinu profiil on liikunud"
@@ -4257,7 +4257,7 @@
     "messageformat": "Nõutav konto toiming"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Selle konto edasi kasutamiseks pead Signali telefonis avama. Kui sa Signalit oma telefonis ei ava, kustutame varsti su konto. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Selle konto edasi kasutamiseks pead B&Ai telefonis avama. Kui sa B&Ait oma telefonis ei ava, kustutame varsti su konto. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Meediat ei saa taastada"
@@ -4272,10 +4272,10 @@
     "messageformat": "Lisa fail"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "See isik ei kasuta Signalit"
+    "messageformat": "See isik ei kasuta B&Ait"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop ei toeta sõnumite vahetamist kontaktidega, kes ei kasuta Signalit. Palu sellel isikul turvalisema sõnumivahetuskogemuse saamiseks Signal paigaldada."
+    "messageformat": "B&A Desktop ei toeta sõnumite vahetamist kontaktidega, kes ei kasuta B&Ait. Palu sellel isikul turvalisema sõnumivahetuskogemuse saamiseks B&A paigaldada."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Kontakti registreerumisoleku kontrollimine"
@@ -4461,7 +4461,7 @@
     "messageformat": "Hüüdnimi"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Hüüdnimed ja märkused salvestatakse Signalisse ja otspunktkrüptitakse. Need on nähtavad ainult sulle."
+    "messageformat": "Hüüdnimed ja märkused salvestatakse B&Aisse ja otspunktkrüptitakse. Need on nähtavad ainult sulle."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Eesnimi"
@@ -4512,7 +4512,7 @@
     "messageformat": "Nõua grupilingi kaudu liituvate uute liikmete kinnitamist administraatori poolt"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopeeri signal.group link lõikelauale"
+    "messageformat": "Kopeeri B&A.group link lõikelauale"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Taotlused ({count,number})"
@@ -4716,13 +4716,13 @@
     "messageformat": "Tühje või kustutatud sõnumeid ei saa edastada"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Kasuta Signali kõnega liitumiseks seda linki: {url}"
+    "messageformat": "Kasuta B&Ai kõnega liitumiseks seda linki: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Ohutusnõuanded"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Vaata taotlused tähelepanelikult üle. Signal leidis teise samanimelise kontakti. <reviewRequestLink>Vaata taotlus üle</reviewRequestLink>"
+    "messageformat": "Vaata taotlused tähelepanelikult üle. B&A leidis teise samanimelise kontakti. <reviewRequestLink>Vaata taotlus üle</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} grupiliikmel on sama nimi. <reviewRequestLink>Vaata liikmeid</reviewRequestLink>} other {{count,number} grupiliikmel on sama nimi. <reviewRequestLink>Vaata liikmeid</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "Muid ühiseid gruppe pole"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signali kontakt"
+    "messageformat": "B&Ai kontakt"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Muutsid hiljuti oma profiilinime {oldName} -> {newName}"
@@ -4773,7 +4773,7 @@
     "messageformat": "Sõnumite saatmise jätkamiseks kinnita"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Rämpspostituste vältimiseks Signalis täida palun verifitseerimine."
+    "messageformat": "Rämpspostituste vältimiseks B&Ais täida palun verifitseerimine."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Pärast kinnitamist saad sõnumite saatmist jätkata. Kõik peatatud sõnumid saadetakse automaatselt."
@@ -5079,7 +5079,7 @@
     "messageformat": "Kas sa soovid neid muudatusi tühistada?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Kas sulgeda Signal ja lõpetada kõne?"
+    "messageformat": "Kas sulgeda B&A ja lõpetada kõne?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Mitte praegu"
@@ -5166,7 +5166,7 @@
     "messageformat": "Üldine"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta B&Aile"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Välimus"
@@ -5247,7 +5247,7 @@
     "messageformat": "Genereeri lingieelvaateid"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Selle sätte muutmiseks ava enda nutiseadmes Signal äpp ja liigu Sätted -> Vestlused"
+    "messageformat": "Selle sätte muutmiseks ava enda nutiseadmes B&A äpp ja liigu Sätted -> Vestlused"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Muuda trükitud emotikonid emojideks"
@@ -5265,13 +5265,13 @@
     "messageformat": "Blokeeritud"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signali varukoopiad"
+    "messageformat": "B&Ai varukoopiad"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automaatsed varukoopiad Signali turvalise otspunktkrüptitud salvestusteenuse abil. Seadista telefonis. <learnMoreLink>Rohkem teavet</learnMoreLink>."
+    "messageformat": "Automaatsed varukoopiad B&Ai turvalise otspunktkrüptitud salvestusteenuse abil. Seadista telefonis. <learnMoreLink>Rohkem teavet</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Varunda oma sõnumiajalugu, et mitte kaotada andmeid, kui telefoni välja vahetad ja Signali uuesti paigaldad."
+    "messageformat": "Varunda oma sõnumiajalugu, et mitte kaotada andmeid, kui telefoni välja vahetad ja B&Ai uuesti paigaldad."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Varukoopia andmed"
@@ -5280,7 +5280,7 @@
     "messageformat": "Sõnumite + kogu meedia varukoopia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Sinu tellimust ei leitud. Uuenda, et jätkata Signali varukoopiate kasutamist."
+    "messageformat": "Sinu tellimust ei leitud. Uuenda, et jätkata B&Ai varukoopiate kasutamist."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Sõnumite + {mediaDayCount,number} päeva meedia varukoopia} other {Sõnumite + {mediaDayCount,number} päeva meedia varukoopia}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "Tellimus tühistatud"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Nüüd saad oma Signali varukoopiate tellimust oma telefonis hallata või uuendada."
+    "messageformat": "Nüüd saad oma B&Ai varukoopiate tellimust oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Nüüd saad Signali varukoopiaid oma telefonis hallata või uuendada."
+    "messageformat": "Nüüd saad B&Ai varukoopiaid oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Nüüd saad oma Signali varukoopiate tellimust oma telefonis hallata või uuendada."
+    "messageformat": "Nüüd saad oma B&Ai varukoopiate tellimust oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Viimane varukoopia"
@@ -5322,7 +5322,7 @@
     "messageformat": "Loo otspunktkrüptitud varukoopia, mille saad oma telefonis taastada. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Varukoopia taastamiseks installi Signali uus versioon. Ava rakendus ja klõpsa „Taasta varukoopia“, seejärel vali varukoopia kaust. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Varukoopia taastamiseks installi B&Ai uus versioon. Ava rakendus ja klõpsa „Taasta varukoopia“, seejärel vali varukoopia kaust. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Vali kaust"
@@ -5358,7 +5358,7 @@
     "messageformat": "Hoia oma võtit turvaliselt"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Kui oma võtme ära kaotad, ei saa Signal aidata sul varukoopiat taastada. Hoia seda turvalises kohas ning ära jaga teistega."
+    "messageformat": "Kui oma võtme ära kaotad, ei saa B&A aidata sul varukoopiat taastada. Hoia seda turvalises kohas ning ära jaga teistega."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Jätka"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, one {{num,number} kontakt} other {{num,number} kontakti}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Nende sätete muutmiseks ava enda nutiseadmes Signal äpp ja liigu Sätted -> Privaatsus"
+    "messageformat": "Nende sätete muutmiseks ava enda nutiseadmes B&A äpp ja liigu Sätted -> Privaatsus"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Telefoninumber"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Vali, kes sinu telefoninumbrit näevad ja sinuga selle kaudu Signalis ühendust saavad võtta."
+    "messageformat": "Vali, kes sinu telefoninumbrit näevad ja sinuga selle kaudu B&Ais ühendust saavad võtta."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Muuda …"
@@ -5430,10 +5430,10 @@
     "messageformat": "Kes mind numbri järgi leida saavad"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Kõik, kellel on sinu telefoninumber, näevad, et sa kasutad Signalit ja saavad sinuga vestlust alustada."
+    "messageformat": "Kõik, kellel on sinu telefoninumber, näevad, et sa kasutad B&Ait ja saavad sinuga vestlust alustada."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Mitte keegi ei näe, et sa oled Signalis, kui sa neile sõnumit ei saada või sul nendega juba vestlust pooleli ei ole."
+    "messageformat": "Mitte keegi ei näe, et sa oled B&Ais, kui sa neile sõnumit ei saada või sul nendega juba vestlust pooleli ei ole."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Kõik"
@@ -5445,7 +5445,7 @@
     "messageformat": "Kas oled kindel?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Kui teed sätte „{settingTitle}“ alt valiku „{nobodyLabel}“, on inimestel sind raskem Signalis leida."
+    "messageformat": "Kui teed sätte „{settingTitle}“ alt valiku „{nobodyLabel}“, on inimestel sind raskem B&Ais leida."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Sõnumside"
@@ -5499,7 +5499,7 @@
     "messageformat": "Määra"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Taaskäivita Signal, et muudatused rakenduksid"
+    "messageformat": "Taaskäivita B&A, et muudatused rakenduksid"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Keele vahetamiseks tuleb äpp taaskäivitada."
@@ -5514,13 +5514,13 @@
     "messageformat": "Ekraani turvalisus"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Täiendava privaatsuse huvides keela selles arvutis Signali kuvatõmmised."
+    "messageformat": "Täiendava privaatsuse huvides keela selles arvutis B&Ai kuvatõmmised."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Kas lülitada ekraani turvalisus välja?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Kui see on välja lülitatud, võib see tähendada, et Microsoft Windows võib jäädvustada Signalist ekraanipilte ja kasutada neid funktsioonide puhul, mis ei pruugi olla privaatsed."
+    "messageformat": "Kui see on välja lülitatud, võib see tähendada, et Microsoft Windows võib jäädvustada B&Aist ekraanipilte ja kasutada neid funktsioonide puhul, mis ei pruugi olla privaatsed."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Keela"
@@ -5535,25 +5535,25 @@
     "messageformat": "Uuendus alla laaditud"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava B&A enda telefonis"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Sinu konto kustutatakse varsti, kui sa oma telefonis Signalit ei ava. See sõnum kaob, kui oled selle edukalt ära teinud. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Sinu konto kustutatakse varsti, kui sa oma telefonis B&Ait ei ava. See sõnum kaob, kui oled selle edukalt ära teinud. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Ava oma telefonis Signal, et kontot aktiivsena hoida"
+    "messageformat": "Ava oma telefonis B&A, et kontot aktiivsena hoida"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Rohkem infot"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signalil on tehnilisi raskusi. Pingutame selle nimel, et teenus võimalikult kiiresti taastada."
+    "messageformat": "B&Ail on tehnilisi raskusi. Pingutame selle nimel, et teenus võimalikult kiiresti taastada."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Vajalik uuendus"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Selleks, et sõnumite sünkroniseerimine lõpule viia, uuenda kohe Signali töölauaversiooni."
+    "messageformat": "Selleks, et sõnumite sünkroniseerimine lõpule viia, uuenda kohe B&Ai töölauaversiooni."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Uuenda"
@@ -5562,19 +5562,19 @@
     "messageformat": "Vajalik uuendus"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Selleks, et Signalit edasi kasutada, pead uuendama uusimale versioonile."
+    "messageformat": "Selleks, et B&Ait edasi kasutada, pead uuendama uusimale versioonile."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Laadi alla {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Uuenduse paigaldamiseks taaskäivita Signal."
+    "messageformat": "Uuenduse paigaldamiseks taaskäivita B&A."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktopi uuendamine nurjus, kuid uus versioon on saadaval. Ava {downloadUrl} ja paigalda uus versioon käsitsi ning teavita probleemist kasutajatuge või saada veateade."
+    "messageformat": "B&A Desktopi uuendamine nurjus, kuid uus versioon on saadaval. Ava {downloadUrl} ja paigalda uus versioon käsitsi ning teavita probleemist kasutajatuge või saada veateade."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signalit ei saa sulgeda.",
+    "messageformat": "B&Ait ei saa sulgeda.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signali uuem versioon on juba paigaldatud. Kas oled kindel, et soovid jätkata?",
+    "messageformat": "B&Ai uuem versioon on juba paigaldatud. Kas oled kindel, et soovid jätkata?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Rakendus jooksis kokku"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal taaskäivitus pärast kokkujooksmist. Võid kokkujooksmise kohta teavituse saata, et aidata Signalil probleemi uurida."
+    "messageformat": "B&A taaskäivitus pärast kokkujooksmist. Võid kokkujooksmise kohta teavituse saata, et aidata B&Ail probleemi uurida."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Saada"
@@ -5706,7 +5706,7 @@
     "messageformat": "Klõpsa allpool „{buttonName}“"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Lülita Signal sisse"
+    "messageformat": "Lülita B&A sisse"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Mine sätetesse"
@@ -5796,7 +5796,7 @@
     "messageformat": "Uuri lähemalt"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signali kontaktid"
+    "messageformat": "B&Ai kontaktid"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} on inimesed, keda oled otsustanud usaldada, kas siis …"
@@ -5946,7 +5946,7 @@
     "messageformat": "Peida lugu kasutaja(te) eest"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Kõik Signali kontaktid"
+    "messageformat": "Kõik B&Ai kontaktid"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Kõik, välja arvatud…"
@@ -5964,7 +5964,7 @@
     "messageformat": "Vaata kviitungeid"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Selle sätte muutmiseks ava enda nutiseadmes Signali äpp ja vali Sätted -> Lood"
+    "messageformat": "Selle sätte muutmiseks ava enda nutiseadmes B&Ai äpp ja vali Sätted -> Lood"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Kes seda lugu näevad"
@@ -6024,7 +6024,7 @@
     "messageformat": "Minu loo privaatsus"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Vali, millised Signali kontaktid sinu lugu vaadata saavad. Saad seda privaatsussätete alt alati muuta. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Vali, millised B&Ai kontaktid sinu lugu vaadata saavad. Saad seda privaatsussätete alt alati muuta. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Kustuta lugu"
@@ -6093,7 +6093,7 @@
     "messageformat": "Laadi manus alla"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Luba kättesaamiskinnitused, et näha, kes on su lugusid vaadanud. Ava enda nutiseadmes Signali äpp ja vali Sätted -> Lood."
+    "messageformat": "Luba kättesaamiskinnitused, et näha, kes on su lugusid vaadanud. Ava enda nutiseadmes B&Ai äpp ja vali Sätted -> Lood."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Vastuseid veel pole"
@@ -6279,7 +6279,7 @@
     "messageformat": "Sinu QR-kood ja link on lähtestatud ja sinu kasutajanimi on {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skanni oma telefoniga see QR-kood, et minuga Signalis vestelda.",
+    "messageformat": "Skanni oma telefoniga see QR-kood, et minuga B&Ais vestelda.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "Tühista"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signali veebiversioon lõpetab varsti sinu arvuti {OS} versiooni toetamise. Kui soovid jätkata Signali kasutamist, uuenda oma arvuti operatsioonisüsteemi hiljemalt {expirationDate}. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "B&Ai veebiversioon lõpetab varsti sinu arvuti {OS} versiooni toetamise. Kui soovid jätkata B&Ai kasutamist, uuenda oma arvuti operatsioonisüsteemi hiljemalt {expirationDate}. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signali veebiversioon ei tööta enam selles arvutis. Kui soovid jätkata Signali kasutamist, uuenda oma arvuti {OS} versiooni. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "B&Ai veebiversioon ei tööta enam selles arvutis. Kui soovid jätkata B&Ai kasutamist, uuenda oma arvuti {OS} versiooni. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signali veebiversioon ei tööta enam selles arvutis. Kui soovid jätkata Signali kasutamist, uuenda oma arvuti {OS} versiooni."
+    "messageformat": "B&Ai veebiversioon ei tööta enam selles arvutis. Kui soovid jätkata B&Ai kasutamist, uuenda oma arvuti {OS} versiooni."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Muudetud"
@@ -6529,7 +6529,7 @@
     "messageformat": "Kopeeri link"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Jaga linki Signali kaudu"
+    "messageformat": "Jaga linki B&Ai kaudu"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Kustuta link"
@@ -6595,7 +6595,7 @@
     "messageformat": "Selle sätte muutmiseks vali „Kes mu numbrit näevad“ alt „Mitte keegi“."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signalis valib iga konto omanik omale ise profiilinime."
+    "messageformat": "B&Ais valib iga konto omanik omale ise profiilinime."
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Profiilinimesid ei kinnitata"
@@ -6628,7 +6628,7 @@
     "messageformat": "Privaatsus on meile olulisem kui tulu"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Privaatne sõnumiside, mida toetad sina ise. Ei mingeid reklaame, jälgijaid ega järeleandmisi. Anneta nüüd, et Signalit toetada. <readMoreLink>Loe rohkem</readMoreLink>"
+    "messageformat": "Privaatne sõnumiside, mida toetad sina ise. Ei mingeid reklaame, jälgijaid ega järeleandmisi. Anneta nüüd, et B&Ait toetada. <readMoreLink>Loe rohkem</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Anneta"
@@ -6646,7 +6646,7 @@
     "messageformat": "Sinu andmed on privaatsed"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal ei kogu ega salvesta annetuse tegemisel sinu isikuandmeid.</paragraph><paragraph>Kasutame sinu annetuse vastuvõtmisel makse töötlemiseks Stripe'i. Meil ei ole ligipääsu andmetele, mida sa nendega jagad; me ei kogu ega salvesta neid andmeid.</paragraph><paragraph>Signal ei saa ega soovi seostada sinu annetust sinu Signali kontoga.</paragraph><paragraph>Täname sind toetuse eest!</paragraph>"
+    "messageformat": "<paragraph>B&A ei kogu ega salvesta annetuse tegemisel sinu isikuandmeid.</paragraph><paragraph>Kasutame sinu annetuse vastuvõtmisel makse töötlemiseks Stripe'i. Meil ei ole ligipääsu andmetele, mida sa nendega jagad; me ei kogu ega salvesta neid andmeid.</paragraph><paragraph>B&A ei saa ega soovi seostada sinu annetust sinu B&Ai kontoga.</paragraph><paragraph>Täname sind toetuse eest!</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kviitungid"
@@ -6655,7 +6655,7 @@
     "messageformat": "Annetuste KKK"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kviitungeid ei sünkroonita eri seadmete vahel. Kui oled Signali uuesti alla laadinud, ei ole eelmiste annetustega seotud kviitungid saadaval."
+    "messageformat": "Kviitungeid ei sünkroonita eri seadmete vahel. Kui oled B&Ai uuesti alla laadinud, ei ole eelmiste annetustega seotud kviitungid saadaval."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Kviitungeid ei ole"
@@ -6688,7 +6688,7 @@
     "messageformat": "Krediit- või deebetkaart"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Sisesta oma krediit- või deebetkaardi andmed. Signal ei kogu ega salvesta sinu isikuandmeid. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Sisesta oma krediit- või deebetkaardi andmed. B&A ei kogu ega salvesta sinu isikuandmeid. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kaardi number"
@@ -6697,7 +6697,7 @@
     "messageformat": "Aegumiskuupäev"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Anneta Signalile {formattedCurrencyAmount}"
+    "messageformat": "Anneta B&Aile {formattedCurrencyAmount}"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Kehtetu kaardi number"
@@ -6715,7 +6715,7 @@
     "messageformat": "Kood on liiga lühike"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Saa 30 päevaks Signali toetaja märk"
+    "messageformat": "Saa 30 päevaks B&Ai toetaja märk"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "Annetuse kviitung"
@@ -6733,7 +6733,7 @@
     "messageformat": "Ühekordne"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Aitäh, et toetad Signalit. Sinu panus annab tõuke missioonile kaitsta väljendusvabadust ja võimaldada turvalist suhtlust miljonitele inimestele üle kogu maailma avatud lähtekoodiga privaatsustehnoloogia abil. Kui elad Ameerika Ühendriikides, jäta see kviitung alles oma maksude deklareerimiseks. Signal Technology Foundation on Ameerika Ühendriikides maksuseadustiku (US Internal Revenue Code) jao 501c3 järgi registreeritud maksuvaba mittetulundusühing. Meie föderaalne maksukood (Federal Tax ID) on 82-4506840."
+    "messageformat": "Aitäh, et toetad B&Ait. Sinu panus annab tõuke missioonile kaitsta väljendusvabadust ja võimaldada turvalist suhtlust miljonitele inimestele üle kogu maailma avatud lähtekoodiga privaatsustehnoloogia abil. Kui elad Ameerika Ühendriikides, jäta see kviitung alles oma maksude deklareerimiseks. B&A Technology Foundation on Ameerika Ühendriikides maksuseadustiku (US Internal Revenue Code) jao 501c3 järgi registreeritud maksuvaba mittetulundusühing. Meie föderaalne maksukood (Federal Tax ID) on 82-4506840."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Annetus on tühistatud"
@@ -6781,7 +6781,7 @@
     "messageformat": "Sinu annetusega ilmnes viga"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "On võimalik, et sinu annetust ei töödeldud. Kviitungite nägemiseks ja kinnitamiseks klõpsake „Anneta Signalile“ ja seejärel „Annetuste kviitungid“."
+    "messageformat": "On võimalik, et sinu annetust ei töödeldud. Kviitungite nägemiseks ja kinnitamiseks klõpsake „Anneta B&Aile“ ja seejärel „Annetuste kviitungid“."
   },
   "icu:Donations__Processing": {
     "messageformat": "Annetuse töötlemine …"
@@ -6817,11 +6817,11 @@
     "messageformat": "Katkesta annetus"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "See versioon sisaldab paljusid väikseid parendusi, mis Signali sujuvalt käimas.",
+    "messageformat": "See versioon sisaldab paljusid väikseid parendusi, mis B&Ai sujuvalt käimas.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Täiendavad väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad Signalit!",
+    "messageformat": "Täiendavad väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad B&Ait!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad Signalit!",
+    "messageformat": "Väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad B&Ait!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {

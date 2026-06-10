@@ -42,7 +42,7 @@
     "messageformat": "Trimiterea fișierelor media la calitate înaltă va duce la un consum mai mare de date."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Donează pentru Signal"
+    "messageformat": "Donează pentru B&A"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standard"
@@ -78,10 +78,10 @@
     "messageformat": "Grup necunoscut"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Nu se poate deschide Signal"
+    "messageformat": "Nu se poate deschide B&A"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Pentru a ajuta la remedierea problemei, urmează ghidul de recuperare de pe pagina de asistență sau contactează asistența Signal ca să te ajute.\n\nDacă trebuie să utilizezi Signal imediat, îți poți șterge datele și reconectezi acest desktop. Vei avea opțiunea de a transfera istoricul mesajelor de pe telefon."
+    "messageformat": "Pentru a ajuta la remedierea problemei, urmează ghidul de recuperare de pe pagina de asistență sau contactează asistența B&A ca să te ajute.\n\nDacă trebuie să utilizezi B&A imediat, îți poți șterge datele și reconectezi acest desktop. Vei avea opțiunea de a transfera istoricul mesajelor de pe telefon."
   },
   "icu:databaseError": {
     "messageformat": "Eroare de bază de date"
@@ -93,10 +93,10 @@
     "messageformat": "Elimină definitiv toate datele"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Tot istoricul mesajelor și conținutul media vor fi șterse definitiv de pe acest dispozitiv. Asta nu va șterge datele de pe telefonul tău.\n\nVei putea folosi Signal pe acest dispozitiv după ce îl reconectezi. Vei avea opțiunea de a transfera istoricul mesajelor de pe telefon."
+    "messageformat": "Tot istoricul mesajelor și conținutul media vor fi șterse definitiv de pe acest dispozitiv. Asta nu va șterge datele de pe telefonul tău.\n\nVei putea folosi B&A pe acest dispozitiv după ce îl reconectezi. Vei avea opțiunea de a transfera istoricul mesajelor de pe telefon."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Versiunea bazei de date nu se potrivește cu această versiune de Signal. Asigură-te că deschizi cea mai nouă versiune de Signal pe computer."
+    "messageformat": "Versiunea bazei de date nu se potrivește cu această versiune de B&A. Asigură-te că deschizi cea mai nouă versiune de B&A pe computer."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nu se poate accesa cheia de criptare a bazei de date deoarece backend-ul de criptare al sistemului de operare s-a schimbat de la {previousBackend} la {currentBackend}. Acest lucru se poate întâmpla dacă mediul desktop se schimbă, de exemplu între GNOME și KDE.\n\nTreci la mediul desktop anterior."
@@ -138,7 +138,7 @@
     "messageformat": "Afișează tot"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Închide Signal"
+    "messageformat": "Închide B&A"
   },
   "icu:editMenuUndo": {
     "messageformat": "Anulează"
@@ -429,10 +429,10 @@
     "messageformat": "Ai marcat numărul tău de siguranță cu {name} ca neverificat de pe alt dispozitiv."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Numărul de siguranță pe care îl verifici s-a schimbat. Te rugăm să revizuiești numărul de siguranță cu {name1}. Reține, această schimbare poate însemna că cineva încearcă să vă intercepteze comunicarea sau că {name2} pur și simplu a reinstalat Signal."
+    "messageformat": "Numărul de siguranță pe care îl verifici s-a schimbat. Te rugăm să revizuiești numărul de siguranță cu {name1}. Reține, această schimbare poate însemna că cineva încearcă să vă intercepteze comunicarea sau că {name2} pur și simplu a reinstalat B&A."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "E posibil ca următoarele persoane să fi reinstalat Signal sau să fi schimbat dispozitivele. Dă clic pe una dintre ele ca să confirmi noul lor număr de siguranță. Este opțional."
+    "messageformat": "E posibil ca următoarele persoane să fi reinstalat B&A sau să fi schimbat dispozitivele. Dă clic pe una dintre ele ca să confirmi noul lor număr de siguranță. Este opțional."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Trimite mesajele în așteptare"
@@ -441,7 +441,7 @@
     "messageformat": "Revizuiește"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Ai {count,number} conexiune care e posibil să fi reinstalat Signal sau să fi schimbat dispozitive. Poți, dacă vrei, să revizuiești numărul său de siguranță înainte de a trimite.} few {Ai {count,number} conexiuni care e posibil să fi reinstalat Signal sau să fi schimbat dispozitive. Poți, dacă vrei, să revizuiești numerele lor de siguranță înainte de a trimite.} other {Ai {count,number} de conexiuni care e posibil să fi reinstalat Signal sau să fi schimbat dispozitive. Poți, dacă vrei, să revizuiești numerele lor de siguranță înainte de a trimite.}}"
+    "messageformat": "{count, plural, one {Ai {count,number} conexiune care e posibil să fi reinstalat B&A sau să fi schimbat dispozitive. Poți, dacă vrei, să revizuiești numărul său de siguranță înainte de a trimite.} few {Ai {count,number} conexiuni care e posibil să fi reinstalat B&A sau să fi schimbat dispozitive. Poți, dacă vrei, să revizuiești numerele lor de siguranță înainte de a trimite.} other {Ai {count,number} de conexiuni care e posibil să fi reinstalat B&A sau să fi schimbat dispozitive. Poți, dacă vrei, să revizuiești numerele lor de siguranță înainte de a trimite.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Toate conexiunile au fost evaluate, atinge trimite pentru a continua."
@@ -483,7 +483,7 @@
     "messageformat": "Când apeși Trimite, jurnalul tău de depanare va fi postat online pentru 30 de zile cu un URL unic și nepublicat. Poți să-l salvezi local mai întâi."
   },
   "icu:debugLogError": {
-    "messageformat": "Ceva nu a funcționat în timpul încărcării! Te rugăm trimite un e-mail la support@signal.org și atașează jurnalul ca fișier text."
+    "messageformat": "Ceva nu a funcționat în timpul încărcării! Te rugăm trimite un e-mail la support@baxs.com și atașează jurnalul ca fișier text."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Jurnal de depanare trimis"
@@ -672,7 +672,7 @@
     "messageformat": "Creator pachet cu autocolante"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Despre Signal Desktop"
+    "messageformat": "Despre B&A Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Se partajează ecranul"
@@ -696,7 +696,7 @@
     "messageformat": "Închide"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "Caută"
@@ -750,7 +750,7 @@
     "messageformat": "Caută după numărul de telefon"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Bun venit la Signal"
+    "messageformat": "Bun venit la B&A"
   },
   "icu:whatsNew": {
     "messageformat": "Vezi {whatsNew} în această actualizare"
@@ -837,13 +837,13 @@
     "messageformat": "Tu"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Pentru a trimite mesaje vocale, permite aplicației Signal Desktop accesul la microfonul tău."
+    "messageformat": "Pentru a trimite mesaje vocale, permite aplicației B&A Desktop accesul la microfonul tău."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Pentru a apela, trebuie să-i permiți lui Signal Desktop să-ți acceseze microfonul."
+    "messageformat": "Pentru a apela, trebuie să-i permiți lui B&A Desktop să-ți acceseze microfonul."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Pentru apeluri video, trebuie să-i permiți lui Signal Desktop să-ți acceseze camera."
+    "messageformat": "Pentru apeluri video, trebuie să-i permiți lui B&A Desktop să-ți acceseze camera."
   },
   "icu:allowAccess": {
     "messageformat": "Permite accesul"
@@ -867,13 +867,13 @@
     "messageformat": "Silențios"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal nu s-a putut actualiza. <retryUpdateButton>Reîncearcă actualizarea</retryUpdateButton> sau vizitează {url} ca să-l instalezi manual. Apoi, <contactSupportLink>contactează asistența</contactSupportLink> referitor la problemă"
+    "messageformat": "B&A nu s-a putut actualiza. <retryUpdateButton>Reîncearcă actualizarea</retryUpdateButton> sau vizitează {url} ca să-l instalezi manual. Apoi, <contactSupportLink>contactează asistența</contactSupportLink> referitor la problemă"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal nu a putut fi actualizat. Mergi la {url} pentru a-l instala manual. Apoi, <contactSupportLink>contactează asistența</contactSupportLink> despre această problemă"
+    "messageformat": "B&A nu a putut fi actualizat. Mergi la {url} pentru a-l instala manual. Apoi, <contactSupportLink>contactează asistența</contactSupportLink> despre această problemă"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop se află probabil în carantină macOS, și nu va putea fi actualizat automat. Te rugăm să încearci să muți {app} în {folder} folosind Finder."
+    "messageformat": "B&A Desktop se află probabil în carantină macOS, și nu va putea fi actualizat automat. Te rugăm să încearci să muți {app} în {folder} folosind Finder."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -918,7 +918,7 @@
     "messageformat": "Acest mesaj va fi șters de pe acest dispozitiv."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Acest mesaj va fi șters pentru toți participanții la conversație dacă aceștia folosesc o versiune recentă Signal. Participanții vor putea vedea că ai șters mesajul."
+    "messageformat": "Acest mesaj va fi șters pentru toți participanții la conversație dacă aceștia folosesc o versiune recentă B&A. Participanții vor putea vedea că ai șters mesajul."
   },
   "icu:from": {
     "messageformat": "De la"
@@ -960,7 +960,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "„{title}“ este numele de profil pe care această persoană și l-a setat în Signal."
+    "messageformat": "„{title}“ este numele de profil pe care această persoană și l-a setat în B&A."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Verificat"
@@ -975,7 +975,7 @@
     "messageformat": "Fără mesaje directe cu {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Conexiunea Signal"
+    "messageformat": "Conexiunea B&A"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} este în contactele tale de sistem"
@@ -1068,7 +1068,7 @@
     "messageformat": "Află mai multe"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal folosește criptarea integrală și câteodată va fi nevoie să actualizeze sesiunea conversației. Acest lucru nu va afecta securitatea conversației dar este posibil să fi ratat un mesaj de la acest contact dar îi poți cere să-l retrimită."
+    "messageformat": "B&A folosește criptarea integrală și câteodată va fi nevoie să actualizeze sesiunea conversației. Acest lucru nu va afecta securitatea conversației dar este posibil să fi ratat un mesaj de la acest contact dar îi poți cere să-l retrimită."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Contactează suportul"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} și-a schimbat numărul de telefon"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Un contact s-a alăturat pe Signal"
+    "messageformat": "Un contact s-a alăturat pe B&A"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} și {conversationTitle} sunt același cont. Istoricul de mesaje pentru ambele conversații sunt aici."
@@ -1215,7 +1215,7 @@
     "messageformat": "Nu se poate descărca fișierul media"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Verifică desktopul și conexiunea la internet a telefonului. Deschide Signal pe telefon, apoi încearcă să descarci din nou."
+    "messageformat": "Verifică desktopul și conexiunea la internet a telefonului. Deschide B&A pe telefon, apoi încearcă să descarci din nou."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Acest conținut media nu mai este disponibil pe telefonul tău și nu poate fi descărcat."
@@ -1236,10 +1236,10 @@
     "messageformat": "Află mai multe"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Scanează acest cod în aplicația Signal de pe telefonul tău"
+    "messageformat": "Scanează acest cod în aplicația B&A de pe telefonul tău"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Deschide Signal pe telefonul tău"
+    "messageformat": "Deschide B&A pe telefonul tău"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Deschide {settings}, apoi atinge {linkedDevices}"
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>A apărut o eroare neașteptată.</paragraph><paragraph>Te rugăm să încerci din nou.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal nu poate asocia acest dispozitiv folosind rețeaua curentă."
+    "messageformat": "B&A nu poate asocia acest dispozitiv folosind rețeaua curentă."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Încearcă din nou"
@@ -1281,7 +1281,7 @@
     "messageformat": "Numele dispozitivului"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Pentru a schimba numele acestui dispozitiv, deschide Signal pe telefon și navighează la Setări > Dispozitive asociate"
+    "messageformat": "Pentru a schimba numele acestui dispozitiv, deschide B&A pe telefon și navighează la Setări > Dispozitive asociate"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Tonul pielii emoji"
@@ -1461,7 +1461,7 @@
     "messageformat": "Ne pare rău, ai prea multe dispozitive asociate deja. Încearcă să elimini câteva."
   },
   "icu:installTooOld": {
-    "messageformat": "Actualizează Signal de pe acest dispozitiv pentru a asocia telefonul tău."
+    "messageformat": "Actualizează B&A de pe acest dispozitiv pentru a asocia telefonul tău."
   },
   "icu:installErrorHeader": {
     "messageformat": "Ceva nu a funcționat!"
@@ -1512,7 +1512,7 @@
     "messageformat": "Acest link de apel nu mai este valid."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Apel Signal"
+    "messageformat": "Apel B&A"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Nu se poate elimina linkul. Verifică-ți conexiunea și încearcă din nou."
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, one {{count,number} persoană este în acest apel} few {{count,number} persoane sunt în acest apel} other {{count,number} de persoane sunt în acest apel}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal va suna pe {person}"
+    "messageformat": "B&A va suna pe {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal va suna pe {first} și {second}"
+    "messageformat": "B&A va suna pe {first} și {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal va suna pe {first}, {second} și {third}"
+    "messageformat": "B&A va suna pe {first}, {second} și {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal va suna pe {first}, {second}, și {others,number} altul} few {Signal va apela {first}, {second}, și încă {others,number}} other {Signal va apela {first}, {second}, și încă {others,number}}}"
+    "messageformat": "{others, plural, one {B&A va suna pe {first}, {second}, și {others,number} altul} few {B&A va apela {first}, {second}, și încă {others,number}} other {B&A va apela {first}, {second}, și încă {others,number}}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} va fi notificat"
@@ -1725,13 +1725,13 @@
     "messageformat": "Se reconectează…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Conexiunea ta s-a pierdut. Signal se reconectează."
+    "messageformat": "Conexiunea ta s-a pierdut. B&A se reconectează."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal partajează {window}"
+    "messageformat": "B&A partajează {window}"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Distribuirea ecranului Signal este activă"
+    "messageformat": "Distribuirea ecranului B&A este activă"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Se reconectează…"
@@ -1752,7 +1752,7 @@
     "messageformat": "E nevoie de permisiune"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal are nevoie de permisiune pentru a accesa înregistrarea ecranului tău."
+    "messageformat": "B&A are nevoie de permisiune pentru a accesa înregistrarea ecranului tău."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Mergi la preferințe sistem."
@@ -1761,7 +1761,7 @@
     "messageformat": "Apasă pe pictograma lacăt din stânga jos și introdu parola calculatorului tău."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "În partea dreapta, bifează caseta de lângă Signal. Dacă nu găsești Signal în listă, apasă + pentru a-l adăuga."
+    "messageformat": "În partea dreapta, bifează caseta de lângă B&A. Dacă nu găsești B&A în listă, apasă + pentru a-l adăuga."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Deschide preferințe sistem"
@@ -1773,7 +1773,7 @@
     "messageformat": "Redirecționează întotdeauna apelurile"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Redirecționează toate apelurile către serverul Signal pentru a evita aflarea adresei IP de către contact tău. Activarea va reduce calitatea apelului."
+    "messageformat": "Redirecționează toate apelurile către serverul B&A pentru a evita aflarea adresei IP de către contact tău. Activarea va reduce calitatea apelului."
   },
   "icu:permissions": {
     "messageformat": "Permisiuni"
@@ -1791,10 +1791,10 @@
     "messageformat": "Arată caseta de formatare a textului când este selectat textul"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Verificarea ortografică va fi activată la următoarea pornire a Signal."
+    "messageformat": "Verificarea ortografică va fi activată la următoarea pornire a B&A."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Verificarea ortografică va fi dezactivată la următoarea pornire a Signal."
+    "messageformat": "Verificarea ortografică va fi dezactivată la următoarea pornire a B&A."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimizare în bara de sistem"
@@ -1818,13 +1818,13 @@
     "messageformat": "Ștergi toate datele?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Ștergi toate datele și mesajele din această versiune de Signal Desktop? Contul tău Signal și datele de pe telefon sau alte dispozitive conectate nu vor fi șterse."
+    "messageformat": "Ștergi toate datele și mesajele din această versiune de B&A Desktop? Contul tău B&A și datele de pe telefon sau alte dispozitive conectate nu vor fi șterse."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Se deconectează și se șterg toate datele…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Ai date învechite de la o instalare anterioara a Signal Desktop. Dacă alegi să continui, acestea vor fi șterse și vei începe de la zero."
+    "messageformat": "Ai date învechite de la o instalare anterioara a B&A Desktop. Dacă alegi să continui, acestea vor fi șterse și vei începe de la zero."
   },
   "icu:deleteOldData": {
     "messageformat": "Șterge Datele Vechi"
@@ -1866,10 +1866,10 @@
     "messageformat": "Șters parțial, fă click pentru a reîncerca"
   },
   "icu:expiredWarning": {
-    "messageformat": "Această versiune de Signal Desktop a expirat. Te rugăm actualizează la cea mai recentă versiune pentru a putea trimite mesaje în continuare."
+    "messageformat": "Această versiune de B&A Desktop a expirat. Te rugăm actualizează la cea mai recentă versiune pentru a putea trimite mesaje în continuare."
   },
   "icu:upgrade": {
-    "messageformat": "Apasă pentru a deschide signal.org/download"
+    "messageformat": "Apasă pentru a deschide ba-chat.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mesaj media"
@@ -1878,7 +1878,7 @@
     "messageformat": "Importă contacte"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importă toate grupurile și contactele Signal de pe dispozitivul tău mobil."
+    "messageformat": "Importă toate grupurile și contactele B&A de pe dispozitivul tău mobil."
   },
   "icu:syncNow": {
     "messageformat": "Importă acum"
@@ -2067,10 +2067,10 @@
     "messageformat": "Editările pot fi făcute numai în termen de 24 de ore de la trimiterea acestui mesaj."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nu este utilizator Signal. Asigură-te că ai introdus numele de utilizator complet."
+    "messageformat": "{atUsername} nu este utilizator B&A. Asigură-te că ai introdus numele de utilizator complet."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Utilizator nu a fost găsit. \"{phoneNumber}\" nu este un utilizator Signal."
+    "messageformat": "Utilizator nu a fost găsit. \"{phoneNumber}\" nu este un utilizator B&A."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Utilizator nu a fost găsit. \"{phoneNumber}\" nu este un număr de telefon valid."
@@ -2091,13 +2091,13 @@
     "messageformat": "Mărimea maximă a grupului a fost atinsă"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Grupurile Signal pot avea un maximum de {max,number} membri."
+    "messageformat": "Grupurile B&A pot avea un maximum de {max,number} membri."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "A fost atinsă limita de membri recomandată"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Grupurile Signal funcționează cel mai bine cu {max,number} de membri sau mai puțin. Adăugarea mai multor membri va cauza întârzieri la trimiterea și primirea mesajelor."
+    "messageformat": "Grupurile B&A funcționează cel mai bine cu {max,number} de membri sau mai puțin. Adăugarea mai multor membri va cauza întârzieri la trimiterea și primirea mesajelor."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Numește acest grup"
@@ -2127,7 +2127,7 @@
     "messageformat": "Actualizarea grupului a eșuat. Verifică conexiunea și încearcă din nou."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Apasă pentru a asocia din nou Signal Desktop cu dispozitivul tău mobil și pentru a continua să trimiți mesaje."
+    "messageformat": "Apasă pentru a asocia din nou B&A Desktop cu dispozitivul tău mobil și pentru a continua să trimiți mesaje."
   },
   "icu:unlinked": {
     "messageformat": "Disociat"
@@ -2139,16 +2139,16 @@
     "messageformat": "Reîncearcă actualizarea"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Apasă pentru a reporni Signal"
+    "messageformat": "Apasă pentru a reporni B&A"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Apasă pentru a descărca actualizarea"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal nu a putut fi actualizat. Apasă pentru a încerca din nou."
+    "messageformat": "B&A nu a putut fi actualizat. Apasă pentru a încerca din nou."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Repornește Signal"
+    "messageformat": "Repornește B&A"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignoră actualizarea"
@@ -2247,7 +2247,7 @@
     "messageformat": "Unele atașamente sunt prea mari pentru a fi afișate."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Folosește acest link pentru a te alătura unui Apel Signal"
+    "messageformat": "Folosește acest link pentru a te alătura unui Apel B&A"
   },
   "icu:donation--missing": {
     "messageformat": "Nu am putut să obținem detaliile donației"
@@ -2259,7 +2259,7 @@
     "messageformat": "Atinge acest mesaj pe mobil pentru a vizualiza donația ta"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} donați către Signal în numele tău"
+    "messageformat": "{sender} donați către B&A în numele tău"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Verifică-ți telefonul pentru a deschide această donație"
@@ -2310,7 +2310,7 @@
     "messageformat": "Îți mulțumim pentru sprijin!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Ai făcut o donație către Signal în numele {name}. Persoana pe care ai ales-o va primi opțiunea de a-și afișa sprijinul la profil."
+    "messageformat": "Ai făcut o donație către B&A în numele {name}. Persoana pe care ai ales-o va primi opțiunea de a-și afișa sprijinul la profil."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Pachetul cu autocolante nu a putut fi instalat"
@@ -2325,10 +2325,10 @@
     "messageformat": "Nici un autocolant instalat"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Seria artistică Signal"
+    "messageformat": "Seria artistică B&A"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nu sunt disponibile autocolante din seria artistică Signal"
+    "messageformat": "Nu sunt disponibile autocolante din seria artistică B&A"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Autocolante primite"
@@ -2670,19 +2670,19 @@
     "messageformat": "Mesaj prea lung pentru a fi afișat mai mult"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} v-a trimis un mesaj ce nu poate fi procesat sau afișat deoarece folosește o nouă funcționalitate Signal."
+    "messageformat": "{contact} v-a trimis un mesaj ce nu poate fi procesat sau afișat deoarece folosește o nouă funcționalitate B&A."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Îl poți ruga pe {contact} să retrimită acest mesaj acum că folosești o versiune actualizată de Signal."
+    "messageformat": "Îl poți ruga pe {contact} să retrimită acest mesaj acum că folosești o versiune actualizată de B&A."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Unul dintre dispozitivele tale a trimis un mesaj ce nu poate fi procesat sau afișat pentru că utilizează o nouă funcționalitate Signal."
+    "messageformat": "Unul dintre dispozitivele tale a trimis un mesaj ce nu poate fi procesat sau afișat pentru că utilizează o nouă funcționalitate B&A."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Mesajele viitoare de acest tip vor fi sincronizate acum că folosești o versiune actualizată a Signal."
+    "messageformat": "Mesajele viitoare de acest tip vor fi sincronizate acum că folosești o versiune actualizată a B&A."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Actualizează Signal"
+    "messageformat": "Actualizează B&A"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Vizualizată"
@@ -2946,7 +2946,7 @@
     "messageformat": "Conversație marcată necitită"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Te rugăm să configurezi Signal pe telefonul și desktopul tău pentru a utiliza creatorul de autocolante"
+    "messageformat": "Te rugăm să configurezi B&A pe telefonul și desktopul tău pentru a utiliza creatorul de autocolante"
   },
   "icu:Reactions--remove": {
     "messageformat": "Elimină reacția"
@@ -2970,7 +2970,7 @@
     "messageformat": "Nume și conturi false"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal nu te va contacta niciodată pentru codul de înregistrare sau PIN. Ai grijă la cererile care uzurpă identitatea altora. Numele profilurilor sunt alese de titularul contului și nu sunt verificate."
+    "messageformat": "B&A nu te va contacta niciodată pentru codul de înregistrare sau PIN. Ai grijă la cererile care uzurpă identitatea altora. Numele profilurilor sunt alese de titularul contului și nu sunt verificate."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Escrocherii cu cripto sau bani"
@@ -3060,13 +3060,13 @@
     "messageformat": "Raportezi ca spam?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal va fi notificat că această persoană poate trimite spam. Signal nu poate vedea conținutul niciunei conversații."
+    "messageformat": "B&A va fi notificat că această persoană poate trimite spam. B&A nu poate vedea conținutul niciunei conversații."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal va fi notificat că persoana care te-a invitat în acest grup, ar putea trimite spam. Signal nu poate vedea conținutul niciunei conversații."
+    "messageformat": "B&A va fi notificat că persoana care te-a invitat în acest grup, ar putea trimite spam. B&A nu poate vedea conținutul niciunei conversații."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal va fi notificat că {name}, care te-a invitat în acest grup, ar putea trimite spam. Signal nu poate vedea conținutul niciunei conversații."
+    "messageformat": "B&A va fi notificat că {name}, care te-a invitat în acest grup, ar putea trimite spam. B&A nu poate vedea conținutul niciunei conversații."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Raportează spam"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>Numele de profil</clickable> nu sunt verificate"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Acesta este singurul chat oficial de la Signal"
+    "messageformat": "Acesta este singurul chat oficial de la B&A"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Fii la curent cu știrile și notele de lansare."
@@ -3228,10 +3228,10 @@
     "messageformat": "Apel video nepreluat"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal încă funcționează"
+    "messageformat": "B&A încă funcționează"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal va continua să funcționeze în zona de notificări. Poți schimba asta în setările Signal."
+    "messageformat": "B&A va continua să funcționeze în zona de notificări. Poți schimba asta în setările B&A."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Apel de intrare vocal"
@@ -3441,7 +3441,7 @@
     "messageformat": "Copiază link-ul de apelare"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Trimite linkul apelului prin Signal"
+    "messageformat": "Trimite linkul apelului prin B&A"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Scoate această persoană din apel"
@@ -3561,7 +3561,7 @@
     "messageformat": "Versiune de link necunoscută"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Acest link nu este acceptat de această versiune de Signal Desktop."
+    "messageformat": "Acest link nu este acceptat de această versiune de B&A Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nu se poate realiza alăturarea la grup."
@@ -4116,22 +4116,22 @@
     "messageformat": "Această operațiune poate dura câteva minute"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Donează pentru Signal"
+    "messageformat": "Donează pentru B&A"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Donează pentru Signal"
+    "messageformat": "Donează pentru B&A"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal este susținut de oameni ca tine. Contribuie și primești o insignă."
+    "messageformat": "B&A este susținut de oameni ca tine. Contribuie și primești o insignă."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Deschide Signal pe telefonul tău"
+    "messageformat": "Deschide B&A pe telefonul tău"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Atinge poza ta de profil din stânga sus pentru a deschide Setările"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Atinge „Donează pentru Signal” și abonează-te"
+    "messageformat": "Atinge „Donează pentru B&A” și abonează-te"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Profilul tău a fost mutat"
@@ -4257,7 +4257,7 @@
     "messageformat": "Este necesară acțiunea în cont"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Trebuie să deschizi Signal pe telefon pentru a continua să utilizezi acest cont. Dacă nu deschizi Signal pe telefon, contul tău va fi șters în curând. <learnMoreLink>Află mai multe</learnMoreLink>"
+    "messageformat": "Trebuie să deschizi B&A pe telefon pentru a continua să utilizezi acest cont. Dacă nu deschizi B&A pe telefon, contul tău va fi șters în curând. <learnMoreLink>Află mai multe</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Nu se pot restaura fișierele media"
@@ -4272,10 +4272,10 @@
     "messageformat": "Atașare fișier"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Această persoană nu folosește Signal"
+    "messageformat": "Această persoană nu folosește B&A"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop nu poate trimite mesaje persoanelor de contact ce nu folosesc Signal. Roagă această persoană să instaleze Signal pentru a avea o conversație mai sigură."
+    "messageformat": "B&A Desktop nu poate trimite mesaje persoanelor de contact ce nu folosesc B&A. Roagă această persoană să instaleze B&A pentru a avea o conversație mai sigură."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Se verifică starea înregistrări persoanei de contact"
@@ -4461,7 +4461,7 @@
     "messageformat": "Pseudonim"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Pseudonimele & notele sunt stocate cu Signal și criptate de la un capăt la altul. Sunt vizibile doar pentru tine."
+    "messageformat": "Pseudonimele & notele sunt stocate cu B&A și criptate de la un capăt la altul. Sunt vizibile doar pentru tine."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Prenume"
@@ -4512,7 +4512,7 @@
     "messageformat": "Solicită unui administrator să aprobe membrii noi care se alătură prin linkul grupului"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copiază linkul grup.signal în clipboard"
+    "messageformat": "Copiază linkul grup.B&A în clipboard"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Solicitări ({count,number})"
@@ -4716,13 +4716,13 @@
     "messageformat": "Nu se pot redirecționa mesaje goale sau șterse"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Folosește acest link pentru a te alătura unui apel Signal: {url}"
+    "messageformat": "Folosește acest link pentru a te alătura unui apel B&A: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Sfaturi de siguranță"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Examinează cu atenție solicitările. Signal a găsit un alt contact cu același nume. <reviewRequestLink>Revizuire solicitare</reviewRequestLink>"
+    "messageformat": "Examinează cu atenție solicitările. B&A a găsit un alt contact cu același nume. <reviewRequestLink>Revizuire solicitare</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} membru al grupului are același nume. <reviewRequestLink>Examinează membri</reviewRequestLink>} few {{count,number} membri ai grupului au același nume. <reviewRequestLink>Examinează membri</reviewRequestLink>} other {{count,number} de membri ai grupului au același nume. <reviewRequestLink>Examinează membri</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "Nu există alte grupuri în comun"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Conexiunea Signal"
+    "messageformat": "Conexiunea B&A"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Recent și-a schimbat numele profilului din {oldName} în {newName}."
@@ -4773,7 +4773,7 @@
     "messageformat": "Verifică pentru a continua conversația"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Pentru a ajuta la prevenirea spam-ului pe Signal, te rugăm să completezi verificarea."
+    "messageformat": "Pentru a ajuta la prevenirea spam-ului pe B&A, te rugăm să completezi verificarea."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "După verificare, poți continua să trimiți mesaje. Toate mesajele aflate în pauză vor fi trimise automat."
@@ -5079,7 +5079,7 @@
     "messageformat": "Vrei să renunți la aceste schimbări?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Închizi Signal și închei apelul?"
+    "messageformat": "Închizi B&A și închei apelul?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Nu acum"
@@ -5166,7 +5166,7 @@
     "messageformat": "General"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Donează pentru Signal"
+    "messageformat": "Donează pentru B&A"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Aspect"
@@ -5247,7 +5247,7 @@
     "messageformat": "Generează previzualizări ale linkurilor"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Pentru a modifica această setare, deschide aplicația Signal pe dispozitivul tău mobil și mergi la Setări > Conversații"
+    "messageformat": "Pentru a modifica această setare, deschide aplicația B&A pe dispozitivul tău mobil și mergi la Setări > Conversații"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Convertește emoticoanele tastate în emoji"
@@ -5265,13 +5265,13 @@
     "messageformat": "Blocat"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Backup-uri Signal"
+    "messageformat": "Backup-uri B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Backup-uri automate cu serviciul de stocare criptat complet de la Signal. Începe pe telefonul tău. <learnMoreLink>Află mai multe</learnMoreLink>."
+    "messageformat": "Backup-uri automate cu serviciul de stocare criptat complet de la B&A. Începe pe telefonul tău. <learnMoreLink>Află mai multe</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Fă back-up pentru istoricul mesajelor, astfel încât niciodată să nu pierzi date, atunci când îți iei un telefon nou sau reinstalezi Signal."
+    "messageformat": "Fă back-up pentru istoricul mesajelor, astfel încât niciodată să nu pierzi date, atunci când îți iei un telefon nou sau reinstalezi B&A."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Detaliile backup-ului"
@@ -5280,7 +5280,7 @@
     "messageformat": "Text și backup la toate fișierele media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Abonamentul tău nu a fost găsit. Reînnoiește pentru a continua să folosești Backup-uri Signal."
+    "messageformat": "Abonamentul tău nu a fost găsit. Reînnoiește pentru a continua să folosești Backup-uri B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Text + {mediaDayCount,number} zi de backup al fișierelor media} few {Text + {mediaDayCount,number} zile de backup al fișierelor media} other {Text + {mediaDayCount,number} de zile de backup al fișierelor media}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "Abonament anulat"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Poți gestiona sau anula abonamentul Backup-uri Signal de pe telefon."
+    "messageformat": "Poți gestiona sau anula abonamentul Backup-uri B&A de pe telefon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Poți să gestionezi sau să faci upgrade la Backup-uri Signal pe telefon."
+    "messageformat": "Poți să gestionezi sau să faci upgrade la Backup-uri B&A pe telefon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Poți să gestionezi sau să reînnoiești abonamentul Backup-uri Signal pe telefon."
+    "messageformat": "Poți să gestionezi sau să reînnoiești abonamentul Backup-uri B&A pe telefon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Ultimul backup"
@@ -5322,7 +5322,7 @@
     "messageformat": "Creează o copie de rezervă criptată end-to-end pe care o poți restaura pe telefon. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Pentru a restaura o copie de rezervă, instalează o copie nouă de Signal. Deschide aplicația și atinge Restaurare copie de rezervă, apoi localizează folderul de backup. <learnMoreLink>Află mai multe.</learnMoreLink>"
+    "messageformat": "Pentru a restaura o copie de rezervă, instalează o copie nouă de B&A. Deschide aplicația și atinge Restaurare copie de rezervă, apoi localizează folderul de backup. <learnMoreLink>Află mai multe.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Alege dosarul"
@@ -5358,7 +5358,7 @@
     "messageformat": "Păstrează-ți codul în siguranță"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal nu te va putea ajuta să îți restaurezi backupul dacă îți pierzi codul. Păstrează-l într-un loc sigur și nu îl împărtăși cu alții."
+    "messageformat": "B&A nu te va putea ajuta să îți restaurezi backupul dacă îți pierzi codul. Păstrează-l într-un loc sigur și nu îl împărtăși cu alții."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Continuă"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, one {{num,number} contact} few {{num,number} contacte} other {{num,number} de contacte}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Pentru a modifica aceste setări, deschide aplicația Signal pe dispozitivul tău mobil și mergi la Setări > Confidențialitate"
+    "messageformat": "Pentru a modifica aceste setări, deschide aplicația B&A pe dispozitivul tău mobil și mergi la Setări > Confidențialitate"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Număr de telefon"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Alege cine îți poate vedea numărul de telefon și cine te poate contacta pe Signal cu el."
+    "messageformat": "Alege cine îți poate vedea numărul de telefon și cine te poate contacta pe B&A cu el."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Schimbă…"
@@ -5430,10 +5430,10 @@
     "messageformat": "Cine mă poate găsi după număr"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Oricine are numărul tău de telefon va vedea că ești pe Signal și poate începe conversații cu tine."
+    "messageformat": "Oricine are numărul tău de telefon va vedea că ești pe B&A și poate începe conversații cu tine."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Nimeni nu va putea să vadă că ești pe Signal decât dacă îi trimiți un mesaj sau dacă ai o conversație existentă cu acesta."
+    "messageformat": "Nimeni nu va putea să vadă că ești pe B&A decât dacă îi trimiți un mesaj sau dacă ai o conversație existentă cu acesta."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Toată lumea"
@@ -5445,7 +5445,7 @@
     "messageformat": "Ești sigur?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Dacă schimbi \"{settingTitle}\" în \"{nobodyLabel}\", va fi mai greu pentru ceilalți să te găsească pe Signal."
+    "messageformat": "Dacă schimbi \"{settingTitle}\" în \"{nobodyLabel}\", va fi mai greu pentru ceilalți să te găsească pe B&A."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Mesagerie"
@@ -5499,7 +5499,7 @@
     "messageformat": "Aplicare"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Repornește Signal pentru a aplica"
+    "messageformat": "Repornește B&A pentru a aplica"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Pentru a schimba limba, aplicația trebuie să repornească."
@@ -5514,13 +5514,13 @@
     "messageformat": "Securitate ecran"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Pentru o confidențialitate sporită, împiedică capturile de ecran de pe Signal, pe acest computer."
+    "messageformat": "Pentru o confidențialitate sporită, împiedică capturile de ecran de pe B&A, pe acest computer."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Dezactivezi securitatea ecranului?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Dacă este dezactivată, această opțiune ar putea permite Microsoft Windows să facă capturi de ecran ale Signal și să le utilizeze pentru funcții care pot să nu fie private."
+    "messageformat": "Dacă este dezactivată, această opțiune ar putea permite Microsoft Windows să facă capturi de ecran ale B&A și să le utilizeze pentru funcții care pot să nu fie private."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Dezactivează"
@@ -5535,25 +5535,25 @@
     "messageformat": "Actualizare Descărcată"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Deschide Signal pe telefonul tău"
+    "messageformat": "Deschide B&A pe telefonul tău"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Contul tău va fi șters în curând, cu excepția cazului în care deschizi Signal pe telefon. Acest mesaj va dispărea dacă ai făcut-o cu succes. <learnMoreLink>Află mai multe</learnMoreLink>"
+    "messageformat": "Contul tău va fi șters în curând, cu excepția cazului în care deschizi B&A pe telefon. Acest mesaj va dispărea dacă ai făcut-o cu succes. <learnMoreLink>Află mai multe</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Deschide Signal pe telefon pentru a-ți menține contul activ"
+    "messageformat": "Deschide B&A pe telefon pentru a-ți menține contul activ"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Află mai multe"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal întâmpină dificultăți tehnice. Muncim din greu pentru a restabili serviciul cât mai repede posibil."
+    "messageformat": "B&A întâmpină dificultăți tehnice. Muncim din greu pentru a restabili serviciul cât mai repede posibil."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Actualizare necesară"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Pentru a finaliza sincronizarea mesajelor, actualizează acum Signal Desktop."
+    "messageformat": "Pentru a finaliza sincronizarea mesajelor, actualizează acum B&A Desktop."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Actualizează"
@@ -5562,19 +5562,19 @@
     "messageformat": "Actualizare necesară"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Ca să continui să folosești Signal, trebuie să actualizezi la cea mai recentă versiune."
+    "messageformat": "Ca să continui să folosești B&A, trebuie să actualizezi la cea mai recentă versiune."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Descarcă {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Restartează Signal ca să instalezi actualizarea."
+    "messageformat": "Restartează B&A ca să instalezi actualizarea."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop nu a reușit să se actualizeze, dar există o nouă versiune disponibilă. Mergi la {downloadUrl} și instalează noua versiune manual, apoi fie contactezi serviciul de asistență sau raportezi un bug despre această problemă."
+    "messageformat": "B&A Desktop nu a reușit să se actualizeze, dar există o nouă versiune disponibilă. Mergi la {downloadUrl} și instalează noua versiune manual, apoi fie contactezi serviciul de asistență sau raportezi un bug despre această problemă."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal nu poate fi închis",
+    "messageformat": "B&A nu poate fi închis",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "O versiune mai nouă de Signal este deja instalată. Sigur vrei să continui?",
+    "messageformat": "O versiune mai nouă de B&A este deja instalată. Sigur vrei să continui?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Aplicația s-a oprit"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal a repornit după o oprire neașteptată. Poți trimite un jurnal de depanare pentru a ajuta Signal să găsească problema."
+    "messageformat": "B&A a repornit după o oprire neașteptată. Poți trimite un jurnal de depanare pentru a ajuta B&A să găsească problema."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Trimite"
@@ -5706,7 +5706,7 @@
     "messageformat": "Dă clic pe „{buttonName}” de mai jos"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Activează „Signal”"
+    "messageformat": "Activează „B&A”"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Mergi la setări"
@@ -5796,7 +5796,7 @@
     "messageformat": "Află mai multe"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Conexiunile Signal"
+    "messageformat": "Conexiunile B&A"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}sunt persoane în care ai ales să ai încredere, fie prin:"
@@ -5946,7 +5946,7 @@
     "messageformat": "Ascunde povestea de"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Toate conexiunile Signal"
+    "messageformat": "Toate conexiunile B&A"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Toate cu Excepția..."
@@ -5964,7 +5964,7 @@
     "messageformat": "Confirmări de Citire"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Pentru a modifica această setare, deschide aplicația Signal pe dispozitivul tău mobil și mergi la Setări > Conversații"
+    "messageformat": "Pentru a modifica această setare, deschide aplicația B&A pe dispozitivul tău mobil și mergi la Setări > Conversații"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Cine poate vedea această poveste"
@@ -6024,7 +6024,7 @@
     "messageformat": "Confidențialitatea Poveștii Mele"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Alege ce conexiuni Signal pot să-ți vadă povestea. Poți oricând să schimbi asta din setările de confidențialitate. <learnMoreLink>Află mai multe.</learnMoreLink>"
+    "messageformat": "Alege ce conexiuni B&A pot să-ți vadă povestea. Poți oricând să schimbi asta din setările de confidențialitate. <learnMoreLink>Află mai multe.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Șterge povestea"
@@ -6093,7 +6093,7 @@
     "messageformat": "Descarcă atașamentul"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Activează confirmările de citire ca să știi cine ți-a văzut poveștile. Deschide aplicația Signal de pe dispozitivul mobil și navighează la Setări > Povești."
+    "messageformat": "Activează confirmările de citire ca să știi cine ți-a văzut poveștile. Deschide aplicația B&A de pe dispozitivul mobil și navighează la Setări > Povești."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Niciun răspuns încă"
@@ -6279,7 +6279,7 @@
     "messageformat": "Codul tău QR și linkul au fost resetate, iar numele tău de utilizator este {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Scanează acest cod QR cu telefonul tău pentru a discuta cu mine pe Signal.",
+    "messageformat": "Scanează acest cod QR cu telefonul tău pentru a discuta cu mine pe B&A.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "Revocare"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal desktop nu va mai accepta versiunea calculatorului tău de {OS} în curând. Ca să continui să folosești Signal, actualizează-ți sistemul de operare al calculatorului până la {expirationDate}. <learnMoreLink>Află mai multe</learnMoreLink>"
+    "messageformat": "B&A desktop nu va mai accepta versiunea calculatorului tău de {OS} în curând. Ca să continui să folosești B&A, actualizează-ți sistemul de operare al calculatorului până la {expirationDate}. <learnMoreLink>Află mai multe</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal desktop nu mai funcționează pe acest calculator. Ca să folosești Signal desktop din nou, actualizează-ți versiunea calculatorului de {OS}. <learnMoreLink>Află mai multe</learnMoreLink>"
+    "messageformat": "B&A desktop nu mai funcționează pe acest calculator. Ca să folosești B&A desktop din nou, actualizează-ți versiunea calculatorului de {OS}. <learnMoreLink>Află mai multe</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal desktop nu mai funcționează pe acest calculator. Ca să folosești Signal desktop din nou, actualizează-ți versiunea calculatorului de {OS}."
+    "messageformat": "B&A desktop nu mai funcționează pe acest calculator. Ca să folosești B&A desktop din nou, actualizează-ți versiunea calculatorului de {OS}."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Editat"
@@ -6529,7 +6529,7 @@
     "messageformat": "Copiază linkul"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Trimite linkul prin Signal"
+    "messageformat": "Trimite linkul prin B&A"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Șterge linkul"
@@ -6595,7 +6595,7 @@
     "messageformat": "Pentru a schimba această setare, setează „Cine poate vedea numărul meu” la „Nimeni”."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Numele de profil de pe Signal sunt alese de titularii conturilor:"
+    "messageformat": "Numele de profil de pe B&A sunt alese de titularii conturilor:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Numele de profil nu sunt verificate"
@@ -6628,7 +6628,7 @@
     "messageformat": "Confidențialitate mai presus de Profit"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Mesaje private, finanțate de tine. Fără anunțuri, fără sisteme de urmărire. Donează acum ca să susții Signal. <readMoreLink>Citește mai mult</readMoreLink>"
+    "messageformat": "Mesaje private, finanțate de tine. Fără anunțuri, fără sisteme de urmărire. Donează acum ca să susții B&A. <readMoreLink>Citește mai mult</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Donează"
@@ -6646,7 +6646,7 @@
     "messageformat": "Informațiile sunt private"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal nu colectează sau stochează informațiile personale când faci o donație.</paragraph><paragraph>Folosim Stripe ca procesator de plăți ca să primim donațiile tale. Nu accesăm, stocăm sau salvăm niciuna dintre informațiile pe care le oferi către ei.</paragraph><paragraph>Signal nu conectează donația ta cu contul Signal și nici nu poate să o facă.</paragraph><paragraph>Îți mulțumim pentru sprijinul tău!</paragraph>"
+    "messageformat": "<paragraph>B&A nu colectează sau stochează informațiile personale când faci o donație.</paragraph><paragraph>Folosim Stripe ca procesator de plăți ca să primim donațiile tale. Nu accesăm, stocăm sau salvăm niciuna dintre informațiile pe care le oferi către ei.</paragraph><paragraph>B&A nu conectează donația ta cu contul B&A și nici nu poate să o facă.</paragraph><paragraph>Îți mulțumim pentru sprijinul tău!</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Bonuri fiscale"
@@ -6655,7 +6655,7 @@
     "messageformat": "Întrebări frecvente despre donații"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Chitanțele nu se sincronizează pe toate dispozitivele. Dacă ai reinstalat Signal, bonurile fiscale ale donațiilor precedente nu vor mai fi disponibile."
+    "messageformat": "Chitanțele nu se sincronizează pe toate dispozitivele. Dacă ai reinstalat B&A, bonurile fiscale ale donațiilor precedente nu vor mai fi disponibile."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nu sunt chitanțe"
@@ -6688,7 +6688,7 @@
     "messageformat": "Card de credit sau debit"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Introdu detaliile tale bancare. Signal nu colectează și nu păstrează informațiile personale. <learnMoreLink>Află mai multe</learnMoreLink>"
+    "messageformat": "Introdu detaliile tale bancare. B&A nu colectează și nu păstrează informațiile personale. <learnMoreLink>Află mai multe</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Numărul cardului"
@@ -6697,7 +6697,7 @@
     "messageformat": "Data expirării"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Donează {formattedCurrencyAmount} către Signal"
+    "messageformat": "Donează {formattedCurrencyAmount} către B&A"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Numărul cardului este invalid"
@@ -6715,7 +6715,7 @@
     "messageformat": "Cod prea scurt"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Obține insigna Signal Boost timp de 30 de zile"
+    "messageformat": "Obține insigna B&A Boost timp de 30 de zile"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "Chitanță donație"
@@ -6733,7 +6733,7 @@
     "messageformat": "O dată"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Mulțumesc pentru susținerea acordată Signal. Contribuția ta ajută la îndeplinirea misiunii de a proteja libertatea de exprimare și de a permite o comunicare globală sigură pentru milioane de oameni din întreaga lume, prin intermediul tehnologiei open source pentru confidențialitate. Dacă ești rezident al Statelor Unite, păstrează această chitanță pentru evidența fiscală. Signal Technology Foundation este o organizație non-profit scutită de impozite din Statele Unite, în conformitate cu secțiunea 501c3 din Codul Veniturilor Interne. Codul nostru fiscal federal este 82-4506840."
+    "messageformat": "Mulțumesc pentru susținerea acordată B&A. Contribuția ta ajută la îndeplinirea misiunii de a proteja libertatea de exprimare și de a permite o comunicare globală sigură pentru milioane de oameni din întreaga lume, prin intermediul tehnologiei open source pentru confidențialitate. Dacă ești rezident al Statelor Unite, păstrează această chitanță pentru evidența fiscală. B&A Technology Foundation este o organizație non-profit scutită de impozite din Statele Unite, în conformitate cu secțiunea 501c3 din Codul Veniturilor Interne. Codul nostru fiscal federal este 82-4506840."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donație anulată"
@@ -6781,7 +6781,7 @@
     "messageformat": "A apărut o eroare la donația ta"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Este posibil ca donația ta să nu fi fost procesată. Dă clic pe „Donează către Signal” și apoi pe „Chitanțe de donație” pentru a verifica chitanțele și a le confirma."
+    "messageformat": "Este posibil ca donația ta să nu fi fost procesată. Dă clic pe „Donează către B&A” și apoi pe „Chitanțe de donație” pentru a verifica chitanțele și a le confirma."
   },
   "icu:Donations__Processing": {
     "messageformat": "Se procesează donația…"
@@ -6817,11 +6817,11 @@
     "messageformat": "Anulează donația"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Această versiune conține o serie de mici modificări și remedieri ale unor erori pentru ca Signal să funcționeze fără probleme.",
+    "messageformat": "Această versiune conține o serie de mici modificări și remedieri ale unor erori pentru ca B&A să funcționeze fără probleme.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Reparări de bug-uri, mici ajustări și îmbunătățiri ale performanței. Îți mulțumim că folosești Signal!",
+    "messageformat": "Reparări de bug-uri, mici ajustări și îmbunătățiri ale performanței. Îți mulțumim că folosești B&A!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Mici ajustări, soluționări de bug-uri și îmbunătățiri ale performanței. Mersi că folosești Signal!",
+    "messageformat": "Mici ajustări, soluționări de bug-uri și îmbunătățiri ale performanței. Mersi că folosești B&A!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {

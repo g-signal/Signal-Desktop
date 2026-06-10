@@ -42,7 +42,7 @@
     "messageformat": "高画質なメディアの送信には、より多くのデータを使用します。"
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signalへの寄付"
+    "messageformat": "B&Aへの寄付"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "標準"
@@ -78,10 +78,10 @@
     "messageformat": "不明なグループ"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signalを開けません"
+    "messageformat": "B&Aを開けません"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "問題解決のために、サポートページに記載されている復元ガイドを実行するか、Signalサポートへお問い合わせください。\n\nすぐにSignalを使う必要がある場合は、データを消去してこのデスクトップを再リンクすることができます。ご利用中のスマートフォンからメッセージ履歴を移行するかどうかを選択できます。"
+    "messageformat": "問題解決のために、サポートページに記載されている復元ガイドを実行するか、B&Aサポートへお問い合わせください。\n\nすぐにB&Aを使う必要がある場合は、データを消去してこのデスクトップを再リンクすることができます。ご利用中のスマートフォンからメッセージ履歴を移行するかどうかを選択できます。"
   },
   "icu:databaseError": {
     "messageformat": "データベースのエラー"
@@ -93,16 +93,16 @@
     "messageformat": "すべてのデータを完全に消去します"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "過去のすべてのメッセージとメディアはお使いの端末から完全に消去されます。ご利用中のスマートフォンのデータは消去されません。\n\n再リンクすると、この端末でSignalを使用できるようになります。ご利用中のスマートフォンからメッセージ履歴を移行するかどうかを選択できます。"
+    "messageformat": "過去のすべてのメッセージとメディアはお使いの端末から完全に消去されます。ご利用中のスマートフォンのデータは消去されません。\n\n再リンクすると、この端末でB&Aを使用できるようになります。ご利用中のスマートフォンからメッセージ履歴を移行するかどうかを選択できます。"
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "データベースのバージョンと、開いたSignalのバージョンが一致しません。ご利用のコンピューターで、最新バージョンのSignalを開いているかをお確かめください。"
+    "messageformat": "データベースのバージョンと、開いたB&Aのバージョンが一致しません。ご利用のコンピューターで、最新バージョンのB&Aを開いているかをお確かめください。"
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "OS暗号化キーリングバックエンドが{previousBackend}から{currentBackend}に変更されたため、データベース暗号化キーにアクセスできません。これは、デスクトップ環境がGNOMEとKDEの間で変更された場合などに発生することがあります。\n\n以前のデスクトップ環境に切り替えてください。"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "OS暗号化キーリングバックエンドが{previousBackend}から{currentBackend}に変更されたため、データベース暗号化キーにアクセスできません。これは、デスクトップ環境がGNOMEとKDEの間で変更された場合などに発生することがあります。\n\n以前のデスクトップ環境に切り替えるか、コマンドラインフラグ -- password-store=\"{previousBackendFlag}\" を使ってSignalを起動してください。"
+    "messageformat": "OS暗号化キーリングバックエンドが{previousBackend}から{currentBackend}に変更されたため、データベース暗号化キーにアクセスできません。これは、デスクトップ環境がGNOMEとKDEの間で変更された場合などに発生することがあります。\n\n以前のデスクトップ環境に切り替えるか、コマンドラインフラグ -- password-store=\"{previousBackendFlag}\" を使ってB&Aを起動してください。"
   },
   "icu:mainMenuFile": {
     "messageformat": "ファイル (&F)"
@@ -138,7 +138,7 @@
     "messageformat": "すべて表示"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signalを終了"
+    "messageformat": "B&Aを終了"
   },
   "icu:editMenuUndo": {
     "messageformat": "元に戻す"
@@ -429,10 +429,10 @@
     "messageformat": "{name} に対する安全番号を他の端末で未検証にしました"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "検証しようとしている安全番号が変更されました。{name1} に対する安全番号を確認してください。これはだれかが通信を傍受しようとしているかも知れませんし、{name2} がSignalを再インストールしただけかも知れません。"
+    "messageformat": "検証しようとしている安全番号が変更されました。{name1} に対する安全番号を確認してください。これはだれかが通信を傍受しようとしているかも知れませんし、{name2} がB&Aを再インストールしただけかも知れません。"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "次の人は、Signalを再インストールしたか、端末を変更した可能性があります。受信者をクリックして、相手の新しい安全番号を確認してください。これは任意です。"
+    "messageformat": "次の人は、B&Aを再インストールしたか、端末を変更した可能性があります。受信者をクリックして、相手の新しい安全番号を確認してください。これは任意です。"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "保留中のメッセージを送信します"
@@ -441,7 +441,7 @@
     "messageformat": "確認"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {{count,number} 人のコネクションがSignalを再インストールしたか端末を変更した可能性があります。送信前に、相手の安全番号を任意で確認できます。}}"
+    "messageformat": "{count, plural, other {{count,number} 人のコネクションがB&Aを再インストールしたか端末を変更した可能性があります。送信前に、相手の安全番号を任意で確認できます。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "すべてのコネクションが確認されました。続行するには送信をクリックしてください。"
@@ -483,7 +483,7 @@
     "messageformat": "「送信する」をクリックすると、このログがユニークな未公開のURLで30日間見られるようになります。\n「保存」をクリックすると、送信する前にあなたの端末にログを保存しておくこともできます。"
   },
   "icu:debugLogError": {
-    "messageformat": "アップロードできませんでした！ログのテキストファイルを support@signal.org にメールでお送りください。"
+    "messageformat": "アップロードできませんでした！ログのテキストファイルを support@baxs.com にメールでお送りください。"
   },
   "icu:debugLogSuccess": {
     "messageformat": "デバッグログを送信しました"
@@ -672,7 +672,7 @@
     "messageformat": "Sticker Pack Creator"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktopについて"
+    "messageformat": "B&A Desktopについて"
   },
   "icu:screenShareWindow": {
     "messageformat": "共有中の画面"
@@ -696,7 +696,7 @@
     "messageformat": "終了"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "検索"
@@ -750,7 +750,7 @@
     "messageformat": "電話番号で検索"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signalへようこそ"
+    "messageformat": "B&Aへようこそ"
   },
   "icu:whatsNew": {
     "messageformat": "このアップデートの{whatsNew}をご覧ください"
@@ -837,13 +837,13 @@
     "messageformat": "あなた"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "音声メッセージを送るには、Signalのマイクへのアクセスを許可してください。"
+    "messageformat": "音声メッセージを送るには、B&Aのマイクへのアクセスを許可してください。"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "通話を始めるために、Signal Desktopにマイクへのアクセスを許可してください。"
+    "messageformat": "通話を始めるために、B&A Desktopにマイクへのアクセスを許可してください。"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "ビデオ通話を始めるために、Signal Desktopにカメラへのアクセスを許可してください。"
+    "messageformat": "ビデオ通話を始めるために、B&A Desktopにカメラへのアクセスを許可してください。"
   },
   "icu:allowAccess": {
     "messageformat": "アクセスを許可する"
@@ -867,13 +867,13 @@
     "messageformat": "ミュート"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signalをアップデートできませんでした。<retryUpdateButton>もう一度アップデートを試す</retryUpdateButton>か、{url}から手動でインストールしてください。その後、この問題を<contactSupportLink>サポートまでお知らせください</contactSupportLink>"
+    "messageformat": "B&Aをアップデートできませんでした。<retryUpdateButton>もう一度アップデートを試す</retryUpdateButton>か、{url}から手動でインストールしてください。その後、この問題を<contactSupportLink>サポートまでお知らせください</contactSupportLink>"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signalをアップデートできませんでした。{url}から手動でインストールしてください。その後、この問題について<contactSupportLink>サポートに連絡してください</contactSupportLink>"
+    "messageformat": "B&Aをアップデートできませんでした。{url}から手動でインストールしてください。その後、この問題について<contactSupportLink>サポートに連絡してください</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop が macOS の検疫にかかっていて自動更新できないようです。{app}を Finder で{folder}へ移動してください。"
+    "messageformat": "B&A Desktop が macOS の検疫にかかっていて自動更新できないようです。{app}を Finder で{folder}へ移動してください。"
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -918,7 +918,7 @@
     "messageformat": "このメッセージはこの端末から消去されます。"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "このメッセージは、チャットの参加者全員が最新バージョンのSignalを使用している場合、全員に対して消去されます。参加者には、あなたがメッセージを消去したことがわかります。"
+    "messageformat": "このメッセージは、チャットの参加者全員が最新バージョンのB&Aを使用している場合、全員に対して消去されます。参加者には、あなたがメッセージを消去したことがわかります。"
   },
   "icu:from": {
     "messageformat": "差出人"
@@ -975,7 +975,7 @@
     "messageformat": "{name}とのダイレクトメッセージはありません"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signalコネクション"
+    "messageformat": "B&Aコネクション"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} はシステムの連絡先に含まれています"
@@ -1068,7 +1068,7 @@
     "messageformat": "詳しく見る"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signalは、エンドツーエンドの暗号を使用しており、セッションを時々更新する必要があります。セキュリティには影響しませんが、この連絡先からのメッセージが失われる場合があり、その際は再送を依頼する必要があるかもしれません。"
+    "messageformat": "B&Aは、エンドツーエンドの暗号を使用しており、セッションを時々更新する必要があります。セキュリティには影響しませんが、この連絡先からのメッセージが失われる場合があり、その際は再送を依頼する必要があるかもしれません。"
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "サポートに問い合わせる"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} は電話番号を変更しました"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "連絡先のSignal参加時"
+    "messageformat": "連絡先のB&A参加時"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} と {conversationTitle} は同じアカウントから発せられています。両方のチャットのメッセージ履歴はこちらです。"
@@ -1215,7 +1215,7 @@
     "messageformat": "メディアをダウンロードできません"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "デスクトップとスマートフォンのインターネット接続を確認してください。スマートフォンでSignalを開き、もう一度ダウンロードしてみてください。"
+    "messageformat": "デスクトップとスマートフォンのインターネット接続を確認してください。スマートフォンでB&Aを開き、もう一度ダウンロードしてみてください。"
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "このメディアはお使いのスマートフォンではご利用できなくなっており、ダウンロードできません。"
@@ -1236,10 +1236,10 @@
     "messageformat": "さらに詳しく"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "スマートフォンのSignalアプリで、\nこのQRコードを読み取ってください。"
+    "messageformat": "スマートフォンのB&Aアプリで、\nこのQRコードを読み取ってください。"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "あなたの電話でSignalを開きます"
+    "messageformat": "あなたの電話でB&Aを開きます"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} をタップして、その次に {linkedDevices} をタップしてください"
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>不明なエラーが発生しました。</paragraph><paragraph>再度お試しください。</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "今お使いのネットワークでは、Signalはこの端末をリンクできません。"
+    "messageformat": "今お使いのネットワークでは、B&Aはこの端末をリンクできません。"
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "再試行"
@@ -1281,7 +1281,7 @@
     "messageformat": "端末名"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "この端末の名前を変更するには、スマートフォンでSignalを開き、「設定」 > 「リンク済み端末」に移動します。"
+    "messageformat": "この端末の名前を変更するには、スマートフォンでB&Aを開き、「設定」 > 「リンク済み端末」に移動します。"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "絵文字のスキントーン"
@@ -1461,7 +1461,7 @@
     "messageformat": "結び付けているデバイスが多すぎます。どれかを切り離してください。"
   },
   "icu:installTooOld": {
-    "messageformat": "スマートフォンとリンクするために Signal を更新してください。"
+    "messageformat": "スマートフォンとリンクするために B&A を更新してください。"
   },
   "icu:installErrorHeader": {
     "messageformat": "エラーが発生しました！"
@@ -1512,7 +1512,7 @@
     "messageformat": "この通話リンクは無効になっています。"
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal通話"
+    "messageformat": "B&A通話"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "リンクを消去できません。インターネット接続を確認して再度試してください。"
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, other {{count,number}人のユーザーが通話に参加しています}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signalは {person} を呼び出します"
+    "messageformat": "B&Aは {person} を呼び出します"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signalから {first}、{second} に発信します"
+    "messageformat": "B&Aから {first}、{second} に発信します"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signalから {first}、{second} および {third} に発信します"
+    "messageformat": "B&Aから {first}、{second} および {third} に発信します"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {Signalは {first}、 {second}、他 {others,number} 人を呼び出します}}"
+    "messageformat": "{others, plural, other {B&Aは {first}、 {second}、他 {others,number} 人を呼び出します}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} に通知されます"
@@ -1725,13 +1725,13 @@
     "messageformat": "再接続しています…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "接続が失われました。Signalは再接続中です。"
+    "messageformat": "接続が失われました。B&Aは再接続中です。"
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signalが {window} を共有しています。"
+    "messageformat": "B&Aが {window} を共有しています。"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signalの画面共有がアクティブです"
+    "messageformat": "B&Aの画面共有がアクティブです"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "再接続しています…"
@@ -1752,7 +1752,7 @@
     "messageformat": "アクセス許可が必要です"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signalにこのコンピュータの画面収録の権限が必要です。"
+    "messageformat": "B&Aにこのコンピュータの画面収録の権限が必要です。"
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "システム環境設定を開いてください。"
@@ -1761,7 +1761,7 @@
     "messageformat": "左下の鍵アイコンをクリックし、コンピュータのパスワードを入力してください。"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "右側にある「Signal」の横のボックスをチェックしてください。リストにSignalが表示されていない場合は、「+」をクリックして追加してください。"
+    "messageformat": "右側にある「B&A」の横のボックスをチェックしてください。リストにB&Aが表示されていない場合は、「+」をクリックして追加してください。"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "システム環境設定を開く"
@@ -1773,7 +1773,7 @@
     "messageformat": "通話を常に中継する"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "すべての通話をSignalサーバで中継して、相手にIPアドレスを知られることを防ぎます。ただし通話の品質は下がります。"
+    "messageformat": "すべての通話をB&Aサーバで中継して、相手にIPアドレスを知られることを防ぎます。ただし通話の品質は下がります。"
   },
   "icu:permissions": {
     "messageformat": "アクセス許可"
@@ -1791,10 +1791,10 @@
     "messageformat": "テキスト選択時にテキスト書式ポップオーバーを表示する"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "スペルチェックはSignalの再起動後に有効になります。"
+    "messageformat": "スペルチェックはB&Aの再起動後に有効になります。"
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "スペルチェックはSignalの再起動後に無効になります。"
+    "messageformat": "スペルチェックはB&Aの再起動後に無効になります。"
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "システムトレイへ最小化"
@@ -1818,13 +1818,13 @@
     "messageformat": "すべてのデータを消去しますか？"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal Desktopからすべてのデータとメッセージを消去しますか？Signalアカウントやスマートフォンのデータ、その他のリンク済み端末のデータは消去されません。"
+    "messageformat": "B&A Desktopからすべてのデータとメッセージを消去しますか？B&Aアカウントやスマートフォンのデータ、その他のリンク済み端末のデータは消去されません。"
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "接続を切って全データを消去しています…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "以前のバージョンの Signal Desktop で利用していた、すでに利用できなくなっているデータが残っています。続行するとこのデータは消去され、フレッシュな状態で改めて利用を始めることになります。"
+    "messageformat": "以前のバージョンの B&A Desktop で利用していた、すでに利用できなくなっているデータが残っています。続行するとこのデータは消去され、フレッシュな状態で改めて利用を始めることになります。"
   },
   "icu:deleteOldData": {
     "messageformat": "古いデータを消去"
@@ -1869,7 +1869,7 @@
     "messageformat": "アプリのバージョンが古すぎます。最新版にアップデートしてください。"
   },
   "icu:upgrade": {
-    "messageformat": "クリックして signal.org/download にアクセス"
+    "messageformat": "クリックして ba-chat.com/download にアクセス"
   },
   "icu:mediaMessage": {
     "messageformat": "メディアメッセージ"
@@ -1878,7 +1878,7 @@
     "messageformat": "連絡先をインポート"
   },
   "icu:syncExplanation": {
-    "messageformat": "Signalのグループと連絡先を、携帯端末からインポートします。"
+    "messageformat": "B&Aのグループと連絡先を、携帯端末からインポートします。"
   },
   "icu:syncNow": {
     "messageformat": "インポートする"
@@ -1914,7 +1914,7 @@
     "messageformat": "昨日 {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signalが受信メッセージの処理に失敗している可能性があります。"
+    "messageformat": "B&Aが受信メッセージの処理に失敗している可能性があります。"
   },
   "icu:messageBodyTooLong": {
     "messageformat": "メッセージが長すぎます。"
@@ -2067,10 +2067,10 @@
     "messageformat": "編集は、このメッセージを送信後24時間以内のみ可能です。"
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername}さんはSignalユーザーではありません。ユーザーネームが正しく入力されているか確認してください。"
+    "messageformat": "{atUsername}さんはB&Aユーザーではありません。ユーザーネームが正しく入力されているか確認してください。"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "ユーザーが見つかりません。\"{phoneNumber}\"は、Signalユーザーではありません。"
+    "messageformat": "ユーザーが見つかりません。\"{phoneNumber}\"は、B&Aユーザーではありません。"
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "ユーザーが見つかりません。\"{phoneNumber}\"は、無効な電話番号です。"
@@ -2091,13 +2091,13 @@
     "messageformat": "グループメンバー数が上限に達しました"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signalグループは最大{max,number}名まで参加できます。"
+    "messageformat": "B&Aグループは最大{max,number}名まで参加できます。"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "推奨されるメンバー数の上限に達しました"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signalグループは{max,number}人以下が最適です。これよりメンバーを追加すると、メッセージの送受信で遅延が発生します。"
+    "messageformat": "B&Aグループは{max,number}人以下が最適です。これよりメンバーを追加すると、メッセージの送受信で遅延が発生します。"
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "このグループの名前"
@@ -2127,7 +2127,7 @@
     "messageformat": "グループを更新できませんでした。インターネット接続を確認して再度試してください。"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "クリックすると、Signal Desktopとスマートフォンが再リンクされ、メッセージのやり取りが継続されます。"
+    "messageformat": "クリックすると、B&A Desktopとスマートフォンが再リンクされ、メッセージのやり取りが継続されます。"
   },
   "icu:unlinked": {
     "messageformat": "未リンク"
@@ -2139,16 +2139,16 @@
     "messageformat": "アップデートを再試行"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Signalを再起動する"
+    "messageformat": "B&Aを再起動する"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "アップデートをダウンロードする"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signalのアップデートが失敗しました。クリックして再試行してください。"
+    "messageformat": "B&Aのアップデートが失敗しました。クリックして再試行してください。"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signalを再起動する"
+    "messageformat": "B&Aを再起動する"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "アップデートを無視"
@@ -2247,7 +2247,7 @@
     "messageformat": "添付ファイルが大きすぎて表示できないものがあります。"
   },
   "icu:message--call-link-description": {
-    "messageformat": "リンクを使用して Signal 通話に参加する"
+    "messageformat": "リンクを使用して B&A 通話に参加する"
   },
   "icu:donation--missing": {
     "messageformat": "寄付の詳細を取得できません"
@@ -2259,7 +2259,7 @@
     "messageformat": "携帯電話でこのメッセージをタップすると寄付が表示されます"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} さんがあなたに代わってSignalに寄付しました"
+    "messageformat": "{sender} さんがあなたに代わってB&Aに寄付しました"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "携帯電話でこの寄付を確認してください"
@@ -2310,7 +2310,7 @@
     "messageformat": "ご支援をありがとうございます！"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} さんに代わってあなたがSignalに寄付しました。その人のプロフィールには、サポートしていることを表示するオプションが付与されます。"
+    "messageformat": "{name} さんに代わってあなたがB&Aに寄付しました。その人のプロフィールには、サポートしていることを表示するオプションが付与されます。"
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "ステッカーパックをインストールできませんでした"
@@ -2325,10 +2325,10 @@
     "messageformat": "ステッカーはインストールされていません"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signalアーティストシリーズ"
+    "messageformat": "B&Aアーティストシリーズ"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signalアーティストによるステッカーはありません"
+    "messageformat": "B&Aアーティストによるステッカーはありません"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "受信済みステッカー"
@@ -2670,19 +2670,19 @@
     "messageformat": "メッセージが長すぎてこれ以上は表示できません"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} からメッセージが届きましたが、Signalの新機能を利用しているため処理または表示できません。"
+    "messageformat": "{contact} からメッセージが届きましたが、B&Aの新機能を利用しているため処理または表示できません。"
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Signalを最新バージョンに更新したため、{contact} にメッセージの再送を依頼できます。"
+    "messageformat": "B&Aを最新バージョンに更新したため、{contact} にメッセージの再送を依頼できます。"
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "別の端末でSignalの新機能を使用してメッセージを送信したため、処理または表示できません。"
+    "messageformat": "別の端末でB&Aの新機能を使用してメッセージを送信したため、処理または表示できません。"
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Signalを最新バージョンに更新したため、今後はこのようなメッセージも同期されます。"
+    "messageformat": "B&Aを最新バージョンに更新したため、今後はこのようなメッセージも同期されます。"
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signalをアップデートする"
+    "messageformat": "B&Aをアップデートする"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "閲覧済み"
@@ -2946,7 +2946,7 @@
     "messageformat": "チャットを未読にしました"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Sticker Pack Creatorを使うには、Signalを携帯電話とデスクトップで設定してください。"
+    "messageformat": "Sticker Pack Creatorを使うには、B&Aを携帯電話とデスクトップで設定してください。"
   },
   "icu:Reactions--remove": {
     "messageformat": "リアクションを削除"
@@ -2970,7 +2970,7 @@
     "messageformat": "偽名と偽アカウント"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signalが登録コードやPINについてお客様に連絡することは一切ありません。なりすましによる不正アクセスにはご注意ください。プロフィールネームはアカウント所有者によって選択され、検証はされません。"
+    "messageformat": "B&Aが登録コードやPINについてお客様に連絡することは一切ありません。なりすましによる不正アクセスにはご注意ください。プロフィールネームはアカウント所有者によって選択され、検証はされません。"
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "暗号通貨または金銭詐欺"
@@ -3060,13 +3060,13 @@
     "messageformat": "スパムとして報告しますか？"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "この人物がスパムを送信している可能性をSignalに通知します。Signalはチャットの内容を見ることはできません。"
+    "messageformat": "この人物がスパムを送信している可能性をB&Aに通知します。B&Aはチャットの内容を見ることはできません。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "このグループへあなたを招待している相手がスパムを送信している可能性をSignalに通知します。Signalはチャットの内容を見ることはできません。"
+    "messageformat": "このグループへあなたを招待している相手がスパムを送信している可能性をB&Aに通知します。B&Aはチャットの内容を見ることはできません。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signalは、このグループへあなたを招待している{name}がスパムを送信している可能性をお知らせします。Signalはチャットの内容を見ることはできません。"
+    "messageformat": "B&Aは、このグループへあなたを招待している{name}がスパムを送信している可能性をお知らせします。B&Aはチャットの内容を見ることはできません。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "スパムとして報告する"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>プロフィールネーム</clickable>は検証されません"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "これはSignalの公式かつ唯一のチャットです"
+    "messageformat": "これはB&Aの公式かつ唯一のチャットです"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "ニュースやリリースノートで最新情報をチェックしてください。"
@@ -3228,10 +3228,10 @@
     "messageformat": "ビデオ通話応答なし"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signalはまだ動作中です"
+    "messageformat": "B&Aはまだ動作中です"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signalは通知エリアで動作し続けます。これはSignalの設定で変更できます。"
+    "messageformat": "B&Aは通知エリアで動作し続けます。これはB&Aの設定で変更できます。"
   },
   "icu:incomingAudioCall": {
     "messageformat": "音声通話着信"
@@ -3441,7 +3441,7 @@
     "messageformat": "通話リンクをコピーする"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal経由で通話リンクを共有する"
+    "messageformat": "B&A経由で通話リンクを共有する"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "このユーザーを通話から退出させる"
@@ -3561,7 +3561,7 @@
     "messageformat": "不明なリンクバージョン"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "このリンクは、このバージョンのSignal Desktopではサポートしていません。"
+    "messageformat": "このリンクは、このバージョンのB&A Desktopではサポートしていません。"
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "グループに参加できません"
@@ -4116,16 +4116,16 @@
     "messageformat": "これには数分かかる場合があります"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signalへの寄付"
+    "messageformat": "B&Aへの寄付"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Signalへの寄付"
+    "messageformat": "B&Aへの寄付"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signalはユーザーの皆様によって支えられています。ご寄付いただきバッジを獲得してください。"
+    "messageformat": "B&Aはユーザーの皆様によって支えられています。ご寄付いただきバッジを獲得してください。"
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "あなたの電話でSignalを開きます"
+    "messageformat": "あなたの電話でB&Aを開きます"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "左上の写真をタップして、設定を開きます"
@@ -4257,7 +4257,7 @@
     "messageformat": "アカウント維持のために操作が必要です"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "このアカウントの使用を継続するには、お使いのスマートフォンでSignalを開く必要があります。この操作を行わないと、アカウントは間もなく消去されます。<learnMoreLink>さらに詳しく</learnMoreLink>"
+    "messageformat": "このアカウントの使用を継続するには、お使いのスマートフォンでB&Aを開く必要があります。この操作を行わないと、アカウントは間もなく消去されます。<learnMoreLink>さらに詳しく</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "メディアを復元できません"
@@ -4272,10 +4272,10 @@
     "messageformat": "ファイルを添付する"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "この方はSignalを使用していません"
+    "messageformat": "この方はB&Aを使用していません"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktopは、Signal以外の連絡先とのメッセージ送受信をサポートしていません。この方には、より安全なメッセージ送受信を実現するために、Signalをインストールするよう依頼してください。"
+    "messageformat": "B&A Desktopは、B&A以外の連絡先とのメッセージ送受信をサポートしていません。この方には、より安全なメッセージ送受信を実現するために、B&Aをインストールするよう依頼してください。"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "連絡先の登録状況を確認しています"
@@ -4461,7 +4461,7 @@
     "messageformat": "ニックネーム"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "ニックネームとメモは、Signalのエンドツーエンドの暗号化ストレージサービスによって保存されます。これらはあなただけに表示されます。"
+    "messageformat": "ニックネームとメモは、B&Aのエンドツーエンドの暗号化ストレージサービスによって保存されます。これらはあなただけに表示されます。"
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "名"
@@ -4512,7 +4512,7 @@
     "messageformat": "グループリンク経由での新メンバー参加時に、管理者の承認を要求します。"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.groupのリンクをクリップボードにコピーする"
+    "messageformat": "B&A.groupのリンクをクリップボードにコピーする"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "申請 ({count,number})"
@@ -4716,13 +4716,13 @@
     "messageformat": "空のメッセージや消去されたメッセージは転送できません"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "リンクを使用して Signal 通話に参加する　{url}"
+    "messageformat": "リンクを使用して B&A 通話に参加する　{url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "安全な使い方のヒント"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "慎重に申請を確認してください。Signal は同じ名前で別の連絡先を見つけました。<reviewRequestLink>申請を確認する</reviewRequestLink>"
+    "messageformat": "慎重に申請を確認してください。B&A は同じ名前で別の連絡先を見つけました。<reviewRequestLink>申請を確認する</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {{count,number} 人のグループメンバーが同じ名前です。<reviewRequestLink>メンバーを確認する</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "他の共通のグループはありません"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signalコネクション"
+    "messageformat": "B&Aコネクション"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近、プロフィールネームを {oldName} から {newName} に変更しました。"
@@ -4773,7 +4773,7 @@
     "messageformat": "メッセージ送受信のため認証してください"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signalが迷惑メッセージを回避するために、認証を完了していください。"
+    "messageformat": "B&Aが迷惑メッセージを回避するために、認証を完了していください。"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "認証後は、メッセージの送受信を再開できます。保留されたメッセージは、自動で送信されます。"
@@ -5079,7 +5079,7 @@
     "messageformat": "変更を破棄しますか？"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signalを閉じて通話を終了しますか？"
+    "messageformat": "B&Aを閉じて通話を終了しますか？"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "今はしない"
@@ -5166,7 +5166,7 @@
     "messageformat": "一般"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signalへの寄付"
+    "messageformat": "B&Aへの寄付"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "デザイン"
@@ -5247,7 +5247,7 @@
     "messageformat": "リンクプレビューを生成する"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "この設定の変更は、スマートフォン版Signalの設定 > チャットから行ってください"
+    "messageformat": "この設定の変更は、スマートフォン版B&Aの設定 > チャットから行ってください"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "入力した顔文字を絵文字に変換する"
@@ -5265,13 +5265,13 @@
     "messageformat": "ブロック中のユーザー"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signalバックアップ"
+    "messageformat": "B&Aバックアップ"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Signalによる、安全なエンドツーエンドの暗号化ストレージサービスによる自動バックアップです。ご利用中のスマートフォンからバックアップが可能です。<learnMoreLink>詳しく見る</learnMoreLink>。"
+    "messageformat": "B&Aによる、安全なエンドツーエンドの暗号化ストレージサービスによる自動バックアップです。ご利用中のスマートフォンからバックアップが可能です。<learnMoreLink>詳しく見る</learnMoreLink>。"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "メッセージ履歴をバックアップしておくと、電話を買い替えたり、Signalを再インストールしたりしてもデータが失われることはありません。"
+    "messageformat": "メッセージ履歴をバックアップしておくと、電話を買い替えたり、B&Aを再インストールしたりしてもデータが失われることはありません。"
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "バックアップの詳細"
@@ -5280,7 +5280,7 @@
     "messageformat": "テキストとすべてのメディアのバックアップ"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "ご利用のサブスクリプションは確認できませんでした。Signalバックアップを引き続き使用するには、更新手続きをしてください。"
+    "messageformat": "ご利用のサブスクリプションは確認できませんでした。B&Aバックアップを引き続き使用するには、更新手続きをしてください。"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {テキストと{mediaDayCount,number} 日間のメディアのバックアップ}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "サブスクリプションが解除されました"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Signalバックアップのサブスクリプションは、お使いのスマートフォンで管理またはキャンセル手続きが行えます。"
+    "messageformat": "B&Aバックアップのサブスクリプションは、お使いのスマートフォンで管理またはキャンセル手続きが行えます。"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "お使いのスマートフォンからSignalバックアップを管理またはアップグレードできます。"
+    "messageformat": "お使いのスマートフォンからB&Aバックアップを管理またはアップグレードできます。"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Signalバックアップのサブスクリプションは、お使いのスマートフォンから管理または更新手続きが行えます。"
+    "messageformat": "B&Aバックアップのサブスクリプションは、お使いのスマートフォンから管理または更新手続きが行えます。"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "最終バックアップ"
@@ -5322,7 +5322,7 @@
     "messageformat": "スマートフォン上で復元できる、エンドツーエンドで暗号化されたバックアップを作成できます。 "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "バックアップを復元するには、新しいSignalをインストールしてください。その後アプリを開き、「バックアップを復元する」をタップしてバックアップフォルダの場所を指定します。<learnMoreLink>さらに詳しく。</learnMoreLink>"
+    "messageformat": "バックアップを復元するには、新しいB&Aをインストールしてください。その後アプリを開き、「バックアップを復元する」をタップしてバックアップフォルダの場所を指定します。<learnMoreLink>さらに詳しく。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "フォルダを選択"
@@ -5358,7 +5358,7 @@
     "messageformat": "キーの取り扱いは厳重にしてください"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "キーを紛失した場合、Signalはバックアップの復元をサポートできません。保管は安全な場所でおこない、第三者と共有しないでください。"
+    "messageformat": "キーを紛失した場合、B&Aはバックアップの復元をサポートできません。保管は安全な場所でおこない、第三者と共有しないでください。"
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "続ける"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, other {{num,number}人}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "これらの設定の変更は、スマートフォン版Signalの 設定 > チャット から行ってください。"
+    "messageformat": "これらの設定の変更は、スマートフォン版B&Aの 設定 > チャット から行ってください。"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "電話番号"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "あなたの電話番号を見ることができる人と、Signalであなたに連絡できる人を選択してください。"
+    "messageformat": "あなたの電話番号を見ることができる人と、B&Aであなたに連絡できる人を選択してください。"
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "変更する"
@@ -5430,10 +5430,10 @@
     "messageformat": "私を電話番号から検索できる人"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "あなたの電話番号を知っている人は誰でも、あなたがSignal利用者であることがわかり、チャットを始めることができます。"
+    "messageformat": "あなたの電話番号を知っている人は誰でも、あなたがB&A利用者であることがわかり、チャットを始めることができます。"
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "あなたからメッセージを送るか、以前からチャットをやりとりしていない限り、あなたがSignalを利用していることは誰にもわかりません。"
+    "messageformat": "あなたからメッセージを送るか、以前からチャットをやりとりしていない限り、あなたがB&Aを利用していることは誰にもわかりません。"
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "全員"
@@ -5445,7 +5445,7 @@
     "messageformat": "本当に削除しますか？"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "「{settingTitle}」を「{nobodyLabel}」に変更すると、Signal上で他のユーザーはあなたを見つけにくくなります。"
+    "messageformat": "「{settingTitle}」を「{nobodyLabel}」に変更すると、B&A上で他のユーザーはあなたを見つけにくくなります。"
   },
   "icu:Preferences--messaging": {
     "messageformat": "メッセージ送受信"
@@ -5499,7 +5499,7 @@
     "messageformat": "設定する"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "適用するにはSignalを再起動します"
+    "messageformat": "適用するにはB&Aを再起動します"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "言語を変更するには、アプリを再起動する必要があります。"
@@ -5514,13 +5514,13 @@
     "messageformat": "画面のセキュリティ"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "プライバシーをさらに強化するため、このコンピューター上でSignalのスクリーンショットを撮影できないようにします。"
+    "messageformat": "プライバシーをさらに強化するため、このコンピューター上でB&Aのスクリーンショットを撮影できないようにします。"
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "スクリーンセキュリティを無効にしますか？"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "無効にすると、Microsoft WindowsがSignalのスクリーンショットを撮影して、プライベートではない機能に使用される可能性があります。"
+    "messageformat": "無効にすると、Microsoft WindowsがB&Aのスクリーンショットを撮影して、プライベートではない機能に使用される可能性があります。"
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "無効"
@@ -5535,25 +5535,25 @@
     "messageformat": "アップデートがダウンロードされました"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "ご利用のスマートフォンでSignalを開いてください"
+    "messageformat": "ご利用のスマートフォンでB&Aを開いてください"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "ご利用のスマートフォンでSignalを開かないと、アカウントは間もなく削除されます。Signalを開くと、このメッセージは表示されなくなります。<learnMoreLink>さらに詳しく</learnMoreLink>"
+    "messageformat": "ご利用のスマートフォンでB&Aを開かないと、アカウントは間もなく削除されます。B&Aを開くと、このメッセージは表示されなくなります。<learnMoreLink>さらに詳しく</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "アカウントをアクティブに保つために、スマートフォンでSignalを開いてください"
+    "messageformat": "アカウントをアクティブに保つために、スマートフォンでB&Aを開いてください"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "さらに詳しく"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signalは技術的な問題を抱えています。私たちは、これをできるだけ早く解決するよう対応しています。"
+    "messageformat": "B&Aは技術的な問題を抱えています。私たちは、これをできるだけ早く解決するよう対応しています。"
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "アップデートが必要です"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "メッセージの同期を完了するには、Signal Desktopを今すぐアップデートしてください。"
+    "messageformat": "メッセージの同期を完了するには、B&A Desktopを今すぐアップデートしてください。"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "アップデートする"
@@ -5562,19 +5562,19 @@
     "messageformat": "アップデートが必要です"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal を引き続きご利用いただくには、最新バージョンにアップデートする必要があります。"
+    "messageformat": "B&A を引き続きご利用いただくには、最新バージョンにアップデートする必要があります。"
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "ダウンロード {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "アップデートのインストール完了には Signal の再起動が必要です。"
+    "messageformat": "アップデートのインストール完了には B&A の再起動が必要です。"
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop はアップデートに失敗しましたが、ご利用可能な新しいバージョンがあります。{downloadUrl} へアクセスして新しいバージョンを手動でインストールしてから、サポートへ連絡するか、この問題についてのバグを報告してください。"
+    "messageformat": "B&A Desktop はアップデートに失敗しましたが、ご利用可能な新しいバージョンがあります。{downloadUrl} へアクセスして新しいバージョンを手動でインストールしてから、サポートへ連絡するか、この問題についてのバグを報告してください。"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signalを終了できません。",
+    "messageformat": "B&Aを終了できません。",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal の新しいバージョンがすでにインストールされています。本当にインストールしますか？",
+    "messageformat": "B&A の新しいバージョンがすでにインストールされています。本当にインストールしますか？",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
-    "messageformat": "Signalがクラッシュしました"
+    "messageformat": "B&Aがクラッシュしました"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signalがクラッシュ後に再起動しました。クラッシュレポートを提出いただくと、Signalの問題の調査に役立てられます。"
+    "messageformat": "B&Aがクラッシュ後に再起動しました。クラッシュレポートを提出いただくと、B&Aの問題の調査に役立てられます。"
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "送信"
@@ -5706,7 +5706,7 @@
     "messageformat": "下にある「{buttonName}」をクリックする"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "「Signal」をオンにする"
+    "messageformat": "「B&A」をオンにする"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "設定へ"
@@ -5796,7 +5796,7 @@
     "messageformat": "詳しく見る"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signalコネクション"
+    "messageformat": "B&Aコネクション"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}は、次のいずれかによってあなたが信頼できると判断した人たちです。"
@@ -5946,7 +5946,7 @@
     "messageformat": "ストーリを非表示にする"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "すべてのSignalコネクション"
+    "messageformat": "すべてのB&Aコネクション"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "共有しない人を指定"
@@ -5964,7 +5964,7 @@
     "messageformat": "閲覧済表示"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "この設定の変更は、モバイル端末でSignalアプリを開き、設定 > ストーリーから行ってください"
+    "messageformat": "この設定の変更は、モバイル端末でB&Aアプリを開き、設定 > ストーリーから行ってください"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "ストーリーを閲覧できる人"
@@ -6024,7 +6024,7 @@
     "messageformat": "マイストーリープライバシー"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "ストーリーを閲覧できる Signal コネクションを選んでください。これはプライバシー設定でいつでも変更できます。<learnMoreLink>さらに詳しく。</learnMoreLink>"
+    "messageformat": "ストーリーを閲覧できる B&A コネクションを選んでください。これはプライバシー設定でいつでも変更できます。<learnMoreLink>さらに詳しく。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "ストーリーを消去する"
@@ -6093,7 +6093,7 @@
     "messageformat": "添付ファイルをダウンロード"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "閲覧済を有効にすると、誰があなたのストーリーを閲覧したかわかります。モバイル端末でSignalアプリを開き、設定 > ストーリーの順に移動します。"
+    "messageformat": "閲覧済を有効にすると、誰があなたのストーリーを閲覧したかわかります。モバイル端末でB&Aアプリを開き、設定 > ストーリーの順に移動します。"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "返信 なし"
@@ -6279,7 +6279,7 @@
     "messageformat": "QRコードとリンクはリセットされ、ユーザーネームは{username}です"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "このQRコードをお使いの携帯電話でスキャンして、Signalで私とチャットしましょう。",
+    "messageformat": "このQRコードをお使いの携帯電話でスキャンして、B&Aで私とチャットしましょう。",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "キャンセル"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal desktopは、まもなくお使いのコンピュータの{OS}バージョンのサポートを終了します。Signalを引き続き利用するには、{expirationDate}までにコンピュ―タのオペレーティングシステムを更新してください。<learnMoreLink>詳しく見る</learnMoreLink>"
+    "messageformat": "B&A desktopは、まもなくお使いのコンピュータの{OS}バージョンのサポートを終了します。B&Aを引き続き利用するには、{expirationDate}までにコンピュ―タのオペレーティングシステムを更新してください。<learnMoreLink>詳しく見る</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "このコンピュータではSignal desktopは動作しなくなりました。Signal desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。<learnMoreLink>詳しく見る</learnMoreLink>"
+    "messageformat": "このコンピュータではB&A desktopは動作しなくなりました。B&A desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。<learnMoreLink>詳しく見る</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "このコンピュータではSignal desktopは動作しなくなりました。Signal desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。"
+    "messageformat": "このコンピュータではB&A desktopは動作しなくなりました。B&A desktopを再びご利用になる場合は、お使いのコンピュータのバージョン{OS}をアップデートしてください。"
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "編集済み"
@@ -6529,7 +6529,7 @@
     "messageformat": "リンクをコピーします"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Signal 経由でリンクを共有する"
+    "messageformat": "B&A 経由でリンクを共有する"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "リンクを消去する"
@@ -6595,7 +6595,7 @@
     "messageformat": "この設定を変更するには、「自分の番号を閲覧できる人」を「誰も閲覧できない」に設定します。"
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal上のプロフィールネームは、アカウント所有者によって選択されます。"
+    "messageformat": "B&A上のプロフィールネームは、アカウント所有者によって選択されます。"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "プロフィールネームは検証されません"
@@ -6628,7 +6628,7 @@
     "messageformat": "利益よりもプライバシーを"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "あなたが資金提供するプライベートメッセージ。広告なし、トラッキングなし、不正アクセスなし。Signalをサポートするための寄付を今すぐお願いします。<readMoreLink>続きを読む</readMoreLink>"
+    "messageformat": "あなたが資金提供するプライベートメッセージ。広告なし、トラッキングなし、不正アクセスなし。B&Aをサポートするための寄付を今すぐお願いします。<readMoreLink>続きを読む</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "寄付する"
@@ -6646,7 +6646,7 @@
     "messageformat": "お客様の個人情報は保護されています"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signalは、寄付を受ける際に、お客様のいかなる個人情報も収集したり保存したりすることはありません。</paragraph><paragraph>Signalでは寄付を受け取る決済処理にStripeを使用しています。Signalは、お客様から提供されたいかなる情報にもアクセスすることはありません。また保管・保存したりすることもありません。</paragraph><paragraph>Signalは、寄付からお客様のSignalアカウントを特定することはありません。特定はできない仕組みになっています。</paragraph><paragraph>ご支援ありがとうございます！</paragraph>"
+    "messageformat": "<paragraph>B&Aは、寄付を受ける際に、お客様のいかなる個人情報も収集したり保存したりすることはありません。</paragraph><paragraph>B&Aでは寄付を受け取る決済処理にStripeを使用しています。B&Aは、お客様から提供されたいかなる情報にもアクセスすることはありません。また保管・保存したりすることもありません。</paragraph><paragraph>B&Aは、寄付からお客様のB&Aアカウントを特定することはありません。特定はできない仕組みになっています。</paragraph><paragraph>ご支援ありがとうございます！</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "領収書"
@@ -6655,7 +6655,7 @@
     "messageformat": "寄付についてのよくある質問"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "領収書は端末間で同期されません。Signalを再インストールすると、過去におこなった寄付の領収書を入手できなくなります。"
+    "messageformat": "領収書は端末間で同期されません。B&Aを再インストールすると、過去におこなった寄付の領収書を入手できなくなります。"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "領収書なし"
@@ -6688,7 +6688,7 @@
     "messageformat": "クレジットカードまたはデビットカード"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "クレジットカードまたはデビットカード情報を入力してください。Signalがお客様の個人情報を収集したり保存したりすることはありません。<learnMoreLink>さらに詳しく</learnMoreLink>"
+    "messageformat": "クレジットカードまたはデビットカード情報を入力してください。B&Aがお客様の個人情報を収集したり保存したりすることはありません。<learnMoreLink>さらに詳しく</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "カード番号"
@@ -6697,7 +6697,7 @@
     "messageformat": "有効期限"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signalに {formattedCurrencyAmount}を寄付する"
+    "messageformat": "B&Aに {formattedCurrencyAmount}を寄付する"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "無効なカード番号です"
@@ -6715,7 +6715,7 @@
     "messageformat": "コードが短すぎます"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30日間のSignalブーストバッジを獲得しましょう"
+    "messageformat": "30日間のB&Aブーストバッジを獲得しましょう"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "寄付の領収書"
@@ -6733,7 +6733,7 @@
     "messageformat": "1回"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Signalをサポートしていただきありがとうございます。皆様のご寄付は、オープンソースのプライバシー技術を通して表現の自由を守り、世界中の何百万人もの人々に安全なグローバルコミュニケーションを可能にするというミッションを推進する原動力となるものです。米国にお住まいの方は、この領収書を税務記録のために保管しておいてください。Signal Technology Foundationは、米国内国歳入法第501c3条に基づく非課税の非営利団体です。連邦税IDは82-4506840です。"
+    "messageformat": "B&Aをサポートしていただきありがとうございます。皆様のご寄付は、オープンソースのプライバシー技術を通して表現の自由を守り、世界中の何百万人もの人々に安全なグローバルコミュニケーションを可能にするというミッションを推進する原動力となるものです。米国にお住まいの方は、この領収書を税務記録のために保管しておいてください。B&A Technology Foundationは、米国内国歳入法第501c3条に基づく非課税の非営利団体です。連邦税IDは82-4506840です。"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "寄付がキャンセルされました"
@@ -6781,7 +6781,7 @@
     "messageformat": "寄付のお手続きができませんでした"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "寄付のお手続き処理できなかった可能性があります。「Signalへの寄付」から「寄付の領収書」をクリックし、該当する領収書を確認してください。"
+    "messageformat": "寄付のお手続き処理できなかった可能性があります。「B&Aへの寄付」から「寄付の領収書」をクリックし、該当する領収書を確認してください。"
   },
   "icu:Donations__Processing": {
     "messageformat": "寄付の処理中です..."
@@ -6817,7 +6817,7 @@
     "messageformat": "寄付をキャンセルする"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Signalをスムーズに動作させるための微調整とバグ修正を行いました。",
+    "messageformat": "B&Aをスムーズに動作させるための微調整とバグ修正を行いました。",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "細かな微調整、バグ修正、パフォーマンスの向上。 Signalをご利用いただきありがとうございます。",
+    "messageformat": "細かな微調整、バグ修正、パフォーマンスの向上。 B&Aをご利用いただきありがとうございます。",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {

@@ -42,7 +42,7 @@
     "messageformat": "Aukštos kokybės medijos siuntimas naudos daugiau tinklo duomenų."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite B&A programėlei"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standartinė"
@@ -78,10 +78,10 @@
     "messageformat": "Nežinoma grupė"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Nepavyksta atidaryti „Signal“"
+    "messageformat": "Nepavyksta atidaryti „B&A“"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Jei ieškote pagalbos, kaip išspręsti problemą, vadovaukitės pagalbos puslapyje pateiktu atkūrimo vadovu arba kreipkitės į „Signal“ palaikymo komandą.\n\nJei pasinaudoti „Signal“ jums reikia skubiai, galite ištrinti savo duomenis ir susieti šį darbalaukį iš naujo. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
+    "messageformat": "Jei ieškote pagalbos, kaip išspręsti problemą, vadovaukitės pagalbos puslapyje pateiktu atkūrimo vadovu arba kreipkitės į „B&A“ palaikymo komandą.\n\nJei pasinaudoti „B&A“ jums reikia skubiai, galite ištrinti savo duomenis ir susieti šį darbalaukį iš naujo. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
   },
   "icu:databaseError": {
     "messageformat": "Duomenų bazės klaida"
@@ -93,16 +93,16 @@
     "messageformat": "Ištrinti visus duomenis visam laikui"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Visa jūsų žinučių istorija ir įrašai bus ištrinti iš šio įrenginio visam laikui. Iš jūsų telefono nebus ištrinti jokie duomenys.\n\nGalėsite naudoti „Signal“ šiame įrenginyje po to, kai iš naujo susiesite. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
+    "messageformat": "Visa jūsų žinučių istorija ir įrašai bus ištrinti iš šio įrenginio visam laikui. Iš jūsų telefono nebus ištrinti jokie duomenys.\n\nGalėsite naudoti „B&A“ šiame įrenginyje po to, kai iš naujo susiesite. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Tavo duomenų bazės versija neatitinka šios „Signal“ versijos. Įsitikink, kad savo kompiuteryje bandai atidaryti naujausią „Signal“ versiją."
+    "messageformat": "Tavo duomenų bazės versija neatitinka šios „B&A“ versijos. Įsitikink, kad savo kompiuteryje bandai atidaryti naujausią „B&A“ versiją."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nepavyko pasiekti duomenų bazės šifravimo rakto, nes OS šifravimo raktų rinkinys pasikeitė iš {previousBackend} į {currentBackend}. Taip gali nutikti pasikeitus darbalaukio aplinkai, pavyzdžiui, tarp GNOME ir KDE.\n\nPereikite į ankstesnę darbalaukio aplinką."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nepavyko pasiekti duomenų bazės šifravimo rakto, nes OS šifravimo raktų rinkinys pasikeitė iš {previousBackend} į {currentBackend}. Taip gali nutikti pasikeitus darbalaukio aplinkai, pavyzdžiui, tarp GNOME ir KDE.\n\nGrįžkite į ankstesnę darbalaukio aplinką arba pabandykite paleisti „Signal“ naudodami komandinės eilutės parinktį --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Nepavyko pasiekti duomenų bazės šifravimo rakto, nes OS šifravimo raktų rinkinys pasikeitė iš {previousBackend} į {currentBackend}. Taip gali nutikti pasikeitus darbalaukio aplinkai, pavyzdžiui, tarp GNOME ir KDE.\n\nGrįžkite į ankstesnę darbalaukio aplinką arba pabandykite paleisti „B&A“ naudodami komandinės eilutės parinktį --password-store=\"{previousBackendFlag}\""
   },
   "icu:mainMenuFile": {
     "messageformat": "&Failas"
@@ -138,7 +138,7 @@
     "messageformat": "Rodyti visus"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Išeiti iš Signal"
+    "messageformat": "Išeiti iš B&A"
   },
   "icu:editMenuUndo": {
     "messageformat": "Atšaukti"
@@ -429,10 +429,10 @@
     "messageformat": "Jūs iš kito įrenginio pažymėjote savo saugumo numerį su {name} kaip nepatvirtintą"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Saugumo numeris, kurį bandote patvirtinti, pasikeitė. Peržiūrėkite savo saugumo numerį su {name1}. Atminkite, šis pokytis gali reikšti, kad kažkas bando perimti jūsų susirašinėjimą arba, kad {name2}, tiesiog, iš naujo įdiegė Signal."
+    "messageformat": "Saugumo numeris, kurį bandote patvirtinti, pasikeitė. Peržiūrėkite savo saugumo numerį su {name1}. Atminkite, šis pokytis gali reikšti, kad kažkas bando perimti jūsų susirašinėjimą arba, kad {name2}, tiesiog, iš naujo įdiegė B&A."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Gali būti, kad šie žmonės įdiegė „Signal“ iš naujo arba pakeitė įrenginius. Spustelėk gavėją, kad patvirtintum jo naują saugumo numerį. Tai neprivaloma."
+    "messageformat": "Gali būti, kad šie žmonės įdiegė „B&A“ iš naujo arba pakeitė įrenginius. Spustelėk gavėją, kad patvirtintum jo naują saugumo numerį. Tai neprivaloma."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Siųsti laukiančias žinutes"
@@ -441,7 +441,7 @@
     "messageformat": "Peržiūrėti"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Turi {count,number} kontaktą, kuris galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginį. Jei nori, gali peržiūrėti jo saugumo numerį ir tik tada siųsti.} few {Turi {count,number} kontaktus, kurie galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} many {Turi {count,number} kontakto, kurie galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} other {Turi {count,number} kontaktų, kurie galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.}}"
+    "messageformat": "{count, plural, one {Turi {count,number} kontaktą, kuris galbūt iš naujo įdiegė „B&A“ arba pakeitė įrenginį. Jei nori, gali peržiūrėti jo saugumo numerį ir tik tada siųsti.} few {Turi {count,number} kontaktus, kurie galbūt iš naujo įdiegė „B&A“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} many {Turi {count,number} kontakto, kurie galbūt iš naujo įdiegė „B&A“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} other {Turi {count,number} kontaktų, kurie galbūt iš naujo įdiegė „B&A“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Visi kontaktai peržiūrėti. Bakstelėk „Siųsti“, jei nori tęsti."
@@ -483,7 +483,7 @@
     "messageformat": "Kai spustelėsite „Pateikti“, jūsų žurnalas bus 30-čiai dienų paskelbtas internete unikaliu neskelbiamu URL adresu. Galite, iš pradžių, įsirašyti jį savo įrenginyje."
   },
   "icu:debugLogError": {
-    "messageformat": "Kažkas nutiko su išsiuntimu! Prašome parašyti el. laišką adresu support@signal.org ir pridėti savo žurnalą kaip tekstinį failą."
+    "messageformat": "Kažkas nutiko su išsiuntimu! Prašome parašyti el. laišką adresu support@baxs.com ir pridėti savo žurnalą kaip tekstinį failą."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Derinimo žurnalas pateiktas"
@@ -585,7 +585,7 @@
     "messageformat": "Juodraštinis paveikslo priedas: {path}"
   },
   "icu:decryptionErrorToast": {
-    "messageformat": "Signal Desktop susidūrė su iššifravimo klaida nuo {name}, įrenginio {deviceId}"
+    "messageformat": "B&A Desktop susidūrė su iššifravimo klaida nuo {name}, įrenginio {deviceId}"
   },
   "icu:Toast__ActionLabel--SubmitLog": {
     "messageformat": "Pateikti žurnalą"
@@ -672,7 +672,7 @@
     "messageformat": "Lipdukų paketo kūrėjas"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Apie Signal Desktop"
+    "messageformat": "Apie B&A Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ekrano bendrinimas"
@@ -696,7 +696,7 @@
     "messageformat": "Išeiti"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "Ieškoti"
@@ -750,7 +750,7 @@
     "messageformat": "Rasti pagal telefono numerį"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Sveiki atvykę į Signal"
+    "messageformat": "Sveiki atvykę į B&A"
   },
   "icu:whatsNew": {
     "messageformat": "Atraskite, {whatsNew} šiame atnaujinime"
@@ -837,13 +837,13 @@
     "messageformat": "Jūs"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Jei nori siųsti balso žinutes, suteik „Signal Desktop“ prieigą prie savo mikrofono."
+    "messageformat": "Jei nori siųsti balso žinutes, suteik „B&A Desktop“ prieigą prie savo mikrofono."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Norėdami skambinti, privalote leisti Signal Desktop gauti prieigą prie jūsų mikrofono."
+    "messageformat": "Norėdami skambinti, privalote leisti B&A Desktop gauti prieigą prie jūsų mikrofono."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Norėdami skambinti su vaizdu, privalote leisti Signal Desktop gauti prieigą prie jūsų kameros."
+    "messageformat": "Norėdami skambinti su vaizdu, privalote leisti B&A Desktop gauti prieigą prie jūsų kameros."
   },
   "icu:allowAccess": {
     "messageformat": "Leisti prieigą"
@@ -867,13 +867,13 @@
     "messageformat": "Nutildyti"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "„Signal“ nepavyko atsinaujinti. <retryUpdateButton>Bandykite atnaujinti dar kartą</retryUpdateButton> arba apsilankykite {url}, kad įdiegtumėte naujinį rankiniu būdu. Tuomet <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
+    "messageformat": "„B&A“ nepavyko atsinaujinti. <retryUpdateButton>Bandykite atnaujinti dar kartą</retryUpdateButton> arba apsilankykite {url}, kad įdiegtumėte naujinį rankiniu būdu. Tuomet <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "„Signal“ nepavyko atsinaujinti. Apsilankykite adresu {url}, kad įdiegtumėte naujinį rankiniu būdu. Tada <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
+    "messageformat": "„B&A“ nepavyko atsinaujinti. Apsilankykite adresu {url}, kad įdiegtumėte naujinį rankiniu būdu. Tada <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Tikriausiai, Signal Desktop yra macOS karantine ir negalės būti automatiškai atnaujinta. Pabandykite, naudodami Finder, perkelti  {app} į  {folder}."
+    "messageformat": "Tikriausiai, B&A Desktop yra macOS karantine ir negalės būti automatiškai atnaujinta. Pabandykite, naudodami Finder, perkelti  {app} į  {folder}."
   },
   "icu:ok": {
     "messageformat": "Gerai"
@@ -918,7 +918,7 @@
     "messageformat": "Ši žinutė bus ištrinta iš šio įrenginio."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ši žinutė bus ištrinta visiems žmonėms šiame pokalbyje, jeigu jie naudoja naujausią „Signal“ versiją. Jie matys, kad ištrynei žinutę."
+    "messageformat": "Ši žinutė bus ištrinta visiems žmonėms šiame pokalbyje, jeigu jie naudoja naujausią „B&A“ versiją. Jie matys, kad ištrynei žinutę."
   },
   "icu:from": {
     "messageformat": "Nuo"
@@ -960,7 +960,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "„{title}“ – tai profilio vardas, kurį šis asmuo nusistatė „Signal“."
+    "messageformat": "„{title}“ – tai profilio vardas, kurį šis asmuo nusistatė „B&A“."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Patvirtinta"
@@ -975,7 +975,7 @@
     "messageformat": "Nėra tiesioginių žinučių su {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "„Signal“ kontaktas"
+    "messageformat": "„B&A“ kontaktas"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} yra jūsų sistemos kontaktuose"
@@ -1068,7 +1068,7 @@
     "messageformat": "Sužinoti daugiau"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Programėlė „Signal“ naudoja ištisinį šifravimą ir jai kartais gali tekti atnaujinti tavo pokalbio seansą. Tai neturi įtakos tavo pokalbio saugumui, bet gali būti, kad praleidai žinutę nuo šio adresato, todėl gali paprašyti išsiųsti ją dar kartą."
+    "messageformat": "Programėlė „B&A“ naudoja ištisinį šifravimą ir jai kartais gali tekti atnaujinti tavo pokalbio seansą. Tai neturi įtakos tavo pokalbio saugumui, bet gali būti, kad praleidai žinutę nuo šio adresato, todėl gali paprašyti išsiųsti ją dar kartą."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Susisiekti su palaikymu"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} pasikeitė telefono numerį"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Adresatas prisijungė prie Signal"
+    "messageformat": "Adresatas prisijungė prie B&A"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} ir {conversationTitle} yra ta pati paskyra. Abiejų pokalbių žinučių istorija yra čia."
@@ -1215,7 +1215,7 @@
     "messageformat": "Nepavyksta atsisiųsti įrašų"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Patikrinkite darbalaukio ir telefono interneto ryšį. Telefone atverkite „Signal“ ir bandykite atsisiųsti dar kartą."
+    "messageformat": "Patikrinkite darbalaukio ir telefono interneto ryšį. Telefone atverkite „B&A“ ir bandykite atsisiųsti dar kartą."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Šis įrašas telefone nebepasiekiamas ir jo atsisiųsti negalima."
@@ -1236,10 +1236,10 @@
     "messageformat": "Sužinoti daugiau"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Nuskenuokite šį kodą naudodami telefone įdiegtą Signal programėlę"
+    "messageformat": "Nuskenuokite šį kodą naudodami telefone įdiegtą B&A programėlę"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Atverkite savo telefone Signal programėlę"
+    "messageformat": "Atverkite savo telefone B&A programėlę"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Bakstelėkite ant {settings}, o tuomet ant {linkedDevices}"
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>Įvyko netikėta klaida.</paragraph><paragraph>Bandykite dar kartą.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "„Signal“ negali susieti šio įrenginio naudojant dabartinį tinklą."
+    "messageformat": "„B&A“ negali susieti šio įrenginio naudojant dabartinį tinklą."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Bandyti dar kartą"
@@ -1281,7 +1281,7 @@
     "messageformat": "Įrenginio pavadinimas"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Norėdami pakeisti šio įrenginio pavadinimą, savo telefone atidarykite „Signal“ ir eikite į Nustatymai > Susieti įrenginiai"
+    "messageformat": "Norėdami pakeisti šio įrenginio pavadinimą, savo telefone atidarykite „B&A“ ir eikite į Nustatymai > Susieti įrenginiai"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Jaustukų odos atspalvis"
@@ -1461,7 +1461,7 @@
     "messageformat": "Atleiskite, jūs jau turite per daug susietų įrenginių. Pabandykite kai kuriuos pašalinti."
   },
   "icu:installTooOld": {
-    "messageformat": "Norėdami susieti šį įrenginį su savo telefonu, atnaujinkite jame Signal."
+    "messageformat": "Norėdami susieti šį įrenginį su savo telefonu, atnaujinkite jame B&A."
   },
   "icu:installErrorHeader": {
     "messageformat": "Kažkas nutiko!"
@@ -1512,7 +1512,7 @@
     "messageformat": "Ši skambučio nuoroda nebegalioja."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal skambutis"
+    "messageformat": "B&A skambutis"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Nuorodos ištrinti negalima. Patikrinkite interneto ryšį ir bandykite dar kartą."
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, one {{count,number} asmuo dalyvauja šiame skambutyje} few {{count,number} asmenys dalyvauja šiame skambutyje} many {{count,number} asmenų dalyvauja šiame skambutyje} other {{count,number} asmenų dalyvauja šiame skambutyje}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal paskambins ir susisieks su {person}"
+    "messageformat": "B&A paskambins ir susisieks su {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal skambins naudotojams {first} ir {second}"
+    "messageformat": "B&A skambins naudotojams {first} ir {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal skambins naudotojams {first}, {second} ir {third}"
+    "messageformat": "B&A skambins naudotojams {first}, {second} ir {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmogui} few {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmonėms} many {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmonių} other {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmogui}}"
+    "messageformat": "{others, plural, one {B&A skambins naudotojams {first}, {second} ir dar {others,number} žmogui} few {B&A skambins naudotojams {first}, {second} ir dar {others,number} žmonėms} many {B&A skambins naudotojams {first}, {second} ir dar {others,number} žmonių} other {B&A skambins naudotojams {first}, {second} ir dar {others,number} žmogui}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} gaus pranešimą"
@@ -1725,13 +1725,13 @@
     "messageformat": "Jungiamasi iš naujo…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Jūsų ryšys nutrūko. „Signal“ jungiasi iš naujo."
+    "messageformat": "Jūsų ryšys nutrūko. „B&A“ jungiasi iš naujo."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal bendrina {window}."
+    "messageformat": "B&A bendrina {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "„Signal“ ekrano bendrinimas yra aktyvus"
+    "messageformat": "„B&A“ ekrano bendrinimas yra aktyvus"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Jungiamasi iš naujo…"
@@ -1752,7 +1752,7 @@
     "messageformat": "Reikalingas leidimas"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal reikia leidimo gauti prieigą prie jūsų kompiuterio ekrano įrašymo."
+    "messageformat": "B&A reikia leidimo gauti prieigą prie jūsų kompiuterio ekrano įrašymo."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Pereikite į sistemos nuostatas."
@@ -1761,7 +1761,7 @@
     "messageformat": "Spustelėkite apatinėje kairėje ant spynos piktogramos ir įveskite kompiuterio slaptažodį."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Dešinėje, šalia Signal, pažymėkite langelį. Jei sąraše nematote Signal, spustelėkite +, kad ją pridėtumėte."
+    "messageformat": "Dešinėje, šalia B&A, pažymėkite langelį. Jei sąraše nematote B&A, spustelėkite +, kad ją pridėtumėte."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Atverti sistemos nuostatas"
@@ -1773,7 +1773,7 @@
     "messageformat": "Visada retransliuoti skambučius"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Retransliuoti visus skambučius per Signal serverį, kad būtų išvengta jūsų IP adreso atskleidimo jūsų adresatui. Įjungus, pablogės skambučių kokybė."
+    "messageformat": "Retransliuoti visus skambučius per B&A serverį, kad būtų išvengta jūsų IP adreso atskleidimo jūsų adresatui. Įjungus, pablogės skambučių kokybė."
   },
   "icu:permissions": {
     "messageformat": "Leidimai"
@@ -1791,10 +1791,10 @@
     "messageformat": "Rodyti iškylantįjį teksto formatavimo meniu pasirinkus tekstą"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Rašybos tikrinimas bus įjungtas, kitą kartą paleidus Signal."
+    "messageformat": "Rašybos tikrinimas bus įjungtas, kitą kartą paleidus B&A."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Rašybos tikrinimas bus išjungtas, kitą kartą paleidus Signal."
+    "messageformat": "Rašybos tikrinimas bus išjungtas, kitą kartą paleidus B&A."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Suskleisti į sistemos dėklą"
@@ -1818,13 +1818,13 @@
     "messageformat": "Ištrinti visus duomenis?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Ištrinti visus duomenis ir žinutes iš šios „Signal Desktop“ versijos? Jūsų „Signal“ paskyra ir duomenys telefone ar kituose susietuose įrenginiuose nebus ištrinti."
+    "messageformat": "Ištrinti visus duomenis ir žinutes iš šios „B&A Desktop“ versijos? Jūsų „B&A“ paskyra ir duomenys telefone ar kituose susietuose įrenginiuose nebus ištrinti."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Atsijungiama ir ištrinami visi duomenys…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Turi nebenaudojamų duomenų, likusių iš ankstesnio „Signal Desktop“ diegimo. Jei pasirinksi tęsti, jie bus ištrinti ir pradėsi viską nuo nulio."
+    "messageformat": "Turi nebenaudojamų duomenų, likusių iš ankstesnio „B&A Desktop“ diegimo. Jei pasirinksi tęsti, jie bus ištrinti ir pradėsi viską nuo nulio."
   },
   "icu:deleteOldData": {
     "messageformat": "Ištrinti senus duomenis"
@@ -1866,10 +1866,10 @@
     "messageformat": "Dalinai ištrinta, spustelėk, kad bandytum dar kartą"
   },
   "icu:expiredWarning": {
-    "messageformat": "Pasibaigė šios Signal Desktop skirtos versijos galiojimas. Norint tęsti susirašinėjimą, prašome atsinaujinti iki naujausios versijos."
+    "messageformat": "Pasibaigė šios B&A Desktop skirtos versijos galiojimas. Norint tęsti susirašinėjimą, prašome atsinaujinti iki naujausios versijos."
   },
   "icu:upgrade": {
-    "messageformat": "Spustelėkite, norėdami pereiti į signal.org/download"
+    "messageformat": "Spustelėkite, norėdami pereiti į ba-chat.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Medijos žinutė"
@@ -1878,7 +1878,7 @@
     "messageformat": "Importuoti adresatus"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importuoti visas Signal grupes ir adresatus iš jūsų mobiliojo įrenginio."
+    "messageformat": "Importuoti visas B&A grupes ir adresatus iš jūsų mobiliojo įrenginio."
   },
   "icu:syncNow": {
     "messageformat": "Importuoti dabar"
@@ -1914,7 +1914,7 @@
     "messageformat": "Vakar {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Gali būti, kad „Signal“ nepavyksta apdoroti gaunamos žinutės."
+    "messageformat": "Gali būti, kad „B&A“ nepavyksta apdoroti gaunamos žinutės."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Žinutės turinys yra per ilgas."
@@ -2067,10 +2067,10 @@
     "messageformat": "Redaguoti galima ne vėliau kaip per 24 val. nuo šios žinutės išsiuntimo."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nenaudoja „Signal“. Įsitikinkite, kad įvedėte visą naudotojo vardą."
+    "messageformat": "{atUsername} nenaudoja „B&A“. Įsitikinkite, kad įvedėte visą naudotojo vardą."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Naudotojas nerastas. „{phoneNumber}“ nėra Signal naudotojas."
+    "messageformat": "Naudotojas nerastas. „{phoneNumber}“ nėra B&A naudotojas."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Naudotojas nerastas. „{phoneNumber}“ nėra tinkamas telefono numeris."
@@ -2091,13 +2091,13 @@
     "messageformat": "Pasiektas didžiausias grupės dydis"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal grupėse gali būti daugiausiai {max,number} narių."
+    "messageformat": "B&A grupėse gali būti daugiausiai {max,number} narių."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Pasiekta rekomenduojamo narių skaičiaus riba"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal grupės geriausiai veikia, kai jose yra {max,number} ar mažiau narių. Pridėjus daugiau narių, žinučių išsiuntimas ir gavimas bus uždelsiamas."
+    "messageformat": "B&A grupės geriausiai veikia, kai jose yra {max,number} ar mažiau narių. Pridėjus daugiau narių, žinučių išsiuntimas ir gavimas bus uždelsiamas."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Suteikti šiai grupei pavadinimą"
@@ -2127,7 +2127,7 @@
     "messageformat": "Nepavyko atnaujinti grupės. Patikrinkite savo ryšį ir bandykite dar kartą."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Spustelėkite, norėdami iš naujo susieti Signal Desktop su savo mobiliuoju įrenginiu, kad tęstumėte susirašinėjimą."
+    "messageformat": "Spustelėkite, norėdami iš naujo susieti B&A Desktop su savo mobiliuoju įrenginiu, kad tęstumėte susirašinėjimą."
   },
   "icu:unlinked": {
     "messageformat": "Atsietas"
@@ -2139,16 +2139,16 @@
     "messageformat": "Bandykite atnaujinti programą dar kartą"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Spustelėkite, norėdami paleisti Signal iš naujo"
+    "messageformat": "Spustelėkite, norėdami paleisti B&A iš naujo"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Spustelėkite, norėdami atsisiųsti atnaujinimą"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Programai Signal nepavyko atsinaujinti. Spustelėkite norėdami bandyti dar kartą."
+    "messageformat": "Programai B&A nepavyko atsinaujinti. Spustelėkite norėdami bandyti dar kartą."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Paleisti Signal iš naujo"
+    "messageformat": "Paleisti B&A iš naujo"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Nepaisyti atnaujinimo"
@@ -2247,7 +2247,7 @@
     "messageformat": "Kai kurie priedai nerodomi, nes per dideli."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Naudokis šia nuoroda, kad prisijungtum prie „Signal“ skambučio"
+    "messageformat": "Naudokis šia nuoroda, kad prisijungtum prie „B&A“ skambučio"
   },
   "icu:donation--missing": {
     "messageformat": "Nepavyko gauti paramos informacijos"
@@ -2259,7 +2259,7 @@
     "messageformat": "Bakstelėk šią žinutę telefone ir peržiūrėk savo skirtą paramą"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} skyrė „Signal“ paramą tavo vardu"
+    "messageformat": "{sender} skyrė „B&A“ paramą tavo vardu"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Atverk šios paramos informaciją telefone"
@@ -2310,7 +2310,7 @@
     "messageformat": "Ačiū tau už palaikymą!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Tu skyrei „Signal“ paramą {name} vardu. Šis žmogus turės galimybę parodyti palaikymą savo profilyje."
+    "messageformat": "Tu skyrei „B&A“ paramą {name} vardu. Šis žmogus turės galimybę parodyti palaikymą savo profilyje."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Nepavyko įdiegti lipdukų paketo"
@@ -2325,10 +2325,10 @@
     "messageformat": "Nėra jokių įdiegtų lipdukų"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal menininkų serija"
+    "messageformat": "B&A menininkų serija"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nėra prieinami jokie Signal menininkų lipdukai"
+    "messageformat": "Nėra prieinami jokie B&A menininkų lipdukai"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Jūsų gauti lipdukai"
@@ -2670,19 +2670,19 @@
     "messageformat": "Žinutė per ilga, kad būtų rodoma daugiau"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} išsiuntė jums žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją Signal ypatybę."
+    "messageformat": "{contact} išsiuntė jums žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją B&A ypatybę."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Dabar, kai naudojate atnaujintą Signal versiją, galite paprašyti, kad {contact} jums iš naujo išsiųstų šią žinutę."
+    "messageformat": "Dabar, kai naudojate atnaujintą B&A versiją, galite paprašyti, kad {contact} jums iš naujo išsiųstų šią žinutę."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Vienas iš jūsų įrenginių išsiuntė žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją Signal ypatybę."
+    "messageformat": "Vienas iš jūsų įrenginių išsiuntė žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją B&A ypatybę."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Dabar, kai naudojate atnaujintą Signal versiją, būsimos žinutės, tokios kaip ši, bus sinchronizuojamos."
+    "messageformat": "Dabar, kai naudojate atnaujintą B&A versiją, būsimos žinutės, tokios kaip ši, bus sinchronizuojamos."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Atnaujinti Signal"
+    "messageformat": "Atnaujinti B&A"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Peržiūrėta"
@@ -2946,7 +2946,7 @@
     "messageformat": "Pokalbis pažymėtas kaip neskaitytas"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Jei nori naudoti lipdukų paketo kūrimo įrankį, įdiek „Signal“ telefone ir kompiuteryje"
+    "messageformat": "Jei nori naudoti lipdukų paketo kūrimo įrankį, įdiek „B&A“ telefone ir kompiuteryje"
   },
   "icu:Reactions--remove": {
     "messageformat": "Šalinti reakciją"
@@ -2970,7 +2970,7 @@
     "messageformat": "Netikri vardai ir paskyros"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "„Signal“ niekada neprašys jūsų pateikti registracijos kodą ar PIN. Būkite atidūs – naudotojai gali apsimesti kitais žmonėmis. Profilio vardus pasirenka paskyros turėtojai, jie nėra patvirtinti."
+    "messageformat": "„B&A“ niekada neprašys jūsų pateikti registracijos kodą ar PIN. Būkite atidūs – naudotojai gali apsimesti kitais žmonėmis. Profilio vardus pasirenka paskyros turėtojai, jie nėra patvirtinti."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kriptovaliutų ar pinigų sukčiai"
@@ -3060,13 +3060,13 @@
     "messageformat": "Pranešti apie šlamštą?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "„Signal“ bus pranešta, kad šis asmuo gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„B&A“ bus pranešta, kad šis asmuo gali siųsti šlamštą. „B&A“ nemato jokių pokalbių turinio."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "„Signal“ bus pranešta, kad asmuo, pakvietęs jus į šią grupę, gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„B&A“ bus pranešta, kad asmuo, pakvietęs jus į šią grupę, gali siųsti šlamštą. „B&A“ nemato jokių pokalbių turinio."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "„Signal“ bus pranešta, kad {name}, pakvietęs (-usi) tave į šią grupę, gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„B&A“ bus pranešta, kad {name}, pakvietęs (-usi) tave į šią grupę, gali siųsti šlamštą. „B&A“ nemato jokių pokalbių turinio."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Pranešti apie šlamštą"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>Profilių vardai</clickable> nėra patvirtinti"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Tai oficialus ir vienintelis pokalbis su „Signal“"
+    "messageformat": "Tai oficialus ir vienintelis pokalbis su „B&A“"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Sekite naujienas ir informaciją apie naujas versijas."
@@ -3228,10 +3228,10 @@
     "messageformat": "Neatsakytas vaizdo skambutis"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Programėlė „Signal“ tebėra įjungta"
+    "messageformat": "Programėlė „B&A“ tebėra įjungta"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Programėlė „Signal“ tebebus įjungta pranešimų skiltyje. Gali tai pakeisti nustatymuose."
+    "messageformat": "Programėlė „B&A“ tebebus įjungta pranešimų skiltyje. Gali tai pakeisti nustatymuose."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Gaunamasis balso skambutis"
@@ -3441,7 +3441,7 @@
     "messageformat": "Kopijuoti skambučio nuorodą"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Bendrinti skambučio nuorodą per „Signal“"
+    "messageformat": "Bendrinti skambučio nuorodą per „B&A“"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Pašalinti šį asmenį iš skambučio"
@@ -3561,7 +3561,7 @@
     "messageformat": "Nežinoma nuorodos versija"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Ši Signal Desktop versija nepalaiko šios nuorodos."
+    "messageformat": "Ši B&A Desktop versija nepalaiko šios nuorodos."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nepavyksta prisijungti prie grupės"
@@ -4116,22 +4116,22 @@
     "messageformat": "Tai gali šiek tiek užtrukti"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite B&A programėlei"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite B&A programėlei"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal veikia dėka tokių žmonių kaip jūs. Prisidėkite ir gaukite ženkliuką."
+    "messageformat": "B&A veikia dėka tokių žmonių kaip jūs. Prisidėkite ir gaukite ženkliuką."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Atverkite savo telefone Signal programėlę"
+    "messageformat": "Atverkite savo telefone B&A programėlę"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Viršutiniame kairiajame kampe bakstelėkite ant savo profilio nuotraukos, kad būtų atverti Nustatymai"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Bakstelėk „Paremti Signal“ ir prenumeruok"
+    "messageformat": "Bakstelėk „Paremti B&A“ ir prenumeruok"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Jūsų profilis perkeltas"
@@ -4257,7 +4257,7 @@
     "messageformat": "Būtina atlikti paskyros veiksmus"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Jei norite toliau naudoti šią paskyrą, telefone turite atidaryti „Signal“. Jei neatidarysite „Signal“ savo telefone, jūsų paskyra netrukus bus pašalinta. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
+    "messageformat": "Jei norite toliau naudoti šią paskyrą, telefone turite atidaryti „B&A“. Jei neatidarysite „B&A“ savo telefone, jūsų paskyra netrukus bus pašalinta. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Įrašų atkurti neįmanoma"
@@ -4272,10 +4272,10 @@
     "messageformat": "Pridėti failą"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Šis žmogus nesinaudoja Signal"
+    "messageformat": "Šis žmogus nesinaudoja B&A"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop nepalaiko žinučių rašymo ne Signal adresatams. Paprašykite šio žmogaus, kad, saugesniam susirašinėjimo patyrimui, įsidiegtų Signal."
+    "messageformat": "B&A Desktop nepalaiko žinučių rašymo ne B&A adresatams. Paprašykite šio žmogaus, kad, saugesniam susirašinėjimo patyrimui, įsidiegtų B&A."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Tikrinama adresato registracijos būsena"
@@ -4461,7 +4461,7 @@
     "messageformat": "Slapyvardis"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Slapyvardžiai ir pastabos saugomi „Signal“ serveriuose, jie užšifruoti ištisiniu būdu. Jie matomi tik jums."
+    "messageformat": "Slapyvardžiai ir pastabos saugomi „B&A“ serveriuose, jie užšifruoti ištisiniu būdu. Jie matomi tik jums."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Vardas"
@@ -4512,7 +4512,7 @@
     "messageformat": "Reikalauti, kad administratorius patvirtintų naujus, per grupės nuorodą prisijungiančius, narius"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Nukopijuokite signal.group nuorodą į iškarpinę"
+    "messageformat": "Nukopijuokite B&A.group nuorodą į iškarpinę"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Prašymai ({count,number})"
@@ -4716,13 +4716,13 @@
     "messageformat": "Negalima persiųsti tuščių arba ištrintų žinučių"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Naudok šią nuorodą prisijungti prie „Signal“ skambučio: {url}"
+    "messageformat": "Naudok šią nuorodą prisijungti prie „B&A“ skambučio: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Saugos patarimai"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Atidžiai peržiūrėkite užklausas. „Signal“ rado kitą adresatą tokiu pačiu vardu. <reviewRequestLink>Peržiūrėti užklausą</reviewRequestLink>"
+    "messageformat": "Atidžiai peržiūrėkite užklausas. „B&A“ rado kitą adresatą tokiu pačiu vardu. <reviewRequestLink>Peržiūrėti užklausą</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} grupės narys turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>} few {{count,number} grupės nariai turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>} many {{count,number} grupės nario turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>} other {{count,number} grupės narių turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "Nėra kitų bendrų grupių"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "„Signal“ kontaktas"
+    "messageformat": "„B&A“ kontaktas"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Neseniai pasikeitė profilio vardą iš {oldName} į {newName}"
@@ -4773,7 +4773,7 @@
     "messageformat": "Patvirtinkite, norėdami tęsti susirašinėjimą"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Siekdami neleisti brukalo Signal programėlėje, prašome jūsų užbaigti patvirtinimą."
+    "messageformat": "Siekdami neleisti brukalo B&A programėlėje, prašome jūsų užbaigti patvirtinimą."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Po patvirtinimo galėsite tęsti susirašinėjimą. Visos pristabdytos žinutės bus automatiškai išsiųstos."
@@ -5079,7 +5079,7 @@
     "messageformat": "Ar norėtumėte atmesti šiuos pakeitimus?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Uždaryti „Signal“ ir baigti skambutį?"
+    "messageformat": "Uždaryti „B&A“ ir baigti skambutį?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ne dabar"
@@ -5166,7 +5166,7 @@
     "messageformat": "Bendra"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite B&A programėlei"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Išvaizda"
@@ -5247,7 +5247,7 @@
     "messageformat": "Generuoti nuorodų peržiūras"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Jei nori pakeisti šį nustatymą, atverk „Signal“ savo mobiliajame įrenginyje ir eik čia: Nustatymai > Pokalbiai"
+    "messageformat": "Jei nori pakeisti šį nustatymą, atverk „B&A“ savo mobiliajame įrenginyje ir eik čia: Nustatymai > Pokalbiai"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Konvertuoti tekstinius jaustukus į paveikslėlius"
@@ -5265,13 +5265,13 @@
     "messageformat": "Užblokuota"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "„Signal“ atsarginės kopijos"
+    "messageformat": "„B&A“ atsarginės kopijos"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatinės atsarginės kopijos naudojant „Signal“ saugią, užšifruotą saugyklos paslaugą. Pradėkite naudotis savo telefone. <learnMoreLink>Sužinoti daugiau</learnMoreLink>."
+    "messageformat": "Automatinės atsarginės kopijos naudojant „B&A“ saugią, užšifruotą saugyklos paslaugą. Pradėkite naudotis savo telefone. <learnMoreLink>Sužinoti daugiau</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Sukurkite savo žinučių istorijos atsarginę kopiją, kad niekada neprarastumėte duomenų įsigiję naują telefoną arba iš naujo įdiegę „Signal“."
+    "messageformat": "Sukurkite savo žinučių istorijos atsarginę kopiją, kad niekada neprarastumėte duomenų įsigiję naują telefoną arba iš naujo įdiegę „B&A“."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Informacija apie atsarginę kopiją"
@@ -5280,7 +5280,7 @@
     "messageformat": "Žinučių ir visų įrašų atsarginė kopija"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Prenumerata nerasta. Atnaujinkite, kad galėtumėte toliau naudoti „Signal“ atsargines kopijas."
+    "messageformat": "Prenumerata nerasta. Atnaujinkite, kad galėtumėte toliau naudoti „B&A“ atsargines kopijas."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Žinučių ir {mediaDayCount,number} dienos įrašų atsarginė kopija} few {Žinučių ir {mediaDayCount,number} dienų įrašų atsarginė kopija} many {Žinučių ir {mediaDayCount,number} dienos įrašų atsarginė kopija} other {Žinučių ir {mediaDayCount,number} dienų įrašų atsarginė kopija}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "Prenumerata nutraukta"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Telefone galite tvarkyti savo „Signal“ atsarginių kopijų prenumeratą arba jos atsisakyti."
+    "messageformat": "Telefone galite tvarkyti savo „B&A“ atsarginių kopijų prenumeratą arba jos atsisakyti."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Savo telefone galite tvarkyti arba atnaujinti „Signal“ atsargines kopijas."
+    "messageformat": "Savo telefone galite tvarkyti arba atnaujinti „B&A“ atsargines kopijas."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Telefone galite tvarkyti arba atnaujinti savo „Signal“ atsarginių kopijų prenumeratą."
+    "messageformat": "Telefone galite tvarkyti arba atnaujinti savo „B&A“ atsarginių kopijų prenumeratą."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Paskutinė atsarginė kopija"
@@ -5322,7 +5322,7 @@
     "messageformat": "Sukurkite visiškai užšifruotą atsarginę kopiją, kurią galėsite atkurti savo telefone. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Norėdami atkurti atsarginę kopiją, įsidiekite naują „Signal“ kopiją. Atverkite programėlę ir bakstelėkite „Atkurti atsarginę kopiją“, tada eikite į atsarginės kopijos aplanką. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Norėdami atkurti atsarginę kopiją, įsidiekite naują „B&A“ kopiją. Atverkite programėlę ir bakstelėkite „Atkurti atsarginę kopiją“, tada eikite į atsarginės kopijos aplanką. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Pasirinkti aplanką"
@@ -5358,7 +5358,7 @@
     "messageformat": "Saugokite savo raktą"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "„Signal“ negalės padėti jums atkurti atsarginės kopijos, jei pamesite raktą. Išsaugokite jį saugioje vietoje ir nesidalykite juo su kitais."
+    "messageformat": "„B&A“ negalės padėti jums atkurti atsarginės kopijos, jei pamesite raktą. Išsaugokite jį saugioje vietoje ir nesidalykite juo su kitais."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Tęsti"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, one {{num,number} adresatas} few {{num,number} adresatai} many {{num,number} adresato} other {{num,number} adresatų}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Norėdami keisti šiuos nustatymus, atverkite Signal programėlę savo mobiliajame įrenginyje ir pereikite į Nustatymai > Privatumas"
+    "messageformat": "Norėdami keisti šiuos nustatymus, atverkite B&A programėlę savo mobiliajame įrenginyje ir pereikite į Nustatymai > Privatumas"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Telefono numeris"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Pasirink, kas gali matyti tavo telefono numerį, ir kas gali su tavimi susisiekti per „Signal“."
+    "messageformat": "Pasirink, kas gali matyti tavo telefono numerį, ir kas gali su tavimi susisiekti per „B&A“."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Keisti…"
@@ -5430,10 +5430,10 @@
     "messageformat": "Kas gali mane rasti pagal numerį"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Visi jūsų telefono numerį turintys žmonės matys, kad naudojatės „Signal“, ir galės su jumis pradėti pokalbį."
+    "messageformat": "Visi jūsų telefono numerį turintys žmonės matys, kad naudojatės „B&A“, ir galės su jumis pradėti pokalbį."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Niekas nematys, kad naudojatės „Signal“, nebent išsiųsite jiems žinutę arba jau esate pradėję pokalbį."
+    "messageformat": "Niekas nematys, kad naudojatės „B&A“, nebent išsiųsite jiems žinutę arba jau esate pradėję pokalbį."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Visi"
@@ -5445,7 +5445,7 @@
     "messageformat": "Ar tikrai to nori?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Jei „{settingTitle}“ nustatysite į „{nobodyLabel}“, žmonėms bus sunkiau jus rasti per „Signal“."
+    "messageformat": "Jei „{settingTitle}“ nustatysite į „{nobodyLabel}“, žmonėms bus sunkiau jus rasti per „B&A“."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Susirašinėjimas"
@@ -5499,7 +5499,7 @@
     "messageformat": "Nustatyti"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Paleisk „Signal“ iš naujo pakeitimams pritaikyti"
+    "messageformat": "Paleisk „B&A“ iš naujo pakeitimams pritaikyti"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Norint pakeisti kalbą, programėlę reikia paleisti iš naujo."
@@ -5514,13 +5514,13 @@
     "messageformat": "Ekrano saugumas"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Siekdami didesnio privatumo neleiskite šiame kompiuteryje daryti „Signal“ ekrano kopijų."
+    "messageformat": "Siekdami didesnio privatumo neleiskite šiame kompiuteryje daryti „B&A“ ekrano kopijų."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Išjungti ekrano saugumą?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Jei ši funkcija išjungta, „Microsoft Windows“ gali leisti „Signal“ užfiksuoti ekrano kopijas ir naudoti jas funkcijoms, kurios gali būti ne privačios."
+    "messageformat": "Jei ši funkcija išjungta, „Microsoft Windows“ gali leisti „B&A“ užfiksuoti ekrano kopijas ir naudoti jas funkcijoms, kurios gali būti ne privačios."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Išjungti"
@@ -5535,25 +5535,25 @@
     "messageformat": "Naujinys atsisiųstas"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Atverkite savo telefone Signal programėlę"
+    "messageformat": "Atverkite savo telefone B&A programėlę"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Jūsų paskyra netrukus bus ištrinta, nebent telefone atidarysite „Signal“. Tai atlikus ši žinutė išnyks. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
+    "messageformat": "Jūsų paskyra netrukus bus ištrinta, nebent telefone atidarysite „B&A“. Tai atlikus ši žinutė išnyks. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Atidarykite „Signal“ telefone, kad paskyra liktų aktyvi"
+    "messageformat": "Atidarykite „B&A“ telefone, kad paskyra liktų aktyvi"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Sužinoti daugiau"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal patiria techninius nesklandumus. Mes sunkiai dirbame, kad kaip įmanoma greičiau atkurtume paslaugą."
+    "messageformat": "B&A patiria techninius nesklandumus. Mes sunkiai dirbame, kad kaip įmanoma greičiau atkurtume paslaugą."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Reikia atnaujinimo"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Norėdami užbaigti žinučių sinchronizavimą, atnaujinkite „Signal Desktop“ dabar."
+    "messageformat": "Norėdami užbaigti žinučių sinchronizavimą, atnaujinkite „B&A Desktop“ dabar."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Atnaujinti"
@@ -5562,19 +5562,19 @@
     "messageformat": "Reikia atnaujinimo"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Jei nori toliau naudoti „Signal“, turi atsisiųsti naujausią versiją."
+    "messageformat": "Jei nori toliau naudoti „B&A“, turi atsisiųsti naujausią versiją."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Atsisiųsti {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Paleisk „Signal“ iš naujo ir įdiek atnaujinimą."
+    "messageformat": "Paleisk „B&A“ iš naujo ir įdiek atnaujinimą."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Nepavyko atnaujinti „Signal Desktop“, bet gali atsisiųsti naują versiją. Eik į {downloadUrl} ir įdiek naują versiją rankiniu būdu, o tada kreipkis į aptarnavimo komandą arba pranešk apie šią problemą."
+    "messageformat": "Nepavyko atnaujinti „B&A Desktop“, bet gali atsisiųsti naują versiją. Eik į {downloadUrl} ir įdiek naują versiją rankiniu būdu, o tada kreipkis į aptarnavimo komandą arba pranešk apie šią problemą."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Nepavyksta užverti Signal.",
+    "messageformat": "Nepavyksta užverti B&A.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Naujesnė „Signal“ versija jau įdiegta. Ar tikrai nori tęsti?",
+    "messageformat": "Naujesnė „B&A“ versija jau įdiegta. Ar tikrai nori tęsti?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Programa užstrigo"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal buvo paleista iš naujo po strigties. Galite pateikti pranešimą apie strigtį, kad padėtumėte Signal ištirti problemą."
+    "messageformat": "B&A buvo paleista iš naujo po strigties. Galite pateikti pranešimą apie strigtį, kad padėtumėte B&A ištirti problemą."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Siųsti"
@@ -5706,7 +5706,7 @@
     "messageformat": "Spustelėkite „{buttonName}“ toliau"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Įjunkite \"Signal\""
+    "messageformat": "Įjunkite \"B&A\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Eiti į nustatymus"
@@ -5796,7 +5796,7 @@
     "messageformat": "Sužinoti daugiau"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "„Signal“ kontaktai"
+    "messageformat": "„B&A“ kontaktai"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} – tai žmonės, kuriems išreiškei pasitikėjimą:"
@@ -5946,7 +5946,7 @@
     "messageformat": "Slėpti istoriją nuo"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Visi „Signal“ kontaktai"
+    "messageformat": "Visi „B&A“ kontaktai"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Visi, išskyrus…"
@@ -5964,7 +5964,7 @@
     "messageformat": "Žiūrėti pranešimus"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Jei nori pakeisti šį nustatymą, atverk „Signal“ savo mobiliajame įrenginyje, eik į Nustatymus ir pasirink Istorijas"
+    "messageformat": "Jei nori pakeisti šį nustatymą, atverk „B&A“ savo mobiliajame įrenginyje, eik į Nustatymus ir pasirink Istorijas"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Kas gali žiūrėti šią istoriją"
@@ -6024,7 +6024,7 @@
     "messageformat": "„Mano istorijos“ privatumas"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Pasirink, kurie „Signal“ kontaktai gali žiūrėti tavo istoriją. Bet kada galėsi pakeisti šį pasirinkimą privatumo nustatymuose. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Pasirink, kurie „B&A“ kontaktai gali žiūrėti tavo istoriją. Bet kada galėsi pakeisti šį pasirinkimą privatumo nustatymuose. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Ištrinti istoriją"
@@ -6093,7 +6093,7 @@
     "messageformat": "Atsisiųsti priedą"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Įjunk peržiūrų pranešimus, kad matytum, kas peržiūrėjo tavo istorijas. Atidaryk „Signal“ savo mobiliajame įrenginyje, eik į Nustatymus ir pasirink Istorijas."
+    "messageformat": "Įjunk peržiūrų pranešimus, kad matytum, kas peržiūrėjo tavo istorijas. Atidaryk „B&A“ savo mobiliajame įrenginyje, eik į Nustatymus ir pasirink Istorijas."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Atsakymų kol kas nėra"
@@ -6279,7 +6279,7 @@
     "messageformat": "Jūsų QR kodas ir nuoroda nustatyti iš naujo, o naudotojo vardas yra {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Nuskaitykite šį QR kodą telefonu, kad galėtumėte kalbėtis su manimi per „Signal“.",
+    "messageformat": "Nuskaitykite šį QR kodą telefonu, kad galėtumėte kalbėtis su manimi per „B&A“.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "Atmesti"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Netrukus „Signal“ nebepalaikys tavo kompiuteryje esančios {OS} versijos. Jei nori toliau naudoti „Signal“, atnaujink kompiuterio operacinę sistemą iki {expirationDate}. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
+    "messageformat": "Netrukus „B&A“ nebepalaikys tavo kompiuteryje esančios {OS} versijos. Jei nori toliau naudoti „B&A“, atnaujink kompiuterio operacinę sistemą iki {expirationDate}. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "„Signal“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „Signal“, atnaujink savo kompiuteryje esančią {OS} versiją. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
+    "messageformat": "„B&A“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „B&A“, atnaujink savo kompiuteryje esančią {OS} versiją. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "„Signal“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „Signal“, atnaujink savo kompiuteryje esančią {OS} versiją."
+    "messageformat": "„B&A“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „B&A“, atnaujink savo kompiuteryje esančią {OS} versiją."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Redaguota"
@@ -6529,7 +6529,7 @@
     "messageformat": "Kopijuoti nuorodą"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Bendrinti nuorodą per „Signal“"
+    "messageformat": "Bendrinti nuorodą per „B&A“"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Ištrinti nuorodą"
@@ -6595,7 +6595,7 @@
     "messageformat": "Jei norite pakeisti šį nustatymą, nustatykite „Kas gali matyti mano numerį“ vertę į „Niekas“."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Programoje „Signal“ profilių vardus pasirenka paskyros savininkai:"
+    "messageformat": "Programoje „B&A“ profilių vardus pasirenka paskyros savininkai:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Profilių vardai nėra patvirtinti"
@@ -6628,7 +6628,7 @@
     "messageformat": "Privatumas svarbesnis už pelną"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Privačios žinutės – jūsų remiama paslauga. Jokių reklamų, jokio sekimo, jokių kompromisų. Skirkite paramą dabar ir palaikykite „Signal“. <readMoreLink>Skaityti daugiau</readMoreLink>"
+    "messageformat": "Privačios žinutės – jūsų remiama paslauga. Jokių reklamų, jokio sekimo, jokių kompromisų. Skirkite paramą dabar ir palaikykite „B&A“. <readMoreLink>Skaityti daugiau</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Skirti paramą"
@@ -6646,7 +6646,7 @@
     "messageformat": "Tavo informacija yra privati"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>„Signal“ nerenka ir nesaugo jokios jūsų asmeninės informacijos, kai skiriate paramą.</paragraph><paragraph>Jūsų paramai gauti kaip mokėjimų tvarkytoją naudojame „Stripe“. Mes nepasiekiame, nelaikome ir neišsaugome jokios jūsų jiems pateiktos informacijos.</paragraph><paragraph>„Signal“ nesusieja ir negali susieti jūsų paramos su jūsų „Signal“ paskyra.</paragraph><paragraph>Dėkojame už jūsų paramą!</paragraph>"
+    "messageformat": "<paragraph>„B&A“ nerenka ir nesaugo jokios jūsų asmeninės informacijos, kai skiriate paramą.</paragraph><paragraph>Jūsų paramai gauti kaip mokėjimų tvarkytoją naudojame „Stripe“. Mes nepasiekiame, nelaikome ir neišsaugome jokios jūsų jiems pateiktos informacijos.</paragraph><paragraph>„B&A“ nesusieja ir negali susieti jūsų paramos su jūsų „B&A“ paskyra.</paragraph><paragraph>Dėkojame už jūsų paramą!</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kvitai"
@@ -6655,7 +6655,7 @@
     "messageformat": "DUK apie paramą"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvitai nesinchronizuojami skirtinguose įrenginiuose. Jei įdiegėte „Signal“ iš naujo, anksčiau skirtos paramos kvitai nebus prieinami."
+    "messageformat": "Kvitai nesinchronizuojami skirtinguose įrenginiuose. Jei įdiegėte „B&A“ iš naujo, anksčiau skirtos paramos kvitai nebus prieinami."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nėra kvitų"
@@ -6688,7 +6688,7 @@
     "messageformat": "Kredito arba debeto kortelė"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Įveskite savo kredito ar debeto kortelės duomenis. Jūsų asmeninės informacijos „Signal“ nerenka ir nekaupia. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
+    "messageformat": "Įveskite savo kredito ar debeto kortelės duomenis. Jūsų asmeninės informacijos „B&A“ nerenka ir nekaupia. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kortelės numeris"
@@ -6697,7 +6697,7 @@
     "messageformat": "Galiojimo data"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Skirti „Signal“ {formattedCurrencyAmount} paramą"
+    "messageformat": "Skirti „B&A“ {formattedCurrencyAmount} paramą"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Neteisingas kortelės numeris"
@@ -6715,7 +6715,7 @@
     "messageformat": "Per trumpas kodas"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Gaukite „Signal“ rėmėjo ženklelį 30 dienų"
+    "messageformat": "Gaukite „B&A“ rėmėjo ženklelį 30 dienų"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "Paramos kvitas"
@@ -6733,7 +6733,7 @@
     "messageformat": "Vieną kartą"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Dėkojame, kad remiate „Signal“. Jūsų įnašas padeda skatinti misiją apsaugoti žodžio laisvę ir įgalinti saugų bendravimą milijonams žmonių visame pasaulyje dėl atvirojo kodo privatumo technologijos. Jei gyvenate Jungtinėse Valstijose, išsaugokite šį kvitą, kad turėtumėte jį savo mokestinių duomenų reikmėms. „Signal Technology Foundation“ yra Jungtinėse Valstijose įsteigta pelno nesiekianti organizacija, atleista nuo mokesčių pagal Vidaus mokesčių kodekso skirsnį 501c3. Mūsų federalinis mokesčių mokėtojo kodas: 82–4506840."
+    "messageformat": "Dėkojame, kad remiate „B&A“. Jūsų įnašas padeda skatinti misiją apsaugoti žodžio laisvę ir įgalinti saugų bendravimą milijonams žmonių visame pasaulyje dėl atvirojo kodo privatumo technologijos. Jei gyvenate Jungtinėse Valstijose, išsaugokite šį kvitą, kad turėtumėte jį savo mokestinių duomenų reikmėms. „B&A Technology Foundation“ yra Jungtinėse Valstijose įsteigta pelno nesiekianti organizacija, atleista nuo mokesčių pagal Vidaus mokesčių kodekso skirsnį 501c3. Mūsų federalinis mokesčių mokėtojo kodas: 82–4506840."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Parama atšaukta"
@@ -6781,7 +6781,7 @@
     "messageformat": "Teikiant paramą įvyko klaida"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Jūsų parama galėjo būti neapdorota. Norėdami patikrinti kvitus ir patvirtinti, spustelėkite „Paremti „Signal“, o tada – „Paramos kvitai“."
+    "messageformat": "Jūsų parama galėjo būti neapdorota. Norėdami patikrinti kvitus ir patvirtinti, spustelėkite „Paremti „B&A“, o tada – „Paramos kvitai“."
   },
   "icu:Donations__Processing": {
     "messageformat": "Parama apdorojama..."
@@ -6817,11 +6817,11 @@
     "messageformat": "Atšaukti paramą"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Šioje versijoje yra daug smulkių patobulinimų ir klaidų ištaisymų, kurie padės Signal sklandžiai veikti.",
+    "messageformat": "Šioje versijoje yra daug smulkių patobulinimų ir klaidų ištaisymų, kurie padės B&A sklandžiai veikti.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Papildomi smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „Signal“!",
+    "messageformat": "Papildomi smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „B&A“!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „Signal“!",
+    "messageformat": "Smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „B&A“!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {

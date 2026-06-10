@@ -42,7 +42,7 @@
     "messageformat": "傳送高畫質的媒體檔將會使用較多數據。"
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "贊助 Signal"
+    "messageformat": "贊助 B&A"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "標準"
@@ -78,10 +78,10 @@
     "messageformat": "未知的群組"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "無法開啟 Signal"
+    "messageformat": "無法開啟 B&A"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "若要解決問題，請依照支援頁面上的復原指南，或聯絡 Signal 支援尋求協助。\n\n如果你需要立即使用 Signal，可以刪除你的資料，並重新連結此桌面電腦。你可以選擇從手機轉移訊息紀錄。"
+    "messageformat": "若要解決問題，請依照支援頁面上的復原指南，或聯絡 B&A 支援尋求協助。\n\n如果你需要立即使用 B&A，可以刪除你的資料，並重新連結此桌面電腦。你可以選擇從手機轉移訊息紀錄。"
   },
   "icu:databaseError": {
     "messageformat": "資料庫錯誤"
@@ -93,16 +93,16 @@
     "messageformat": "永久刪除所有資料"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "你的所有訊息紀錄和媒體將從此裝置中永久刪除。這不會刪除你手機中的任何資料。\n\n重新連結後，你將可以在此裝置上使用 Signal。你可以選擇從手機轉移訊息紀錄。"
+    "messageformat": "你的所有訊息紀錄和媒體將從此裝置中永久刪除。這不會刪除你手機中的任何資料。\n\n重新連結後，你將可以在此裝置上使用 B&A。你可以選擇從手機轉移訊息紀錄。"
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "你的資料庫版本與此 Signal 的版本不匹配。請確定你在電腦上開啟了最新版本的 Signal。"
+    "messageformat": "你的資料庫版本與此 B&A 的版本不匹配。請確定你在電腦上開啟了最新版本的 B&A。"
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "無法存取資料庫加密金鑰，因為作業系統加密金鑰環後端已從{previousBackend}變更為{currentBackend}。如果桌面環境有所轉變（例如在 GNOME 和 KDE 之間），就有可能發生這種情況。\n\n請切換到先前的桌面環境。"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "無法存取資料庫加密金鑰，因為作業系統加密金鑰環後端已從{previousBackend}變更為{currentBackend}。如果桌面環境有所轉變（例如在 GNOME 和 KDE 之間），就有可能發生這種情況。\n\n請切換到先前的桌面環境或嘗試使用命令列標誌 --password-store=\"{previousBackendFlag}\" 執行 Signal"
+    "messageformat": "無法存取資料庫加密金鑰，因為作業系統加密金鑰環後端已從{previousBackend}變更為{currentBackend}。如果桌面環境有所轉變（例如在 GNOME 和 KDE 之間），就有可能發生這種情況。\n\n請切換到先前的桌面環境或嘗試使用命令列標誌 --password-store=\"{previousBackendFlag}\" 執行 B&A"
   },
   "icu:mainMenuFile": {
     "messageformat": "檔案 (&F)"
@@ -138,7 +138,7 @@
     "messageformat": "顯示全部"
   },
   "icu:appMenuQuit": {
-    "messageformat": "結束 Signal"
+    "messageformat": "結束 B&A"
   },
   "icu:editMenuUndo": {
     "messageformat": "復原"
@@ -429,10 +429,10 @@
     "messageformat": "您標記了  {name} 在另一台設備上的安全碼為未驗證狀態"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "你嘗試驗證的安全號碼已變更。 請使用{name1}來檢查新的安全碼。 請記住，此變更可能意味著有人試圖攔截你的通訊，或者{name2}只是重新安裝了Signal。"
+    "messageformat": "你嘗試驗證的安全號碼已變更。 請使用{name1}來檢查新的安全碼。 請記住，此變更可能意味著有人試圖攔截你的通訊，或者{name2}只是重新安裝了B&A。"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "以下的聯絡人可能已重新安裝 Signal 或更換裝置。請點選接收者以確認新安全碼。這是選擇性的。"
+    "messageformat": "以下的聯絡人可能已重新安裝 B&A 或更換裝置。請點選接收者以確認新安全碼。這是選擇性的。"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "傳送待處理的訊息"
@@ -441,7 +441,7 @@
     "messageformat": "檢查"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {你有 {count,number} 位聯絡人可能已重新安裝 Signal 或更換裝置。你可以先檢查他們的安全碼再傳送訊息。}}"
+    "messageformat": "{count, plural, other {你有 {count,number} 位聯絡人可能已重新安裝 B&A 或更換裝置。你可以先檢查他們的安全碼再傳送訊息。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "已檢查所有聯絡人，請點擊「傳送」以繼續操作。"
@@ -4512,7 +4512,7 @@
     "messageformat": "需要管理員批准透過群組連結加入的新成員"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "將 signal.group 連結複製到剪貼簿"
+    "messageformat": "將 B&A.group 連結複製到剪貼簿"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "要求 ({count,number})"
@@ -5964,7 +5964,7 @@
     "messageformat": "已瀏覽標記"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "要變更此設定，請在你的行動裝置上開啟 Signal 應用程式，然後前往「設定」 >「限時動態」"
+    "messageformat": "要變更此設定，請在你的行動裝置上開啟 B&A 應用程式，然後前往「設定」 >「限時動態」"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "誰能瀏覽此限動"
@@ -6688,7 +6688,7 @@
     "messageformat": "信用卡或簽帳金融卡"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "請輸入信用卡或簽帳金融卡詳情。Signal 不會收集或儲存你的個人資料。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "請輸入信用卡或簽帳金融卡詳情。B&A 不會收集或儲存你的個人資料。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "付款卡號碼"
@@ -6697,7 +6697,7 @@
     "messageformat": "到期日"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "捐款 {formattedCurrencyAmount} 給 Signal"
+    "messageformat": "捐款 {formattedCurrencyAmount} 給 B&A"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "付款卡號碼無效"
@@ -6715,7 +6715,7 @@
     "messageformat": "代碼太短"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "獲取為期 30 天的 Signal 捐款徽章"
+    "messageformat": "獲取為期 30 天的 B&A 捐款徽章"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收據"
@@ -6755,21 +6755,6 @@
   },
   "icu:Donations__Toast__Cancelled": {
     "messageformat": "已取消捐款"
-  },
-  "icu:Donations__Toast__Completed": {
-    "messageformat": "已完成捐款"
-  },
-  "icu:Donations__Toast__Error": {
-    "messageformat": "處理捐款時發生錯誤"
-  },
-  "icu:Donations__Toast__Processing": {
-    "messageformat": "正在處理捐款"
-  },
-  "icu:Donations__Toast__VerificationFailed": {
-    "messageformat": "驗證失敗"
-  },
-  "icu:Donations__Toast__VerificationNeeded": {
-    "messageformat": "你有一筆處理中的捐款需要額外驗證。"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "付款方式拒絕"

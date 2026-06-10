@@ -42,7 +42,7 @@
     "messageformat": "고품질 미디어는 더 많은 모바일 데이터를 사용할 수 있습니다."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal에 기부"
+    "messageformat": "B&A에 기부"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "기본"
@@ -78,10 +78,10 @@
     "messageformat": "알 수 없는 그룹"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal을 열 수 없음"
+    "messageformat": "B&A을 열 수 없음"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "문제를 해결하려면 지원 페이지의 복원 가이드를 따라하거나, Signal 지원팀에 연락하여 도움을 받으세요.\n\nSignal을 바로 사용해야 하는 경우 데이터를 삭제한 다음 이 데스크톱을 다시 연결할 수 있습니다. 원하는 경우 휴대폰의 메시지 기록을 전송할 수 있습니다."
+    "messageformat": "문제를 해결하려면 지원 페이지의 복원 가이드를 따라하거나, B&A 지원팀에 연락하여 도움을 받으세요.\n\nB&A을 바로 사용해야 하는 경우 데이터를 삭제한 다음 이 데스크톱을 다시 연결할 수 있습니다. 원하는 경우 휴대폰의 메시지 기록을 전송할 수 있습니다."
   },
   "icu:databaseError": {
     "messageformat": "데이터베이스 오류"
@@ -93,16 +93,16 @@
     "messageformat": "모든 데이터 영구 삭제"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "모든 메시지 기록과 미디어가 이 기기에서 영구 삭제됩니다. 휴대폰 데이터는 삭제하지 않습니다.\n\n다시 연결한 후 이 기기에서 Signal을 사용할 수 있습니다. 원하는 경우 휴대폰의 메시지 기록을 전송할 수 있습니다."
+    "messageformat": "모든 메시지 기록과 미디어가 이 기기에서 영구 삭제됩니다. 휴대폰 데이터는 삭제하지 않습니다.\n\n다시 연결한 후 이 기기에서 B&A을 사용할 수 있습니다. 원하는 경우 휴대폰의 메시지 기록을 전송할 수 있습니다."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "데이터베이스 버전이 이 버전의 Signal과 일치하지 않습니다. 컴퓨터에서 최신 버전 Signal을 열었는지 확인하세요."
+    "messageformat": "데이터베이스 버전이 이 버전의 B&A과 일치하지 않습니다. 컴퓨터에서 최신 버전 B&A을 열었는지 확인하세요."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "OS 암호화 키링 백엔드가 {previousBackend}에서 {currentBackend}(으)로 변경되어 데이터베이스 암호화 키에 접근할 수 없습니다. 이 문제는 데스크톱 환경(예: GNOME 및 KDE 간)이 변경될 때 발생할 수 있습니다.\n\n이전 데스크톱 환경으로 전환하세요."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "OS 암호화 키링 백엔드가 {previousBackend}에서 {currentBackend}(으)로 변경되어 데이터베이스 암호화 키에 접근할 수 없습니다. 이 문제는 데스크톱 환경(예: GNOME 및 KDE 간)이 변경될 때 발생할 수 있습니다.\n\n이전 데스크톱 환경으로 전환하거나 --password-store=\"{previousBackendFlag}\" 명령줄 플래그로 Signal을 실행해 보세요."
+    "messageformat": "OS 암호화 키링 백엔드가 {previousBackend}에서 {currentBackend}(으)로 변경되어 데이터베이스 암호화 키에 접근할 수 없습니다. 이 문제는 데스크톱 환경(예: GNOME 및 KDE 간)이 변경될 때 발생할 수 있습니다.\n\n이전 데스크톱 환경으로 전환하거나 --password-store=\"{previousBackendFlag}\" 명령줄 플래그로 B&A을 실행해 보세요."
   },
   "icu:mainMenuFile": {
     "messageformat": "파일 (&F)"
@@ -138,7 +138,7 @@
     "messageformat": "모두 보이기"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal 종료"
+    "messageformat": "B&A 종료"
   },
   "icu:editMenuUndo": {
     "messageformat": "실행 취소"
@@ -429,10 +429,10 @@
     "messageformat": "{name}와의 안전 번호를 다른 기기에서 미검증 상태로 표시했습니다"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "확인하려고 하시는 안전 번호가 변경되었습니다. {name1} 님으로 새 안전 번호를 검토하세요. 이 변경 사항은 누군가가 내 통신 내용을 가로채려고 했을 수도, {name2} 님이 단순히 Signal을 다시 설치했을 수도 있습니다."
+    "messageformat": "확인하려고 하시는 안전 번호가 변경되었습니다. {name1} 님으로 새 안전 번호를 검토하세요. 이 변경 사항은 누군가가 내 통신 내용을 가로채려고 했을 수도, {name2} 님이 단순히 B&A을 다시 설치했을 수도 있습니다."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "다음 사용자는 Signal을 다시 설치했거나 장치를 변경했을 수 있습니다. 받는 사람을 클릭하여 새로운 안전 번호를 확인하세요. 이 작업은 선택 사항입니다."
+    "messageformat": "다음 사용자는 B&A을 다시 설치했거나 장치를 변경했을 수 있습니다. 받는 사람을 클릭하여 새로운 안전 번호를 확인하세요. 이 작업은 선택 사항입니다."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "보류 중인 메시지 보내기"
@@ -441,7 +441,7 @@
     "messageformat": "검토"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {Signal을 다시 설치하거나 장치를 변경했을 수 있는 커넥션이 {count,number}개 있습니다. 해당 사용자의 안전 번호를 전송 전 미리 검토할 수 있습니다.}}"
+    "messageformat": "{count, plural, other {B&A을 다시 설치하거나 장치를 변경했을 수 있는 커넥션이 {count,number}개 있습니다. 해당 사용자의 안전 번호를 전송 전 미리 검토할 수 있습니다.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "모든 커넥션을 검토했습니다. 보내기를 클릭하여 계속하세요."
@@ -483,7 +483,7 @@
     "messageformat": "제출을 클릭하면 게시되지 않은 고유 URL에서 로그가 30일 동안 온라인에 게시됩니다. 로컬로 먼저 저장할 수 있습니다."
   },
   "icu:debugLogError": {
-    "messageformat": "업로드 중 문제가 발생했습니다! 로그를 텍스트 파일로 첨부하여 support@signal.org에 이메일을 보내주세요."
+    "messageformat": "업로드 중 문제가 발생했습니다! 로그를 텍스트 파일로 첨부하여 support@baxs.com에 이메일을 보내주세요."
   },
   "icu:debugLogSuccess": {
     "messageformat": "디버그 로그 제출함"
@@ -672,7 +672,7 @@
     "messageformat": "스티커 팩 제조기"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktop에 대하여"
+    "messageformat": "B&A Desktop에 대하여"
   },
   "icu:screenShareWindow": {
     "messageformat": "화면 공유하기"
@@ -696,7 +696,7 @@
     "messageformat": "종료"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "검색"
@@ -750,7 +750,7 @@
     "messageformat": "전화번호로 검색"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal에 오신 것을 환영합니다"
+    "messageformat": "B&A에 오신 것을 환영합니다"
   },
   "icu:whatsNew": {
     "messageformat": "이 업데이트의 {whatsNew} 보기"
@@ -837,13 +837,13 @@
     "messageformat": "나"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Signal Desktop에서 음성 메시지를 보내려면 마이크 권한이 필요합니다."
+    "messageformat": "B&A Desktop에서 음성 메시지를 보내려면 마이크 권한이 필요합니다."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "통화하려면 Signal Desktop이 마이크에 액세스하도록 허용해야 합니다."
+    "messageformat": "통화하려면 B&A Desktop이 마이크에 액세스하도록 허용해야 합니다."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "영상 통화의 경우 Signal Desktop이 카메라에 액세스하도록 허용해야 합니다."
+    "messageformat": "영상 통화의 경우 B&A Desktop이 카메라에 액세스하도록 허용해야 합니다."
   },
   "icu:allowAccess": {
     "messageformat": "권한 허용"
@@ -867,13 +867,13 @@
     "messageformat": "음소거"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal을 업데이트하지 못했습니다. <retryUpdateButton>업데이트를 다시 시도</retryUpdateButton>하거나 {url}을(를) 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의하세요."
+    "messageformat": "B&A을 업데이트하지 못했습니다. <retryUpdateButton>업데이트를 다시 시도</retryUpdateButton>하거나 {url}을(를) 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의하세요."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal을 업데이트하지 못했습니다. {url}을(를) 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의하세요."
+    "messageformat": "B&A을 업데이트하지 못했습니다. {url}을(를) 방문하여 수동으로 설치하세요. 그런 다음 <contactSupportLink>지원팀</contactSupportLink>에 이 문제에 관해 문의하세요."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop이 macOS 검역에 걸렸을 가능성이 크며 자동 업데이트할 수 없습니다. 탐색기를 사용하여 {app} 앱을 {folder} 폴더로 이동하세요."
+    "messageformat": "B&A Desktop이 macOS 검역에 걸렸을 가능성이 크며 자동 업데이트할 수 없습니다. 탐색기를 사용하여 {app} 앱을 {folder} 폴더로 이동하세요."
   },
   "icu:ok": {
     "messageformat": "확인"
@@ -918,7 +918,7 @@
     "messageformat": "이 기기에서 대화가 삭제됩니다."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "이 메시지는 최신 Signal을 설치한 모두에게서 삭제됩니다. 멤버는 내가 메시지를 삭제했다는 것을 확인할 수 있습니다."
+    "messageformat": "이 메시지는 최신 B&A을 설치한 모두에게서 삭제됩니다. 멤버는 내가 메시지를 삭제했다는 것을 확인할 수 있습니다."
   },
   "icu:from": {
     "messageformat": "보낸이:"
@@ -960,7 +960,7 @@
     "messageformat": "{nickname}<muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "''{title}'은(는) 사용자가 본인을 위해 Signal에 설정한 프로필 이름입니다."
+    "messageformat": "''{title}'은(는) 사용자가 본인을 위해 B&A에 설정한 프로필 이름입니다."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "검증됨"
@@ -975,7 +975,7 @@
     "messageformat": "{name} 님과 직접 주고받은 메시지가 없음"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal 커넥션"
+    "messageformat": "B&A 커넥션"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} 님이 내 기기 연락처에 있습니다."
@@ -1068,7 +1068,7 @@
     "messageformat": "자세히 알아보기"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal은 종단간 암호화를 사용하며, 대화 세션을 때때로 새로 고침해야 할 수도 있습니다. 이는 대화 보안에 영향을 미치지는 않지만, 이로 인해 연락처로부터 메시지를 수신하지 못할 수도 있습니다. 이때 상대방에게 메시지 재발송을 요청할 수 있습니다."
+    "messageformat": "B&A은 종단간 암호화를 사용하며, 대화 세션을 때때로 새로 고침해야 할 수도 있습니다. 이는 대화 보안에 영향을 미치지는 않지만, 이로 인해 연락처로부터 메시지를 수신하지 못할 수도 있습니다. 이때 상대방에게 메시지 재발송을 요청할 수 있습니다."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "지원에 문의"
@@ -1095,7 +1095,7 @@
     "messageformat": "{sender} 님이 전화번호를 변경했습니다."
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "내 연락처가 Signal에 등록함"
+    "messageformat": "내 연락처가 B&A에 등록함"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} 님과 {conversationTitle} 님은 같은 계정입니다. 두 대화의 메시지 기록을 여기서 확인하세요."
@@ -1215,7 +1215,7 @@
     "messageformat": "미디어를 다운로드할 수 없음"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "데스크톱과 휴대폰의 인터넷 연결을 확인하세요. 휴대폰에서 Signal을 연 다음 다시 다운로드해 보세요."
+    "messageformat": "데스크톱과 휴대폰의 인터넷 연결을 확인하세요. 휴대폰에서 B&A을 연 다음 다시 다운로드해 보세요."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "이 미디어는 더 이상 휴대폰에서 사용할 수 없으며, 다운로드할 수 없습니다."
@@ -1236,10 +1236,10 @@
     "messageformat": "더 알아보기"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "휴대전화의 Signal 앱에서 이 코드를 스캔하세요."
+    "messageformat": "휴대전화의 B&A 앱에서 이 코드를 스캔하세요."
   },
   "icu:Install__instructions__1": {
-    "messageformat": "휴대전화에서 Signal을 여세요."
+    "messageformat": "휴대전화에서 B&A을 여세요."
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} 및 {linkedDevices}을(를) 차례로 탭하세요."
@@ -1257,7 +1257,7 @@
     "messageformat": "<paragraph>예기치 못한 오류가 발생했습니다.</paragraph><paragraph>다시 시도하세요.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal에서 현재 네트워크를 사용하여 이 기기를 연결할 수 없습니다."
+    "messageformat": "B&A에서 현재 네트워크를 사용하여 이 기기를 연결할 수 없습니다."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "재시도"
@@ -1281,7 +1281,7 @@
     "messageformat": "기기 이름"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "이 기기 이름을 변경하려면 휴대폰에서 Signal을 연 다음 설정 > 연결된 기기로 이동하세요"
+    "messageformat": "이 기기 이름을 변경하려면 휴대폰에서 B&A을 연 다음 설정 > 연결된 기기로 이동하세요"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "이모지 피부색"
@@ -1461,7 +1461,7 @@
     "messageformat": "죄송합니다, 이미 연결된 기기가 많습니다. 안 쓰는 기기를 제거해보세요."
   },
   "icu:installTooOld": {
-    "messageformat": "휴대전화를 연결하려면 기기에서 Signal을 업데이트하세요."
+    "messageformat": "휴대전화를 연결하려면 기기에서 B&A을 업데이트하세요."
   },
   "icu:installErrorHeader": {
     "messageformat": "오류가 발생했습니다!"
@@ -1512,7 +1512,7 @@
     "messageformat": "이 통화 링크는 더 이상 유효하지 않습니다."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal 통화"
+    "messageformat": "B&A 통화"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "링크를 삭제할 수 없습니다. 연결을 확인하고 다시 시도하세요."
@@ -1662,16 +1662,16 @@
     "messageformat": "{count, plural, other {{count,number}명이 이 통화에 참여 중입니다.}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal에서 {person} 님의 전화벨을 울립니다."
+    "messageformat": "B&A에서 {person} 님의 전화벨을 울립니다."
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal에서 {first} 님과 {second} 님의 전화벨을 울립니다."
+    "messageformat": "B&A에서 {first} 님과 {second} 님의 전화벨을 울립니다."
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal에서 {first} 님, {second} 님, {third} 님의 전화벨을 울립니다."
+    "messageformat": "B&A에서 {first} 님, {second} 님, {third} 님의 전화벨을 울립니다."
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {Signal에서 {first} 님, {second} 님 외 {others,number}명에게 전화를 겁니다.}}"
+    "messageformat": "{others, plural, other {B&A에서 {first} 님, {second} 님 외 {others,number}명에게 전화를 겁니다.}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} 님에게 알립니다."
@@ -1725,13 +1725,13 @@
     "messageformat": "다시 연결 중…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "연결이 끊어졌습니다. Signal이 다시 연결합니다."
+    "messageformat": "연결이 끊어졌습니다. B&A이 다시 연결합니다."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal이 {window} 창을 공유하고 있습니다."
+    "messageformat": "B&A이 {window} 창을 공유하고 있습니다."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal 화면 공유를 사용 중입니다."
+    "messageformat": "B&A 화면 공유를 사용 중입니다."
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "다시 연결 중…"
@@ -1752,7 +1752,7 @@
     "messageformat": "권한이 필요합니다"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal에서 컴퓨터 화면 녹화를 하려면 권한이 필요합니다."
+    "messageformat": "B&A에서 컴퓨터 화면 녹화를 하려면 권한이 필요합니다."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "시스템 환경 설정으로 이동하세요."
@@ -1761,7 +1761,7 @@
     "messageformat": "왼쪽 하단의 자물쇠 아이콘을 클릭하고 컴퓨터의 비밀번호를 입력하세요."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "오른쪽에서 Signal 옆의 체크 박스를 선택하세요. 목록에 Signal이 표시되지 않으면 +를 클릭하여 추가하세요."
+    "messageformat": "오른쪽에서 B&A 옆의 체크 박스를 선택하세요. 목록에 B&A이 표시되지 않으면 +를 클릭하여 추가하세요."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "시스템 환경 설정 열기"
@@ -1773,7 +1773,7 @@
     "messageformat": "향상 전화 릴레이"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "연락처에게 IP 주소가 표시되지 않도록 모든 전화를 Signal 서버로 릴레이합니다. 전화 품질이 떨어질 수 있습니다."
+    "messageformat": "연락처에게 IP 주소가 표시되지 않도록 모든 전화를 B&A 서버로 릴레이합니다. 전화 품질이 떨어질 수 있습니다."
   },
   "icu:permissions": {
     "messageformat": "권한"
@@ -1791,10 +1791,10 @@
     "messageformat": "텍스트를 선택할 경우 서식 지정 팝업 표시"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "다음에 Signal을 시작할 때 맞춤법 검사가 활성화됩니다."
+    "messageformat": "다음에 B&A을 시작할 때 맞춤법 검사가 활성화됩니다."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "다음에 Signal을 시작할 때 맞춤법 검사가 비활성화됩니다."
+    "messageformat": "다음에 B&A을 시작할 때 맞춤법 검사가 비활성화됩니다."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "시스템 트레이로 최소화"
@@ -1818,13 +1818,13 @@
     "messageformat": "모든 데이터를 삭제하시겠습니까?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "이 Signal 데스크톱 버전에서 모든 데이터와 메시지를 삭제하시겠습니까? 휴대폰 또는 기타 연결된 장치의 Signal 계정과 데이터는 삭제되지 않습니다."
+    "messageformat": "이 B&A 데스크톱 버전에서 모든 데이터와 메시지를 삭제하시겠습니까? 휴대폰 또는 기타 연결된 장치의 B&A 계정과 데이터는 삭제되지 않습니다."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "연결 해제 및 모든 데이터 삭제 중…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Signal Desktop의 이전 설치 버전에서 사용하지 않는 데이터가 있습니다. 계속하면 해당 데이터가 삭제되고 앱을 처음부터 시작합니다."
+    "messageformat": "B&A Desktop의 이전 설치 버전에서 사용하지 않는 데이터가 있습니다. 계속하면 해당 데이터가 삭제되고 앱을 처음부터 시작합니다."
   },
   "icu:deleteOldData": {
     "messageformat": "오래된 데이터 삭제"
@@ -1866,10 +1866,10 @@
     "messageformat": "부분 삭제됨. 클릭해서 다시 시도하세요."
   },
   "icu:expiredWarning": {
-    "messageformat": "이 버전의 Signal Desktop이 만료되었습니다. 계속 메시지를 보내려면 최신 버전으로 업데이트하세요."
+    "messageformat": "이 버전의 B&A Desktop이 만료되었습니다. 계속 메시지를 보내려면 최신 버전으로 업데이트하세요."
   },
   "icu:upgrade": {
-    "messageformat": "클릭하여 signal.org/download로 이동"
+    "messageformat": "클릭하여 ba-chat.com/download로 이동"
   },
   "icu:mediaMessage": {
     "messageformat": "미디어 메시지"
@@ -1878,7 +1878,7 @@
     "messageformat": "연락처 가져오기"
   },
   "icu:syncExplanation": {
-    "messageformat": "모바일 기기의 Signal 그룹과 연락처를 가져옵니다."
+    "messageformat": "모바일 기기의 B&A 그룹과 연락처를 가져옵니다."
   },
   "icu:syncNow": {
     "messageformat": "지금 가져오기"
@@ -1914,7 +1914,7 @@
     "messageformat": "어제 {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal에서 수신 메시지를 처리하는 데 문제가 있을 수 있습니다."
+    "messageformat": "B&A에서 수신 메시지를 처리하는 데 문제가 있을 수 있습니다."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "메시지 본문이 너무 깁니다."
@@ -2067,10 +2067,10 @@
     "messageformat": "메시지 수정은 발송 시간으로부터 24시간 이내에 해야 합니다."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} 님은 Signal 사용자가 아닙니다. 전체 사용자 이름을 입력했는지 확인하세요."
+    "messageformat": "{atUsername} 님은 B&A 사용자가 아닙니다. 전체 사용자 이름을 입력했는지 확인하세요."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "사용자를 찾을 수 없습니다. ''{phoneNumber}'은(는) Signal 사용자가 아닙니다."
+    "messageformat": "사용자를 찾을 수 없습니다. ''{phoneNumber}'은(는) B&A 사용자가 아닙니다."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "사용자를 찾을 수 없습니다. ''{phoneNumber}'은(는) 올바른 전화번호가 아닙니다."
@@ -2091,13 +2091,13 @@
     "messageformat": "최대 그룹 규모에 도달했습니다."
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal 그룹에는 최대 {max,number}명의 구성원이 있을 수 있습니다."
+    "messageformat": "B&A 그룹에는 최대 {max,number}명의 구성원이 있을 수 있습니다."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "권장 멤버 수 한도에 도달했습니다."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal 그룹은 {max,number}명 이하의 구성원이 있을 때 최고의 성능을 보여줍니다. 구성원을 더 많이 추가하면 메시지 송수신이 지연됩니다."
+    "messageformat": "B&A 그룹은 {max,number}명 이하의 구성원이 있을 때 최고의 성능을 보여줍니다. 구성원을 더 많이 추가하면 메시지 송수신이 지연됩니다."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "그룹 이름 입력"
@@ -2127,7 +2127,7 @@
     "messageformat": "그룹을 업데이트하지 못했습니다. 연결 상태를 확인하고 다시 시도하세요."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "클릭하여 Signal Desktop을 모바일 기기에 다시 연결하고 메시지를 계속 사용하세요."
+    "messageformat": "클릭하여 B&A Desktop을 모바일 기기에 다시 연결하고 메시지를 계속 사용하세요."
   },
   "icu:unlinked": {
     "messageformat": "연결 해제됨"
@@ -2139,16 +2139,16 @@
     "messageformat": "업데이트 다시 시도"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "클릭하여 Signal 다시 시작"
+    "messageformat": "클릭하여 B&A 다시 시작"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "클릭하여 업데이트 다운로드"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal을 업데이트하지 못했습니다. 클릭하여 다시 시도하세요."
+    "messageformat": "B&A을 업데이트하지 못했습니다. 클릭하여 다시 시도하세요."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal 재시작"
+    "messageformat": "B&A 재시작"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "업데이트 무시"
@@ -2247,7 +2247,7 @@
     "messageformat": "일부 첨부 파일이 너무 커서 표시할 수 없습니다."
   },
   "icu:message--call-link-description": {
-    "messageformat": "이 링크를 사용하여 Signal 통화에 참여하세요."
+    "messageformat": "이 링크를 사용하여 B&A 통화에 참여하세요."
   },
   "icu:donation--missing": {
     "messageformat": "기부 세부 정보를 가져오지 못했습니다."
@@ -2259,7 +2259,7 @@
     "messageformat": "모바일에서 이 메시지를 탭하여 기부를 확인하세요."
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} 님이 귀하를 대신해 Signal에 기부했습니다."
+    "messageformat": "{sender} 님이 귀하를 대신해 B&A에 기부했습니다."
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "이 기부를 열려면 휴대전화를 확인하세요."
@@ -2310,7 +2310,7 @@
     "messageformat": "지지와 성원에 감사드립니다!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} 님을 대신하여 Signal에 기부했습니다. 프로필을 통해 지지를 표현할 옵션이 제공됩니다."
+    "messageformat": "{name} 님을 대신하여 B&A에 기부했습니다. 프로필을 통해 지지를 표현할 옵션이 제공됩니다."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "스티커 팩을 설치할 수 없음"
@@ -2325,10 +2325,10 @@
     "messageformat": "설치된 스티커 없음"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal 아티스트 시리즈"
+    "messageformat": "B&A 아티스트 시리즈"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "이용 가능한 Signal 아티스트 스티커가 없음"
+    "messageformat": "이용 가능한 B&A 아티스트 스티커가 없음"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "받은 스티커"
@@ -2670,16 +2670,16 @@
     "messageformat": "메시지가 너무 길어 더 표시할 수 없습니다."
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} 님이 처리하거나 표시할 수 없는 메시지를 보냈습니다. 이는 메시지에서 새로운 Signal 기능을 사용하기 때문입니다."
+    "messageformat": "{contact} 님이 처리하거나 표시할 수 없는 메시지를 보냈습니다. 이는 메시지에서 새로운 B&A 기능을 사용하기 때문입니다."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "귀하는 최신 버전의 Signal을 사용하고 있으므로 {contact} 님에게 메시지를 다시 보내도록 요청할 수 있습니다."
+    "messageformat": "귀하는 최신 버전의 B&A을 사용하고 있으므로 {contact} 님에게 메시지를 다시 보내도록 요청할 수 있습니다."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "기기 중 하나에서 처리하거나 표시할 수 없는 메시지를 보냈습니다. 이는 메시지에서 새로운 Signal 기능을 사용하기 때문입니다."
+    "messageformat": "기기 중 하나에서 처리하거나 표시할 수 없는 메시지를 보냈습니다. 이는 메시지에서 새로운 B&A 기능을 사용하기 때문입니다."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "향후에 이와 같은 메시지는 최신 버전의 Signal을 사용하고 있으므로 동기화됩니다."
+    "messageformat": "향후에 이와 같은 메시지는 최신 버전의 B&A을 사용하고 있으므로 동기화됩니다."
   },
   "icu:Message--update-signal": {
     "messageformat": "시그널 최신 버전으로 업데이트"
@@ -2946,7 +2946,7 @@
     "messageformat": "대화를 읽지 않음으로 표시"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "스티커 팩 생성기를 사용하려면 휴대전화와 데스크톱에서 Signal을 설정하세요."
+    "messageformat": "스티커 팩 생성기를 사용하려면 휴대전화와 데스크톱에서 B&A을 설정하세요."
   },
   "icu:Reactions--remove": {
     "messageformat": "반응 제거"
@@ -2970,7 +2970,7 @@
     "messageformat": "가짜 이름과 계정"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal은 절대 사용자의 등록 코드나 PIN을 요청하지 않습니다. 사칭 계정에 유의하세요. 프로필 이름은 해당 계정 보유자가 선택하며, 프로필 이름이 확인되지 않았습니다."
+    "messageformat": "B&A은 절대 사용자의 등록 코드나 PIN을 요청하지 않습니다. 사칭 계정에 유의하세요. 프로필 이름은 해당 계정 보유자가 선택하며, 프로필 이름이 확인되지 않았습니다."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "암호화폐 또는 금융 사기"
@@ -3060,13 +3060,13 @@
     "messageformat": "스팸으로 신고할까요?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal에 이 사람이 스팸을 보내는 것 같다는 알림이 전송됩니다. Signal은 대화의 내용을 볼 수 없습니다."
+    "messageformat": "B&A에 이 사람이 스팸을 보내는 것 같다는 알림이 전송됩니다. B&A은 대화의 내용을 볼 수 없습니다."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal에 나를 이 그룹에 초대한 사람이 스팸을 보내는 것 같다는 알림이 전송됩니다. Signal은 대화의 내용을 볼 수 없습니다."
+    "messageformat": "B&A에 나를 이 그룹에 초대한 사람이 스팸을 보내는 것 같다는 알림이 전송됩니다. B&A은 대화의 내용을 볼 수 없습니다."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal에 나를 이 그룹에 초대한 {name} 님이 스팸을 보내는 것 같다는 알림이 전송됩니다. Signal은 대화의 내용을 볼 수 없습니다."
+    "messageformat": "B&A에 나를 이 그룹에 초대한 {name} 님이 스팸을 보내는 것 같다는 알림이 전송됩니다. B&A은 대화의 내용을 볼 수 없습니다."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "스팸 신고"
@@ -3162,7 +3162,7 @@
     "messageformat": "<clickable>프로필 이름</clickable>이 확인되지 않음"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "유일한 Signal 공식 채팅입니다"
+    "messageformat": "유일한 B&A 공식 채팅입니다"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "최신 소식과 릴리스 노트를 확인하세요."
@@ -3228,10 +3228,10 @@
     "messageformat": "응답하지 않은 영상 통화"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal이 계속 실행 중입니다."
+    "messageformat": "B&A이 계속 실행 중입니다."
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal이 알림 영역에서 계속 실행됩니다. Signal 설정에서 이 설정을 변경할 수 있습니다."
+    "messageformat": "B&A이 알림 영역에서 계속 실행됩니다. B&A 설정에서 이 설정을 변경할 수 있습니다."
   },
   "icu:incomingAudioCall": {
     "messageformat": "수신 음성 통화"
@@ -3441,7 +3441,7 @@
     "messageformat": "통화 링크 복사"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal을 통해 통화 링크 공유"
+    "messageformat": "B&A을 통해 통화 링크 공유"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "이 사용자를 통화에서 제거"
@@ -3561,7 +3561,7 @@
     "messageformat": "알 수 없는 링크 버전"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "해당 링크는 현재 버전의 Signal Desktop에서 지원하지 않습니다."
+    "messageformat": "해당 링크는 현재 버전의 B&A Desktop에서 지원하지 않습니다."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "그룹에 참가할 수 없음"
@@ -4116,16 +4116,16 @@
     "messageformat": "몇 분 정도 소요됩니다"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal에 후원"
+    "messageformat": "B&A에 후원"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Signal에 후원"
+    "messageformat": "B&A에 후원"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal은 여러분과 같은 사용자의 기여로 운영됩니다. 기부하고 배지를 받으세요."
+    "messageformat": "B&A은 여러분과 같은 사용자의 기여로 운영됩니다. 기부하고 배지를 받으세요."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "휴대전화에서 Signal을 여세요."
+    "messageformat": "휴대전화에서 B&A을 여세요."
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "설정을 열려면 왼쪽 상단의 프로필 사진을 탭하세요."
@@ -4257,7 +4257,7 @@
     "messageformat": "계정 조치 필요"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "이 계정을 계속 사용하려면 휴대폰에서 Signal을 열어야 합니다. 휴대폰에서 Signal을 열지 않으면 계정이 곧 삭제됩니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
+    "messageformat": "이 계정을 계속 사용하려면 휴대폰에서 B&A을 열어야 합니다. 휴대폰에서 B&A을 열지 않으면 계정이 곧 삭제됩니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "미디어를 복원할 수 없음"
@@ -4272,10 +4272,10 @@
     "messageformat": "파일 첨부"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "이 사람은 Signal을 사용하고 있지 않습니다."
+    "messageformat": "이 사람은 B&A을 사용하고 있지 않습니다."
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop은 Signal 외부 연락처 메시징을 지원하지 않습니다. 보다 안전한 메시징 경험을 위해 해당 인물에게 Signal을 설치하도록 요청하세요."
+    "messageformat": "B&A Desktop은 B&A 외부 연락처 메시징을 지원하지 않습니다. 보다 안전한 메시징 경험을 위해 해당 인물에게 B&A을 설치하도록 요청하세요."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "연락처 등록 상태 확인"
@@ -4461,7 +4461,7 @@
     "messageformat": "별칭"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "별칭과 메모는 Signal에 엔드투엔드 암호화되어 저장됩니다. 해당 항목은 사용자에게만 표시됩니다."
+    "messageformat": "별칭과 메모는 B&A에 엔드투엔드 암호화되어 저장됩니다. 해당 항목은 사용자에게만 표시됩니다."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "이름"
@@ -4512,7 +4512,7 @@
     "messageformat": "그룹 링크를 통해 참가하는 새로운 멤버들이 관리자 승인을 받도록 하기"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group 링크를 클립보드에 복사"
+    "messageformat": "B&A.group 링크를 클립보드에 복사"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "요청 ({count,number})"
@@ -4716,13 +4716,13 @@
     "messageformat": "빈 메시지나 삭제한 메시지는 전달할 수 없습니다."
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Signal 통화에 참여할 때 사용할 링크: {url}"
+    "messageformat": "B&A 통화에 참여할 때 사용할 링크: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "안전 팁"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "신중하게 요청을 검토하세요. Signal에서 같은 이름을 가진 다른 연락처를 찾았습니다. <reviewRequestLink>요청 검토</reviewRequestLink>"
+    "messageformat": "신중하게 요청을 검토하세요. B&A에서 같은 이름을 가진 다른 연락처를 찾았습니다. <reviewRequestLink>요청 검토</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {그룹 멤버 {count,number}명의 이름이 같습니다. <reviewRequestLink>멤버 검토</reviewRequestLink>}}"
@@ -4755,7 +4755,7 @@
     "messageformat": "공통된 다른 그룹이 없습니다."
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal 커넥션"
+    "messageformat": "B&A 커넥션"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "최근에 프로필 이름을 {oldName}에서 {newName}(으)로 변경했습니다."
@@ -4773,7 +4773,7 @@
     "messageformat": "메시지를 계속 전송하려면 검증하세요."
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signal에서 스팸을 방지하려면 검증을 완료하세요."
+    "messageformat": "B&A에서 스팸을 방지하려면 검증을 완료하세요."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "검증 후 메시지를 계속 전달할 수 있습니다. 일시 정지된 메시지는 자동으로 전송됩니다."
@@ -5079,7 +5079,7 @@
     "messageformat": "변경사항을 파기하시겠습니까?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signal을 닫고 이 통화를 종료할까요?"
+    "messageformat": "B&A을 닫고 이 통화를 종료할까요?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "나중에"
@@ -5166,7 +5166,7 @@
     "messageformat": "일반 설정"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal에 기부"
+    "messageformat": "B&A에 기부"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "모양"
@@ -5247,7 +5247,7 @@
     "messageformat": "링크 미리보기 생성"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "이 설정을 변경하려면 모바일 기기에서 Signal 앱을 열고 설정 > 대화로 이동합니다."
+    "messageformat": "이 설정을 변경하려면 모바일 기기에서 B&A 앱을 열고 설정 > 대화로 이동합니다."
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "글로 입력한 이모티콘을 이모지로 변환"
@@ -5265,13 +5265,13 @@
     "messageformat": "차단함"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal 백업"
+    "messageformat": "B&A 백업"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Signal의 안전한 엔드투엔드 암호화 저장소 서비스를 사용하는 자동 백업. 휴대폰으로 시작해 보세요. <learnMoreLink>자세히 알아보기</learnMoreLink>."
+    "messageformat": "B&A의 안전한 엔드투엔드 암호화 저장소 서비스를 사용하는 자동 백업. 휴대폰으로 시작해 보세요. <learnMoreLink>자세히 알아보기</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "새 휴대폰을 사용하거나 Signal을 다시 설치할 때 데이터를 잃지 않도록 메시지 기록을 백업하세요."
+    "messageformat": "새 휴대폰을 사용하거나 B&A을 다시 설치할 때 데이터를 잃지 않도록 메시지 기록을 백업하세요."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "백업 세부 정보"
@@ -5280,7 +5280,7 @@
     "messageformat": "텍스트 + 모든 미디어 백업"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "구독을 찾지 못했습니다. Signal 백업을 계속 사용하려면 갱신하세요."
+    "messageformat": "구독을 찾지 못했습니다. B&A 백업을 계속 사용하려면 갱신하세요."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {텍스트 + {mediaDayCount,number}일간의 미디어 백업}}"
@@ -5298,13 +5298,13 @@
     "messageformat": "구독을 취소했습니다."
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "휴대폰에서 Signal 백업 구독을 관리하거나 취소할 수 있습니다."
+    "messageformat": "휴대폰에서 B&A 백업 구독을 관리하거나 취소할 수 있습니다."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "휴대폰에서 Signal 백업을 관리하거나 업그레이드할 수 있습니다."
+    "messageformat": "휴대폰에서 B&A 백업을 관리하거나 업그레이드할 수 있습니다."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "휴대폰에서 Signal 백업 구독을 관리하거나 갱신할 수 있습니다."
+    "messageformat": "휴대폰에서 B&A 백업 구독을 관리하거나 갱신할 수 있습니다."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "마지막 백업"
@@ -5322,7 +5322,7 @@
     "messageformat": "휴대폰에서 복원할 수 있는 엔드투엔드 암호화 백업을 만듭니다. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "백업을 복원하려면 Signal의 새 복사본을 설치하세요. 앱을 열고 백업 복원을 탭한 다음 백업 폴더를 찾으세요. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
+    "messageformat": "백업을 복원하려면 B&A의 새 복사본을 설치하세요. 앱을 열고 백업 복원을 탭한 다음 백업 폴더를 찾으세요. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "폴더 선택"
@@ -5358,7 +5358,7 @@
     "messageformat": "키를 안전하게 보관하세요"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "키를 분실할 경우 Signal은 백업을 복원하도록 도와드릴 수 없습니다. 안전한 곳에 키를 보관해 두고, 다른 사람과 공유하지 마세요."
+    "messageformat": "키를 분실할 경우 B&A은 백업을 복원하도록 도와드릴 수 없습니다. 안전한 곳에 키를 보관해 두고, 다른 사람과 공유하지 마세요."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "계속"
@@ -5394,13 +5394,13 @@
     "messageformat": "{num, plural, other {연락처 {num,number}개}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "이 설정을 변경하려면 모바일 기기에서 Signal 앱을 열고 설정 > 개인정보로 이동합니다."
+    "messageformat": "이 설정을 변경하려면 모바일 기기에서 B&A 앱을 열고 설정 > 개인정보로 이동합니다."
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "전화번호"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "내 전화번호를 볼 수 있고, Signal에서 내 전화번호로 나한테 연락할 수 있는 사람을 선택하세요."
+    "messageformat": "내 전화번호를 볼 수 있고, B&A에서 내 전화번호로 나한테 연락할 수 있는 사람을 선택하세요."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "변경…"
@@ -5430,10 +5430,10 @@
     "messageformat": "전화번호로 나를 찾을 수 있는 사람"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "내 전화번호가 있는 사람은 Signal에서 나를 보고 나와 대화를 시작할 수 있습니다."
+    "messageformat": "내 전화번호가 있는 사람은 B&A에서 나를 보고 나와 대화를 시작할 수 있습니다."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "내가 메시지를 보내는 사용자 또는 기존 대화 기록이 있는 사용자를 제외하고는 아무도 Signal에서 나를 볼 수 없습니다."
+    "messageformat": "내가 메시지를 보내는 사용자 또는 기존 대화 기록이 있는 사용자를 제외하고는 아무도 B&A에서 나를 볼 수 없습니다."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "모두"
@@ -5445,7 +5445,7 @@
     "messageformat": "계속할까요?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "''{settingTitle}'을(를) ''{nobodyLabel}'(으)로 변경하면 다른 사람이 Signal에서 나를 찾기가 어려워집니다."
+    "messageformat": "''{settingTitle}'을(를) ''{nobodyLabel}'(으)로 변경하면 다른 사람이 B&A에서 나를 찾기가 어려워집니다."
   },
   "icu:Preferences--messaging": {
     "messageformat": "메시징"
@@ -5499,7 +5499,7 @@
     "messageformat": "설정"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "적용하려면 Signal 다시 시작"
+    "messageformat": "적용하려면 B&A 다시 시작"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "언어를 적용하려면 앱을 다시 시작해야 합니다."
@@ -5514,13 +5514,13 @@
     "messageformat": "화면 보안"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "이 컴퓨터에서 Signal의 스크린샷을 사용하지 못하도록 방지하여 개인정보 보호를 강화하세요."
+    "messageformat": "이 컴퓨터에서 B&A의 스크린샷을 사용하지 못하도록 방지하여 개인정보 보호를 강화하세요."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "화면 보안을 비활성화하시겠습니까?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "이 옵션을 비활성화하면 Microsoft Windows가 Signal의 스크린샷을 캡처하여 개인정보 보호가 보장되지 않는 기능에 사용할 수 있습니다."
+    "messageformat": "이 옵션을 비활성화하면 Microsoft Windows가 B&A의 스크린샷을 캡처하여 개인정보 보호가 보장되지 않는 기능에 사용할 수 있습니다."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "사용 안 함"
@@ -5535,25 +5535,25 @@
     "messageformat": "업데이트 다운로드 완료"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "휴대전화에서 Signal을 여세요."
+    "messageformat": "휴대전화에서 B&A을 여세요."
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "휴대폰에서 Signal을 열지 않으면 계정이 곧 삭제됩니다. Signal을 열면 이 메시지는 사라집니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
+    "messageformat": "휴대폰에서 B&A을 열지 않으면 계정이 곧 삭제됩니다. B&A을 열면 이 메시지는 사라집니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "휴대 전화에서 Signal을 열어 계정을 활성 상태로 유지하세요."
+    "messageformat": "휴대 전화에서 B&A을 열어 계정을 활성 상태로 유지하세요."
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "더 알아보기"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal에 기술적 문제가 발생했습니다. 문제를 최대한 신속하게 처리하겠습니다."
+    "messageformat": "B&A에 기술적 문제가 발생했습니다. 문제를 최대한 신속하게 처리하겠습니다."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "업데이트 필요"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "메시지 동기화를 완료하려면 지금 Signal 데스크톱을 업데이트하세요."
+    "messageformat": "메시지 동기화를 완료하려면 지금 B&A 데스크톱을 업데이트하세요."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "업데이트"
@@ -5562,19 +5562,19 @@
     "messageformat": "업데이트 필요"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal을 계속 사용하려면 최신 버전으로 업데이트해야 합니다."
+    "messageformat": "B&A을 계속 사용하려면 최신 버전으로 업데이트해야 합니다."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "다운로드({downloadSize})"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Signal을 다시 시작하여 업데이트를 설치하세요."
+    "messageformat": "B&A을 다시 시작하여 업데이트를 설치하세요."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal 데스크톱을 업데이트하지 못했습니다. 하지만 새 버전을 이용할 수 있습니다. {downloadUrl}(으)로 이동하여 새 버전을 수동으로 설치한 다음 지원 팀에 연락하거나 이 문제에 관한 버그를 신고하세요."
+    "messageformat": "B&A 데스크톱을 업데이트하지 못했습니다. 하지만 새 버전을 이용할 수 있습니다. {downloadUrl}(으)로 이동하여 새 버전을 수동으로 설치한 다음 지원 팀에 연락하거나 이 문제에 관한 버그를 신고하세요."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal을 종료하지 못했습니다.",
+    "messageformat": "B&A을 종료하지 못했습니다.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5594,14 +5594,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal 최신 버전을 이미 설치했습니다. 계속할까요?",
+    "messageformat": "B&A 최신 버전을 이미 설치했습니다. 계속할까요?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "애플리케이션 작동이 중단되었습니다."
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal이 작동 중단 후 다시 실행되었습니다. Signal이 해당 문제를 검토할 수 있도록 작동 중단 보고서를 제출해 주세요."
+    "messageformat": "B&A이 작동 중단 후 다시 실행되었습니다. B&A이 해당 문제를 검토할 수 있도록 작동 중단 보고서를 제출해 주세요."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "보내기"
@@ -5706,7 +5706,7 @@
     "messageformat": "아래 ''{buttonName}' 버튼을 클릭하세요"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "'Signal'을 켜세요"
+    "messageformat": "'B&A'을 켜세요"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "설정으로 이동"
@@ -5796,7 +5796,7 @@
     "messageformat": "자세히 알아보기"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal 커넥션"
+    "messageformat": "B&A 커넥션"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}은(는) 다음과 같은 방법을 통해 신뢰하는 사용자로 선택한 사람들입니다."
@@ -5946,7 +5946,7 @@
     "messageformat": "다음 사용자에게서 스토리를 숨깁니다"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "모든 Signal 커넥션"
+    "messageformat": "모든 B&A 커넥션"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "다음을 제외한 모든 사용자…"
@@ -5964,7 +5964,7 @@
     "messageformat": "수신 확인"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "이 설정을 변경하려면 모바일 장치에서 Signal 앱을 열고 설정 -> 스토리로 이동합니다."
+    "messageformat": "이 설정을 변경하려면 모바일 장치에서 B&A 앱을 열고 설정 -> 스토리로 이동합니다."
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "이 스토리를 볼 수 있는 사람"
@@ -6024,7 +6024,7 @@
     "messageformat": "내 스토리 개인정보보호"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "내 스토리를 볼 수 있는 Signal 커넥션을 선택하세요. 개인 정보 보호 설정에서 언제든 이 설정을 변경할 수 있습니다. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
+    "messageformat": "내 스토리를 볼 수 있는 B&A 커넥션을 선택하세요. 개인 정보 보호 설정에서 언제든 이 설정을 변경할 수 있습니다. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "스토리 삭제"
@@ -6093,7 +6093,7 @@
     "messageformat": "첨부 파일 다운로드"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "내 스토리를 본 사람을 확인하려면 수신 확인을 활성화하세요. 모바일 장치에서 Signal 앱을 열고 설정 > 스토리로 이동합니다."
+    "messageformat": "내 스토리를 본 사람을 확인하려면 수신 확인을 활성화하세요. 모바일 장치에서 B&A 앱을 열고 설정 > 스토리로 이동합니다."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "답장 없음"
@@ -6279,7 +6279,7 @@
     "messageformat": "QR 코드와 링크를 초기화했으며, 사용자 이름은 {username}입니다."
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Signal에서 나와 대화하려면 휴대전화로 이 QR 코드를 스캔하세요.",
+    "messageformat": "B&A에서 나와 대화하려면 휴대전화로 이 QR 코드를 스캔하세요.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6355,13 +6355,13 @@
     "messageformat": "취소"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal 데스크톱이 곧 귀하의 컴퓨터에서 사용하는 {OS} 버전에 대한 지원을 중단합니다. Signal을 계속 사용하려면 {expirationDate}까지 컴퓨터 운영 체제를 업데이트하세요. 자세히 알아보기"
+    "messageformat": "B&A 데스크톱이 곧 귀하의 컴퓨터에서 사용하는 {OS} 버전에 대한 지원을 중단합니다. B&A을 계속 사용하려면 {expirationDate}까지 컴퓨터 운영 체제를 업데이트하세요. 자세히 알아보기"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal 데스크톱이 이 컴퓨터에서 더 이상 작동하지 않습니다. Signal 데스크톱을 다시 사용하려면 컴퓨터의 {OS} 버전을 업데이트하세요. 자세히 알아보기"
+    "messageformat": "B&A 데스크톱이 이 컴퓨터에서 더 이상 작동하지 않습니다. B&A 데스크톱을 다시 사용하려면 컴퓨터의 {OS} 버전을 업데이트하세요. 자세히 알아보기"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal 데스크톱이 이 컴퓨터에서 더 이상 작동하지 않습니다. Signal 데스크톱을 다시 사용하려면 컴퓨터의 {OS} 버전을 업데이트하세요."
+    "messageformat": "B&A 데스크톱이 이 컴퓨터에서 더 이상 작동하지 않습니다. B&A 데스크톱을 다시 사용하려면 컴퓨터의 {OS} 버전을 업데이트하세요."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "수정함"
@@ -6529,7 +6529,7 @@
     "messageformat": "링크 복사"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Signal을 통해 링크 공유"
+    "messageformat": "B&A을 통해 링크 공유"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "링크 삭제"
@@ -6595,7 +6595,7 @@
     "messageformat": "이 설정을 바꾸려면 '내 전화번호를 볼 수 있는 사람'을 '아무도 보지 못함'으로 설정하세요."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal의 프로필 이름은 해당 계정 보유자가 선택합니다."
+    "messageformat": "B&A의 프로필 이름은 해당 계정 보유자가 선택합니다."
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "프로필 이름이 확인되지 않았습니다"
@@ -6625,10 +6625,10 @@
     "messageformat": "업데이트 내용"
   },
   "icu:PreferencesDonations__title": {
-    "messageformat": "이익보다 개인정보보호를 우선시하는 Signal"
+    "messageformat": "이익보다 개인정보보호를 우선시하는 B&A"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "사용자의 기부로 운영되는 개인정보를 보호하는 메시지. 광고와 트래커, 타협에서 자유로운 앱. 지금 기부를 통해 Signal을 지지해 주세요. <readMoreLink>자세히 알아보기</readMoreLink>"
+    "messageformat": "사용자의 기부로 운영되는 개인정보를 보호하는 메시지. 광고와 트래커, 타협에서 자유로운 앱. 지금 기부를 통해 B&A을 지지해 주세요. <readMoreLink>자세히 알아보기</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "기부"
@@ -6646,7 +6646,7 @@
     "messageformat": "개인 정보는 비공개로 유지됩니다."
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal은 기부할 때 사용자의 개인 정보를 수집하거나 저장하지 않습니다.</paragraph><paragraph>Signal은 기부를 받을 때 Stripe를 결제 처리자로 사용합니다. Signal은 사용자가 Stripe에 제공하는 어떠한 정보에도 액세스하지 않으며, 이를 보관하거나 저장하지 않습니다.</paragraph><paragraph>Signal은 사용자의 기부를 Signal 계정에 연결하거나 연결을 시도하지 않습니다.</paragraph><paragraph>Signal을 지지해 주셔서 감사합니다!</paragraph>"
+    "messageformat": "<paragraph>B&A은 기부할 때 사용자의 개인 정보를 수집하거나 저장하지 않습니다.</paragraph><paragraph>B&A은 기부를 받을 때 Stripe를 결제 처리자로 사용합니다. B&A은 사용자가 Stripe에 제공하는 어떠한 정보에도 액세스하지 않으며, 이를 보관하거나 저장하지 않습니다.</paragraph><paragraph>B&A은 사용자의 기부를 B&A 계정에 연결하거나 연결을 시도하지 않습니다.</paragraph><paragraph>B&A을 지지해 주셔서 감사합니다!</paragraph>"
   },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "영수증"
@@ -6655,7 +6655,7 @@
     "messageformat": "기부 FAQ"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "영수증은 여러 기기에서 동기화되지 않습니다. Signal을 다시 설치했다면 이전 기부 영수증은 사용할 수 없습니다."
+    "messageformat": "영수증은 여러 기기에서 동기화되지 않습니다. B&A을 다시 설치했다면 이전 기부 영수증은 사용할 수 없습니다."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "영수증 없음"
@@ -6688,7 +6688,7 @@
     "messageformat": "신용 또는 직불 카드"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "신용 카드 또는 체크 카드 세부 정보를 입력하세요. Signal은 개인 정보를 수집하거나 저장하지 않습니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
+    "messageformat": "신용 카드 또는 체크 카드 세부 정보를 입력하세요. B&A은 개인 정보를 수집하거나 저장하지 않습니다. <learnMoreLink>자세히 알아보기</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "카드 번호"
@@ -6697,7 +6697,7 @@
     "messageformat": "만료일"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signal에 {formattedCurrencyAmount} 기부"
+    "messageformat": "B&A에 {formattedCurrencyAmount} 기부"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "잘못된 카드 번호입니다."
@@ -6715,7 +6715,7 @@
     "messageformat": "코드가 너무 짧음"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30일 동안 Signal 부스트 배지를 획득하세요."
+    "messageformat": "30일 동안 B&A 부스트 배지를 획득하세요."
   },
   "icu:DonationReceipt__title": {
     "messageformat": "기부 영수증"
@@ -6733,7 +6733,7 @@
     "messageformat": "1회"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Signal을 지지해 주셔서 감사합니다. 귀하의 기부는 오픈 소스 프라이버시 기술을 통해 표현의 자유를 지키고 안전한 글로벌 커뮤니케이션을 제공하겠다는 Signal의 사명을 실현하는 데 도움이 됩니다. 미국 거주자라면 세금 보고 시 사용할 수 있도록 이 영수증을 보관하세요. 내국세법조항 501c3조에 의거하여 세금 공제를 받을 수 있는 비영리 기관입니다. Signal 연방세 ID는 82-4506840입니다."
+    "messageformat": "B&A을 지지해 주셔서 감사합니다. 귀하의 기부는 오픈 소스 프라이버시 기술을 통해 표현의 자유를 지키고 안전한 글로벌 커뮤니케이션을 제공하겠다는 B&A의 사명을 실현하는 데 도움이 됩니다. 미국 거주자라면 세금 보고 시 사용할 수 있도록 이 영수증을 보관하세요. 내국세법조항 501c3조에 의거하여 세금 공제를 받을 수 있는 비영리 기관입니다. B&A 연방세 ID는 82-4506840입니다."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "기부를 취소함"
@@ -6781,7 +6781,7 @@
     "messageformat": "기부 과정에서 오류 발생"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "귀하의 기부금이 처리되지 않았을 수 있습니다. 'Signal에 기부'를 클릭한 후 '기부 영수증'을 클릭하여 영수증을 확인하세요."
+    "messageformat": "귀하의 기부금이 처리되지 않았을 수 있습니다. 'B&A에 기부'를 클릭한 후 '기부 영수증'을 클릭하여 영수증을 확인하세요."
   },
   "icu:Donations__Processing": {
     "messageformat": "기부를 처리하는 중..."
@@ -6817,11 +6817,11 @@
     "messageformat": "기부 취소"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "이 버전에는 Signal의 원활한 실행을 위한 일부 기능 업데이트와 버그 수정이 다수 포함되어 있습니다.",
+    "messageformat": "이 버전에는 B&A의 원활한 실행을 위한 일부 기능 업데이트와 버그 수정이 다수 포함되어 있습니다.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "추가적인 사소한 변경 사항과 버그 수정, 성능 업데이트가 적용되었습니다. Signal을 이용해 주셔서 감사합니다!",
+    "messageformat": "추가적인 사소한 변경 사항과 버그 수정, 성능 업데이트가 적용되었습니다. B&A을 이용해 주셔서 감사합니다!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6841,7 +6841,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "사소한 변경 사항과 버그 수정 및 성능 개선. Signal을 이용해 주셔서 감사합니다!",
+    "messageformat": "사소한 변경 사항과 버그 수정 및 성능 개선. B&A을 이용해 주셔서 감사합니다!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__v7.64--0": {
