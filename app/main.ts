@@ -2879,6 +2879,12 @@ function handleSignalRoute(route: ParsedSignalRoute) {
 
   log.info('[DeepLink] handleSignalRoute: Matched signal route:', route.key);
 
+  // Ensure the window is visible before dispatching the route.
+  // On macOS, clicking X hides the window but doesn't close it, so we need to show it again.
+  if (OS.isMacOS()) {
+    showWindow();
+  }
+
   if (route.key === 'artAddStickers') {
     log.info('[DeepLink] Handling artAddStickers:', {
       packId: route.args.packId,
