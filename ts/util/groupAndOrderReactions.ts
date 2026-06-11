@@ -1,10 +1,10 @@
 // Copyright 2025 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import { groupBy, orderBy } from 'lodash';
+import lodash from 'lodash';
 import { useMemo } from 'react';
 
-import type { Reaction } from '../components/conversation/ReactionViewer';
+import type { Reaction } from '../components/conversation/ReactionViewer.js';
 import {
   isEmojiVariantValue,
   getEmojiVariantKeyByValue,
@@ -15,6 +15,8 @@ import {
 } from '../components/fun/data/emojis';
 import { isNotNil } from './isNotNil';
 import { useFunEmojiLocalizer } from '../components/fun/useFunEmojiLocalizer';
+
+const { groupBy, orderBy } = lodash;
 
 type ReactionWithEmojiData = Reaction & {
   short_name: string | undefined;

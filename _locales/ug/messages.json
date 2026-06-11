@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "سۆھبەتنى ئۆچۈرەمسىز؟"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "بۇ پاراڭدىكى بارلىق ئۇچۇرلار بۇ ئۈسكۈنىدىن ئۆچۈرۈلىدۇ."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "بۇ پاراڭدىكى بارلىق ئۇچۇرلار ئۈسكۈنىڭىزنىڭ ھەممە يەرلىرىدىن ئۆچۈرۈلىدۇ."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "بۇ ھۆججەت قىسقۇچقا كۆرۈشنى خالايدىغان پاراڭلارنى تاللاڭ"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 پاراڭلار"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "گۇرۇپپا پاراڭلىرى"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "پاراڭلارنى قوشۇش"
@@ -1869,7 +1872,7 @@
     "messageformat": "بۇ B&A ئۈستەليۈزى نەشرىنىڭ ۋاقتى توشقان. ئۇچۇر يوللاش ۋە قوبۇل قىلىش ئۈچۈن ئۇنى يېڭىلاڭ."
   },
   "icu:upgrade": {
-    "messageformat": "بۇ يەرنى چېكىپ ba-chat.com/download غا كىرىڭ"
+    "messageformat": "بۇ يەرنى چېكىپ baxs.com/download غا كىرىڭ"
   },
   "icu:mediaMessage": {
     "messageformat": "ۋاسىتە ئۇچۇر"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "چۈشۈرۈش مەغلۇب بولدى"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "قوشۇمچە ھۆججەتنى زاپاسلاشتىن چۈشۈرۈش مەغلۇب بولدى"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "بۇ ئۇچۇرنى يوللاپ 24 سائەت ئىچىدىلا تەھرىرلەشكە بولىدۇ."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "بىرلا كۆرسەت سىن"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "بۇ ئۇچۇر ئۆچۈرۈلگەن"
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "قايتا سىناڭ ياكى ياردەم خادىمى بىلەن ئالاقىلىشىڭ."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "كۈتۈلمىگەن بىر خاتالىق كۆرۈلدى"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "سازلاش خاتىرە يوللا"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "ياق، رەھمەت"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "جەزملە"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {{number,number} ئەزا}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "ھەمبەھىرلەنگەن ۋاسىتە"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "ھەممىنى كۆرسەت"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "مېدىيا، ئۇلىنىشلار ۋە ھۆججەتلەر"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {{number,number} ئەزا}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "بىر باشقۇرغۇچىدىن يېڭى ئەزالارنىڭ گۇرۇپپا ئۇلانمىسى ئارقىلىق گۇرۇپپىغا قوشۇلۇشىنى تەستىقلاشنى تەلەپ قىلىڭ"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group ئۇلانمىسىنى كۇنۇپكا تاختىسىغا كۆچۈرۈڭ"
+    "messageformat": "signal.group ئۇلانمىسىنى كۇنۇپكا تاختىسىغا كۆچۈرۈڭ"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "تەلەپ ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "مەسىلەن، :-) <emojify>🙂</emojify> گە ئايلىنىدۇ"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "ئۈنسىزلەنگەن پاراڭلارنى ئارخىپتا ساقلاش"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "ئارخىپلانغان ئۈنسىز پاراڭلار يېڭى ئۇچۇر كەلگۈچە ئارخىپتا ساقلىنىدۇ."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "ئالىي"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "چەكلەندى"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A زاپاسلانمىسى"
+    "messageformat": "B&A بىخەتەر زاپاسلانمىللىرى"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&Aنىڭ بىخەتەر ، ئاخىرىغىچە مەخپىيلەشتۈرۈلگەن ساقلاش مۇلازىمىتى بىلەن ئاپتوماتىك زاپاسلاش. تېلېفونىڭىزدىن باشلاڭ. <learnMoreLink>تەپسىلاتى</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "تېكىست + بارلىق مېدىيانى زاپاسلاش"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "مۇشتەرىلىكىڭىز تېپىلمىدى. B&A زاپاسلانمىسىنى ئشلىتىش ئۈچۈن يېڭىلاڭ."
+    "messageformat": "مۇشتەرىلىكىڭىز تېپىلمىدى. B&A بىخەتەر زاپاسلانمىللىرىنى داۋاملىق ئشلىتىش ئۈچۈن يېڭىلاڭ."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {تېكىست + {mediaDayCount,number} كۈن مېدىيا زاپاسلاش}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "مۇشتەرىلىك بىكار قىلىندى"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "تېلېفونىڭىزدا B&A زاپاسلانمىسى مۇشتەرىلىكىڭىزنى باشقۇرالايسىز ياكى يېڭىلىيالايسىز."
+    "messageformat": "تېلېفونىڭىزدا B&A بىخەتەر زاپاسلانمىللىرى مۇشتەرىلىكىڭىزنى باشقۇرالايسىز ياكى ئەمەلدىن قالدۇرالايسىز."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "تېلېفونىڭىزدا B&A زاپاسلانمىسىنى باشقۇرالايسىز ياكى يېڭىلىيالايسىز."
+    "messageformat": "تېلېفونىڭىزدا B&A بىخەتەر زاپاسلانمىللىرىنى باشقۇرالايسىز ياكى يېڭىلىيالايسىز."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "تېلېفونىڭىزدا B&A زاپاسلانمىسى مۇشتەرىلىكىڭىزنى باشقۇرالايسىز ياكى يېڭىلىيالايسىز."
+    "messageformat": "تېلېفونىڭىزدا B&A بىخەتەر زاپاسلانمىللىرى مۇشتەرىلىكىڭىزنى باشقۇرالايسىز ياكى ئەزالىقنى داۋاملاشتۇرالايسىز."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "ئالدىنقى قېتىملىق زاپاسلاش"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "قوللىشىم"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} بىر قېتىملىق"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "ئىئانە بىر تەرەپ قىلىنىۋاتىدۇ..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} ئىئانە قىلىش"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>سىز ئىئانە قىلغاندا B&A شەخسىي ئۇچۇرلىرىڭىزنى توپلىمايدۇ ياكى ساقلىمايدۇ.</paragraph> <paragraph>ئىئانىڭىزنى تاپشۇرۇۋېلىش ئۈچۈن Stripe نى پۇل تۆلەش بىر تەرەپ قىلغۇچىسى ئورنىدا ئىشلىتىمىز.سىز ئۇلارغا تەمىنلىگەن ئۇچۇرلارنى بىز كۆرەلمەيمىز ياكى ساقلىيالمايمىز</paragraph>.<paragraph>B&A سىزنىڭ ئىئانىڭىزنى B&A ھېساباتىڭىزغا باغلىمايدۇ ۋە ئۇنداقمۇ قىلالمايدۇ.</paragraph><paragraph>قوللىغىنىڭىزغا رەھمەت!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "بولىدۇ"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "تالونلار"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "تالون تەپسىلاتلىرىنى كۆرۈش"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "ئىئانە قىلىشقا ئائىت سۇئال-جاۋابلار"
+    "messageformat": "ئىئانە قىلغۇچىلار كۆپ سورايدىغان سوئاللار"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "تالونلار ئۈسكۈنىلەردە ماسقەدەملەنمەيدۇ. ئەگەر B&A نى قايتا قاچىلىغان بولسىڭىز ، بۇرۇنقى ئىئانىلەرنىڭ تالونىنى كۆرگىلى بولمايدۇ."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "مۇددىتى توشىدىغان ۋاقىت"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM / YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "‫B&A غا {formattedCurrencyAmount} ئىئانە قىلىمەن"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 كۈنلۈك B&A ئىئانە ئىزنىكىنى تاپشۇرۇۋېلىڭ"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "ئەڭ تۆۋەن ئىئانە سوممىسى {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "ئىئانە قىلىش ئەڭ تۆۋەن سوممىسى {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "ئەڭ يۇقىرى ئىئانە سوممىسى {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "بۇ بەتتىن ئايرىلسىڭىز ئىناۋەتلىك كارتا ئۇچۇرىڭىز ئۆچۈرۈۋېتىلىدۇ. داۋاملاشتۇرامسىز؟"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "ئۇچۇرنى ئۆچۈرۈش"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "داۋاملاشتۇرۇش"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "ئىئانە تالونى"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&Aنى قوللىغانلىقىڭىزغا رەھمەت. سىزنىڭ ئىئانىڭىز ، ئوچۇق مەنبە مەخپىيەتلىك تېخنىكىسى ئارقىلىق ئەركىن ئىپادىلەش ھوقۇقىنى قوغدايدۇ ۋە دۇنيادىكى مىليونلىغان كىشىلەرنىڭ ئالاقىلىشىش بىخەتەرلىكىگە كاپالەتلىك قىلىدۇ. ئەگەر سىز ئامېرىكىنىڭ ئاھالىسى بولسىڭىز ، باج خاتىرىلىرى ئۈچۈن بۇ تالوننى ساقلاپ قويۇڭ. B&A Technology Foundation بولسا ئامېرىكا دۆلەت ئىچى باج قانۇنى 501c3 ماددىسىدىكى بەلگىلىمە بويىچە باجدىن كەچۈرۈم قىلىنىدىغان تاپاۋەتسىز ئورگان بولۇپ ھېسابلىنىدۇ. فېدېراتسىيە باج ID نومۇرىمىز 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "سىز تورغا ئۇلانمىغان. ئىئانىنى تاماملاش ئۈچۈن تورغا ئۇلاڭ."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "ئىئانە ئەمەلدىن قالدۇرۇلدى"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "دەلىللەشكە ئېھتىياجلىق بىر ئىئانىڭىز بار."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "ئىئانە مۇۋەپپەقىيەتلىك بولدى، ئەمما ئىزنەك تەڭشىكىڭىزنى يېڭىلىيالمىدۇق"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "ئىئانە مۇۋەپپەقىيەتلىك بولدى، ئەمما ئىزنەك تەڭشىكىڭىزنى يېڭىلىيالمىدۇق"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "كۆچمە ئۈسكۈنىڭىزدىكى ئىزنەك تەڭشىكىڭىزنى يېڭىلاش ئۈچۈن «تەڭشەك → B&Aغا ئىئانە قىلىش → ئىزنەك»كە كىرىڭ."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "ئىئانە قىلىش ئۈزۈلۈپ قالدى"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ئىئانىڭىز بىر تەرەپ قىلىنمىغان بولۇشى مۇمكىن. «B&Aغا ئىئانە قىلىش» نى چېكىپ ، ئاندىن «ئىئانە تالونلىرى» نى بېسىپ تالونلىرىڭىزنى تەكشۈرۈپ جەزملەشتۈرۈڭ."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "قايتا سىناڭ ياكى ياردەمچى خادىمغا، ئىئانىڭىزنى تاماملاشقا ياردەم بېرىشى ئۈچۈن، كاشىلا ھەل قىلىش خاتىرىسىىنى يوللاڭ. كاشىلا ھەل قىلىش خاتىرىلىرى بىزنىڭ مەسىلىگە دىئاگنوز قويۇشىمىز ۋە ھەل قىلىشىمىزغا ياردەم بېرىدۇ، ھەمدە تونىتىش ئۇچۇرلىرىنى ئۆز ئىچىگە ئالمايدۇ."
+  },
   "icu:Donations__Processing": {
     "messageformat": "ئىئانە بىر تەرەپ قىلىنىۋاتىدۇ..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "تېخىچە بىر تەرەپ قىلىۋاتىدۇ"
+    "messageformat": "ئىئانىنى بىر تەرەپ قىلىۋاتىدۇ"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "ئىئانىڭىزنى تېخىچە بىر تەرەپ قىلىۋاتىدۇ. بۇنىڭغا بىر مىنۇتتەك ۋەقىت كېتىشى مۇمكىن."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "ئىئانە قىلىشنى ئەمەلدىن قالدۇرۇش"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "قوللىغانلىقىڭىزغا رەھمەت!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "سىز بىر دانە B&A ئىئانە قىلغۇچىلار ئىزنىكىگە ئېرىشتىڭىز! ئۇنى ئارخىپىڭىزدا كۆرسىتىپ قوللىشىڭىزنى نامايەن قىلىڭ."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "ئارخىپتا كۆرسىتىش"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "بۇنى كۆچمە ئۈسكۈنىڭىزدە «تەڭشەك → سىگنالغا ئىئانە قىلىش → ئىزنەك» ئارقىلىق تەڭشىيەلەيسىز"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "B&A نىڭ راۋان ئىجرا بولۇشى ئۈچۈن بۇ نەشرىدە بىر قانچە كىچىك ئۆزگەرتىشلەر ئېلىپ بېرىلدى ۋە كاشىلىلار ئوڭشالدى.",
@@ -6844,13 +6925,7 @@
     "messageformat": "كىچىك ئۆزگەرتىشلەر كىرگۈزۈلدى، كاشىلا ھەل قىلىندى ۋە ئىقتىدار ئەلالاشتۇرۇلدى. B&A نى ئىشلەتكەنلىكىڭىزگە رەھمەت!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "بىز كۆپ ۋەزىپە ئىجرا قىلغاندا ، ئوقۇلغان / ئوقۇلمىغان ئۇچۇر تەجىرىبىسىنى ياخشىلىدۇق. رەسىمنى چەكسىڭىز ياكى يېتەرلىك تېزلىكتە خەت يازسىڭىز يەنىلا چوڭايتالايسىز."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "بىز emoji ئىزدەش رامكىسىدىكى بىر كەمتۈكلۈكنى ئوڭشىدۇق. 7.65چى نەشىر نۇسخىسى ئۈچۈن تارقىتىلدى."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "بۇ قېتىملىق يېڭىلاشتا بىر قانچە كىچىك كەمتۈكلەرنى ئوڭشىدۇق. 7.65نەشىر نۇسخىسى ئۈچۈن تارقىتىلدى."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "بۇ قېتىملىق يېڭىلانما، باتارېيەنىڭ ئۆمرىنى ياخشىلاشقا ياردەم بېرىدىغان يېڭى ئىقتىدار ئەلالاشتۇرۇشنى تونۇشتۇرىدۇ. 7.73 نەشىر نۇسخىسى ئۈچۈن تارقىتىلدى"
   }
 }

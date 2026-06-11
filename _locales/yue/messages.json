@@ -483,7 +483,7 @@
     "messageformat": "當你㩒咗提交之後，你嘅記錄會透過一個專屬而且未經發佈嘅網址喺網上發佈 30 日。你可以事先喺你部機度儲存記錄。"
   },
   "icu:debugLogError": {
-    "messageformat": "上載嘅時候出現咗問題！請你電郵去 support@baxs.com，同埋用文字檔案交埋你嘅記錄檔俾我哋。"
+    "messageformat": "上載嘅時候出現咗問題！請你電郵去 support@signal.org，同埋用文字檔案交埋你嘅記錄檔俾我哋。"
   },
   "icu:debugLogSuccess": {
     "messageformat": "已經提交咗除錯記錄"
@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "係咪要刪除聊天呀？"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "聊天入面嘅訊息會喺呢部機度刪除。"
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "聊天入面嘅所有訊息會喺你全部裝置度刪除。"
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "揀你想顯示喺呢個資料夾入面嘅聊天"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1 對 1 聊天"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "群组聊天"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "加聊天"
@@ -1869,7 +1872,7 @@
     "messageformat": "呢個 B&A 桌面版本已經過咗期。請你升級到最新版本嚟繼續收發訊息啦。"
   },
   "icu:upgrade": {
-    "messageformat": "㩒呢度去 ba-chat.com/download"
+    "messageformat": "㩒呢度去 signal.org/download"
   },
   "icu:mediaMessage": {
     "messageformat": "媒體訊息"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "下載失敗"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "未能喺備份度下載附件"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "你只可以喺傳送訊息後 24 個鐘內套用編輯。"
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "「閱後即毀」嘅影片"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "呢個訊息已經刪除咗。"
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "請你再試過或者聯絡支援團隊啦。"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "出現未知錯誤"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "提交除錯記錄檔"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "唔使喇，唔該"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "確定"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {{number,number} 位成員}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "分享咗嘅媒體"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "全部睇晒"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "媒體、連結和檔案"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {{number,number} 位成員}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "用群組連結加入嘅新成員需要經過管理員嘅批准"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "將 B&A.group 連結複製到剪貼簿"
+    "messageformat": "將 signal.group 連結複製到剪貼簿"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "請求（{count,number} 個）"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "例如：:-) 會變成 <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "繼續封存靜音聊天"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "當收到新訊息嘅時候，封存咗嘅靜音聊天會繼續封存。"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "進階"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "封鎖咗"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A 備份"
+    "messageformat": "B&A 安全備份"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "用 B&A 嘅端對端加密儲存服務安全自動備份。拎部你部手機出嚟開始備份。<learnMoreLink>了解詳情</learnMoreLink>。"
@@ -5280,7 +5301,7 @@
     "messageformat": "備份文字訊息 + 全部媒體"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "搵唔到你嘅課金計劃。即刻續期嚟繼續用 B&A 備份啦。"
+    "messageformat": "搵唔到你嘅課金計劃。即刻續期嚟繼續用「B&A 安全備份」。"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {備份文字訊息 + {mediaDayCount,number} 日嘅媒體}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "取消咗課金計劃"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "你可以喺手機度管理或者取消「B&A 備份」課金計劃。"
+    "messageformat": "你可以喺手機度管理或者取消「B&A 安全備份」課金計劃。"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "你可以喺手機度管理或者升級「B&A 備份」課金計劃。"
+    "messageformat": "你可以喺手機度管理或者升級「B&A 安全備份」課金計劃。"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "你可以喺手機度管理「B&A 備份」課金計劃或者續期。"
+    "messageformat": "你可以喺手機度管理「B&A 安全備份」課金計劃或者續期。"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "上一次備份"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "我擔當後援"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} 單次"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "處理緊捐款……"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "捐款 {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A 唔會喺你捐款嗰陣收集或者儲存任何個人資料。</paragraph><paragraph>我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。</paragraph><paragraph>B&A 唔會亦冇辦法將你嘅捐款連結至你嘅 B&A 帳戶。</paragraph><paragraph>多謝你嘅支持！</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "確定"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "收據"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "睇吓收據詳情"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "捐款常見問題"
+    "messageformat": "捐款者常見問題"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "收據唔會喺唔同裝置之間同步。若然您重新裝過 B&A，先前嘅捐款恕未能提供收據。"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "到期日"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "月月/年年"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "向 B&A 捐款 {formattedCurrencyAmount}"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "獲取為期 30 日嘅 B&A 捐款徽章"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "最低捐款額係 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "最低捐款額係 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "最高捐款額係 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "離開呢頁就會移除你嘅信用卡資料。係咪要繼續？"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "移除資訊"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "繼續"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收據"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "多謝你撐 B&A。你嘅捐款係我哋嘅原動力，推動我哋透過開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 B&A 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。B&A Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構。聯邦稅識別號碼係 82-4506840。"
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "你而家離咗線。請你連線上網去攪掂埋個捐款。"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "已經取消捐款"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "你有一筆處理緊嘅捐贈需要確認。"
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "成功捐款，但係我哋更新唔到你嘅徽章設定"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "成功捐款，但係我哋更新唔到你嘅徽章設定"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "如果想更新流動裝置嘅徽章設定，請去「設定」→「捐款俾 B&A」→「徽章」。"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "捐款中斷"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "可能未處理到你嘅捐款。點擊「捐款俾 B&A」，跟住點擊「捐款收據」檢查你嘅收據，然後確認。"
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "再試一次，或者提交除錯紀錄俾支援團隊，等我哋幫你完成捐款。除錯紀錄可以幫我哋診斷同修正問題，當中唔會包含任何識別資料。"
+  },
   "icu:Donations__Processing": {
     "messageformat": "處理緊捐款……"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "仲處理緊"
+    "messageformat": "捐款仲處理緊"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "仲處理緊你嘅捐款。可能要幾分鐘時間。"
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "取消捐款"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "多謝您嘅鼎力支持！"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "你獲得一個 B&A 捐款者徽章！不妨喺個人檔案度展示徽章，展現你對我哋嘅支持。"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "掛上去個人資料度展示"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "你可以喺流動裝置嘅「設定」→「捐款俾 B&A」→「徽章」度改改佢"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "呢個版本包含咗少少調整同埋錯誤修復，等 B&A 可以順暢運作。",
@@ -6844,13 +6925,7 @@
     "messageformat": "我哋做咗啲調整、修復咗一啲錯誤，同埋加強咗程式功能。多謝你使用 B&A！",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "我們改善咗多工處理嗰陣嘅訊息睇咗或者未睇嘅體驗，同埋修復咗個錯誤，喺搵緊至啱用嘅表情符號心情回應嗰陣㩒空格鍵，唔會再展開圖像瀏覽器。當點擊圖像或打字速度夠快，圖像仍然可以放大。"
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "搵表情符號搵到懷疑人生？我們修正咗一個錯誤﹐以後喺表情符號搜尋框入面㩒 Esc 退出鍵之後都唔會出現問題。"
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "呢次更新修正咗一啲小錯誤，包括表情符號心情回應嘅分類有時會出錯。"
+  "icu:WhatsNew__7.73": {
+    "messageformat": "呢次更新引入咗新嘅效能優化，幫助改善電池壽命。咁樣即使要同人傾密計都唔怕咁快無電啦。"
   }
 }

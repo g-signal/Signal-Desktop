@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "ചാറ്റ് ഇല്ലാതാക്കണോ?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "ഈ ഉപകരണത്തിൽ നിന്ന് ഈ ചാറ്റിലെ എല്ലാ സന്ദേശങ്ങളും ഇല്ലാതാക്കപ്പെടും."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "ഈ ചാറ്റിലെ എല്ലാ സന്ദേശങ്ങളും നിങ്ങളുടെ എല്ലാ ഉപകരണങ്ങളിൽ നിന്നും ഇല്ലാതാക്കപ്പെടും."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "ഈ ഫോൾഡറിൽ ദൃശ്യമാകാൻ ആഗ്രഹിക്കുന്ന ചാറ്റുകൾ തിരഞ്ഞെടുക്കുക"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 ചാറ്റുകൾ"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "ഗ്രൂപ്പ് ചാറ്റുകൾ"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "ചാറ്റുകൾ ചേർക്കുക"
@@ -1869,7 +1872,7 @@
     "messageformat": "B&A Desktop-ന്റെ ഈ പതിപ്പ് കാലഹരണപ്പെട്ടു. സന്ദേശ വിനിമയം തുടരുന്നതിന് ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഗ്രേഡുചെയ്യുക."
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download എന്നതിലേക്ക് പോകാൻ ക്ലിക്ക് ചെയ്യുക"
+    "messageformat": "baxs.com/download എന്നതിലേക്ക് പോകാൻ ക്ലിക്ക് ചെയ്യുക"
   },
   "icu:mediaMessage": {
     "messageformat": "മീഡിയ സന്ദേശം"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ഡൗൺലോഡ് പരാജയപ്പെട്ടു"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "ബാക്കപ്പിൽ നിന്ന് അറ്റാച്ചുമെന്റ് ഡൗൺലോഡ് ചെയ്യുന്നത് പരാജയപ്പെട്ടു"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "നിങ്ങൾ ഈ സന്ദേശം അയച്ച് 24 മണിക്കൂറിനുള്ളിൽ മാത്രമേ എഡിറ്റുകൾ ബാധകമാക്കാനാകൂ."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "ഒരിക്കൽ-കാണുക വീഡിയോ"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "ഈ സന്ദേശം ഇല്ലാതാക്കി."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "ദയവായി വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ പിന്തുണയുമായി ബന്ധപ്പെടുക."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "ഒരു അപ്രതീക്ഷിത പിശക് സംഭവിച്ചു"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "ഡീബഗ് ലോഗ് സമർപ്പിക്കുക"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "വേണ്ട"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "ശരി"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} അംഗം} other {{number,number} അംഗങ്ങൾ}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "പങ്കിട്ട മീഡിയ"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "എല്ലാം കാണുക"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "മീഡിയ, ലിങ്കുകൾ, ഫയലുകൾ"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} അംഗം} other {{number,number} അംഗങ്ങൾ}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "ഗ്രൂപ്പ് ലിങ്ക് വഴി പുതിയ അംഗങ്ങൾ ചേരുന്നത് അംഗീകരിക്കാൻ ഒരു അഡ്മിൻ ആവശ്യമാണ്"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "ക്ലിപ്പ്ബോർഡിലേക്ക് B&A.group ലിങ്ക് പകർത്തുക"
+    "messageformat": "ക്ലിപ്പ്ബോർഡിലേക്ക് signal.group ലിങ്ക് പകർത്തുക"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "അഭ്യർത്ഥനകൾ ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "ഉദാഹരണത്തിന്, :-) ൽ നിന്ന് <emojify>🙂</emojify> ആയി പരിവർത്തനം ചെയ്യപ്പെടും"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "മ്യൂട്ട് ചെയ്ത ചാറ്റുകൾ ആർക്കൈവായി വയ്ക്കുക"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "ആർക്കൈവിലുള്ളള മ്യൂട്ട് ചെയ്ത ചാറ്റുകൾ പുതിയ സന്ദേശം വരുമ്പോൾ ആർക്കൈവായി തന്നെ തുടരും."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "വിപുലമായ"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "ബ്ലോക്ക് ചെയ്തു"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A ബാക്കപ്പുകൾ"
+    "messageformat": "B&A സുരക്ഷിത ബാക്കപ്പുകൾ"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A-ൻ്റെ സുരക്ഷിതമായ, എൻഡ്-ടു-എൻഡ് എൻക്രിപ്റ്റ് ചെയ്ത സ്റ്റോറേജ് സേവനത്തോടുകൂടിയ സ്വയമേവയുള്ള ബാക്കപ്പുകൾ. നിങ്ങളുടെ ഫോണിൽ ആരംഭിക്കുക. <learnMoreLink>കൂടുതലറിയുക</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "ടെക്സ്റ്റ് + എല്ലാ മീഡിയ ബാക്കപ്പും"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ കണ്ടെത്തിയില്ല. B&A ബാക്കപ്പുകൾ ഉപയോഗിക്കുന്നത് തുടരാൻ പുതുക്കുക."
+    "messageformat": "നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ കണ്ടെത്തിയില്ല. B&A സുരക്ഷിത ബാക്കപ്പുകൾ ഉപയോഗിക്കുന്നത് തുടരാൻ പുതുക്കുക."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {ടെക്സ്റ്റ് + {mediaDayCount,number} ദിവസത്തെ മീഡിയ ബാക്കപ്പ്} other {ടെക്സ്റ്റ് + {mediaDayCount,number} ദിവസത്തെ മീഡിയ ബാക്കപ്പ്}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "സബ്സ്ക്രിപ്ഷൻ റദ്ദാക്കി"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "നിങ്ങളുടെ ഫോണിൽ B&A ബാക്കപ്പ് സബ്സ്ക്രിപ്ഷൻ മാനേജ് ചെയ്യാനോ റദ്ദാക്കാനോ കഴിയും."
+    "messageformat": "നിങ്ങളുടെ ഫോണിൽ B&A സുരക്ഷിത ബാക്കപ്പ് സബ്സ്ക്രിപ്ഷൻ മാനേജ് ചെയ്യാനോ റദ്ദാക്കാനോ കഴിയും."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "നിങ്ങളുടെ ഫോണിൽ B&A ബാക്കപ്പുകൾ കൈകാര്യം ചെയ്യാനോ അപ്‌ഗ്രേഡ് ചെയ്യാനോ കഴിയും."
+    "messageformat": "നിങ്ങളുടെ ഫോണിൽ B&A സുരക്ഷിത ബാക്കപ്പുകൾ മാനേജ് ചെയ്യാനോ അപ്‌ഗ്രേഡ് ചെയ്യാനോ കഴിയും."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "നിങ്ങളുടെ ഫോണിൽ B&A ബാക്കപ്പ് സബ്സ്ക്രിപ്ഷൻ മാനേജ് ചെയ്യാനോ പുതുക്കാനോ കഴിയും."
+    "messageformat": "നിങ്ങളുടെ ഫോണിൽ B&A സുരക്ഷിത ബാക്കപ്പ് സബ്സ്ക്രിപ്ഷൻ മാനേജ് ചെയ്യാനോ പുതുക്കാനോ കഴിയും."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "അവസാന ബാക്കപ്പ്"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "എന്റെ പിന്തുണ"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} ഒറ്റത്തവണ"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "സംഭാവന പ്രോസസ്സ് ചെയ്യുന്നു..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} സംഭാവന നൽകുക"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>നിങ്ങൾ ഒരു സംഭാവന നൽകുമ്പോൾ B&A നിങ്ങളുടെ സ്വകാര്യ വിവരങ്ങളൊന്നും ശേഖരിക്കുകയോ സൂക്ഷിക്കുകയോ ചെയ്യുന്നില്ല.</paragraph><paragraph>നിങ്ങളുടെ സംഭാവനകൾ സ്വീകരിക്കുന്നതിന് ഞങ്ങൾ Stripe പേയ്‌മെന്റ് പ്രോസസ്സറായി ഉപയോഗിക്കുന്നു. നിങ്ങൾ അവർക്ക് നൽകുന്ന ഒരു വിവരവും ഞങ്ങൾ ആക്‌സസ് ചെയ്യുകയോ സംഭരിക്കുകയോ സംരക്ഷിക്കുകയോ ചെയ്യുന്നില്ല.</paragraph><paragraph>B&A നിങ്ങളുടെ സംഭാവന നിങ്ങളുടെ B&A അക്കൗണ്ടുമായി ബന്ധിപ്പിക്കുന്നില്ല, ബന്ധിപ്പിക്കാനും കഴിയില്ല.</paragraph><paragraph>നിങ്ങളുടെ പിന്തുണയ്ക്ക് നന്ദി!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "ഓകെ"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "രസീതുകൾ"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "രസീത് വിശദാംശങ്ങൾ കാണുക"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "സംഭാവനയെക്കുറിച്ചുള്ള പതിവ് ചോദ്യങ്ങൾ"
+    "messageformat": "ദാതാക്കളുടെ പതിവ് ചോദ്യങ്ങൾ"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "ഉപകരണങ്ങളിലുടനീളം രസീതുകൾ സമന്വയിപ്പിക്കുന്നില്ല. നിങ്ങൾ B&A റീഇൻസ്റ്റോൾ ചെയ്‌തിട്ടുണ്ടെങ്കിൽ, മുൻ സംഭാവനകളുടെ രസീതുകൾ ലഭ്യമാകില്ല."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "കാലഹരണപ്പെടുന്ന തീയതി"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "മാസം/വർഷം"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A-ന് {formattedCurrencyAmount} സംഭാവന നൽകുക"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 ദിവസത്തേക്ക് B&A ബൂസ്റ്റ് ബാഡ്ജ് നേടൂ"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "ഏറ്റവും കുറഞ്ഞ സംഭാവന തുക {formattedCurrencyAmount} ആണ്"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "നിങ്ങൾക്ക് സംഭാവന നൽകാൻ കഴിയുന്ന ഏറ്റവും കുറഞ്ഞ തുക {formattedCurrencyAmount} ആണ്"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "പരമാവധി സംഭാവന തുക {formattedCurrencyAmount}ആണ്"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "ഈ പേജ് വിടുന്നത് നിങ്ങളുടെ ക്രെഡിറ്റ് കാർഡ് വിവരങ്ങൾ നീക്കം ചെയ്യും. തുടരണോ?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "വിവരങ്ങൾ നീക്കം ചെയ്യുക"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "തുടരുക"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "സംഭാവനാ രസീത്"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A-നെ പിന്തുണച്ചതിന് നന്ദി. സ്വതന്ത്രമായ അഭിപ്രായപ്രകടനം സംരക്ഷിക്കുന്നതിനും ലോകമെമ്പാടുമുള്ള ദശലക്ഷക്കണക്കിന് ആളുകൾക്ക് ഓപ്പൺ സോഴ്‌സ് സ്വകാര്യതാ സാങ്കേതികവിദ്യയിലൂടെ സുരക്ഷിതമായ ആഗോള ആശയവിനിമയം സാധ്യമാക്കുന്നതിനുമുള്ള ദൗത്യത്തിന് നിങ്ങളുടെ സംഭാവന ഇന്ധനം പകരുന്നു. നിങ്ങൾ യുണൈറ്റഡ് സ്റ്റേറ്റ്സിൽ താമസിക്കുന്ന ആളാണെങ്കിൽ, നിങ്ങളുടെ നികുതി രേഖകൾക്കായി ഈ രസീത് സൂക്ഷിക്കുക. B&A ടെക്നോളജി ഫൗണ്ടേഷൻ, ഇന്റേണൽ റവന്യൂ കോഡിന്റെ സെക്ഷൻ 501c3 പ്രകാരം യുണൈറ്റഡ് സ്റ്റേറ്റ്സിലെ നികുതി ഇളവ് ലഭിച്ച ഒരു ലാഭേച്ഛയില്ലാത്ത സ്ഥാപനമാണ്. ഞങ്ങളുടെ ഫെഡറൽ ടാക്സ് ഐഡി 82-4506840 ആണ്."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "നിങ്ങൾ ഓഫ്‌ലൈനാണ്. സംഭാവന പൂർത്തിയാക്കാൻ ഇൻ്റർനെറ്റുമായി ബന്ധിപ്പിക്കുക."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "സംഭാവന റദ്ദാക്കി"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "നിങ്ങൾക്ക്, സ്ഥിരീകരണം ആവശ്യമുള്ള ഒരു സംഭാവന പുരോഗതിയിലാണ്."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "സംഭാവന വിജയകരമായി നൽകി, പക്ഷേ നിങ്ങളുടെ ബാഡ്ജ് ക്രമീകരണങ്ങൾ അപ്ഡേറ്റ് ചെയ്യാൻ ഞങ്ങൾക്ക് കഴിഞ്ഞില്ല"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "സംഭാവന വിജയകരമായി നൽകി, പക്ഷേ നിങ്ങളുടെ ബാഡ്ജ് ക്രമീകരണങ്ങൾ അപ്ഡേറ്റ് ചെയ്യാൻ ഞങ്ങൾക്ക് കഴിഞ്ഞില്ല"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "നിങ്ങളുടെ മൊബൈൽ ഉപകരണത്തിൽ ബാഡ്ജ് ക്രമീകരണങ്ങൾ അപ്ഡേറ്റ് ചെയ്യാൻ, ക്രമീകരണങ്ങൾ → B&A-ലേക്ക് സംഭാവന ചെയ്യുക → ബാഡ്ജുകൾ എന്നതിലേക്ക് പോകുക."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "സംഭാവന തടസ്സപ്പെട്ടു"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "നിങ്ങളുടെ സംഭാവന പ്രോസസ്സ് ചെയ്തിട്ടുണ്ടാകില്ല. നിങ്ങളുടെ രസീതുകൾ പരിശോധിച്ച് പരിശോധിച്ചുറപ്പിക്കാൻ “B&A-ന് സംഭാവന ചെയ്യുക” എന്നതിലും തുടർന്ന് “സംഭാവനയുടെ രസീത്” എന്നതിലും ക്ലിക്ക് ചെയ്യുക."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "വീണ്ടും ശ്രമിക്കുക, അല്ലെങ്കിൽ നിങ്ങളുടെ സംഭാവന പൂർത്തിയാക്കുന്നതിനുള്ള സഹായത്തിനായി പിന്തുണയിലേക്ക് ഒരു ഡീബഗ് ലോഗ് സമർപ്പിക്കുക. പ്രശ്‌നം നിർണ്ണയിക്കാനും പരിഹരിക്കാനും ഡീബഗ് ലോഗുകൾ ഞങ്ങളെ സഹായിക്കുന്നു, അവയിൽ തിരിച്ചറിയാനാകുന്ന വിവരങ്ങൾ ഉൾപ്പെടുന്നുമില്ല."
+  },
   "icu:Donations__Processing": {
     "messageformat": "സംഭാവന പ്രോസസ്സ് ചെയ്യുന്നു..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "പ്രോസസ്സ് ചെയ്യുന്നു"
+    "messageformat": "സംഭാവന പ്രോസസ് ചെയ്തുകൊണ്ടിരിക്കുന്നു"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "നിങ്ങളുടെ സംഭാവന ഇപ്പോഴും പ്രോസസ്സ് ചെയ്യുകയാണ്. ഇതിന് കുറച്ച് മിനിറ്റ് എടുത്തേക്കാം."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "സംഭാവന റദ്ദാക്കുക"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "നിങ്ങളുടെ പിന്തുണയ്ക്ക് നന്ദി!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "നിങ്ങൾ B&A-ൽ നിന്ന് ഒരു ഡോണർ ബാഡ്‌ജ് നേടി ! പിന്തുണ കാണിക്കാൻ ഇത് നിങ്ങളുടെ പ്രൊഫൈലിൽ പ്രദർശിപ്പിക്കുക."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "പ്രൊഫൈലിൽ പ്രദർശിപ്പിക്കുക"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "നിങ്ങളുടെ മൊബൈൽ ഉപകരണത്തിൽ ക്രമീകരണങ്ങൾ → B&A-ലേക്ക് സംഭാവന ചെയ്യുക → ബാഡ്ജുകൾ എന്നതിന് കീഴിൽ ഇത് ക്രമീകരിക്കാം"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "B&A സുഗമമായി പ്രവർത്തിപ്പിക്കുന്നതിന് ആവശ്യമായ ഏതാനും ചെറിയ മാറ്റങ്ങളും ബഗ് ഫിക്‌സുകളും ഈ പതിപ്പിൽ അടങ്ങിയിട്ടുണ്ട്.",
@@ -6844,13 +6925,7 @@
     "messageformat": "ചെറിയ മാറ്റങ്ങളും ബഗ് പരിഹരിക്കലുകളും പ്രകടന മെച്ചപ്പെടുത്തലുകളും. B&A ഉപയോഗിക്കുന്നതിന് നന്ദി!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "മൾട്ടിടാസ്കിംഗ് ചെയ്യുമ്പോൾ സന്ദേശം വായിക്കുക/വായിക്കാതിരിക്കുക എന്നുള്ള അനുഭവം ഞങ്ങൾ മെച്ചപ്പെടുത്തി, ഒപ്പം മികച്ച ഇമോജി പ്രതികരണത്തിനായി തിരയുമ്പോൾ സ്‌പെയ്‌സ് ബാറിൽ അമർത്തിയാൽ എക്സ്പാൻഡഡ് ഇമേജ് വ്യൂവർ ചിലപ്പോൾ തെറ്റായി തുറക്കുമായിരുന്ന ഒരു ബഗ് പരിഹരിക്കുകയും ചെയ്തു. ചിത്രത്തിൽ ക്ലിക്ക് ചെയ്‌താൽ, അല്ലെങ്കിൽ വേഗത്തിൽ ടൈപ്പ് ചെയ്‌താൽ, നിങ്ങൾക്ക് ഇപ്പോഴും സൂം ചെയ്യാൻ കഴിയും."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "ശരിയായ ഇമോജി കണ്ടെത്തൽ ഒഴിവാക്കാനാവാത്ത ഒരു ബുദ്ധിമുട്ടായി തോന്നിയേക്കാം, പക്ഷേ ഇമോജി തിരയൽ ബോക്സിലെ എസ്കേപ്പ് കീ അമർത്തുമ്പോൾ പിശക് സംഭവിക്കാൻ ഇടയുണ്ടായിരുന്ന ഒരു ബഗ് ഞങ്ങൾ പരിഹരിച്ചു."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "ഈ അപ്‌ഡേറ്റ് ചില സന്ദർഭങ്ങളിൽ ഇമോജി പ്രതികരണങ്ങൾ ശരിയായി ഗ്രൂപ്പുചെയ്യാത്തത് ഉൾപ്പെടെയുള്ള ചില ചെറിയ ബഗുകൾ പരിഹരിക്കുന്നു."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "ബാറ്ററി ലൈഫ് മെച്ചപ്പെടുത്താൻ സഹായിക്കുന്നതിന് ഈ അപ്‌ഡേറ്റ് പുതിയ പ്രകടന ഒപ്റ്റിമൈസേഷനുകൾ അവതരിപ്പിക്കുന്നു, അതിനാൽ കൂടുതൽ വൈകാരികമായ സംഭാഷണങ്ങൾക്ക് നിങ്ങൾക്ക് കൂടുതൽ ബാറ്ററി ചാർജ് ലഭിക്കും."
   }
 }

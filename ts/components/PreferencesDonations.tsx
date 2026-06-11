@@ -1,47 +1,61 @@
 // Copyright 2025 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import React, { useCallback, useEffect, useState } from 'react';
-import { groupBy, sortBy } from 'lodash';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import lodash from 'lodash';
 
 import type { MutableRefObject, ReactNode } from 'react';
 import { ListBox, ListBoxItem } from 'react-aria-components';
-import { getDateTimeFormatter } from '../util/formatTimestamp';
+import { getDateTimeFormatter } from '../util/formatTimestamp.js';
 
-import type { LocalizerType, ThemeType } from '../types/Util';
-import { PreferencesContent } from './Preferences';
-import { SettingsPage } from '../types/Nav';
-import { PreferencesDonateFlow } from './PreferencesDonateFlow';
+import type { LocalizerType, ThemeType } from '../types/Util.js';
+import { PreferencesContent } from './Preferences.js';
+import { SettingsPage } from '../types/Nav.js';
+import { PreferencesDonateFlow } from './PreferencesDonateFlow.js';
 import type {
   DonationWorkflow,
   DonationReceipt,
   OneTimeDonationHumanAmounts,
   DonationErrorType,
-} from '../types/Donations';
+} from '../types/Donations.js';
 import {
   donationErrorTypeSchema,
   donationStateSchema,
-} from '../types/Donations';
-import type { AvatarColorType } from '../types/Colors';
-import { Button, ButtonSize, ButtonVariant } from './Button';
-import { Modal } from './Modal';
-import { Spinner } from './Spinner';
-import type { AnyToast } from '../types/Toast';
-import { ToastType } from '../types/Toast';
-import { createLogger } from '../logging/log';
-import { toLogFormat } from '../types/errors';
-import { I18n } from './I18n';
-import { openLinkInWebBrowser } from '../util/openLinkInWebBrowser';
-import { DonationPrivacyInformationModal } from './DonationPrivacyInformationModal';
-import type { SubmitDonationType } from '../state/ducks/donations';
-import { getHumanDonationAmount } from '../util/currency';
-import { Avatar, AvatarSize } from './Avatar';
-import type { BadgeType } from '../badges/types';
-import { DonationInterruptedModal } from './DonationInterruptedModal';
-import { DonationErrorModal } from './DonationErrorModal';
-import { DonationVerificationModal } from './DonationVerificationModal';
-import { DonationProgressModal } from './DonationProgressModal';
-import { DonationStillProcessingModal } from './DonationStillProcessingModal';
+} from '../types/Donations.js';
+import type { AvatarColorType } from '../types/Colors.js';
+import { Button, ButtonSize, ButtonVariant } from './Button.js';
+import { Modal } from './Modal.js';
+import { Spinner } from './Spinner.js';
+import type { AnyToast } from '../types/Toast.js';
+import { ToastType } from '../types/Toast.js';
+import { createLogger } from '../logging/log.js';
+import { toLogFormat } from '../types/errors.js';
+import { I18n } from './I18n.js';
+import { openLinkInWebBrowser } from '../util/openLinkInWebBrowser.js';
+import { DonationPrivacyInformationModal } from './DonationPrivacyInformationModal.js';
+import type { SubmitDonationType } from '../state/ducks/donations.js';
+import {
+  getHumanDonationAmount,
+  toHumanCurrencyString,
+} from '../util/currency.js';
+import { Avatar, AvatarSize } from './Avatar.js';
+import type { BadgeType } from '../badges/types.js';
+import { DonationInterruptedModal } from './DonationInterruptedModal.js';
+import { DonationErrorModal } from './DonationErrorModal.js';
+import { DonationVerificationModal } from './DonationVerificationModal.js';
+import { DonationProgressModal } from './DonationProgressModal.js';
+import { DonationStillProcessingModal } from './DonationStillProcessingModal.js';
+import { DonationThanksModal } from './DonationThanksModal.js';
+import type {
+  ConversationType,
+  ProfileDataType,
+} from '../state/ducks/conversations.js';
+import type { AvatarUpdateOptionsType } from '../types/Avatar.js';
+import { drop } from '../util/drop.js';
+import { DonationsOfflineTooltip } from './conversation/DonationsOfflineTooltip.js';
+import { getInProgressDonation } from '../util/donations.js';
+
+const { groupBy, sortBy } = lodash;
 
 const log = createLogger('PreferencesDonations');
 
@@ -52,7 +66,7 @@ type PropsExternalType = {
 export type PropsDataType = {
   i18n: LocalizerType;
   initialCurrency: string;
-  isStaging: boolean;
+  isOnline: boolean;
   page: SettingsPage;
   didResumeWorkflowAtStartup: boolean;
   lastError: DonationErrorType | undefined;
@@ -74,9 +88,22 @@ export type PropsDataType = {
     receipt: DonationReceipt,
     i18n: LocalizerType
   ) => Promise<Blob>;
+  showToast: (toast: AnyToast) => void;
+  donationBadge: BadgeType | undefined;
+  fetchBadgeData: () => Promise<BadgeType | undefined>;
+  me: ConversationType;
+  myProfileChanged: (
+    profileData: ProfileDataType,
+    avatarUpdateOptions: AvatarUpdateOptionsType
+  ) => void;
 };
 
 type PropsActionType = {
+  applyDonationBadge: (args: {
+    badge: BadgeType | undefined;
+    applyBadge: boolean;
+    onComplete: (error?: Error) => void;
+  }) => void;
   clearWorkflow: () => void;
   resumeWorkflow: () => void;
   setPage: (page: SettingsPage) => void;
@@ -94,7 +121,12 @@ type DonationPage =
 
 type PreferencesHomeProps = Pick<
   PropsType,
-  'contentsRef' | 'i18n' | 'setPage' | 'isStaging' | 'donationReceipts'
+  | 'contentsRef'
+  | 'i18n'
+  | 'setPage'
+  | 'isOnline'
+  | 'donationReceipts'
+  | 'workflow'
 > & {
   navigateToPage: (newPage: SettingsPage) => void;
   renderDonationHero: () => JSX.Element;
@@ -175,33 +207,91 @@ function DonationsHome({
   renderDonationHero,
   navigateToPage,
   setPage,
-  isStaging,
+  isOnline,
   donationReceipts,
+  workflow,
 }: PreferencesHomeProps): JSX.Element {
+  const [isInProgressModalVisible, setIsInProgressVisible] = useState(false);
+
+  const inProgressDonationAmount = useMemo<string | undefined>(() => {
+    const inProgressDonation = getInProgressDonation(workflow);
+    return inProgressDonation
+      ? toHumanCurrencyString(inProgressDonation)
+      : undefined;
+  }, [workflow]);
+
+  const handleDonateButtonClicked = useCallback(() => {
+    if (inProgressDonationAmount) {
+      setIsInProgressVisible(true);
+    } else {
+      setPage(SettingsPage.DonationsDonateFlow);
+    }
+  }, [inProgressDonationAmount, setPage]);
+
+  const handleInProgressDonationClicked = useCallback(() => {
+    setIsInProgressVisible(true);
+  }, []);
+
   const hasReceipts = donationReceipts.length > 0;
+
+  const donateButton = (
+    <Button
+      className="PreferencesDonations__PrimaryButton PreferencesDonations__donate-button"
+      disabled={!isOnline}
+      variant={isOnline ? ButtonVariant.Primary : ButtonVariant.Secondary}
+      size={ButtonSize.Medium}
+      onClick={handleDonateButtonClicked}
+    >
+      {i18n('icu:PreferencesDonations__donate-button')}
+    </Button>
+  );
 
   return (
     <div className="PreferencesDonations">
+      {isInProgressModalVisible && (
+        <DonationStillProcessingModal
+          i18n={i18n}
+          onClose={() => setIsInProgressVisible(false)}
+        />
+      )}
+
       {renderDonationHero()}
-      {isStaging && (
-        <Button
-          className="PreferencesDonations__PrimaryButton PreferencesDonations__donate-button"
-          variant={ButtonVariant.Primary}
-          size={ButtonSize.Medium}
-          onClick={() => {
-            setPage(SettingsPage.DonationsDonateFlow);
-          }}
-        >
-          {i18n('icu:PreferencesDonations__donate-button')}
-        </Button>
+
+      {isOnline ? (
+        donateButton
+      ) : (
+        <DonationsOfflineTooltip i18n={i18n}>
+          {donateButton}
+        </DonationsOfflineTooltip>
       )}
 
       <hr className="PreferencesDonations__separator" />
 
-      {hasReceipts && (
+      {(hasReceipts || inProgressDonationAmount) && (
         <div className="PreferencesDonations__section-header PreferencesDonations__section-header--my-support">
           {i18n('icu:PreferencesDonations__my-support')}
         </div>
+      )}
+
+      {inProgressDonationAmount && (
+        <ListBox className="PreferencesDonations__badge-list">
+          <ListBoxItem
+            className="PreferencesDonations__badge"
+            onAction={handleInProgressDonationClicked}
+          >
+            <div className="PreferencesDonations__badge-icon PreferencesDonations__badge-icon--one-time" />
+            <div className="PreferencesDonations__badge-info">
+              <div className="PreferencesDonations__badge-label">
+                {i18n('icu:PreferencesDonations__badge-label-one-time', {
+                  formattedCurrencyAmount: inProgressDonationAmount,
+                })}
+              </div>
+              <div className="PreferencesDonations__badge-processing-info">
+                {i18n('icu:PreferencesDonations__badge-processing-donation')}
+              </div>
+            </div>
+          </ListBoxItem>
+        </ListBox>
       )}
 
       <ListBox className="PreferencesDonations__list">
@@ -262,38 +352,24 @@ function PreferencesReceiptList({
   ) => Promise<Blob>;
   showToast: (toast: AnyToast) => void;
 }): JSX.Element {
-  const [showReceiptModal, setShowReceiptModal] = useState(false);
   const [selectedReceipt, setSelectedReceipt] =
     useState<DonationReceipt | null>(null);
   const [isDownloading, setIsDownloading] = useState(false);
 
-  const sortedReceipts = sortBy(
-    donationReceipts,
-    receipt => -receipt.timestamp
-  );
-  const receiptsByYear = groupBy(sortedReceipts, receipt =>
-    new Date(receipt.timestamp).getFullYear()
+  const hasReceipts = useMemo(
+    () => donationReceipts.length > 0,
+    [donationReceipts]
   );
 
-  const dateFormatter = getDateTimeFormatter({
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-  });
-
-  const preferredSystemLocales =
-    window.SignalContext.getPreferredSystemLocales();
-  const localeOverride = window.SignalContext.getLocaleOverride();
-  const locales =
-    localeOverride != null ? [localeOverride] : preferredSystemLocales;
-
-  const getCurrencyFormatter = (currencyType: string) =>
-    new Intl.NumberFormat(locales, {
-      style: 'currency',
-      currency: currencyType,
-    });
-
-  const hasReceipts = Object.keys(receiptsByYear).length > 0;
+  const receiptsByYear = useMemo(() => {
+    const sortedReceipts = sortBy(
+      donationReceipts,
+      receipt => -receipt.timestamp
+    );
+    return groupBy(sortedReceipts, receipt =>
+      new Date(receipt.timestamp).getFullYear()
+    );
+  }, [donationReceipts]);
 
   const handleDownloadReceipt = useCallback(async () => {
     if (!selectedReceipt) {
@@ -311,7 +387,7 @@ function PreferencesReceiptList({
       });
 
       if (result) {
-        setShowReceiptModal(false);
+        setSelectedReceipt(null);
         showToast({
           toastType: ToastType.ReceiptSaved,
           parameters: { fullPath: result.fullPath },
@@ -333,6 +409,12 @@ function PreferencesReceiptList({
     showToast,
   ]);
 
+  const dateFormatter = getDateTimeFormatter({
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  });
+
   return (
     <div className="PreferencesDonations PreferencesDonations--receiptList">
       {hasReceipts ? (
@@ -351,15 +433,16 @@ function PreferencesReceiptList({
               <div className="PreferencesDonations--receiptList__year-header">
                 {year}
               </div>
-              <ListBox className="PreferencesDonations--receiptList__list">
+              <div className="PreferencesDonations--receiptList__list">
                 {receipts.map(receipt => (
-                  <ListBoxItem
+                  <button
+                    aria-label={i18n(
+                      'icu:PreferencesDonations__receipt-details-button-aria'
+                    )}
                     key={receipt.id}
                     className="PreferencesDonations--receiptList__receipt-item"
-                    onAction={() => {
-                      setSelectedReceipt(receipt);
-                      setShowReceiptModal(true);
-                    }}
+                    onClick={() => setSelectedReceipt(receipt)}
+                    type="button"
                   >
                     <div className="PreferencesDonations--receiptList__receipt-item__icon" />
                     <div className="PreferencesDonations--receiptList__receipt-item__details">
@@ -371,13 +454,14 @@ function PreferencesReceiptList({
                       </div>
                     </div>
                     <div className="PreferencesDonations--receiptList__receipt-item__amount">
-                      {getCurrencyFormatter(receipt.currencyType).format(
-                        getHumanDonationAmount(receipt)
-                      )}
+                      {toHumanCurrencyString({
+                        amount: getHumanDonationAmount(receipt),
+                        currency: receipt.currencyType,
+                      })}
                     </div>
-                  </ListBoxItem>
+                  </button>
                 ))}
-              </ListBox>
+              </div>
             </div>
           ))}
         </>
@@ -392,17 +476,18 @@ function PreferencesReceiptList({
         </div>
       )}
 
-      {showReceiptModal && selectedReceipt && (
+      {selectedReceipt && (
         <Modal
           i18n={i18n}
           modalName="ReceiptDetailsModal"
           moduleClassName="PreferencesDonations__ReceiptModal"
           hasXButton
-          title={i18n('icu:PreferencesDonations__ReceiptModal--title')}
-          onClose={() => setShowReceiptModal(false)}
+          padded={false}
+          onClose={() => setSelectedReceipt(null)}
           modalFooter={
             <Button
               variant={ButtonVariant.Primary}
+              size={ButtonSize.Small}
               onClick={handleDownloadReceipt}
               disabled={isDownloading}
             >
@@ -419,9 +504,10 @@ function PreferencesReceiptList({
               <div className="PreferencesDonations__ReceiptModal__logo" />
             </div>
             <div className="PreferencesDonations__ReceiptModal__amount">
-              {getCurrencyFormatter(selectedReceipt.currencyType).format(
-                getHumanDonationAmount(selectedReceipt)
-              )}
+              {toHumanCurrencyString({
+                amount: getHumanDonationAmount(selectedReceipt),
+                currency: selectedReceipt.currencyType,
+              })}
             </div>
             <hr className="PreferencesDonations__ReceiptModal__separator" />
             <div className="PreferencesDonations__ReceiptModal__details">
@@ -455,11 +541,12 @@ export function PreferencesDonations({
   contentsRef,
   i18n,
   initialCurrency,
-  isStaging,
+  isOnline,
   page,
   workflow,
   didResumeWorkflowAtStartup,
   lastError,
+  applyDonationBadge,
   clearWorkflow,
   resumeWorkflow,
   setPage,
@@ -476,10 +563,24 @@ export function PreferencesDonations({
   generateDonationReceiptBlob,
   showToast,
   updateLastError,
+  donationBadge,
+  fetchBadgeData,
 }: PropsType): JSX.Element | null {
   const [hasProcessingExpired, setHasProcessingExpired] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   const [isPrivacyModalVisible, setIsPrivacyModalVisible] = useState(false);
+
+  // Fetch badge data when we're about to show the badge modal
+  useEffect(() => {
+    if (
+      workflow?.type === donationStateSchema.Enum.DONE &&
+      page === SettingsPage.Donations &&
+      !donationBadge
+    ) {
+      drop(fetchBadgeData());
+    }
+  }, [workflow, page, donationBadge, fetchBadgeData]);
 
   const navigateToPage = useCallback(
     (newPage: SettingsPage) => {
@@ -489,7 +590,7 @@ export function PreferencesDonations({
   );
 
   useEffect(() => {
-    if (!workflow || lastError) {
+    if (lastError) {
       setIsSubmitted(false);
     }
 
@@ -528,6 +629,13 @@ export function PreferencesDonations({
         errorType={lastError}
         i18n={i18n}
         onClose={() => {
+          setIsSubmitted(false);
+          if (
+            workflow?.type === 'DONE' &&
+            lastError === donationErrorTypeSchema.Enum.BadgeApplicationFailed
+          ) {
+            clearWorkflow();
+          }
           updateLastError(undefined);
         }}
       />
@@ -565,6 +673,24 @@ export function PreferencesDonations({
           clearWorkflow();
           updateLastError(donationErrorTypeSchema.Enum.TimedOut);
           setPage(SettingsPage.Donations);
+        }}
+      />
+    );
+  } else if (workflow?.type === donationStateSchema.Enum.DONE) {
+    dialog = (
+      <DonationThanksModal
+        i18n={i18n}
+        badge={donationBadge}
+        applyDonationBadge={applyDonationBadge}
+        onClose={(error?: Error) => {
+          if (error) {
+            log.error('Badge application failed:', error.message);
+            updateLastError(
+              donationErrorTypeSchema.Enum.BadgeApplicationFailed
+            );
+          } else {
+            clearWorkflow();
+          }
         }}
       />
     );
@@ -619,6 +745,7 @@ export function PreferencesDonations({
         <PreferencesDonateFlow
           contentsRef={contentsRef}
           i18n={i18n}
+          isOnline={isOnline}
           initialCurrency={initialCurrency}
           donationAmountsConfig={donationAmountsConfig}
           lastError={lastError}
@@ -641,11 +768,12 @@ export function PreferencesDonations({
       <DonationsHome
         contentsRef={contentsRef}
         i18n={i18n}
+        isOnline={isOnline}
         navigateToPage={navigateToPage}
         donationReceipts={donationReceipts}
-        isStaging={isStaging}
         renderDonationHero={renderDonationHero}
         setPage={setPage}
+        workflow={workflow}
       />
     );
   } else if (page === SettingsPage.DonationsReceiptList) {

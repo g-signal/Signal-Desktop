@@ -4,52 +4,52 @@
 import type {
   ClientZkProfileOperations,
   ProfileKeyCredentialRequestContext,
-} from '@signalapp/libsignal-client/zkgroup';
+} from '@signalapp/libsignal-client/zkgroup.js';
 import PQueue from 'p-queue';
 import { IdentityChange } from '@signalapp/libsignal-client';
 
 import type { ReadonlyDeep } from 'type-fest';
-import type { ConversationModel } from '../models/conversations';
+import type { ConversationModel } from '../models/conversations.js';
 import type {
   CapabilitiesType,
   GextGroupProfileType,
   ProfileType,
-} from '../textsecure/WebAPI';
-import MessageSender from '../textsecure/SendMessage';
-import type { ServiceIdString } from '../types/ServiceId';
-import { DataWriter } from '../sql/Client';
-import { createLogger } from '../logging/log';
-import * as Errors from '../types/errors';
-import * as Bytes from '../Bytes';
-import { explodePromise } from '../util/explodePromise';
-import { isRecord } from '../util/isRecord';
-import { sleep } from '../util/sleep';
-import { MINUTE, SECOND } from '../util/durations';
+} from '../textsecure/WebAPI.js';
+import MessageSender from '../textsecure/SendMessage.js';
+import type { ServiceIdString } from '../types/ServiceId.js';
+import { DataWriter } from '../sql/Client.js';
+import { createLogger } from '../logging/log.js';
+import * as Errors from '../types/errors.js';
+import * as Bytes from '../Bytes.js';
+import { explodePromise } from '../util/explodePromise.js';
+import { isRecord } from '../util/isRecord.js';
+import { sleep } from '../util/sleep.js';
+import { MINUTE, SECOND } from '../util/durations/index.js';
 import {
   generateProfileKeyCredentialRequest,
   getClientZkProfileOperations,
   handleProfileKeyCredential,
-} from '../util/zkgroup';
-import { isMe } from '../util/whatTypeOfConversation';
-import { parseBadgesFromServer } from '../badges/parseBadgesFromServer';
+} from '../util/zkgroup.js';
+import { isMe } from '../util/whatTypeOfConversation.js';
+import { parseBadgesFromServer } from '../badges/parseBadgesFromServer.js';
 import { parseGextTagsFromServer } from '../util/parseGextTags';
 import { parseGextRobotFromServer } from '../util/parseGextRobot';
-import { strictAssert } from '../util/assert';
-import { drop } from '../util/drop';
-import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError';
-import { singleProtoJobQueue } from '../jobs/singleProtoJobQueue';
-import { SEALED_SENDER } from '../types/SealedSender';
-import { HTTPError } from '../textsecure/Errors';
-import { Address } from '../types/Address';
-import { QualifiedAddress } from '../types/QualifiedAddress';
-import { trimForDisplay, verifyAccessKey, decryptProfile } from '../Crypto';
-import type { ConversationLastProfileType } from '../model-types';
-import type { GroupSendToken } from '../types/GroupSendEndorsements';
+import { strictAssert } from '../util/assert.js';
+import { drop } from '../util/drop.js';
+import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError.js';
+import { singleProtoJobQueue } from '../jobs/singleProtoJobQueue.js';
+import { SEALED_SENDER } from '../types/SealedSender.js';
+import { HTTPError } from '../textsecure/Errors.js';
+import { Address } from '../types/Address.js';
+import { QualifiedAddress } from '../types/QualifiedAddress.js';
+import { trimForDisplay, verifyAccessKey, decryptProfile } from '../Crypto.js';
+import type { ConversationLastProfileType } from '../model-types.js';
+import type { GroupSendToken } from '../types/GroupSendEndorsements.js';
 import {
   maybeCreateGroupSendEndorsementState,
   onFailedToSendWithEndorsements,
-} from '../util/groupSendEndorsements';
-import { ProfileDecryptError } from '../types/errors';
+} from '../util/groupSendEndorsements.js';
+import { ProfileDecryptError } from '../types/errors.js';
 
 const log = createLogger('profiles');
 
@@ -77,8 +77,6 @@ type JobType = {
 //   - Don't even attempt jobs when offline
 
 const OBSERVED_CAPABILITY_KEYS = Object.keys({
-  deleteSync: true,
-  ssre2: true,
   attachmentBackfill: true,
 } satisfies CapabilitiesType) as ReadonlyArray<keyof CapabilitiesType>;
 
@@ -317,23 +315,15 @@ async function buildProfileFetchOptions({
   const accessKey = conversation.get('accessKey');
   const serviceId = conversation.getCheckedServiceId('getProfile');
 
-  if (
-    profileKey &&
-    profileKeyVersion &&
-    accessKey &&
-    !options.ignoreProfileKey
-  ) {
+  function getProfileCredentialsToUseIfExpired(profileKeyArg: string): {
+    credentialRequestContext: ProfileKeyCredentialRequestContext | null;
+    credentialRequestHex: string | null;
+  } {
     if (!conversation.hasProfileKeyCredentialExpired()) {
       log.info(`${logId}: using unexpired profile key credential`);
       return {
-        profileKey,
-        profileCredentialRequestContext: null,
-        request: {
-          accessKey,
-          groupSendToken: null,
-          profileKeyVersion,
-          profileKeyCredentialRequest: null,
-        },
+        credentialRequestContext: null,
+        credentialRequestHex: null,
       };
     }
 
@@ -341,17 +331,32 @@ async function buildProfileFetchOptions({
     const result = generateProfileKeyCredentialRequest(
       clientZkProfileCipher,
       serviceId,
-      profileKey
+      profileKeyArg
     );
 
     return {
+      credentialRequestContext: result.context,
+      credentialRequestHex: result.requestHex,
+    };
+  }
+
+  if (
+    profileKey &&
+    profileKeyVersion &&
+    accessKey &&
+    !options.ignoreProfileKey &&
+    !isMe(conversation.attributes)
+  ) {
+    const { credentialRequestContext, credentialRequestHex } =
+      getProfileCredentialsToUseIfExpired(profileKey);
+    return {
       profileKey,
-      profileCredentialRequestContext: result.context,
+      profileCredentialRequestContext: credentialRequestContext,
       request: {
         accessKey,
         groupSendToken: null,
         profileKeyVersion,
-        profileKeyCredentialRequest: result.requestHex,
+        profileKeyCredentialRequest: credentialRequestHex,
       },
     };
   }
@@ -375,6 +380,23 @@ async function buildProfileFetchOptions({
         groupSendToken: null,
         profileKeyVersion: lastProfile.profileKeyVersion,
         profileKeyCredentialRequest: null,
+      },
+    };
+  }
+
+  // For self we also use the versioned profile on the authenticated socket,
+  // with profile key credentials if needed.
+  if (profileKey && profileKeyVersion && isMe(conversation.attributes)) {
+    const { credentialRequestContext, credentialRequestHex } =
+      getProfileCredentialsToUseIfExpired(profileKey);
+    return {
+      profileKey,
+      profileCredentialRequestContext: credentialRequestContext,
+      request: {
+        accessKey: null,
+        groupSendToken: null,
+        profileKeyVersion,
+        profileKeyCredentialRequest: credentialRequestHex,
       },
     };
   }
@@ -537,7 +559,7 @@ async function doGetProfile(
             // Record that the accessKey we have in the conversation is invalid
             const sealedSender = c.get('sealedSender');
             if (sealedSender !== SEALED_SENDER.DISABLED) {
-              c.set('sealedSender', SEALED_SENDER.DISABLED);
+              c.set({ sealedSender: SEALED_SENDER.DISABLED });
             }
 
             // Retry fetch using last known profileKey or fetch unversioned profile.
@@ -564,7 +586,7 @@ async function doGetProfile(
       if (error.code === 404) {
         log.info(`${logId}: Profile not found`);
 
-        c.set('profileLastFetchedAt', Date.now());
+        c.set({ profileLastFetchedAt: Date.now() });
 
         if (!isVersioned || ignoreProfileKey) {
           log.info(`${logId}: Marking conversation unregistered`);
@@ -639,20 +661,20 @@ async function doGetProfile(
   if (isFieldDefined(profile.about)) {
     if (updatedDecryptionKey != null) {
       const decrypted = decryptField(profile.about, updatedDecryptionKey);
-      c.set('about', formatTextField(decrypted));
+      c.set({ about: formatTextField(decrypted) });
     }
   } else {
-    c.unset('about');
+    c.set({ about: undefined });
   }
 
   // Step #: Save profile `aboutEmoji` to conversation
   if (isFieldDefined(profile.aboutEmoji)) {
     if (updatedDecryptionKey != null) {
       const decrypted = decryptField(profile.aboutEmoji, updatedDecryptionKey);
-      c.set('aboutEmoji', formatTextField(decrypted));
+      c.set({ aboutEmoji: formatTextField(decrypted) });
     }
   } else {
-    c.unset('aboutEmoji');
+    c.set({ aboutEmoji: undefined });
   }
 
   // Step #: Save profile `phoneNumberSharing` to conversation
@@ -665,10 +687,10 @@ async function doGetProfile(
       // It should be one byte, but be conservative about it and
       // set `sharingPhoneNumber` to `false` in all cases except [0x01].
       const sharingPhoneNumber = decrypted.length === 1 && decrypted[0] === 1;
-      c.set('sharingPhoneNumber', sharingPhoneNumber);
+      c.set({ sharingPhoneNumber });
     }
   } else {
-    c.unset('sharingPhoneNumber');
+    c.set({ sharingPhoneNumber: undefined });
   }
 
   // Step #: Save our own `paymentAddress` to Storage
@@ -681,7 +703,7 @@ async function doGetProfile(
   if (profile.capabilities != null) {
     c.set({ capabilities: profile.capabilities });
   } else {
-    c.unset('capabilities');
+    c.set({ capabilities: undefined });
   }
 
   // Step #: Save our own `observedCapabilities` to Storage and trigger sync if changed
@@ -736,7 +758,7 @@ async function doGetProfile(
       })),
     });
   } else {
-    c.unset('badges');
+    c.set({ badges: undefined });
   }
 
   // Step #: Save profile `gextTags` to conversation attributes
@@ -773,7 +795,7 @@ async function doGetProfile(
       log.warn(
         `${logId}: Included credential request, but got no credential. Clearing profileKeyCredential.`
       );
-      c.unset('profileKeyCredential');
+      c.set({ profileKeyCredential: undefined });
     }
   }
 
@@ -824,7 +846,7 @@ async function doGetProfile(
     }
   }
 
-  c.set('profileLastFetchedAt', Date.now());
+  c.set({ profileLastFetchedAt: Date.now() });
 
   // After we successfully decrypted - update lastProfile property
   if (

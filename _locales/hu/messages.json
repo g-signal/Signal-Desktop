@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Csevegés törlése?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Az ebben a csevegésben lévő összes üzenet törlődik erről az eszközről."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "A csevegésben lévő összes üzenet törlődik az összes eszközödről."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Válaszd ki azokat a csevegéseket, amelyeket meg szeretnél jeleníteni ebben a mappában."
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 csevegések"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Csoportos csevegés"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Csevegések hozzáadása"
@@ -1869,7 +1872,7 @@
     "messageformat": "A B&A Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
   },
   "icu:upgrade": {
-    "messageformat": "Kattints a ba-chat.com/download oldalra ugráshoz!"
+    "messageformat": "Kattints a baxs.com/download oldalra ugráshoz!"
   },
   "icu:mediaMessage": {
     "messageformat": "Médiaüzenet"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Letöltés sikertelen"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "A melléklet letöltése a biztonsági mentésből sikertelen"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "A módosításokat csak az üzenet elküldésétől számított 24 órán belül lehet alkalmazni."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Egyszer megjelenő videó"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Ez az üzenet ki lett törölve."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Próbáld újra, vagy vedd fel a kapcsolatot a támogatással!"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Váratlan hiba történt"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Hibanapló elküldése"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nem, köszönöm"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "OK"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} tag} other {{number,number} tag}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Megosztott médiafájlok"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Összes megtekintése"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Médiatartalmak, linkek és fájlok"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} tag} other {{number,number} tag}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Admin általi jóváhagyás szükséges csoporthivatkozással csatlakozó tagok felvételéhez."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Másold a B&A.group hivatkozást a vágólapra"
+    "messageformat": "Másold a signal.group hivatkozást a vágólapra"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Kérelmek ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Például a :-) hangulatjel <emojify>🙂</emojify> hangulatjellé kerül átalakításra"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "A némított csevegések maradjanak archiválva"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Az archivált némított csevegések új üzenet érkezésekor továbbra is archiválva maradnak."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Haladó"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Letiltva"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "A B&A biztonsági mentései"
+    "messageformat": "B&A Biztonságos Biztonsági mentések"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatikus biztonsági mentések a B&A biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Szöveg és minden médiafájl biztonsági mentése"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Az előfizetés nem található Annak érdekében, hogy tovább használhasd a B&A biztonsági mentéseit, újítsd meg."
+    "messageformat": "Az előfizetés nem található A B&A Biztonságos Biztonsági mentéseinek további használatához újítsd meg az előfizetésedet."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Szöveg és minden médiafájl biztonsági mentése {mediaDayCount,number} napra} other {Szöveg és minden médiafájl biztonsági mentése {mediaDayCount,number} napra}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Előfizetés törölve"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "A B&A biztonsági mentéseire vonatkozó előfizetésed kezelheted és lemondhatod a telefonodon."
+    "messageformat": "A B&A Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "A B&A biztonsági mentéseire vonatkozó előfizetésed kezelheted és frissítheted a telefonodon."
+    "messageformat": "A B&A Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "A B&A biztonsági mentéseire vonatkozó előfizetésed kezelheted és megújíthatod a telefonodon."
+    "messageformat": "A B&A Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Utolsó biztonsági mentés"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Támogatásaim"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "Egyszeri {formattedCurrencyAmount}"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Adomány feldolgozása..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} adományozása"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>A B&A nem gyűjti és nem tárolja a személyes adataidat, amikor adományozol.</paragraph><paragraph>A Stripe-ot használjuk fizetésfeldolgozóként az adományok fogadására. Nem férünk hozzá, nem tárolunk és nem mentünk el semmilyen információt, amelyet megadsz számukra.</paragraph><paragraph>A B&A nem fogja és nem is tudja összekapcsolni az adományodat a B&A-fiókoddal.</paragraph><paragraph>Köszönjük a támogatásodat!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Nyugták"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "A nyugta adatainak megtekintése"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Adományozási GYIK"
+    "messageformat": "Adományozás GYIK"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a B&At, korábbi adományaid nyugtái nem lesznek elérhetők."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Lejárati idő"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "HH/ÉÉ"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Adományozz {formattedCurrencyAmount} összeget a B&Anak"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Szerezd meg a B&A Boost-jelvényt 30 napra"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Az adomány minimális összege: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "A minimális adomány összege: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Az adomány maximális összege: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Ha kilépsz erről az oldalról, a hitelkártyaadataid törlődnek. Szeretnéd folytatni?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Információ eltávolítása"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Folytatás"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Adomány nyugta"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Köszönjük, hogy támogatod a B&At! Adományoddal hozzájárulsz a szabad véleménynyilvánítást és milliók számára biztonságos kommunikációt biztosító, nyílt forrású, magánéletet védő technológiák fejlesztéséhez. Ha az Egyesült Államokban adózol, kérünk, őrizd meg ezt a nyugtát adóbevallásodhoz. A B&A Technology Foundation egy adómentes, non-profit szervezet, amely az USA területén az 501c3 Internal Revenue Code hatálya alá tartozik. Federal Tax ID: 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Offline állapotban vagy. Az adományozás befejezéséhez, kérjük, csatlakozz az internethez."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Adományozás visszavonva"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Van egy folyamatban lévő adományozásod, amely megerősítést igényel."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Az adományozás sikeres volt, de nem tudtuk frissíteni a jelvényed beállításait."
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Az adományozás sikeres volt, de nem tudtuk frissíteni a jelvényed beállításait."
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a B&Anak → Jelvények menüpontra."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Adományozás megszakadt"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a B&Anak” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Próbáld újra, vagy küldj egy hibanaplót az Ügyfélszolgálatnak, és kérj segítséget az adományozás befejezéséhez. A hibanaplók segítenek diagnosztizálni és kijavítani a problémát, és nem tartalmaznak azonosító információkat."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Adomány feldolgozása..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Még dolgozunk"
+    "messageformat": "Az adomány feldolgozása folyamatban van"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Az adományod feldolgozása még folyamatban van. Ez pár percet is igénybe vehet."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Adományozás visszavonása"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Köszönjük a támogatásodat!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Kaptál egy adományozói jelvényt a B&Atól! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Megjelenítés profilképen"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a B&Anak → Jelvények menüpontban állíthatod be."
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a B&A továbbra is gond nélkül fusson.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a B&At használod!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Javítottuk az üzenetek olvasott/olvasatlan állapotát multitasking közben."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Kijavítottunk egy hibát az emoji keresőmezőben."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Néhány apróbb hibajavítás."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Ez a frissítés új teljesítményoptimalizálási funkciókat vezet be az akkumulátor élettartamának javítása érdekében."
   }
 }

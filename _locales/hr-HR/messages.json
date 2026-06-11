@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Izbriši razgovor?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Sve poruke iz ovog razgovora bit će izbrisane s ovog uređaja."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Sve poruke iz ovog razgovora bit će izbrisane sa svih vaših uređaja."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Odaberite razgovore koje želite da se pojave u ovoj mapi"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Privatni razgovori"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Grupni razgovori"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Dodaj razgovore"
@@ -1869,7 +1872,7 @@
     "messageformat": "Vaša verzija B&Aa za Desktop je istekla. Ažurirajte kako bi nastavili slati poruke."
   },
   "icu:upgrade": {
-    "messageformat": "Kliknite za odlazak na ba-chat.com/download"
+    "messageformat": "Kliknite za odlazak na baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Poruka s medijskim zapisom"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Preuzimanje nije uspjelo"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Preuzimanje privitka iz sigurnosne kopije nije uspjelo"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Poruke je moguće uređivati samo u roku od 24 sata od trenutka slanja."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Jednom vidljiv video zapis"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Ova poruka je izbrisana."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Pokušajte ponovo ili kontaktirajte podršku."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Došlo je do neočekivane pogreške"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Pošalji zapisnik pogreške"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Ne, hvala"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "U redu"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} član} few {{number,number} člana} many {{number,number} članova} other {{number,number} članova}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Dijeljeni medijski zapisi"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Prikaži sve"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Medijski zapisi, poveznice i datoteke"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} član} few {{number,number} člana} many {{number,number} članova} other {{number,number} članova}}"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Npr. :-) pretvorit će se u <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Zadrži utišane razgovore arhiviranima"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Utišani arhivirani razgovori ostat će arhivirani kada stigne nova poruka."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Napredno"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Blokirani kontakti"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Sigurnosne kopije B&Aa"
+    "messageformat": "Zaštićene kopije podataka"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatsko sigurnosno kopiranje pomoću B&Aovog sustava pohrane koji je zaštićen sveobuhvatnim šifriranjem. Započnite na svom telefonu. <learnMoreLink>Saznajte više</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Poruke + svi medijski zapisi"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Vaša pretplata nije pronađena. Obnovite je odmah kako biste nastavili koristiti sigurnosne kopije B&Aa."
+    "messageformat": "Vaša pretplata nije pronađena. Obnovite je odmah kako biste nastavili koristiti zaštićene kopije podataka."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Poruke + medijski zapisi iz zadnjeg {mediaDayCount,number} dana} few {Poruke + medijski zapisi iz zadnja {mediaDayCount,number} dana} many {Poruke + medijski zapisi iz zadnjih {mediaDayCount,number} dana} other {Poruke + medijski zapisi iz zadnjih {mediaDayCount,number} dana}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Pretplata je otkazana"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Možete upravljati svojom pretplatom na sigurnosne kopije B&Aa na svom telefonu."
+    "messageformat": "Možete upravljati svojom pretplatom na zaštićene kopije podataka ili je otkazati na svom telefonu."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Možete upravljati svojom pretplatom na sigurnosne kopije B&Aa ili je nadograditi na svom telefonu."
+    "messageformat": "Možete upravljati zaštićenim kopijama podataka ili ih nadograditi na svom telefonu."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Možete upravljati svojom pretplatom na sigurnosne kopije B&Aa ili je obnoviti na svom telefonu."
+    "messageformat": "Možete upravljati svojom pretplatom na zaštićene kopije podataka ili je obnoviti na svom telefonu."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Posljednje sigurnosno kopiranje"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Moja podrška"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "Jednokratno {formattedCurrencyAmount}"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Obrada donacije u tijeku…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Doniraj {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A ne prikuplja niti pohranjuje vaše osobne podatke kada izvršite donaciju.</paragraph><paragraph>Kao procesor plaćanja za primanje vaših donacija koristimo Stripe. Ne pristupamo informacijama koje dijelite s njima, ne pohranjujemo ih niti spremamo.</paragraph><paragraph>B&A ne povezuje i ne može povezati vašu donaciju s vašim B&A računom.</paragraph><paragraph>Hvala vam na podršci!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "U redu"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Računi"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Pogledajte detalje računa"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Najčešća pitanja o donacijama"
+    "messageformat": "Najčešća pitanja donatora"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Plaćanja se ne sinkroniziraju na različitim uređajima. Ako ste ponovno instalirali B&A, potvrde o prijašnjim donacijama neće biti dostupne."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Datum isteka"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/GG"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Donirajte {formattedCurrencyAmount} B&Au"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Osvojite B&Aovu značku podrške na 30 dana"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Najmanji iznos donacije je {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Najmanji iznos koji možete donirati je {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Najveći iznos donacije je {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Napuštanjem ove stranice uklonit ćete podatke o svojoj kreditnoj kartici. Želite li nastaviti?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Ukloni podatke"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Nastavi"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Potvrda o donaciji"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Hvala što podržavate B&A. Vaš doprinos podržava našu misiju razvoja tehnologije otvorenog koda za zaštitu privatnosti, koja štiti slobodu izražavanja i omogućuje sigurnu globalnu komunikaciju milijunima ljudi širom svijeta. Ako imate prebivalište u Sjedinjenim Američkim Državama, sačuvajte ovu potvrdu za poreznu dokumentaciju. B&A Technology Foundation je neprofitna organizacija oslobođena plaćanja poreza u Sjedinjenim Američkim Državama prema odjeljku 501c3 Zakona o internim prihodima. Naš federalni porezni broj je 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Niste na mreži. Molimo vas da se povežete s internetom kako biste dovršili donaciju."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donacija je otkazana"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Imate donaciju koja je u obradi i zahtijeva dodatnu potvrdu."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donacija je uspjela, ali nismo uspjeli ažurirati postavke vaše značke"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donacija je uspjela, ali nismo uspjeli ažurirati postavke vaše značke"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Za ažuriranje postavki značke na mobilnom uređaju idite na Postavke → Donirajte B&Au → Značke."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donacija je prekinuta"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Vaša donacija možda nije obrađena. Kliknite na „Donirajte B&Au“, a zatim na „Potvrde o donaciji“ kako biste provjerili svoje donacije."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Pokušajte ponovno ili pošaljite zapisnik otklanjanja pogreške korisničkoj podršci za pomoć s donacijom. Zapisi pogrešaka pomažu nam pri dijagnosticiranju i rješavanju problema i ne sadrže podatke za identifikaciju."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Obrada donacije u tijeku…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Obrada u tijeku"
+    "messageformat": "Donacija se još uvijek obrađuje"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Vaša se donacija još uvijek obrađuje. Ovo može potrajati nekoliko minuta."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Otkaži donaciju"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Hvala vam na podršci!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Osvojili ste značku donatora! Prikažite je na svom profilu i iskažite svoju podršku B&Au."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Prikaži na svom profilu"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Ovo možete prilagoditi na svom telefonu pod Postavke → Donirajte B&Au → Značke"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Ova verzija B&Aa sadrži niz malih podešavanja i ispravaka programskih pogrešaka za nesmetano korištenje aplikacije.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Manja podešavanja, ispravci grešaka i poboljšanje rada aplikacije. Hvala vam što koristite B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Poboljšali smo iskustvo pregleda pročitanih i nepročitanih poruka tijekom obavljanja više zadataka istovremeno."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Ispravili smo programsku pogrešku u okviru za pretraživanje emojija."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Ispravljeno je nekoliko manjih programskih pogrešaka."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Ovo ažuriranje uvodi nove optimizacije performansi koje doprinose poboljšanju trajanja baterije."
   }
 }

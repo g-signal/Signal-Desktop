@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "למחוק צ'אט?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "כל ההודעות בצ׳אט הזה יימחקו ממכשיר זה."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "כל ההודעות בצ׳אט הזה יימחקו מכל המכשירים שלך."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "יש לבחור צ׳אטים שברצונך לכלול בתיקיה הזו"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "צ׳אטים 1:1"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "התכתבויות קבוצתיות"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "הוספת צ׳אטים"
@@ -1869,7 +1872,7 @@
     "messageformat": "גרסה זו של B&A Desktop פגה. אנא שדרג אל הגרסה האחרונה כדי להמשיך בשליחת הודעות."
   },
   "icu:upgrade": {
-    "messageformat": "לחץ כדי ללכת אל ba-chat.com/download"
+    "messageformat": "לחץ כדי ללכת אל baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "הודעת מדיה"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ההורדה נכשלה"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "הורדת קובץ מצורף מהגיבוי נכשלה"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "ניתן לערוך את ההודעה הזו רק עד 24 שעות מזמן השליחה שלה."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "סרטון לצפייה חד־פעמית"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "הודעה זו נמחקה."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "אנא נסה שוב או צור קשר עם התמיכה."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "קרתה שגיאה לא צפויה"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "הגש יומן ניפוי תקלים"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "לא תודה"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "בסדר"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {חבר/ה {number,number}} two {{number,number} חברים} many {{number,number} חברים} other {{number,number} חברים}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "מדיה משותפת"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "ראה הכל"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "מדיה, קישורים וקבצים"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {חבר/ה {number,number}} two {{number,number} חברים} many {{number,number} חברים} other {{number,number} חברים}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "דרוש מנהלן כדי לאשר הצטרפות של חברי קבוצה חדשים באמצעות קישור הקבוצה"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "העתקה של קישור B&A.group ללוח"
+    "messageformat": "העתקה של קישור signal.group ללוח"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "בקשות ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "למשל, :-) יומר ל–<emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "השארת צ׳אטים מושתקים בארכיון"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "צ׳אטים מושתקים שמאוחסנים בארכיון יישארו בארכיון כשהודעה חדשה מגיעה."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "מתקדם"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "חסומים"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "גיבויי B&A"
+    "messageformat": "גיבויים מאובטחים של B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "גיבויים אוטומטיים בשירות האחסון המאובטח והמוצפן מקצה לקצה של B&A. אפשר להתחיל כעת בטלפון שלך. <learnMoreLink>למידע נוסף</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "גיבוי טקסט + כל המדיה"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "המנוי שלך לא נמצא. יש לחדש כדי להמשיך להשתמש בגיבויי B&A."
+    "messageformat": "המנוי שלך לא נמצא. יש לחדש כדי להמשיך להשתמש בגיבויים מאובטחים של B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {גיבוי טקסט + יום {mediaDayCount,number} של מדיה} two {גיבוי טקסט + יומיים של מדיה} many {גיבוי טקסט + {mediaDayCount,number} ימים של מדיה} other {גיבוי טקסט + {mediaDayCount,number} ימים של מדיה}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "מנוי בוטל"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "באפשרותך לנהל או לבטל את מנוי גיבויי B&A שלך בטלפון שלך."
+    "messageformat": "באפשרותך לנהל או לבטל את מנוי גיבויי B&A המאובטחים שלך בטלפון שלך."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "באפשרותך לנהל או לשדרג את גיבויי B&A בטלפון שלך."
+    "messageformat": "באפשרותך לנהל או לשדרג את גיבויי B&A המאובטחים בטלפון שלך."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "באפשרותך לנהל או לחדש את מנוי גיבויי B&A שלך בטלפון שלך."
+    "messageformat": "באפשרותך לנהל או לחדש את מנוי גיבויי B&A המאובטחים שלך בטלפון שלך."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "גיבוי אחרון"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "התמיכה שלי"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} חד–פעמית"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "תרומה בעיבוד…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "תרומה של {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A לא אוספת או מאחסנת את המידע האישי שלך בעת ביצוע תרומה.</paragraph><paragraph>אנחנו משתמשים ב–Stripe בתור מעבד התשלומים שלנו כדי לקבל את התרומות שלך. אנחנו לא ניגשים לשום מידע שהם מקבלים ממך ולא מאחסנים או שומרים אותו.</paragraph><paragraph>B&A אינה מקשרת את התרומה שלך לחשבון B&A שלך ואין לה אפשרות לעשות זאת.</paragraph><paragraph>תודה על התמיכה שלך!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "אישור"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "קבלות"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "הצגת פרטי קבלה"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "שאלות נפוצות על תרומה"
+    "messageformat": "שאלות נפוצות של תורמים"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "קבלות אינן מסתנכרנות בין מכשירים. אם התקנת מחדש את B&A, קבלות מתרומות קודמות לא יהיו זמינות."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "תאריך תפוגה"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "חודש/שנה"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "תרומה של {formattedCurrencyAmount} ל–B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "קבלת תג B&A Boost למשך 30 יום"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "הסכום המינימלי לתרומה הוא {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "הסכום המינימלי שאפשר לתרום הוא {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "הסכום המקסימלי לתרומה הוא {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "עזיבת דף זה תסיר את פרטי כרטיס האשראי שלך. רוצה להמשיך?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "הסרת מידע"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "המשך"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "קבלה על תרומה"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "תודה על התמיכה ב–B&A. התרומה שלך עוזרת להמשיך להניע את המשימה שלנו להגן על חופש הביטוי ולאפשר תקשורת גלובלית מאובטחת עבור מיליונים ברחבי העולם, באמצעות טכנולוגיית פרטיות בקוד פתוח. אם מקום המגורים שלך הוא ארה״ב, יש לשמור את הקבלה הזו לצורך רישומי המס שלך. B&A Technology Foundation היא עמותה ללא מטרות רווח פטורה ממס בארה״ב תחת סעיף 501c3 של קוד מס ההכנסה האמריקאי. מזהה המס הפדרלי שלנו הוא 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "המכשיר שלך לא מחובר. יש להתחבר לאינטרנט כדי להשלים את התרומה."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "תרומה בוטלה"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "יש לך תרומה בתהליך הממתינה לאישור."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "התרומה בוצעה בהצלחה, אבל לא הצלחנו לעדכן את הגדרות התג שלך"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "התרומה בוצעה בהצלחה, אבל לא הצלחנו לעדכן את הגדרות התג שלך"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "כדי לעדכן את הגדרות התג שלך במכשיר הנייד שלך, יש לעבור אל הגדרות > תרומה ל–B&A > תגים."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "התרומה הופסקה"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ייתכן שהתרומה שלך לא עובדה בהצלחה. יש ללחוץ על ״תרומה ל–B&A״ ואז על ״קבלות על תרומות״ כדי לבדוק את הקבלות שלך ולאשר."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "יש לנסות שוב או לשלוח לתמיכה יומן ניפוי באגים לקבלת סיוע בהשלמת התרומה שלך. יומני ניפוי באגים עוזרים לנו לאבחן ולתקן את הבעיה ולא מכילים מידע מזהה."
+  },
   "icu:Donations__Processing": {
     "messageformat": "תרומה בעיבוד…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "עדין מעבד"
+    "messageformat": "תרומה עדיין בעיבוד"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "התרומה שלך עדיין בתהליך עיבוד. ייתכן וזה יקח מספר דקות"
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "ביטול תרומה"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "תודה על התמיכה שלך!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "הרווחת תג תרומה מ–B&A! אפשר להציג אותו בפרופיל שלך כדי להשוויץ בתמיכה שלך."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "הצג בפרופיל"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "אפשר לשנות את זה במכשיר הנייד שלך תחת הגדרות > תרומה ל–B&A > תגים"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "גרסה זו מכילה מספר של שפצורים קטנים ותיקוני תקלים כדי לשמור על B&A שירוץ באופן חלק.",
@@ -6844,13 +6925,7 @@
     "messageformat": "התאמות קטנות, תיקוני באגים ושיפורי ביצועים. תודה על השימוש ב-B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "שיפרנו את חוויית התצוגה של הודעות שנקראו/שלא נקראו בזמן ריבוי משימות."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "מציאת האימוג'י הנכון יכולה להרגיש כמו מאבק בלתי נגמר, אבל תיקנו באג שגרם לשגיאה להתרחש לאחר לחיצה על מקש Escape בתיבת החיפוש של האימוג'י."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "כמה תיקוני באגים קטנים."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "עדכון זה כולל אופטימיזציות חדשות לביצועים כדי לסייע בשיפור חיי הסוללה, כך שתהיה לך יותר טעינה זמינה לשיחות טעונות רגשית."
   }
 }

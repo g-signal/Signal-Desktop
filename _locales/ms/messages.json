@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Padam sembang?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Semua mesej dalam sembang ini akan dipadamkan daripada peranti ini."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Semua mesej dalam sembang ini akan dipadamkan daripada semua peranti anda."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Pilih sembang yang anda mahu dipaparkan dalam folder ini"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Sembang 1:1"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Sembang kumpulan"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Tambah sembang"
@@ -1869,7 +1872,7 @@
     "messageformat": "Versi B&A Desktop telah tamat tempoh. Sila naik taraf kepada versi terkini untuk meneruskan pemesejan."
   },
   "icu:upgrade": {
-    "messageformat": "Klik pergi ke ba-chat.com/download"
+    "messageformat": "Klik pergi ke baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mesej Media"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Muat turun gagal"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Muat turun lampiran daripada sandaran gagal"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Edit hanya boleh digunakan dalam masa 24 jam dari masa anda menghantar mesej ini."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Video lihat sekali"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Mesej ini telah dipadam."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Sila cuba lagi atau hubungi sokongan."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Ralat yang tidak dijangka berlaku"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Hantar log nyahpepijat"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Tidak, terima kasih"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Okay"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {{number,number} ahli}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Media yang dikongsi"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Lihat semua"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, pautan dan fail"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {{number,number} ahli}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Memerlukan pentadbir untuk meluluskan ahli baharu yang menyertai kumpulan melalui pautan kumpulan"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Salin pautan B&A.group ke papan klip"
+    "messageformat": "Salin pautan signal.group ke papan klip"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Permintaan ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Sebagai contoh, :-) akan ditukar kepada <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Kekalkan Sembang yang Diredam Diarkibkan"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Sembang yang diredam, yang telah diarkibkan akan kekal diarkibkan apabila mesej baru masuk."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Lanjutan"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Disekat"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Sandaran B&A"
+    "messageformat": "Sandaran Selamat B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Sandaran automatik dengan perkhidmatan storan B&A yang selamat dan disulitkan hujung ke hujung. Mula di telefon anda. <learnMoreLink>Ketahui lebih lanjut.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Teks + semua sandaran media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Langganan anda tidak ditemui. Perbaharui untuk terus menggunakan Sandaran B&A."
+    "messageformat": "Langganan anda tidak ditemui. Perbaharui untuk terus menggunakan Sandaran Selamat B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {Teks + {mediaDayCount,number} hari sandaran media}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Langganan dibatalkan"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Anda boleh mengurus atau membatalkan langganan Sandaran B&A di telefon anda."
+    "messageformat": "Anda boleh mengurus atau membatalkan langganan Sandaran Selamat B&A di telefon anda."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Anda boleh mengurus atau menaik taraf Sandaran B&A di telefon anda."
+    "messageformat": "Anda boleh mengurus atau menaik taraf Sandaran Selamat B&A pada telefon anda."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Anda boleh mengurus atau memperbaharui langganan Sandaran B&A di telefon anda."
+    "messageformat": "Anda boleh mengurus atau memperbaharui langganan Sandaran Selamat B&A di telefon anda."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Sandaran terakhir"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Sokongan Saya"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} sekali"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Memproses derma..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Derma {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A tidak mengumpul atau menyimpan sebarang maklumat peribadi anda semasa anda menderma.</paragraph><paragraph>Kami menggunakan Stripe sebagai pemproses pembayaran untuk menerima derma anda. Kami tidak mengakses atau menyimpan sebarang maklumat yang anda berikan kepada mereka.</paragraph><paragraph>B&A tidak akan dan tidak boleh menyambung derma anda kepada akaun B&A anda.</paragraph><paragraph>Terima kasih atas sokongan anda!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Resit"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Lihat butiran resit"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Soalan Lazim Derma"
+    "messageformat": "Soalan Lazim Penderma"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Resit tidak disegerakkan merentasi peranti. Jika anda memasang semula B&A, resit daripada derma terdahulu tidak akan tersedia."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Tarikh Tamat Tempoh"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "BB/TT"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Derma {formattedCurrencyAmount} kepada B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Dapatkan lencana B&A Boost selama 30 hari"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Jumlah derma minimum ialah {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Jumlah minimum yang anda boleh dermakan ialah {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Jumlah derma maksimum ialah {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Meninggalkan halaman ini akan mengalih keluar maklumat kad kredit anda. Adakah anda mahu meneruskan?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Alih keluar maklumat"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Teruskan"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Resit derma"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Terima kasih kerana menyokong B&A. Sumbangan anda membantu menyokong misi melindungi kebebasan bersuara dan membolehkan komunikasi global yang selamat untuk jutaan orang di seluruh dunia, melalui teknologi privasi sumber terbuka. Jika anda penduduk Amerika Syarikat, sila simpan resit ini untuk rekod cukai anda. B&A Technology Foundation merupakan organisasi bukan berasaskan keuntungan yang dikecualikan cukai di Amerika Syarikat di bawah seksyen 501c3 Kod Hasil dalam Negeri. ID Cukai Persekutuan kami ialah 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Anda berada di luar talian. Sila sambung ke internet untuk menyelesaikan derma."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Derma dibatalkan"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Anda mempunyai derma yang sedang diproses dan memerlukan pengesahan."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Derma berjaya, tetapi kami tidak dapat mengemas kini tetapan lencana anda"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Derma berjaya, tetapi kami tidak dapat mengemas kini tetapan lencana anda"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Untuk mengemas kini tetapan lencana pada peranti mudah alih anda, pergi ke Tetapan → Derma kepada B&A → Lencana."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Derma terganggu"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Derma anda mungkin tidak diproses. Klik \"Derma kepada B&A\" dan kemudian \"Resit Derma\" untuk menyemak resit anda dan mengesahkan."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Cuba lagi atau hantar log nyahpepijat kepada Sokongan untuk bantuan menyelesaikan derma anda. Log nyahpepijat membantu kami mengenal pasti dan membetulkan isu ini, dan tidak mengandungi maklumat pengenalan diri."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Memproses derma..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Masih sedang diproses"
+    "messageformat": "Masih memproses derma"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Derma anda sedang diproses. Ini boleh mengambil masa beberapa minit"
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Batalkan derma"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Terima kasih atas sokongan anda!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Anda telah memperoleh lencana penderma daripada B&A! Paparkan di profil untuk menunjukkan sokongan anda."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Paparkan di profil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Anda boleh melaraskan ini pada peranti mudah alih anda di Tetapan → Derma kepada B&A → Lencana"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Versi ini mengandungi sedikit tweak kecil dan pembetulan pepijat untuk memastikan B&A berjalan dengan lancar.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Sedikit pengubahsuaian, pembaikan pepijat dan peningkatan prestasi. Terima kasih kerana menggunakan B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Kami telah menambah baik pengalaman baca/belum baca mesej semasa anda melakukan berbilang tugas."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Kami membetulkan pepijat dalam kotak carian emoji."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Beberapa pembetulan pepijat kecil."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Kemas kini ini memperkenalkan pengoptimuman prestasi baharu untuk membantu meningkatkan hayat bateri."
   }
 }

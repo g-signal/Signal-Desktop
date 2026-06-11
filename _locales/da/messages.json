@@ -102,7 +102,7 @@
     "messageformat": "Kan ikke tilgå databasekrypteringsnøglen, fordi OS-krypteringsnøgleringens backend er ændret fra {previousBackend} til {currentBackend}. Dette kan ske, hvis skrivebordsmiljøet ændres, for eksempel mellem GNOME og KDE.\n\nSkift til det forrige skrivebordsmiljø."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Kan ikke tilgå databasekrypteringsnøglen, fordi OS-krypteringsnøgleringens backend er ændret fra {previousBackend} til {currentBackend}. Dette kan ske, hvis skrivebordsmiljøet ændres, for eksempel mellem GNOME og KDE.\n\nSkift til det forrige skrivebordsmiljø, eller prøv at køre B&A med kommandolinjeargumentet --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Kan ikke tilgå databasekrypteringsnøglen, fordi OS-krypteringsnøgleringens backend er ændret fra {previousBackend} til {currentBackend}. Dette kan ske, hvis skrivebordsmiljøet ændres, for eksempel mellem GNOME og KDE.\n\nSkift til det forrige skrivebordsmiljø, eller prøv at køre signal med kommandolinjeargumentet --password-store=\"{previousBackendFlag}\""
   },
   "icu:mainMenuFile": {
     "messageformat": "&Fil"
@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Slet chat?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Alle beskeder i denne chat slettes fra denne enhed."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Alle beskeder i denne chat slettes fra alle dine enheder."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Vælg de chats, du vil have vist i denne mappe"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1-chats"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Gruppesamtaler"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Tilføj chats"
@@ -1869,7 +1872,7 @@
     "messageformat": "Denne version af B&A Desktop er forældet. Opgrader venligst til den nyeste version for at fortsætte"
   },
   "icu:upgrade": {
-    "messageformat": "Klik for at gå til ba-chat.com/download"
+    "messageformat": "Klik for at gå til baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediebesked"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Download mislykkedes"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Download af vedhæftning fra sikkerhedskopien mislykkedes."
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Ændringer kan kun foretages indenfor 24 timer efter at du har sendt denne besked."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Vis engangs-video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Beskeden blev slettet."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Prøv venligst igen eller kontakt support"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Der er opstået en ukendt fejl"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Indsend fejlsøgningslog"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nej tak"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Okay"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} medlem} other {{number,number} medlemmer}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Delte medier"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Se alle"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Medier, links og filer"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} medlem} other {{number,number} medlemmer}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Det kræves at en administrator godkender nye medlemmer via gruppelinket"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiér B&A.group-linket til din udklipsholder"
+    "messageformat": "Kopiér signal.group-linket til din udklipsholder"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Anmodninger ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "For eksempel vil :-) blive konverteret til <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Lad ignorerede chats forblive arkiverede"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Ignorerede chats, der er arkiveret, forbliver arkiverede, når der kommer en ny besked."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Avanceret"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Blokeret"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A-sikkerhedskopier"
+    "messageformat": "Sikre B&A-sikkerhedskopier"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatiske sikkerhedskopier med B&As sikre E2E-krypterede lagertjeneste. Kom i gang på din telefon. <learnMoreLink>Få mere at vide.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Sikkerhedskopiering af tekst + alle medier"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Dit abonnement blev ikke fundet. Forny dit abonnement for at fortsætte med at bruge B&A-sikkerhedskopier."
+    "messageformat": "Dit abonnement blev ikke fundet. Forny dit abonnement for at fortsætte med at bruge Sikre B&A-sikkerhedskopier."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Sikkerhedskopiering af tekst + {mediaDayCount,number} dags medier} other {Sikkerhedskopiering af tekst + {mediaDayCount,number} dages medier}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Abonnement annulleret"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Du kan administrere eller opsige dit abonnement på B&A-sikkerhedskopier på din telefon."
+    "messageformat": "Du kan administrere eller opsige dit abonnement på sikre sikkerhedskopier i B&A på din telefon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Du kan administrere eller opgradere B&A-sikkerhedskopier på din telefon."
+    "messageformat": "Du kan administrere eller opgradere sikre sikkerhedskopier i B&A på din telefon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Du kan administrere eller forny dit abonnement på B&A-sikkerhedskopier på din telefon."
+    "messageformat": "Du kan administrere eller forny dit abonnement på sikre sikkerhedskopier i B&A på din telefon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Seneste sikkerhedskopi"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Min støtte"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} én gang"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Behandler donation…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Donér {formattedCurrencyAmount}"
   },
@@ -6648,8 +6675,14 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A indsamler eller opbevarer ingen af dine personlige oplysninger, når du donerer.</paragraph><paragraph>Vi bruger Stripe som vores betalingssystem til at modtage dine donationer. Vi tilgår, opbevarer eller gemmer ikke nogen af de oplysninger, du giver dem.</paragraph><paragraph>B&A kan ikke og forbinder ikke din donation til din B&A-konto.</paragraph><paragraph>Tak for din støtte!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "Ok"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kvitteringer"
+  },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Vis kvitteringsoplysninger"
   },
   "icu:PreferencesDonations__faqs": {
     "messageformat": "Ofte stillede spørgsmål om donationer"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Udløbsdato"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/ÅÅ"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Donér {formattedCurrencyAmount} til B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Få et B&A Boost-badge i 30 dage"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Det mindste donationsbeløb er {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Det mindste beløb, du kan donere, er {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Det maksimale donationsbeløb er {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Hvis du forlader denne side, vil dine kreditkortoplysninger blive slettet. Vil du fortsætte?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Fjern oplysninger"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Fortsæt"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Kvittering for donation"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Tak, fordi du støtter B&A! Dit bidrag er med til at fremme missionen om at beskytte ytringsfriheden og muliggøre sikker global kommunikation for millioner af mennesker verden over gennem open source-privatlivsteknologi. Hvis du er bosiddende i USA, bedes du gemme denne kvittering til dine skatteoptegnelser. B&A Technology Foundation er en skattefritaget nonprofitorganisation i USA i henhold til paragraf 501c3 i Internal Revenue Code. Vores føderale skatte-id er 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Du er offline. Opret forbindelse til internettet for at gennemføre donationen."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donation annulleret"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Du har en igangværende donation, der kræver bekræftelse."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donationen lykkedes, men vi kunne ikke opdatere dine badgeindstillinger"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donationen lykkedes, men vi kunne ikke opdatere dine badgeindstillinger"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "For at opdatere dine badgeindstillinger på din mobilenhed skal du gå til Indstillinger → Donér til B&A → Badges."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donationen afbrudt"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Din donation er muligvis ikke blevet gennemført. Klik på “Donér til B&A”, og klik derefter “Donationskvitteringer” for at tjekke dine kvitteringer og bekræfte."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Prøv igen, eller send en fejlfindingslog til support for at få hjælp til at fuldføre din donation. Fejlfindingslogfiler hjælper os med at diagnosticere og løse problemet og indeholder ikke identificerende oplysninger."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Behandler donation…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Behandler stadig"
+    "messageformat": "Donationen er under behandling"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Din donation er stadig under behandling. Dette kan tage et par minutter"
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Annuller donation"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Tak for din støtte!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Du har optjent en donorbadge fra B&A! Vis det på din profil for at vise din støtte."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Vis på profil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Du kan ændre dette på din mobilenhed under Indstillinger → Donér til B&A → Badges"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Denne version indeholder en række småjusteringer og fejlrettelser som sikrer, at B&A kører problemfrit.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Små tweaks, rettelser og forbedringer af appens præstation. Tak fordi du bruger B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Vi har forbedret oplevelsen af at læse/ikke læse beskeder under multitasking og rettet en fejl, der nogle gange åbnede den udvidede billedfremviser forkert, hvis man trykkede på mellemrumstasten, mens man søgte efter den perfekte emojireaktion. Du kan stadig zoome, hvis du klikker på billedet, eller hvis du skriver hurtigt nok."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Det kan føles som en uundgåelig kamp at finde den rigtige emoji, men vi har rettet en fejl, der kunne forårsage en fejl, efter at man havde trykket på escape-tasten i emoji-søgefeltet."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Denne opdatering retter et par små fejl, herunder en hvor emoji-reaktioner i nogle tilfælde ikke blev grupperet korrekt."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Denne opdatering introducerer nye ydeevneoptimeringer, der forbedrer batterilevetiden, så du får mere strøm til rådighed til følelsesladede samtaler."
   }
 }

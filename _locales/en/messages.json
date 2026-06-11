@@ -73,7 +73,7 @@
   },
   "icu:Preferences__DonateTitle": {
     "messageformat": "Donate to B&A",
-    "description": "The title of the preferences pane for donating to B&A"
+    "description": "The title of the preferences pane for donating to signal"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standard",
@@ -89,7 +89,7 @@
   },
   "icu:privacyPolicy": {
     "messageformat": "Terms & Privacy Policy",
-    "description": "Shown in the about box for the link to https://cdn.ba-chat.com/legal/index.html"
+    "description": "Shown in the about box for the link to https://signal.org/legal"
   },
   "icu:About__AppEnvironment": {
     "messageformat": "{appEnv}",
@@ -145,14 +145,14 @@
   },
   "icu:databaseError__startOldVersion": {
     "messageformat": "The version of your database does not match this version of B&A. Make sure you are opening the newest version of B&A on your computer.",
-    "description": "Text in a popup shown if the app cannot start because the user started an older version of B&A"
+    "description": "Text in a popup shown if the app cannot start because the user started an older version of Signal"
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Unable to access the database encryption key because the OS encryption keyring backend has changed from {previousBackend} to {currentBackend}. This can occur if the desktop environment changes, for example between GNOME and KDE.\n\nPlease switch to the previous desktop environment.",
     "description": "On Linux, text in a popup shown if the app cannot start because the system's keyring encryption backend has changed. Example values: previousBackend=gnome_libsecret, currentBackend=kwallet5"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Unable to access the database encryption key because the OS encryption keyring backend has changed from {previousBackend} to {currentBackend}. This can occur if the desktop environment changes, for example between GNOME and KDE.\n\nPlease switch to the previous desktop environment or try to run B&A with the command line flag --password-store=\"{previousBackendFlag}\"",
+    "messageformat": "Unable to access the database encryption key because the OS encryption keyring backend has changed from {previousBackend} to {currentBackend}. This can occur if the desktop environment changes, for example between GNOME and KDE.\n\nPlease switch to the previous desktop environment or try to run signal with the command line flag --password-store=\"{previousBackendFlag}\"",
     "description": "On Linux, text in a popup shown if the app cannot start because the system's keyring encryption backend has changed. We suggest a command line flag they can use to recover the app. Example values: previousBackend=gnome_libsecret, currentBackend=kwallet5, previousBackendFlag: gnome-libsecret"
   },
   "icu:mainMenuFile": {
@@ -645,7 +645,7 @@
   },
   "icu:safetyNumberChangeDialog_done": {
     "messageformat": "Done",
-    "description": "Used when there are enough safety number changes to require an explicit review step, to B&A that the review is complete."
+    "description": "Used when there are enough safety number changes to require an explicit review step, to signal that the review is complete."
   },
   "icu:callAnyway": {
     "messageformat": "Call anyway",
@@ -778,15 +778,15 @@
   },
   "icu:loadingPreview": {
     "messageformat": "Loading Preview...",
-    "description": "Shown while B&A Desktop is fetching metadata for a url in composition area"
+    "description": "Shown while Signal Desktop is fetching metadata for a url in composition area"
   },
   "icu:stagedPreviewThumbnail": {
     "messageformat": "Draft thumbnail link preview for {domain}",
-    "description": "Shown while B&A Desktop is fetching metadata for a url in composition area"
+    "description": "Shown while Signal Desktop is fetching metadata for a url in composition area"
   },
   "icu:previewThumbnail": {
     "messageformat": "Thumbnail link preview for {domain}",
-    "description": "Shown while B&A Desktop is fetching metadata for a url in composition area"
+    "description": "Shown while Signal Desktop is fetching metadata for a url in composition area"
   },
   "icu:stagedImageAttachment": {
     "messageformat": "Draft image attachment: {path}",
@@ -901,11 +901,11 @@
   },
   "icu:joinTheBeta": {
     "messageformat": "Join the Beta",
-    "description": "Item under the Help menu, takes you to an article describing how to install the beta release of B&A Desktop"
+    "description": "Item under the Help menu, takes you to an article describing how to install the beta release of Signal Desktop"
   },
   "icu:signalDesktopStickerCreator": {
     "messageformat": "Sticker pack creator",
-    "description": "Title of the window that pops up with B&A Desktop preferences in it"
+    "description": "Title of the window that pops up with Signal Desktop preferences in it"
   },
   "icu:aboutSignalDesktop": {
     "messageformat": "About B&A Desktop",
@@ -1036,7 +1036,7 @@
   },
   "icu:sendMessageToContact": {
     "messageformat": "Send Message",
-    "description": "Shown when you are sent a contact and that contact has a B&A account"
+    "description": "Shown when you are sent a contact and that contact has a signal account"
   },
   "icu:home": {
     "messageformat": "home",
@@ -1382,10 +1382,6 @@
     "messageformat": "Delete chat?",
     "description": "Conversation Header > Delete Action > Delete Messages Confirmation Modal > Title. Previously known as icu:ConversationHeader__DeleteMessagesConfirmation__title"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "All messages in this chat will be deleted from this device.",
-    "description": "Description for confirmation modal to delete a conversation"
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "All messages in this chat will be deleted from all your devices.",
     "description": "Description for confirmation modal to delete a conversation"
@@ -1460,7 +1456,7 @@
   },
   "icu:JoinedSignal--notification": {
     "messageformat": "Contact joined B&A",
-    "description": "Shown in timeline when a contact joins B&A"
+    "description": "Shown in timeline when a contact joins Signal"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} and {conversationTitle} are the same account. Your message history for both chats are here.",
@@ -1568,43 +1564,43 @@
   },
   "icu:AttachmentNotAvailableModal__title--file": {
     "messageformat": "File not available",
-    "description": "Title for info dialog for messages with old file attachments which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Title for info dialog for messages with old file attachments which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__title--long-text": {
     "messageformat": "Complete message not available",
-    "description": "Title for info dialog for long messages which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Title for info dialog for long messages which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__title--media": {
     "messageformat": "Media not available",
-    "description": "Title for info dialog for messages with old visual media which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Title for info dialog for messages with old visual media which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__title--sticker": {
     "messageformat": "Sticker not available",
-    "description": "Title for info dialog for old sticker messages which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Title for info dialog for old sticker messages which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__title--voice-message": {
     "messageformat": "Voice message not available",
-    "description": "Title for info dialog for messages with old voice messages which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Title for info dialog for messages with old voice messages which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__body--file": {
     "messageformat": "This file was not transferred from your phone when this device was linked. Media and files older than 45 days at the time of device linking can not be synced.",
-    "description": "Body text for info dialog for messages with old file attachments which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Body text for info dialog for messages with old file attachments which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__body--long-text": {
     "messageformat": "The complete text in this message was not transferred from your phone when this device was linked. Long text messages older than 45 days at the time of device linking can not be synced.",
-    "description": "Body text for info dialog for long messages which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Body text for info dialog for long messages which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__body--media": {
     "messageformat": "This media was not transferred from your phone when this device was linked. Media older than 45 days at the time of device linking can not be synced.",
-    "description": "Body text for info dialog for messages with old visual media which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Body text for info dialog for messages with old visual media which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__body--sticker": {
     "messageformat": "This sticker was not transferred from your phone when this device was linked. Media and files older than 45 days at the time of device linking can not be synced.",
-    "description": "Body text for info dialog for old sticker messages which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Body text for info dialog for old sticker messages which are no longer available for download."
   },
   "icu:AttachmentNotAvailableModal__body--voice-message": {
     "messageformat": "This voice message was not transferred from your phone when this device was linked. Media and files older than 45 days at the time of device linking can not be synced.",
-    "description": "Body text for info dialog for messages with old voice messages which are no longer available for download."
+    "description": "(Deleted 2025/09/10) Body text for info dialog for messages with old voice messages which are no longer available for download."
   },
   "icu:TapToViewNotAvailableModal__body--expired": {
     "messageformat": "This view once media is no longer available to download. Ask {name} to send it again.",
@@ -1636,11 +1632,11 @@
   },
   "icu:linkedDevices": {
     "messageformat": "Linked Devices",
-    "description": "Used in the guidance to help people find the 'link new device' area of their B&A mobile app"
+    "description": "Used in the guidance to help people find the 'link new device' area of their Signal mobile app"
   },
   "icu:linkNewDevice": {
     "messageformat": "Link a New Device",
-    "description": "The menu option shown in B&A mobile clients to add a new linked device"
+    "description": "The menu option shown in Signal mobile clients to add a new linked device"
   },
   "icu:Install__learn-more": {
     "messageformat": "Learn more",
@@ -1826,6 +1822,14 @@
     "messageformat": "Choose chats that you want to appear in this folder",
     "description": "Preferences > Edit Chat Folder Page > Included Chats Section > Help"
   },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 chats",
+    "description": "Preferences > Edit Chat Folder Page > Included Chats Section > Direct Chats"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Group chats",
+    "description": "Preferences > Edit Chat Folder Page > Included Chats Section > Group Chats"
+  },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Add chats",
     "description": "Preferences > Edit Chat Folder Page > Included Chats Section > Add Chats Button"
@@ -2005,21 +2009,17 @@
     "messageformat": "Call link copied.",
     "description": "Toast shown when a call link is copied to the clipboard."
   },
-  "icu:ConversationDetails--group-id-copied": {
-    "messageformat": "Group ID copied.",
-    "description": "Toast shown when a group ID is copied to the clipboard."
-  },
   "icu:calling__call-link-no-longer-valid": {
     "messageformat": "This call link is no longer valid.",
     "description": "Error message when a call link has been revoked or expires."
   },
   "icu:calling__call-link-default-title": {
     "messageformat": "B&A Call",
-    "description": "Default title for B&A call links."
+    "description": "Default title for Signal call links."
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Can't delete link. Check your connection and try again.",
-    "description": "Default title for B&A call links."
+    "description": "Default title for Signal call links."
   },
   "icu:calling__join-request-denied": {
     "messageformat": "Your request to join this call has been denied.",
@@ -2387,11 +2387,11 @@
   },
   "icu:spellCheckWillBeEnabled": {
     "messageformat": "Spell check will be enabled the next time B&A starts.",
-    "description": "Shown when the user enables spellcheck to indicate that they must restart B&A."
+    "description": "Shown when the user enables spellcheck to indicate that they must restart Signal."
   },
   "icu:spellCheckWillBeDisabled": {
     "messageformat": "Spell check will be disabled the next time B&A starts.",
-    "description": "Shown when the user disables spellcheck to indicate that they must restart B&A."
+    "description": "Shown when the user disables spellcheck to indicate that they must restart Signal."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimize to system tray",
@@ -2431,7 +2431,7 @@
   },
   "icu:deleteOldIndexedDBData": {
     "messageformat": "You have obsolete data from a prior installation of B&A Desktop. If you choose to continue, it will be deleted and you will start from scratch.",
-    "description": "Shown if user last ran B&A Desktop before October 2018"
+    "description": "Shown if user last ran Signal Desktop before October 2018"
   },
   "icu:deleteOldData": {
     "messageformat": "Delete Old Data",
@@ -2489,7 +2489,7 @@
     "description": "Warning notification that this version of the app has expired"
   },
   "icu:upgrade": {
-    "messageformat": "Click to go to ba-chat.com/download",
+    "messageformat": "Click to go to baxs.com/download",
     "description": "Label text for button to upgrade the app to the latest version"
   },
   "icu:mediaMessage": {
@@ -2738,15 +2738,19 @@
   },
   "icu:Toast--failed-to-fetch-username": {
     "messageformat": "Failed to fetch username. Check your connection and try again.",
-    "description": "Shown if request to B&A servers to find username fails"
+    "description": "Shown if request to Signal servers to find username fails"
   },
   "icu:Toast--failed-to-fetch-phone-number": {
     "messageformat": "Failed to fetch phone number. Check your connection and try again.",
-    "description": "Shown if request to B&A servers to find phone number fails"
+    "description": "Shown if request to Signal servers to find phone number fails"
   },
   "icu:Toast--download-failed": {
     "messageformat": "Download failed",
     "description": "Shown if user's manual request to download attachment fails"
+  },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Download of attachment from backup failed",
+    "description": "Shown for internal users for debugging backup attachments."
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Edits can only be applied within 24 hours from the time you sent this message.",
@@ -2958,7 +2962,7 @@
   },
   "icu:message--getDescription--unsupported-message": {
     "messageformat": "Unsupported message",
-    "description": "Shown in notifications and in the left pane when a message has features too new for this B&A install."
+    "description": "Shown in notifications and in the left pane when a message has features too new for this signal install."
   },
   "icu:message--getDescription--disappearing-media": {
     "messageformat": "View-once Media",
@@ -2971,6 +2975,10 @@
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "View-once Video",
     "description": "Shown in notifications and in the left pane when a message is a view once video. Also shown when quoting a view once video."
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF",
+    "description": "Shown when quoting a GIF."
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "This message was deleted.",
@@ -2986,7 +2994,7 @@
   },
   "icu:message--call-link-description": {
     "messageformat": "Use this link to join a B&A call",
-    "description": "Shown in message previews for B&A call links."
+    "description": "Shown in message previews for Signal call links."
   },
   "icu:donation--missing": {
     "messageformat": "Unable to fetch donation details",
@@ -3118,15 +3126,15 @@
   },
   "icu:stickers--StickerManager--Introduction--Image": {
     "messageformat": "Introducing Stickers: Bandit the Cat",
-    "description": "Alt text on a tooltip image when the user upgrades to a version of B&A supporting stickers."
+    "description": "Alt text on a tooltip image when the user upgrades to a version of Signal supporting stickers."
   },
   "icu:stickers--StickerManager--Introduction--Title": {
     "messageformat": "Introducing Stickers",
-    "description": "Shown as the title on a tooltip when the user upgrades to a version of B&A supporting stickers."
+    "description": "Shown as the title on a tooltip when the user upgrades to a version of Signal supporting stickers."
   },
   "icu:stickers--StickerManager--Introduction--Body": {
     "messageformat": "Why use words when you can use stickers?",
-    "description": "Shown as the body on a tooltip when the user upgrades to a version of B&A supporting stickers."
+    "description": "Shown as the body on a tooltip when the user upgrades to a version of Signal supporting stickers."
   },
   "icu:stickers--StickerPicker--Open": {
     "messageformat": "Open the sticker picker",
@@ -3562,7 +3570,7 @@
   },
   "icu:Message--update-signal": {
     "messageformat": "Update B&A",
-    "description": "Text for a button which will take user to B&A download page"
+    "description": "Text for a button which will take user to Signal download page"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Viewed",
@@ -4137,11 +4145,11 @@
     "description": "Shown as a button to share your profile, necessary to continue messaging in a conversation"
   },
   "icu:MessageRequests--profile-sharing--group--link": {
-    "messageformat": "Continue your chat with this group and share your name and photo with its members? ",
+    "messageformat": "Continue your chat with this group and share your name and photo with its members? <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Shown when user hasn't shared their profile in a group yet"
   },
   "icu:MessageRequests--profile-sharing--direct--link": {
-    "messageformat": "Continue this chat with {firstName} and share your name and photo with them? ",
+    "messageformat": "Continue this chat with {firstName} and share your name and photo with them? <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Shown when user hasn't shared their profile in a 1:1 conversation yet"
   },
   "icu:ConversationHero--members": {
@@ -4202,11 +4210,11 @@
   },
   "icu:ConversationHero--signal-official-chat": {
     "messageformat": "This is the official and only chat from B&A",
-    "description": "Text indicating that this is the official B&A conversation"
+    "description": "Text indicating that this is the official Signal conversation"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Keep up to date with news and release notes.",
-    "description": "Text explaining the purpose of the B&A official conversation"
+    "description": "Text explaining the purpose of the Signal official conversation"
   },
   "icu:member-of-1-group": {
     "messageformat": "Member of {group}",
@@ -4290,11 +4298,11 @@
   },
   "icu:minimizeToTrayNotification--title": {
     "messageformat": "B&A is still running",
-    "description": "Shown in a notification title when B&A is minimized to tray"
+    "description": "Shown in a notification title when Signal is minimized to tray"
   },
   "icu:minimizeToTrayNotification--body": {
     "messageformat": "B&A will keep running in the notification area. You can change this in B&A settings.",
-    "description": "Shown in a notification body when B&A is minimized to tray"
+    "description": "Shown in a notification body when Signal is minimized to tray"
   },
   "icu:incomingAudioCall": {
     "messageformat": "Incoming voice call",
@@ -4574,7 +4582,7 @@
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
     "messageformat": "Share call link via B&A",
-    "description": "Menu item in the in-call info popup for call link calls. Clicking the item opens the sharing dialog where you can send the call link to your B&A contacts or groups."
+    "description": "Menu item in the in-call info popup for call link calls. Clicking the item opens the sharing dialog where you can send the call link to your Signal contacts or groups."
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Remove this person from the call",
@@ -4684,6 +4692,18 @@
     "messageformat": "Please try again or contact support.",
     "description": "Description text in popup dialog when user-initiated task has gone wrong"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "An unexpected error occurred",
+    "description": "Title of the dialog shown when an unexpected user interface or coding bug occurs. The dialog's description text requests the user to submit debug logs."
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Submit debug log",
+    "description": "Primary button text in the dialog shown when an unexpected user interface or coding bug occurs. Clicking the button will open the Debug Log submission dialog."
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "No thanks",
+    "description": "Secondary button text in the dialog shown when an unexpected user interface or coding bug occurs. Clicking the button will dismiss the error dialog."
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Okay",
     "description": "Button to dismiss popup dialog when user-initiated task has gone wrong"
@@ -4697,8 +4717,8 @@
     "description": "Description text in popup dialog when attempting to edit a message too many times."
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Sorry, that baxs:// link didn't make sense!",
-    "description": "Shown if you click on a baxs:// link not currently supported by Desktop"
+    "messageformat": "Sorry, that sgnl:// link didn't make sense!",
+    "description": "Shown if you click on a sgnl:// link not currently supported by Desktop"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "You cannot send messages to that group.",
@@ -5361,7 +5381,7 @@
     "description": "When rejoining a group, any detected changes are collapsed down into this summary"
   },
   "icu:GroupV1--Migration--disabled--link": {
-    "messageformat": "Upgrade this group to activate new features like @mentions and admins. Members who have not shared their name or photo in this group will be invited to join. ",
+    "messageformat": "Upgrade this group to activate new features like @mentions and admins. Members who have not shared their name or photo in this group will be invited to join. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Shown instead of composition area when user is forced to migrate a legacy group (GV1)."
   },
   "icu:GroupV1--Migration--was-upgraded": {
@@ -5533,7 +5553,7 @@
     "description": "Text of the cancel button at the bottom of backup import screen"
   },
   "icu:BackupImportScreen__security-description": {
-    "messageformat": "Messages and chat info are protected by end-to-end encryption, including the sync process. ",
+    "messageformat": "Messages and chat info are protected by end-to-end encryption, including the sync process. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Text shown while importing messages & chats from the user's primary device."
   },
   "icu:BackupImportScreen__cancel-confirmation__title": {
@@ -5621,7 +5641,7 @@
     "description": "Text for button to cancel media (attachment) download after backup import"
   },
   "icu:BackupMediaDownloadCancelConfirmation__description": {
-    "messageformat": "Your media has not completed syncing. If you choose to cancel, you can sync again by re-linking this device. ",
+    "messageformat": "Your media has not completed syncing. If you choose to cancel, you can sync again by re-linking this device. <learnMoreLink>Learn more</learnMoreLink>.",
     "description": "Text for button to cancel media (attachment) download after backup import"
   },
   "icu:BackupMediaDownloadCancelConfirmation__button-continue": {
@@ -5661,7 +5681,7 @@
     "description": "Title for modal shown when a user must use their idle primary device to retain their account"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "You must open B&A on your phone to continue using this account. If you do not open B&A on your phone, your account will be deleted soon.",
+    "messageformat": "You must open B&A on your phone to continue using this account. If you do not open B&A on your phone, your account will be deleted soon. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Description for modal shown when a user must use their idle primary device to retain their account. Learn more link will link to a support page"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
@@ -5892,13 +5912,9 @@
     "messageformat": "{number, plural, one {# member} other {# members}}",
     "description": "This is the number of members in a group"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Shared media",
-    "description": "Title for the media thumbnails in the conversation details screen"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "See all",
-    "description": "This is a button on the conversation details to show all media"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media and files",
+    "description": "Title for the show all media button in the conversation details screen"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {# member} other {# members}}",
@@ -6001,7 +6017,7 @@
     "description": "Description for the require new member admin approval select area"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copy B&A.group link to clipboard",
+    "messageformat": "Copy signal.group link to clipboard",
     "description": "GroupLinkManagement > Header > Group link text > Button (looks like normal text) > Accessibility label"
   },
   "icu:PendingInvites--tab-requests": {
@@ -6992,6 +7008,14 @@
     "messageformat": "For example, :-) will be converted to <emojify>🙂</emojify>",
     "description": "Description for the auto convert emoji setting"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Keep muted chats archived",
+    "description": "Title for the setting that prevents muted chats from being unarchived when new messages arrive"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Muted chats that are archived will remain archived when a new message arrives.",
+    "description": "Description for the setting that prevents muted chats from being unarchived"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Advanced",
     "description": "Title for advanced settings"
@@ -7005,12 +7029,12 @@
     "description": "Label for blocked contacts setting"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A Backups",
-    "description": "Feature name for message backups using the B&A service."
+    "messageformat": "B&A Secure Backups",
+    "description": "Feature name for message backups using the Signal service."
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatic backups with B&A’s secure, end-to-end encrypted storage service. Get started on your phone. ",
-    "description": "Description for message backups using the B&A service."
+    "messageformat": "Automatic backups with B&A’s secure, end-to-end encrypted storage service. Get started on your phone. <learnMoreLink>Learn more</learnMoreLink>.",
+    "description": "Description for message backups using the Signal service."
   },
   "icu:Preferences--backup-section-description": {
     "messageformat": "Back up your message history so you never lose data when you get a new phone or reinstall B&A.",
@@ -7025,7 +7049,7 @@
     "description": "Description of a backup plan that backups all of their messages (text) and media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Your subscription was not found. Renew to continue using B&A Backups.",
+    "messageformat": "Your subscription was not found. Renew to continue using B&A Secure Backups.",
     "description": "Description when a backup subscription used to exist but is not active"
   },
   "icu:Preferences--backup-messages-plan__description": {
@@ -7049,15 +7073,15 @@
     "description": "Description of plan when it has been canceled (i.e. not going to renew but still active)"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "You can manage or cancel your B&A Backups subscription on your phone.",
+    "messageformat": "You can manage or cancel your B&A Secure Backups subscription on your phone.",
     "description": "Note next to backups plan summary"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "You can manage or upgrade B&A Backups on your phone.",
+    "messageformat": "You can manage or upgrade B&A Secure Backups on your phone.",
     "description": "Note next to backups plan summary"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "You can manage or renew your B&A Backups subscription on your phone.",
+    "messageformat": "You can manage or renew your B&A Secure Backups subscription on your phone.",
     "description": "Note next to backups plan summary if we could not find their subscription"
   },
   "icu:Preferences--backup-created-at__label": {
@@ -7081,7 +7105,7 @@
     "description": "Description for on-device local message backups when the feature is off."
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "To restore a backup, install a new copy of B&A. Open the app and tap Restore backup, then locate the backup folder. ",
+    "messageformat": "To restore a backup, install a new copy of B&A. Open the app and tap Restore backup, then locate the backup folder. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Description for how to restore on-device local message backups."
   },
   "icu:Preferences--local-backups-setup-folder": {
@@ -7113,7 +7137,7 @@
     "description": "Title for viewing the backup key for local message backups."
   },
   "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "This key is required to recover your account and data. Store this key somewhere safe. If you lose it, you won’t be able to recover your account. ",
+    "messageformat": "This key is required to recover your account and data. Store this key somewhere safe. If you lose it, you won’t be able to recover your account. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Description for viewing the backup key for local message backups."
   },
   "icu:Preferences--local-backups-confirm-backup-key": {
@@ -7318,15 +7342,15 @@
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
     "messageformat": "Restart B&A to apply",
-    "description": "Title for restart B&A modal to apply language changes"
+    "description": "Title for restart Signal modal to apply language changes"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "To change the language, the app needs to restart.",
-    "description": "Description for restart B&A modal to apply language changes"
+    "description": "Description for restart Signal modal to apply language changes"
   },
   "icu:Preferences__LanguageModal__Restart__Button": {
     "messageformat": "Restart",
-    "description": "Button to restart B&A to apply language changes"
+    "description": "Button to restart Signal to apply language changes"
   },
   "icu:Preferences__Privacy__Application": {
     "messageformat": "Application",
@@ -7369,7 +7393,7 @@
     "description": "Title of a banner alerting users if their primary device (e.g. phone) has not been logged into recently."
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Your account will be deleted soon unless you open B&A on your phone. This message will go away if you've done it successfully. ",
+    "messageformat": "Your account will be deleted soon unless you open B&A on your phone. This message will go away if you've done it successfully. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "The text in a banner alerting users if their primary device (e.g. phone) has not been logged into recently. "
   },
   "icu:IdlePrimaryDevice__body": {
@@ -7443,7 +7467,7 @@
   },
   "icu:NSIS__semver-downgrade": {
     "messageformat": "A newer version of B&A is already installed. Are you sure you want to continue?",
-    "description": "A text of the dialog displayed when user tries to overwrite B&A installation with an older version.",
+    "description": "A text of the dialog displayed when user tries to overwrite Signal installation with an older version.",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
@@ -7591,7 +7615,7 @@
     "description": "Text of the first step of the instructions from MediaPermissionsModal"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Turn on B&A",
+    "messageformat": "Turn on “B&A”",
     "description": "Text of the second step of the instructions from MediaPermissionsModal"
   },
   "icu:MediaPermissionsModal__open": {
@@ -7712,27 +7736,27 @@
   },
   "icu:SignalConnectionsModal__title": {
     "messageformat": "B&A Connections",
-    "description": "The phrase/term: 'B&A Connections'"
+    "description": "The phrase/term: 'Signal Connections'"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} are people you've chosen to trust, either by:",
-    "description": "The beginning sentence to list the different ways a B&A connection is formed"
+    "description": "The beginning sentence to list the different ways a signal connection is formed"
   },
   "icu:SignalConnectionsModal__bullet--1": {
     "messageformat": "Starting a chat",
-    "description": "A way that B&A connection is formed"
+    "description": "A way that signal connection is formed"
   },
   "icu:SignalConnectionsModal__bullet--2": {
     "messageformat": "Accepting a message request",
-    "description": "A way that B&A connection is formed"
+    "description": "A way that signal connection is formed"
   },
   "icu:SignalConnectionsModal__bullet--3": {
     "messageformat": "Having them in your system contacts",
-    "description": "A way that B&A connection is formed"
+    "description": "A way that signal connection is formed"
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Your connections can see your name and photo, and can see posts to \"My Story\" unless you hide it from them",
-    "description": "Additional information about B&A connections and the stories they can see"
+    "description": "Additional information about signal connections and the stories they can see"
   },
   "icu:LocalDeleteWarningModal__header": {
     "messageformat": "Deleting is synced across your devices",
@@ -7912,7 +7936,7 @@
   },
   "icu:StoriesSettings__mine__all--label": {
     "messageformat": "All B&A connections",
-    "description": "Input label to describe all B&A connections"
+    "description": "Input label to describe all signal connections"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "All except...",
@@ -7923,7 +7947,7 @@
     "description": "Input label to create an exclude list"
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "Choose who can view your story. Changes won't affect stories you've already sent. ",
+    "messageformat": "Choose who can view your story. Changes won't affect stories you've already sent. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Disclaimer on how changes to story settings work"
   },
   "icu:StoriesSettings__context-menu": {
@@ -8015,7 +8039,7 @@
     "description": "Modal title for setting privacy for My Story"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Choose which B&A connections can view your story. You can always change this in privacy settings. ",
+    "messageformat": "Choose which B&A connections can view your story. You can always change this in privacy settings. <learnMoreLink>Learn more.</learnMoreLink>",
     "description": "Disclaimer on how changes to story settings work"
   },
   "icu:SendStoryModal__delete-story": {
@@ -8455,11 +8479,11 @@
     "description": "Text of the secondary button on username megaphone"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "B&A desktop will no longer support your computer’s version of {OS} soon. To keep using B&A, update your computer’s operating system by {expirationDate}. ",
+    "messageformat": "B&A desktop will no longer support your computer’s version of {OS} soon. To keep using B&A, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "B&A desktop no longer works on this computer. To use B&A desktop again, update your computer’s version of {OS}. ",
+    "messageformat": "B&A desktop no longer works on this computer. To use B&A desktop again, update your computer’s version of {OS}. <learnMoreLink>Learn more</learnMoreLink>",
     "description": "Body of a dialog displayed on unsupported operating systems"
   },
   "icu:UnsupportedOSErrorToast": {
@@ -8688,7 +8712,7 @@
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
     "messageformat": "Share link via B&A",
-    "description": "Call History > Call Link Details > Share Link via B&A Button"
+    "description": "Call History > Call Link Details > Share Link via Signal Button"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Delete link",
@@ -8820,7 +8844,7 @@
   },
   "icu:PreferencesDonations__description": {
     "messageformat": "Private messaging, funded by you. No ads, no tracking, no compromise. Donate now to support B&A. <readMoreLink>Read more</readMoreLink>",
-    "description": "Description text explaining B&A's donation model with learn more link"
+    "description": "Description text explaining Signal's donation model with learn more link"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Donate",
@@ -8829,6 +8853,14 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "My Support",
     "description": "Section header for the user's current donations"
+  },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} one-time",
+    "description": "Label next to the in-app badge associated with a donation amount and type. Amount includes the currency symbol and is formatted in the locale's standard format. The hyphen between one-time is optional depending on language norms. Examples: $10 one-time; ¥1000 one-time; €10 one-time"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Processing donation...",
+    "description": "Label next to the in-app badge associated with a donation while the donation is still processing and the badge is not yet available to the user."
   },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Donate {formattedCurrencyAmount}",
@@ -8846,13 +8878,21 @@
     "messageformat": "<paragraph>B&A does not collect or store any of your personal information when you make a donation.</paragraph><paragraph>We use Stripe as our payment processor to receive your donations. We don't access, store, or save any of the information you provide to them.</paragraph><paragraph>B&A does not and cannot connect your donation to your B&A account.</paragraph><paragraph>Thank you for your support!</paragraph>",
     "description": "Content for the modal that explains donation privacy information"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK",
+    "description": "Button text in the modal that explains donation privacy information. Clicking the button will dismiss the modal."
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Receipts",
     "description": "Menu item to view donation receipts"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "View receipt details",
+    "description": "Donation receipts list accessibility label for a single receipt."
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Donation FAQs",
-    "description": "Menu item to view donation FAQs"
+    "messageformat": "Donor FAQs",
+    "description": "Menu item to view donor FAQs"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Receipts do not sync across devices. If you have reinstalled B&A, receipts from previous donations will not be available.",
@@ -8864,7 +8904,7 @@
   },
   "icu:PreferencesDonations__ReceiptModal--title": {
     "messageformat": "Details",
-    "description": "Title of the donation receipt details modal"
+    "description": "(Deleted 2025/09/03) Title of the donation receipt details modal"
   },
   "icu:PreferencesDonations__ReceiptModal--download": {
     "messageformat": "Download receipt",
@@ -8910,6 +8950,10 @@
     "messageformat": "Expiration Date",
     "description": "When entering payment card details for a donation, this label is for the credit card expiration date input box."
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/YY",
+    "description": "When entering payment card expiration date, this is the placeholder value in the date input box when it is empty. Please specify a value which would be reasonable to see in a payment or checkout form. The format is Month/Year to match the global credit card expiration date format. The localized value is suggested to contain 2 characters for month and 2 characters for year. In CJK languages single characters are acceptable for month and year e.g. 月 and 年. Month and year should be separated by a forward slash (/) because after the user begins typing the date, the app will automatically separate them with a slash."
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Donate {formattedCurrencyAmount} to B&A",
     "description": "Title above the payment card entry form after selecting a donation amount. Amount includes the currency symbol and is formatted in the locale's standard format. Examples: Donate $10; Donate ¥1000; Donate €10"
@@ -8938,6 +8982,30 @@
     "messageformat": "Get the B&A Boost badge for 30 days",
     "description": "Info text above the payment card entry form when making a one time donation. Explains the in-app badge which you can receive after donating."
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "The minimum donation amount is {formattedCurrencyAmount}",
+    "description": "Error text next to input box when selecting a donation amount and the user has entered a custom amount below the minimum allowed amount. Minimum amount text includes the currency symbol and is formatted in the locale's standard format. Examples: $3; ¥300; €3"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "The minimum amount you can donate is {formattedCurrencyAmount}",
+    "description": "Tooltip for a disabled continue button when selecting a donation amount, when the user has entered a custom amount below the minimum allowed donation amount. Minimum amount text includes the currency symbol and is formatted in the locale's standard format. Examples: $3; ¥300; €3"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "The maximum donation amount is {formattedCurrencyAmount}",
+    "description": "Error text next to input box when selecting a donation amount and the user has entered a custom amount greater than the maximum allowed amount. Maximum amount text includes the currency symbol and is formatted in the locale's standard format. Examples: $999999.99; ¥99999999; €999999.99"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Leaving this page will remove your credit card information. Do you want to proceed?",
+    "description": "While making a donation and after entering payment details, if you try to navigate away then a dialog shows with this body text."
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Remove info",
+    "description": "While making a donation and after entering payment details, if you try to navigate away then a dialog shows and its primary button has this text to confirm cancellation of the donation."
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Continue",
+    "description": "While making a donation and selecting the donation amount, this is the primary button to move to the next step."
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Donation receipt",
     "description": "Title shown at the top of donation receipt documents"
@@ -8960,11 +9028,11 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Thank you for supporting B&A. Your contribution helps fuel the mission of protecting free expression and enabling secure global communication for millions around the world, through open source privacy technology. If you’re a resident of the United States, please retain this receipt for your tax records. B&A Technology Foundation is a tax-exempt nonprofit organization in the United States under section 501c3 of the Internal Revenue Code. Our Federal Tax ID is 82-4506840.",
-    "description": "Footer text shown on donation receipts explaining tax deductibility and B&A's mission"
+    "description": "Footer text shown on donation receipts explaining tax deductibility and Signal's mission"
   },
-  "icu:Donations__Toast__Cancelled": {
-    "messageformat": "Donation cancelled",
-    "description": "Toast shown when a donation was manually cancelled by the user"
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "You are offline. Please connect to the internet to complete a donation.",
+    "description": "Tooltip for donation related buttons which are temporarily disabled due to the app being offline."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donation canceled",
@@ -8993,6 +9061,18 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "You have a donation in progress that requires confirmation.",
     "description": "Shown when the user is not on the Preferences/Donations screen, and donation verification is needed. Like when resuming from startup."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donation succeeded, but we could not update your badge settings",
+    "description": "(Deleted 2025/09/10) Toast shown when donation completes successfully but badge application fails"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donation succeeded, but we could not update your badge settings",
+    "description": "Modal title shown when donation completes successfully but badge application fails"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "To update your badge settings on your mobile device, go to Settings → Donate to B&A → Badges.",
+    "description": "Modal body text shown when badge application fails after successful donation"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donation interrupted",
@@ -9024,18 +9104,22 @@
   },
   "icu:Donations__GenericError": {
     "messageformat": "An error occurred with your donation",
-    "description": "Title of the dialog shown when some unknown error has happened during a user's attempted donation"
+    "description": "Title of the dialog shown when some unknown error has happened during a user's attempted donation. This will show when we detect an error but haven't designed a string for the error type."
   },
   "icu:Donations__GenericError__Description": {
     "messageformat": "Your donation might not have been processed. Click on “Donate to B&A” and then “Donation Receipts” to check your receipts and confirm.",
     "description": "An explanation for the 'error occurred' dialog"
+  },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Try again or submit a debug log to Support for help completing your donation. Debug logs helps us diagnose and fix the issue, and do not contain identifying information.",
+    "description": "Description of the dialog shown when an unexpected user interface or coding bug occurs while using a donations-related part of the app."
   },
   "icu:Donations__Processing": {
     "messageformat": "Processing donation...",
     "description": "Explainer text for donation progress dialog"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Still processing",
+    "messageformat": "Still processing donation",
     "description": "Title of the dialog shown when the user has made a donation and it's taking some time to complete the process"
   },
   "icu:Donations__StillProcessing__Description": {
@@ -9074,6 +9158,22 @@
     "messageformat": "Cancel donation",
     "description": "When external payment method validation is required, this button will open that external verification website"
   },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Thanks for your support!",
+    "description": "Title shown in the 'thanks for your donation' modal"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "You've earned a donor badge from B&A! Display it on your profile to show off your support.",
+    "description": "Description explaining the donor badge in the 'thanks for your donation' modal"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Display on profile",
+    "description": "Toggle label for displaying the donation badge on user's profile in the 'thanks for your donation' modal"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "You can adjust this on your mobile device under Settings → Donate to B&A → Badges",
+    "description": "Help text below the toggle in donation thank you modal"
+  },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "This version contains a number of small tweaks and bug fixes to keep B&A running smoothly.",
     "description": "Release notes for releases that only include bug fixes",
@@ -9109,16 +9209,8 @@
     "description": "Release notes for releases that only include bug fixes",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "We improved the message read/unread experience while multitasking, and fixed a bug that sometimes incorrectly opened the expanded image viewer if you hit the space bar while searching for the perfect emoji reaction. You can still zoom if you click on the image, or if you type quickly enough.",
-    "description": "(Deleted 2025/07/30) Release notes for version 7.64"
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Finding the right emoji can feel like an inescapable struggle, but we fixed a bug that could cause an error to occur after pressing the escape key in the emoji search box.",
-    "description": "(Deleted 2025/08/06) Release notes for version 7.65"
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "This update fixes a few small bugs, including one where emoji reactions weren't being grouped together correctly in some cases.",
-    "description": "Release notes for version 7.65"
+  "icu:WhatsNew__7.73": {
+    "messageformat": "This update introduces new performance optimizations to help improve battery life, so you'll have more charge available for emotionally charged conversations.",
+    "description": "Release notes for 7.73 release"
   }
 }

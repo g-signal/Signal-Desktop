@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Sohbet silinsin mi?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Bu sohbetteki tüm mesajlar bu cihazdan silinecek."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Bu sohbetteki tüm mesajlar tüm cihazlardan silinecektir."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Bu klasörde görünmesini istediğin sohbetleri seç"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Bireysel sohbetler"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Grup sohbetleri"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Sohbet ekle"
@@ -1869,7 +1872,7 @@
     "messageformat": "B&A Desktop'ın bu sürümü kullanım dışı kaldı. İletişime devam etmek için lütfen en son sürüme yükseltin."
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download adresine gitmek için tıklayın"
+    "messageformat": "baxs.com/download adresine gitmek için tıklayın"
   },
   "icu:mediaMessage": {
     "messageformat": "İçerik İletisi"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "İndirme başarısız oldu"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Yedeklemeden ek indirme başarısız oldu"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Düzenlemeler yalnızca bu mesajı gönderdikten sonraki 24 saat içinde uygulanabilir."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Tek görümlük Video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Bu ileti silindi."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Lütfen tekrar deneyin veya destek ekibiyle iletişime geçin."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Beklenmedik bir hata oluştu"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Hata ayıklama günlüğünü gönder"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Hayır teşekkürler"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Tamam"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} üye} other {{number,number} üye}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Paylaşılan içerik"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Tümünü gör"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Medya, bağlantılar ve dosyalar"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} üye} other {{number,number} üye}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Grup bağlantısı üzerinden katılan yeni üyelerin yönetici tarafından onaylanması gereksin"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group bağlantısını panoya kopyala"
+    "messageformat": "signal.group bağlantısını panoya kopyala"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "İstekler ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Örneğin :-) simgesi <emojify>🙂</emojify> simgesine dönüştürülecek"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Sessize alınmış sohbetleri arşivde tut"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Arşivlenerek sessize alınan sohbetler, yeni bir mesaj geldiğinde arşivlenmiş olarak kalır."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Gelişmiş"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Engellendi"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A Yedeklemeleri"
+    "messageformat": "B&A Güvenli Yedeklemeler"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A'ın uçtan uca şifrelenmiş güvenli depolama hizmeti ile otomatik yedeklemeler. Telefonunla başla. <learnMoreLink>Dahasını öğren</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Metin + tüm medya yedeklemesi"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Aboneliğin bulunamadı. B&A Yedeklemelerini kullanmaya devam etmek için yenile."
+    "messageformat": "Aboneliğin bulunamadı. B&A Güvenli Yedeklemeleri kullanmaya devam etmek için yenile."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Metin + {mediaDayCount,number} günlük medya yedeklemesi} other {Metin + {mediaDayCount,number} günlük medya yedeklemesi}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Abonelik iptal edildi"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "B&A Yedeklemeleri aboneliğini telefonunda yönetebilir veya iptal edebilirsin."
+    "messageformat": "B&A Güvenli Yedeklemeler aboneliğini telefonundan yönetebilir veya iptal edebilirsin."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "B&A Yedeklemelerini telefonunda yönetebilir veya yükseltebilirsin."
+    "messageformat": "B&A Güvenli Yedeklemeleri telefonundan yönetebilir veya yükseltebilirsin."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "B&A Yedeklemeleri aboneliğini telefonunda yönetebilir veya yenileyebilirsin."
+    "messageformat": "B&A Güvenli Yedeklemeler aboneliğini telefonundan yönetebilir veya yenileyebilirsin."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Son yedekleme"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Desteğim"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} - tek seferlik"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Bağış işleniyor..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} bağış yap"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A, bağış yaptığında kişisel bilgilerini toplamaz veya saklamaz.</paragraph><paragraph>Bağışlarını almak için, ödeme işlemcimiz olarak Stripe'ı kullanıyoruz. Onlara sağladığın bilgilerin hiçbirine erişmiyoruz. Bilgilerini saklamıyor veya kaydetmiyoruz.</paragraph><paragraph>B&A, yaptığın bağışı ve buna dair bilgileri B&A hesabın ile bağlamaz, bağlayamaz.</paragraph><paragraph>Desteğin için teşekkürler!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "TAMAM"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Makbuzlar"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Makbuz detaylarını görüntüle"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Bağış için SSS"
+    "messageformat": "Bağışçılar için SSS"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Makbuzlar cihazlar arasında senkronize edilmez. B&A'ı yeniden yüklediysen, önceki bağışların makbuzları mevcut olmayacaktır."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Son Kullanma Tarihi"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "AA/YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A'e {formattedCurrencyAmount} bağış yap"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 gün boyunca B&A Öne Çıkarma Rozetini kazan"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minimum bağış tutarı {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "En az {formattedCurrencyAmount} miktarında bağış yapabilirsin"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Maksimum bağış tutarı {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Bu sayfayı terk ettiğinde kredi kartı bilgilerin silinecektir. Devam etmek istiyor musun?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Bilgileri kaldır"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Devam"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Bağış makbuzu"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A'ı desteklediğin için teşekkürler. Katkın açık kaynak gizlilik teknolojisi aracılığıyla, ifade özgürlüğünü koruma ve dünya çapında milyonlarca kişi için güvenli küresel iletişim sağlama misyonunu desteklemeye yardımcı olur. Amerika Birleşik Devletleri'nde ikamet ediyorsan, lütfen bu makbuzu vergi kayıtların için sakla. B&A Technology Foundation, Amerika Birleşik Devletleri'nde İç Gelir Yasası'nın 501c3 numaralı bölümü kapsamında vergiden muaf, kar amacı gütmeyen bir kuruluştur. Federal Vergi Kimlik Numaramız 82-4506840'tır."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Çevrim dışısın. Lütfen bağış işlemini tamamlamak için internete bağlan."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Bağış iptal edildi"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Onaylanması gereken bir bağış işlemin var."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Bağış başarılı oldu ancak rozet ayarlarını güncelleyemedik"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Bağış başarılı oldu ancak rozet ayarlarını güncelleyemedik"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Mobil cihazında rozet ayarlarını güncellemek için Ayarlar → B&A'a Bağış Yap → Rozetler bölümüne git."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Bağış kesildi"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Bağışın işleme alınmamış olabilir. Makbuzlarını kontrol etmek ve onaylamak için \"B&A'a Bağış Yap\" seçeneğine, ardından \"Bağış Makbuzları\"na tıkla."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Tekrar dene veya bağışını tamamlamana yardımcı olması için Destek bölümüne bir hata ayıklama günlüğü gönder. Hata ayıklama günlükleri, sorunu teşhis etmemize ve düzeltmemize yardımcı olur ve tanımlayıcı bilgiler içermezler."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Bağış işleniyor..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "İşlem sürüyor"
+    "messageformat": "Bağış işlemi devam ediyor"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Bağışın hâlâ işleniyor. Bu birkaç dakika sürebilir."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Bağışı iptal et"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Desteğin için teşekkürler!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "B&A'dan bir bağışçı rozeti kazandın! Desteğini göstermek için rozeti profilinde sergile."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Profilde göster"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Bunu mobil cihazında Ayarlar → B&A'a Bağış Yap → Rozetler bölümünden ayarlayabilirsin"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Bu sürüm B&A'in sorunsuz çalışması için gereken bir takım küçük düzeltme ve hata gidermelerini içerir.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Küçük ince ayarlar, hata düzeltmeleri ve performans geliştirmeleri yaptık. B&A'i kullandığın için teşekkürler!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Çoklu görev sırasında okunmuş/okunmamış mesaj deneyimini iyileştirdik. Resmin üzerine tıklayarak veya yeterince hızlı yazarak halen yakınlaştırma yapabilirsin."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Emoji arama kutusundaki bir hatayı düzelttik. Böylece sıkılmadan istediğin emojiyi hemen bulabileceksin."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Birkaç küçük hata düzeltmesi."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Bu güncelleme, pil ömrünü iyileştirmeye yardımcı olmak için yeni performans optimizasyonları sunmaktadır."
   }
 }

@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Hapus obrolan?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Semua pesan di obrolan ini akan dihapus dari perangkat ini."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Semua pesan di obrolan ini akan dihapus dari semua perangkat Anda."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Pilih chat yang ingin Anda tampilkan di folder ini"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Chat pribadi"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Chat grup"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Tambahkan chat"
@@ -1869,7 +1872,7 @@
     "messageformat": "Versi B&A Desktop ini telah kedaluwarsa. Mohom memutakhirkan ke versi terbaru untuk melanjutkan pengiriman pesan."
   },
   "icu:upgrade": {
-    "messageformat": "Klik untuk pergi ke ba-chat.com/download"
+    "messageformat": "Klik untuk pergi ke baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Pesan Media"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Gagal mengunduh"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Pengunduhan lampiran dari cadangan gagal"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Pengeditan hanya dapat diterapkan dalam rentang waktu 24 jam sejak Anda mengirimkan pesan ini."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Video sekali-lihat"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Pesan ini telah dihapus."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Coba lagi atau hubungi bantuan."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Terjadi kesalahan tidak terduga"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Kirim catatan debug"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Tidak, terima kasih"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Oke"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {{number,number} anggota}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Media yang dibagikan"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Lihat semua"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, tautan, dan file"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {{number,number} anggota}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Membutuhkan persetujuan admin untuk menerima anggota baru melalui tautan grup"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Salin tautan B&A.group ke papan klip"
+    "messageformat": "Salin tautan signal.group ke papan klip"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Permintaan ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Contoh, :-) akan diubah jadi <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Biarkan obrolan yang dibisukan tetap dalam arsip"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Obrolan dibisukan yang diarsipkan akan tetap dalam arsip saat ada pesan baru yang masuk."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Lanjutan"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Diblokir"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A Backups"
+    "messageformat": "B&A Secure Backups"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Pencadangan otomatis dengan layanan penyimpanan B&A yang aman dan terenkripsi total. Mulai pencadangan di ponsel Anda. <learnMoreLink>Info lengkap</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Pencadangan pesan + semua media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Langganan Anda tidak ditemukan. Perbarui agar dapat terus memakai B&A Backups."
+    "messageformat": "Langganan Anda tidak ditemukan. Perbarui langganan agar dapat terus menggunakan B&A Secure Backups."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {Pencadangan pesan + media selama {mediaDayCount,number} hari}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Langganan dibatalkan"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Anda dapat mengelola atau membatalkan langganan B&A Backups di ponsel."
+    "messageformat": "Anda dapat mengelola atau membatalkan langganan B&A Secure Backups di ponsel."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Anda dapat mengelola atau meng-upgrade B&A Backups di ponsel."
+    "messageformat": "Anda dapat mengelola atau meng-upgrade B&A Secure Backups di ponsel."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Anda dapat mengelola atau memperbarui langganan B&A Backups di ponsel."
+    "messageformat": "Anda dapat mengelola atau memperbarui langganan B&A Secure Backups di ponsel."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Pencadangan terakhir"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Dukungan Saya"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} satu kali"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Memproses donasi …"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Donasi {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A tidak mengumpulkan atau menyimpan informasi pribadi saat Anda memberikan donasi.</paragraph><paragraph>Kami menggunakan Stripe sebagai pemroses pembayaran donasi Anda. Kami tidak mengakses, menahan, atau menyimpan informasi apa pun yang Anda berikan kepada mereka.</paragraph><paragraph>B&A tidak (dan tidak dapat) menghubungkan donasi Anda ke akun B&A Anda.</paragraph><paragraph>Terima kasih atas dukungan Anda!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Struk"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Lihat detail struk"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Pertanyaan Umum tentang Donasi"
+    "messageformat": "Pertanyaan Umum tentang Donatur"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Struk tidak disinkronkan di semua perangkat. Struk dari donasi sebelumnya tidak akan tersedia jika Anda menginstal ulang B&A."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Tanggal Kedaluwarsa"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "BB/TT"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Donasi {formattedCurrencyAmount} ke B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Dapatkan lencana Boost B&A selama 30 hari"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Jumlah donasi minimum {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Jumlah minimal donasi yang dapat diberikan adalah {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Jumlah donasi maksimum {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Informasi kartu kredit akan dihapus saat Anda meninggalkan halaman ini. Lanjutkan?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Hapus info"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Lanjutkan"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Struk donasi"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Terima kasih telah mendukung B&A. Kontribusi Anda membantu misi perlindungan terhadap kebebasan berekspresi dan mendukung teknologi privasi sumber terbuka yang memungkinkan komunikasi yang aman bagi jutaan pengguna di seluruh dunia. Jika Anda warga Amerika Serikat, harap simpan struk ini untuk pencatatan pajak. B&A Technology Foundation adalah organisasi nirlaba bebas pajak di Amerika Serikat menurut pasal 501c3 di Internal Revenue Code (IRC). ID Pajak Federal kami adalah 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Anda sedang offline. Hubungkan perangkat ke internet untuk menyelesaikan donasi."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donasi dibatalkan"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Ada donasi yang sedang diproses dan memerlukan konfirmasi lebih lanjut."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donasi berhasil, tetapi kami tidak dapat memperbarui pengaturan lencana Anda"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donasi berhasil, tetapi kami tidak dapat memperbarui pengaturan lencana Anda"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Untuk memperbarui pengaturan lencana di perangkat seluler, buka Pengaturan → Donasi ke B&A → Lencana."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Proses donasi terganggu"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Donasi Anda mungkin belum diproses. Klik “Donasi ke B&A”, lalu klik “Struk Donasi” untuk memeriksa struk dan mengonfirmasi."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Coba lagi atau kirimkan catatan debug ke tim Dukungan untuk bantuan penyelesaian donasi Anda. Catatan debug membantu kami mendiagnosis dan memperbaiki masalah. Catatan tidak berisi informasi identifikasi."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Memproses donasi …"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Masih memproses"
+    "messageformat": "Masih memproses donasi"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Donasi Anda sedang diproses. Perlu waktu beberapa menit."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Batalkan donasi"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Terima kasih atas dukungan Anda!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Anda mendapatkan lencana donatur dari B&A! Tampilkan di profil untuk menunjukkan dukungan yang telah Anda berikan."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Tampilkan di profil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Anda dapat menyesuaikan ini di ponsel melalui Pengaturan → Donasi ke B&A → Lencana"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Versi ini mengandung sejumlah perubahan kecil dan perbaikan bug agar B&A tetap berjalan lancar.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Tambahan penyesuaian kecil, perbaikan bug, dan peningkatan performa. Terima kasih telah menggunakan B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Kami meningkatkan pengalaman fitur pesan telah dibaca/belum dibaca saat Anda melakukan beberapa hal sekaligus. Kami juga memperbaiki bug yang kadang salah membuka penampil gambar yang diperbesar ketika Anda menekan spasi saat mencari emoji yang tepat. Anda masih bisa memperbesar gambar dengan mengkliknya atau bila Anda mengetiknya cukup cepat."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Menemukan emoji yang tepat bisa sangat sulit, kadang terjadi masalah setelah Anda menekan tombol escape di kotak pencarian. Tapi tenang, kami sudah memperbaiki bug ini."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Dalam pembaruan kali ini kami memperbaiki beberapa bug kecil, antara lain tanggapan emoji yang kadang tidak dikelompokkan dengan benar."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Pada pembaruan kali ini kami meluncurkan model optimalisasi kinerja baterai baru. Fungsinya untuk meningkatkan daya tahan baterai."
   }
 }

@@ -8,97 +8,101 @@
 
 import type { RequestInit, Response } from 'node-fetch';
 import fetch from 'node-fetch';
-import type { Agent } from 'https';
-import { escapeRegExp, isNumber, isString, isObject, throttle } from 'lodash';
+import type { Agent } from 'node:https';
+import lodash from 'lodash';
 import PQueue from 'p-queue';
 import { v4 as getGuid } from 'uuid';
 import { z } from 'zod';
-import type { Readable } from 'stream';
-import qs from 'querystring';
+import type { Readable } from 'node:stream';
+import qs from 'node:querystring';
 import type {
   KEMPublicKey,
   PublicKey,
   Aci,
   Pni,
 } from '@signalapp/libsignal-client';
-import { AccountAttributes } from '@signalapp/libsignal-client/dist/net';
+import { AccountAttributes } from '@signalapp/libsignal-client/dist/net.js';
 
-import { assertDev, strictAssert } from '../util/assert';
-import * as durations from '../util/durations';
-import type { ExplodePromiseResultType } from '../util/explodePromise';
-import { explodePromise } from '../util/explodePromise';
-import { getUserAgent } from '../util/getUserAgent';
-import { getTimeoutStream } from '../util/getStreamWithTimeout';
-import { toWebSafeBase64, fromWebSafeBase64 } from '../util/webSafeBase64';
-import { getBasicAuth } from '../util/getBasicAuth';
-import { createHTTPSAgent } from '../util/createHTTPSAgent';
-import { createProxyAgent } from '../util/createProxyAgent';
-import type { ProxyAgent } from '../util/createProxyAgent';
-import type { FetchFunctionType } from '../util/uploads/tusProtocol';
-import { VerificationTransport } from '../types/VerificationTransport';
-import { ZERO_ACCESS_KEY } from '../types/SealedSender';
-import { toLogFormat } from '../types/errors';
-import { isPackIdValid, redactPackId } from '../types/Stickers';
+import { assertDev, strictAssert } from '../util/assert.js';
+import * as durations from '../util/durations/index.js';
+import type { ExplodePromiseResultType } from '../util/explodePromise.js';
+import { explodePromise } from '../util/explodePromise.js';
+import { getUserAgent } from '../util/getUserAgent.js';
+import { getTimeoutStream } from '../util/getStreamWithTimeout.js';
+import { toWebSafeBase64, fromWebSafeBase64 } from '../util/webSafeBase64.js';
+import { getBasicAuth } from '../util/getBasicAuth.js';
+import { createHTTPSAgent } from '../util/createHTTPSAgent.js';
+import { createProxyAgent } from '../util/createProxyAgent.js';
+import type { ProxyAgent } from '../util/createProxyAgent.js';
+import type { FetchFunctionType } from '../util/uploads/tusProtocol.js';
+import { VerificationTransport } from '../types/VerificationTransport.js';
+import { ZERO_ACCESS_KEY } from '../types/SealedSender.js';
+import { toLogFormat } from '../types/errors.js';
+import { isPackIdValid, redactPackId } from '../types/Stickers.js';
 import type {
   ServiceIdString,
   AciString,
   UntaggedPniString,
-} from '../types/ServiceId';
+} from '../types/ServiceId.js';
 import {
   ServiceIdKind,
   serviceIdSchema,
   aciSchema,
   untaggedPniSchema,
-} from '../types/ServiceId';
-import type { BackupPresentationHeadersType } from '../types/backups';
-import * as Bytes from '../Bytes';
-import { getRandomBytes, randomInt } from '../Crypto';
-import * as linkPreviewFetch from '../linkPreviews/linkPreviewFetch';
-import { isBadgeImageFileUrlValid } from '../badges/isBadgeImageFileUrlValid';
+} from '../types/ServiceId.js';
+import type { BackupPresentationHeadersType } from '../types/backups.js';
+import * as Bytes from '../Bytes.js';
+import { getRandomBytes, randomInt } from '../Crypto.js';
+import * as linkPreviewFetch from '../linkPreviews/linkPreviewFetch.js';
+import { isBadgeImageFileUrlValid } from '../badges/isBadgeImageFileUrlValid.js';
 
 import {
   SocketManager,
   type SocketStatuses,
   type SocketExpirationReason,
-} from './SocketManager';
-import type { CDSAuthType, CDSResponseType } from './cds/Types.d';
-import { CDSI } from './cds/CDSI';
-import { SignalService as Proto } from '../protobuf';
+} from './SocketManager.js';
+import type { CDSAuthType, CDSResponseType } from './cds/Types.d.ts';
+import { CDSI } from './cds/CDSI.js';
+import { SignalService as Proto } from '../protobuf/index.js';
 
-import { HTTPError } from './Errors';
-import type MessageSender from './SendMessage';
+import { HTTPError } from './Errors.js';
+import type MessageSender from './SendMessage.js';
 import type {
   WebAPICredentials,
   IRequestHandler,
   StorageServiceCallOptionsType,
   StorageServiceCredentials,
-} from './Types.d';
-import { handleStatusCode, translateError } from './Utils';
-import { createLogger } from '../logging/log';
-import { maybeParseUrl, urlPathFromComponents } from '../util/url';
-import { HOUR, MINUTE, SECOND } from '../util/durations';
-import { safeParseNumber } from '../util/numbers';
-import type { IWebSocketResource } from './WebsocketResources';
-import { getLibsignalNet } from './preconnect';
-import type { GroupSendToken } from '../types/GroupSendEndorsements';
-import { parseUnknown, safeParseUnknown, type Schema } from '../util/schemas';
+} from './Types.d.ts';
+import { handleStatusCode, translateError } from './Utils.js';
+import { createLogger } from '../logging/log.js';
+import { maybeParseUrl, urlPathFromComponents } from '../util/url.js';
+import { HOUR, MINUTE, SECOND } from '../util/durations/index.js';
+import { safeParseNumber } from '../util/numbers.js';
+import type { IWebSocketResource } from './WebsocketResources.js';
+import { getLibsignalNet } from './preconnect.js';
+import type { GroupSendToken } from '../types/GroupSendEndorsements.js';
+import {
+  parseUnknown,
+  safeParseUnknown,
+  type Schema,
+} from '../util/schemas.js';
 import type {
   ProfileFetchAuthRequestOptions,
   ProfileFetchUnauthRequestOptions,
-} from '../services/profiles';
-import { ToastType } from '../types/Toast';
-import { isProduction } from '../util/version';
-import type { ServerAlert } from '../util/handleServerAlerts';
-import { isAbortError } from '../util/isAbortError';
-import { missingCaseError } from '../util/missingCaseError';
-import { drop } from '../util/drop';
-import type { StripeDonationAmount } from '../types/Donations';
-import {
-  subscriptionConfigurationCurrencyZod,
-  type CardDetail,
-} from '../types/Donations';
-import { badgeFromServerSchema } from '../badges/parseBadgesFromServer';
-import { ZERO_DECIMAL_CURRENCIES } from '../util/currency';
+} from '../services/profiles.js';
+import { ToastType } from '../types/Toast.js';
+import { isProduction } from '../util/version.js';
+import type { ServerAlert } from '../util/handleServerAlerts.js';
+import { isAbortError } from '../util/isAbortError.js';
+import { missingCaseError } from '../util/missingCaseError.js';
+import { drop } from '../util/drop.js';
+import { subscriptionConfigurationCurrencyZod } from '../types/Donations.js';
+import type { StripeDonationAmount, CardDetail } from '../types/Donations.js';
+import { badgeFromServerSchema } from '../badges/parseBadgesFromServer.js';
+import { ZERO_DECIMAL_CURRENCIES } from '../util/currency.js';
+import type { JobCancelReason } from '../jobs/types.js';
+
+const { escapeRegExp, isNumber, isString, isObject, throttle } = lodash;
 
 const log = createLogger('WebAPI');
 
@@ -470,7 +474,7 @@ async function _promiseAjax<Type extends ResponseType, OutputShape>(
 
     if (!unauthenticated && response.status === 401) {
       log.warn('Got 401 from Signal Server. We might be unlinked.');
-      window.Whisper.events.trigger('mightBeUnlinked');
+      window.Whisper.events.emit('mightBeUnlinked');
     }
   }
 
@@ -700,7 +704,7 @@ const CHAT_CALLS = {
   batchIdentityCheck: 'v1/profile/identity_check/batch',
   boostReceiptCredentials: 'v1/subscription/boost/receipt_credentials',
   challenge: 'v1/challenge',
-  config: 'v1/config',
+  configV2: 'v2/config',
   createBoost: 'v1/subscription/boost/create',
   deliveryCert: 'v1/certificate/delivery',
   devices: 'v1/devices',
@@ -850,15 +854,11 @@ export type WebAPIConnectType = {
 // When updating this make sure to update `observedCapabilities` type in
 // ts/types/Storage.d.ts
 export type CapabilitiesType = {
-  deleteSync: boolean;
-  ssre2: boolean;
   attachmentBackfill: boolean;
 };
 export type CapabilitiesUploadType = {
-  deleteSync: true;
-  versionedExpirationTimer: true;
-  ssre2: true;
   attachmentBackfill: true;
+  spqr: true;
 };
 
 type StickerPackManifestType = Uint8Array;
@@ -930,18 +930,14 @@ export type UploadAvatarHeadersOrOtherType = z.infer<
 >;
 
 const remoteConfigResponseZod = z.object({
-  config: z
-    .object({
-      name: z.string(),
-      enabled: z.boolean(),
-      value: z.string().nullish(),
-    })
-    .array(),
+  config: z.object({}).catchall(z.string()),
 });
-export type RemoteConfigResponseType = z.infer<typeof remoteConfigResponseZod> &
-  Readonly<{
-    serverTimestamp: number;
-  }>;
+export type RemoteConfigResponseType = {
+  config: Map<string, string> | 'unmodified';
+} & Readonly<{
+  serverTimestamp: number;
+  configHash: string;
+}>;
 
 export type ProfileType = Readonly<{
   identityKey?: string;
@@ -1365,7 +1361,7 @@ export type GetBackupCredentialsResponseType = z.infer<
 
 export type GetBackupCDNCredentialsOptionsType = Readonly<{
   headers: BackupPresentationHeadersType;
-  cdn: number;
+  cdnNumber: number;
 }>;
 
 export const getBackupCDNCredentialsResponseSchema = z.object({
@@ -1562,7 +1558,7 @@ export type SubscriptionResponseType = z.infer<
 export type WebAPIType = {
   startRegistration(): unknown;
   finishRegistration(baton: unknown): void;
-  cancelInflightRequests: (reason: string) => void;
+  cancelInflightRequests: (reason: JobCancelReason) => void;
   cdsLookup: (options: CdsLookupOptionsType) => Promise<CDSResponseType>;
   createAccount: (
     options: CreateAccountOptionsType
@@ -1835,7 +1831,7 @@ export type WebAPIType = {
   ) => Promise<string>;
   whoami: () => Promise<WhoamiResultType>;
   sendChallengeResponse: (challengeResponse: ChallengeType) => Promise<void>;
-  getConfig: () => Promise<RemoteConfigResponseType>;
+  getConfig: (configHash?: string) => Promise<RemoteConfigResponseType>;
   authenticate: (credentials: WebAPICredentials) => Promise<void>;
   logout: () => Promise<void>;
   getServerAlerts: () => Array<ServerAlert>;
@@ -1957,7 +1953,7 @@ export type TopLevelType = {
   initialize: (options: InitializeOptionsType) => WebAPIConnectType;
 };
 
-type InflightCallback = (error: Error) => unknown;
+type InflightCallback = (cancelReason: string) => unknown;
 
 const libsignalNet = getLibsignalNet();
 
@@ -2050,6 +2046,28 @@ export function initialize({
       log.info('libsignal net will require TLS 1.3');
       libsignalRemoteConfig.set('enforceMinimumTls', 'true');
     }
+    if (
+      window.Signal.RemoteConfig.isEnabled(
+        'desktop.libsignalNet.shadowUnauthChatWithNoise'
+      )
+    ) {
+      log.info('libsignal net will shadow unauth chat connections');
+      libsignalRemoteConfig.set('shadowUnauthChatWithNoise', 'true');
+    }
+    if (
+      window.Signal.RemoteConfig.isEnabled(
+        'desktop.libsignalNet.shadowAuthChatWithNoise'
+      )
+    ) {
+      log.info('libsignal net will shadow auth chat connections');
+      libsignalRemoteConfig.set('shadowAuthChatWithNoise', 'true');
+    }
+    const perMessageDeflateConfigKey = isProduction(version)
+      ? 'desktop.libsignalNet.chatPermessageDeflate.prod'
+      : 'desktop.libsignalNet.chatPermessageDeflate';
+    if (window.Signal.RemoteConfig.isEnabled(perMessageDeflateConfigKey)) {
+      libsignalRemoteConfig.set('chatPermessageDeflate', 'true');
+    }
     libsignalNet.setRemoteConfig(libsignalRemoteConfig);
 
     const socketManager = new SocketManager(libsignalNet, {
@@ -2061,23 +2079,23 @@ export function initialize({
     });
 
     socketManager.on('statusChange', () => {
-      window.Whisper.events.trigger('socketStatusChange');
+      window.Whisper.events.emit('socketStatusChange');
     });
 
     socketManager.on('online', () => {
-      window.Whisper.events.trigger('online');
+      window.Whisper.events.emit('online');
     });
 
     socketManager.on('offline', () => {
-      window.Whisper.events.trigger('offline');
+      window.Whisper.events.emit('offline');
     });
 
     socketManager.on('authError', () => {
-      window.Whisper.events.trigger('unlinkAndDisconnect');
+      window.Whisper.events.emit('unlinkAndDisconnect');
     });
 
     socketManager.on('firstEnvelope', incoming => {
-      window.Whisper.events.trigger('firstEnvelope', incoming);
+      window.Whisper.events.emit('firstEnvelope', incoming);
     });
 
     socketManager.on('serverAlerts', alerts => {
@@ -2107,7 +2125,7 @@ export function initialize({
       },
     });
 
-    const inflightRequests = new Set<(error: Error) => unknown>();
+    const inflightRequests = new Set<InflightCallback>();
     function registerInflightRequest(request: InflightCallback) {
       inflightRequests.add(request);
     }
@@ -2119,7 +2137,7 @@ export function initialize({
       log.warn(`${logId}: Canceling ${inflightRequests.size} requests`);
       for (const request of inflightRequests) {
         try {
-          request(new Error(`${logId}: Canceled!`));
+          request(reason);
         } catch (error: unknown) {
           log.error(
             `${logId}: Failed to cancel request: ${toLogFormat(error)}`
@@ -2465,31 +2483,64 @@ export function initialize({
       void socketManager.onHasStoriesDisabledChange(newValue);
     }
 
-    async function getConfig() {
+    async function getConfig(
+      configHash?: string
+    ): Promise<RemoteConfigResponseType> {
       const { data, response } = await _ajax({
         host: 'chatService',
-        call: 'config',
+        call: 'configV2',
         httpType: 'GET',
         responseType: 'jsonwithdetails',
-        zodSchema: remoteConfigResponseZod,
+        zodSchema: z.union([
+          remoteConfigResponseZod,
+          // When a 304 is returned, the body of the response is empty.
+          z.literal(''),
+        ]),
+        headers: {
+          ...(configHash && { 'if-none-match': configHash }),
+        },
       });
 
       const serverTimestamp = safeParseNumber(
         response.headers.get('x-signal-timestamp') || ''
       );
+
       if (serverTimestamp == null) {
         throw new Error('Missing required x-signal-timestamp header');
       }
 
-      return {
-        ...data,
-        serverTimestamp,
-        config: data.config.filter(
-          ({ name }: { name: string }) =>
+      const newConfigHash = response.headers.get('etag');
+      if (newConfigHash == null) {
+        throw new Error('Missing required ETag header');
+      }
+
+      const partialResponse = { serverTimestamp, configHash: newConfigHash };
+
+      if (response.status === 304) {
+        return {
+          config: 'unmodified',
+          ...partialResponse,
+        };
+      }
+
+      if (data === '') {
+        throw new Error('Empty data returned for non-304');
+      }
+
+      const { config: newConfig } = data;
+
+      const config = new Map(
+        Object.entries(newConfig).filter(
+          ([name, _value]) =>
             name.startsWith('desktop.') ||
             name.startsWith('global.') ||
             name.startsWith('cds.')
-        ),
+        )
+      );
+
+      return {
+        config,
+        ...partialResponse,
       };
     }
 
@@ -2823,10 +2874,12 @@ export function initialize({
           // Add a bit of leeway to let server respond properly
           timeout: (requestTimeoutInSecs + 15) * SECOND,
           abortSignal,
-          zodSchema: TransferArchiveSchema,
+          // We may also get a 204 with no content, indicating we should try again
+          zodSchema: TransferArchiveSchema.or(z.literal('')),
         });
 
         if (response.status === 200) {
+          strictAssert(data !== '', '200 must have data');
           return data;
         }
 
@@ -3228,10 +3281,8 @@ export function initialize({
       }
 
       const capabilities: CapabilitiesUploadType = {
-        deleteSync: true,
-        versionedExpirationTimer: true,
-        ssre2: true,
         attachmentBackfill: true,
+        spqr: true,
       };
 
       // Desktop doesn't support recovery but we need to provide a recovery password.
@@ -3295,10 +3346,8 @@ export function initialize({
       pniPqLastResortPreKey,
     }: LinkDeviceOptionsType) {
       const capabilities: CapabilitiesUploadType = {
-        deleteSync: true,
-        versionedExpirationTimer: true,
-        ssre2: true,
         attachmentBackfill: true,
+        spqr: true,
       };
 
       const jsonData = {
@@ -3628,7 +3677,7 @@ export function initialize({
 
     async function getBackupCDNCredentials({
       headers,
-      cdn,
+      cdnNumber,
     }: GetBackupCDNCredentialsOptionsType) {
       return _ajax({
         host: 'chatService',
@@ -3638,7 +3687,7 @@ export function initialize({
         accessKey: undefined,
         groupSendToken: undefined,
         headers,
-        urlParameters: `?cdn=${cdn}`,
+        urlParameters: `?cdn=${cdnNumber}`,
         responseType: 'json',
         zodSchema: getBackupCDNCredentialsResponseSchema,
       });
@@ -4284,11 +4333,13 @@ export function initialize({
 
       let streamWithDetails: StreamWithDetailsType | undefined;
 
-      const cancelRequest = () => {
-        abortController.abort();
+      const cancelRequest = (reason: unknown) => {
+        abortController.abort(reason);
       };
 
-      options?.abortSignal?.addEventListener('abort', cancelRequest);
+      options?.abortSignal?.addEventListener('abort', () =>
+        cancelRequest(options.abortSignal?.reason)
+      );
 
       registerInflightRequest(cancelRequest);
 

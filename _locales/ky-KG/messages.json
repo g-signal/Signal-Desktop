@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Маекти өчүрөсүзбү?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Ушул маектеги бардык билдирүүлөр бул түзмөктөн өчүрүлөт."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Бул маектеги билдирүүлөрдүн баары бардык түзмөктөрүңүздөн өчүрүлөт."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Бул папкада көрүнө турган маектерди тандайсыз"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Жекеме-жеке маектешүү"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Топтошуп маектешүү"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Маектерди кошуу"
@@ -1869,7 +1872,7 @@
     "messageformat": "Бул B&A Desktop версиясынын мөөнөтү бүттү. Билдирүүлөр менен бөлүшүүнү улантуу үчүн акыркы версияга жаңыртыңыз."
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download дарегине өтүү үчүн басыңыз"
+    "messageformat": "baxs.com/download дарегине өтүү үчүн басыңыз"
   },
   "icu:mediaMessage": {
     "messageformat": "Медиа билдирүү"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Жүктөлүп алынган жок"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Камдык көчүрмөлөрдөн жүктөлүп алынбай калды"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Оңдоолор бул билдирүү жөнөтүлгөндөн кийин 3 сааттын ичинде күчүнө кирет."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Бир жолу көрүлүүчү видео"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Бул билдирүү өчүрүлгөн."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Кайра аракет кылыңыз же кардарларды колдоо кызматына кайрылыңыз."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Күтүлбөгөн ката кетти"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Мүчүлүштүктөр журналын жөнөтүү"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Жок, рахмат"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Макул"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {{number,number} мүчө}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Жалпы медиафайлдар"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Баарын көрүү"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Медиа файлдар, шилтемелер жана башка нерселер"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {{number,number} мүчө}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Администратор топко шилтеме аркылуу кошулуп жаткан жаңы мүчөлөрдү ырасташы керек"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group шилтемесин буферге көчүрүү"
+    "messageformat": "signal.group шилтемесин буферге көчүрүү"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Өтүнүчтөр ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Мисалы, :-) деген эмотикон ушундай быйтыкчага <emojify>🙂</emojify> айланат"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Үнү басылган маектер архивделген боюнча калсын"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Үнү басылган архивделген маектер жаңы билдирүү келсе да, архивделген боюнча калат."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Өркүндөтүлгөн"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Бөгөттөлдү"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A'дын камдык көчүрмөлөрү"
+    "messageformat": "B&A'дын Коопсуз камдык көчүрмөлөрү"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A'дын баштан аяк шифрленген сактоо кызматы менен камдык көчүрмөлөр автоматтык түрдө сакталат. Телефонуңузда баштаңыз. <learnMoreLink>Кененирээк маалымат.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Тексттик ж.б. медиа файлдардын камдык көчүрмөсү"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Жазылууңуз табылган жок. B&A'дын камдык көчүрмөлөрүн колдоно берүү үчүн жазылууну жаңыртыңыз."
+    "messageformat": "Жазылууңуз табылган жок. B&A Коопсуз камдык көчүрмөлөрүн колдоно берүү үчүн жаңыртыңыз."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {Тексттик жана соңку {mediaDayCount,number} күндөгү медиа файлдардын камдык көчүрмөсү}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Жазылуу токтотулду"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "B&A'дын камдык көчүрмөлөрүнө жазылууну телефонуңуздан өзгөртүп же токтото аласыз."
+    "messageformat": "B&A'дын камдык көчүрмөлөрүнө катталууну телефонуңуздан өзгөртүп же токтото аласыз."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "B&A'дын камдык көчүрмөлөрүн телефонуңуздан өзгөртүп же жазылууну узарта аласыз."
+    "messageformat": "B&A'дын камдык көчүрмөлөрүн телефонуңуздан башкарып же башка тарифке өтө аласыз."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "B&A'дын камдык көчүрмөлөрүнө телефонуңуздан жазылып же жазылууңузду узарта аласыз."
+    "messageformat": "B&A'дын камдык көчүрмөлөрүнө телефонуңуздан катталып же катталууңузду узарта аласыз."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Акыркы жолу качан сакталган"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Менин колдоом"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} бир жолу"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Салым иштелүүдө..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Колдоо көрсөтүү: {formattedCurrencyAmount}"
   },
@@ -6648,8 +6675,14 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>Салым кошкондо, B&A сизге байланыштуу эч кандай жеке маалымат чогултпайт же сактабайт.</paragraph><paragraph>Салым түрүндөгү төлөмдөрүңүздү Stripe кызматы аркылуу алабыз. Аларга берген бир дагы маалыматыңызды албайбыз, сактабайбыз же жазып албайбыз.</paragraph><paragraph>B&A салымыңызды B&A аккаунтуңузга байланыштыра албайт жана байланыштырбайт.</paragraph><paragraph>Колдоо көрсөткөнүңүз үчүн чоң рахмат!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Дүмүрчөктөр"
+  },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Дүмүрчөктүн чоо-жайын карап көрүү"
   },
   "icu:PreferencesDonations__faqs": {
     "messageformat": "Салым тууралуу КБС"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Качан бүтөт"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A'га {formattedCurrencyAmount} салым кошуу"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 күн B&A Boost төшбелгисин колдонуңуз"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Салымдын суммасы {formattedCurrencyAmount} жогору болушу керек"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Кеминде {formattedCurrencyAmount} салым кошо аласыз"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Салымдын суммасы {formattedCurrencyAmount} жогору болушу керек"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Бул беттен чыксаңыз, насыя картаңыздын маалыматы өчүп калат. Улантасызбы?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Ооба"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Улантуу"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Колдоо дүмүрчөгү"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A'ды колдогонуңуз үчүн чоң рахмат! Салым кошуу менен, баштапкы коду ачык купуялык технологиялары аркылуу дүйнө жүзүндөгү миллиондогон адамдарга өз оюн эркин билдирип, коопсуз шарттарда баарлашуу мүмкүнчүлүгүн берүү миссиябызды жайылтканга жардам бересиз. Эгер Америка Кошмо Штаттарынын тургуну болсоңуз, бул дүмүрчөктү салык органдарына көрсөтүү үчүн сактап коюңуз. B&A Technology фонду Ички кирешелер кодексинин 501(c)(3) бөлүмү боюнча салыктан бошотулган коммерциялык эмес уюм. Федералдык салык идентификаторубуз 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Интернет жок. Интернетке туташып, салымыңызды аягына чыгарыңыз."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Салым токтотулду"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Ырастоону талап кылган салымыңыз ишке ашууда."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Салымыңыз кошулду, бирок төшбелгиңиздин параметрлерин өзгөртө алган жокпуз"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Салымыңыз кошулду, бирок төшбелгиңиздин параметрлерин өзгөртө алган жокпуз"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Мобилдик түзмөгүңүздө төшбелги параметрлерин өзгөртүү үчүн Параметрлер → B&A'га колдоо көрсөтүү → Төшбелгилер дегенге өтүңүз."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Салым үзгүлтүккө учурады"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Салымыңыз иштелбей калды окшойт. \"B&A'га колдоо көрсөтүү\" дегенди басып, дүмүрчөктөрүңүздү текшерүү үчүн \"Салымдардын дүмүрчөктөрү\" дегенди караңыз."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Кайталаңыз же салымыңызды аягына чыгаруу үчүн Колдоо бөлүмүнө мүчүлүштүктөр журналын жөнөтүңүз. Мүчүлүштүктөр журналдары аркылуу маселени аныктап, чече алабыз. Аларда сизди аныктаган маалымат болбойт."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Салым иштелүүдө..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Дагы эле иштетилүүдө"
+    "messageformat": "Салымыңыз дагы деле иштелүүдө"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Салымыңыз дагы деле иштелүүдө. Бир нече мүнөт кетиши мүмкүн."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Салымды токтотуу"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Колдооңуз үчүн рахмат!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "B&A кызматынан донор төшбелгисин алдыңыз! Аны профилиңизге жайгаштырып, B&A'ды колдоп жатканыңызды көрсөтүңүз."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Профильде көрсөтүү"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Аны мобилдик түзмөгүңүздө Параметрлер → B&A'га колдоо көрсөтүү → Төшбелгилер деген жерде тууралай аласыз"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Бул версия бир нече майда өзгөртүүлөрдү жана мүчүлүштүктөрдү оңдоолорду камтыйт.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Майда-барат өзгөрүүлөрдү киргизип, мүчүлүштүктөрдү оңдоп, колдонмонун иштешин жакшыртып жатабыз. B&A'ды колдонгонуңуз үчүн чоң рахмат!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Бир нече колдонмо ачылып турганда, окулган/окула элек билдирүүлөрдүн көрүнүшүн жакшыртып, сезимиңизди билдирүү үчүн быйтыкча издеп жатканда кокус боштукту басып алып, быйтыкча толук көрүнгөн мүчүлүштүктү оңдоп койдук. Азыр деле быйтыкчаны басып, чоңойтуп көрө аласыз же терип деле көрсөңүз болот."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Кээде керектүү быйтыкчаны таба албай калабыз. Издөө сабында Esc баскычын басканда ката деп чыккан билдирүүнү оңдоп койдук."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Бул жаңы версияда бир нече мүчүлүштүктөр оңдолду. Мисалы, сезимдерди билдирген быйтыкчалар туура эмес топтоштурулган мүчүлүштүк."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Бул жаңыртууда түзмөктү жакшыраак иштетип, батареясын үнөмдөгөн өркүндөтүүлөр орун алып, эми мурункудан да жакшыраак сүйлөшө аласыз."
   }
 }

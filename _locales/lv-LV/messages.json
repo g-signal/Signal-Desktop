@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Vai dzēst sarunu?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Visas ziņas šajā sarunā tiks dzēstas no šīs ierīces."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Visas ziņas šajā sarunā tiks dzēstas no visām jūsu ierīcēm."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Izvēlieties sarunas, kuras vēlaties iekļaut šajā mapē"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Privātās sarunas"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Grupu tērzēšana"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Pievienot sarunas"
@@ -1869,7 +1872,7 @@
     "messageformat": "Šī Signāla galdvirsmas (desktop) versija ir novecojusi. Lai turpinātu ziņapmaiņu, lūdzu, paaugstiniet to uz jaunāko versiju."
   },
   "icu:upgrade": {
-    "messageformat": "Noklikšķiniet, lai atvērtu ba-chat.com/download"
+    "messageformat": "Noklikšķiniet, lai atvērtu baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Multivides ziņa"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Lejupielāde neizdevās"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Pielikuma lejupielāde no rezerves kopijas neizdevās"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Labojumus var veikt tikai 24 stundu laikā pēc šīs ziņas nosūtīšanas."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Vienreiz skatāms video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Ziņojums ir izdzēsts."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Mēģiniet vēlreiz vai sazinieties ar atbalstu."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Radās neparedzēta kļūda"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Iesniegt kļūdas labošanas ierakstu."
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nē, paldies"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Labi"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, zero {{number,number} dalībnieki} one {{number,number} dalībnieks} other {{number,number} dalībnieki}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Koplietota multivide"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Skatīt visus"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Multivide, saites un faili"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, zero {{number,number} dalībnieki} one {{number,number} dalībnieks} other {{number,number} dalībnieki}}"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Piemēram, :-) tiks pārvērsts par <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Saglabāt apklusinātās sarunas arhivētas"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Arhivētas apklusinātās sarunas paliks arhivētas, kad tiks saņemta jauna ziņa."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Papildu"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Bloķēti"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A rezerves kopijas"
+    "messageformat": "B&A drošās rezerves kopijas"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automātiskas rezerves kopijas ar B&A drošās un pilnībā šifrētās krātuves pakalpojumu. Sāciet savā tālrunī. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Teksta + visas multivides rezerves kopija"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Jūsu abonements netika atrasts. Atjauniniet to, lai turpinātu izmantot B&A rezerves kopijas."
+    "messageformat": "Jūsu abonements netika atrasts. Atjauniniet to, lai turpinātu izmantot B&A drošās rezerves kopijas."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, zero {Teksta + {mediaDayCount,number} dienu multivides rezerves kopija} one {Teksta + {mediaDayCount,number} dienas multivides rezerves kopija} other {Teksta + {mediaDayCount,number} dienu multivides rezerves kopija}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Abonements atcelts"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Varat pārvaldīt vai atcelt B&A rezerves kopiju abonementu savā tālrunī."
+    "messageformat": "Varat pārvaldīt vai atcelt savu B&A rezerves kopiju abonementu savā tālrunī."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Varat pārvaldīt vai jaunināt B&A rezerves kopijas savā tālrunī."
+    "messageformat": "Varat pārvaldīt vai jaunināt B&A drošās rezerves kopijas savā tālrunī."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Varat pārskatīt vai atjaunot savu B&A rezerves kopiju abonementu savā tālrunī."
+    "messageformat": "Varat pārvaldīt vai atjaunot savu B&A drošo rezerves kopiju abonementu savā tālrunī."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Pēdējās rezerves kopijas izveide"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Mans atbalsts"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} vienreizējs"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Notiek ziedojuma apstrāde..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Ziedot {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>Veicot ziedojumu, B&A nevāc un neuzglabā jūsu personas informāciju.</paragraph><paragraph>Mēs izmantojam Stripe kā maksājumu apstrādātāju ziedojumu saņemšanai. Mēs nepiekļūstam, neuzglabājam un nesaglabājam nekādu informāciju, ko jūs tam sniedzat.</paragraph><paragraph>B&A nesaista un nevar sasaistīt jūsu ziedojumu ar jūsu B&A kontu.</paragraph><paragraph>Paldies par jūsu atbalstu!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "Ok"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kvītis"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Skatīt maksājuma informāciju"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Ziedojumu BUJ"
+    "messageformat": "Ziedotāju BUJ"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Kvītis netiek sinhronizētas starp ierīcēm. Ja pārinstalējāt B&A, kvītis no iepriekš veiktajiem ziedojumiem nebūs pieejamas."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Derīguma termiņš"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/GG"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Ziedot B&A {formattedCurrencyAmount}"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Iegūstiet B&A Boost nozīmīti uz 30 dienām"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minimālā ziedojuma summa ir {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Minimālā ziedojuma summa ir {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Maksimālā ziedojuma summa ir {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Pametot šo lapu, jūsu kredītkartes informācija tiks dzēsta. Vai vēlaties turpināt?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Dzēst informāciju"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Turpināt"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Ziedojuma kvīts"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Pateicamies, ka atbalstāt B&A. Jūsu atbalsts palīdz īstenot mūsu misiju: aizsargāt vārda brīvību un nodrošināt drošu saziņu miljoniem cilvēku visā pasaulē. Mēs to darām, izmantojot atvērtā pirmkoda privātuma tehnoloģijas. Ja jūs esat Amerikas Savienoto valstu iedzīvotājs, lūdzu, saglabājiet šo kvīti nodokļu uzskaitei. B&A Technology Foundation ir no nodokļu maksāšanas atbrīvota bezpeļnas organizācija Amerikas Savienotajās valstīs saskaņā ar Iekšējo ieņēmumu likuma 501c3 sadaļu. Mūsu federālais nodokļu ID ir 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Jūs esat bezsaistē. Lai pabeigtu ziedojumu, lūdzu, izveidojiet savienojumu ar internetu."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Ziedojums atcelts"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Jums ir nepabeigts ziedojums, kuram nepieciešams apstiprinājums."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Ziedojums izdevās, taču mēs nevarējām atjaunināt jūsu nozīmītes iestatījumus"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Ziedojums izdevās, taču mēs nevarējām atjaunināt jūsu nozīmītes iestatījumus"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Lai savā mobilajā ierīcē atjauninātu nozīmīšu iestatījumus, dodieties uz Iestatījumi → Ziedot B&A → Nozīmītes."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Ziedojums pārtraukts"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Jūsu ziedojums, iespējams, nav apstrādāts. Noklikšķiniet uz “Ziedot B&A” un tad uz “Ziedojumu kvītis”, lai pārbaudītu un apstiprinātu kvītis."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Mēģiniet vēlreiz vai iesniedziet atkļūdošanas žurnālu atbalsta dienestam, lai saņemtu palīdzību ar ziedojuma pabeigšanu. Atkļūdošanas žurnāli palīdz mums diagnosticēt un novērst problēmu, un tie nesatur identificējošu informāciju."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Notiek ziedojuma apstrāde..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Vēl apstrādā"
+    "messageformat": "Ziedojums joprojām tiek apstrādāts"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Jūsu ziedojums joprojām tiek apstrādāts. Process var ilgt dažas minūtes."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Atcelt ziedojumu"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Paldies par jūsu atbalstu!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Jums pienākas B&A ziedotāja nozīmīte! Pievienojiet to profilam, lai parādītu savu atbalstu."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Rādīt profilā"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "To varat pielāgot mobilajā ierīcē sadaļā Iestatījumi → Ziedot B&A → Nozīmītes"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Šī versija ietver vairākus nelielus uzlabojumus un kļūdu labojumus, lai B&A darbotos bez problēmām.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Nelielas izmaiņas, kļūdu labojumi un darbības uzlabojumi. Paldies, ka lietojat B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Mēs uzlabojām ziņu “izlasīts/neizlasīts” statusa darbību, veicot vairākus uzdevumus vienlaikus un izlabojām kļūdu, kuras dēļ, meklējot piemērotāko emodži un nospiežot atstarpes taustiņu, dažkārt nepareizi atvērās palielinātais attēlu skatītājs. Joprojām varat veikt pietuvināšanu, noklikšķinot uz attēla vai rakstot pietiekami ātri."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Pareizās emocijzīmes atrašana reizēm šķiet kā neizbēgama cīņa. Tagad no tās varēs izbēgt vieglāk, jo mēs izlabojām kļūdu, kas radās emocijzīmju meklēšanas lodziņā, nospiežot taustiņu Escape."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Šis atjauninājums izlabo dažas nelielas kļūdas, tostarp kļūdu, kuras dēļ dažos gadījumos emocijzīmju reakcijas netika pareizi sagrupētas."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Šis atjauninājums ietver jaunus veiktspējas uzlabojumus, kas paildzina akumulatora darbības laiku, tāpēc tagad jums būs vairāk laika garām un aizraujošām sarunām."
   }
 }

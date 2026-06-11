@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Kas kustutada vestlus?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Kõik selle vestluse sõnumid kustutatakse sellest seadmest."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Kõik selle vestluse sõnumid kustutatakse kõigist sinu seadmetest."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Vali vestlused, mida tahaksid selles kaustas näha"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Üks-ühele vestlused"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Grupivestlused"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Lisa vestlusi"
@@ -1869,7 +1872,7 @@
     "messageformat": "See B&A Desktopi versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
   },
   "icu:upgrade": {
-    "messageformat": "Klõpsa aadressile ba-chat.com/download minemiseks"
+    "messageformat": "Klõpsa aadressile baxs.com/download minemiseks"
   },
   "icu:mediaMessage": {
     "messageformat": "Meediasõnum"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Allalaadimine nurjus"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Manuse allalaadimine varukoopiast nurjus"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Muutmine on võimalik vaid 24 tunni jooksul alates sõnumi saatmisest."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Ühekordseks nägemiseks video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "See sõnum kustutati."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Palun proovi uuesti või võta ühendust kasutajatoega."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Ilmnes ootamatu tõrge"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Postita silumislogi"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Tänan, ei"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Sobib"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} liige} other {{number,number} liiget}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Jagatud meedia"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Näita kõiki"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Meedia, lingid ja failid"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} liige} other {{number,number} liiget}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Nõua grupilingi kaudu liituvate uute liikmete kinnitamist administraatori poolt"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopeeri B&A.group link lõikelauale"
+    "messageformat": "Kopeeri signal.group link lõikelauale"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Taotlused ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Näiteks :-) asemel sisestatakse <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Hoia vaigistatud vestlused arhiveerituna"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Vaigistatud vestlused, mis on arhiveeritud, jäävad uue sõnumi saabudes arhiveerituks."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Täpsemad sätted"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Blokeeritud"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&Ai varukoopiad"
+    "messageformat": "B&Ai turvalised varukoopiad"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automaatsed varukoopiad B&Ai turvalise otspunktkrüptitud salvestusteenuse abil. Seadista telefonis. <learnMoreLink>Rohkem teavet</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Sõnumite + kogu meedia varukoopia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Sinu tellimust ei leitud. Uuenda, et jätkata B&Ai varukoopiate kasutamist."
+    "messageformat": "Sinu tellimust ei leitud. Uuenda, et jätkata B&Ai turvaliste varukoopiate kasutamist."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Sõnumite + {mediaDayCount,number} päeva meedia varukoopia} other {Sõnumite + {mediaDayCount,number} päeva meedia varukoopia}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Tellimus tühistatud"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Nüüd saad oma B&Ai varukoopiate tellimust oma telefonis hallata või uuendada."
+    "messageformat": "Saad oma B&Ai turvaliste varukoopiate tellimust oma telefonis hallata või katkestada."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Nüüd saad B&Ai varukoopiaid oma telefonis hallata või uuendada."
+    "messageformat": "Saad B&Ai turvalisi varukoopiaid oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Nüüd saad oma B&Ai varukoopiate tellimust oma telefonis hallata või uuendada."
+    "messageformat": "Saad oma B&Ai turvaliste varukoopiate tellimust oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Viimane varukoopia"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Minu toetus"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} üks kord"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Annetuse töötlemine …"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Anneta {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A ei kogu ega salvesta annetuse tegemisel sinu isikuandmeid.</paragraph><paragraph>Kasutame sinu annetuse vastuvõtmisel makse töötlemiseks Stripe'i. Meil ei ole ligipääsu andmetele, mida sa nendega jagad; me ei kogu ega salvesta neid andmeid.</paragraph><paragraph>B&A ei saa ega soovi seostada sinu annetust sinu B&Ai kontoga.</paragraph><paragraph>Täname sind toetuse eest!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "Sobib"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kviitungid"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Kuva kviitungi üksikasjad"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Annetuste KKK"
+    "messageformat": "Annetaja KKK"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Kviitungeid ei sünkroonita eri seadmete vahel. Kui oled B&Ai uuesti alla laadinud, ei ole eelmiste annetustega seotud kviitungid saadaval."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Aegumiskuupäev"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "KK/AA"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Anneta B&Aile {formattedCurrencyAmount}"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Saa 30 päevaks B&Ai toetaja märk"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minimaalne summa annetamiseks on {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Miinimumsumma annetamiseks on {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Maksimaalne summa annetamiseks on {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Kui sellelt lehelt lahkud, eemaldatakse sinu krediitkaardi andmed. Kas soovid jätkata?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Eemalda info"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Jätka"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Annetuse kviitung"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Aitäh, et toetad B&Ait. Sinu panus annab tõuke missioonile kaitsta väljendusvabadust ja võimaldada turvalist suhtlust miljonitele inimestele üle kogu maailma avatud lähtekoodiga privaatsustehnoloogia abil. Kui elad Ameerika Ühendriikides, jäta see kviitung alles oma maksude deklareerimiseks. B&A Technology Foundation on Ameerika Ühendriikides maksuseadustiku (US Internal Revenue Code) jao 501c3 järgi registreeritud maksuvaba mittetulundusühing. Meie föderaalne maksukood (Federal Tax ID) on 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Oled võrguühenduseta. Annetuse tegemiseks loo internetiühendus."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Annetus on tühistatud"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Sul on pooleli annetus, mis vajab kinnitust."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Annetamine õnnestus, aga me ei saanud sinu märgi sätteid uuendada"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Annetamine õnnestus, aga me ei saanud sinu märgi sätteid uuendada"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Oma märgi sätteid saad oma mobiilseadmes muuta menüüs Sätted → Anneta B&Aile → Märgid."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Annetus on katkestatud"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "On võimalik, et sinu annetust ei töödeldud. Kviitungite nägemiseks ja kinnitamiseks klõpsake „Anneta B&Aile“ ja seejärel „Annetuste kviitungid“."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Proovi uuesti või saada abikeskusele silumislogi, et aidata oma annetus lõpule viia. Silumislogid aitavad meil probleemi diagnoosida ja lahendada ega sisalda isikuandmeid."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Annetuse töötlemine …"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Töötlemine käib"
+    "messageformat": "Annetuse töötlemine"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Sinu annetus on endiselt töötlemisel. Selleks võib kuluda mõni minut."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Katkesta annetus"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Aitäh sinu toetuse eest!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Teenisid B&Ailt annetaja märgi. Kuva seda oma profiilil, et näidata üles oma toetust."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Kuva profiilil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Seda saad oma mobiilseadmes muuta menüüs Sätted → Anneta B&Aile → Märgid"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "See versioon sisaldab paljusid väikseid parendusi, mis B&Ai sujuvalt käimas.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad B&Ait!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Lihtsustasime sõnumi loetuks/mitteloetuks muutmise märkimise võimalust mitut asja samal ajal tehes."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Parandasime emoji otsingukasti vea."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Selle värskendusega parandatakse mõned väikesed vead."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Selle värskendusega pakume uusi jõudluse optimeerimise viise, mis aitavad aku tööiga parandada."
   }
 }

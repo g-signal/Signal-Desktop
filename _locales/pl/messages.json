@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Usunąć czat?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Wszystkie wiadomości z tego czatu zostaną usunięte z tego urządzenia."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Wszystkie wiadomości z tego czatu zostaną usunięte ze wszystkich Twoich urządzeń."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Wybierz czaty, które mają się znaleźć w tym folderze"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Czaty 1:1"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Czaty grupowe"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Dodaj czaty"
@@ -1869,7 +1872,7 @@
     "messageformat": "Ta wersja B&A Desktop jest przestarzała. Aby dalej wysyłać i otrzymywać wiadomości, zaktualizuj aplikację do najnowszej wersji."
   },
   "icu:upgrade": {
-    "messageformat": "Kliknij, aby przejść na stronę ba-chat.com/download"
+    "messageformat": "Kliknij, aby przejść na stronę baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Wiadomość multimedialna"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Nie udało się pobrać"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Nie udało się pobrać załącznika z kopii zapasowej"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Wiadomość można edytować tylko w ciągu 24 godzin od jej wysłania."
   },
@@ -2237,6 +2243,9 @@
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Wideo jednorazowe"
   },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
+  },
   "icu:message--deletedForEveryone": {
     "messageformat": "Ta wiadomość została usunięta."
   },
@@ -2307,7 +2316,7 @@
     "messageformat": "Wiadomość, której nadawcą jest {author}"
   },
   "icu:modal--donation--title": {
-    "messageformat": "Dziękujemy za Twoje wsparcie!"
+    "messageformat": "Dziękujemy Ci za wsparcie!"
   },
   "icu:modal--donation--description": {
     "messageformat": "Twoja darowizna na rzecz aplikacji B&A została wpłacona w imieniu wybranej osoby. {name} może się teraz pochwalić wsparciem w swoim profilu."
@@ -2772,22 +2781,22 @@
     "messageformat": "Nagraj wiadomość głosową"
   },
   "icu:Keyboard--default-message-action": {
-    "messageformat": "Zastosuj działanie domyślne do wybranej wiadomości"
+    "messageformat": "Zastosuj do zaznaczonej wiadomości działanie domyślne"
   },
   "icu:Keyboard--view-details-for-selected-message": {
-    "messageformat": "Wyświetl informacje o wybranej wiadomości"
+    "messageformat": "Wyświetl informacje o zaznaczonej wiadomości"
   },
   "icu:Keyboard--toggle-reply": {
-    "messageformat": "Odpowiedz na wybraną wiadomość"
+    "messageformat": "Odpowiedz na zaznaczoną wiadomość"
   },
   "icu:Keyboard--toggle-reaction-picker": {
-    "messageformat": "Zareaguj na wybraną wiadomość za pomocą emoji"
+    "messageformat": "Zareaguj na zaznaczoną wiadomość za pomocą emoji"
   },
   "icu:Keyboard--save-attachment": {
-    "messageformat": "Zapisz załącznik do wybranej wiadomości"
+    "messageformat": "Zapisz załącznik z zaznaczonej wiadomości"
   },
   "icu:Keyboard--delete-messages": {
-    "messageformat": "Usuń wybrane wiadomości"
+    "messageformat": "Usuń zaznaczone wiadomości"
   },
   "icu:Keyboard--forward-messages": {
     "messageformat": "Przekaż zaznaczone wiadomości"
@@ -3165,7 +3174,7 @@
     "messageformat": "To oficjalny i jedyny czat twórców aplikacji B&A"
   },
   "icu:ConversationHero--release-notes": {
-    "messageformat": "Bądź na bieżąco z newsami i aktualizacjami."
+    "messageformat": "Bądź na bieżąco z nowościami i aktualizacjami."
   },
   "icu:member-of-1-group": {
     "messageformat": "Należy do grupy {group}"
@@ -3523,6 +3532,15 @@
   },
   "icu:ErrorModal--description": {
     "messageformat": "Spróbuj ponownie lub skontaktuj się z pomocą techniczną."
+  },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Wystąpił nieoczekiwany błąd"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Prześlij dziennik debugowania"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Odrzuć"
   },
   "icu:Confirmation--confirm": {
     "messageformat": "OK"
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} osoba} few {{number,number} osoby} many {{number,number} osób} other {{number,number} osoby}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Udostępnione multimedia"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Wyświetl wszystkie"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Multimedia, linki i pliki"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} osoba} few {{number,number} osoby} many {{number,number} osób} other {{number,number} osoby}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Wymagaj zatwierdzania przez administratora nowych osób dołączających do grupy za pomocą linku"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Skopiuj link B&A.group do schowka"
+    "messageformat": "Skopiuj link signal.group do schowka"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Prośby ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Na przykład emotikon :-) zamieni się w to emoji: <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Pozostaw wyciszone czaty w archiwum"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Gdy w wyciszonym zarchiwizowanym czacie pojawi się nowa wiadomość, pozostanie on w archiwum."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Zaawansowane"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Zablokowane kontakty"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Kopie zapasowe B&A"
+    "messageformat": "Bezpieczne kopie zapasowe B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatyczne tworzenie kopii zapasowych w usłudze bezpiecznego przechowywania B&A, szyfrowanej metodą end-to-end. Skonfiguruj na telefonie. <learnMoreLink>Dowiedz się więcej.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Wiadomości tekstowe i wszystkie multimedia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Nie znaleziono subskrypcji. Odnów subskrypcję i korzystaj dalej z usługi kopii zapasowych B&A."
+    "messageformat": "Nie znaleziono subskrypcji. Aby dalej korzystać z usługi bezpiecznych kopii zapasowych B&A, odnów subskrypcję."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Wiadomości tekstowe, w tym multimedia z ostatniego dnia} few {Wiadomości tekstowe, w tym multimedia z ostatnich {mediaDayCount,number} dni} many {Wiadomości tekstowe, w tym multimedia z ostatnich {mediaDayCount,number} dni} other {Wiadomości tekstowe, w tym multimedia z ostatnich {mediaDayCount,number} dni}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Subskrypcja anulowana"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Na telefonie możesz zarządzać kopiami zapasowymi B&A lub anulować ich subskrypcję."
+    "messageformat": "Na telefonie możesz zarządzać bezpiecznymi kopiami zapasowymi B&A lub anulować ich subskrypcję."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Na telefonie możesz zarządzać kopiami zapasowymi B&A lub zasubskrybować ich rozszerzony tryb."
+    "messageformat": "Na telefonie możesz zarządzać bezpiecznymi kopiami zapasowymi B&A lub zasubskrybować ich rozszerzony tryb."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Na telefonie możesz zarządzać kopiami zapasowymi B&A lub odnowić ich subskrypcję."
+    "messageformat": "Na telefonie możesz zarządzać bezpiecznymi kopiami zapasowymi B&A lub odnowić ich subskrypcję."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Ostatnia kopia zapasowa"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Moje wsparcie"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} jednorazowo"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Przetwarzanie darowizny…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Wpłać {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A nie gromadzi ani nie przechowuje Twoich danych osobowych potrzebnych do wpłacenia darowizny.</paragraph><paragraph>Do przetwarzania darowizn używamy systemu płatności Stripe. Nie zapisujemy, nie przechowujemy ani nie mamy dostępu do żadnych danych, które przekazujesz.</paragraph><paragraph>B&A nie wiąże ani nie może powiązać darowizny z Twoim kontem B&A.</paragraph><paragraph>Dziękujemy za Twoje wsparcie!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Potwierdzenia darowizn"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Wyświetl szczegóły potwierdzenia"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Najczęstsze pytania i odpowiedzi na temat darowizn"
+    "messageformat": "Najczęstsze pytania i odpowiedzi dla darczyńców"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Potwierdzenia darowizn na różnych urządzeniach nie są synchronizowane. Ponadto jeśli aplikacja B&A zostanie zainstalowana ponownie, wcześniejsze potwierdzenia darowizn nie będą dostępne."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Data ważności"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/RR"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Wpłać {formattedCurrencyAmount} i wesprzyj B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Zdobądź odznakę za wsparcie na 30 dni"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minimalna kwota darowizny to {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Minimalna kwota darowizny to {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Maksymalna kwota darowizny to {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Jeśli zamkniesz tę stronę, dane Twojej karty zostaną usunięte. Czy chcesz kontynuować?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Usuń dane"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Kontynuuj"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Potwierdzenie darowizny"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Dziękujemy za wsparcie aplikacji B&A. Twoja darowizna wspomaga rozwój otwartoźródłowej technologii, która zapewnia prywatność, chroni wolność słowa i umożliwia bezpieczną komunikację milionom osób na całym świecie. Jeśli mieszkasz w Stanach Zjednoczonych, zachowaj to potwierdzenie, aby uwzględnić wpłatę w zeznaniu podatkowym. B&A Technology Foundation jest organizacją non profit zwolnioną z podatku w USA na podstawie zapisu 501c3 Internal Revenue Code (Kodeksu Podatkowego). Nasz federalny numer identyfikacji podatkowej to 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Jesteś offline. Aby przekazać darowiznę, połącz się z internetem."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Darowizna anulowana"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Twoja darowizna jest realizowana, ale wymaga jeszcze potwierdzenia."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Darowizna przekazana, ale nie udało się zaktualizować ustawień odznaki"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Darowizna przekazana, ale nie udało się zaktualizować ustawień odznaki"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Aby zaktualizować ustawienia odznaki na swoim urządzeniu mobilnym, przejdź do sekcji Ustawienia → Wesprzyj B&A darowizną → Odznaki."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Wpłata darowizny przerwana"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Twoja darowizna mogła nie zostać przetworzona. Aby to sprawdzić, kliknij opcję „Wesprzyj B&A darowizną”, a następnie „Potwierdzenia darowizn”."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Spróbuj ponownie lub wyślij dziennik debugowania do naszego zespołu pomocy technicznej – pomożemy Ci przekazać darowiznę. Dzienniki debugowania ułatwiają namierzenie i naprawę błędu. Nie zawierają danych umożliwiających identyfikację."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Przetwarzanie darowizny…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Przetwarzanie"
+    "messageformat": "Nadal przetwarzamy darowiznę"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Twoja darowizna jest jeszcze przetwarzana. Może to zająć kilka minut."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Anuluj darowiznę"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Dziękujemy Ci za wsparcie!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Zdobywasz odznakę darczyńcy B&A. Pochwal się nią w profilu i pokaż, że wspierasz naszą aplikację."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Pokaż w profilu"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Możesz to zmienić na swoim urządzeniu mobilnym. Aby to zrobić, przejdź do sekcji Ustawienia → Wesprzyj B&A darowizną → Odznaki"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Ta wersja obejmuje wiele drobnych ulepszeń i poprawek błędów. Wszystko po to, aby aplikacja B&A działała płynnie.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Drobne ulepszenia, poprawki błędów i większa funkcjonalność. Cieszymy się, że korzystasz z aplikacji B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Wyświetlanie odczytanych i nieodczytanych wiadomości, gdy robisz wiele rzeczy naraz, jest teraz łatwiejsze. Ponadto naprawiliśmy błąd, który czasami powodował otwieranie rozszerzonego podglądu obrazu, jeśli podczas wyszukiwania reakcji emoji została naciśnięta spacja. Oczywiście dalej możesz powiększyć obraz, gdy go klikniesz lub w odpowiednim momencie naciśniesz spację."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Naprawiliśmy błąd, który występował czasem po naciśnięciu klawisza Esc w polu wyszukiwania emoji. Teraz możesz znów skupić się na najważniejszym: znalezieniu idealnej emotki."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "W ramach tej aktualizacji usunęliśmy kilka mniejszych błędów – między innymi ten, przez który reakcje emoji czasem nie były prawidłowo grupowane."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "W tej wersji zoptymalizowaliśmy działanie aplikacji tak, aby zmniejszyć zużycie baterii. Mamy nadzieję, że oznacza to pozytywne doładowanie również dla Ciebie."
   }
 }

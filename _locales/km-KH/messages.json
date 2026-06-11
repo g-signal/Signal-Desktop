@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "លុបការជជែកឬ?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "សារទាំងអស់នៅក្នុងការជជែកនេះនឹងត្រូវបានលុបចេញពីឧបករណ៍នេះ។"
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "សារទាំងអស់នៅក្នុងការជជែកនេះនឹងត្រូវបានលុបចេញពីឧបករណ៍ទាំងអស់របស់អ្នក។"
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "ជ្រើសរើសការជជែកដែលអ្នកចង់បង្ហាញនៅក្នុងថតឯកសារនេះ"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "ការជជែកមួយទល់មួយ"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "ជជែកជាក្រុម"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "បញ្ចូលការជជែក"
@@ -1869,7 +1872,7 @@
     "messageformat": "ជំនាន់ B&A Desktop នេះ បានហួសសុពលភាព។ សូមដំឡើងទីកាន់ជំនាន់ចុងក្រោយ ដើម្បីបន្តការផ្ញើសារ។"
   },
   "icu:upgrade": {
-    "messageformat": "ចុចដើម្បីទៅ ba-chat.com/download"
+    "messageformat": "ចុចដើម្បីទៅ baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "សារមេឌា"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ការទាញយកមិនបានជោគជ័យទេ"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "ការទាញយកឯកសារភ្ជាប់ពីការបម្រុងទុកមិនបានជោគជ័យ"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "ការកែសារអាចធ្វើបានតែក្នុងរយៈពេល 24 ម៉ោងគិតចាប់ពីពេលដែលអ្នកបានផ្ញើសារនេះប៉ុណ្ណោះ។"
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "វីដេអូមើលម្តង"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "សារនេះត្រូវបានលុប។"
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "សូមព្យាយាមម្តងទៀត ឬទាក់ទងផ្នែកជំនួយ។"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "បញ្ហាមួយដែលមិនបានរំពឹងទុកបានកើតឡើង"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "ដាក់បញ្ជូនកំណត់ត្រាបញ្ហា"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "ទេ អរគុណ"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "យល់ព្រម"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {សមាជិក {number,number} នាក់}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "ចែករំលែកព័ត៌មាន"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "មើលទាំងអស់"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "មេឌៀ តំណ និងឯកសារ"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {សមាជិក {number,number} នាក់}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "តម្រូវឲ្យអ្នកគ្រប់គ្រងឯកភាពលើសមាជិកថ្មីៗដែលចូល​រួម​តាម​រយៈ​តំណ​ក្រុម"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "ចម្លងតំណ B&A.group ទៅឃ្លីបបត"
+    "messageformat": "ចម្លងតំណ signal.group ទៅឃ្លីបបត"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "សំណើ ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "ឧទាហរណ៍ :-) នឹងត្រូវបានបំប្លែងទៅជា <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "បន្តទុកក្នុងបណ្ណសារនូវការជជែកដែលបិទសំឡេង"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "ការជជែកដែលបានបិទសំឡេងដែលត្រូវបានទុកក្នុងបណ្ណសារនឹងនៅតែរក្សាទុកក្នុងបណ្ណសារដដែល នៅពេលសារថ្មីមកដល់។"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "កម្រិតខ្ពស់"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "បានទប់ស្កាត់"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "ការបម្រុងទុក B&A"
+    "messageformat": "ការបម្រុងទុកសុវត្ថិភាព B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "ការបម្រុងទុកដោយស្វ័យប្រវត្តិជាមួយនឹងសេវាកម្មផ្ទុកទិន្នន័យដែលបានអ៊ីនគ្រីបទាំងសងខាងដ៏មានសុវត្ថិភាពរបស់ B&A។ ចាប់ផ្តើមនៅលើទូរសព្ទរបស់អ្នក។ <learnMoreLink>ស្វែងយល់បន្ថែម</learnMoreLink>។"
@@ -5280,7 +5301,7 @@
     "messageformat": "សារជាអក្សរ + ការបម្រុងទុកមេឌៀទាំងអស់"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "រកមិនឃើញការជាវរបស់អ្នកទេ។ បន្តជាថ្មីដើម្បីបន្តប្រើប្រាស់ការបម្រុងទុក B&A។"
+    "messageformat": "រកមិនឃើញការជាវរបស់អ្នកទេ។ បន្តជាថ្មីដើម្បីបន្តប្រើប្រាស់ការបម្រុងទុកសុវត្ថិភាព B&A។"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {សារជាអក្សរ + ការបម្រុងទុកមេឌៀ {mediaDayCount,number} ថ្ងៃ}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "ការជាវត្រូវបានបោះបង់"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "អ្នកអាចគ្រប់គ្រង ឬបោះបង់នូវការជាវការបម្រុងទុក B&A របស់អ្នកនៅលើទូរសព្ទរបស់អ្នក។"
+    "messageformat": "អ្នកអាចគ្រប់គ្រង ឬបោះបង់នូវការជាវការបម្រុងទុកសុវត្ថិភាព B&A របស់អ្នកនៅលើទូរសព្ទរបស់អ្នក។"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "អ្នកអាចគ្រប់គ្រង ឬដំឡើងកម្រិតនៃការបម្រុងទុក B&A នៅលើទូរសព្ទរបស់អ្នក។"
+    "messageformat": "អ្នកអាចគ្រប់គ្រង ឬដំឡើងកម្រិតនៃការបម្រុងទុកសុវត្ថិភាព B&A នៅលើទូរសព្ទរបស់អ្នក។"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "អ្នកអាចគ្រប់គ្រង ឬបន្តនូវការជាវការបម្រុងទុក B&A របស់អ្នកនៅលើទូរសព្ទរបស់អ្នក។"
+    "messageformat": "អ្នកអាចគ្រប់គ្រង ឬបន្តនូវការជាវការបម្រុងទុកសុវត្ថិភាព B&A របស់អ្នកនៅលើទូរសព្ទរបស់អ្នក។"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "ការបម្រុងទុកចុងក្រោយ"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "ការគាំទ្ររបស់ខ្ញុំ"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "ម្តង {formattedCurrencyAmount}"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "កំពុងដំណើរការការបរិច្ចាគ…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "បរិច្ចាគ {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A មិនប្រមូល ឬរក្សាទុកព័ត៌មានផ្ទាល់ខ្លួនណាមួយរបស់អ្នកទេ នៅពេលអ្នកធ្វើការបរិច្ចាគ។</paragraph><paragraph>យើងប្រើ Stripe ជាអ្នកដំណើរការទូទាត់របស់យើង ដើម្បីទទួលបានការបរិច្ចាគរបស់អ្នក។ យើងមិនចូលប្រើ រក្សា ឬរក្សាទុកព័ត៌មានណាមួយដែលអ្នកផ្តល់ឱ្យពួកគេទេ។</paragraph><paragraph>B&A មិនមាន និងមិនអាចភ្ជាប់ការបរិច្ចាគរបស់អ្នកជាមួយគណនី B&A របស់អ្នកបានទេ។</paragraph><paragraph>សូមអរគុណចំពោះការគាំទ្ររបស់អ្នក!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "យល់ព្រម"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "បង្កាន់ដៃ"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "មើលព័ត៌មានលម្អិតបង្កាន់ដៃ"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "សំណួរសួរញឹកញាប់អំពីការបរិច្ចាគ"
+    "messageformat": "សំណួរសួរញឹកញាប់អំពីម្ចាស់ជំនួយ"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "បង្កាន់ដៃមិនធ្វើសមកាលកម្មលើឧបករណ៍នានាទេ។ ប្រសិនបើអ្នកបានដំឡើង B&A ឡើងវិញ បង្កាន់ដៃពីការបរិច្ចាគមុនៗនឹងមិនមានទេ។"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "កាលបរិច្ឆេទផុតកំណត់"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "ខែ/ឆ្នាំ"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "បរិច្ចាគ {formattedCurrencyAmount} ទៅ B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "ទទួលបានស្លាកទ្រទ្រង់ B&A រយៈពេល 30 ថ្ងៃ"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "ចំនួនទឹកប្រាក់បរិច្ចាគអប្បបរមាគឺ {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "ចំនួនទឹកប្រាក់អប្បបរមាដែលអ្នកអាចបរិច្ចាគបានគឺ {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "ចំនួនទឹកប្រាក់បរិច្ចាគអតិបរមាគឺ {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "ការចាកចេញពីទំព័រនេះនឹងលុបព័ត៌មានកាតឥណទានរបស់អ្នក។ តើអ្នកចង់បន្តឬទេ?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "លុបព័ត៌មាន"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "បន្ត"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "បង្កាន់ដៃបរិច្ចាគ"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "សូមអរគុណចំពោះការគាំទ្រ B&A។ ការចូលរួមចំណែករបស់អ្នកជួយជំរុញដល់បេសកកម្មការពារការបញ្ចេញមតិដោយសេរី និងញ៉ាំងឱ្យមានការប្រាស្រ័យទាក់ទងគ្នាជាសាកលដោយសុវត្ថិភាពសម្រាប់មនុស្សរាប់លាននាក់ជុំវិញពិភពលោក តាមរយៈបច្ចេកវិទ្យាឯកជនភាពប្រភពបើកចំហ។ ប្រសិនបើអ្នកជាអ្នករស់នៅក្នុងសហរដ្ឋអាមេរិក សូមរក្សាទុកបង្កាន់ដៃនេះសម្រាប់កំណត់ត្រាពន្ធរបស់អ្នក។ B&A Technology Foundation គឺជាអង្គការមិនរកប្រាក់ចំណេញដែលទទួលបានការលើកលែងពន្ធនៅក្នុងសហរដ្ឋអាមេរិកក្រោមផ្នែក 501c3 នៃក្រមស្តីពីប្រាក់ចំណូលផ្ទៃក្នុង។ លេខអត្តសញ្ញាណកម្មពន្ធរបស់យើងគឺ 82-4506840។"
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "អ្នកមិនមានអ៊ីនធឺណិតទេ។ សូមភ្ជាប់អ៊ីនធឺណិត ដើម្បីបំពេញការបរិច្ចាគ។"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "ការបរិច្ចាគត្រូវបានបោះបង់"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "អ្នកមានការបរិច្ចាគមួយដែលកំពុងដំណើរការដែលត្រូវការការបញ្ជាក់។"
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "ការបរិច្ចាគបានជោគជ័យ ប៉ុន្តែយើងមិនអាចធ្វើបច្ចុប្បន្នភាពការកំណត់ស្លាករបស់អ្នកបានទេ"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "ការបរិច្ចាគបានជោគជ័យ ប៉ុន្តែយើងមិនអាចធ្វើបច្ចុប្បន្នភាពការកំណត់ស្លាករបស់អ្នកបានទេ"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "ដើម្បីធ្វើបច្ចុប្បន្នភាពការកំណត់ស្លាករបស់អ្នកនៅលើឧបករណ៍ចល័តរបស់អ្នក សូមចូលទៅកាន់ការកំណត់ → បរិច្ចាគទៅ B&A → ស្លាក។"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "ការបរិច្ចាគត្រូវបានរំខាន"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ការបរិច្ចាគរបស់អ្នកប្រហែលជាមិនត្រូវបានដំណើរការទេ។ ចុចលើ “បរិច្ចាគទៅ B&A” ហើយបន្ទាប់មក “បង្កាន់ដៃបរិច្ចាគ” ដើម្បីពិនិត្យមើលបង្កាន់ដៃរបស់អ្នក រួចបញ្ជាក់។"
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "សូមព្យាយាមម្តងទៀត ឬដាក់បញ្ជូនកំណត់ត្រាបញ្ហាទៅកាន់ផ្នែកជំនួយ ដើម្បីជួយបំពេញការបរិច្ចាគរបស់អ្នក។ កំណត់ត្រាបញ្ហាជួយឱ្យយើងវិភាគ និងដោះស្រាយបញ្ហានេះ ហើយមិនមានព័ត៌មានកំណត់អត្តសញ្ញាណទេ។"
+  },
   "icu:Donations__Processing": {
     "messageformat": "កំពុងដំណើរការការបរិច្ចាគ…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "កំពុងដំណើរការនៅឡើយ"
+    "messageformat": "កំពុងដំណើរការការបរិច្ចាគនៅឡើយ"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "ការបរិច្ចាគរបស់អ្នកកំពុងត្រូវបានដំណើរការនៅឡើយ។ វាអាចចំណាយពេលពីរបីនាទី។"
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "បោះបង់ការបរិច្ចាគ"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "អរគុណចំពោះការគាំទ្ររបស់អ្នក!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "អ្នកបានទទួលស្លាកអ្នកបរិច្ចាគពី B&A! សូមបង្ហាញវានៅលើប្រូហ្វាល់របស់អ្នកដើម្បីបង្ហាញការគាំទ្ររបស់អ្នក។"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "បង្ហាញនៅលើប្រូហ្វាល់"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "អ្នកអាចកែតម្រូវវានៅលើឧបករណ៍ចល័តរបស់អ្នកនៅក្រោមការកំណត់ → បរិច្ចាគទៅ B&A → ស្លាក"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "កំណែ​នេះ​មាន​ការ​កែ​សម្រួល និង​ការកែបញ្ហាតូចៗ​មួយ​ចំនួន ដើម្បី​ឲ្យ​ B&A បន្ត​ដំណើរការ​ដោយ​រលូន។",
@@ -6844,13 +6925,7 @@
     "messageformat": "ការកែប្រែបន្តិចបន្តួច ការដោះស្រាយបញ្ហា និងការបង្កើនប្រតិបត្តិការ។ សូមអរគុណចំពោះការប្រើប្រាស់ B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "យើងបានធ្វើឱ្យប្រសើរឡើងនូវបទពិសោធន៍អាន/មិនទាន់អានសារ ពេលកំពុងធ្វើកិច្ចការជាច្រើន ហើយបានកែបញ្ហាមួយដែលពេលខ្លះបើកកម្មវិធីមើលរូបភាពដែលបានពង្រីកដោយមិនបានត្រឹមត្រូវ ប្រសិនបើអ្នកចុចរបារដកឃ្លា ពេលកំពុងស្វែងរករូបអារម្មណ៍ដ៏ល្អឥតខ្ចោះ។ អ្នកនៅតែអាចពង្រីកបាន ប្រសិនបើអ្នកចុចលើរូបភាព ឬប្រសិនបើអ្នកវាយបញ្ចូលបានលឿនគួរសម។"
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "ការស្វែងរកឱ្យត្រូវរូបអារម្មណ៍អាចធ្វើឱ្យអ្នកមានអារម្មណ៍ថាពិបាកបន្តិច ប៉ុន្តែយើងបានដោះស្រាយបញ្ហាមួយដែលអាចបណ្តាលឱ្យមានបញ្ហាកើតឡើងបន្ទាប់ពីចុចគ្រាប់ចុច Escape នៅក្នុងប្រអប់ស្វែងរករូបអារម្មណ៍។"
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "កំណែថ្មីនេះដោះស្រាយបញ្ហាតូចៗមួយចំនួន រួមទាំងបញ្ហាដែលប្រតិកម្មតាមរូបអារម្មណ៍មិនត្រូវបានដាក់ជាក្រុមជាមួយគ្នាឱ្យបានត្រឹមត្រូវនៅក្នុងករណីខ្លះៗ។"
+  "icu:WhatsNew__7.73": {
+    "messageformat": "កំណែថ្មីនេះដាក់ឱ្យប្រើប្រាស់នូវការបង្កើនប្រសិទ្ធភាពថ្មីទៅលើការដំណើរការ ដើម្បីជួយបង្កើនអាយុកាលរបស់ថ្ម ដើម្បីឱ្យអ្នកនៅសល់ថ្មច្រើនទៀតសម្រាប់ការសន្ទនាដែលស៊ីអារម្មណ៍។"
   }
 }

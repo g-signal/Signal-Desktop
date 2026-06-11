@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "要删除聊天吗？"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "此聊天中的所有消息将会从此设备上删除。"
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "此聊天中的所有消息将会从您的所有设备上删除。"
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "选择您希望显示在此文件夹中的聊天"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "私聊"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "群组聊天"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "添加聊天"
@@ -1869,7 +1872,7 @@
     "messageformat": "此版本的 B&A Desktop 已过期，请升级到最新版本以继续发送消息。"
   },
   "icu:upgrade": {
-    "messageformat": "点击前往 ba-chat.com/download"
+    "messageformat": "点击前往 signal.org/download"
   },
   "icu:mediaMessage": {
     "messageformat": "媒体信息"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "下载失败"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "从备份中下载附件失败"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "您只能在发送此消息后的 24 小时以内进行编辑。"
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "一次性视频"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "消息已删除。"
@@ -3114,10 +3123,10 @@
     "messageformat": "继续"
   },
   "icu:MessageRequests--profile-sharing--group--link": {
-    "messageformat": "要继续与该群组聊天并向群组成员分享您的昵称和头像吗？"
+    "messageformat": "要继续与该群组聊天并向群组成员分享您的昵称和头像吗？ <learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:MessageRequests--profile-sharing--direct--link": {
-    "messageformat": "要继续与 {firstName} 聊天并与其分享您的昵称和头像码？ "
+    "messageformat": "要继续与 {firstName} 聊天并与其分享您的昵称和头像码？ <learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:ConversationHero--members": {
     "messageformat": "{count, plural, other {{count,number} 名成员}}"
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "请重试或联系支持人员。"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "出现意外错误"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "提交调试日志"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "不，谢谢。"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "好的"
   },
@@ -3534,7 +3552,7 @@
     "messageformat": "{max, plural, other {此消息只能应用 {max,number} 次编辑。}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "抱歉， baxs:// 链接无法解析！"
+    "messageformat": "抱歉， sgnl:// 链接无法解析！"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "您无法给该群组发送消息。"
@@ -4032,7 +4050,7 @@
     "messageformat": "该群组成员或设置有变化。"
   },
   "icu:GroupV1--Migration--disabled--link": {
-    "messageformat": "升级此群组来激活“@提及”和“管理员”等新功能。未在此群组分享名字和头像的成员将会被邀请入群。"
+    "messageformat": "升级此群组来激活“@提及”和“管理员”等新功能。未在此群组分享名字和头像的成员将会被邀请入群。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:GroupV1--Migration--was-upgraded": {
     "messageformat": "此群升级成新版群组了。"
@@ -4161,7 +4179,7 @@
     "messageformat": "取消"
   },
   "icu:BackupImportScreen__security-description": {
-    "messageformat": "消息和聊天信息受端对端加密保护，包括同步过程。"
+    "messageformat": "消息和聊天信息受端对端加密保护，包括同步过程。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:BackupImportScreen__cancel-confirmation__title": {
     "messageformat": "要取消设备链接？"
@@ -4227,7 +4245,7 @@
     "messageformat": "要取消媒体同步吗？"
   },
   "icu:BackupMediaDownloadCancelConfirmation__description": {
-    "messageformat": "您的媒体尚未完成同步。如果选择取消，您可以通过重新链接此设备再次同步。"
+    "messageformat": "您的媒体尚未完成同步。如果选择取消，您可以通过重新链接此设备再次同步。<learnMoreLink>了解更多</learnMoreLink>。"
   },
   "icu:BackupMediaDownloadCancelConfirmation__button-continue": {
     "messageformat": "继续同步"
@@ -4257,7 +4275,7 @@
     "messageformat": "需要采取账户操作"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "您必须在手机上打开 B&A 才能继续使用此账户。如果不在手机上打开 B&A，您的账户将会很快被删除。"
+    "messageformat": "您必须在手机上打开 B&A 才能继续使用此账户。如果不在手机上打开 B&A，您的账户将会很快被删除。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "无法恢复媒体"
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, other {{number,number} 名成员}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "分享媒体"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "查看全部"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "媒体、链接和文件"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, other {{number,number} 名成员}}"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "例如，将 :-) 转换为 <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "继续存档静音聊天"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "当收到新消息时，已存档的静音聊天将会保持存档状态。"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "高级"
   },
@@ -5265,10 +5286,10 @@
     "messageformat": "已屏蔽"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A 备份"
+    "messageformat": "B&A 安全备份"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "通过 B&A 的安全端对端加密存储服务自动备份。您可以在手机上开始备份。"
+    "messageformat": "通过 B&A 的安全端对端加密存储服务自动备份。您可以在手机上开始备份。<learnMoreLink>了解更多</learnMoreLink>。"
   },
   "icu:Preferences--backup-section-description": {
     "messageformat": "备份消息记录可以确保您在更换手机或重装 B&A 时不会丢失数据。"
@@ -5280,7 +5301,7 @@
     "messageformat": "文本 + 所有媒体备份"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "未找到您的套餐。请续订以继续使用 B&A 备份。"
+    "messageformat": "未找到您的套餐。请续订以继续使用 B&A 安全备份。"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {文本 + {mediaDayCount,number} 天媒体备份}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "备份套餐已取消"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "您可以在手机上管理或取消您的 B&A 备份套餐。"
+    "messageformat": "您可以在手机上管理或取消您的 B&A 安全备份套餐。"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "您可以在手机上管理或升级您的 B&A 备份。"
+    "messageformat": "您可以在手机上管理或升级您的 B&A 安全备份。"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "您可以在手机上管理或续订您的 B&A 备份套餐。"
+    "messageformat": "您可以在手机上管理或续订您的 B&A 安全备份套餐。"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "上次备份"
@@ -5322,7 +5343,7 @@
     "messageformat": "您可以创建端对端加密备份，该备份可以在手机上恢复。 "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "如要恢复备份，请安装 B&A 的新副本。打开应用并点击“恢复备份”。然后找到备份文件夹。"
+    "messageformat": "如要恢复备份，请安装 B&A 的新副本。打开应用并点击“恢复备份”。然后找到备份文件夹。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "选择文件夹"
@@ -5346,7 +5367,7 @@
     "messageformat": "记录您的备份密钥"
   },
   "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "这是恢复您的账户和数据时所需的密钥，请将其保存在安全的地方。如果密钥丢失，您将无法恢复您的账户。"
+    "messageformat": "这是恢复您的账户和数据时所需的密钥，请将其保存在安全的地方。如果密钥丢失，您将无法恢复您的账户。 <learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-backup-key": {
     "messageformat": "确认您的备份密钥"
@@ -5538,7 +5559,7 @@
     "messageformat": "在您的手机上打开B&A"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "请在您的手机上打开 B&A，否则您的账户将会很快被删除。当您成功打开 B&A 后，此消息将会消失。"
+    "messageformat": "请在您的手机上打开 B&A，否则您的账户将会很快被删除。当您成功打开 B&A 后，此消息将会消失。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
     "messageformat": "请在手机上打开 B&A，使您的账户保持活跃状态"
@@ -5955,7 +5976,7 @@
     "messageformat": "只分享给……"
   },
   "icu:StoriesSettings__mine__disclaimer--link": {
-    "messageformat": "选择谁可以看您的动态。此更改不会影响您已发送的动态。"
+    "messageformat": "选择谁可以看您的动态。此更改不会影响您已发送的动态。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:StoriesSettings__context-menu": {
     "messageformat": "动态隐私"
@@ -6024,7 +6045,7 @@
     "messageformat": "我的动态隐私"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "选择哪些 B&A 密友可以看您的动态。您可以随时在隐私设置中对此进行更改。"
+    "messageformat": "选择哪些 B&A 密友可以看您的动态。您可以随时在隐私设置中对此进行更改。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "删除动态"
@@ -6355,10 +6376,10 @@
     "messageformat": "不予考虑"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "B&A desktop 即将不再兼容您电脑的 {OS} 版本。如您希望继续使用 B&A，请在 {expirationDate}前更新电脑操作系统。"
+    "messageformat": "B&A desktop 即将不再兼容您电脑的 {OS} 版本。如您希望继续使用 B&A，请在 {expirationDate}前更新电脑操作系统。<learnMoreLink>了解详情</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "B&A desktop 无法在此电脑上运行。如您希望再次使用 B&A desktop，请更新您电脑的 {OS} 版本。"
+    "messageformat": "B&A desktop 无法在此电脑上运行。如您希望再次使用 B&A desktop，请更新您电脑的 {OS} 版本。<learnMoreLink>了解详情</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
     "messageformat": "B&A desktop 无法在此电脑上运行。如您希望再次使用 B&A desktop，请更新您电脑的 {OS} 版本。"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "我的赞助"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} 单次捐款"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "正在处理捐款……"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "捐款 {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>当您捐款时，B&A 不会收集或储存您的任何个人信息。</paragraph><paragraph>我们使用 Stripe 作为接收捐款的付款处理方。我们不会访问、储存或保存您向 Stripe 提供的任何信息。</paragraph><paragraph>B&A 不会也无法关联您的捐款至您的 B&A 账户。</paragraph><paragraph>感谢您的赞助！</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "好"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "收据"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "查看收据详情"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "捐款常见问题解答"
+    "messageformat": "捐款人常见问题解答"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "收据无法跨设备同步。如果您重新安装了 B&A，系统将无法提供先前的捐款收据。"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "有效期"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "给 B&A 捐款 {formattedCurrencyAmount}"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "获得 30 天的 B&A 随手捐徽章"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "捐款的最小金额为 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "捐款的最小金额是 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "捐款的最大金额为 {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "离开此页面会导致您的信用卡信息被删除。您要继续操作吗？"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "删除信息"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "继续"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "捐款收据"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "感谢您支持 B&A。您的捐款将助力我们履行使命：保护自由表达，通过开源隐私技术让全球数百万用户享受全球安全通信。如果您是美国居民，请保留此收据作为您的税务记录。B&A 技术基金会是美国国内税收法第 501c3 条定义的美国免税非营利组织。我们的联邦税号为 82-4506840。"
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "您处于离线状态。请连接到互联网以完成捐款。"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "捐款已取消"
@@ -6753,23 +6810,26 @@
   "icu:Donations__Toast__VerificationNeeded": {
     "messageformat": "您正在进行的捐款需要进一步验证。"
   },
-  "icu:Donations__Toast__Cancelled": {
-    "messageformat": "捐款已取消"
+  "icu:Donations__Toast__ConfirmationNeeded": {
+    "messageformat": "您正在进行的捐款需要确认。"
   },
-  "icu:Donations__Toast__Completed": {
-    "messageformat": "捐款已完成"
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "捐款成功，但我们无法更新您的徽章设置"
   },
-  "icu:Donations__Toast__Error": {
-    "messageformat": "处理捐款发生错误"
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "捐款成功，但我们无法更新您的徽章设置"
   },
-  "icu:Donations__Toast__Processing": {
-    "messageformat": "正在处理捐款"
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "要在移动设备上更新您的徽章设置，请前往“设置 → 给 B&A 捐款 → 徽章”。"
   },
-  "icu:Donations__Toast__VerificationFailed": {
-    "messageformat": "验证失败"
+  "icu:Donations__DonationInterrupted": {
+    "messageformat": "捐款中断"
   },
-  "icu:Donations__Toast__VerificationNeeded": {
-    "messageformat": "您正在进行的捐款需要进一步验证。"
+  "icu:Donations__DonationInterrupted__Description": {
+    "messageformat": "您的卡未被扣款。想要重新尝试捐款吗？"
+  },
+  "icu:Donations__DonationInterrupted__RetryButton": {
+    "messageformat": "重试"
   },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "付款方式被拒绝"
@@ -6787,13 +6847,16 @@
     "messageformat": "您的捐款出现错误"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "您的捐款可能尚未处理。请点击”给 B&A 捐款”，然后点击”捐款凭据”，查看您的收据并确认捐款状态。"
+    "messageformat": "您的捐款可能尚未处理。请点击“给 B&A 捐款”，然后点击“捐款凭据”，查看您的收据并确认捐款状态。"
+  },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "请重试或给支持团队提交调试日志，以获取帮助完成捐款。调试日志能帮助我们诊断和解决问题，并且不包含任何可识别身份的信息。"
   },
   "icu:Donations__Processing": {
     "messageformat": "正在处理捐款……"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "仍在处理中"
+    "messageformat": "捐款仍在处理中"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "您的捐款仍在处理中。这可能需要几分钟。"
@@ -6821,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "取消捐款"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "感谢您的支持！"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "您获得了 B&A 的一个捐款徽章！赶快在个人资料中展示徽章吧，让大家看到您对 B&A 的支持。"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "在个人资料中显示"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "您可以在您的移动设备中前往“设置→给 B&A 捐款→ 徽章”调整此设置"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "此版本包含多个小调整和漏洞修复，以维持 B&A 的顺畅运行。",
@@ -6850,13 +6925,7 @@
     "messageformat": "我们进行了功能微调、漏洞修复和性能强化。感谢使用 B&A！",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "我们优化了多任务处理时的消息已读/未读体验。"
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "我们修复了表情符号搜索框中的一个漏洞。"
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "此次更新修复了一些小漏洞。"
+  "icu:WhatsNew__7.73": {
+    "messageformat": "此次更新进行了新的性能优化，有助于提升电池续航时间。"
   }
 }

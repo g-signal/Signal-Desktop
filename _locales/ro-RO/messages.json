@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Ștergi conversația?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Mesajele din această conversație vor fi șterse de pe acest dispozitiv."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Toate mesajele din această conversație vor fi eliminate de pe toate dispozitivele tale."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Alege conversațiile care dorești să apară în acest dosar"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Conversații 1 la 1"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Conversații în grup"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Adaugă conversații"
@@ -1869,7 +1872,7 @@
     "messageformat": "Această versiune de B&A Desktop a expirat. Te rugăm actualizează la cea mai recentă versiune pentru a putea trimite mesaje în continuare."
   },
   "icu:upgrade": {
-    "messageformat": "Apasă pentru a deschide ba-chat.com/download"
+    "messageformat": "Apasă pentru a deschide baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mesaj media"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "A eșuat descărcarea"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Descărcarea atașamentului din backup a eșuat"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Editările pot fi făcute numai în termen de 24 de ore de la trimiterea acestui mesaj."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Video vizibil o singură dată"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Acest mesaj a fost șters."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Te rugăm să încerci din nou sau să contactezi serviciul de asistență."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "S-a petrecut o eroare neașteptată"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Trimite jurnalul de depanare"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nu, mulțumesc"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Okay"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} membru} few {{number,number} membri} other {{number,number} de membri}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Fișiere media distribuite"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Vezi tot"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, linkuri și fișiere"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} membru} few {{number,number} membri} other {{number,number} de membri}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Solicită unui administrator să aprobe membrii noi care se alătură prin linkul grupului"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copiază linkul grup.B&A în clipboard"
+    "messageformat": "Copiază linkul grup.signal în clipboard"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Solicitări ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "De exemplu, :-) va fi convertit în <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Păstrează arhivate conversațiile pe silențios"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Conversațiile pe silențios arhivate vor rămâne arhivate atunci când sosește un mesaj nou."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Avansat"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Blocat"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Backup-uri B&A"
+    "messageformat": "Backup-uri securizate B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Backup-uri automate cu serviciul de stocare criptat complet de la B&A. Începe pe telefonul tău. <learnMoreLink>Află mai multe</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Text și backup la toate fișierele media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Abonamentul tău nu a fost găsit. Reînnoiește pentru a continua să folosești Backup-uri B&A."
+    "messageformat": "Abonamentul tău nu a fost găsit. Reînnoiește abonamentul, pentru a continua să utilizezi Backup-uri securizate B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Text + {mediaDayCount,number} zi de backup al fișierelor media} few {Text + {mediaDayCount,number} zile de backup al fișierelor media} other {Text + {mediaDayCount,number} de zile de backup al fișierelor media}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Abonament anulat"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Poți gestiona sau anula abonamentul Backup-uri B&A de pe telefon."
+    "messageformat": "Poți gestiona sau anula abonamentul Backup-uri securizate B&A de pe telefon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Poți să gestionezi sau să faci upgrade la Backup-uri B&A pe telefon."
+    "messageformat": "Poți gestiona sau actualiza Backup-uri securizate B&A pe telefon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Poți să gestionezi sau să reînnoiești abonamentul Backup-uri B&A pe telefon."
+    "messageformat": "Poți să gestionezi sau să reînnoiești abonamentul Backup-uri securizate B&A pe telefon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Ultimul backup"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Sprijinul meu"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} o singură dată"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Se procesează donația…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Donează {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A nu colectează sau stochează informațiile personale când faci o donație.</paragraph><paragraph>Folosim Stripe ca procesator de plăți ca să primim donațiile tale. Nu accesăm, stocăm sau salvăm niciuna dintre informațiile pe care le oferi către ei.</paragraph><paragraph>B&A nu conectează donația ta cu contul B&A și nici nu poate să o facă.</paragraph><paragraph>Îți mulțumim pentru sprijinul tău!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Bonuri fiscale"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Vezi confirmările de citire"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Întrebări frecvente despre donații"
+    "messageformat": "Întrebări frecvente privind donatorii"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Chitanțele nu se sincronizează pe toate dispozitivele. Dacă ai reinstalat B&A, bonurile fiscale ale donațiilor precedente nu vor mai fi disponibile."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Data expirării"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "LL/AA"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Donează {formattedCurrencyAmount} către B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Obține insigna B&A Boost timp de 30 de zile"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Suma minimă a donației este {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Suma minimă pe care o poți dona este {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Suma maximă a donației este {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Părăsirea acestei pagini va elimina informațiile despre cardul tău de credit. Dorești să continui?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Elimină informațiile"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Continuă"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Chitanță donație"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Mulțumesc pentru susținerea acordată B&A. Contribuția ta ajută la îndeplinirea misiunii de a proteja libertatea de exprimare și de a permite o comunicare globală sigură pentru milioane de oameni din întreaga lume, prin intermediul tehnologiei open source pentru confidențialitate. Dacă ești rezident al Statelor Unite, păstrează această chitanță pentru evidența fiscală. B&A Technology Foundation este o organizație non-profit scutită de impozite din Statele Unite, în conformitate cu secțiunea 501c3 din Codul Veniturilor Interne. Codul nostru fiscal federal este 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Ești offline. Conectează-te la internet pentru a finaliza o donație."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donație anulată"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Ai o donație în curs de desfășurare care necesită confirmare."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donația a reușit, dar nu am putut actualiza setările insignei tale"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donația a reușit, dar nu am putut actualiza setările insignei tale"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Pentru a actualiza setările insignei pe dispozitivul mobil, accesează Setări → Donează către B&A → Insigne."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donație întreruptă"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Este posibil ca donația ta să nu fi fost procesată. Dă clic pe „Donează către B&A” și apoi pe „Chitanțe de donație” pentru a verifica chitanțele și a le confirma."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Încearcă din nou sau trimite un jurnal de depanare către Asistență pentru a primi ajutor în finalizarea donației. Jurnalele de depanare ne ajută să diagnosticăm și să remediem problema și nu conțin informații de identificare."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Se procesează donația…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "În curs de procesare"
+    "messageformat": "Încă se procesează donația"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Donația ta este încă în procesare. Această operațiune poate dura câteva minute."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Anulează donația"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Îți mulțumim pentru sprijin!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Ai câștigat o insignă de donator de la B&A! Afișează-o la profil ca să îți arăți sprijinul."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Afișează la profil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Poți ajusta acest lucru pe dispozitivul mobil în Setări → Donează către B&A → Insigne"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Această versiune conține o serie de mici modificări și remedieri ale unor erori pentru ca B&A să funcționeze fără probleme.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Mici ajustări, soluționări de bug-uri și îmbunătățiri ale performanței. Mersi că folosești B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Am îmbunătățit experiența de citire/necitire a mesajelor în timpul ce faci multitasking și am remediat o eroare care uneori deschidea incorect vizualizatorul de imagini extins, dacă apăsai bara de spațiu în timp ce căutai reacția emoji perfectă. Poți totuși să mărești imaginea dacă dai clic pe ea sau dacă tastezi suficient de repede."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Găsirea emoji-ului potrivit poate părea o luptă inevitabilă, dar am remediat o eroare care putea cauza apariția unei erori după apăsarea tastei Escape în caseta de căutare a emoji-urilor."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Această actualizare remediază câteva erori minore, inclusiv una din cauza căreia reacțiile cu emoji-uri nu erau grupate corect în anumite cazuri."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Această actualizare introduce noi optimizări de performanță pentru a îmbunătăți durata de viață a bateriei, astfel încât vei avea mai multă energie disponibilă pentru conversații încărcate emoțional."
   }
 }

@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Çat silinsin?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Bu çatda olan bütün mesajlar bu cihazdan silinəcək."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Bu çatdakı bütün mesajlar bütün cihazlarınızdan silinəcək."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Bu qovluqda görünməsini istədiyiniz çatları seçin"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1-ə 1 çatlar"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Qrup söhbətləri"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Çatlar əlavə et"
@@ -1869,7 +1872,7 @@
     "messageformat": "\"B&A Masaüstü\"nün bu versiyasının istifadə müddəti bitib. Zəhmət olmasa mesajlaşmağa davam etmək üçün son versiyaya yüksəldin."
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download ünvanına getmək üçün klikləyin"
+    "messageformat": "baxs.com/download ünvanına getmək üçün klikləyin"
   },
   "icu:mediaMessage": {
     "messageformat": "Media mesajı"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Endirmə baş tutmadı"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Qoşmanın ehtiyat nüsxədən endirilməsi baş tutmadı"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Redaktələr yalnız siz bu mesajı göndərdikdən sonra 24 saat ərzində tətbiq oluna bilər."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Bir dəfə baxıla bilən video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Mesaj silindi."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Zəhmət olmasa yenidən sınayın və ya dəstəklə əlaqə saxlayın."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Gözlənilməz bir xəta baş verdi"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Sazlama jurnalını göndər"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Xeyr, təşəkkürlər"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Oldu"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} üzv} other {{number,number} üzv}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Paylaşılmış media"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Hamısına bax"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, keçidlər və fayllar"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} üzv} other {{number,number} üzv}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Qrup bağlantısı vasitəsilə qoşulan yeni üzvlərin admin tərəfindən təsdiqlənməsi tələb olunsun."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group keçidini klaviaturaya kopiyalayın"
+    "messageformat": "signal.group keçidini klaviaturaya kopiyalayın"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Tələb ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Məsələn, :-) ifadəsi <emojify>🙂</emojify> emojisinə çevriləcək"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Səsi bağlanmış çatlar arxivdə saxlanılsın"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Arxivlənmiş və səsi bağlanmış çatlar, yeni mesaj gələndə arxivlənmiş olaraq qalacaq."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Qabaqcıl"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Bloklandı"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A ehtiyat nüsxələri"
+    "messageformat": "B&A-ın Təhlükəsiz Ehtiyat Nüsxələri"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A-ın təhlükəsiz, tam şifrələnmiş yaddaş xidməti ilə avtomatik çıxarılan ehtiyat nüsxələr. Telefondan başlayın. <learnMoreLink>Daha ətraflı</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Mətn + bütün media faylların ehtiyat nüsxələri"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Abunəliyiniz tapılmadı. B&A ehtiyat nüsxələrindən istifadəyə davam etmək üçün yeniləyin."
+    "messageformat": "Abunəliyiniz tapılmadı. B&A-ın təhlükəsiz ehtiyat nüsxələrindən istifadə edərək davam etmək üçün yeniləyin."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Mətn + {mediaDayCount,number} günlük media faylının ehtiyat nüsxəsi} other {Mətn + {mediaDayCount,number} günlük media faylının ehtiyat nüsxəsi}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Abunəlik ləğv edildi"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "B&A ehtiyat nüsxələri abunəliyinizi telefonunuzdan idarə və ya ləğv edə bilərsiniz."
+    "messageformat": "Telefonunuzda B&A təhlükəsiz ehtiyat nüsxələri abunəliyinizi idarə və ya ləğv edə bilərsiniz."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "B&A ehtiyat nüsxələri abunəliyinizi telefonunuzdan idarə edə və ya yüksəldə bilərsiniz."
+    "messageformat": "Telefonunuzda B&A təhlükəsiz ehtiyat nüsxələrini idarə edə və yüksəldə bilərsiniz."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "B&A ehtiyat nüsxələri abunəliyinizi idarə edə və ya yeniləyə bilərsiniz."
+    "messageformat": "Telefonunuzda B&A təhlükəsiz ehtiyat nüsxələri abunəliyinizi idarə edə və ya yeniləyə bilərsiniz."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Son ehtiyat nüsxə"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Dəstəyim"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "Birdəfəlik {formattedCurrencyAmount}"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "İanə emal edilir..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} ianə ver"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>İanə etdiyiniz zaman B&A şəxsi məlumatlarınızı toplamır və saxlamır.</paragraph><paragraph>Biz ianələrinizi qəbul etmək üçün ödəniş prosessorumuz kimi Stripe-dan istifadə edirik. Ona göndərdiyiniz hər hansı məlumatı əldə etmir, saxlamır və ya yaddaşa vermirik.</paragraph><paragraph>B&A etdiyiniz ianəni B&A hesabınızla əlaqələndirmir və bunu edə bilməz.</paragraph><paragraph>Dəstəyiniz üçün təşəkkür edirik!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "Oldu"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Qəbzlər"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Baxış bildirişlərini aç"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "İanə haqqında TVS-lar"
+    "messageformat": "İanə verənlər üçün TSS-lər"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Qəbzlər cihazlar arasında sinxronlaşdırılmır. B&A-ı yenidən quraşdırmısınızsa, əvvəlki ianələrin qəbzləri mövcud olmayacaq."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Bitmə tarixi"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "AA/İİ"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A-a {formattedCurrencyAmount} ianə verin"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 günlük B&A Boost nişanı alın"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minimum ianə məbləği təxminən {formattedCurrencyAmount} dəyərindədir"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "İanə verə biləcəyiniz minimal məbləğ {formattedCurrencyAmount} dəyərindədir."
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Minimum ianə məbləği təxminən {formattedCurrencyAmount} dəyərindədir"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Bu səhifədən çıxsanız, kredit kartı məlumatlarınız da silinəcək. Davam etmək istəyirsiniz?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Məlumatı sil"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Davam et"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "İanə qəbzi"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A-ı dəstəklədiyiniz üçün təşəkkürlər. Töhfəniz, açıq mənbəli məxfilik texnologiyası vasitəsilə dünyadakı milyonlarla insan üçün azad ifadəni qoruyan və etibarlı qlobal ünsiyyəti təmin edən inkişaf missiyasını dəstəkləməyə kömək edir. Əgər Amerika Birləşmiş Ştatlarında yaşayırsınızsa, bu qəbzi vergi qeydlərinizin arasında saxlayın. B&A Texnologiya Fondu, Daxili Gəlir Məcəlləsinin 501c3 maddəsinə əsasən Amerika Birləşmiş Ştatlarında vergidən azad edilmiş qeyri-kommersiya təşkilatıdır. Federal Vergi Ödəyicisi Nömrəmiz: 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Oflayn rejimdəsiniz. İanəni tamamlamaq üçün internetə qoşulun."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "İanə ləğv edildi"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Təsdiq tələbi gözləyən və davam edən ianəniz var."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "İanə baş tutdu, lakin nişan parametlərinizi yeniləyə bilmədik"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "İanə baş tutdu, lakin nişan parametlərinizi yeniləyə bilmədik"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Mobil cihazınızda nişan parametlərini yeniləmək üçün Parametrlər → B&A-a ianə ver → Nişanlar bölməsinə keçin."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "İanə kəsildi"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "İanəniz emal edilməmiş ola bilər. \"B&A-a ianə ver\", sonra isə \"İanə qəbzləri\" üzərinə klikləyib qəbzlərinizi yoxlayın və təsdiqləyin."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "İanənizi tamamlamağa kömək etmək üçün yenidən cəhd edin və ya Dəstək xidmətinə sazlama jurnalını təqdim edin. Sazlama jurnalları bizə problemi təyin edib aradan qaldırmaqda kömək edir və kimlik məlumatlarını əhatə etmir."
+  },
   "icu:Donations__Processing": {
     "messageformat": "İanə emal edilir..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Hələ də emal olunur"
+    "messageformat": "İanə hələ də emal edilir"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "İanəniz hələ də emal edilir. Bu, bir neçə dəqiqə çəkə bilər."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "İanəni ləğv et"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Dəstəyiniz üçün təşəkkürlər!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "B&A-dan donor nişanı qazandınız! Dəstəyinizi nümayiş etdirmək üçün onu profilinizdə göstərin."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Profildə görüntülə"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Bu parametri mobil cihazınızda Parametrlər → B&A-a ianə ver → Nişanlar bölməsinə keçərək tənzimləyə bilərsiniz"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Bu versiya, B&A-ın problemsiz işləməsini təmin etmək üçün kiçik düzəltmələr və xəta düzəltmələri ehtiva edir.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Kiçik spesifik tənzimləmələr, xəta düzəlişləri və məhsuldarlığın artırılması. B&A istifadə etdiyiniz üçün təşəkkürlər!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Çoxyönlü tapşırıqlarda oxunmuş/oxunmamış mesaj təcrübəsini təkmilləşdirdik və mükəmməl emoji reaksiyasını axtararkən boşluq düyməsini basdığınız zaman bəzi hallarda böyüdülmüş şəkil izləyicisini xətalı açan nasazlığı düzəltdik. Şəklin üzərinə kliklədiyiniz zaman və ya kifayət qədər sürətli yazsanız görüntünü böyüdə bilərsiniz."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Düzgün emojinizi tapmaq bəzən çıxılmaz bir məsələyə çevrilə bilər, ancaq biz emoji axtarış qutusunda çıxış düyməsinə basdıqdan sonra baş verən nasazlığı aradan qaldırdıq."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Bu yeniləmə ilə bəzi hallarda düzgün qruplaşmayan emoji reaksiyaları daxil olmaqla, bir neçə nasazlıq aradan qaldırıldı."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Bu yeniləmə sayəsində batareya ömrünü uzatmağa kömək edən yeni effektivlik optimizasiyası təqdim olunur. Emosional enerji tələb edən söhbətlər üçün artıq batareyanızda daha çox enerji olacaq."
   }
 }

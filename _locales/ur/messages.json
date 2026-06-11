@@ -102,7 +102,7 @@
     "messageformat": "ڈیٹا بیس انکرپشن کیی تک رسائی حاصل کرنے سے قاصر ہیں کیونکہ OS انکرپشن کیی رنگ بیک اینڈ {previousBackend} سے{currentBackend} میں تبدیل ہو چکا ہے۔ ایسا اس صورت میں واقع ہو سکتا ہے اگر مثال کے طور پر GNOME اور KDE کے درمیان ڈیسک ٹاپ انوائرنمنٹ تبدیل ہوتی ہے۔\n\nبراہ کرم پچھلے ڈیسک ٹاپ انوائرنمنٹ میں تبدیل کریں۔"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "ڈیٹا بیس انکرپشن کیی تک رسائی حاصل کرنے سے قاصر ہیں کیونکہ OS انکرپشن کیی رنگ بیک اینڈ {previousBackend} سے {currentBackend} میں تبدیل ہو گیا ہے۔ ایسا اس صورت میں ہو سکتا ہے جب، مثال کے طور پر GNOME اور KDE کے درمیان ڈیسک ٹاپ کا انوائرںمنٹ تبدیل ہوتا ہے۔\n\nبراہ کرم پچھلے ڈیسک ٹاپ انوائرنمنٹ پر سوئچ کریں یا B&A کو کمانڈ لائن فلیگ --password-store=\"{previousBackendFlag}\" کے ساتھ چلانے کی کوشش کریں"
+    "messageformat": "ڈیٹا بیس انکرپشن کیی تک رسائی حاصل کرنے سے قاصر ہیں کیونکہ OS انکرپشن کیی رنگ بیک اینڈ {previousBackend} سے {currentBackend} میں تبدیل ہو گیا ہے۔ ایسا اس صورت میں ہو سکتا ہے جب، مثال کے طور پر GNOME اور KDE کے درمیان ڈیسک ٹاپ کا انوائرںمنٹ تبدیل ہوتا ہے۔\n\nبراہ کرم پچھلے ڈیسک ٹاپ انوائرنمنٹ پر سوئچ کریں یا signal کو کمانڈ لائن فلیگ --password-store=\"{previousBackendFlag}\" کے ساتھ چلانے کی کوشش کریں"
   },
   "icu:mainMenuFile": {
     "messageformat": "اور فائل"
@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "چیٹ کو حذف کریں؟"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "اس چیٹ میں موجود تمام میسجز اس ڈیوائس سے حذف کر دیے جائیں گے۔"
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "اس چیٹ میں موجود تمام میسجز کو آپ کی تمام ڈیوائسز سے حذف کر دیا جائے گا۔"
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "ان چیٹس کا انتخاب کریں جو آپ اس فولڈر میں دکھانا چاہتے ہیں"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 چیٹس"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "گروپ کی گفتگو"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "چیٹس شامل کریں"
@@ -1869,7 +1872,7 @@
     "messageformat": "B&A Desktop کا یہ ورژن کی میعاد ختم ہوچکی ہے۔ مہربانی فرما کر پیغامات جاری رکھنے کے لئے حالیہ ورژن میں اپ گریڈ کریں۔"
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download پر جانے کے لیے کلک کریں"
+    "messageformat": "baxs.com/download پر جانے کے لیے کلک کریں"
   },
   "icu:mediaMessage": {
     "messageformat": "میڈیا پیغام"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ڈاؤن لوڈ ناکام ہو گیا"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "بیک اپ سے اٹیچمنٹ ڈاؤن لوڈ کرنے میں ناکامی ہوئی"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "آپ کی طرف سے اس میسج کو بھیجنے کے بعد ترامیم کا اطلاق محض 24 گھنٹوں کے اندر کیا جا سکتا ہے۔"
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "ایک بار ملاحظہ کرنے والے ویڈیو"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "گِف"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "یہ پیغام حذف کردیا گیا تھا۔"
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "براہ کرم دوبارہ کوشش کریں یا مدد سے رابطہ کریں۔"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "ایک غیر متوقع نقص وقوع پذیر ہوا ہے"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "ڈی بَگ لاگ پیش کریں"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "نہیں شکریہ"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "ٹھیک ہے"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} ممبر} other {{number,number} ممبرز}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "میڈیا اشتراک کریں"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "تمام دیکھیں"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "میڈیا، لنکس، اور فائلز"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} ممبر} other {{number,number} ممبرز}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "کسی منتظم سے گروپ لینک کے ذریعے نئے ممبران کی شمولیت کی منظوری کی ضرورت ہے"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group کے لنک کو کلپ بورڈ پر کاپی کریں"
+    "messageformat": "signal.group کے لنک کو کلپ بورڈ پر کاپی کریں"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "درخواستیں ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "مثال کے طور پر، :-) <emojify>🙂</emojify> میں تبدیل ہو جائے گا"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "خاموش کردہ چیٹس کو آرکائیو کردہ رکھیں"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "نیا میسج آنے پر آرکائیو کی گئی خاموش کردہ چیٹس آرکائیو کردہ رہیں گی۔"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "اعلی' درجے کی"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "بلاک شدہ"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A بیک اپس"
+    "messageformat": "B&A کے محفوظ بیک اپس"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A کی محفوظ، آخر سے آخر تک انکرپٹ کردہ اسٹوریج سروس کے حامل خودکار بیک اپس۔ اپنے فون پر آغاز کریں۔ <learnMoreLink>مزید جانیں</learnMoreLink>۔"
@@ -5280,7 +5301,7 @@
     "messageformat": "ٹیکسٹ + تمام میڈیا کا بیک اپ"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "آپ کی سبسکرپشن نہیں ملی۔ B&A بیک اپس کا استعمال کرنا جاری رکھنے کے لیے تجدید کریں۔"
+    "messageformat": "آپ کی سبسکرپشن نہیں ملی۔ B&A کے محفوظ بیک اپس کا استعمال جاری رکھنے کے لیے تجدید کریں۔"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {ٹیکسٹ + {mediaDayCount,number} دن کے میڈیا کا بیک اپ} other {ٹیکسٹ + {mediaDayCount,number} دنوں کے میڈیا کا بیک اپ}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "سبسکرپشن منسوخ کر دی گئی"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "آپ اپنے فون پر B&A بیک اپس کی سبسکرپشن کا نظم کر سکتے ہیں یا منسوخ کر سکتے ہیں۔"
+    "messageformat": "آپ اپنے فون پر B&A محفوظ بیک اپس کی سبسکرپشن کو منظم یا منسوخ کر سکتے ہیں۔"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "آپ B&A بیک اپس کو اپنے فون پر منظم کر سکتے یا اپ گریڈ کر سکتے ہیں۔"
+    "messageformat": "آپ اپنے فون پر B&A محفوظ بیک اپس کو منظم یا اپ گریڈ کر سکتے ہیں۔"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "آپ B&A بیک اپس کی سبسکرپشن کو اپنے فون پر منظم کر سکتے ہیں یا تجدید کر سکتے ہیں۔"
+    "messageformat": "آپ B&A محفوظ بیک اپس کی سبسکرپشن کو اپنے فون پر منظم کر سکتے ہیں یا تجدید کر سکتے ہیں۔"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "آخری بیک اپ"
@@ -5547,7 +5568,7 @@
     "messageformat": "مزید جانیں"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "B&A تکنیکی مشکلات کا تجربہ کر رہا ہے۔جتنا جلدی ممکن ہو ہم سروس بحال کرنے کیلئے سخت محنت کر رہے ہیں۔"
+    "messageformat": "signal تکنیکی مشکلات کا تجربہ کر رہا ہے۔جتنا جلدی ممکن ہو ہم سروس بحال کرنے کیلئے سخت محنت کر رہے ہیں۔"
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "اپ ڈیٹ درکار ہے"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "میری معاونت"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} ایک وقتی"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "عطیے پر عمل کاری ہو رہی ہے..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} عطیہ کریں"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>جب آپ عطیہ کرتے ہیں تو B&A آپ کی کوئی بھی ذاتی معلومات جمع یا محفوظ نہیں کرتا۔</paragraph><paragraph>ہم آپ کے عطیات موصول کرنے کے لیے Stripe کو اپنی پیمنٹس کے پروسیسر کے طور پر استعمال کرتے ہیں۔ آپ وہاں جو بھی معلومات فراہم کرتے ہیں ہم ان تک رسائی نہیں رکھتے، اسٹور، یا محفوظ نہیں کرتے۔</paragraph><paragraph>B&A آپ کے عطیے کو آپ کے B&A کے اکاؤنٹ کے ساتھ منسلک نہیں کرتا اور نہ ہی کر سکتا ہے۔</paragraph><paragraph>آپ کی سپورٹ کے لیے آپ کا شکریہ!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "ٹھیک ہے"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "رسیدیں"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "رسید کی تفصیلات دیکھیں"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "عطیات کے متعلق عمومی سوالات"
+    "messageformat": "ڈونر کے عمومی سوالات"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "رسیدیں مختلف ڈیوائسز پر سنک نہیں ہوتیں۔ اگر آپ نے B&A دوبارہ انسٹال کیا ہے، تو گزشتہ عطیات کی رسیدیں دستیاب نہیں ہوں گی۔"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "معیاد ختم ہونے کی تاریخ"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A کو {formattedCurrencyAmount} عطیہ کریں"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 دنوں کے لیے B&A کا بوسٹ بیج حاصل کریں"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "کم سے کم عطیے کی رقم {formattedCurrencyAmount} ہے"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "کم سے کم رقم جو آپ عطیہ کر سکتے ہیں وہ {formattedCurrencyAmount} ہے"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "زیادہ سے زیادہ عطیے کی رقم {formattedCurrencyAmount} ہے"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "اس صفحے کو چھوڑنے سے آپ کے کریڈٹ کارڈ کی معلومات ہٹا دی جائیں گی۔ کیا آپ جاری رکھنا چاہتے ہیں؟"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "معلومات ہٹائیں"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "جاری رکھیں"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "عطیے کی رسید"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A کو سپورٹ کرنے کے لیے آپ کا شکریہ۔ آپ کی شراکت دنیا بھر کے لاکھوں افراد کے لیے آزاد اظہارِ رائے کے تحفظ اور محفوظ عالمی کمیونیکیشن کے مشن کو تقویت دیتی ہے اور یہ سب اوپن سورس پرائیویسی ٹیکنالوجی کے ذریعے ممکن ہوتا ہے۔ اگر آپ امریکہ کے رہائشی ہیں، تو براہ کرم اس رسید کو اپنے ٹیکس ریکارڈز کے لیے محفوظ رکھیں۔ B&A ٹیکنالوجی فاؤنڈیشن امریکہ میں انٹرنل ریوینیو کوڈ کے سیکشن 501c3 کے تحت ٹیکس سے مستثنیٰ غیر منفعتی تنظیم ہے۔ ہماری فیڈرل ٹیکس کی ID 82-4506840 ہے۔"
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "آپ آف لائن ہیں۔ براہ کرم عطیہ مکمل کرنے کے لیے انٹرنیٹ سے کنیکٹ کریں۔"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "عطیہ منسوخ ہو گیا"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "آپ کے ایک عطیے پر پیش رفت کے لیے تصدیق درکار ہے۔"
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "عطیہ کامیابی سے مکمل ہو گیا ہے، لیکن ہم آپ کی بیج سیٹنگز کو اپ ڈیٹ نہیں کر سکے"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "عطیہ کامیابی سے مکمل ہو گیا ہے، لیکن ہم آپ کی بیج سیٹنگز کو اپ ڈیٹ نہیں کر سکے"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "اپنی موبائل ڈیوائس پر بیج کی سیٹنگز کو اپ ڈیٹ کرنے کے لیے، سیٹنگز → B&A کو عطیہ کریں → بیجز پر جائیں۔"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "عطیہ دینے میں خلل آیا ہے"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ممکن ہے کہ آپ کے عطیے پر کارروائی نہ ہوئی ہو۔ \"B&A کو عطیہ کریں\" پر کلک کریں اور پھر اپنی رسیدیں چیک کرنے کے لیے \"عطیے کی رسیدیں\" چیک کریں اور تصدیق کریں۔"
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "دوبارہ کوشش کریں یا اپنے عطیے کو مکمل کرنے میں مدد کے لیے سپورٹ کو ڈی بگ لاگ جمع کروائیں۔ ڈی بگ لاگز مسئلے کی نشاندہی کرنے اور اسے حل کرنے میں ہماری مدد کرتے ہیں، اور اس میں شناخت کرنے والی معلومات شامل نہیں ہوتی ہیں۔"
+  },
   "icu:Donations__Processing": {
     "messageformat": "عطیے پر عمل کاری ہو رہی ہے..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "تاحال زیر عمل ہے"
+    "messageformat": "عطیے پر عمل کاری ابھی جاری ہے"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "آپ کا عطیہ اب بھی زیر عمل ہے۔ اس میں چند منٹ لگ سکتے ہیں"
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "عطیہ منسوخ کریں"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "آپ کی سپورٹ کا شکریہ!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "آپ نے سگنل سے ڈونر بیج حاصل کیا ہے! اپنا تعاون ظاہر کرنے کے لیے اسے اپنے پروفائل پر دکھائیں۔"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "پروفائل پر ڈسپلے کریں"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "آپ اپنی موبائل ڈیوائس پر سیٹنگز → B&A کو عطیہ کریں → بیجز کے تحت اس کو ایڈجسٹ کر سکتے ہیں"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "یہ ورژن B&A کو بے خلل طور پر چلتا رکھنے کے لیے کچھ معمولی تبدیلیوں اور بگ درستگیوں پر مشتمل ہے۔",
@@ -6844,13 +6925,7 @@
     "messageformat": "معمولی تبدیلیاں کی گئیں، بگ ٹھیک کیے گئے، اور کارکردگی اور بھی بہتر بنائی گئی ہے۔ B&A استعمال کرنے کے لیے شکریہ!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "ہم نے ملٹی ٹاسکنگ کے دوران میسج کو پڑھنے/نہ پڑھے جانے کے تجربے کو بہتر بنایا ہے۔"
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "مطلوبہ ایموجی ڈھونڈنا ایک مصیبت ثابت ہوتا ہے، لیکن اب ہم نے وہ خرابی ٹھیک کر دی ہے جو ایموجی سرچ بار میں ایسکیپ بٹن دبانے سے سامنے آتی تھی۔"
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "کچھ چھوٹے بگ کی درستگی کی گئی۔"
+  "icu:WhatsNew__7.73": {
+    "messageformat": "یہ اپ ڈیٹ نئی کارکردگی کی بہتریاں متعارف کرواتی ہے تاکہ بیٹری لائف کو بہتر بنانے میں مدد کی جا سکے اور آپ کے پاس فُل جذباتی باتوں کے لیے بیٹری بھی فُل رہے۔"
   }
 }

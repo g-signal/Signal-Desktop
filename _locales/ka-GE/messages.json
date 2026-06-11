@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "წავშალოთ ჩატი?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "ამ ჩატში არსებული მიმოწერა ამ მოწყობილობიდან წაიშლება."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "ამ ჩატის ყველა შეტყობინება შენი ყველა მოწყობილობიდან წაიშლება."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "აირჩიე ჩატები, რომელთა გამოჩენაც ამ საქაღალდეში გსურს"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "ერთი ერთზე ჩატები"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "ჯგუფური ჩეთები"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "დაამატე ჩატები"
@@ -1869,7 +1872,7 @@
     "messageformat": "This version of B&A Desktop has expired. Please upgrade to the latest version to continue messaging."
   },
   "icu:upgrade": {
-    "messageformat": "დააჭირე ba-chat.com/download-ზე გადასასვლელად"
+    "messageformat": "დააჭირე baxs.com/download-ზე გადასასვლელად"
   },
   "icu:mediaMessage": {
     "messageformat": "მედია შეტყობინება"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ჩამოტვირთვა ვერ მოხერხდა"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "სათადარიგო ასლებიდან დანართის გადმოწერა ვერ მოხერხდა"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "შეტყობინების რედაქტირება მისი გაგზავნიდან მხოლოდ 24 საათის განმავლობაშია შესაძლებელი."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "ერთხელ სანახავი ვიდეო"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "ეს შეტყობინება იქნა წაშლილი."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "გთხოვთ კიდევ სცადო ან მხარდაჭერის გუნდს დაუკავშირდე."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "მოულოდნელ ხარვეზს გადავაწყდით"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Submit debug log"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "არა, მადლობა"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "კარგი"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} წევრი} other {{number,number} წევრი}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "გაზიარებული მედია-ფაილები"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "ყველას ნახვა"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "მედია ფაილები, ბმულები და ფაილები"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} წევრი} other {{number,number} წევრი}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "მოითხოვე, რომ ადმინმა დაადასტუროს ახალი წევრები, ვინც ჯგუფის ბმულით ცდილობს გაწევრიანებას"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "დააკოპირე B&A.group ბმული კლავიატურაზე"
+    "messageformat": "დააკოპირე signal.group ბმული კლავიატურაზე"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "მოთხოვნები ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "მაგალითად, :-) <emojify>🙂</emojify>-ად გადაიქცევა"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "შეინახე დადუმებული ჩატები არქივში"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "ახალი წერილის მიღებისას, დაარქივებული დადუმებული ჩატები არქივში დარჩება."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "დეტალური"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "დაბლოკილია"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A-ის სარეზერვო კოპიები"
+    "messageformat": "B&A-ის უსაფრთხო სათადარიგო ასლები"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "შექმენი სათადარიგო ასლები B&A-ის დაშიფრული შენახვის სერვისით. დაიწყე შენს ტელეფონზე. <learnMoreLink>გაიგე მეტი</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "ტექსტისა და ყველა მედია ფაილის სათადარიგო ასლი"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "შენი გამოწერა ვერ მოიძებნა. განაახლე B&A-ის სათადარიგო ასლების გამოყენების გასაგრძელებლად."
+    "messageformat": "შენი გამოწერა ვერ მოიძებნა. განაახლე, რომ B&A-ის უსაფრთხო სათადარიგო ასლების გამოყენება განაგრძო."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {{mediaDayCount,number} დღის ტექსტის + მედია ფაილების სათადარიგო ასლი} other {{mediaDayCount,number} დღის ტექსტის + მედია ფაილების სათადარიგო ასლი}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "გამოწერა გაუქმებულია"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "ახლა უკვე შეგიძლია, B&A-ის სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან განაახლო."
+    "messageformat": "შეგიძლია, B&A-ის უსაფრთხო სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან გააუქმო."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "შეგიძლია, B&A-ის სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან განაახლო."
+    "messageformat": "შეგიძლია, B&A-ის უსაფრთხო სათადარიგო ასლები შენს მობილურში მართო ან გააუმჯობესო."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "შეგიძლია, B&A-ის სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან განაახლო."
+    "messageformat": "შეგიძლია, B&A-ის უსაფრთხო სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან განაახლო."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "ბოლოს შექმნილი სარეზერვო კოპია"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "ჩემი მხარდაჭერა"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} ერთჯერადად"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "მიმდინარეობს დონაციის დამუშავება..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "გააკეთე დონაცია {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A-ი არ აგროვებს და არ ინახავს შენს პირად ინფორმაციას, როცა დონაციას აკეთებ.</paragraph><paragraph>შენი დონაციების მისაღებად Stripe-ს ვიყენებთ, როგორც გადახდის დამმუშავებელს. ჩვენ არ გვაქვს წვდომა შენ მიერ მათთვის მიწოდებულ ინფორმაციაზე და მას არ ვინახავთ.</paragraph><paragraph>B&A-ი არ და ვერ აკავშირებს შენს დონაციას შენს B&A-ის ანგარიშთან.</paragraph><paragraph>მადლობა მხარდაჭერისთვის!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "ქვითრები"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "ქვითრის დეტალების ნახვა"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "დონაციის ხდკ"
+    "messageformat": "დონორის FAQ"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "ქვითრები სხვადასხვა მოწყობილობაზე არ სინქრონიზდება. თუ B&A-ი ხელახლა გადმოწერე, წინა დონაციების ქვითრები არ იქნება ხელმისაწვდომი."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "ვადის გასვლის თარიღი"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "თვე/წელი"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "გააკეთე დონაცია {formattedCurrencyAmount} B&A-ისთვის"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "მიიღე B&A-ის ბუსტის ემბლემა 30 დღით"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "დონაციის მინიმალური ოდენობაა {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "დონაციის მინიმალური ოდენობა არის {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "დონაციის მაქსიმალური ოდენობაა {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "ამ გვერდის დატოვების შემთხვევაში, შენი საკრედიტო ბარათის ინფორმაცია წაიშლება. გსურს, გააგრძელო?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "ინფორმაციის წაშლა"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "გაგრძელება"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "დონაციის ქვითარი"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "მადლობა B&A-ის მხარდაჭერისთვის. შენი წვლილი ხელს უწყობს გამოხატვის თავისუფლების დაცვისა და მთელ მსოფლიოში მილიონობით ადამიანისთვის უსაფრთხო გლობალური კომუნიკაციის უზრუნველყოფის მისიის განხორციელებას ღია კოდის კონფიდენციალურობის ტექნოლოგიების მეშვეობით. თუ შეერთებული შტატების რეზიდენტი ხარ, გთხოვთ, ეს ქვითარი შენი საგადასახადო ჩანაწერებისთვის შეინახო. B&A-ის ტექნოლოგიების ფონდი არის გადასახადებისგან გათავისუფლებული არაკომერციული ორგანიზაცია შეერთებულ შტატებში, Internal Revenue Code-ის 501c3 მუხლის შესაბამისად. ჩვენი ფედერალური საგადასახადო ID არის 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "ონლაინ არ ხარ. გთხოვთ, დონაციის შესასრულებლად ინტერნეტს დაუკავშირდე."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "დონაცია გაუქმებულია"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "თქვენ გაქვთ განუხორციელებელი დონაცია, რომელიც საჭიროებს დადასტურებას."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "დონაცია წარმატებით განხორციელდა, მაგრამ შენი ემბლემის პარამეტრების განახლება ვერ მოხერხდა"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "დონაცია წარმატებით განხორციელდა, მაგრამ შენი ემბლემის პარამეტრების განახლება ვერ მოხერხდა"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "შენს მობილურ მოწყობილობაზე შენი ემბლემის პარამეტრების გაუმჯობესებისთვის აირჩიე პარამეტრები → დონაცია B&A-ისთვის → ემბლემები."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "დინაცია შეწყდა"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "შეიძლება, შენი დონაცია ვერ დამუშავდა. ქვითრების შესამოწმებლად და დასადასტურებლად აირჩიე „დონაცია B&A-ისთვის“ და შემდეგ „დონაციის ქვითრები“."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "თავიდან სცადე ან გაუმართაობის რეესტრი მხარდაჭერის გუნდს გაუგზავნე, რათა შენი დონაციის შესრულებაში დაგეხმარონ. გაუმართაობის რეესტრი პრობლემის დიაგნოსტიკასა და გამოსწორებაში გვეხმარება და საიდენტიფიკაციო ინფორმაციას არ შეიცავს."
+  },
   "icu:Donations__Processing": {
     "messageformat": "მიმდინარეობს დონაციის დამუშავება..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "ისევ ვამუშავებთ"
+    "messageformat": "დონაციის დამუშავება ისევ მიმდინარეობს"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "შენი დონაცია ისევ მუშავდება. შეიძლება, ამას რამდენიმე წუთი დასჭირდეს."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "დონაციის გაუქმება"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "მადლობა მხარდაჭერისთვის!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "შენ მოიპოვე დონორის ემბლემა B&A-ისგან! გამოაჩინე ის შენს პროფილზე, რათა მხარდაჭერა გამოხატო."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "პროფილზე ჩვენება"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "ამის დარეგულირება შენს მობილურ მოწყობილობაზე შეგიძლია. აირჩიე პარამეტრები → B&A-ისთვის დონაციის გაკეთება → ემბლემები"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "ეს ვერსია შეიცავს უამრავ მცირე შესწორებას და ბაგების გამოსწორებებს B&A-ის შეუფერხებლად მუშაობის შესანარჩუნებლად.",
@@ -6844,13 +6925,7 @@
     "messageformat": "მცირე შესწორებები, ბაგების გამოსწორება და წარმადობის გაუმჯობესება. მადლობას გიხდით სიგნალის გამოყენებისთვის!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "მულტითასქინგისას წაკითხული/წაუკითხავი შეტყობინებების გამოცდილება გავაუმჯობესეთ. ასევე გამოვასწორეთ შეცდომა, რომელიც ზოგჯერ არასწორად ხსნიდა სურათების გაფართოებულ ხედს, თუ იდეალური ემოჯის ძიებისას Space ღილაკს დააჭერდი. სურათზე დაჭერით ან სწრაფად აკრეფით კვლავ შეგიძლია მისი გადიდება."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "სწორი ემოჯის პოვნა ზოგჯერ ძალიან რთულია, მაგრამ გამოვასწორეთ ბაგი, რომელიც ემოჯის საძიებო ველში Escape ღილაკის დაჭერის შემდეგ შეცდომას იწვევდა."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "ეს განახლება ასწორებს რამდენიმე მცირე შეცდომას, მათ შორის იმ პრობლემასაც, რომლის გამოც, ზოგიერთ შემთხვევაში ემოჯის რეაქციები სწორად არ იყო დაჯგუფებული."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "ეს განახლება მოიცავს მუშაობის ახალ ოპტიმიზაციებს, რომლებიც დაგეხმარება ბატარეის მუშაობის გახანგრძლივებაში. ასე რომ, საუბრებისთვის უფრო მეტი ენერგია გექნება."
   }
 }

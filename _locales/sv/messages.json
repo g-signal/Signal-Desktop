@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Ta bort chatt?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Alla meddelanden i den här chatten kommer att tas bort från den här enheten."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Alla meddelanden i den här chatten kommer att tas bort från alla dina enheter."
   },
@@ -1370,6 +1367,12 @@
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Välj chattar som du vill ska visas i den här mappen"
   },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1-chattar"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Gruppchattar"
+  },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Lägg till chattar"
   },
@@ -1584,10 +1587,10 @@
     "messageformat": "Gruppen är för stor för att ringa deltagarna."
   },
   "icu:CallingButton__ring-off": {
-    "messageformat": "Stäng av ringB&A"
+    "messageformat": "Stäng av ringsignal"
   },
   "icu:CallingButton--ring-on": {
-    "messageformat": "Slå på ringB&A"
+    "messageformat": "Slå på ringsignal"
   },
   "icu:CallingButton--more-options": {
     "messageformat": "Fler alternativ"
@@ -1869,7 +1872,7 @@
     "messageformat": "Den här versionen av B&A Desktop har upphört att gälla. Uppgradera till den senaste versionen för att fortsätta chatta."
   },
   "icu:upgrade": {
-    "messageformat": "Klicka för att gå till ba-chat.com/download"
+    "messageformat": "Klicka för att gå till baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediameddelande"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Nedladdningen misslyckades"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Nedladdning av bilaga från säkerhetskopia misslyckades"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Redigeringar kan bara tillämpas inom 24 timmar från det att du skickade det här meddelandet."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Visa-en-gång video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Det här meddelandet togs bort."
@@ -3333,10 +3342,10 @@
     "messageformat": "Ta ner"
   },
   "icu:CallControls__RingingToast--ringing-on": {
-    "messageformat": "RingB&A på"
+    "messageformat": "Ringsignal på"
   },
   "icu:CallControls__RingingToast--ringing-off": {
-    "messageformat": "RingB&A av"
+    "messageformat": "Ringsignal av"
   },
   "icu:CallControls__RaiseHandsToast--you": {
     "messageformat": "Du räcker upp handen."
@@ -3523,6 +3532,15 @@
   },
   "icu:ErrorModal--description": {
     "messageformat": "Försök igen eller kontakta support."
+  },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Ett oväntat fel inträffade"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Skicka felsökningslogg"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nej tack"
   },
   "icu:Confirmation--confirm": {
     "messageformat": "Okej"
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} medlem} other {{number,number} medlemmar}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Delade media"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Se alla"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, länkar och filer"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} medlem} other {{number,number} medlemmar}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Kräv att en administratör ska godkänna nya medlemmar som går med via grupplänken"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiera B&A.group-länk till urklipp"
+    "messageformat": "Kopiera signal.group-länk till urklipp"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Förfrågningar ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Till exempel kommer :-) att konverteras till <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Håll tystade chattar arkiverade"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Tystade chattar som är arkiverade förblir arkiverade när ett nytt meddelande kommer."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Avancerat"
   },
@@ -5298,13 +5319,13 @@
     "messageformat": "Abonnemanget uppsagt"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Du kan hantera eller avbryta ditt Säkerhetskopiering av B&A-abonnemang på din telefon."
+    "messageformat": "Du kan hantera eller avbryta ditt Säker säkerhetskopiering av B&A-abonnemang på din telefon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Du kan hantera eller uppgradera ditt Säkerhetskopiering av B&A på din telefon."
+    "messageformat": "Du kan hantera eller uppgradera ditt Säker säkerhetskopiering av B&A på din telefon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Du kan hantera eller förnya ditt Säkerhetskopiering av B&A-abonnemang på din telefon."
+    "messageformat": "Du kan hantera eller förnya ditt Säker säkerhetskopiering av B&A-abonnemang på din telefon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Senaste säkerhetskopia"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Mitt stöd"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} engångsbetalning"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Bearbetar donation …"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Donera {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A samlar inte in eller lagrar någon av dina personuppgifter när du gör en donation.</paragraph><paragraph>Vi använder Stripe som vår betalningstjänst för att ta emot dina donationer. Vi kommer varken åt, lagrar eller sparar någon av de uppgifter du lämnar till dem.</paragraph><paragraph>B&A kopplar inte och kan inte koppla din donation till ditt B&A-konto.</paragraph><paragraph>Tack för ditt stöd!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kvitton"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Visa kvittoinformation"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Vanliga frågor om donationer"
+    "messageformat": "Vanliga frågor för donatorer"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Kvitton synkroniseras inte mellan enheter. Om du har installerat om B&A kommer kvitton från tidigare donationer inte vara tillgängliga."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Utgångsdatum"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Donera {formattedCurrencyAmount} till B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Få B&A Boost-märket i 30 dagar"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minsta donationsbelopp är {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Det lägsta belopp du kan donera är {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Högsta donationsbelopp är {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Om du lämnar den här sidan raderas din kreditkortsinformation. Vill du fortsätta?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Ta bort information"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Fortsätt"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Donationskvitto"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Tack för att du stöder B&A. Ditt bidrag hjälper till att främja uppdraget att skydda yttrandefriheten och möjliggöra säker global kommunikation för miljontals människor runt om i världen, genom öppen källkod för integritetsskydd. Spara detta kvitto för dina skatteuppgifter om du är bosatt i USA. B&A Technology Foundation är en skattebefriad ideell organisation i USA enligt avsnitt 501c3 i Internal Revenue Code. Vårt federala skatte-ID är 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Du är offline. Vänligen anslut till internet för att slutföra en donation."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donationen avbruten"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Du har en pågående donation som kräver bekräftelse."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donationen lyckades, men vi kunde inte uppdatera dina märkesinställningar"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donationen lyckades, men vi kunde inte uppdatera dina märkesinställningar"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "För att uppdatera dina märkesinställningar på din mobila enhet, gå till Inställningar → Donera till B&A → Märken."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donationen avbröts"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Din donation kanske inte har behandlats. Klicka på Donera till B&A och sedan på Donationskvitton för att kontrollera dina kvitton och bekräfta."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Försök igen eller skicka in en felsökningslogg till supporten för hjälp med att slutföra din donation. Felsökningsloggar hjälper oss att diagnostisera och åtgärda problemet och innehåller inte identifierande information."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Bearbetar donation …"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Bearbetar fortfarande"
+    "messageformat": "Donationen behandlas fortfarande"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Din donation bearbetas fortfarande. Detta kan ta några minuter."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Avbryt donation"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Tack för ditt stöd!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Du har fått ett donationsmärke från B&A! Visa den i din profil för att visa upp ditt stöd."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Visa på profilen"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Du kan justera detta på din mobila enhet under Inställningar → Donera till B&A → Märken"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Den här versionen innehåller ett antal små justeringar och felrättningar för att B&A ska fungera smidigt.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Små justeringer, buggfixar och prestandaförbättringar. Tack för att du använder B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Vi har förbättrat upplevelsen av lästa/olästa meddelanden vid multitasking."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Vi har åtgärdat ett fel i emoji-sökrutan."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Några små buggfixar."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Den här uppdateringen innehåller nya prestandaoptimeringar som förbättrar batteritiden."
   }
 }

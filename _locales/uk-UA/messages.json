@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Видалити чат?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Усі повідомлення в цьому чаті буде видалено з цього пристрою."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Усі повідомлення в цьому чаті буде видалено з усіх ваших пристроїв."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Виберіть чати, які ви хочете бачити в цій папці"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Особисті чати"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Групові чати"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Додати чати"
@@ -1869,7 +1872,7 @@
     "messageformat": "Ця версія B&A Desktop застаріла. Оновіть застосунок до останньої версії, щоб і надалі надсилати повідомлення."
   },
   "icu:upgrade": {
-    "messageformat": "Натисніть, щоб перейти на ba-chat.com/download"
+    "messageformat": "Натисніть, щоб перейти на baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Медіаповідомлення"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Помилка завантаження"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Не вдалося завантажити вкладення з резервної копії"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Редагувати повідомлення можна лише протягом 24 годин з моменту надсилання."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Одноразове відео"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Це повідомлення видалено."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Повторіть спробу або зв'яжіться зі службою підтримки."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Сталася неочікувана помилка"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Надіслати журнал налагодження"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Не надсилати"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Зрозуміло"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} учасник} few {{number,number} учасники} many {{number,number} учасників} other {{number,number} учасника}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Надіслані медіафайли"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Показати всі"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Медіафайли, посилання й файли"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} учасник} few {{number,number} учасники} many {{number,number} учасників} other {{number,number} учасника}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Нових учасників, які приєднуються до групи за посиланням, повинен затверджувати адміністратор."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Копіювати посилання B&A.group"
+    "messageformat": "Копіювати посилання signal.group"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Запити ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Наприклад, :-) перетвориться на <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Залишати чати з вимкненими сповіщеннями в архіві"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Заархівовані чати з вимкненими сповіщеннями залишаються в архіві, якщо надходять нові повідомлення."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Додаткові налаштування"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Заблоковані"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Резервне копіювання від B&A"
+    "messageformat": "Надійне резервне копіювання від B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Автоматичне створення резервних копій у надійному сховищі даних B&A, захищеному наскрізним шифруванням. Налаштуйте з телефона. <learnMoreLink>Докладніше</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Текстові повідомлення + всі медіафайли"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Передплату не знайдено. Поновіть її, щоб знову користуватися резервним копіюванням від B&A."
+    "messageformat": "Передплату не знайдено. Поновіть її, щоб знову користуватися надійним резервним копіюванням від B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Текст + медіафайли за {mediaDayCount,number} минулий день} few {Текст + медіафайли за {mediaDayCount,number} минулі дні} many {Текст + медіафайли за {mediaDayCount,number} минулих днів} other {Текст + медіафайли за {mediaDayCount,number} минулого дня}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Передплату скасовано"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Щоб змінити або скасувати передплату від B&A, зайдіть у налаштування з телефона."
+    "messageformat": "Щоб змінити або скасувати передплату на надійне резервне копіювання від B&A, зайдіть у налаштування з телефона."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Щоб налаштувати або змінити передплату від B&A, зайдіть у налаштування з телефона."
+    "messageformat": "Щоб змінити параметри надійного резервного копіювання від B&A, зайдіть у налаштування з телефона."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Щоб змінити або поновити передплату від B&A, зайдіть у налаштування з телефона."
+    "messageformat": "Щоб змінити або поновити передплату на надійне резервне копіювання від B&A, зайдіть у налаштування з телефона."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Найновіша резервна копія"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Моя підтримка"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount}, один раз"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Триває опрацювання донату…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Задонатити {formattedCurrencyAmount}"
   },
@@ -6648,8 +6675,14 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A не збирає і не зберігає вашу особисту інформацію, коли ви робите донати.</paragraph><paragraph>Ми користуємося послугами компанії Stripe для опрацювання ваших донатів. Ми не зберігаємо інформацію, яку ви надаєте Stripe, і не маємо до неї доступу.</paragraph><paragraph>B&A не знає і не може дізнатися, що донат надійшов саме з вашого акаунту.</paragraph><paragraph>Дякуємо за підтримку!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "Зрозуміло"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Підтвердження"
+  },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Переглянути інформацію в підтвердженні"
   },
   "icu:PreferencesDonations__faqs": {
     "messageformat": "Відповіді на запитання про донати"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Термін дії"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "ММ/РР"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Задонатити B&A {formattedCurrencyAmount}"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Отримайте значок за підтримку B&A на 30 днів"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Мінімальна сума донату: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Мінімальна сума донату: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Максимальна сума донату: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Якщо покинути цю сторінку, інформацію про кредитну картку буде видалено. Продовжити й видалити дані?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Так, видалити"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Продовжити"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Підтвердження донату"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Дякуємо за підтримку B&A. Ваш внесок допомагає реалізувати нашу місію: захищати свободу слова і робити можливим безпечне спілкування для мільйонів людей у всьому світі за допомогою технології конфіденційності з відкритим кодом. Якщо ви резидент Сполучених Штатів Америки, збережіть цю квитанцію для звітування в податкові органи. B&A Technology Foundation — звільнена від оподаткування неприбуткова організація, створена відповідно до розділу 501c3 податкового кодексу США. Наш федеральний податковий номер: 82–4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Ви не в мережі. Щоб завершити донат, потрібне з'єднання з інтернетом."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Донат скасовано"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Ваш донат очікує на підтвердження."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Донат надіслано, але нам не вдалось оновити налаштування значка"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Донат надіслано, але нам не вдалось оновити налаштування значка"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Щоб оновити значок на мобільному пристрої, перейдіть у налаштування → Підтримати B&A → Значки."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Донат перервано"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Можливо, ваш донат не вдалось опрацювати. Натисніть «Підтримати B&A», а потім «Підтвердження ваших донатів», щоб пересвідчитися."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Спробуйте знову або зверніться до служби підтримки по допомогу й надішліть журнал налагодження. Журнали налагодження допомагають нам визначати й усувати проблеми. Вони не містять особистої інформації."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Триває опрацювання донату…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Опрацювання триває"
+    "messageformat": "Опрацювання донату ще триває"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Опрацювання вашого донату ще триває. Воно займе кілька хвилин."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Скасувати донат"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Дякуємо за підтримку!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Ви отримали значок донора від B&A! Показуйте його в профілі, щоб розповісти про свою підтримку."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Показувати в профілі"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Змінити це можна на мобільному пристрої в налаштуваннях: Підтримати B&A → Значки"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Ця версія містить ряд невеликих покращень і виправлень помилок для забезпечення безперебійної роботи B&A.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Дрібні поліпшення, виправлення помилок і покращення роботи застосунку. Дякуємо, що ви з B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Ми покращили функціонування відміток про читання повідомлень під час одночасного виконання кількох дій. А ще виправили помилку, через яку відкривався перегляд зображення, якщо ви натискали пробіл під час пошуку реакції. Збільшити зображення все ще можна, якщо на нього натиснути (або якщо вводити текст достатньо швидко)."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Якщо ви помітили, що після натискання клавіші Escape у полі пошуку емоджі з'являлася помилка, не хвилюйтеся. Це була не агресивна агітація за використання емоджі, а просто помилка, яку ми вже виправили."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "У цьому оновленні ми виправили кілька незначних помилок, як-от некоректне групування емоджі-реакцій."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "У цьому оновленні ми додали нові способи оптимізації, щоб подовжити час роботи акумулятора, адже всім нам іноді не вистачає енергії."
   }
 }

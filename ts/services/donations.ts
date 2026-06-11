@@ -11,27 +11,28 @@ import {
   ReceiptCredentialResponse,
   ReceiptSerial,
   ServerPublicParams,
-} from '@signalapp/libsignal-client/zkgroup';
+} from '@signalapp/libsignal-client/zkgroup.js';
 import * as countryCodes from 'country-codes-list';
 
-import * as Bytes from '../Bytes';
-import * as Errors from '../types/errors';
-import { getRandomBytes, sha256 } from '../Crypto';
-import { DataWriter } from '../sql/Client';
-import { createLogger } from '../logging/log';
-import { donationValidationCompleteRoute } from '../util/signalRoutes';
-import { safeParseStrict, safeParseUnknown } from '../util/schemas';
-import { missingCaseError } from '../util/missingCaseError';
-import { exponentialBackoffSleepTime } from '../util/exponentialBackoff';
-import { sleeper } from '../util/sleeper';
-import { isInPast, isOlderThan } from '../util/timestamp';
-import { DAY, DurationInSeconds } from '../util/durations';
-import { waitForOnline } from '../util/waitForOnline';
+import * as Bytes from '../Bytes.js';
+import * as Errors from '../types/errors.js';
+import { getRandomBytes, sha256 } from '../Crypto.js';
+import { DataWriter } from '../sql/Client.js';
+import { createLogger } from '../logging/log.js';
+import { getProfile } from '../util/getProfile.js';
+import { donationValidationCompleteRoute } from '../util/signalRoutes.js';
+import { safeParseStrict, safeParseUnknown } from '../util/schemas.js';
+import { missingCaseError } from '../util/missingCaseError.js';
+import { exponentialBackoffSleepTime } from '../util/exponentialBackoff.js';
+import { sleeper } from '../util/sleeper.js';
+import { isInPast, isOlderThan } from '../util/timestamp.js';
+import { DAY, DurationInSeconds } from '../util/durations/index.js';
+import { waitForOnline } from '../util/waitForOnline.js';
 import {
   donationErrorTypeSchema,
   donationStateSchema,
   donationWorkflowSchema,
-} from '../types/Donations';
+} from '../types/Donations.js';
 
 import type {
   CardDetail,
@@ -40,10 +41,10 @@ import type {
   DonationWorkflow,
   ReceiptContext,
   StripeDonationAmount,
-} from '../types/Donations';
-import { ToastType } from '../types/Toast';
-import { NavTab, SettingsPage } from '../types/Nav';
-import { getRegionCodeForNumber } from '../util/libphonenumberUtil';
+} from '../types/Donations.js';
+import { ToastType } from '../types/Toast.js';
+import { NavTab, SettingsPage } from '../types/Nav.js';
+import { getRegionCodeForNumber } from '../util/libphonenumberUtil.js';
 
 const { createDonationReceipt } = DataWriter;
 
@@ -163,10 +164,14 @@ export async function finishDonationWithCard(
   try {
     workflow = await _createPaymentMethodForIntent(existing, paymentDetail);
   } catch (error) {
-    if (error.code >= 400 && error.code <= 499) {
-      await failDonation(donationErrorTypeSchema.Enum.PaymentDeclined);
+    const errorType: string | undefined = error.response?.error?.type;
+    if (error.code >= 400 && error.code <= 499 && errorType === 'card_error') {
+      await failDonation(
+        donationErrorTypeSchema.Enum.PaymentDeclined,
+        errorType
+      );
     } else {
-      await failDonation(donationErrorTypeSchema.Enum.GeneralError);
+      await failDonation(donationErrorTypeSchema.Enum.GeneralError, errorType);
     }
 
     throw error;
@@ -239,6 +244,9 @@ export async function _internalDoDonation({
 
     workflow = await _createPaymentMethodForIntent(workflow, paymentDetail);
     await _saveAndRunWorkflow(workflow);
+  } catch (error) {
+    const errorType: string | undefined = error.response?.error?.type;
+    await failDonation(donationErrorTypeSchema.Enum.GeneralError, errorType);
   } finally {
     isInternalDonationInProgress = false;
   }
@@ -409,16 +417,27 @@ export async function _runDonationWorkflow(): Promise<void> {
 
         await _saveWorkflow(updated);
       } catch (error) {
+        const errorType: string | undefined = error.response?.error?.type;
+
         if (
           error.name === 'HTTPError' &&
           error.code >= 400 &&
           error.code <= 499
         ) {
           log.warn(`${logId}: Got a ${error.code} error. Failing donation.`);
-          if (type === donationStateSchema.Enum.INTENT_METHOD) {
-            await failDonation(donationErrorTypeSchema.Enum.PaymentDeclined);
+          if (
+            type === donationStateSchema.Enum.INTENT_METHOD &&
+            errorType === 'card_error'
+          ) {
+            await failDonation(
+              donationErrorTypeSchema.Enum.PaymentDeclined,
+              errorType
+            );
           } else {
-            await failDonation(donationErrorTypeSchema.Enum.GeneralError);
+            await failDonation(
+              donationErrorTypeSchema.Enum.GeneralError,
+              errorType
+            );
           }
           throw error;
         }
@@ -430,7 +449,10 @@ export async function _runDonationWorkflow(): Promise<void> {
           log.warn(
             `${logId}: Donation step threw unexpectedly. Failing donation. ${Errors.toLogFormat(error)}`
           );
-          await failDonation(donationErrorTypeSchema.Enum.GeneralError);
+          await failDonation(
+            donationErrorTypeSchema.Enum.GeneralError,
+            errorType
+          );
           throw error;
         }
       }
@@ -735,8 +757,8 @@ export async function _getReceipt(
 
     // At this point we know that the payment went through, so we save the receipt now.
     // If the redemption never happens, or fails, the user has it for their tax records.
-
     await saveReceipt(workflow, logId);
+
     return {
       ...workflow,
       type: donationStateSchema.Enum.RECEIPT,
@@ -769,13 +791,28 @@ export async function _redeemReceipt(
     const receiptCredentialPresentationBase64 = Bytes.toBase64(
       receiptCredentialPresentation.serialize()
     );
+
+    const me = window.ConversationController.getOurConversationOrThrow();
+    const myBadges = me.attributes.badges;
+
     const jsonPayload = {
       receiptCredentialPresentation: receiptCredentialPresentationBase64,
-      visible: false,
+      visible:
+        !!myBadges &&
+        myBadges.length > 0 &&
+        myBadges.every(myBadge => 'isVisible' in myBadge && myBadge.isVisible),
       primary: false,
     };
 
     await window.textsecure.server.redeemReceipt(jsonPayload);
+
+    // After the receipt credential, our profile will change to add new badges.
+    // Refresh our profile to get new badges.
+    await getProfile({
+      serviceId: me.getServiceId() ?? null,
+      e164: me.get('e164') ?? null,
+      groupId: null,
+    });
 
     log.info(`${logId}: Successfully transitioned to DONE`);
 
@@ -789,7 +826,10 @@ export async function _redeemReceipt(
 
 // Helper functions
 
-async function failDonation(errorType: DonationErrorType): Promise<void> {
+async function failDonation(
+  errorType: DonationErrorType,
+  details: string | undefined = undefined
+): Promise<void> {
   const workflow = _getWorkflowFromRedux();
   const logId = `failDonation(${workflow?.id ? redactId(workflow.id) : 'NONE'})`;
 
@@ -803,7 +843,9 @@ async function failDonation(errorType: DonationErrorType): Promise<void> {
     await _saveWorkflow(undefined);
   }
 
-  log.info(`failDonation: Failing with type ${errorType}`);
+  log.info(
+    `failDonation: Failing with type ${errorType} ${details ? `details=${details}` : ''}`
+  );
   if (!isDonationPageVisible()) {
     if (errorType === donationErrorTypeSchema.Enum.Failed3dsValidation) {
       log.info(

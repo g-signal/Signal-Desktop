@@ -516,7 +516,7 @@
     "messageformat": "Verificatie ongedaan maken"
   },
   "icu:SafetyNumberViewer__hint": {
-    "messageformat": "Om end-to-end-versleuteling met {name} te verifiëren, vergelijk je bovenstaande nummers met het apparaat van je contact. Je contacten kunnen ook jouw QR-code scannen met hun apparaat."
+    "messageformat": "Om end-to-end-versleuteling met {name} te verifiëren, vergelijk je bovenstaande nummers met die op het apparaat van je contact. Je contacten kunnen ook jouw code scannen met hun apparaat"
   },
   "icu:SafetyNumberViewer__learn_more": {
     "messageformat": "Meer informatie"
@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Chat verwijderen?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Alle berichten in deze chat worden verwijderd van dit apparaat."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Alle berichten in deze chat worden verwijderd van al je apparaten."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Selecteer chats die je in deze map wilt weergeven"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1-op-1-chats"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Groepschats"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Chats toevoegen"
@@ -1869,7 +1872,7 @@
     "messageformat": "Deze versie van B&A Desktop is verlopen. Werk bij naar de meest recente versie om gesprekken voort te kunnen zetten."
   },
   "icu:upgrade": {
-    "messageformat": "Klik hier om ba-chat.com/download te openen"
+    "messageformat": "Klik hier om baxs.com/download te openen"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediabericht"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Downloaden mislukt"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Downloaden van bijlage uit back-up is mislukt"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Berichten kunnen alleen binnen 24 uur na verzenden bewerkt worden."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Eenmaligeweergave-video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Dit bericht is verwijderd."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Probeer het opnieuw of neem contact op met ondersteuning."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Er is een onverwachte fout opgetreden"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Foutopsporingslog indienen"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nee bedankt"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Oké"
   },
@@ -3954,7 +3972,7 @@
     "messageformat": "Een verzoek van {joinerName} om lid te worden van de groep is afgewezen."
   },
   "icu:GroupV2--admin-approval-bounce--pluralized": {
-    "messageformat": "{numberOfRequests, plural, one {{joinerName} heeft verzocht om lid te worden van de groep en dat verzoek weer ingetrokken via de link} other {{joinerName} heeft {numberOfRequests,number} keer verzocht om lid te worden van de groep en die verzoeken weer ingetrokken via de link}}"
+    "messageformat": "{numberOfRequests, plural, one {{joinerName} heeft via de groepslink verzocht om lid te worden van de groep en dat verzoek weer ingetrokken} other {{joinerName} heeft {numberOfRequests,number} keer via de groepslink verzocht om lid te worden van de groep en die verzoeken weer ingetrokken}}"
   },
   "icu:GroupV2--group-link-add--disabled--you": {
     "messageformat": "Je hebt de groepslink zonder beheerdersgoedkeuring van nieuwe leden ingeschakeld."
@@ -4278,10 +4296,10 @@
     "messageformat": "B&A Desktop biedt geen ondersteuning voor het verzenden van berichten naar personen die niet geregistreerd zijn bij B&A. Vraag deze persoon om B&A te installeren om zo beveiligde gesprekken te kunnen voeren."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
-    "messageformat": "Controleren of deze persoon staat geregistreerd bij B&A"
+    "messageformat": "Controleren of deze persoon is geregistreerd bij B&A"
   },
   "icu:CompositionArea__edit-action--discard": {
-    "messageformat": "Bericht weggooien"
+    "messageformat": "Bewerking annuleren"
   },
   "icu:CompositionArea__edit-action--send": {
     "messageformat": "Bewerkt bericht versturen"
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} lid} other {{number,number} leden}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Uitgewisselde media"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Alles weergeven"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, links en documenten"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} lid} other {{number,number} leden}}"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": ":-) wordt bijvoorbeeld <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Gedempte chats gearchiveerd houden"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Gedempte chats die zijn gearchiveerd, blijven gearchiveerd als er een nieuw bericht binnenkomt."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Geavanceerd"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Geblokkeerd"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A back-ups"
+    "messageformat": "B&A Secure Backups"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatische back-ups met de veilige, end-to-end versleutelde opslagservice van B&A. Ga aan de slag op je telefoon. <learnMoreLink>Meer informatie</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Tekstberichten + alle media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Je abonnement is niet gevonden. Vernieuw je B&A back-upabonnement om B&A back-ups te blijven gebruiken."
+    "messageformat": "Je abonnement is niet gevonden. Vernieuw je back-upabonnement om B&A Secure Backups te blijven gebruiken."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Tekstberichten + {mediaDayCount,number} dag media} other {Tekstberichten + {mediaDayCount,number} dagen media}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Abonnement opgezegd"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Je B&A back-upabonnement kun je beheren of annuleren op je telefoon."
+    "messageformat": "Je B&A Secure Backups-abonnement kun je beheren of opzeggen op je telefoon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "B&A back-ups kun je beheren of upgraden op je telefoon."
+    "messageformat": "B&A Secure Backups kun je beheren of upgraden op je telefoon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Je B&A back-upabonnement kun je beheren of vernieuwen op je telefoon."
+    "messageformat": "Je B&A Secure Backups-abonnement kun je beheren of vernieuwen op je telefoon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Laatste back-up"
@@ -5544,7 +5565,7 @@
     "messageformat": "Open B&A op je telefoon om je account actief te houden"
   },
   "icu:IdlePrimaryDevice__learnMore": {
-    "messageformat": "Meer informatie"
+    "messageformat": "Meer lezen"
   },
   "icu:DialogNetworkStatus__outage": {
     "messageformat": "B&A ondervindt momenteel technische problemen. We zijn hard aan het werk om de service zo snel mogelijk te herstellen."
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Mijn bijdrage"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} eenmalig"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Donatie wordt verwerkt…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} doneren"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A verzamelt of bewaart geen persoonlijke gegevens wanneer je een donatie doet.</paragraph><paragraph>Wij gebruiken Stripe als onze betalingsverwerker om je donaties te ontvangen. Wij hebben geen toegang tot de informatie die je aan hen verstrekt en slaan die ook niet op.</paragraph><paragraph>B&A koppelt je donatie niet aan je B&A-account en kan dat ook niet.</paragraph><paragraph>Bedankt voor je steun!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Donatiebewijzen"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Bekijk donatiebewijzen"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Veelgestelde vragen over donaties"
+    "messageformat": "Veelgestelde vragen over doneren"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Donatiebewijzen worden niet gesynchroniseerd op verschillende apparaten. Als je de B&A-app opnieuw hebt geïnstalleerd, zijn donatiebewijzen van eerdere donaties niet beschikbaar."
@@ -6696,8 +6729,11 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Vervaldatum"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/JJ"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Doneer {formattedCurrencyAmount} aan B&A"
+    "messageformat": "{formattedCurrencyAmount} aan B&A doneren"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Ongeldig kaartnummer"
@@ -6715,7 +6751,25 @@
     "messageformat": "Code te kort"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Ontvang 30 dagen de B&A Boost-badge"
+    "messageformat": "Krijg de B&A ‘Boost’-badge voor 30 dagen"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Het minimumbedrag dat je kunt doneren is {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Het minimumbedrag dat je kunt doneren is {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Het maximale bedrag dat je kunt doneren is {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Als je deze pagina verlaat, worden je creditcardgegevens verwijderd. Wil je doorgaan?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Informatie verwijderen"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Doorgaan"
   },
   "icu:DonationReceipt__title": {
     "messageformat": "Donatiebewijs"
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Bedankt dat je B&A steunt! Jouw bijdrage helpt bij het voortzetten van onze missie om via opensource privacytechnologie de vrijheid van expressie te beschermen en beveiligde communicatie voor miljoenen mensen over de hele wereld mogelijk te maken. Bewaar dit donatiebewijs als je een inwoner bent van de Verenigde Staten van Amerika, zodat je je donatie kunt opgeven bij je belastingaangifte. B&A Technology Foundation is een organisatie zonder winstoogmerk in de Verenigde Staten van Amerika en is vrijgesteld van belastingen volgens sectie 501c3 van de US Internal Revenue Code (het Amerikaanse belastingreglement). Ons federale-belasting-ID is 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Je bent offline. Maak verbinding met internet om een donatie te voltooien."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donatie geannuleerd"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Je donatie is nog niet afgerond en vereist bevestiging."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donatie is gelukt, maar we konden je badge-instellingen niet bijwerken"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donatie is gelukt, maar we konden je badge-instellingen niet bijwerken"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Om je badge-instellingen op je mobiele apparaat aan te passen ga je naar Instellingen → Aan B&A doneren → Badges."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donatie nog niet voltooid"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Je donatie is mogelijk niet verwerkt. Klik op 'Aan B&A doneren' en vervolgens op 'Donatiebewijzen' om je betaalbewijzen te controleren en te bevestigen dat je donatie is verwerkt."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Probeer het opnieuw of dien een foutopsporingslog in bij ondersteuning voor hulp bij het voltooien van je donatie. Foutopsporingslogs helpen ons het probleem op te sporen en op te lossen en bevatten geen identificeerbare informatie."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Aan het verwerken…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Wordt nog verwerkt"
+    "messageformat": "Donatie wordt nog verwerkt"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Je donatie is nog in behandeling. Dit kan enkele minuten duren."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Donatie annuleren"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Bedankt voor je steun!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Je hebt een donateursbadge van B&A verdiend! Toon hem op je profiel en laat zien dat je ons steunt."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Op profiel weergeven"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Je kunt dit op je mobiele apparaat aanpassen onder Instellingen → Aan B&A doneren → Badges"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Deze versie bevat een aantal kleine foutoplossingen waardoor B&A voor nog meer mensen goed werkt.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Kleine aanpassingen, bugfixes en prestatieverbeteringen. Bedankt dat je B&A gebruikt!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "We hebben de ervaring met gelezen/ongelezen berichten tijdens het multitasken verbeterd en een fout opgelost die de afbeelding soms ten onrechte opende als je op de spatiebalk drukte tijdens het zoeken naar de perfecte emoji-reactie."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "We hebben een fout opgelost die kon optreden wanneer je in het emoji-zoekvak op de escape-toets drukte."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Deze update lost een paar kleine fouten op, waaronder een fout waarbij emoji-reacties in sommige gevallen niet correct werden gegroepeerd."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Deze update introduceert nieuwe prestatie-optimalisaties om de levensduur van de batterij te verbeteren."
   }
 }

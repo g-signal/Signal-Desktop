@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Poistetaanko keskustelu?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Tämän keskustelun viestit poistetaan tästä laitteesta."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Kaikki tämän keskustelun viestit poistetaan kaikista laitteistasi."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Valitse keskustelut, joiden haluat näkyvän kansiossa"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Kahdenväliset keskustelut"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Ryhmäkeskustelut"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Lisää keskusteluja"
@@ -1869,7 +1872,7 @@
     "messageformat": "Käyttämäsi versio B&A Desktopista on vanhentunut. Voit lähettää ja vastaanottaa viestejä päivittämällä uusimpaan versioon."
   },
   "icu:upgrade": {
-    "messageformat": "Siirry lataussivulle ba-chat.com/download napsauttamalla"
+    "messageformat": "Siirry lataussivulle baxs.com/download napsauttamalla"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediaviesti"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Lataus epäonnistui"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Liitteen lataus varmuuskopiosta epäonnistui"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Muokkauksia voidaan tehdä vain 24 tunnin kuluessa tämän viestin lähettämisestä."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Kerran katsottava video"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Tämä viesti poistettiin."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Yritä uudelleen tai ota yhteyttä tukeen."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Tapahtui odottamaton virhe"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Lähetä virheenkorjausloki"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Ei kiitos"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Selvä"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} jäsen} other {{number,number} jäsentä}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Jaettu media"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Näytä kaikki"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Media, linkit ja tiedostot"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} jäsen} other {{number,number} jäsentä}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Ylläpitäjän on hyväksyttävä ryhmälinkin kautta liittyvät uudet jäsenet."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopioi B&A.group-linkki leikepöydälle"
+    "messageformat": "Kopioi signal.group-linkki leikepöydälle"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Pyynnöt ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Esimerkiksi :-) muunnetaan muotoon <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Pidä mykistetyt keskustelut arkistoituina"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Arkistoidut mykistetyt keskustelut pysyvät arkistoituina, kun uusi viesti saapuu."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Lisäasetukset"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Estetty"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A-varmuuskopiot"
+    "messageformat": "B&A Secure -varmuuskopiointi"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automaattiset varmuuskopiot B&Ain turvallisella, päästä päähän salatulla tallennuspalvelulla. Aloita puhelimellasi. <learnMoreLink>Lue lisää</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Tekstin + kaiken median varmuuskopio"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Tilaustasi ei löydy. Uusi jatkaaksesi B&A-varmuuskopioinnin käyttöä."
+    "messageformat": "Tilaustasi ei löydy. Uusi jatkaaksesi B&A Secure -varmuuskopioinnin käyttöä."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Teksti + mediasisältö {mediaDayCount,number} päivän ajalta} other {Teksti + mediasisältö {mediaDayCount,number} päivän ajalta}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Tilaus on peruttu"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Voit hallita tai peruuttaa B&A-varmuuskopioinnin tilauksen puhelimellasi."
+    "messageformat": "B&A Secure -varmuuskopioinnin tilausta voi hallinnoida tai sen voi peruuttaa puhelimella."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Voit hallita tai päivittää B&A-varmuuskopioinnin tilauksen puhelimellasi."
+    "messageformat": "B&A Secure -varmuuskopiointia voi hallinnoida tai päivittää puhelimella."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Voit hallita tai uusia B&A-varmuuskopioinnin tilauksen puhelimellasi."
+    "messageformat": "B&A Secure -varmuuskopioinnin tilausta voi hallinnoida tai sen voi uusia puhelimella."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Viimeisin varmuuskopio"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Antamani tuki"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount}, kertaluonteinen"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Käsitellään lahjoitusta..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Lahjoita {formattedCurrencyAmount}"
   },
@@ -6648,8 +6675,14 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A ei kerää tai tallenna mitään henkilötietoja, kun teet lahjoituksen.</paragraph><paragraph>Käytämme Stripea maksujen käsittelijänä lahjoitusten vastaanottamiseksi. Emme käytä, säilytä tai tallenna mitään heille antamistasi tiedoista.</paragraph><paragraph>B&A ei yhdistä eikä voi yhdistää lahjoitustasi B&A-tiliisi.</paragraph><paragraph>Kiitos tuestasi!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Kuitit"
+  },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Näytä kuitin tiedot"
   },
   "icu:PreferencesDonations__faqs": {
     "messageformat": "Usein kysyttyä lahjoituksista"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Voimassaolopäivä"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "KK/VV"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Lahjoita B&Aille {formattedCurrencyAmount}"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Hanki B&A Boost -merkki 30 päiväksi"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Lahjoituksen minimisumma on {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Lahjoituksen minimisumma on {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Lahjoituksen maksimisumma on {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Jos poistut tältä sivulta, luottokorttitietosi poistetaan. Haluatko jatkaa?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Poista tiedot"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Jatka"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Lahjoituskuitti"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Kiitos B&Ain tukemisesta. Lahjoituksesi auttaa edistämään tavoitettamme suojata sananvapautta ja mahdollistaa turvallinen maailmanlaajuinen viestintä miljoonille käyttäjille ympäri maailmaa avoimen lähdekoodin tietosuojateknologialla. Jos asut Yhdysvalloissa, säilytä tämä kuitti verotusta varten. B&A Technology Foundation on verovapaa voittoa tavoittelematon organisaatio Yhdysvaltojen Internal Revenue Code -pykälän 501c3 mukaisesti. Liittovaltion verotunnuksemme on 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Olet offline-tilassa. Yhdistä internetiin lahjoituksen tekemiseksi."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Lahjoitus peruttu"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Sinulla on käynnissä lahjoitus, joka edellyttää vahvistamista."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Lahjoitus onnistui, mutta merkin asetusten päivitys ei onnistunut."
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Lahjoitus onnistui, mutta merkin asetusten päivitys ei onnistunut."
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Päivitä merkkien asetukset mobiililaitteellasi valitsemalla Asetukset → Lahjoita B&Aille → Merkit."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Lahjoitus keskeytetty"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Lahjoitusta ei ehkä ole käsitelty. Tarkista kuitti napsauttamalla Lahjoita B&Aille ja sitten Lahjoituskuitit."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Yritä uudelleen tai lähetä vianetsintäloki tukeen, jotta saat apua lahjoituksesi loppuun saattamiseen. Vianetsintälokit auttavat meitä diagnosoimaan ja korjaamaan ongelman, eivätkä ne sisällä tunnistetietoja."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Käsitellään lahjoitusta..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Käsitellään edelleen"
+    "messageformat": "Lahjoituksen käsittely on edelleen käynnissä"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Lahjoitusta käsitellään vielä. Tämä saattaa kestää muutaman minuutin."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Peruuta lahjoitus"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Kiitos tuestasi!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Olet ansainnut lahjoittajamerkin B&Ailta! Näytä se profiilissasi osoittaaksesi, että tuet B&Aia."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Näytä profiilissa"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Voit säätää tätä mobiililaitteellasi kohdassa Asetukset → Lahjoita B&Aille → Merkit"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Tämä versio sisältää useita pieniä parannuksia ja virhekorjauksia, jotka pitävät B&Ain toiminnan sujuvana.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Pieniä säätöjä, virheenkorjauksia ja suorituskykyparannuksia. Kiitos, että käytät B&Aia!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Paransimme viestien luettu/lukematon-tilan käyttökokemusta moniajon aikana."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Korjasimme virheen emoji-hakukentässä."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Muutamia pieniä virheenkorjauksia."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Tämä päivitys tuo mukanaan uusia suorituskyvyn optimointeja akun keston parantamiseksi."
   }
 }

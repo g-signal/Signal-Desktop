@@ -79,6 +79,7 @@ export enum ToastType {
   TooManyMessagesToForward = 'TooManyMessagesToForward',
   TransportError = 'TransportError',
   UnableToLoadAttachment = 'UnableToLoadAttachment',
+  UnableToDownloadFromBackupTier = 'UnableToDownloadFromBackupTier',
   UnsupportedMultiAttachment = 'UnsupportedMultiAttachment',
   UnsupportedOS = 'UnsupportedOS',
   UserAddedToGroup = 'UserAddedToGroup',
@@ -195,6 +196,7 @@ export type AnyToast =
     }
   | { toastType: ToastType.TooManyMessagesToForward }
   | { toastType: ToastType.TransportError }
+  | { toastType: ToastType.UnableToDownloadFromBackupTier }
   | { toastType: ToastType.UnableToLoadAttachment }
   | { toastType: ToastType.UnsupportedMultiAttachment }
   | { toastType: ToastType.UnsupportedOS }

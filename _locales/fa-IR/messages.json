@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "گفتگو پاک شود؟"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "همۀ پیام‌های این گفتگو از این دستگاه حذف خواهد شد."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "همه پیام‌های این گفتگو از همه دستگاه‌های شما حذف خواهد شد."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "گفتگوهایی را که می‌خواهید در این پوشه باشند انتخاب کنید"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "گفتگوهای فرد به فرد"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "گفتگوهای گروهی"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "افزودن گفتگوها"
@@ -1869,7 +1872,7 @@
     "messageformat": "این نسخه‌ی سیگنال قدیمی است. برای ارسال پیام لطفا آن را به آخرین نسخه ارتقاء دهید."
   },
   "icu:upgrade": {
-    "messageformat": "برای رفتن به ba-chat.com/download کلیک کنید"
+    "messageformat": "برای رفتن به baxs.com/download کلیک کنید"
   },
   "icu:mediaMessage": {
     "messageformat": "پیام رسانه ای"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "دانلود انجام نشد"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "بارگیری پیوست از نسخه پشتیبان ناموفق بود"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "ویرایش‌ها فقط تا ۲۴ ساعت بعد از ارسال این پیام قابل اعمال هستند."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "ویدئو یکبار مصرف"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "گیف"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "این پیام پاک شد."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "لطفاً دوباره تلاش کنید یا با پشتیبانی تماس بگیرید."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "یک خطای غیرمنتظره رخ داد"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "ارسال گزارش عیب‌یابی"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "نه ممنون"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "خوب"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} عضو} other {{number,number} عضو}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "رسانه‌های اشتراک‌گذاری شده"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "مشاهدهٔ همه"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "رسانه، پیوندها، و فایل‌ها"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} عضو} other {{number,number} عضو}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "نیاز به یک مدیر برای تأیید اعضای جدیدی که از طریق پیوند گروه می‌پیوندند"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "لینک B&A.group را در کلیپ‌بورد کپی کنید"
+    "messageformat": "لینک signal.group را در کلیپ‌بورد کپی کنید"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "درخواست‌ها ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "مثلاً :-) به <emojify>🙂</emojify> تبدیل خواهد شد"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "نگه داشتن گفتگوهای بی‌صدا در بایگانی"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "گفتگوهای بی‌صدایی که بایگانی می‌شوند، پس از دریافت پیام جدید همچنان در بایگانی خواهند ماند."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "پیشرفته"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "مسدودشده"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "پشتیبان‌های سیگنال"
+    "messageformat": "پشتیبان‌های امن سیگنال"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "پشتیبان‌گیری خودکار با سرویس ذخیره‌سازی سرتاسر رمزگذاری‌شده و امن سیگنال. از تلفن خود شروع کنید. <learnMoreLink>اطلاعات بیشتر</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "پشتیبان‌گیری متن + تمام رسانه‌ها"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "اشتراک شما یافت نشد. برای ادامه استفاده از «پشتیبان‌های سیگنال»، تمدید کنید."
+    "messageformat": "اشتراک شما یافت نشد. برای ادامه استفاده از «پشتیبان‌گیری امن سیگنال»، تمدید کنید."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {پشتیبان‌گیری متن + رسانه {mediaDayCount,number} روز گذشته} other {پشتیبان‌گیری متن + رسانه {mediaDayCount,number} روز گذشته}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "اشتراک لغو شد"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "می‌توانید اشتراک «پشتیبان‌های سیگنال» خود را در تلفنتان مدیریت یا لغو کنید."
+    "messageformat": "می‌توانید اشتراک «پشتیبان‌گیری امن سیگنال» خود را در تلفنتان مدیریت یا لغو کنید."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "می‌توانید «پشتیبان‌های سیگنال» را در تلفن خود مدیریت کنید یا ارتقا دهید."
+    "messageformat": "می‌توانید «پشتیبان‌گیری امن سیگنال» را در تلفنتان مدیریت کنید یا ارتقا دهید."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "می‌توانید اشتراک پشتیبان‌های سیگنال خود را در تلفنتان مدیریت یا تمدید کنید."
+    "messageformat": "می‌توانید اشتراک «پشتیبان‌گیری امن سیگنال» خود را در تلفنتان مدیریت یا تمدید کنید."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "آخرین پشتیبان‌گیری"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "پشتیبانی من"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} یک‌باره"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "در حال پردازش اهدای مالی..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "اهدای مالی {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>سیگنال هیچ‌گونه اطلاعات شخصی شما را هنگام اهدای کمک مالی جمع آوری یا ذخیره نمی‌کند.</paragraph><paragraph>ما برای دریافت کمک‌های مالی شما از Stripe به‌عنوان پردازش‌گر پرداخت خود استفاده می‌کنیم. به هیچ‌گونه اطلاعاتی که در اختیار آن‌ها قرار می‌دهید دسترسی نداریم، آن‌ها را نگه نمی‌داریم یا ذخیره نمی‌کنیم.</paragraph><paragraph>سیگنال کمک مالی‌تان را به حساب سیگنال شما متصل نمی‌کند و امکان انجام این کار را هم ندارد.</paragraph><paragraph>سپاس از حمایت شما!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "باشه"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "رسیدها"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "مشاهده جزئیات رسید"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "پرسش‌های متداول درباره کمک مالی"
+    "messageformat": "پرسش‌های متداول حامیان"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "رسیدها بین دستگاه‌ها همگام‌سازی نمی‌شوند. اگر سیگنال را دوباره نصب کرده باشید، رسید کمک‌های مالی قبلی در دسترس نخواهد بود."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "تاریخ انقضا"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "سال/ماه"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "{formattedCurrencyAmount} به سیگنال اهدا کنید"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "نشان ارتقاء سیگنال را به مدت ۳۰ روز دریافت کنید"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "حداقل مبلغ اهدای مالی: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "حداقل مبلغی که می‌توانید اهدا کنید {formattedCurrencyAmount} است"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "حداکثر مبلغ اهدای مالی: {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "ترک کردن این صفحه موجب حذف اطلاعات کارت اعتباری‌تان خواهد شد. ادامه می‌دهید؟"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "حذف اطلاعات"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "ادامه"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "رسید کمک مالی"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "قدردان حمایتتان از سیگنال هستیم. مشارکت شما به پیشبرد ماموریت حفاظت از آزادی بیان و ایجاد امکان ارتباط جهانی امن برای میلیون‌ها نفر در سراسر جهان، از طریق فناوری متن‌باز حفظ حریم خصوصی، کمک می‌کند. اگر ساکن ایالات متحده هستید، لطفاً این رسید را در سوابق مالیاتی خود نگه دارید. بنیاد فناوری سیگنال یک سازمان غیرانتفاعی معاف از مالیات در ایالات متحده است که طبق بخش ۵۰۱c۳ قانون درآمد داخلی فعالیت می‌کند. شناسه مالیاتی ما ۴۵۰۶۸۴۰-۸۲ است."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "شما آفلاین هستید. لطفاً برای تکمیل اهدای مالی، به اینترنت متصل شوید."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "کمک مالی لغو شد"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "شما یک کمک مالی در حال انجام دارید که نیاز به تأیید دارد."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "اهدای مالی باموفقیت انجام شد، اما نتوانستیم تنظیمات نشان شما را به‌روزرسانی کنیم"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "اهدای مالی باموفقیت انجام شد، اما نتوانستیم تنظیمات نشان شما را به‌روزرسانی کنیم"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "برای به‌روزرسانی تنظیمات نشان خود در دستگاه تلفن همراهتان، به «تنظیمات > اهدای کمک مالی به سیگنال > نشان‌ها» بروید."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "اختلال در کمک مالی"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ممکن است اهدای مالی شما پردازش نشده باشد. برای بررسی رسیدهای خود و تأیید، روی «اهدای کمک مالی به سیگنال» و سپس «رسید اهدا» کلیک کنید."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "دوباره امتحان کنید یا برای کمک در تکمیل اهدای مالی‌تان، گزارش اشکال‌زدایی را به بخش «پشتیبانی» ارائه دهید. گزارش‌های اشکال‌زدایی به ما کمک می‌کنند که مشکل را شناسایی و رفع کنیم و حاوی اطلاعاتی که منجر به شناسایی افراد شود نیست."
+  },
   "icu:Donations__Processing": {
     "messageformat": "در حال پردازش اهدای مالی..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "هنوز در حال پردازش"
+    "messageformat": "همچنان در حال پردازش اهدای مالی هستیم"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "اهدای مالی شما هنوز در حال پردازش است. ممکن است چند دقیقه زمان ببرد."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "لغو کمک مالی"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "از حمایت شما سپاسگزاریم!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "شما یک نشان اهداکننده از سیگنال به‌دست آورده‌اید! برای نشان دادن حمایت خود، آن را در نمایه خود نمایش دهید."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "نمایش روی پروفایل"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "می‌توانید این را در دستگاه تلفن همراهتان در «تنظیمات ← اهدای کمک مالی به سیگنال ← نشان‌ها» تنظیم کنید."
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "این نسخه شامل شماری از بهینه سازی های کوچک و رفع عیب برای تداوم اجرای راحت سیگنال می باشد",
@@ -6844,13 +6925,7 @@
     "messageformat": "تغییرات کوچک، رفع اشکالات و بهبود عملکرد. بابت استفاده از سیگنال سپاسگزاریم!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "ما تجربه خواندن/نخواندن پیام در حین انجام چند کار همزمان را بهبود بخشیده‌ایم."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "اشکالی که در کادر جستجوی ایموجی وجود داشت را برطرف کردیم."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "چند اشکال جزئی رفع شد."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "در این نسخه جدید، بهینه‌سازی‌های جدیدی در عملکرد اعمال کردیم تا عمر باتری را بهتر کند."
   }
 }

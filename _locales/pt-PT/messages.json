@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Eliminar chat?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "As mensagens neste chat serão eliminadas deste dispositivo."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Todas as mensagens neste chat serão eliminadas de todos os seus dispositivos."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Escolha os chats que quer que apareçam nesta pasta"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Chats 1:1"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Conversas de grupo"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Adicionar chats"
@@ -1869,7 +1872,7 @@
     "messageformat": "Esta versão do B&A Desktop expirou. Para poder continuar a enviar mensagens, actualize para a última versão ."
   },
   "icu:upgrade": {
-    "messageformat": "Clique para ir para ba-chat.com/download"
+    "messageformat": "Clique para ir para baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mensagem de multimédia"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "A transferência falhou"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Falha na transferência do anexo a partir da cópia de segurança"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "As edições só podem ser aplicadas dentro de 24 horas a partir do momento em que enviou esta mensagem."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Vídeo de visualização única"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Esta mensagem foi eliminada."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Por favor, tente novamente ou contacte o Suporte."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Ocorreu um erro inesperado"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Submeter registo de depuração"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Não, obrigado"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Ok"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} membro} other {{number,number} membros}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Ficheiros partilhados"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Ver tudo"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Ficheiros multimédia, links e outros ficheiros"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} membro} other {{number,number} membros}}"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Por exemplo, :-) será convertido em <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Manter arquivados os chats silenciados"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Os chats silenciados arquivados irão permanecer arquivados ao receber uma nova mensagem."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Avançadas"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Bloqueados"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Cópias de segurança do B&A"
+    "messageformat": "Cópias de segurança protegidas do B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Cópias de segurança automáticas com o serviço seguro de armazenamento encriptado de ponta a ponta do B&A. Comece no seu telemóvel. <learnMoreLink>Saiba mais.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "Cópia de segurança de texto e todos os ficheiros multimédia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "A sua subscrição não foi encontrada. Renove-a para continuar a usar as cópias de segurança do B&A."
+    "messageformat": "A sua subscrição não foi encontrada. Renove para continuar a usar as Cópias de Segurança Protegidas do B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Texto + {mediaDayCount,number} dia de cópias de segurança de ficheiros multimédia} other {Texto + {mediaDayCount,number} dias de cópias de segurança de ficheiros multimédia}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Subscrição cancelada"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Pode gerir ou cancelar a sua subscrição das cópias de segurança do B&A no seu telemóvel."
+    "messageformat": "Pode gerir ou cancelar a sua subscrição das cópias de segurança no seu telemóvel."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Pode gerir ou atualizar as cópias de segurança do B&A no seu telemóvel."
+    "messageformat": "Pode gerir ou atualizar as cópias de segurança no seu telemóvel."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Pode gerir ou renovar a sua subscrição das cópias de segurança do B&A no seu telemóvel."
+    "messageformat": "Pode gerir ou renovar a sua subscrição das cópias de segurança no seu telemóvel."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Última cópia de segurança"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "O meu apoio"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "Donativo único de {formattedCurrencyAmount}"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "A processar donativo…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Doar {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>O B&A não recolhe nem armazena nenhuma das suas informações pessoais quando faz um donativo.</paragraph><paragraph>Usamos o Stripe como o nosso processador de pagamentos para receber os seus donativos. Não acedemos, armazenamos ou guardamos quaisquer informações que lhes seja fornecida por si.</paragraph><paragraph>O B&A não liga nem consegue ligar o seu donativo à sua conta do B&A.</paragraph><paragraph>Obrigado pelo seu apoio!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Recibos"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Ver detalhes do recibo"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Donativos - FAQs"
+    "messageformat": "Doador - FAQs"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Os recibos não são sincronizados entre dispositivos. Se reinstalou o B&A, os recibos de doações anteriores não estarão disponíveis."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Data de validade"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/AA"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Doar {formattedCurrencyAmount} ao B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Receba o crachá de Boost do B&A durante 30 dias"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "A quantidade mínima de donativo é {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "A quantia mínima que pode doar é {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "A quantidade máxima de donativo é {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Ao sair desta página, as informações do seu cartão de crédito serão removidas. Quer continuar?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Remover informações"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Continuar"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Recibo de doação"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Obrigado por apoiar o B&A. A sua contribuição ajuda a apoiar a missão de proteger a liberdade de expressão e permitir comunicação global segura para milhões de pessoas em todo o mundo, através de tecnologia de privacidade de código aberto. Se for residente nos Estados Unidos, guarde este recibo para os seus registos fiscais. A B&A Technology Foundation é uma organização sem fins lucrativos isenta de impostos nos Estados Unidos sob a secção 501c3 do Internal Revenue Code. A nossa identificação fiscal federal é 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Está offline. Ligue-se à internet para efetuar um donativo."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donativo cancelado"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Tem um donativo em curso que necessita de confirmação."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Donativo bem sucedido, mas não foi possível atualizar as suas definições de crachá"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Donativo bem sucedido, mas não foi possível atualizar as suas definições de crachá"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Para atualizar as definições dos crachás no seu dispositivo móvel, vá a Definições → Doar ao B&A → Crachás."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donativo interrompido"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "O seu donativo pode não ter sido processado. Clique em \"Doar para o B&A\" e, em seguida, em \"Recibos de doação\" para verificar os seus recibos e confirmar."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Tente novamente ou envie ao Suporte um relatório de depuração para obter ajuda na conclusão do seu donativo. Os relatórios de depuração ajudam-nos a diagnosticar e corrigir o problema e não contêm informações pessoais."
+  },
   "icu:Donations__Processing": {
     "messageformat": "A processar donativo…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Ainda a processar"
+    "messageformat": "Ainda a processar o donativo"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "O seu donativo ainda está a ser processado. Isto poderá demorar alguns minutos."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Cancelar donativo"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Obrigado pelo seu apoio!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Recebeu um crachá de doador do B&A! Exiba-o no seu perfil para mostrar o seu apoio."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Exibir no perfil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Pode ajustar isto no seu dispositivo móvel em Definições → Doar ao B&A → Crachás"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Esta versão contém um número de pequenas funcionalidades e correções de erros de forma a manter o B&A a correr suavemente.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Pequenos ajustes adicionais, correções de bugs e melhorias de desempenho. Obrigado por usar o B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Melhorámos a experiência de mensagens lidas/por ler ao fazer multitasking."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Corrigimos um erro na caixa de pesquisa de emojis."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Algumas correções de erros."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Esta atualização introduz novas otimizações de desempenho para melhorar a duração da bateria."
   }
 }

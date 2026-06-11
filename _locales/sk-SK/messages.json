@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Vymazať čet?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Všetky správy v tomto čete budú vymazané z tohto zariadenia."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Všetky správy v tomto čete budú vymazané zo všetkých vašich zariadení."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Vyberte čety, ktoré sa majú zobrazovať v tomto priečinku"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Čety 1:1"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Skupinové čety"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Pridať čety"
@@ -1869,7 +1872,7 @@
     "messageformat": "Táto verzia aplikácie B&A Desktop je zastaralá. Pre pokračovanie ju prosím aktualizujte na najnovšiu verziu."
   },
   "icu:upgrade": {
-    "messageformat": "Kliknutím prejdete na stránku ba-chat.com/download"
+    "messageformat": "Kliknutím prejdete na stránku baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Multimediálna správa"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Sťahovanie zlyhalo"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Stiahnutie prílohy zo zálohy zlyhalo"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Úpravy je možné vykonať len do 24 hodín od odoslania tejto správy."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Video na jedno zobrazenie"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Táto správa bola odstránená."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Prosím, skúste znovu alebo kontaktujte podporu."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Vyskytla sa neočakávaná chyba"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Odoslať ladiaci záznam"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Nie, ďakujem"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "OK"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} člen} few {{number,number} členovia} many {{number,number} člena} other {{number,number} členov}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Zdieľané médiá"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Pozrieť všetky"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Médiá, odkazy a súbory"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} člen} few {{number,number} členovia} many {{number,number} člena} other {{number,number} členov}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Vyžadujte od správcu, aby schválil pripojenie nových členov cez odkaz na skupinu"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Skopírovať odkaz B&A.group do schránky"
+    "messageformat": "Skopírovať odkaz signal.group do schránky"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Žiadosti ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Napríklad :-) sa zmení na <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Ponechať stlmené čety archivované"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Stlmené čety, ktoré sú archivované, zostanú archivované, keď príde nová správa."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Pokročilé"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Blokované"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Zálohy B&A"
+    "messageformat": "Bezpečné Zálohy B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Automatické zálohovanie pomocou zabezpečeného úložiska B&A chráneného end-to-end šifrovaním. Začnite na svojom telefóne. <learnMoreLink>Zistiť viac</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Zálohovanie všetkých správ a médií"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Predplatné sa nenašlo. Obnovte ho, aby ste mohli Zálohy B&A používať aj naďalej."
+    "messageformat": "Predplatné sa nenašlo. Obnovte ho, aby ste mohli bezpečné Zálohy B&A používať aj naďalej."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Zálohovanie všetkých správ + médiá za posledný{mediaDayCount,number} deň} few {Zálohovanie všetkých správ + médiá za posledné {mediaDayCount,number} dni} many {Zálohovanie všetkých správ + médiá za posledných {mediaDayCount,number} dní} other {Zálohovanie všetkých správ + médiá za posledných {mediaDayCount,number} dní}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Predplatné bolo zrušené"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Predplatné Záloh B&A môžete spravovať alebo zrušiť vo svojom telefóne."
+    "messageformat": "Predplatné Bezpečných záloh B&A môžete spravovať alebo zrušiť vo svojom telefóne."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Zálohy B&A môžete spravovať alebo upgradovať vo svojom telefóne."
+    "messageformat": "Bezpečné zálohy B&A môžete spravovať alebo upgradovať vo svojom telefóne."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Predplatné Záloh B&A môžete spravovať alebo obnoviť vo svojom telefóne."
+    "messageformat": "Predplatné Bezpečných záloh B&A môžete spravovať alebo obnoviť vo svojom telefóne."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Posledná záloha"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Moja podpora"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} jednorazovo"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Spracováva sa príspevok…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Prispieť {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>Počas vášho prispievania na B&A nezhromažďujeme ani neukladáme žiadne vaše osobné údaje.</paragraph><paragraph>Na prijímanie vašich príspevkov a spracovanie platieb používame službu Stripe. K údajom, ktoré v rámci tejto platobnej brány poskytnete, nemáme prístup ani ich neukladáme.</paragraph><paragraph>B&A si nespája a ani si nemôže spojiť váš príspevok s vaším B&A účtom.</paragraph><paragraph>Ďakujeme za vašu podporu!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "OK"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Potvrdenia"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Zobraziť podrobnosti o potvrdení"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Často kladené otázky o prispievaní"
+    "messageformat": "Často kladené otázky prispievateľov"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Potvrdenia sa nesynchronizujú medzi zariadeniami. Ak ste preinštalovali B&A, potvrdenia o predchádzajúcich príspevkoch nebudú k dispozícii."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Dátum exspirácie"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/RR"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Prispieť {formattedCurrencyAmount} na B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Získajte odznak B&A Boost na 30 dní"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Minimálna výška príspevku je {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Minimálna suma, ktorú môžete darovať, je {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Maximálna výška príspevku je {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Opustením tejto stránky sa odstránia informácie o vašej kreditnej karte. Chcete pokračovať?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Odstrániť informácie"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Pokračovať"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Potvrdenie o príspevku"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Ďakujeme, že podporujete B&A. Váš príspevok pomáha napĺňať naše poslanie chrániť slobodu prejavu a umožňovať bezpečnú globálnu komunikáciu pre milióny ľudí na celom svete prostredníctvom technológie ochrany súkromia s otvoreným zdrojovým kódom. Ak ste občanom Spojených štátov, uchovajte si toto potvrdenie pre svoju daňovú evidenciu. B&A Technology Foundation je nezisková organizácia oslobodená od platenia daní v Spojených štátoch, podľa sekcie 501c3 zákona Internal Revenue Code (IRC, zákon o vnútroštátnych výnosoch). Naše federálne daňové ID je 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Ste offline. Ak chcete odoslať príspevok, pripojte sa na internet."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Prispenie bolo zrušené"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Prebieha spracovanie príspevku, ktoré si vyžaduje potvrdenie."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Prispenie bolo úspešné, nepodarilo sa nám však aktualizovať nastavenia vášho odznaku"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Prispenie bolo úspešné, nepodarilo sa nám však aktualizovať nastavenia vášho odznaku"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Ak chcete aktualizovať nastavenia svojho odznaku na mobilnom zariadení, prejdite na Nastavenia → Prispieť na B&A → Odznaky."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Prispenie bolo prerušené"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Váš príspevok pravdepodobne nebol spracovaný. Skontrolujte svoje potvrdenia kliknutím na „Prispieť na B&A“ a potom na „Potvrdenia o prispení“."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Skúste to znova alebo odošlite ladiaci záznam podpore, ktorá vám pomôže odoslať príspevok. Ladiace záznamy nám pomáhajú určiť a odstrániť problém a neobsahujú identifikačné údaje."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Spracováva sa príspevok…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Stále sa spracováva"
+    "messageformat": "Príspevok sa stále spracováva"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Váš príspevok sa stále spracováva. Môže to trvať pár minút."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Zrušiť prispenie"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Ďakujeme za vašu podporu!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Získali ste odznak prispievateľa od B&Au! Ukážte ho vo svojom profile a dajte tak najavo svoju podporu."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Zobraziť v profile"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Túto možnosť si môžete upraviť na svojom mobilnom zariadení v časti Nastavenia → Prispieť na B&A → Odznaky"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Táto verzia obsahuje množstvo drobných vylepšení a opráv chýb, ktoré zaisťujú bezproblémový chod systému B&A.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Malé úpravy, opravy chýb a vylepšenia výkonu. Ďakujeme, že používate B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Vylepšili sme proces prečítania/neprečítania správ počas vykonávania viacerých úloh naraz."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Opravili sme chybu vo vyhľadávacom poli pre emotikony."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Táto aktualizácia opravuje niekoľko malých chýb."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Táto aktualizácia prináša novú optimalizáciu výkonu, ktorá pomáha predĺžiť výdrž batérie."
   }
 }

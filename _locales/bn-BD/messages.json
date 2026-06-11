@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "চ্যাট মুছে ফেলবেন?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "এই চ্যাটের সকল মেসেজ এই ডিভাইস থেকে মুছে ফেলা হবে।"
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "এই চ্যাটের সকল মেসেজ আপনার সকল ডিভাইস থেকে মুছে ফেলা হবে।"
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "আপনি এই ফোল্ডারে যেসব চ্যাট দেখতে চান সেগুলি বেছে নিন"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 চ্যাট"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "গ্রুপ চ্যাট"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "চ্যাট যোগ করুন"
@@ -1869,7 +1872,7 @@
     "messageformat": "B&A ডেস্কটপের এই সংস্করণটির মেয়াদ শেষ হয়ে গেছে। বার্তা আদান-প্রদান চালিয়ে যেতে দয়া করে সর্বশেষতম সংস্করণে আপগ্রেড করুন।"
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download যেতে ক্লিক করুন"
+    "messageformat": "baxs.com/download যেতে ক্লিক করুন"
   },
   "icu:mediaMessage": {
     "messageformat": "মিডিয়া বার্তা"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ডাউনলোড ব্যর্থ হয়েছে"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "ব্যাকআপ থেকে সংযুক্তি ডাউনলোড করা যায়নি"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "এই ম্যাসেজটি পাঠানোর পর শুধুমাত্র পরবর্তী 24 ঘন্টার মধ্যে এটি এডিট করা যাবে।"
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "একবার দেখার উপযোগী ভিডিও"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "এই মেসেজটি মুছে ফেলা হয়েছে।"
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "অনুগ্রহ করে আবার চেষ্টা করুন অথবা সহায়তায় যোগাযোগ করুন।"
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "একটি অপ্রত্যাশিত সমস্যা দেখা দিয়েছে"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "ডিবাগ লগ সাবমিট করুন"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "না ধন্যবাদ"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "ঠিক আছে"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} জন সদস্য} other {{number,number} জন সদস্য}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "শেয়ার করা মিডিয়া"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "সব দেখুন"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "মিডিয়া, লিংক ও ফাইল"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} জন সদস্য} other {{number,number} জন সদস্য}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "গ্রুপ লিংক ব্যবহার করে যোগদান করার জন্য অনুমোদন পেতে নতুন সদস্যদের একজন অ্যাডমিনের প্রয়োজন হয়"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group লিংকটি ক্লিপবোর্ডে কপি করুন"
+    "messageformat": "signal.group লিংকটি ক্লিপবোর্ডে কপি করুন"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "অনুরোধসমূহ ({count,number}টি)"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "উদাহরণস্বরূপ, :-) <emojify>🙂</emojify>-এ রূপান্তরিত হবে"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "মিউট করা চ্যাট আর্কাইভকৃত অবস্থায় রাখুন"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "যখন নতুন ম্যাসেজ আসবে তখন আর্কাইভ করা মিউটকৃত চ্যাট আর্কাইভ অবস্থায়ই থাকবে।"
+  },
   "icu:Preferences--advanced": {
     "messageformat": "অ্যাডভান্সড"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "ব্লক করা আছে"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A ব্যাকআপ"
+    "messageformat": "B&A নিরাপদ ব্যাকআপ"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A-এর সুরক্ষিত এন্ড-টু-এন্ড এনক্রিপ্টকৃত স্টোরেজ সার্ভিস সহ স্বয়ংক্রিয় ব্যাকআপ। আপনার ফোনে শুরু করুন। <learnMoreLink>আরো জানুন</learnMoreLink>।"
@@ -5280,7 +5301,7 @@
     "messageformat": "টেক্সট + সকল মিডিয়া ব্যাকআপ"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "আপনার সাবস্ক্রিপশন পাওয়া যায়নি। B&A ব্যাকআপ ব্যবহার চালিয়ে যেতে নবায়ন করুন।"
+    "messageformat": "আপনার সাবস্ক্রিপশন পাওয়া যায়নি। B&A নিরাপদ ব্যাকআপ ব্যবহার চালিয়ে যেতে নবায়ন করুন।"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {টেক্সট + {mediaDayCount,number} দিনের মিডিয়া ব্যাকআপ} other {টেক্সট + {mediaDayCount,number} দিনের মিডিয়া ব্যাকআপ}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "সাবস্ক্রিপশন বাতিল করা হয়েছে"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "আপনি আপনার ফোনে আপনার B&A ব্যাকআপ সাবস্ক্রিপশন নিয়ন্ত্রণ করতে বা বাতিল করতে পারেন।"
+    "messageformat": "আপনি আপনার ফোনে আপনার B&A নিরাপদ ব্যাকআপ সাবস্ক্রিপশন নিয়ন্ত্রণ করতে বা বাতিল করতে পারবেন।"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "আপনি আপনার ফোনে B&A ব্যাকআপ নিয়ন্ত্রণ করতে বা আপগ্রেড করতে পারেন।"
+    "messageformat": "আপনি আপনার ফোনে B&A নিরাপদ ব্যাকআপ নিয়ন্ত্রণ বা আপগ্রেড করতে পারবেন।"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "আপনি আপনার ফোনে আপনার B&A ব্যাকআপ সাবস্ক্রিপশন নিয়ন্ত্রণ করতে বা নবায়ন করতে পারেন।"
+    "messageformat": "আপনি আপনার ফোনে আপনার B&A নিরাপদ ব্যাকআপ সাবস্ক্রিপশন নিয়ন্ত্রণ করতে বা নবায়ন করতে পারবেন।"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "সর্বশেষ ব্যাকআপ"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "আমার সমর্থন"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} এককালীন"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "ডোনেশন প্রক্রিয়া করা হচ্ছে..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount}-কে ডোনেট করুন"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>আপনি যখন ডোনেট করেন তখন B&A আপনার কোনো ব্যক্তিগত তথ্য সংগ্রহ বা সংরক্ষণ করে না।</paragraph><paragraph>আমরা আপনার পাঠানো ডোনেশন গ্রহণ করার জন্য পেমেন্ট প্রক্রিয়াকারী মাধ্যম হিসাবে Stripe ব্যবহার করি। আপনি তাদেরকে যেসব তথ্য প্রদান করেন তা আমরা অ্যাক্সেস, সংরক্ষণ বা সেভ করি না।</paragraph><paragraph>B&A আপনার B&A অ্যাকাউন্টে আপনার ডোনেশনকে সংযুক্ত করে না এবং করতে পারে না।</paragraph><paragraph>আপনার সহায়তার জন্য ধন্যবাদ!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "ঠিক আছে"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "রিসিপ্ট"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "রিসিপ্টের বিবরণ দেখুন"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "ডোনেশন সম্পর্কিত প্রশ্নাবলী"
+    "messageformat": "ডোনার সম্পর্কিত প্রশ্নাবলী"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "রিসিপ্ট বিভিন্ন ডিভাইস জুড়ে সিঙ্ক হয় না। আপনি যদি B&A পুনরায় ইনস্টল করে থাকেন, তবে পূর্ববর্তী ডোনেশনের রিসিপ্ট পাওয়া যাবে না।"
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "মেয়াদ শেষ হওয়ার তারিখ"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/YY"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A-এ {formattedCurrencyAmount} ডোনেট করুন"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 দিনের জন্য B&A বুস্ট ব্যাজ নিন"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "ডোনেশনের সর্বনিম্ন পরিমাণ হলো {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "আপনি সর্বনিম্ন যে পরিমাণ অর্থ ডোনেট করতে পারেন তা হলো {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "ডোনেশনের সর্বোচ্চ পরিমাণ হলো {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "এই পেইজটি ছেড়ে গেলে আপনার ক্রেডিট কার্ডের তথ্য মুছে যাবে। আপনি কি এগিয়ে যেতে চান?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "তথ্য মুছে ফেলুন"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "চালিয়ে যান"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "ডোনেশন রিসিপ্ট"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A-এর পাশে থাকার জন্য আপনাকে ধন্যবাদ। আপনার অবদান ওপেন সোর্স গোপনীয়তা প্রযুক্তির মাধ্যমে বিশ্বজুড়ে লক্ষ লক্ষ মানুষের জন্য স্বাধীন মত প্রকাশের সুরক্ষা এবং বিশ্বব্যাপী নিরাপদ যোগাযোগ সক্ষম করার লক্ষ্যকে আরো এগিয়ে নিয়ে যেতে সাহায্য করবে। আপনি যদি মার্কিন যুক্তরাষ্ট্রের অধিবাসী হয়ে থাকেন, তাহলে অনুগ্রহ করে আপনার ট্যাক্স রেকর্ডের জন্য এই রিসিপ্টটি সংরক্ষণ করুন। B&A টেকনোলজি ফাউন্ডেশন হলো অভ্যন্তরীণ রাজস্ব কোডের ধারা 501c3-এর অধীনে মার্কিন যুক্তরাষ্ট্রের একটি কর-মুক্ত অলাভজনক সংস্থা। আমাদের ফেডারেল ট্যাক্স আইডি হলো 82-4506840।"
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "আপনি অফলাইনে আছেন। অনুদান সম্পন্ন করতে ইন্টারনেটের সাথে সংযোগ স্থাপন করুন।"
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "ডোনেশন বাতিল করা হয়েছে"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "আপনার একটি ডোনেশন প্রক্রিয়াধীন আছে, যার নিশ্চিতকরণ প্রয়োজন।"
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "ডোনেশন সফল হয়েছে, কিন্তু আমরা আপনার ব্যাজ সেটিংস আপডেট করতে পারিনি"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "ডোনেশন সফল হয়েছে, কিন্তু আমরা আপনার ব্যাজ সেটিংস আপডেট করতে পারিনি"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "আপনার মোবাইল ডিভাইসে ব্যাজ সেটিংস আপডেট করতে, সেটিংস → B&A-এ ডোনেট করুন → ব্যাজ-এ যান।"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "ডোনেশন ব্যাহত হয়েছে"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "সম্ভবত আপনার ডোনেশন প্রক্রিয়া করা যায়নি। আপনার রসিদগুলো পরীক্ষা করে নিশ্চিত করতে \"B&A-এ ডোনেট করুন\" এবং তারপর \"ডোনেশনের রসিদ\"-এ ক্লিক করুন।"
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "আবার চেষ্টা করুন অথবা আপনার ডোনেশন সম্পন্ন করতে সাহায্যের জন্য সহায়তা কেন্দ্রে একটি ডিবাগ লগ জমা দিন। ডিবাগ লগ আমাদের সমস্যা নির্ণয় ও সমাধান করতে সাহায্য করে এবং শনাক্তকরণের তথ্য ধারণ করে না।"
+  },
   "icu:Donations__Processing": {
     "messageformat": "ডোনেশন প্রক্রিয়া করা হচ্ছে..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "এখনও প্রক্রিয়া করা হচ্ছে"
+    "messageformat": "এখনো ডোনেশন প্রক্রিয়া করা হচ্ছে"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "আপনার ডোনেশন এখনো প্রক্রিয়া করা হচ্ছে। এই কয়েক মিনিট সময় নিতে পারে."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "ডোনেশন বাতিল করুন"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "আপনার সহযোগিতার জন্য ধন্যবাদ!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "আপনি B&A থেকে একটি ডোনার ব্যাজ অর্জন করেছেন! আপনার সমর্থন দেখাতে আপনার প্রোফাইলে এটি প্রদর্শন করুন।"
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "প্রোফাইলে প্রদর্শন করুন"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "আপনি আপনার মোবাইল ডিভাইসে সেটিংস → B&A-এ ডোনেট করুন → ব্যাজ-এ গিয়ে এটি সমন্বয় করতে পারবেন"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "সিগন্যালকে মসৃণভাবে চলমান রাখতে এই সংস্করণে অনেকগুলি ছোটখাট পরিবর্তন রয়েছে এবং বাগ সংশোধন করা হয়েছে।",
@@ -6844,13 +6925,7 @@
     "messageformat": "ছোট ছোট কিছু পরিবর্তন, বাগ সংশোধন এবং পারফর্মেন্স সমৃদ্ধ করা হয়েছে। B&A ব্যবহার করার জন্য ধন্যবাদ!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "মাল্টিটাস্কিং করার সময় মেসেজ পড়া/না পড়ার অভিজ্ঞতা আমরা উন্নত করেছি। আপনি যদি ছবিতে ক্লিক করেন, অথবা যথেষ্ট দ্রুত টাইপ করেন তবে আপনি এখনো জুম করতে পারেন।"
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "আমরা ইমোজি সার্চ বক্সে একটি বাগ সংশোধন করেছি।"
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "কিছু ছোটখাটো বাগ সংশোধন করা হয়েছে।"
+  "icu:WhatsNew__7.73": {
+    "messageformat": "এই আপডেটে ব্যাটারির আয়ু বৃদ্ধি করতে নতুন পারফরম্যান্স অপ্টিমাইজেশন প্রবর্তন করা হয়েছে।"
   }
 }

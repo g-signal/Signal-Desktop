@@ -2,7 +2,221 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import type { ThunkAction } from 'redux-thunk';
+import lodash from 'lodash';
+import { type PhoneNumber } from 'google-libphonenumber';
+
+import { clipboard, ipcRenderer } from 'electron';
+import type { ReadonlyDeep } from 'type-fest';
+import { DataReader, DataWriter } from '../../sql/Client.js';
+import type { AttachmentType } from '../../types/Attachment.js';
+import type { StateType as RootStateType } from '../reducer.js';
+import * as groups from '../../groups.js';
+import { createLogger } from '../../logging/log.js';
+import { calling } from '../../services/calling.js';
+import { getOwn } from '../../util/getOwn.js';
+import { assertDev, strictAssert } from '../../util/assert.js';
+import { drop } from '../../util/drop.js';
+import type { DurationInSeconds } from '../../util/durations/index.js';
+import * as universalExpireTimer from '../../util/universalExpireTimer.js';
+import * as Attachment from '../../types/Attachment.js';
+import type { LocalizerType } from '../../types/I18N.js';
+import { AttachmentDownloadUrgency } from '../../types/AttachmentDownload.js';
+import { isFileDangerous } from '../../util/isFileDangerous.js';
+import { getLocalAttachmentUrl } from '../../util/getLocalAttachmentUrl.js';
+import { instance as libphonenumberInstance } from '../../util/libphonenumberInstance.js';
+import type {
+  ShowSendAnywayDialogActionType,
+  ShowErrorModalActionType,
+} from './globalModals.js';
+import { SHOW_SEND_ANYWAY_DIALOG, SHOW_ERROR_MODAL } from './globalModals.js';
 import {
+  MODIFY_LIST,
+  DELETE_LIST,
+  HIDE_MY_STORIES_FROM,
+  VIEWERS_CHANGED,
+} from './storyDistributionLists.js';
+import type { StoryDistributionListsActionType } from './storyDistributionLists.js';
+import type {
+  UUIDFetchStateKeyType,
+  UUIDFetchStateType,
+} from '../../util/uuidFetchState.js';
+
+import type {
+  AvatarColorType,
+  ConversationColorType,
+  CustomColorType,
+} from '../../types/Colors.js';
+import type {
+  ConversationAttributesType,
+  DraftEditMessageType,
+  LastMessageStatus,
+  ReadonlyMessageAttributesType,
+} from '../../model-types.d.ts';
+import type {
+  DraftBodyRanges,
+  HydratedBodyRangesType,
+} from '../../types/BodyRange.js';
+import { CallMode } from '../../types/CallDisposition.js';
+import type { MediaItemType } from '../../types/MediaItem.js';
+import type { StoryDistributionIdString } from '../../types/StoryDistributionId.js';
+import { normalizeStoryDistributionId } from '../../types/StoryDistributionId.js';
+import type {
+  ServiceIdString,
+  AciString,
+  PniString,
+} from '../../types/ServiceId.js';
+import { isAciString } from '../../util/isAciString.js';
+import { MY_STORY_ID, StorySendMode } from '../../types/Stories.js';
+import * as Errors from '../../types/errors.js';
+import {
+  getGroupSizeRecommendedLimit,
+  getGroupSizeHardLimit,
+} from '../../groups/limits.js';
+import { isMessageUnread } from '../../util/isMessageUnread.js';
+import { toggleSelectedContactForGroupAddition } from '../../groups/toggleSelectedContactForGroupAddition.js';
+import type { GroupNameCollisionsWithIdsByTitle } from '../../util/groupMemberNameCollisions.js';
+import { writeProfile } from '../../services/writeProfile.js';
+import {
+  getConversationServiceIdsStoppingSend,
+  getConversationIdsStoppedForVerification,
+  getConversationSelector,
+  getMe,
+  getMessagesByConversation,
+  getPendingAvatarDownloadSelector,
+} from '../selectors/conversations.js';
+import { getIntl } from '../selectors/user.js';
+import type {
+  AvatarDataType,
+  AvatarUpdateOptionsType,
+} from '../../types/Avatar.js';
+import { getDefaultAvatars } from '../../types/Avatar.js';
+import { getAvatarData } from '../../util/getAvatarData.js';
+import { isSameAvatarData } from '../../util/isSameAvatarData.js';
+import { longRunningTaskWrapper } from '../../util/longRunningTaskWrapper.js';
+import {
+  ComposerStep,
+  ConversationVerificationState,
+  OneTimeModalState,
+  TargetedMessageSource,
+} from './conversationsEnums.js';
+import { markViewed as messageUpdaterMarkViewed } from '../../services/MessageUpdater.js';
+import type { BoundActionCreatorsMapObject } from '../../hooks/useBoundActions.js';
+import { useBoundActions } from '../../hooks/useBoundActions.js';
+
+import type { NoopActionType } from './noop.js';
+import {
+  conversationJobQueue,
+  conversationQueueJobEnum,
+} from '../../jobs/conversationJobQueue.js';
+import type { TimelineMessageLoadingState } from '../../util/timelineUtil.js';
+import {
+  isDirectConversation,
+  isGroup,
+  isGroupV2,
+  isMe,
+} from '../../util/whatTypeOfConversation.js';
+import { missingCaseError } from '../../util/missingCaseError.js';
+import { viewSyncJobQueue } from '../../jobs/viewSyncJobQueue.js';
+import { ReadStatus } from '../../messages/MessageReadStatus.js';
+import {
+  isIncoming,
+  isStory,
+  processBodyRanges,
+} from '../selectors/message.js';
+import { getActiveCall, getActiveCallState } from '../selectors/calling.js';
+import { sendDeleteForEveryoneMessage } from '../../util/sendDeleteForEveryoneMessage.js';
+import type { ShowToastActionType } from './toast.js';
+import { SHOW_TOAST } from './toast.js';
+import { ToastType } from '../../types/Toast.js';
+import { isMemberRequestingToJoin } from '../../util/groupMembershipUtils.js';
+import { removePendingMember } from '../../util/removePendingMember.js';
+import { denyPendingApprovalRequest } from '../../util/denyPendingApprovalRequest.js';
+import { SignalService as Proto } from '../../protobuf/index.js';
+import { addReportSpamJob } from '../../jobs/helpers/addReportSpamJob.js';
+import { reportSpamJobQueue } from '../../jobs/reportSpamJobQueue.js';
+import {
+  modifyGroupV2,
+  buildAddMembersChange,
+  buildPromotePendingAdminApprovalMemberChange,
+  buildUpdateAttributesChange,
+  initiateMigrationToGroupV2 as doInitiateMigrationToGroupV2,
+} from '../../groups.js';
+import { getMessageById } from '../../messages/getMessageById.js';
+import type { PanelRenderType, PanelRequestType } from '../../types/Panels.js';
+import type { ConversationQueueJobData } from '../../jobs/conversationJobQueue.js';
+import { isOlderThan } from '../../util/timestamp.js';
+import { DAY } from '../../util/durations/index.js';
+import { isNotNil } from '../../util/isNotNil.js';
+import { PanelType } from '../../types/Panels.js';
+import { startConversation } from '../../util/startConversation.js';
+import { getMessageSentTimestamp } from '../../util/getMessageSentTimestamp.js';
+import { removeLinkPreview } from '../../services/LinkPreview.js';
+import type {
+  ReplaceAttachmentsActionType,
+  ResetComposerActionType,
+  SetFocusActionType,
+  SetQuotedMessageActionType,
+} from './composer.js';
+import {
+  SET_FOCUS,
+  replaceAttachments,
+  setComposerFocus,
+  setQuoteByMessageId,
+  resetComposer,
+  saveDraftRecordingIfNeeded,
+} from './composer.js';
+import { ReceiptType } from '../../types/Receipt.js';
+import { Sound, SoundType } from '../../util/Sound.js';
+import {
+  canEditMessage,
+  isWithinMaxEdits,
+  MESSAGE_MAX_EDIT_COUNT,
+} from '../../util/canEditMessage.js';
+import type { ChangeLocationAction } from './nav.js';
+import {
+  CHANGE_LOCATION,
+  changeLocation,
+  actions as navActions,
+} from './nav.js';
+import { NavTab, ProfileEditorPage, SettingsPage } from '../../types/Nav.js';
+import { sortByMessageOrder } from '../../types/ForwardDraft.js';
+import { getAddedByForOurPendingInvitation } from '../../util/getAddedByForOurPendingInvitation.js';
+import {
+  getConversationIdForLogging,
+  getMessageIdForLogging,
+} from '../../util/idForLogging.js';
+import { singleProtoJobQueue } from '../../jobs/singleProtoJobQueue.js';
+import MessageSender from '../../textsecure/SendMessage.js';
+import { AttachmentDownloadManager } from '../../jobs/AttachmentDownloadManager.js';
+import type {
+  DeleteForMeSyncEventData,
+  AddressableMessage,
+} from '../../textsecure/messageReceiverEvents.js';
+import {
+  getConversationIdentifier,
+  getAddressableMessage,
+} from '../../util/syncIdentifiers.js';
+import { MAX_MESSAGE_COUNT } from '../../util/deleteForMe.types.js';
+import { markCallHistoryReadInConversation } from './callHistory.js';
+import type { CapabilitiesType } from '../../textsecure/WebAPI.js';
+import { actions as searchActions } from './search.js';
+import type { SearchActionType } from './search.js';
+import { getNotificationTextForMessage } from '../../util/getNotificationTextForMessage.js';
+import { doubleCheckMissingQuoteReference as doDoubleCheckMissingQuoteReference } from '../../util/doubleCheckMissingQuoteReference.js';
+import { queueAttachmentDownloads } from '../../util/queueAttachmentDownloads.js';
+import { markAttachmentAsCorrupted as doMarkAttachmentAsCorrupted } from '../../messageModifiers/AttachmentDownloads.js';
+import {
+  isSent,
+  SendActionType,
+  sendStateReducer,
+} from '../../messages/MessageSendState.js';
+import { markFailed } from '../../test-node/util/messageFailures.js';
+import { cleanupMessages } from '../../util/cleanup.js';
+import type { ConversationModel } from '../../models/conversations.js';
+import { MessageRequestResponseSource } from '../../types/MessageRequestResponseEvent.js';
+import { JobCancelReason } from '../../jobs/types.js';
+
+const {
   chunk,
   difference,
   fromPairs,
@@ -12,214 +226,9 @@ import {
   pick,
   values,
   without,
-} from 'lodash';
-import type { PhoneNumber } from 'google-libphonenumber';
-
-import { clipboard, ipcRenderer } from 'electron';
-import type { ReadonlyDeep } from 'type-fest';
-import { DataReader, DataWriter } from '../../sql/Client';
-import type { AttachmentType } from '../../types/Attachment';
+} = lodash;
 import type { GextTag } from '../../types/GextTag';
 import type { GextRobot } from '../../types/GextRobot';
-import type { StateType as RootStateType } from '../reducer';
-import * as groups from '../../groups';
-import { createLogger } from '../../logging/log';
-import { calling } from '../../services/calling';
-import { getOwn } from '../../util/getOwn';
-import { assertDev, strictAssert } from '../../util/assert';
-import { drop } from '../../util/drop';
-import type { DurationInSeconds } from '../../util/durations';
-import * as universalExpireTimer from '../../util/universalExpireTimer';
-import * as Attachment from '../../types/Attachment';
-import type { LocalizerType } from '../../types/I18N';
-import { AttachmentDownloadUrgency } from '../../types/AttachmentDownload';
-import { isFileDangerous } from '../../util/isFileDangerous';
-import { getLocalAttachmentUrl } from '../../util/getLocalAttachmentUrl';
-import { instance as libphonenumberInstance } from '../../util/libphonenumberInstance';
-import type {
-  ShowSendAnywayDialogActionType,
-  ShowErrorModalActionType,
-} from './globalModals';
-import { SHOW_SEND_ANYWAY_DIALOG, SHOW_ERROR_MODAL } from './globalModals';
-import {
-  MODIFY_LIST,
-  DELETE_LIST,
-  HIDE_MY_STORIES_FROM,
-  VIEWERS_CHANGED,
-} from './storyDistributionLists';
-import type { StoryDistributionListsActionType } from './storyDistributionLists';
-import type {
-  UUIDFetchStateKeyType,
-  UUIDFetchStateType,
-} from '../../util/uuidFetchState';
-
-import type {
-  AvatarColorType,
-  ConversationColorType,
-  CustomColorType,
-} from '../../types/Colors';
-import type {
-  ConversationAttributesType,
-  DraftEditMessageType,
-  LastMessageStatus,
-  MessageAttributesType,
-  ReadonlyMessageAttributesType,
-} from '../../model-types.d';
-import type {
-  DraftBodyRanges,
-  HydratedBodyRangesType,
-} from '../../types/BodyRange';
-import { CallMode } from '../../types/CallDisposition';
-import type { MediaItemType } from '../../types/MediaItem';
-import type { StoryDistributionIdString } from '../../types/StoryDistributionId';
-import { normalizeStoryDistributionId } from '../../types/StoryDistributionId';
-import type {
-  ServiceIdString,
-  AciString,
-  PniString,
-} from '../../types/ServiceId';
-import { isAciString } from '../../util/isAciString';
-import { MY_STORY_ID, StorySendMode } from '../../types/Stories';
-import * as Errors from '../../types/errors';
-import {
-  getGroupSizeRecommendedLimit,
-  getGroupSizeHardLimit,
-} from '../../groups/limits';
-import { isMessageUnread } from '../../util/isMessageUnread';
-import { toggleSelectedContactForGroupAddition } from '../../groups/toggleSelectedContactForGroupAddition';
-import type { GroupNameCollisionsWithIdsByTitle } from '../../util/groupMemberNameCollisions';
-import { writeProfile } from '../../services/writeProfile';
-import {
-  getConversationServiceIdsStoppingSend,
-  getConversationIdsStoppedForVerification,
-  getConversationSelector,
-  getMe,
-  getMessagesByConversation,
-  getPendingAvatarDownloadSelector,
-} from '../selectors/conversations';
-import { getIntl } from '../selectors/user';
-import type {
-  AvatarDataType,
-  AvatarUpdateOptionsType,
-} from '../../types/Avatar';
-import { getDefaultAvatars } from '../../types/Avatar';
-import { getAvatarData } from '../../util/getAvatarData';
-import { isSameAvatarData } from '../../util/isSameAvatarData';
-import { longRunningTaskWrapper } from '../../util/longRunningTaskWrapper';
-import {
-  ComposerStep,
-  ConversationVerificationState,
-  OneTimeModalState,
-  TargetedMessageSource,
-} from './conversationsEnums';
-import { markViewed as messageUpdaterMarkViewed } from '../../services/MessageUpdater';
-import type { BoundActionCreatorsMapObject } from '../../hooks/useBoundActions';
-import { useBoundActions } from '../../hooks/useBoundActions';
-
-import type { NoopActionType } from './noop';
-import {
-  conversationJobQueue,
-  conversationQueueJobEnum,
-} from '../../jobs/conversationJobQueue';
-import type { TimelineMessageLoadingState } from '../../util/timelineUtil';
-import {
-  isDirectConversation,
-  isGroup,
-  isGroupV2,
-  isMe,
-} from '../../util/whatTypeOfConversation';
-import { missingCaseError } from '../../util/missingCaseError';
-import { viewSyncJobQueue } from '../../jobs/viewSyncJobQueue';
-import { ReadStatus } from '../../messages/MessageReadStatus';
-import { isIncoming, isStory, processBodyRanges } from '../selectors/message';
-import { getActiveCall, getActiveCallState } from '../selectors/calling';
-import { sendDeleteForEveryoneMessage } from '../../util/sendDeleteForEveryoneMessage';
-import type { ShowToastActionType } from './toast';
-import { SHOW_TOAST } from './toast';
-import { ToastType } from '../../types/Toast';
-import { isMemberRequestingToJoin } from '../../util/groupMembershipUtils';
-import { removePendingMember } from '../../util/removePendingMember';
-import { denyPendingApprovalRequest } from '../../util/denyPendingApprovalRequest';
-import { SignalService as Proto } from '../../protobuf';
-import { addReportSpamJob } from '../../jobs/helpers/addReportSpamJob';
-import { reportSpamJobQueue } from '../../jobs/reportSpamJobQueue';
-import {
-  modifyGroupV2,
-  buildAddMembersChange,
-  buildPromotePendingAdminApprovalMemberChange,
-  buildUpdateAttributesChange,
-  initiateMigrationToGroupV2 as doInitiateMigrationToGroupV2,
-} from '../../groups';
-import { getMessageById } from '../../messages/getMessageById';
-import type { PanelRenderType, PanelRequestType } from '../../types/Panels';
-import type { ConversationQueueJobData } from '../../jobs/conversationJobQueue';
-import { isOlderThan } from '../../util/timestamp';
-import { DAY } from '../../util/durations';
-import { isNotNil } from '../../util/isNotNil';
-import { PanelType } from '../../types/Panels';
-import { startConversation } from '../../util/startConversation';
-import { getMessageSentTimestamp } from '../../util/getMessageSentTimestamp';
-import { removeLinkPreview } from '../../services/LinkPreview';
-import type {
-  ReplaceAttachmentsActionType,
-  ResetComposerActionType,
-  SetFocusActionType,
-  SetQuotedMessageActionType,
-} from './composer';
-import {
-  SET_FOCUS,
-  replaceAttachments,
-  setComposerFocus,
-  setQuoteByMessageId,
-  resetComposer,
-  saveDraftRecordingIfNeeded,
-} from './composer';
-import { ReceiptType } from '../../types/Receipt';
-import { Sound, SoundType } from '../../util/Sound';
-import {
-  canEditMessage,
-  isWithinMaxEdits,
-  MESSAGE_MAX_EDIT_COUNT,
-} from '../../util/canEditMessage';
-import type { ChangeLocationAction } from './nav';
-import { CHANGE_LOCATION, changeLocation, actions as navActions } from './nav';
-import { NavTab, ProfileEditorPage, SettingsPage } from '../../types/Nav';
-import { sortByMessageOrder } from '../../types/ForwardDraft';
-import { getAddedByForOurPendingInvitation } from '../../util/getAddedByForOurPendingInvitation';
-import {
-  getConversationIdForLogging,
-  getMessageIdForLogging,
-} from '../../util/idForLogging';
-import { singleProtoJobQueue } from '../../jobs/singleProtoJobQueue';
-import MessageSender from '../../textsecure/SendMessage';
-import { AttachmentDownloadManager } from '../../jobs/AttachmentDownloadManager';
-import type {
-  DeleteForMeSyncEventData,
-  AddressableMessage,
-} from '../../textsecure/messageReceiverEvents';
-import {
-  getConversationIdentifier,
-  getAddressableMessage,
-} from '../../util/syncIdentifiers';
-import { MAX_MESSAGE_COUNT } from '../../util/deleteForMe.types';
-import { markCallHistoryReadInConversation } from './callHistory';
-import type { CapabilitiesType } from '../../textsecure/WebAPI';
-import { actions as searchActions } from './search';
-import type { SearchActionType } from './search';
-import { getNotificationTextForMessage } from '../../util/getNotificationTextForMessage';
-import { doubleCheckMissingQuoteReference as doDoubleCheckMissingQuoteReference } from '../../util/doubleCheckMissingQuoteReference';
-import { queueAttachmentDownloads } from '../../util/queueAttachmentDownloads';
-import { markAttachmentAsCorrupted as doMarkAttachmentAsCorrupted } from '../../messageModifiers/AttachmentDownloads';
-import {
-  isSent,
-  SendActionType,
-  sendStateReducer,
-} from '../../messages/MessageSendState';
-import { markFailed } from '../../test-node/util/messageFailures';
-import { cleanupMessages } from '../../util/cleanup';
-import { MessageModel } from '../../models/messages';
-import type { ConversationModel } from '../../models/conversations';
-import { MessageRequestResponseSource } from '../../types/MessageRequestResponseEvent';
 
 const log = createLogger('conversations');
 
@@ -424,9 +433,12 @@ export type ConversationType = ReadonlyDeep<
   )
 >;
 export type ProfileDataType = ReadonlyDeep<
-  {
-    firstName: string;
-  } & Pick<ConversationType, 'aboutEmoji' | 'aboutText' | 'familyName'>
+  Partial<
+    Pick<
+      ConversationType,
+      'firstName' | 'badges' | 'aboutEmoji' | 'aboutText' | 'familyName'
+    >
+  >
 >;
 
 export type ConversationLookupType = ReadonlyDeep<{
@@ -1170,7 +1182,6 @@ export const actions = {
   loadNewerMessages,
   loadNewestMessages,
   loadOlderMessages,
-  loadRecentMediaItems,
   markAttachmentAsCorrupted,
   markMessageRead,
   markOpenConversationRead,
@@ -1545,12 +1556,10 @@ async function getAvatarsAndUpdateConversation(
   const nextAvatars = getNextAvatarsData(avatars, nextAvatarId);
   // We don't save buffers to the db, but we definitely want it in-memory so
   // we don't have to re-generate them.
-  //
-  // Mutating here because we don't want to trigger a model change
-  // because we're updating redux here manually ourselves. Au revoir Backbone!
-  conversation.attributes.avatars = nextAvatars.map(avatarData =>
-    omit(avatarData, ['buffer'])
-  );
+
+  conversation.set({
+    avatars: nextAvatars.map(avatarData => omit(avatarData, ['buffer'])),
+  });
   await DataWriter.updateConversation(conversation.attributes);
 
   return nextAvatars;
@@ -1845,13 +1854,6 @@ function deleteMessages({
       dispatch(scrollToMessage(conversationId, nearbyMessageId));
     }
 
-    const ourConversation =
-      window.ConversationController.getOurConversationOrThrow();
-    const capable = Boolean(ourConversation.get('capabilities')?.deleteSync);
-
-    if (!capable) {
-      return;
-    }
     if (messages.length === 0) {
       return;
     }
@@ -1933,15 +1935,12 @@ function discardEditMessage(
   conversationId: string
 ): ThunkAction<void, RootStateType, unknown, never> {
   return () => {
-    window.ConversationController.get(conversationId)?.set(
-      {
-        draftEditMessage: undefined,
-        draftBodyRanges: undefined,
-        draft: undefined,
-        quotedMessageId: undefined,
-      },
-      { unset: true }
-    );
+    window.ConversationController.get(conversationId)?.set({
+      draftEditMessage: undefined,
+      draftBodyRanges: undefined,
+      draft: undefined,
+      quotedMessageId: undefined,
+    });
   };
 }
 
@@ -2047,7 +2046,7 @@ function generateNewGroupLink(
 
 /**
  * Not an actual redux action creator, so it doesn't produce an action (or dispatch
- * itself) because updates are managed through the backbone model, which will trigger
+ * itself) because updates are managed through the model, which will trigger
  * necessary updates and refresh conversation_view.
  *
  * In practice, it's similar to an already-connected thunk action. Later on we will
@@ -2240,9 +2239,8 @@ function myProfileChanged(
         avatarUpdateOptions
       );
 
-      // writeProfile above updates the backbone model which in turn updates
-      // redux through it's on:change event listener. Once we lose Backbone
-      // we'll need to manually sync these new changes.
+      // writeProfile above updates the model which in turn updates
+      // redux through it's on:change event listener.
 
       // We just want to clear whatever error was there before:
       dispatch({
@@ -2278,7 +2276,7 @@ function removeCustomColorOnConversations(
 ): ThunkAction<void, RootStateType, unknown, CustomColorRemovedActionType> {
   return async dispatch => {
     const conversationsToUpdate: Array<ConversationAttributesType> = [];
-    window.getConversations().forEach(conversation => {
+    window.ConversationController.getAll().forEach(conversation => {
       if (conversation.get('customColorId') === colorId) {
         conversation.set({
           conversationColor: undefined,
@@ -2312,7 +2310,7 @@ function resetAllChatColors(): ThunkAction<
     // Calling this with no args unsets all the colors in the db
     await DataWriter.updateAllConversationColors();
 
-    window.getConversations().forEach(conversation => {
+    window.ConversationController.getAll().forEach(conversation => {
       conversation.set({
         conversationColor: undefined,
         customColor: undefined,
@@ -2380,9 +2378,12 @@ function cancelAttachmentDownload({
     }
 
     // A click kicks off downloads for every attachment in a message, so cancel does too
-    await AttachmentDownloadManager.cancelJobs(job => {
-      return job.messageId === messageId;
-    });
+    await AttachmentDownloadManager.cancelJobs(
+      JobCancelReason.UserInitiated,
+      job => {
+        return job.messageId === messageId;
+      }
+    );
 
     await DataWriter.removeAttachmentDownloadJobsForMessage(messageId);
 
@@ -4010,73 +4011,6 @@ function initiateMigrationToGroupV2(conversationId: string): NoopActionType {
   };
 }
 
-function loadRecentMediaItems(
-  conversationId: string,
-  limit: number
-): ThunkAction<void, RootStateType, unknown, SetRecentMediaItemsActionType> {
-  return async dispatch => {
-    const messages: Array<MessageAttributesType> =
-      await DataReader.getOlderMessagesByConversation({
-        conversationId,
-        limit,
-        requireVisualMediaAttachments: true,
-        storyId: undefined,
-        includeStoryReplies: false,
-      });
-
-    // Cache these messages in memory to ensure Lightbox can find them
-    messages.forEach(message => {
-      window.MessageCache.register(new MessageModel(message));
-    });
-
-    let index = 0;
-    const recentMediaItems = messages
-      .filter(message => message.attachments !== undefined)
-      .reduce(
-        (acc, message) => [
-          ...acc,
-          ...(message.attachments || []).map(
-            (attachment: AttachmentType): MediaItemType => {
-              const { thumbnail } = attachment;
-
-              const result = {
-                objectURL: attachment.path
-                  ? getLocalAttachmentUrl(attachment)
-                  : '',
-                thumbnailObjectUrl: thumbnail?.path
-                  ? getLocalAttachmentUrl(thumbnail)
-                  : '',
-                contentType: attachment.contentType,
-                index,
-                attachment,
-                message: {
-                  attachments: message.attachments || [],
-                  conversationId:
-                    window.ConversationController.get(message.sourceServiceId)
-                      ?.id || message.conversationId,
-                  id: message.id,
-                  receivedAt: message.received_at,
-                  receivedAtMs: Number(message.received_at_ms),
-                  sentAt: message.sent_at,
-                },
-              };
-
-              index += 1;
-
-              return result;
-            }
-          ),
-        ],
-        [] as Array<MediaItemType>
-      );
-
-    dispatch({
-      type: 'SET_RECENT_MEDIA_ITEMS',
-      payload: { id: conversationId, recentMediaItems },
-    });
-  };
-}
-
 export type SaveAttachmentActionCreatorType = ReadonlyDeep<
   (attachment: AttachmentType, timestamp?: number, index?: number) => unknown
 >;
@@ -4883,14 +4817,17 @@ function onConversationClosed(
 ): ThunkAction<void, RootStateType, unknown, ConversationUnloadedActionType> {
   return async dispatch => {
     const conversation = window.ConversationController.get(conversationId);
+    // Conversation was removed due to the merge
     if (!conversation) {
-      throw new Error('onConversationClosed: Conversation not found');
+      log.warn(
+        `onConversationClosed: Conversation ${conversationId} not found`
+      );
     }
 
-    const logId = `onConversationClosed/${conversation.idForLogging()}`;
+    const logId = `onConversationClosed/${conversation?.idForLogging() ?? conversationId}`;
     log.info(`${logId}: unloading due to ${reason}`);
 
-    if (conversation.get('draftChanged')) {
+    if (conversation?.get('draftChanged')) {
       if (conversation.hasDraft()) {
         log.info(`${logId}: new draft info needs update`);
         const now = Date.now();

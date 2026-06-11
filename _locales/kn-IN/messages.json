@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "ಚಾಟ್ ಅಳಿಸಬೇಕೆ?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "ಈ ಸಾಧನದಿಂದ ಈ ಚಾಟ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಮೆಸೇಜ್‌ಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "ಈ ಚಾಟ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಮೆಸೇಜ್‌ಗಳನ್ನು ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳಿಂದ ಅಳಿಸಲಾಗುತ್ತದೆ."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "ಈ ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ಕಾಣಿಸಲಿ ಎಂದು ನೀವು ಬಯಸುವ ಬಯಸುವ ಚಾಟ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "1:1 ಚಾಟ್ ಗಳು"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "ಗುಂಪು ಚಾಟ್‌ಗಳು"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "ಚಾಟ್ ಗಳನ್ನು ಸೇರಿಸಿ"
@@ -1869,7 +1872,7 @@
     "messageformat": "B&A ಡೆಸ್ಕ್ಟಾಪ್ ಈ ಆವೃತ್ತಿಯ ಅವಧಿ ಮುಗಿದಿದೆ. ಸಂದೇಶ ಮುಂದುವರೆಸಲು ಹೊಸ ಆವೃತ್ತಿಗೆ ಅಪ್ಗ್ರೇಡ್ ಮಾಡಿ."
   },
   "icu:upgrade": {
-    "messageformat": "ba-chat.com/download ಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
+    "messageformat": "baxs.com/download ಗೆ ಹೋಗಲು ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
   "icu:mediaMessage": {
     "messageformat": "ಮೀಡಿಯಾ ಸಂದೇಶ"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "ಬ್ಯಾಕಪ್‌ನಿಂದ ಲಗತ್ತನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡುವುದು ವಿಫಲವಾಗಿದೆ"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "ನೀವು ಈ ಮೆಸೇಜ್ ಕಳುಹಿಸಿದ 24 ಗಂಟೆಗಳ ಒಳಗೆ ಮಾತ್ರ ಎಡಿಟ್‌ಗಳು ಅನ್ವಯಿಸಬಹುದು."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "ಏಕ ವೀಕ್ಷಣೆ ವೀಡಿಯೊ"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "ಈ ಸಂದೇಶವನ್ನು ಅಳಿಸಲಾಗಿದೆ."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಬೆಂಬಲ ಸಂಪರ್ಕಿಸಿ."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "ಒಂದು ಅನಿರೀಕ್ಷಿತ ದೋಷ ಉಂಟಾಗಿದೆ"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "ಡೀಬಗ್ ಲಾಗ್ ಸಲ್ಲಿಸಿ"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "ಇಲ್ಲ, ಧನ್ಯವಾದಗಳು"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "ಸರಿ"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} ಸದಸ್ಯ} other {{number,number} ಸದಸ್ಯರು}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "ಮೀಡಿಯಾ ಹಂಚಿಕೊಳ್ಳಲಾಗಿದೆ"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "ಎಲ್ಲವನ್ನು ನೋಡಿ"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "ಮೀಡಿಯಾ, ಲಿಂಕ್‌ಗಳು ಮತ್ತು ಫೈಲ್‌ಗಳು"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} ಸದಸ್ಯ} other {{number,number} ಸದಸ್ಯರು}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "ಗುಂಪಿನ ಲಿಂಕ್ ಮೂಲಕ ಹೊಸ ಸದಸ್ಯರು ಸೇರುವುದನ್ನು ಅನುಮೋದಿಸಲು ಅಡ್ಮಿನ್ ಅಗತ್ಯವಿರುತ್ತದೆ"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "B&A.group ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಕಾಪಿ ಮಾಡಿ"
+    "messageformat": "signal.group ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಕಾಪಿ ಮಾಡಿ"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "ವಿನಂತಿಗಳು ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "ಉದಾಹರಣೆಗೆ, :-) ಅನ್ನು <emojify>🙂</emojify> ಗೆ ಪರಿವರ್ತಿಸಲಾಗುತ್ತದೆ"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "ಮ್ಯೂಟ್ ಮಾಡಿದ ಚಾಟ್‌ಗಳನ್ನು ಆರ್ಕೈವ್ ಆಗಿರಿಸಿ"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "ಹೊಸ ಮೆಸೇಜ್ ಬಂದಾಗ, ಆರ್ಕೈವ್ ಆಗಿರುವ ಮ್ಯೂಟ್ ಮಾಡಿದ ಚಾಟ್‌ಗಳು ಆರ್ಕೈವ್ ಆಗಿಯೇ ಇರುತ್ತವೆ."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "ಸುಧಾರಿತ"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A ಬ್ಯಾಕಪ್‌ಗಳು"
+    "messageformat": "B&A ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳು"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "B&A ನ ಸುರಕ್ಷಿತ ಎಂಡ್ ಟು ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ ಸಂಗ್ರಹಣೆ ಸೇವೆಯೊಂದಿಗೆ ಸ್ವಯಂಚಾಲಿತ ಬ್ಯಾಕಪ್‌ಗಳು. ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಪ್ರಾರಂಭಿಸಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "ಪಠ್ಯ + ಎಲ್ಲಾ ಮೀಡಿಯಾ ಬ್ಯಾಕಪ್"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಕಂಡುಬಂದಿಲ್ಲ. B&A ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ನವೀಕರಿಸಿ."
+    "messageformat": "ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಕಂಡುಬಂದಿಲ್ಲ. B&A ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ಬಳಸುವುದನ್ನು ಮುಂದುವರಿಸಲು ನವೀಕರಿಸಿ."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {ಪಠ್ಯ + {mediaDayCount,number} ದಿನದ ಮೀಡಿಯಾ ಬ್ಯಾಕಪ್} other {ಪಠ್ಯ + {mediaDayCount,number} ದಿನಗಳ ಮೀಡಿಯಾ ಬ್ಯಾಕಪ್}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "ಸಬ್‍ಸ್ಕ್ರಿಪ್ಷನ್ ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ B&A ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ರದ್ದುಗೊಳಿಸಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ B&A ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ರದ್ದುಗೊಳಿಸಬಹುದು."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನೀವು B&A ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ B&A ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಬಹುದು."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ B&A ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ನವೀಕರಿಸಬಹುದು."
+    "messageformat": "ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ನಿಮ್ಮ B&A ಸುರಕ್ಷಿತ ಬ್ಯಾಕಪ್‌ಗಳ ಚಂದಾದಾರಿಕೆಯನ್ನು ನೀವು ನಿರ್ವಹಿಸಬಹುದು ಅಥವಾ ನವೀಕರಿಸಬಹುದು."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "ಕೊನೆಯ ಬ್ಯಾಕಪ್"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "My Support"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} ಒಂದು-ಬಾರಿ"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "ದೇಣಿಗೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "{formattedCurrencyAmount} ಅವರಿಗೆ ದೇಣಿಗೆ ನೀಡಿ"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>ನೀವು ದೇಣಿಗೆ ನೀಡುವಾಗ B&A ನಿಮ್ಮ ಯಾವುದೇ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ಸ್ಟೋರ್ ಮಾಡುವುದಿಲ್ಲ.</paragraph><paragraph>ನಿಮ್ಮ ದೇಣಿಗೆಗಳನ್ನು ಸ್ವೀಕರಿಸಲು ನಾವು Stripe ಅನ್ನು ನಮ್ಮ ಪಾವತಿ ಪ್ರೊಸೆಸರ್ ಆಗಿ ಬಳಸುತ್ತೇವೆ. ನೀವು ಅವರಿಗೆ ಒದಗಿಸುವ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ನಾವು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡುವುದಿಲ್ಲ, ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ ಅಥವಾ ಉಳಿಸುವುದಿಲ್ಲ.</paragraph><paragraph>B&A ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ನಿಮ್ಮ B&A ಖಾತೆಗೆ ಕನೆಕ್ಟ್ ಮಾಡುವುದಿಲ್ಲ ಮತ್ತು ಕನೆಕ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ.</paragraph><paragraph>ನಿಮ್ಮ ಬೆಂಬಲಕ್ಕೆ ಧನ್ಯವಾದಗಳು!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "ಸರಿ"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "ಸ್ವೀಕೃತಿಗಳು"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "ರಸೀದಿ ವಿವರಗಳನ್ನು ವೀಕ್ಷಿಸಿ"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "ದೇಣಿಗೆಯ ಕುರಿತು FAQ ಗಳು"
+    "messageformat": "ದೇಣಿಗೆದಾರರ FAQ ಗಳು"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "ರಸೀದಿಗಳು ಸಾಧನಗಳಾದ್ಯಂತ ಸಿಂಕ್ ಆಗುವುದಿಲ್ಲ. ನೀವು B&A ಅನ್ನು ಮರು ಇನ್‍ಸ್ಟಾಲ್ ಮಾಡಿದ್ದಲ್ಲಿ, ಹಿಂದಿನ ದೇಣಿಗೆಗಳ ರಸೀದಿಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "ಮುಕ್ತಾಯ ದಿನಾಂಕ"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "ತಿತಿ/ವವ"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "B&A ಗೆ {formattedCurrencyAmount} ದೇಣಿಗೆ ನೀಡಿ"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "30 ದಿನಗಳ B&A ಬೂಸ್ಟ್ ಬ್ಯಾಡ್ಜ್ ಪಡೆಯಿರಿ"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "ಕನಿಷ್ಠ ದೇಣಿಗೆ ಮೊತ್ತ {formattedCurrencyAmount} ಆಗಿದೆ"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "ನೀವು ದೇಣಿಗೆ ನೀಡಬಹುದಾದ ಕನಿಷ್ಠ ಮೊತ್ತ {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "ಗರಿಷ್ಠ ದೇಣಿಗೆ ಮೊತ್ತ {formattedCurrencyAmount} ಆಗಿದೆ"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "ಈ ಪುಟವನ್ನು ತೊರೆಯುವುದರಿಂದ ನಿಮ್ಮ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ ಮಾಹಿತಿಯನ್ನು ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ. ನೀವು ಮುಂದುವರಿಯಲು ಬಯಸುತ್ತೀರಾ?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "ಮಾಹಿತಿಯನ್ನು ತೆಗೆದುಹಾಕಿ"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "ಮುಂದುವರಿಸಿ"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "ದೇಣಿಗೆ ರಸೀದಿ"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "B&A ಅನ್ನು ಬೆಂಬಲಿಸುತ್ತಿರುವುದಕ್ಕೆ ಧನ್ಯವಾದಗಳು. ಮುಕ್ತ ಅಭಿವ್ಯಕ್ತಿಯನ್ನು ರಕ್ಷಿಸುವ ಮತ್ತು ಓಪನ್ ಸೋರ್‍ಸ್ ಗೌಪ್ಯತೆ ತಂತ್ರಜ್ಞಾನದ ಮೂಲಕ ಪ್ರಪಂಚದಾದ್ಯಂತ ಲಕ್ಷಾಂತರ ಜನರಿಗೆ ಸುರಕ್ಷಿತ ಜಾಗತಿಕ ಸಂವಹನವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಧ್ಯೇಯವನ್ನು ಉತ್ತೇಜಿಸಲು ನಿಮ್ಮ ಕೊಡುಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ನೀವು ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್ ನಿವಾಸಿಯಾಗಿದ್ದರೆ, ನಿಮ್ಮ ತೆರಿಗೆ ದಾಖಲೆಗಳಿಗಾಗಿ ಈ ರಸೀದಿಯನ್ನು ಇಟ್ಟುಕೊಳ್ಳಿ. B&A Technology Foundation ಎಂಬುದು ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್‌ನಲ್ಲಿ ಆಂತರಿಕ ಕಂದಾಯ ಸಂಹಿತೆಯ ಸೆಕ್ಷನ್ 501c3 ಅಡಿಯಲ್ಲಿ ತೆರಿಗೆ ವಿನಾಯಿತಿ ಪಡೆದ ಲಾಭರಹಿತ ಸಂಸ್ಥೆಯಾಗಿದೆ. ನಮ್ಮ ಫೆಡರಲ್ ತೆರಿಗೆ ಐಡಿ 82-4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "ನೀವು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿದ್ದೀರಿ. ದೇಣಿಗೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಇಂಟರ್ನೆಟ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿ."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "ದೇಣಿಗೆಯನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "ನಿಮ್ಮಲ್ಲಿ ದೃಢೀಕರಣ ಅಗತ್ಯವಿರುವ ದೇಣಿಗೆ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದೆ."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "ದೇಣಿಗೆ ಯಶಸ್ವಿಯಾಗಿದೆ, ಆದರೆ ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ನಮಗೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "ದೇಣಿಗೆ ಯಶಸ್ವಿಯಾಗಿದೆ, ಆದರೆ ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ನಮಗೆ ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ ನಿಮ್ಮ ಬ್ಯಾಡ್ಜ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು, ಸೆಟ್ಟಿಂಗ್‌ಗಳು →B&A ಗೆ ದೇಣಿಗೆ ನೀಡಿ → ಬ್ಯಾಡ್ಜ್‌ಗಳು ಎಂಬಲ್ಲಿಗೆ ಹೋಗಿ."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "ದೇಣಿಗೆಗೆ ಅಡಚಣೆ ಉಂಟಾಗಿದೆ"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸದೇ ಇರಬಹುದು. ನಿಮ್ಮ ರಸೀದಿಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಮತ್ತು ದೃಢೀಕರಿಸಲು “B&A ಗೆ ದೇಣಿಗೆ ನೀಡಿ” ಎಂಬುದರ ಮೇಲೆ ಮತ್ತು ನಂತರ “ದೇಣಿಗೆ ರಸೀದಿಗಳು” ಎಂಬುದರ ಮೇಲೆ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಸಹಾಯಕ್ಕಾಗಿ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಬೆಂಬಲಕ್ಕೆ ಡೀಬಗ್ ಲಾಗ್ ಅನ್ನು ಸಲ್ಲಿಸಿ. ಡೀಬಗ್ ಲಾಗ್‌ಗಳು ಸಮಸ್ಯೆಯನ್ನು ನಿರ್ಣಯಿಸಲು ಮತ್ತು ಸರಿಪಡಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ ಮತ್ತು ಗುರುತಿಸುವ ಮಾಹಿತಿಯನ್ನು ಹೊಂದಿರುವುದಿಲ್ಲ."
+  },
   "icu:Donations__Processing": {
     "messageformat": "ದೇಣಿಗೆಯನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ..."
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "ಇನ್ನೂ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದೆ"
+    "messageformat": "ದೇಣಿಗೆಯನ್ನು ಇನ್ನೂ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "ನಿಮ್ಮ ದೇಣಿಗೆಯು ಇನ್ನೂ ಪ್ರಕ್ರಿಯೆಗೊಳ್ಳುತ್ತಿದೆ. ಇದು ಕೆಲವು ನಿಮಿಷಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "ದೇಣಿಗೆ ರದ್ದುಗೊಳಿಸಿ"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "ನಿಮ್ಮ ಬೆಂಬಲಕ್ಕೆ ಧನ್ಯವಾದಗಳು!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "ನೀವು B&A ನಿಂದ ದಾನಿ ಬ್ಯಾಡ್ಜ್ ಗಳಿಸಿದ್ದೀರಿ! ನಿಮ್ಮ ಬೆಂಬಲವನ್ನು ತೋರಿಸಲು ಅದನ್ನು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಡಿಸ್‌ಪ್ಲೇ ಮಾಡಿ."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಪ್ರದರ್ಶಿಸಿ"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‍ಗಳು → B&A ಗೆ ದೇಣಿಗೆ ನೀಡುವುದು → ಬ್ಯಾಡ್ಜ್‌ಗಳು ಎಂಬುದರ ಅಡಿಯಲ್ಲಿ ಹೊಂದಿಸಬಹುದು"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": " B&A ಅನ್ನು ಸರಾಗವಾಗಿ ಚಾಲ್ತಿಯಲ್ಲಿಡಲು ಈ ಆವೃತ್ತಿಯು ಸಾಕಷ್ಟು ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳನ್ನು ಹೊಂದಿದೆ ಮತ್ತು ಬಗ್ ಫಿಕ್ಸ್‌ಗಳನ್ನು ಹೊಂದಿದೆ.",
@@ -6844,13 +6925,7 @@
     "messageformat": "ಸಣ್ಣ ಟ್ವೀಕ್‌ಗಳು, ಬಗ್ ಫಿಕ್ಸ್‌ಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ಷಮತೆ ವರ್ಧನೆಗಳು. B&A ಬಳಸುತ್ತಿರುವುದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "ಮಲ್ಟಿಟಾಸ್ಕಿಂಗ್ ಮಾಡುವಾಗ ಮೆಸೇಜ್ ಓದಲಾಗಿದೆ/ಓದಲಾಗಿಲ್ಲದ ಅನುಭವವನ್ನು ನಾವು ಸುಧಾರಿಸಿದ್ದೇವೆ ಮತ್ತು ಸೂಕ್ತ ಎಮೋಜಿ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಹುಡುಕುತ್ತಿರುವಾಗ ಸ್ಪೇಸ್ ಬಾರ್ ಅನ್ನು ಒತ್ತಿದರೆ ವಿಸ್ತೃತ ಇಮೇಜ್ ವೀಕ್ಷಕವನ್ನು ಕೆಲವೊಮ್ಮೆ ತಪ್ಪಾಗಿ ತೆರೆಯುವ ಬಗ್ ಅನ್ನು ಸರಿಪಡಿಸಿದ್ದೇವೆ. ನೀವು ಚಿತ್ರದ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿದರೆ ಅಥವಾ ನೀವು ಸಾಕಷ್ಟು ವೇಗವಾಗಿ ಟೈಪ್ ಮಾಡಿದರೆ ನೀವು ಇನ್ನೂ ಜೂಮ್ ಮಾಡಬಹುದು."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "ಸರಿಯಾದ ಎಮೋಜಿಯನ್ನು ಕಂಡುಹಿಡಿಯುವುದು ಅನಿವಾರ್ಯ ಹೋರಾಟದಂತೆ ಭಾಸವಾಗಬಹುದು, ಆದರೆ ಎಮೋಜಿ ಸರ್ಚ್ ಬಾಕ್ಸ್‌ನಲ್ಲಿ ಎಸ್ಕೇಪ್ ಕೀಯನ್ನು ಒತ್ತಿದ ನಂತರ ದೋಷ ಉಂಟುಮಾಡಬಹುದಾದ ಬಗ್ ಅನ್ನು ನಾವು ಸರಿಪಡಿಸಿದ್ದೇವೆ."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "ಈ ಅಪ್‌ಡೇಟ್ ಕೆಲವು ಸಣ್ಣ ಬಗ್‌ಗಳನ್ನು ಸರಿಪಡಿಸುತ್ತದೆ, ಅವುಗಳಲ್ಲಿ ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ ಎಮೋಜಿ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಸರಿಯಾಗಿ ಗುಂಪು ಮಾಡದಿರುವುದು ಸೇರಿದೆ."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "ಈ ಅಪ್‌ಡೇಟ್ ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ಸುಧಾರಿಸುವುದಕ್ಕೆ ಸಹಾಯ ಮಾಡಲು ಹೊಸ ಕಾರ್ಯಕ್ಷಮತೆ ಆಪ್ಟಿಮೈಸೇಶನ್‌ಗಳನ್ನು ಪರಿಚಯಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಭಾವನಾತ್ಮಕವಾಗಿ ಉತ್ತೇಜಿತ ಸಂಭಾಷಣೆಗಳಿಗೆ ನಿಮಗೆ ಹೆಚ್ಚಿನ ಚಾರ್ಜ್ ಲಭ್ಯವಿರುತ್ತದೆ."
   }
 }

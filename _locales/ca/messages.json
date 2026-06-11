@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Vols eliminar el xat?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Tots els missatges d'aquest xat s'eliminaran del dispositiu."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Tots els missatges d'aquest xat s'eliminaran de tots els teus dispositius."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Selecciona els xats que vols que apareguin en aquesta carpeta"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Xats individuals"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Converses de grup"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Afegir xats"
@@ -1869,7 +1872,7 @@
     "messageformat": "Aquesta versió del B&A Desktop ha vençut. Actualitzeu-lo a l'última versió per a poder continuar enviant i rebent missatges."
   },
   "icu:upgrade": {
-    "messageformat": "Cliqueu per a anar a ba-chat.com/download"
+    "messageformat": "Cliqueu per a anar a baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Missatge multimèdia"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Descàrrega fallida"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "La descàrrega del fitxer adjunt de còpia de seguretat ha fallat"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Els canvis només es poden realitzar fins 24 hores després d'enviar el missatge."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Vídeo d'una sola visualització"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Aquest missatge s'ha suprimit."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Torneu-ho a provar o contacteu amb l'assistència."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Alguna cosa ha anat malament"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Envia un registre de depuració"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "No, gràcies."
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "D'acord"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} membre} other {{number,number} membres}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Contingut compartit"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Mostra-ho tot"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Arxius multimèdia, enllaços i arxius"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} membre} other {{number,number} membres}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Requereix que un administrador aprovi els membres nous que s’afegeixin per l’enllaç del grup."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copiar l'enllaç B&A.group al porta-retalls"
+    "messageformat": "Copiar l'enllaç signal.group al porta-retalls"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Sol·licituds ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Per exemple, :-) es convertirà a <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Mantenir arxivats els xats silenciats"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Els xats silenciats que estiguin arxivats romandran arxivats quan arribi un missatge nou."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Avançada"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Persones bloquejades"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Còpies de seguretat de B&A"
+    "messageformat": "Còpies de seguretat segures de B&A"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Còpies de seguretat automàtiques amb el servei d'emmagatzematge xifrat segur d'extrem a extrem de B&A. Configura-les al teu telèfon. <learnMoreLink>Més informació</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Còpia de seguretat de missatges de text + tots els arxius multimèdia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "No s'ha trobat la teva subscripció. Renova-la per continuar utilitzant les còpies de seguretat de B&A."
+    "messageformat": "No s'ha trobat la teva subscripció. Renova-la per continuar utilitzant les Còpies segures de B&A."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Còpia de seguretat de missatges de text + {mediaDayCount,number} dia de multimèdia} other {Còpia de seguretat de missatges de text + {mediaDayCount,number} dies de multimèdia}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "Subscripció cancel·lada"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Pots gestionar o cancel·lar la teva subscripció a les Còpies de seguretat de B&A des del teu telèfon."
+    "messageformat": "Pots gestionar o cancel·lar la teva subscripció a les Còpies segures de B&A des del teu telèfon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Pots gestionar o actualitzar les Còpies de seguretat de B&A des del teu telèfon."
+    "messageformat": "Pots gestionar o actualitzar les Còpies segures de B&A des del teu telèfon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Pots gestionar o renovar la teva subscripció a les Còpies de seguretat de B&A des del teu telèfon."
+    "messageformat": "Pots gestionar o renovar la teva subscripció a les Còpies segures de B&A des del teu telèfon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Darrera còpia de seguretat"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "Suport"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} (pagament únic)"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "S'està processant la donació…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Fer donació de {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A no recopila ni emmagatzema la teva informació personal quan fas una donació.</paragraph><paragraph>Utilitzem Stripe com a processador de pagaments per rebre les teves donacions. No accedim, emmagatzemem ni desem la informació que els proporciones.</paragraph><paragraph>B&A no connecta i no pot connectar la teva donació al teu compte de B&A.</paragraph><paragraph>Gràcies per comptar amb nosaltres!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "D'acord"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Rebuts"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Veure detalls del rebut"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Preguntes freqüents sobre donacions"
+    "messageformat": "Preguntes freqüents sobre donants"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Els rebuts no es sincronitzen entre dispositius. Si has tornat a instal·lar B&A, els rebuts de donacions anteriors no estaran disponibles."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Data de caducitat"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "MM/AA"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Fes una donació de {formattedCurrencyAmount} a B&A"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Aconsegueix una insígnia Boost de B&A durant 30 dies"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "L'import mínim per una donació és {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "La quantitat mínima que pots donar és de {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "L'import màxim per una donació és {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Sortir d'aquesta pàgina eliminarà la informació de la teva targeta de crèdit. Vols continuar?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Eliminar informació"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Continua"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Rebut de la donació"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Gràcies per donar suport a B&A. Amb la teva contribució, ens ajudes en la nostra missió de protegir la llibertat d'expressió i permetre una comunicació global segura per a milions de persones arreu del món gràcies a una tecnologia de codi obert centrada en la privacitat. Si vius als Estats Units, conserva aquest rebut per als teus registres fiscals. B&A Technology Foundation és una organització sense ànim de lucre exempta d'impostos als Estats Units segons la secció 501c3 del codi tributari dels Estats Units (Internal Revenue Code). El nostre número d'identificació fiscal federal és el 82–4506840."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "No tens connexió. Connecta't a Internet per completar una donació."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Donació cancel·lada"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Tens una donació en curs que necessita confirmació."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "La donació s'ha realitzat correctament, però no hem pogut actualitzar els ajustos de la teva insígnia"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "La donació s'ha realitzat correctament, però no hem pogut actualitzar els ajustos de la teva insígnia"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Per actualitzar els ajustos de la insígnia al teu dispositiu mòbil, ves a Ajustos → Fer donació a B&A → Insígnies."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donació interrompuda"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "És possible que la teva donació no s'hagi processat. Fes clic a “Donar a B&A” i després a “Rebut de donació\" per comprovar els teus rebuts i confirmar."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Torna-ho a provar o envia un registre de depuració al servei d'Assistència per obtenir ajuda per completar la teva donació. Els registres de depuració ens ajuden a diagnosticar i solucionar el problema i no contenen informació que pugui identificar-te."
+  },
   "icu:Donations__Processing": {
     "messageformat": "S'està processant la donació…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Encara en procés"
+    "messageformat": "Encara estem processant la donació"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "La teva donació encara s'està processant. Això pot trigar uns minuts."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Cancel·lar donació"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Gràcies pel vostre suport!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "Has guanyat una insígnia de donant de B&A! Mostra-la al teu perfil per mostrar el teu suport."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Mostra-ho al perfil"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Pots configurar-ho al teu dispositiu mòbil a Ajustos → Fer donació a B&A → Insígnies"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Aquesta versió conté una sèrie de petites modificacions i correccions d'errors per tal que el B&A funcioni sense problemes.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Hem millorat l'experiència de missatges llegits/no llegits mentre es fan diverses coses alhora."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Hem corregit un error al quadre de cerca d'emoji."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Unes quantes correccions d'errors menors."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Aquesta actualització introdueix noves optimitzacions de rendiment per ajudar a millorar la durada de la bateria."
   }
 }

@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "Txata ezabatu nahi duzu?"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "Txat honetako mezuak gailu honetatik ezabatuko dira."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "Txat honetako mezuak gailu guztietatik ezabatuko dira."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "Aukeratu karpeta honetan agertzea nahi duzun txatak"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "Banako txatak"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "Taldeko txatak"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "Gehitu txatak"
@@ -1869,7 +1872,7 @@
     "messageformat": "B&A Desktop bertsio hau iraungi da. Mesedez, mezuak bidaltzen jarraitzeko, eguneratu azken bertsiora."
   },
   "icu:upgrade": {
-    "messageformat": "Egin klik ba-chat.com/download helbidera joateko"
+    "messageformat": "Egin klik baxs.com/download helbidera joateko"
   },
   "icu:mediaMessage": {
     "messageformat": "Medioen Mezua"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "Ezin izan da deskargatu"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "Ezin izan da deskargatu babeskopiako eranskina"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Mezu hau bidali eta 24 orduko epean soilik aplika daitezke aldaketak."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "Behin ikusteko Argazkia"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "GIF"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "Mezu hau ezabatu egin da."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "Mesedez, saiatu berriro edo jarri zaitez harremanetan laguntza-zerbitzuarekin."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "Ustekabeko errore bat gertatu da"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "Arazketaren informazioa bidali"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "Ez eskerrik asko"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "Ados"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, one {{number,number} kide} other {{number,number} kide}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "Partekatutako multimedia-edukia"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "Ikusi denak"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "Multimedia-edukia, estekak eta fitxategiak"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, one {{number,number} kide} other {{number,number} kide}}"
@@ -4512,7 +4527,7 @@
     "messageformat": "Kideak talde esteka bidez sartzen badira taldean, derrigorrezkotzat jo administratzaile batek onartzea."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiatu B&A.group esteka arbelean"
+    "messageformat": "Kopiatu signal.group esteka arbelean"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Eskaerak ({count,number})"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "Adibidez, :-) <emojify>🙂</emojify> bihurtuko da"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "Mantendu jakinarazpenak desaktibatuta dauzkaten txatak artxibatuta"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "Jakinarazpenak desaktibatuta dauzkaten txatek artxibatuta jarraituko dute mezu berri bat iristen denean."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "Aurreratua"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "Blokeatua"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A-en babeskopiak"
+    "messageformat": "B&A-en babeskopia seguruak"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "Babeskopia automatikoak, B&A-en muturretik muturrera enkriptatutako biltegiratze-zerbitzu seguruarekin. Hasi telefonoan erabiltzen. <learnMoreLink>Lortu informazio gehiago</learnMoreLink>."
@@ -5280,7 +5301,7 @@
     "messageformat": "Testuaren eta multimedia-eduki guztien babeskopia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Ez da aurkitu zure harpidetza. Berri ezazu B&A-en babeskopiak erabiltzen jarraitzeko."
+    "messageformat": "Ez da aurkitu zure harpidetza. Berri ezazu B&A-en babeskopia seguruak erabiltzen jarraitzeko."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Testuaren eta {mediaDayCount,number} eguneko multimedia-edukiaren babeskopia} other {Testuaren eta {mediaDayCount,number} eguneko multimedia-edukiaren babeskopia}}"
@@ -6636,6 +6657,12 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "My Support"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} behin"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "Dohaintza prozesatzen…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "Eman {formattedCurrencyAmount}"
   },
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A-ek ez du zure informazio pertsonalik biltzen edo gordetzen dohaintza bat egiten duzunean.</paragraph><paragraph>Stripe erabiltzen dugu ordainketa-prozesadore gisa zure dohaintzak jasotzeko. Ez dugu ematen diezun informaziorik atzitzen edo gordetzen.</paragraph><paragraph>B&A-ek ez du zure dohaintza zure B&A kontuarekin lotzen eta ezin du lotu.</paragraph><paragraph>Eskerrik asko zure babesagatik!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "Ados"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "Ordainagiriak"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "Ikusi ordainagiriaren xehetasunak"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "Dirulaguntzei buruz maiz egiten diren galderak"
+    "messageformat": "Emaileen galderak"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "Irakurragiriak ez dira sinkronizatzen gailu artean. B&A berriro instalatu baduzu, aurreko dohaintzen ordainagiriak ez dira erabilgarri egongo."
@@ -6696,6 +6729,9 @@
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "Iraungitze-data"
   },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "HH/UU"
+  },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "Eman {formattedCurrencyAmount} B&A-i"
   },
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "Lortu B&A-en bultzada-bereizgarria 30 egunez"
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "Dohaintzaren gutxieneko zenbatekoa {formattedCurrencyAmount} da"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "Dohaintzan eman daitekeen gutxieneko zenbatekoa {formattedCurrencyAmount} da"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "Dohaintzaren gehieneko zenbatekoa {formattedCurrencyAmount} da"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "Orri honetatik irteten bazara, kreditu-txartelari buruzko informazioa kendu egingo da. Aurrera egin nahi duzu?"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "Kendu informazioa"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "Jarraitu"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "Dohaintzaren ordainagiria"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "Eskerrik asko B&A-i laguntzeagatik. Zure ekarpenarekin, kode irekiko pribatutasun-teknologiaren bidez adierazpen-askatasuna babesteko eta mundu osoko milioika pertsonarentzako komunikazio segurua ahalbidetzeko dugun misioa bultzatuko duzu. Ameriketako Estatu Batuetan bizi bazara, gorde ordainagiri hau, zerga-aitorpenetarako. B&A Technology Foundation zergak ordaintzetik salbuetsita dagoen AEBko erakunde bat da, Internal Revenue Code-ko 501c3 sekzioari jarraikiz. Gure IFZa federala 82-4506840 da."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "Lineaz kanpo zaude. Konketatu Internetera dohaintza osatzeko."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "Dohaintza bertan behera utzi da"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Berretsi beharreko dohaintza bat duzu abian."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "Egin da dohaintza, baina ezin izan ditugu eguneratu bereizgarrien ezarpenak"
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "Egin da dohaintza, baina ezin izan ditugu eguneratu bereizgarrien ezarpenak"
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "Bereizgarrien ezarpenak gailu mugikorrean eguneratzeko, joan Ezarpenak → Egin dohaintza bat B&A-i → Bereizgarriak atalera."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Dohaintza eten egin da"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "Baliteke dohaintza ez prozesatu izatea. Sakatu \"Egin dohaintza bat B&A-i\" eta \"Dohaintzen ordainagiriak\" ordainagiriak ikusteko eta berretsi."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "Saiatu berriro edo bidali arazketa-erregistro bat Laguntza-zerbitzuari, dohaintza osatzen lagun zaitzaten. Arazketa-erregistroak arazoa diagnostikatzen eta konpontzen laguntzen digu, eta ez dute identifikazio-informaziorik."
+  },
   "icu:Donations__Processing": {
     "messageformat": "Dohaintza prozesatzen…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "Oraindik prozesatzen"
+    "messageformat": "Dohaintza prozesatzen oraindik"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "Dohaintza prozesatzen ari da oraindik. Baliteke minutu batzuk behar izatea."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "Utzi dohaintza"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "Eskerrik asko laguntzeagatik!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "B&A-en emaile-bereizgarri bat irabazi duzu! Bistara ezazu profilean, B&A-i laguntzen diozula erakusteko."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "Erakutsi profilean"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "Aukera hau doitzeko, joan Ezarpenak → Egin dohaintza bat B&A-i → Bereizgarriak atalera telefono mugikorrean"
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Bertsio honek hainbat doikuntza txiki eta akats konpontzen ditu B&A-ek ondo funtzionatzen jarraitzeko.",
@@ -6844,13 +6925,7 @@
     "messageformat": "Doikuntza txikiak, akats-konponketak eta errendimendu-hobekuntzak. Eskerrik asko B&A erabiltzeagatik!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "Mezuak irakurri/irakurri gabe aldi berean uzteko esperientzia hobetu dugu. Oraindik ere irudia handi dezakezu harengan klik eginez edo azkar idatziz."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "Emojiak bilatzeko kutxako akats bat konpondu dugu."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "Zenbait akats txiki konpondu dira."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "Eguneratze honen bidez, errendimendua hobetu eta bateriaren iraupena luzatzen da."
   }
 }

@@ -1037,9 +1037,6 @@
   "icu:ConversationHeader__DeleteConversationConfirmation__title": {
     "messageformat": "هل ترغبُ بحذف الدردشة؟"
   },
-  "icu:ConversationHeader__DeleteConversationConfirmation__description": {
-    "messageformat": "ستُحذَف جميع رسائل هذه المُحادثة من هذا الجهاز."
-  },
   "icu:ConversationHeader__DeleteConversationConfirmation__description-with-sync": {
     "messageformat": "ستُحذَف جميع رسائل هذه المُحادثة من جميع أجهزتك."
   },
@@ -1369,6 +1366,12 @@
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__Help": {
     "messageformat": "اختر الدردشات التي تريد أن تظهر في هذا المجلد."
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__DirectChats": {
+    "messageformat": "الدردشات الفردية"
+  },
+  "icu:Preferences__EditChatFolderPage__IncludedChatsSection__GroupChats": {
+    "messageformat": "المحادثات الجماعية"
   },
   "icu:Preferences__EditChatFolderPage__IncludedChatsSection__AddChatsButton": {
     "messageformat": "إضافة دردشات"
@@ -1869,7 +1872,7 @@
     "messageformat": "انتهت صلاحية هذا الإصدار من سيجنال Desktop. يُرجى التحديث لأحدث إصدار للتمكُّن من التراسُل."
   },
   "icu:upgrade": {
-    "messageformat": "‫يُرجى الضغط على زر الفأرة لزيارة ba-chat.com/download"
+    "messageformat": "‫يُرجى الضغط على زر الفأرة لزيارة baxs.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "رسالة وسائط"
@@ -2063,6 +2066,9 @@
   "icu:Toast--download-failed": {
     "messageformat": "تعذَّر التنزيل"
   },
+  "icu:Toast--unable-download-from-backup-tier": {
+    "messageformat": "تعذَّر تنزيل الملف المُرفَق من النسخة الاحتياطية."
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "لا يُمكن إحداث التعديلات إلاّ في غضون 24 ساعة من وقت إرسال هذه الرسالة."
   },
@@ -2236,6 +2242,9 @@
   },
   "icu:message--getDescription--disappearing-video": {
     "messageformat": "مقطع فيديو للعرض لمرّة واحدة"
+  },
+  "icu:message--getDescription--gif": {
+    "messageformat": "صورة متحركة (GIF)"
   },
   "icu:message--deletedForEveryone": {
     "messageformat": "حُذِفَت هذه الرسالة."
@@ -3524,6 +3533,15 @@
   "icu:ErrorModal--description": {
     "messageformat": "يُرجى المحاولة مرّة أخرى أو التواصل مع فريق الدعم."
   },
+  "icu:DebugLogErrorModal__UnexpectedError": {
+    "messageformat": "حدث خطأ غير متوقع"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog": {
+    "messageformat": "إرسال سجل الأخطاء"
+  },
+  "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
+    "messageformat": "لا، شكرًا"
+  },
   "icu:Confirmation--confirm": {
     "messageformat": "حسنًا"
   },
@@ -4430,11 +4448,8 @@
   "icu:ConversationDetailsHeader--members": {
     "messageformat": "{number, plural, zero {{number,number} عضو} one {{number,number} عضو} two {{number,number} عضوان} few {{number,number} أعضاء} many {{number,number} عضوًا} other {{number,number} عضوٍ}}"
   },
-  "icu:ConversationDetailsMediaList--shared-media": {
-    "messageformat": "الوسائط المُشاركَة"
-  },
-  "icu:ConversationDetailsMediaList--show-all": {
-    "messageformat": "مشاهدة الكل"
+  "icu:ConversationDetailsMediaList--title": {
+    "messageformat": "ملفات الوسائط والروابط والملفات"
   },
   "icu:ConversationDetailsMembershipList--title": {
     "messageformat": "{number, plural, zero {{number,number} عضو} one {{number,number} عضو} two {{number,number} عضوان} few {{number,number} أعضاء} many {{number,number} عضوًا} other {{number,number} عضوٍ}}"
@@ -5255,6 +5270,12 @@
   "icu:Preferences__auto-convert-emoji--description": {
     "messageformat": "مثلًا، سَيتمُّ تحويل :-) إلى <emojify>🙂</emojify>"
   },
+  "icu:Preferences__keep-muted-chats-archived--title": {
+    "messageformat": "إبقاء الدردشات المكتومة مُؤرشفة"
+  },
+  "icu:Preferences__keep-muted-chats-archived--description": {
+    "messageformat": "الدردشات المكتومة المؤرشفة سَتبقى كذلك عند وصول رسالة جديدة."
+  },
   "icu:Preferences--advanced": {
     "messageformat": "مُتقدِّم"
   },
@@ -5265,7 +5286,7 @@
     "messageformat": "الجهات المحظورة"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "النسخ الاحتياطية على سيجنال"
+    "messageformat": "النسخ الاحتياطية الآمنة على سيجنال"
   },
   "icu:Preferences--signal-backups-off-description": {
     "messageformat": "نسخ احتياطية تلقائية باستخدام خدمة التخزين المُشفَّرة من طرف لِطرف التي يوفّرها سيجنال. ابدأ العملية على هاتفك. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
@@ -5280,7 +5301,7 @@
     "messageformat": "النسخ الاحتياطي للنص وكل الوسائط"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "تعذَّر العثور على اشتراكك. جدِّد الاشتراك لمتابعة استخدام النسخ الاحتياطية على سيجنال."
+    "messageformat": "تعذَّر العثور على اشتراكك. جدِّد لمتابعة استخدام النسخ الاحتياطية الآمنة لسيجنال."
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, zero {النسخ الاحتياطي للنص و{mediaDayCount,number} يوم من الوسائط} one {النسخ الاحتياطي للنص و{mediaDayCount,number} يوم من الوسائط} two {النسخ الاحتياطي للنص و{mediaDayCount,number} يومين من الوسائط} few {النسخ الاحتياطي للنص و{mediaDayCount,number} أيام من الوسائط} many {النسخ الاحتياطي للنص و{mediaDayCount,number} يومًا من الوسائط} other {النسخ الاحتياطي للنص و{mediaDayCount,number} يومٍ من الوسائط}}"
@@ -5298,13 +5319,13 @@
     "messageformat": "تمَّ إلغاء الاشتراك"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "يمكنك إدارة أو إلغاء اشتراكك في النسخ الاحتياطية على سيجنال من هاتفك."
+    "messageformat": "يُمكنك إدارة أو إلغاء اشتراكك في النسخ الاحتياطية الآمنة على سيجنال من هاتفك."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "يُمكنك إدارة أو ترقية النسخ الاحتياطية على سيجنال من هاتفك."
+    "messageformat": "يُمكنك إدارة أو ترقية النسخ الاحتياطية الآمنة على سيجنال من هاتفك."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "يُمكنك إدارة أو تجديد اشتراك نسخك الاحتياطية على سيجنال من هاتفك."
+    "messageformat": "يُمكنك إدارة أو تجديد اشتراك نسخك الاحتياطية الآمنة على سيجنال من هاتفك."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "آخِر نسخة احتياطية"
@@ -6636,11 +6657,17 @@
   "icu:PreferencesDonations__my-support": {
     "messageformat": "الدعم الخاص بي"
   },
+  "icu:PreferencesDonations__badge-label-one-time": {
+    "messageformat": "{formattedCurrencyAmount} مرّة واحدة"
+  },
+  "icu:PreferencesDonations__badge-processing-donation": {
+    "messageformat": "التبرُّع قيد المعالجة…"
+  },
   "icu:PreferencesDonations__donate-button-with-amount": {
     "messageformat": "تبرَّع لـ {formattedCurrencyAmount}"
   },
   "icu:PreferencesDonations__mobile-info": {
-    "messageformat": "يمكن إدارة الشارات والتبرُّعات الشهرية على جهازك المحمول."
+    "messageformat": "يمكن إدارة الشارات والتبرُّعات الشهرية على هاتفك المحمول."
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "ستتمُّ المحافظة على خصوصية معلوماتك."
@@ -6648,11 +6675,17 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>لا يقوم سيجنال بجمع أو تخزين معلوماتك الشخصية عند قيامك بتبرُّع.</paragraph><paragraph>نستخدم Stripe كمعالج عمليات الدفع الخاصة بنا لتلقي تبرُّعاتك. لا يُمكننا الوصول إلى أو تخزين أو حفظ أي من المعلومات التي تُقدمها.</paragraph><paragraph>لا يقوم تطبيق سيجنال ولا يمكنه ربط تبرُّعاتك بحسابك على سيجنال.</paragraph><paragraph>شكرًا لدعمك!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-ok": {
+    "messageformat": "موافق"
+  },
   "icu:PreferencesDonations__receipts": {
     "messageformat": "الإيصالات"
   },
+  "icu:PreferencesDonations__receipt-details-button-aria": {
+    "messageformat": "عرض تفاصيل الإيصال"
+  },
   "icu:PreferencesDonations__faqs": {
-    "messageformat": "الأسئلة الشائعة المُتعلِّقة بالتبرُّع"
+    "messageformat": "الأسئلة الشائعة للمُتبرِّعين"
   },
   "icu:PreferencesDonations--receiptList__info": {
     "messageformat": "لا تتم مزامنة الإيصالات عبر الأجهزة. إذا أعدتَ تثبيت سيجنال، فلن تصبح إيصالات التبرُّعات السابقة متاحة."
@@ -6676,7 +6709,7 @@
     "messageformat": "التبرُّع لمرّة واحدة"
   },
   "icu:DonateFlow__desktop-one-time-only-notice": {
-    "messageformat": "فقط التبرُّعات لمرّة واحدة هي المتاحة على الحاسوب. يمكن القيام بالتبرُّعات الشهرية على جهازك المحمول."
+    "messageformat": "فقط التبرُّعات لمرّة واحدة هي المتاحة على الحاسوب. يمكن القيام بالتبرُّعات الشهرية على هاتفك المحمول."
   },
   "icu:DonateFlow__having-issues-contact-support": {
     "messageformat": "هل تواجه مشكلات؟ <contactSupportLink>الاتصال بالدعم</contactSupportLink>"
@@ -6695,6 +6728,9 @@
   },
   "icu:DonateFlow__card-form-expiration-date": {
     "messageformat": "تاريخ انتهاء الصلاحية"
+  },
+  "icu:DonateFlow__card-form-expiration-date-placeholder": {
+    "messageformat": "الشهر/السنة"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
     "messageformat": "تبرَّع بـ {formattedCurrencyAmount} لسيجنال"
@@ -6717,6 +6753,24 @@
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
     "messageformat": "احصل على شارة دعم سيجنال لمدة 30 يومًا."
   },
+  "icu:DonateFlow__custom-amount-below-minimum-error": {
+    "messageformat": "الحد الأدنى الذي يُمكنك التبرُّع به هو {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-below-minimum-tooltip": {
+    "messageformat": "الحد الأدنى الذي يُمكنك التبرُّع به هو {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__custom-amount-above-maximum-error": {
+    "messageformat": "الحد الأقصى الذي يُمكنك التبرُّع به هو {formattedCurrencyAmount}"
+  },
+  "icu:DonateFlow__discard-dialog-body": {
+    "messageformat": "ستؤدي مغادرة هذه الصفحة إلى حذف معلومات بطاقة الائتمان الخاصة بك. هل تريد المتابعة؟"
+  },
+  "icu:DonateFlow__discard-dialog-remove-info": {
+    "messageformat": "إزالة المعلومات"
+  },
+  "icu:DonateFlow__continue": {
+    "messageformat": "متابعة"
+  },
   "icu:DonationReceipt__title": {
     "messageformat": "إيصال التبرُّع"
   },
@@ -6734,6 +6788,9 @@
   },
   "icu:DonationReceipt__footer-text": {
     "messageformat": "شكرًا لك على دعم سيجنال. تساعدنا مساهمتكم على دعم مهمة حماية حرية التعبير وتمكين التواصل العالمي الآمن لملايين الأشخاص حول العالم، وذلك من خلال تقنية الخصوصية مفتوحة المصدر. إذا كُنتَ من المقيمين بالولايات المتحدة الأمريكية، يُرجى الاحتفاظ بهذا الإيصال لتقديمه إلى مصلحة الضرائب. مؤسسة تكنولوجيا سيجنال‬ هي منظمة غير ربحية معفاة من الضرائب في الولايات المتحدة بموجب الفقرة 501c3 من قانون الإيرادات الداخلية. مُعرِّفنا الضريبي هو 4506840-82."
+  },
+  "icu:Donations__OfflineTooltip": {
+    "messageformat": "أنت غير متصل بالإنترنت. يُرجى الاتصال بالإنترنت لإكمال التبرُّع."
   },
   "icu:Donations__Toast__Canceled": {
     "messageformat": "تمَّ إلغاء التبرُّع"
@@ -6755,6 +6812,15 @@
   },
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "لديك تبرُّع قيد المعالجة يتطلب تأكيدًا."
+  },
+  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
+    "messageformat": "تبرَّعتَ بنجاح، لكن تعذّر علينا تحديث إعدادات شارتك."
+  },
+  "icu:Donations__BadgeApplicationFailed__Title": {
+    "messageformat": "تبرَّعتَ بنجاح، لكن تعذَّر علينا تحديث إعدادات شارتك."
+  },
+  "icu:Donations__BadgeApplicationFailed__Description": {
+    "messageformat": "لِتحديث إعدادات شارتك على جهازك المحمول، انتقل إلى: \"الإعدادات\" ← \"تبرَّع لسيجنال\" ← الشارات."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "تمَّت مقاطعة التبرُّع"
@@ -6783,11 +6849,14 @@
   "icu:Donations__GenericError__Description": {
     "messageformat": "ربما لم تتمّ معالجة تبرُّعك. اضغط على \"تبرَّع لسيجنال\"، ثم \"إيصالات التبرُّع\" للتحقُّق من إيصالاتك والتأكيد."
   },
+  "icu:DonationsErrorBoundary__DonationUnexpectedError": {
+    "messageformat": "حاوِل من جديد أو أرسِل سِجل الأخطاء لفريق الدعم للحصول على المساعدة لإكمال تبرُّعك. تساعدنا سِجلات الأخطاء في تشخيص المشكلة وإصلاحها، وهي لا تحتوي على معلومات تعريفية عن المُستخدِم."
+  },
   "icu:Donations__Processing": {
     "messageformat": "التبرُّع قيد المعالجة…"
   },
   "icu:Donations__StillProcessing": {
-    "messageformat": "ما زال قيد المعالجة"
+    "messageformat": "جارٍ معالجة التبرُّع"
   },
   "icu:Donations__StillProcessing__Description": {
     "messageformat": "لا يزال تبرُّعك قيد المعالجة. قد يستغرق ذلك بضع دقائق."
@@ -6815,6 +6884,18 @@
   },
   "icu:Donations__3dsValidationNeeded__CancelDonation": {
     "messageformat": "إلغاء التبرُّع"
+  },
+  "icu:Donations__badge-modal--title": {
+    "messageformat": "شكرًا لدعمك!"
+  },
+  "icu:Donations__badge-modal--description": {
+    "messageformat": "حصلتَ على شارة مُتبرِّع من سيجنال! اعرضها في حسابك الشخصي لإظهار دعمك."
+  },
+  "icu:Donations__badge-modal--display-on-profile": {
+    "messageformat": "عرض في الحساب الشخصي"
+  },
+  "icu:Donations__badge-modal--help-text": {
+    "messageformat": "يُمكنك تعديلُها على جهازك المحمول في: الإعدادات ← تبرَّع لسيجنال ← الشارات."
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "يحتوي هذا الإصدار على عدد من التعديلات الصغيرة وإصلاحات الأخطاء للحفاظ على عمل سيجنال بسلاسة.",
@@ -6844,13 +6925,7 @@
     "messageformat": "تعديلات صغيرة، وإصلاح أعطال، وتحسينات للأداء. شكرًا على استخدامك سيجنال!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__v7.64--0": {
-    "messageformat": "قمنا بتحسين تجربة الرسائل المقروءة/غير المقروءة أثناء تعدُّد المهام، وقُمنا بإصلاح خطأ كان يُؤدي أحيانًا إلى فتح عارض الصور المُوسَّع بشكل غير صحيح إذا ضغطت على مفتاح المسافة أثناء البحث عن تفاعل إيموجي مثالي. لا يزال بإمكانك التكبير إذا نقرت على الصورة أو إذا كتبت بسرعة كافية."
-  },
-  "icu:WhatsNew__v7.65--0": {
-    "messageformat": "قد يبدو العثور على الرمز التعبيري المناسب مهمة شاقّة أحيانًا، لكننا أصلحنا خللًا كان قد يؤدي إلى حدوث خطأ عند الضغط على مفتاح Escape في مربع البحث عن الرموز التعبيرية."
-  },
-  "icu:WhatsNew__v7.66--0": {
-    "messageformat": "تمَّ إصلاح بعض الأخطاء البسيطة."
+  "icu:WhatsNew__7.73": {
+    "messageformat": "يُقدِّم هذا التحديث تحسينات جديدة للأداء للمساعدة على تحسين حياة البطارية، لكي تكون أكثر جاهزية للمحادثات المشحونة عاطفيًا."
   }
 }
