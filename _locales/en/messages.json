@@ -152,7 +152,7 @@
     "description": "On Linux, text in a popup shown if the app cannot start because the system's keyring encryption backend has changed. Example values: previousBackend=gnome_libsecret, currentBackend=kwallet5"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Unable to access the database encryption key because the OS encryption keyring backend has changed from {previousBackend} to {currentBackend}. This can occur if the desktop environment changes, for example between GNOME and KDE.\n\nPlease switch to the previous desktop environment or try to run signal with the command line flag --password-store=\"{previousBackendFlag}\"",
+    "messageformat": "Unable to access the database encryption key because the OS encryption keyring backend has changed from {previousBackend} to {currentBackend}. This can occur if the desktop environment changes, for example between GNOME and KDE.\n\nPlease switch to the previous desktop environment or try to run B&A with the command line flag --password-store=\"{previousBackendFlag}\"",
     "description": "On Linux, text in a popup shown if the app cannot start because the system's keyring encryption backend has changed. We suggest a command line flag they can use to recover the app. Example values: previousBackend=gnome_libsecret, currentBackend=kwallet5, previousBackendFlag: gnome-libsecret"
   },
   "icu:mainMenuFile": {
@@ -2489,7 +2489,7 @@
     "description": "Warning notification that this version of the app has expired"
   },
   "icu:upgrade": {
-    "messageformat": "Click to go to baxs.com/download",
+    "messageformat": "Click to go to ba-chat.com/download",
     "description": "Label text for button to upgrade the app to the latest version"
   },
   "icu:mediaMessage": {
@@ -4717,8 +4717,8 @@
     "description": "Description text in popup dialog when attempting to edit a message too many times."
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Sorry, that sgnl:// link didn't make sense!",
-    "description": "Shown if you click on a sgnl:// link not currently supported by Desktop"
+    "messageformat": "Sorry, that baxs:// link didn't make sense!",
+    "description": "Shown if you click on a baxs:// link not currently supported by Desktop"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "You cannot send messages to that group.",
@@ -6017,7 +6017,7 @@
     "description": "Description for the require new member admin approval select area"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copy signal.group link to clipboard",
+    "messageformat": "Copy B&A group link to clipboard",
     "description": "GroupLinkManagement > Header > Group link text > Button (looks like normal text) > Accessibility label"
   },
   "icu:PendingInvites--tab-requests": {

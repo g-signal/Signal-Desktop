@@ -102,7 +102,7 @@
     "messageformat": "Не можа да бъде осъществен достъп до ключа за криптиране на базата данни, тъй като бекендът на ключодържателя за криптиране на ОС е променен от {previousBackend} на {currentBackend}. Това може да се случи, ако средата на работния плот бъде променена, например между GNOME и KDE.\n\nМоля, превключете към предишната работна среда."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Не можа да бъде осъществен достъп до ключа за криптиране на базата данни, тъй като бекендът на ключодържателя за криптиране на ОС е променен от {previousBackend} на {currentBackend}. Това може да се случи, ако средата на работния плот бъде променена, например между GNOME и KDE.\n\nМоля, превключете към предишната работна среда или опитайте да пуснете signal с флага на командния ред --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Не можа да бъде осъществен достъп до ключа за криптиране на базата данни, тъй като бекендът на ключодържателя за криптиране на ОС е променен от {previousBackend} на {currentBackend}. Това може да се случи, ако средата на работния плот бъде променена, например между GNOME и KDE.\n\nМоля, превключете към предишната работна среда или опитайте да пуснете B&A с флага на командния ред --password-store=\"{previousBackendFlag}\""
   },
   "icu:mainMenuFile": {
     "messageformat": "&Файл"
@@ -1872,7 +1872,7 @@
     "messageformat": "Тази версия на Сигнал за компютър вече е остаряла. Моля, обновете до последната версия, за да можете да изпращате съобщения."
   },
   "icu:upgrade": {
-    "messageformat": "Кликнете, за да отидете на baxs.com/download"
+    "messageformat": "Кликнете, за да отидете на ba-chat.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Мултимедиино съобщение"
@@ -3552,7 +3552,7 @@
     "messageformat": "{max, plural, one {Само {max,number} редакция може да се приложи към това съобщение.} other {Само {max,number} редакции могат да се приложат към това съобщение.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Съжаляваме, този линк със sgnl:// не значеше нищо!"
+    "messageformat": "Съжаляваме, този линк със baxs:// не значеше нищо!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "Не можете да изпращате съобщения до тази група."
@@ -4527,7 +4527,7 @@
     "messageformat": "Изискване администратор да одобрява нови членове, които се присъединяват чрез линка на групата"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Копирайте signal.group линка в клипборда"
+    "messageformat": "Копирайте B&A group линка в клипборда"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Заявки ({count,number})"

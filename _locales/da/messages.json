@@ -102,7 +102,7 @@
     "messageformat": "Kan ikke tilgå databasekrypteringsnøglen, fordi OS-krypteringsnøgleringens backend er ændret fra {previousBackend} til {currentBackend}. Dette kan ske, hvis skrivebordsmiljøet ændres, for eksempel mellem GNOME og KDE.\n\nSkift til det forrige skrivebordsmiljø."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Kan ikke tilgå databasekrypteringsnøglen, fordi OS-krypteringsnøgleringens backend er ændret fra {previousBackend} til {currentBackend}. Dette kan ske, hvis skrivebordsmiljøet ændres, for eksempel mellem GNOME og KDE.\n\nSkift til det forrige skrivebordsmiljø, eller prøv at køre signal med kommandolinjeargumentet --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Kan ikke tilgå databasekrypteringsnøglen, fordi OS-krypteringsnøgleringens backend er ændret fra {previousBackend} til {currentBackend}. Dette kan ske, hvis skrivebordsmiljøet ændres, for eksempel mellem GNOME og KDE.\n\nSkift til det forrige skrivebordsmiljø, eller prøv at køre B&A med kommandolinjeargumentet --password-store=\"{previousBackendFlag}\""
   },
   "icu:mainMenuFile": {
     "messageformat": "&Fil"
@@ -1872,7 +1872,7 @@
     "messageformat": "Denne version af B&A Desktop er forældet. Opgrader venligst til den nyeste version for at fortsætte"
   },
   "icu:upgrade": {
-    "messageformat": "Klik for at gå til baxs.com/download"
+    "messageformat": "Klik for at gå til ba-chat.com/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mediebesked"
@@ -3552,7 +3552,7 @@
     "messageformat": "{max, plural, one {Denne besked kan kun redigeres {max,number} gang.} other {Denne besked kan kun redigeres {max,number} gange.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Beklager, det sgnl://-link gav ikke mening!"
+    "messageformat": "Beklager, det baxs://-link gav ikke mening!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "Du kan ikke sende beskeder til den gruppe."
@@ -4527,7 +4527,7 @@
     "messageformat": "Det kræves at en administrator godkender nye medlemmer via gruppelinket"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopiér signal.group-linket til din udklipsholder"
+    "messageformat": "Kopiér B&A group-linket til din udklipsholder"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Anmodninger ({count,number})"

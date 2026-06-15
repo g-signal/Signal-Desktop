@@ -102,7 +102,7 @@
     "messageformat": "OS एन्क्रिप्शन कीरिंग बॅकएण्ड हे {previousBackend} पासून {currentBackend} मध्ये बदलल्याने डेटाबेस एन्क्रिप्शन की ॲक्सेस करण्यास अक्षम आहे. हे GNOME आणि KDE दरम्यान बदल होण्यासारख्या डेस्कटॉप एन्व्हायरनमेंटमध्ये बदल झाल्यास घडून येते.\n\nकृपया मागील डेस्कटॉप एन्व्हायरनमेंट मध्ये स्वीच व्हा."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "OS एन्क्रिप्शन कीरिंग बॅकएण्ड हे {previousBackend} पासून {currentBackend} मध्ये बदलल्याने डेटाबेस एन्क्रिप्शन की ॲक्सेस करण्यास अक्षम आहे. हे GNOME आणि KDE दरम्यान बदल होण्यासारख्या डेस्कटॉप एन्व्हायरनमेंटमध्ये बदल झाल्यास घडून येते.\n\nकृपया मागील डेस्कटॉप एन्व्हायरनमेंट मध्ये स्वीच व्हा किंवा कमांड लाइन फ्लॅग--password-store=\"{previousBackendFlag}\" सह signal रन करण्याचा प्रयत्न करा"
+    "messageformat": "OS एन्क्रिप्शन कीरिंग बॅकएण्ड हे {previousBackend} पासून {currentBackend} मध्ये बदलल्याने डेटाबेस एन्क्रिप्शन की ॲक्सेस करण्यास अक्षम आहे. हे GNOME आणि KDE दरम्यान बदल होण्यासारख्या डेस्कटॉप एन्व्हायरनमेंटमध्ये बदल झाल्यास घडून येते.\n\nकृपया मागील डेस्कटॉप एन्व्हायरनमेंट मध्ये स्वीच व्हा किंवा कमांड लाइन फ्लॅग--password-store=\"{previousBackendFlag}\" सह B&A रन करण्याचा प्रयत्न करा"
   },
   "icu:mainMenuFile": {
     "messageformat": "फाईल"
@@ -1872,7 +1872,7 @@
     "messageformat": "B&A Desktop ची ही आवृत्ती कालबाह्य झाली आहे. संदेशन सुरू ठेवण्यासाठी कृपया नवीनतम आवृत्तीवर श्रेणीसुधारित करा."
   },
   "icu:upgrade": {
-    "messageformat": "baxs.com/download वर जाण्यासाठी क्लिक करा"
+    "messageformat": "ba-chat.com/download वर जाण्यासाठी क्लिक करा"
   },
   "icu:mediaMessage": {
     "messageformat": "मिडिया संदेश"
@@ -3552,7 +3552,7 @@
     "messageformat": "{max, plural, one {या संदेशाला फक्त {max,number} संपादन लागू केले जाऊ शकते.} other {या संदेशाला फक्त {max,number} संपादने लागू केली जाऊ शकतात.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "क्षमस्व, त्या sgnl:// दुवाचा काही अर्थ निघाला नाही!"
+    "messageformat": "क्षमस्व, त्या baxs:// दुवाचा काही अर्थ निघाला नाही!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "आपण त्या गटात संदेश पाठवू शकत नाही."
@@ -4527,7 +4527,7 @@
     "messageformat": "गट लिंक द्वारे सामील होण्यासाठी नवीन सदस्यांना प्रशासकाने स्वीकार करणे आवश्यक आहे"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group लिंक क्लिपबोर्डवर कॉपी करा"
+    "messageformat": "B&A group लिंक क्लिपबोर्डवर कॉपी करा"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "विनंत्या ({count,number})"
