@@ -76,7 +76,6 @@ const getAmountFormatter = (
 
           digitCount += 1;
         }
-        }
 
         // Prevent over 2 decimal digits due to issues with parsing
         if (isDecimalPresent) {

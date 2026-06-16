@@ -315,7 +315,6 @@ export class AttachmentDownloadManager extends JobManager<CoreAttachmentDownload
       if (isOlderThan(attachmentUploadedAt, this.#getMessageQueueTime() * 2)) {
         return attachment;
       }
-      }
     }
 
     const parseResult = safeParsePartial(coreAttachmentDownloadJobSchema, {
