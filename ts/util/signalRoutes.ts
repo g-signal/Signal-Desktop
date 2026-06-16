@@ -401,7 +401,6 @@ export const linkCallRoute = _route('linkCall', {
     };
   },
   toWebUrl(args) {
-  toWebUrl(args) {
     const params = new URLSearchParams(
       args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
     );

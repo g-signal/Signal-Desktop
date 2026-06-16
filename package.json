@@ -83,6 +83,8 @@
     "build": "run-s --print-label generate build:esbuild:prod build:release",
     "build-win32-all": "run-s --print-label generate build:esbuild:prod build:release-win32-all",
     "build-linux": "run-s generate build:esbuild:prod && pnpm run build:release --publish=never",
+    "build-staging": "run-s --print-label generate build:esbuild:prod build:staging",
+    "generate-keypair": "node ts/updater/generateKeyPair.js",
     "build:acknowledgments": "node scripts/generate-acknowledgments.js",
     "build:dns-fallback": "node ts/scripts/generate-dns-fallback.js",
     "build:icu-types": "node ts/scripts/generate-icu-types.js",
@@ -444,7 +446,8 @@
       "mergeASARs": true,
       "releaseInfo": {
         "vendor": {
-          "minOSVersion": "21.0.0"
+          "minOSVersion": "21.0.0",
+          "noDelay": "true"
         }
       },
       "sign": "./ts/scripts/sign-macos.js",
@@ -489,7 +492,8 @@
       ],
       "releaseInfo": {
         "vendor": {
-          "minOSVersion": "10.0.10240"
+          "minOSVersion": "10.0.10240",
+          "noDelay": "true"
         }
       },
       "signExts": [
@@ -565,7 +569,6 @@
       ]
     },
     "artifactBuildCompleted": "ts/scripts/artifact-build-completed.js",
-    "afterSign": "ts/scripts/after-sign.js",
     "afterPack": "ts/scripts/after-pack.js",
     "afterAllArtifactBuild": "ts/scripts/after-all-artifact-build.js",
     "asar": {
