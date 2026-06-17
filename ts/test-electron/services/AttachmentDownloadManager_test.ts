@@ -695,6 +695,7 @@ describe('AttachmentDownloadManager', () => {
         1,
         {
           source: AttachmentDownloadSource.BACKUP_IMPORT_WITH_MEDIA,
+        }
       );
 
       const savedJobs = await DataWriter.getNextAttachmentDownloadJobs({

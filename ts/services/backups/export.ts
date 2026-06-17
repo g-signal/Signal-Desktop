@@ -2615,7 +2615,7 @@ export class BackupExportStream extends Readable {
       const mediaName = getMediaNameForAttachment(attachment);
 
       // Re-use existing locatorInfo and backup job if we've already seen this file
-      const existingFilePointer = this.#mediaNamesToFilePointers.get(mediaName);
+      const existingFilePointer = this.#mediaNamesToLocatorInfos.get(mediaName);
 
       if (existingFilePointer?.locatorInfo) {
         filePointer.locatorInfo = existingFilePointer.locatorInfo;
@@ -2625,7 +2625,7 @@ export class BackupExportStream extends Readable {
           existingFilePointer.incrementalMacChunkSize;
       } else {
         if (filePointer.locatorInfo) {
-          this.#mediaNamesToFilePointers.set(mediaName, filePointer);
+          this.#mediaNamesToLocatorInfos.set(mediaName, filePointer);
         }
 
         if (backupJob) {
