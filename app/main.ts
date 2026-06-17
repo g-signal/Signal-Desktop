@@ -35,6 +35,7 @@ import { z } from 'zod';
 import {
   version as packageVersion,
   productName,
+  appName,
 } from '../ts/util/packageJson.js';
 import * as GlobalErrors from './global_errors.js';
 import { setup as setupCrashReports } from './crashReports.js';
@@ -2696,7 +2697,7 @@ ipc.on('get-config', async event => {
   }
 
   const parsed = safeParseLoose(rendererConfigSchema, {
-    name: packageJson.appName,
+    name: appName,
     availableLocales: getResolvedMessagesLocale().availableLocales,
     resolvedTranslationsLocale: getResolvedMessagesLocale().name,
     resolvedTranslationsLocaleDirection: getResolvedMessagesLocale().direction,
