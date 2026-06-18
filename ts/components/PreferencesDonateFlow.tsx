@@ -71,7 +71,7 @@ import { DonateInputAmount } from './preferences/donations/DonateInputAmount.js'
 import { Tooltip, TooltipPlacement } from './Tooltip.js';
 import { offsetDistanceModifier } from '../util/popperUtil.js';
 
-const SUPPORT_URL = 'https://support.ba-chat.com/';
+const SUPPORT_URL = 'https://ba-chat.com/';
 
 export type PropsDataType = {
   i18n: LocalizerType;

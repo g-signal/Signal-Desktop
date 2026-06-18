@@ -22,7 +22,7 @@ function contactSupportLink(parts: ReactNode): JSX.Element {
   return (
     <a
       key="signal-support"
-      href="https://support.ba-chat.com/"
+      href="https://ba-chat.com/"
       rel="noreferrer"
       target="_blank"
     >

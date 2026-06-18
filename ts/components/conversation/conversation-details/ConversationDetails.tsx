@@ -583,7 +583,7 @@ export function ConversationDetails({
               }
               label={i18n('icu:ConversationDetails--support-center')}
               onClick={() => {
-                openLinkInWebBrowser('https://support.signal.org');
+                openLinkInWebBrowser('https://ba-chat.com/');
               }}
             />
             <PanelRow
@@ -596,7 +596,7 @@ export function ConversationDetails({
               label={i18n('icu:contactUs')}
               onClick={() => {
                 openLinkInWebBrowser(
-                  'https://support.ba-chat.com/'
+                  'https://ba-chat.com/'
                 );
               }}
             />

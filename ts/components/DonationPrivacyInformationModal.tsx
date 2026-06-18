@@ -19,7 +19,7 @@ export function DonationPrivacyInformationModal({
 }: DonationPrivacyInformationModalProps): JSX.Element {
   const handleDonationFAQsClick = () => {
     openLinkInWebBrowser(
-      'https://support.signal.org/hc/articles/360031949872-Donor-FAQs'
+      'https://ba-chat.com/'
     );
   };
 

@@ -1196,7 +1196,7 @@ function openContactUs() {
 function openJoinTheBeta() {
   // If we omit the language, the site will detect the language and redirect
   drop(
-    shell.openExternal('https://support.signal.org/hc/articles/360007318471')
+    shell.openExternal('https://ba-chat.com/')
   );
 }
 
@@ -1216,7 +1216,7 @@ function openReleaseNotes() {
 function openSupportPage() {
   // If we omit the language, the site will detect the language and redirect
   drop(
-    shell.openExternal('https://support.signal.org/hc/sections/360001602812')
+    shell.openExternal('https://ba-chat.com/')
   );
 }
 
@@ -1878,7 +1878,7 @@ const onDatabaseInitializationError = async (error: Error) => {
   } else if (buttonIndex === goToSupportPageButtonIndex) {
     drop(
       shell.openExternal(
-        'https://support.signal.org/hc/articles/9045714156314#desktop'
+        'https://ba-chat.com/'
       )
     );
   }

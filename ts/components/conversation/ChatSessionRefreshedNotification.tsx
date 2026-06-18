@@ -34,7 +34,7 @@ export function ChatSessionRefreshedNotification(
     setIsDialogOpen(false);
 
     const url =
-      'https://support.ba-chat.com/';
+      'https://ba-chat.com/';
 
     openLinkInWebBrowser(url);
   }, [setIsDialogOpen]);

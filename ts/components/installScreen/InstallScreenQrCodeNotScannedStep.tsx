@@ -49,7 +49,7 @@ const getQrCodeClassName = getClassNamesFor(
 );
 
 const SUPPORT_PAGE =
-  'https://support.signal.org/hc/articles/360007320451#desktop_multiple_device';
+  'https://ba-chat.com/';
 
 export function InstallScreenQrCodeNotScannedStep({
   currentVersion,

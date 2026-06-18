@@ -32,7 +32,7 @@ import { ConfirmationDialog } from './ConfirmationDialog.js';
 import { BackupMediaDownloadProgressSettings } from './BackupMediaDownloadProgressSettings.js';
 
 export const SIGNAL_BACKUPS_LEARN_MORE_URL =
-  'https://support.signal.org/hc/articles/360007059752-Backup-and-Restore-Messages';
+  'https://ba-chat.com/';
 
 const LOCAL_BACKUPS_PAGES = new Set([
   SettingsPage.LocalBackups,

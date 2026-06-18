@@ -2,12 +2,12 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 export const PRODUCTION_DOWNLOAD_URL = 'https://ba-chat.com/download/';
-export const BETA_DOWNLOAD_URL = 'https://support.ba-chat.com/';
+export const BETA_DOWNLOAD_URL = 'https://ba-chat.com/';
 export const UNSUPPORTED_OS_URL =
-  'https://support.signal.org/hc/articles/5109141421850';
+  'https://ba-chat.com/';
 export const LINK_SIGNAL_DESKTOP =
-  'https://support.signal.org/hc/articles/360007320451#desktop_multiple_device';
+  'https://ba-chat.com/';
 export const SAFETY_NUMBER_URL =
-  'https://support.signal.org/hc/articles/360007060632';
+  'https://ba-chat.com/';
 export const SYNCING_MESSAGES_SECURITY_URL =
-  'https://support.signal.org/hc/articles/360007320391';
+  'https://ba-chat.com/';
