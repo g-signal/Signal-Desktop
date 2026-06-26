@@ -47,7 +47,7 @@ export function createSupportUrl({
 
   // This URL needs a hardcoded language because the '?desktop' is dropped if
   //   the page auto-redirects to the proper URL
-  const url = new URL(`https://ba-chat.com/
+  const url = new URL(`https://ba-chat.com/`);
 
   url.searchParams.set('desktop', '');
 
