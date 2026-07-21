@@ -26,7 +26,6 @@ import type { SetLocalPreviewContainerType } from '../services/calling.preload.j
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

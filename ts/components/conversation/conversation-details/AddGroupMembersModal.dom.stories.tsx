@@ -20,7 +20,6 @@ import { makeFakeLookupConversationWithoutServiceId } from '../../../test-helper
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

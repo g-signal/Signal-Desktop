@@ -20,7 +20,6 @@ import type { RequestState } from './util.std.js';
 
 const { without } = lodash;
 
-const { without } = lodash;
 
 type PropsType = {
   clearRequestError: () => void;

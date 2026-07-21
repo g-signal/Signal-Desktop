@@ -9,7 +9,6 @@ import { strictAssert } from '../util/assert.std.js';
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 export function BadgeCarouselIndex({
   currentIndex,

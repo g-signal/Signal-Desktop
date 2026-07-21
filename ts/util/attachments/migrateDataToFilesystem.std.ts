@@ -10,7 +10,6 @@ import type { LoggerType } from '../../types/Logging.std.js';
 
 const { isFunction, isTypedArray, isUndefined, omit } = lodash;
 
-const { isFunction, isTypedArray, isUndefined, omit } = lodash;
 
 export async function migrateDataToFileSystem(
   attachment: AttachmentType,

@@ -14,7 +14,6 @@ import type { BoundActionCreatorsMapObject } from '../../hooks/useBoundActions.s
 
 const { isEqual, mapValues } = lodash;
 
-const { isEqual, mapValues } = lodash;
 
 /**
  * This duck deals with badge data. Some assumptions it makes:

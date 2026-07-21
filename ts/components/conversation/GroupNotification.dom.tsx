@@ -15,7 +15,6 @@ import type { ConversationType } from '../../state/ducks/conversations.preload.j
 
 const { compact, flatten } = lodash;
 
-const { compact, flatten } = lodash;
 
 export type ChangeType = 'add' | 'remove' | 'name' | 'avatar' | 'general';
 

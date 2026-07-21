@@ -18,7 +18,6 @@ import type { WritableDB, PreKeyType } from '../../sql/Interface.std.js';
 
 const { range } = lodash;
 
-const { range } = lodash;
 
 type TestingPreKey = Omit<
   PreKeyType,

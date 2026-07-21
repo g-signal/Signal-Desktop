@@ -15,7 +15,6 @@ import type { LoggerType } from '../types/Logging.std.js';
 
 const { isNumber, sortBy } = lodash;
 
-const { isNumber, sortBy } = lodash;
 
 // The tricky bit for this function is if we are on our second+ attempt to send a given
 //   edit, we're still sending that edit.

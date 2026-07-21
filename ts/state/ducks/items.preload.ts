@@ -23,7 +23,6 @@ import type { EmojiSkinTone } from '../../components/fun/data/emojis.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 // State
 

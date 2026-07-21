@@ -20,7 +20,6 @@ import { RecordingComposer } from './RecordingComposer.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type Props = {
   i18n: LocalizerType;

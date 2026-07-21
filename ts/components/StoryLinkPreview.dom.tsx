@@ -13,7 +13,6 @@ import { getSafeDomain } from '../types/LinkPreview.std.js';
 
 const { unescape } = lodash;
 
-const { unescape } = lodash;
 
 export type Props = LinkPreviewForUIType & {
   forceCompactMode?: boolean;

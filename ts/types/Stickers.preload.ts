@@ -55,7 +55,6 @@ import {
 
 const { isNumber, reject, groupBy, values, chunk } = lodash;
 
-const { isNumber, reject, groupBy, values, chunk } = lodash;
 
 const log = createLogger('Stickers');
 

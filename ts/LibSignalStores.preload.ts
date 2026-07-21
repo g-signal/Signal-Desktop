@@ -36,7 +36,6 @@ import type { Zone } from './util/Zone.std.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 function encodeAddress(address: ProtocolAddress): Address {
   const name = address.name();

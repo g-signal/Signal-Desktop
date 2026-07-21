@@ -47,7 +47,6 @@ import { SizeObserver } from '../../../../hooks/useSizeObserver.dom.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 export type StatePropsType = {
   regionCode: string | undefined;

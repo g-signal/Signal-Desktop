@@ -29,7 +29,6 @@ import { getAvatarPlaceholderGradient } from '../utils/getAvatarPlaceholderGradi
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('Avatar');
 

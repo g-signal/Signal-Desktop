@@ -50,7 +50,6 @@ import { SizeObserver } from '../hooks/useSizeObserver.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsType = {
   candidateConversations: Array<ConversationType>;

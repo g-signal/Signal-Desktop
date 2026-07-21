@@ -34,7 +34,6 @@ import type { QuotedAttachmentType } from '../../model-types.d.ts';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const EMPTY_OBJECT = Object.freeze(Object.create(null));
 

@@ -26,7 +26,6 @@ import { useConfirmDiscard } from '../hooks/useConfirmDiscard.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsType = Readonly<{
   i18n: LocalizerType;

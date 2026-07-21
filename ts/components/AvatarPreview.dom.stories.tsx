@@ -13,7 +13,6 @@ import { AvatarColors } from '../types/Colors.std.js';
 
 const { chunk } = lodash;
 
-const { chunk } = lodash;
 
 const { i18n } = window.SignalContext;
 

@@ -27,7 +27,6 @@ import {
 
 const { partition } = lodash;
 
-const { partition } = lodash;
 
 type CallsNewCallProps = Readonly<{
   hasActiveCall: boolean;

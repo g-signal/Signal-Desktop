@@ -15,7 +15,6 @@ import { UserText } from '../UserText.dom.js';
 
 const { isNumber, range } = lodash;
 
-const { isNumber, range } = lodash;
 
 export type OwnProps = {
   readonly onClose?: () => unknown;

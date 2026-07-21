@@ -7,7 +7,6 @@ import type { AttachmentType } from '../../types/Attachment.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 export function markAttachmentAsPermanentlyErrored(
   attachment: AttachmentType,

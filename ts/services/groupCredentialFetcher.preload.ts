@@ -25,7 +25,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { first, last, sortBy } = lodash;
 
-const { first, last, sortBy } = lodash;
 
 const log = createLogger('groupCredentialFetcher');
 

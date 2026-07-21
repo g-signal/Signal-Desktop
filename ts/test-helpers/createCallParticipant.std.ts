@@ -11,7 +11,6 @@ import { getDefaultConversationWithServiceId } from './getDefaultConversation.st
 
 const { sample } = lodash;
 
-const { sample } = lodash;
 
 export function createCallParticipant(
   participantProps: Partial<GroupCallRemoteParticipantType>

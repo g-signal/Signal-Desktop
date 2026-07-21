@@ -11,7 +11,6 @@ import { AtMention } from './AtMention.dom.js';
 
 const { sortBy } = lodash;
 
-const { sortBy } = lodash;
 
 export type Props = {
   mentions?: ReadonlyArray<HydratedBodyRangeMention>;

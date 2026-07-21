@@ -10,7 +10,6 @@ import { createLogger } from '../../logging/log.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('Waveform');
 

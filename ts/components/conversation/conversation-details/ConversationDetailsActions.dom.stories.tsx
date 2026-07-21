@@ -10,7 +10,6 @@ import { ConversationDetailsActions } from './ConversationDetailsActions.dom.js'
 
 const { isBoolean } = lodash;
 
-const { isBoolean } = lodash;
 
 const { i18n } = window.SignalContext;
 

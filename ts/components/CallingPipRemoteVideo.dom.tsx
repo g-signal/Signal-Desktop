@@ -35,7 +35,6 @@ import {
 
 const { clamp, isNumber, maxBy } = lodash;
 
-const { clamp, isNumber, maxBy } = lodash;
 
 function BlurredBackground({
   activeCall,

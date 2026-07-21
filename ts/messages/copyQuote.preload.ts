@@ -23,7 +23,6 @@ import { isDownloadable } from '../util/Attachment.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 const log = createLogger('copyQuote');
 const { i18n } = window.SignalContext;

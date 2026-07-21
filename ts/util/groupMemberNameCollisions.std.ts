@@ -11,7 +11,6 @@ import { isInSystemContacts } from './isInSystemContacts.std.js';
 
 const { mapValues, pickBy } = lodash;
 
-const { mapValues, pickBy } = lodash;
 
 export type GroupNameCollisionsWithIdsByTitle = Readonly<
   Record<string, Array<string>>

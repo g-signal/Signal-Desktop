@@ -71,7 +71,6 @@ import { tw } from '../axo/tw.dom.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 export type PropsType = {
   backupMediaDownloadProgress: {

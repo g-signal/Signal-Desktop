@@ -12,7 +12,6 @@ import {
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export function SettingsRow({
   children,

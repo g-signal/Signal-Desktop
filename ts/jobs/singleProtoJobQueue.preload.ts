@@ -31,7 +31,6 @@ import { parseUnknown } from '../util/schemas.std.js';
 
 const { isBoolean } = lodash;
 
-const { isBoolean } = lodash;
 
 const MAX_RETRY_TIME = DAY;
 const MAX_PARALLEL_JOBS = 5;

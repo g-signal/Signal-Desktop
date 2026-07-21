@@ -13,7 +13,6 @@ import { DAY, SECOND } from '../util/durations/index.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 type CreateHandlerOptions = {
   readonly autoSolve?: boolean;

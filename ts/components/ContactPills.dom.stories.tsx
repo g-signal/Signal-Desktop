@@ -15,7 +15,6 @@ import { getDefaultConversation } from '../test-helpers/getDefaultConversation.s
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

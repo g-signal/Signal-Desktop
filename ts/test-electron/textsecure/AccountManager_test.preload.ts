@@ -24,7 +24,6 @@ import { itemStorage } from '../../textsecure/Storage.preload.js';
 
 const { range } = lodash;
 
-const { range } = lodash;
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 

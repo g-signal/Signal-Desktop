@@ -146,9 +146,6 @@ import {
 const { chmod, realpath, writeFile } = fsExtra;
 const { get, pick, isNumber, isBoolean, some, debounce, noop } = lodash;
 
-const { chmod, realpath, writeFile } = fsExtra;
-const { get, pick, isNumber, isBoolean, some, debounce, noop } = lodash;
-
 const log = createLogger('app/main');
 const updaterLog = log.child('updater');
 

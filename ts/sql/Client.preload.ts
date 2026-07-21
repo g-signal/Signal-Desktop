@@ -77,7 +77,6 @@ import {
 
 const { groupBy, isTypedArray, last, map, omit } = lodash;
 
-const { groupBy, isTypedArray, last, map, omit } = lodash;
 
 const log = createLogger('Client');
 

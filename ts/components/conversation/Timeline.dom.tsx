@@ -46,7 +46,6 @@ import { MessageInteractivity } from './Message.dom.js';
 
 const { first, get, isNumber, last, throttle } = lodash;
 
-const { first, get, isNumber, last, throttle } = lodash;
 
 const AT_BOTTOM_THRESHOLD = 15;
 const AT_BOTTOM_DETECTOR_STYLE = { height: AT_BOTTOM_THRESHOLD };

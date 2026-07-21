@@ -11,7 +11,6 @@ import { Spinner } from './Spinner.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export enum CallingLobbyJoinButtonVariant {
   CallIsFull = 'CallIsFull',

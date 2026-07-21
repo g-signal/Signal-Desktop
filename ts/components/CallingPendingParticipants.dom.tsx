@@ -28,7 +28,6 @@ import { drop } from '../util/drop.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 enum ConfirmDialogState {
   None = 'None',

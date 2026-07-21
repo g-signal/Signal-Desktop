@@ -13,7 +13,6 @@ const { orderBy } = lodash;
 
 const { readJsonSync, writeJsonSync } = fsExtra;
 
-const { orderBy } = lodash;
 
 export const ENCODING = 'utf8';
 

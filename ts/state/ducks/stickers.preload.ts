@@ -30,7 +30,6 @@ import { useBoundActions } from '../../hooks/useBoundActions.std.js';
 
 const { omit, reject } = lodash;
 
-const { omit, reject } = lodash;
 
 const { getRecentStickers } = DataReader;
 const { updateStickerLastUsed } = DataWriter;

@@ -22,7 +22,6 @@ import type {
 
 const { compact, filter, map, orderBy, reject, sortBy, values } = lodash;
 
-const { compact, filter, map, orderBy, reject, sortBy, values } = lodash;
 
 const getSticker = (
   packs: Dictionary<StickerPackDBType>,

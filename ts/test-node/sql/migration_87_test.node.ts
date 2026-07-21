@@ -22,7 +22,6 @@ import type {
 
 const { range } = lodash;
 
-const { range } = lodash;
 
 type TestingKyberKey = Omit<
   KyberPreKeyType,

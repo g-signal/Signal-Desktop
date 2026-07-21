@@ -13,7 +13,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { pick } = lodash;
 
-const { pick } = lodash;
 
 describe('#isOverHourIntoPast', () => {
   it('returns false for now', () => {

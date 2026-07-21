@@ -10,7 +10,6 @@ import { moreStyles } from './util/moreStyles.dom.js';
 
 const { get } = lodash;
 
-const { get } = lodash;
 
 export enum AnalogClockStickerStyle {
   Arabic = 'Arabic',

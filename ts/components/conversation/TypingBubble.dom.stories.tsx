@@ -14,7 +14,6 @@ import { ThemeType } from '../../types/Util.std.js';
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

@@ -34,7 +34,6 @@ import { usePrevious } from '../hooks/usePrevious.std.js';
 
 const { debounce, noop } = lodash;
 
-const { debounce, noop } = lodash;
 
 const MAX_TIME_TO_SHOW_STALE_VIDEO_FRAMES = 10000;
 const MAX_TIME_TO_SHOW_STALE_SCREENSHARE_FRAMES = 60000;

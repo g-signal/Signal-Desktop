@@ -25,7 +25,6 @@ import { SizeObserver } from '../hooks/useSizeObserver.dom.js';
 
 const { pick } = lodash;
 
-const { pick } = lodash;
 
 type OwnProps = {
   i18n: LocalizerType;

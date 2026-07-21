@@ -145,7 +145,6 @@ import { DataWriter } from '../Server.node.js';
 
 const { keyBy } = lodash;
 
-const { keyBy } = lodash;
 
 function updateToSchemaVersion1(db: Database): void {
   db.exec(`

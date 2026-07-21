@@ -15,7 +15,6 @@ import {
 
 const { take, uniq } = lodash;
 
-const { take, uniq } = lodash;
 
 const { updateEmojiUsage } = DataWriter;
 

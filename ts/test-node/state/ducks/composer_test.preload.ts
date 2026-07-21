@@ -22,7 +22,6 @@ import { fakeDraftAttachment } from '../../../test-helpers/fakeAttachment.std.js
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 describe('both/state/ducks/composer', () => {
   const QUOTED_MESSAGE = {

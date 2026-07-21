@@ -106,7 +106,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { debounce, isNumber, chunk } = lodash;
 
-const { debounce, isNumber, chunk } = lodash;
 
 const log = createLogger('storage');
 

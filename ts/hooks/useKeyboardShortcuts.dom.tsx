@@ -11,7 +11,6 @@ import { isShowingAnyModal } from '../state/selectors/globalModals.std.js';
 
 const { get } = lodash;
 
-const { get } = lodash;
 
 type KeyboardShortcutHandlerType = (ev: KeyboardEvent) => boolean;
 

@@ -42,7 +42,6 @@ import type { RenderConversationListItemContextMenuProps } from './conversationL
 
 const { get, pick } = lodash;
 
-const { get, pick } = lodash;
 
 export enum RowType {
   ArchiveButton = 'ArchiveButton',

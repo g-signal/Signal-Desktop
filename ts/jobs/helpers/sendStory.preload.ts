@@ -55,7 +55,6 @@ import { send } from '../../messages/send.preload.js';
 
 const { isEqual } = lodash;
 
-const { isEqual } = lodash;
 
 export async function sendStory(
   conversation: ConversationModel,

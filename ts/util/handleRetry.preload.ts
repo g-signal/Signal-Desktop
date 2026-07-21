@@ -50,7 +50,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { isNumber, random } = lodash;
 
-const { isNumber, random } = lodash;
 
 const log = createLogger('handleRetry');
 

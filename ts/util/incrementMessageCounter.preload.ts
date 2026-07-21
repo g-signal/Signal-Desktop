@@ -10,7 +10,6 @@ import { createLogger } from '../logging/log.std.js';
 
 const { debounce, isNumber } = lodash;
 
-const { debounce, isNumber } = lodash;
 
 const log = createLogger('incrementMessageCounter');
 

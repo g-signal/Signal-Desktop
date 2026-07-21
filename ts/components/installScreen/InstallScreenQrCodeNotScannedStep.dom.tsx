@@ -28,7 +28,6 @@ import type { UpdatesStateType } from '../../state/ducks/updates.preload.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 // We can't always use destructuring assignment because of the complexity of this props
 //   type.

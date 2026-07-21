@@ -7,7 +7,6 @@ import { isLongMessage } from '../types/MIME.std.js';
 
 const { partition } = lodash;
 
-const { partition } = lodash;
 
 // NOTE: If you're modifying this function then you'll likely also need
 // to modify ./queueAttachmentDownloads

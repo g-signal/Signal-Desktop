@@ -8,7 +8,6 @@ import { AbortableProcess } from '../../util/AbortableProcess.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 describe('AbortableProcess', () => {
   it('resolves the result normally', async () => {

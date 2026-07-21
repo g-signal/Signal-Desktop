@@ -33,7 +33,6 @@ const { mapValues, orderBy } = lodash;
 
 const log = createLogger('ReactionViewer');
 
-const { groupBy, mapValues, orderBy } = lodash;
 
 export type Reaction = {
   emoji: string;

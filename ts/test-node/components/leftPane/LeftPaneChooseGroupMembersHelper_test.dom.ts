@@ -15,7 +15,6 @@ import { LeftPaneChooseGroupMembersHelper } from '../../../components/leftPane/L
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 describe('LeftPaneChooseGroupMembersHelper', () => {
   const defaults = {

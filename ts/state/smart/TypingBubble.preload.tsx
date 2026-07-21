@@ -16,7 +16,6 @@ import { getPreferredBadgeSelector } from '../selectors/badges.preload.js';
 
 const { last } = lodash;
 
-const { last } = lodash;
 
 type ExternalProps = {
   conversationId: string;

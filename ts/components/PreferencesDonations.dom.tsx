@@ -60,7 +60,6 @@ import { tw } from '../axo/tw.dom.js';
 
 const { groupBy, sortBy } = lodash;
 
-const { groupBy, sortBy } = lodash;
 
 const log = createLogger('PreferencesDonations');
 

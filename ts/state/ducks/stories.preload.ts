@@ -87,7 +87,6 @@ import { itemStorage } from '../../textsecure/Storage.preload.js';
 
 const { isEqual, pick } = lodash;
 
-const { isEqual, pick } = lodash;
 
 const log = createLogger('stories');
 

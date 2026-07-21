@@ -10,7 +10,6 @@ import { UserText } from './UserText.dom.js';
 
 const { take } = lodash;
 
-const { take } = lodash;
 
 type PropsType = {
   i18n: LocalizerType;

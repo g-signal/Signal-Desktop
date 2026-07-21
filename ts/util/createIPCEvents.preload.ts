@@ -39,7 +39,6 @@ import OS from './os/osPreload.preload.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('createIPCEvents');
 const { i18n } = window.SignalContext;

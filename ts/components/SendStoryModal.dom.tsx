@@ -52,7 +52,6 @@ import { Theme } from '../util/theme.std.js';
 
 const { noop, sortBy } = lodash;
 
-const { noop, sortBy } = lodash;
 
 export type PropsType = {
   draftAttachment: AttachmentType;

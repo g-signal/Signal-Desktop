@@ -16,7 +16,6 @@ import { StorybookThemeContext } from '../../../../.storybook/StorybookThemeCont
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

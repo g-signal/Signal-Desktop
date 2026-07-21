@@ -26,7 +26,6 @@ import type { AxoMenuBuilder } from '../axo/AxoMenuBuilder.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsType = {
   closeEditHistoryModal: () => unknown;

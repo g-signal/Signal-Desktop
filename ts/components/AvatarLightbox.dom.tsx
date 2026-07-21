@@ -11,7 +11,6 @@ import type { LocalizerType } from '../types/Util.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsType = {
   avatarPlaceholderGradient?: Readonly<[string, string]>;

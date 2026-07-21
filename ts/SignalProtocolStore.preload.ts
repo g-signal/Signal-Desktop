@@ -71,7 +71,6 @@ import { itemStorage } from './textsecure/Storage.preload.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 const log = createLogger('SignalProtocolStore');
 

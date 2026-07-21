@@ -25,7 +25,6 @@ import type { MessageModel } from '../../models/messages.preload.js';
 
 const { mapValues, pick } = lodash;
 
-const { mapValues, pick } = lodash;
 
 const log = createLogger('messageFailures');
 const { i18n } = window.SignalContext;

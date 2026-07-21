@@ -14,7 +14,6 @@ import { ConversationListItem } from './conversationList/ConversationListItem.do
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 type PropsType = {
   groupAdmins: Array<ConversationType>;

@@ -22,7 +22,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { pick } = lodash;
 
-const { pick } = lodash;
 
 const log = createLogger('storyLoader');
 

@@ -11,7 +11,6 @@ import type { AciString, ServiceIdString } from '../../types/ServiceId.std.js';
 
 const { without } = lodash;
 
-const { without } = lodash;
 
 const log = createLogger('Blocked');
 

@@ -10,7 +10,6 @@ import { processImageFile } from '../util/processImageFile.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsType = {
   className: string;

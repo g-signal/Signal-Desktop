@@ -37,7 +37,6 @@ import { AxoButton } from '../axo/AxoButton.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsDataType = Readonly<{
   i18n: LocalizerType;

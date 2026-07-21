@@ -9,7 +9,6 @@ import * as Bytes from '../Bytes.std.js';
 
 const { isString } = lodash;
 
-const { isString } = lodash;
 
 export const getRelativePath = (name: string): string => {
   if (!isString(name)) {

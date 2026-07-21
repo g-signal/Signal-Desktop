@@ -29,7 +29,6 @@ import type { FunEmojiSelection } from '../../components/fun/panels/FunPanelEmoj
 
 const { isNumber, debounce } = lodash;
 
-const { isNumber, debounce } = lodash;
 
 const log = createLogger('completion');
 

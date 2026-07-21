@@ -31,7 +31,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { isNumber, pick } = lodash;
 
-const { isNumber, pick } = lodash;
 
 const log = createLogger('markConversationRead');
 

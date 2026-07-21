@@ -10,7 +10,6 @@ import { FindDirection } from './LeftPaneHelper.dom.js';
 
 const { find: findFirst, findLast, first, last } = lodash;
 
-const { find: findFirst, findLast, first, last } = lodash;
 
 /**
  * This will look up or down in an array of conversations for the next one to select.

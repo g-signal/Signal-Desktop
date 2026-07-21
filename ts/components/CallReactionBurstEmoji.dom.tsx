@@ -10,7 +10,6 @@ import { useReducedMotion } from '../hooks/useReducedMotion.dom.js';
 
 const { random } = lodash;
 
-const { random } = lodash;
 
 export type PropsType = {
   values: Array<string>;

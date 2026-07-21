@@ -17,7 +17,6 @@ import { isNotNil } from '../../util/isNotNil.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 //
 // Main migration function that does the following:

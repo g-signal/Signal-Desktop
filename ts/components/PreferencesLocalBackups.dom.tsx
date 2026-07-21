@@ -41,7 +41,6 @@ import type { LocalBackupExportMetadata } from '../types/LocalExport.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export function PreferencesLocalBackups({
   accountEntropyPool,

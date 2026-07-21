@@ -17,7 +17,6 @@ import { VIDEO_MP4 } from '../types/MIME.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const { i18n } = window.SignalContext;
 

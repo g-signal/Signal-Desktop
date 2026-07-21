@@ -19,7 +19,6 @@ import { createLogger } from '../logging/log.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 const logger = createLogger('writeDraftAttachment');
 

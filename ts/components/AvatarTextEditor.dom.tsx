@@ -27,7 +27,6 @@ import {
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 type DoneHandleType = (
   avatarBuffer: Uint8Array,

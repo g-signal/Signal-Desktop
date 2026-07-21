@@ -19,7 +19,6 @@ import { getKeyFromCallLink } from '../../util/callLinks.std.js';
 
 const { unescape } = lodash;
 
-const { unescape } = lodash;
 
 export type Props = LinkPreviewForUIType & {
   i18n: LocalizerType;

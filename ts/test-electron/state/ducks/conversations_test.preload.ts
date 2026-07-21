@@ -73,7 +73,6 @@ import { itemStorage } from '../../../textsecure/Storage.preload.js';
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const {
   clearGroupCreationError,

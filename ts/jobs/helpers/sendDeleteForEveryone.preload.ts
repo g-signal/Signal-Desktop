@@ -41,7 +41,6 @@ import { sendToGroup } from '../../util/sendToGroup.preload.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 export async function sendDeleteForEveryone(
   conversation: ConversationModel,

@@ -39,7 +39,6 @@ import { strictAssert } from '../../util/assert.std.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 export function canAllErrorsBeIgnored(
   conversation: ConversationAttributesType,

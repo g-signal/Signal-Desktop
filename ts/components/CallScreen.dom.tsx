@@ -117,7 +117,6 @@ const { isEqual, noop } = lodash;
 
 const log = createLogger('CallScreen');
 
-const { isEqual, noop } = lodash;
 
 export type PropsType = {
   activeCall: ActiveCallType;

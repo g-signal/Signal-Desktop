@@ -20,7 +20,6 @@ import { useBoundActions } from '../../hooks/useBoundActions.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 const log = createLogger('safetyNumber');
 

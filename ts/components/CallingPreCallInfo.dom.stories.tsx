@@ -14,7 +14,6 @@ import { callLinkToConversation } from '../util/callLinks.std.js';
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 const getDefaultGroupConversation = () =>

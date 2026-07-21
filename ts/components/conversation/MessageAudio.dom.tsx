@@ -28,7 +28,6 @@ import { formatFileSize } from '../../util/formatFileSize.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('MessageAudio');
 

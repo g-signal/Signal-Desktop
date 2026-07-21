@@ -19,7 +19,6 @@ import { SECOND } from '../util/durations/index.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('JobQueue');
 

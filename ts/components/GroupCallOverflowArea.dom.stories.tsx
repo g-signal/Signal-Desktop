@@ -16,7 +16,6 @@ import { MINUTE } from '../util/durations/index.std.js';
 
 const { memoize, times } = lodash;
 
-const { memoize, times } = lodash;
 
 const MAX_PARTICIPANTS = 32;
 

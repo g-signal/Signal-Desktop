@@ -26,7 +26,6 @@ import { DAY, HOUR } from '../../util/durations/constants.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 describe('utils/downloadAttachment', () => {
   const baseAttachment = {

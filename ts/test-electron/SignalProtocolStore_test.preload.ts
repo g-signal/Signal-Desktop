@@ -42,7 +42,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { clone } = lodash;
 
-const { clone } = lodash;
 
 const {
   RecordStructure,

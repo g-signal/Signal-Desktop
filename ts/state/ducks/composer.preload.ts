@@ -110,7 +110,6 @@ import type { StateThunk } from '../types.std.js';
 
 const { debounce, isEqual } = lodash;
 
-const { debounce, isEqual } = lodash;
 
 const log = createLogger('composer');
 

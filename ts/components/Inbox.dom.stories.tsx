@@ -11,7 +11,6 @@ import { DAY, SECOND } from '../util/durations/index.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const { i18n } = window.SignalContext;
 

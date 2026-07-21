@@ -17,7 +17,6 @@ import { CallLinkRestrictions } from '../types/CallLink.std.js';
 
 const { sample } = lodash;
 
-const { sample } = lodash;
 
 const { i18n } = window.SignalContext;
 

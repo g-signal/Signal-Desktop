@@ -175,7 +175,6 @@ import {
 
 const { isBoolean, isNumber, isString, noop, omit } = lodash;
 
-const { isBoolean, isNumber, isString, noop, omit } = lodash;
 
 const log = createLogger('MessageReceiver');
 

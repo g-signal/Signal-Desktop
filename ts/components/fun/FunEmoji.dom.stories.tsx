@@ -16,7 +16,6 @@ import {
 
 const { chunk } = lodash;
 
-const { chunk } = lodash;
 
 export default {
   title: 'Components/Fun/FunEmoji',

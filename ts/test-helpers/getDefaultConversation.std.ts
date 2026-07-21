@@ -16,7 +16,6 @@ import { getAvatarPlaceholderGradient } from '../utils/getAvatarPlaceholderGradi
 
 const { sample } = lodash;
 
-const { sample } = lodash;
 
 export const getAvatarPath = (): string =>
   sample([

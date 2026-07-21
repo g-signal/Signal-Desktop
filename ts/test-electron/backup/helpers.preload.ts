@@ -32,7 +32,6 @@ import { itemStorage } from '../../textsecure/Storage.preload.js';
 
 const { omit, sortBy } = lodash;
 
-const { omit, sortBy } = lodash;
 
 export const OUR_ACI = generateAci();
 export const OUR_PNI = generatePni();

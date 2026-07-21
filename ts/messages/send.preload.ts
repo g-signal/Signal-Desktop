@@ -36,7 +36,6 @@ import type { SendStateByConversationId } from './MessageSendState.std.js';
 
 const { noop, union } = lodash;
 
-const { noop, union } = lodash;
 
 const log = createLogger('send');
 

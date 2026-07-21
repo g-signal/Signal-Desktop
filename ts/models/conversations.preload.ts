@@ -266,7 +266,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { compact, isNumber, throttle, debounce } = lodash;
 
-const { compact, isNumber, throttle, debounce } = lodash;
 
 const log = createLogger('conversations');
 

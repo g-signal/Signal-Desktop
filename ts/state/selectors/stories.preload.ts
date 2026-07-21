@@ -49,7 +49,6 @@ import { getStoriesEnabled } from './items.dom.js';
 
 const { pick } = lodash;
 
-const { pick } = lodash;
 
 const log = createLogger('stories');
 

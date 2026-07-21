@@ -28,7 +28,6 @@ import {
 
 const { sampleSize, times } = lodash;
 
-const { sampleSize, times } = lodash;
 
 describe('message send state utilities', () => {
   describe('maxStatus', () => {

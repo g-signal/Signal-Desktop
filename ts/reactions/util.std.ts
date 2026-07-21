@@ -7,7 +7,6 @@ import { areObjectEntriesEqual } from '../util/areObjectEntriesEqual.std.js';
 
 const { findLastIndex, has, identity, omit, negate } = lodash;
 
-const { findLastIndex, has, identity, omit, negate } = lodash;
 
 const isReactionEqual = (
   a: undefined | Readonly<MessageReactionType>,

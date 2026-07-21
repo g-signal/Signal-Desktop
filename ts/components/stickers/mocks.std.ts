@@ -9,7 +9,6 @@ import type {
 
 const { sample } = lodash;
 
-const { sample } = lodash;
 
 export const sticker1: StickerType = {
   id: 1,

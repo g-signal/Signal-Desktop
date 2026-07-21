@@ -10,7 +10,6 @@ import { strictAssert } from '../util/assert.std.js';
 
 const { isNumber, last } = lodash;
 
-const { isNumber, last } = lodash;
 
 export type JSONRow = Readonly<{ json: string }>;
 export type JSONRows = Array<JSONRow>;

@@ -90,7 +90,6 @@ import { eraseMessageContents } from '../../util/cleanup.preload.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 const MAX_CONCURRENT_ATTACHMENT_UPLOADS = 5;
 

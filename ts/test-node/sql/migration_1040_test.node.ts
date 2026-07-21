@@ -20,7 +20,6 @@ import { IMAGE_JPEG } from '../../types/MIME.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 function getAttachmentDownloadJobs(
   db: ReadableDB

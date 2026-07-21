@@ -24,7 +24,6 @@ import { getRoomIdFromRootKey } from '../../util/callLinksRingrtc.node.js';
 
 const { range } = lodash;
 
-const { range } = lodash;
 
 export const debug = createDebug('mock:test:storage');
 

@@ -24,7 +24,6 @@ import { RateLimitedError } from './RateLimitedError.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type CDSSocketBaseOptionsType = Readonly<{
   logger: LoggerType;

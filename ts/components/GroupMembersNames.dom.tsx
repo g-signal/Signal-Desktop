@@ -12,7 +12,6 @@ import type { GroupV2Membership } from './conversation/conversation-details/Conv
 
 const { take } = lodash;
 
-const { take } = lodash;
 
 type PropsType = {
   i18n: LocalizerType;

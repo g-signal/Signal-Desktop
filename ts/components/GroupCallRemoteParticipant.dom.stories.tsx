@@ -14,7 +14,6 @@ import { MINUTE } from '../util/durations/index.std.js';
 
 const { memoize } = lodash;
 
-const { memoize } = lodash;
 
 const { i18n } = window.SignalContext;
 

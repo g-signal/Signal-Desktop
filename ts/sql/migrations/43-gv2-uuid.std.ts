@@ -18,7 +18,6 @@ import type { WritableDB } from '../Interface.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 type MessageType = Readonly<{
   id: string;

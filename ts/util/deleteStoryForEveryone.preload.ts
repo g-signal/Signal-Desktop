@@ -25,7 +25,6 @@ import { isOlderThan } from './timestamp.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('deleteStoryForEveryone');
 

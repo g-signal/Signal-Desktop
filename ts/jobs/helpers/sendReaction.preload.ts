@@ -45,7 +45,6 @@ import { getSendRecipientLists } from './getSendRecipientLists.dom.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 export async function sendReaction(
   conversation: ConversationModel,

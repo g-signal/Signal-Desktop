@@ -29,7 +29,6 @@ import type { FunJumboEmojiSize } from '../fun/FunEmoji.dom.js';
 
 const { sortBy } = lodash;
 
-const { sortBy } = lodash;
 
 const EMOJI_REGEXP = emojiRegex();
 export enum RenderLocation {

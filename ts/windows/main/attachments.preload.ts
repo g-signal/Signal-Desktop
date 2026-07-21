@@ -18,7 +18,6 @@ import { createLogger } from '../../logging/log.std.js';
 
 const { isString, isTypedArray } = lodash;
 
-const { isString, isTypedArray } = lodash;
 
 const log = createLogger('attachments');
 

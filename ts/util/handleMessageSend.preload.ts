@@ -18,7 +18,6 @@ import { drop } from './drop.std.js';
 
 const { isBoolean, isNumber } = lodash;
 
-const { isBoolean, isNumber } = lodash;
 
 const log = createLogger('handleMessageSend');
 

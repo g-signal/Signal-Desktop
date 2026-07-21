@@ -59,7 +59,6 @@ import { itemStorage } from './Storage.preload.js';
 
 const { reject } = lodash;
 
-const { reject } = lodash;
 
 const log = createLogger('OutgoingMessage');
 

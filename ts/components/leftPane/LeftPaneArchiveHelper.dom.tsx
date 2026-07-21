@@ -23,7 +23,6 @@ import * as KeyboardLayout from '../../services/keyboardLayout.dom.js';
 
 const { last } = lodash;
 
-const { last } = lodash;
 
 type LeftPaneArchiveBasePropsType = {
   archivedConversations: ReadonlyArray<ConversationListItemPropsType>;

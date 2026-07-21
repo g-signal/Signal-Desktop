@@ -11,7 +11,6 @@ import { Modal } from './Modal.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const { i18n } = window.SignalContext;
 

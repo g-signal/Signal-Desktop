@@ -42,7 +42,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('contactSync');
 

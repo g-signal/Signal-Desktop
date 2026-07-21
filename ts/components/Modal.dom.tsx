@@ -25,7 +25,6 @@ import {
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('Modal');
 

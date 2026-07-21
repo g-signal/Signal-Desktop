@@ -17,7 +17,6 @@ import {
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 describe('reaction utilities', () => {
   const OUR_CONVO_ID = uuid();

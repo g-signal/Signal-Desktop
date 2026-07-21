@@ -20,7 +20,6 @@ import { getDefaultConversationWithServiceId } from '../test-helpers/getDefaultC
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const MAX_HANDS = 20;
 const LOCAL_DEMUX_ID = 1;

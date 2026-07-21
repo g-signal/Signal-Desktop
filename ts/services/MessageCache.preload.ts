@@ -22,7 +22,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { throttle } = lodash;
 
-const { throttle } = lodash;
 
 const log = createLogger('MessageCache');
 

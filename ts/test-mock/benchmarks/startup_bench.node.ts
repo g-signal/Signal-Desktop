@@ -9,7 +9,6 @@ import { type RegressionSample } from '../bootstrap.node.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 const INITIAL_MESSAGE_COUNT = 1000;
 const FINAL_MESSAGE_COUNT = 5000;

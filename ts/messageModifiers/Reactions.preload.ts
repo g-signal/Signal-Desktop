@@ -52,7 +52,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { maxBy } = lodash;
 
-const { maxBy } = lodash;
 
 const log = createLogger('Reactions');
 

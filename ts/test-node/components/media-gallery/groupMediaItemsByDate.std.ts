@@ -11,7 +11,6 @@ import { fakeAttachment } from '../../../test-helpers/fakeAttachment.std.js';
 
 const { shuffle } = lodash;
 
-const { shuffle } = lodash;
 
 const testDate = (
   year: number,

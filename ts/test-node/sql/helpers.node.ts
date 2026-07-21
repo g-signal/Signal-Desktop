@@ -11,7 +11,6 @@ import { consoleLogger } from '../../util/consoleLogger.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export function createDB(): WritableDB {
   const db = new SQL(':memory:') as WritableDB;

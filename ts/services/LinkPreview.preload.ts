@@ -51,7 +51,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { debounce, omit } = lodash;
 
-const { debounce, omit } = lodash;
 
 const log = createLogger('LinkPreview');
 const { i18n } = window.SignalContext;

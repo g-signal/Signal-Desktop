@@ -19,7 +19,6 @@ import { handleOutsideClick } from '../../util/handleOutsideClick.dom.js';
 
 const { isString } = lodash;
 
-const { isString } = lodash;
 
 const log = createLogger('menu');
 

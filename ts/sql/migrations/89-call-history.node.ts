@@ -31,7 +31,6 @@ import { safeParseStrict } from '../../util/schemas.std.js';
 
 const { isObject } = lodash;
 
-const { isObject } = lodash;
 
 // Legacy type for calls that never had a call id
 type DirectCallHistoryDetailsType = {

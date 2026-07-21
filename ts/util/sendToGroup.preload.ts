@@ -100,7 +100,6 @@ import { isFeaturedEnabledNoRedux } from './isFeatureEnabled.dom.js';
 
 const { differenceWith, omit } = lodash;
 
-const { differenceWith, omit } = lodash;
 
 const log = createLogger('sendToGroup');
 

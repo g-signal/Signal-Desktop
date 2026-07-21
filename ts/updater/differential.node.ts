@@ -21,7 +21,6 @@ import { checkIntegrity } from './util.node.js';
 
 const { chunk: lodashChunk, noop } = lodash;
 
-const { chunk: lodashChunk, noop } = lodash;
 
 const gunzip = promisify(nativeGunzip);
 

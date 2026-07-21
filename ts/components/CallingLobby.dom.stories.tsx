@@ -22,7 +22,6 @@ import { getDefaultCallLinkConversation } from '../test-helpers/fakeCallLink.std
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

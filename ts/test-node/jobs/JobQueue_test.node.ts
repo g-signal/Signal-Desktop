@@ -28,7 +28,6 @@ import { parseUnknown } from '../../util/schemas.std.js';
 
 const { noop, groupBy } = lodash;
 
-const { noop, groupBy } = lodash;
 
 describe('JobQueue', () => {
   describe('end-to-end tests', () => {

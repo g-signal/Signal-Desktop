@@ -26,7 +26,6 @@ import { useConfirmDiscard } from '../hooks/useConfirmDiscard.dom.js';
 
 const { isEqual } = lodash;
 
-const { isEqual } = lodash;
 
 export type PropsType = {
   avatarColor?: AvatarColorType;

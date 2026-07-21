@@ -24,7 +24,6 @@ import { createLogger } from '../ts/logging/log.std.js';
 
 const { map, isString } = lodash;
 
-const { map, isString } = lodash;
 
 const log = createLogger('attachments');
 

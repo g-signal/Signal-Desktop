@@ -10,7 +10,6 @@ import type { StorageServiceFieldsType } from '../sql/Interface.std.js';
 
 const { isNumber, orderBy } = lodash;
 
-const { isNumber, orderBy } = lodash;
 
 // Note: this must match the Backup and Storage Service protos for NotificationProfile
 export enum DayOfWeek {

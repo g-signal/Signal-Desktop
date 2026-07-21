@@ -17,7 +17,6 @@ import {
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 describe('<Timeline> utilities', () => {
   describe('areMessagesInSameGroup', () => {

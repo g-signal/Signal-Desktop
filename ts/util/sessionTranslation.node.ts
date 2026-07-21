@@ -9,7 +9,6 @@ import { deriveSecrets } from '../Crypto.node.js';
 
 const { get, isFinite, isInteger, isString } = lodash;
 
-const { get, isFinite, isInteger, isString } = lodash;
 
 const { RecordStructure, SessionStructure } = signal.proto.storage;
 const { Chain } = SessionStructure;

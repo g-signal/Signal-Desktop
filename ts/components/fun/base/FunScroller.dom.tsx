@@ -23,7 +23,6 @@ import { strictAssert } from '../../../util/assert.std.js';
 
 const { maxBy } = lodash;
 
-const { maxBy } = lodash;
 
 export type FunScrollerProps = Readonly<{
   sectionGap: number;

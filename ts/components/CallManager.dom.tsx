@@ -63,7 +63,6 @@ import type { SetLocalPreviewContainerType } from '../services/calling.preload.j
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('CallManager');
 

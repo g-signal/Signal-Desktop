@@ -15,7 +15,6 @@ import { typeIntoInput } from '../helpers.node.js';
 
 const { sample } = lodash;
 
-const { sample } = lodash;
 
 const CALL_HISTORY_COUNT = 1000;
 

@@ -35,7 +35,6 @@ import { isProduction } from '../util/version.std.js';
 
 const { filter, flatten, map, pick, sortBy } = lodash;
 
-const { filter, flatten, map, pick, sortBy } = lodash;
 
 const MAX_LOG_LINES = 10_000_000;
 

@@ -13,7 +13,6 @@ import { isNotNil } from '../util/isNotNil.std.js';
 
 const { get } = lodash;
 
-const { get } = lodash;
 
 export type MemberType = Omit<ConversationType, 'serviceId'> &
   Readonly<{

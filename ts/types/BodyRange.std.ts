@@ -19,7 +19,6 @@ import type { AciString } from './ServiceId.std.js';
 
 const { isEqual, isNumber, omit, orderBy, partition } = lodash;
 
-const { isEqual, isNumber, omit, orderBy, partition } = lodash;
 
 const log = createLogger('BodyRange');
 

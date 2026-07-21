@@ -25,7 +25,6 @@ import type { processAttachment } from '../util/processAttachment.preload.js';
 
 const { get, has } = lodash;
 
-const { get, has } = lodash;
 
 function usePortalElement(testid: string): HTMLDivElement | null {
   const [element, setElement] = useState<HTMLDivElement | null>(null);

@@ -46,7 +46,6 @@ import { DataReader } from '../../sql/Client.preload.js';
 
 const { sortBy } = lodash;
 
-const { sortBy } = lodash;
 
 export type SmartConversationDetailsProps = {
   conversationId: string;

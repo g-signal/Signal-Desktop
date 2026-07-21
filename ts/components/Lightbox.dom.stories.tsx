@@ -21,7 +21,6 @@ import { fakeAttachment } from '../test-helpers/fakeAttachment.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const { i18n } = window.SignalContext;
 

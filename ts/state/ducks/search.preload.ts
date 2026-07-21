@@ -51,7 +51,6 @@ import { isConversationUnread } from '../../util/countUnreadStats.std.js';
 
 const { debounce, omit, reject } = lodash;
 
-const { debounce, omit, reject } = lodash;
 
 const log = createLogger('search');
 

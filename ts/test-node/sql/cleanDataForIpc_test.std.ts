@@ -8,7 +8,6 @@ import { cleanDataForIpc } from '../../sql/cleanDataForIpc.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 describe('cleanDataForIpc', () => {
   it('does nothing to JSON primitives', () => {

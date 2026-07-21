@@ -11,7 +11,6 @@ import { getStreamWithTimeout } from '../../util/getStreamWithTimeout.node.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 describe('getStreamWithTimeout', () => {
   let sandbox: sinon.SinonSandbox;

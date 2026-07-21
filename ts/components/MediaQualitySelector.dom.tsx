@@ -13,7 +13,6 @@ import { handleOutsideClick } from '../util/handleOutsideClick.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 export type PropsType = {
   conversationId: string;

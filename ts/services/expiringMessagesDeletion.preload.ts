@@ -16,7 +16,6 @@ import { drop } from '../util/drop.std.js';
 
 const { debounce } = lodash;
 
-const { debounce } = lodash;
 
 const log = createLogger('expiringMessagesDeletion');
 

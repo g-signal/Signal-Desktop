@@ -21,7 +21,6 @@ import { getFakeCallHistoryGroup } from '../../../test-helpers/getFakeCallHistor
 
 const { times } = lodash;
 
-const { times } = lodash;
 
 const { i18n } = window.SignalContext;
 

@@ -19,7 +19,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { isFunction, isNumber } = lodash;
 
-const { isFunction, isNumber } = lodash;
 
 const log = createLogger('migrateMessageData');
 

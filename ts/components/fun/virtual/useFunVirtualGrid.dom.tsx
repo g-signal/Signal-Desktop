@@ -14,7 +14,6 @@ import { missingCaseError } from '../../../util/missingCaseError.std.js';
 
 const { chunk, groupBy } = lodash;
 
-const { chunk, groupBy } = lodash;
 
 export type SectionKey = `section-${string}`;
 export type HeaderKey = `header-${string}`;

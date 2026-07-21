@@ -38,7 +38,6 @@ import { isAbortError } from '../util/isAbortError.std.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('Lightbox');
 

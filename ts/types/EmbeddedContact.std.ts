@@ -27,7 +27,6 @@ import { getLocalAttachmentUrl } from '../util/getLocalAttachmentUrl.std.js';
 
 const { omit } = lodash;
 
-const { omit } = lodash;
 
 type GenericEmbeddedContactType<AvatarType> = {
   name?: Name;

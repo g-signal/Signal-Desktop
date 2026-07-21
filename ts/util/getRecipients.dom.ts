@@ -13,7 +13,6 @@ import { isNotNil } from './isNotNil.std.js';
 
 const { compact, uniq } = lodash;
 
-const { compact, uniq } = lodash;
 
 export function getRecipients(
   conversationAttributes: ConversationAttributesType,

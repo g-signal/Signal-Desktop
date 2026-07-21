@@ -54,7 +54,6 @@ import { DataWriter } from '../../../sql/Client.preload.js';
 
 const { cloneDeep, noop } = lodash;
 
-const { cloneDeep, noop } = lodash;
 
 const ACI_1 = generateAci();
 const NOW = new Date('2020-01-23T04:56:00.000');

@@ -48,7 +48,6 @@ import type { PollVoteWithUserType } from '../../state/selectors/message.preload
 
 const { isBoolean, noop } = lodash;
 
-const { isBoolean, noop } = lodash;
 
 const { i18n } = window.SignalContext;
 

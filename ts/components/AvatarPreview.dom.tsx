@@ -16,7 +16,6 @@ import { type ConversationType } from '../state/ducks/conversations.preload.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 const log = createLogger('AvatarPreview');
 

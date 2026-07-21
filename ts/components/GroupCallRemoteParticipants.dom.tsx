@@ -31,7 +31,6 @@ import type { CallingImageDataCache } from './CallManager.dom.js';
 
 const { clamp, chunk, maxBy, flatten, noop } = lodash;
 
-const { clamp, chunk, maxBy, flatten, noop } = lodash;
 
 const log = createLogger('GroupCallRemoteParticipants');
 

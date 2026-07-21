@@ -39,7 +39,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { groupBy } = lodash;
 
-const { groupBy } = lodash;
 
 const log = createLogger('MessageReceipts');
 

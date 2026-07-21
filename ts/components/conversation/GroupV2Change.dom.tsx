@@ -33,7 +33,6 @@ import { ConfirmationDialog } from '../ConfirmationDialog.dom.js';
 
 const { get } = lodash;
 
-const { get } = lodash;
 
 const log = createLogger('GroupV2Change');
 

@@ -25,7 +25,6 @@ import { itemStorage } from '../textsecure/Storage.preload.js';
 
 const { last, sortBy } = lodash;
 
-const { last, sortBy } = lodash;
 
 const log = createLogger('deleteForMe');
 

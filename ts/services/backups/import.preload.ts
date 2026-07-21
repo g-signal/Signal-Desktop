@@ -173,7 +173,6 @@ import type { ThemeType } from '../../util/preload.preload.js';
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 const log = createLogger('import');
 

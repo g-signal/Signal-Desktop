@@ -12,8 +12,6 @@ import type {
 
 const { isString } = lodash;
 
-const { isString } = lodash;
-
 export type CreateTemplateOptionsType = MenuOptionsType & MenuActionsType;
 
 export const createTemplate = (

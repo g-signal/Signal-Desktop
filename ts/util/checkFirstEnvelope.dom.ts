@@ -14,7 +14,6 @@ import type { IncomingWebSocketRequest } from '../textsecure/WebsocketResources.
 
 const { isNumber } = lodash;
 
-const { isNumber } = lodash;
 
 const log = createLogger('checkFirstEnvelope');
 
