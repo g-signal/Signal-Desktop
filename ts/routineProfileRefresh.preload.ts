@@ -19,7 +19,6 @@ import { isDirectConversation } from './util/whatTypeOfConversation.dom.js';
 
 const { isNil, sortBy } = lodash;
 
-const { isNil, sortBy } = lodash;
 
 const log = createLogger('routineProfileRefresh');
 

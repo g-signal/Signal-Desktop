@@ -16,8 +16,6 @@ import { useFunEmojiLocalization } from './FunEmojiLocalizationProvider.dom.js';
 
 const { sortBy } = lodash;
 
-const { sortBy } = lodash;
-
 export type FunEmojiSearchIndexEntry = Readonly<{
   key: EmojiParentKey;
   rank: number | null;

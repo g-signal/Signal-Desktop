@@ -23,8 +23,6 @@ import type { LinkPreviewType } from './message/LinkPreviews.std.js';
 
 const { isNumber, compact, isEmpty, range } = lodash;
 
-const { isNumber, compact, isEmpty, range } = lodash;
-
 export type LinkPreviewImage = AttachmentWithHydratedData;
 
 export type LinkPreviewResult = {

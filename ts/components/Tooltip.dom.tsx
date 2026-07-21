@@ -15,7 +15,6 @@ import { getInteractionMode } from '../services/InteractionMode.dom.js';
 
 const { noop } = lodash;
 
-const { noop } = lodash;
 
 type EventWrapperPropsType = {
   className?: string;

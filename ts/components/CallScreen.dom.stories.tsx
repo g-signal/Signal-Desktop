@@ -39,7 +39,6 @@ import { MINUTE } from '../util/durations/index.std.js';
 
 const { sample, shuffle, times } = lodash;
 
-const { sample, shuffle, times } = lodash;
 
 const MAX_PARTICIPANTS = 75;
 const LOCAL_DEMUX_ID = 1;

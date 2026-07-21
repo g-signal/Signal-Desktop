@@ -68,7 +68,6 @@ import { itemStorage } from './textsecure/Storage.preload.js';
 
 const { debounce, pick, uniq, without } = lodash;
 
-const { debounce, pick, uniq, without } = lodash;
 
 const log = createLogger('ConversationController');
 
