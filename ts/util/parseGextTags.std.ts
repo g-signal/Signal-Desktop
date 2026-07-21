@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import type { GextTag } from '../types/GextTag';
-import { isRecord } from './isRecord';
+import { isRecord } from './isRecord.std.js';
 
 export function parseGextTagsFromServer(raw: unknown): Array<GextTag> {
   if (!Array.isArray(raw)) {

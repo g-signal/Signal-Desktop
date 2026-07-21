@@ -17,6 +17,8 @@ import { Spinner } from '../Spinner.dom.js';
 import { Time } from '../Time.dom.js';
 import { formatDateTimeShort } from '../../util/formatTimestamp.dom.js';
 import * as durations from '../../util/durations/index.std.js';
+import type { GextTag } from '../../types/GextTag';
+import { GextTagList } from '../GextTagList';
 
 const { isBoolean, isNumber } = lodash;
 
@@ -63,6 +65,7 @@ type PropsType = {
   unreadMentionsCount?: number;
   avatarSize?: AvatarSize;
   testId?: string;
+  gextTags?: ReadonlyArray<GextTag>;
   renderConversationListItemContextMenu?: (
     props: RenderConversationListItemContextMenuProps
   ) => React.JSX.Element;
@@ -122,6 +125,7 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
       unreadCount,
       unreadMentionsCount,
       serviceId,
+      gextTags,
       renderConversationListItemContextMenu,
     } = props;
 
@@ -233,7 +237,24 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
           )}
         >
           <div aria-live="off" className={HEADER_CLASS_NAME}>
-            <div className={`${HEADER_CLASS_NAME}__name`}>{headerName}</div>
+            <div
+              className={`${HEADER_CLASS_NAME}__name`}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                overflow: 'hidden',
+              }}
+            >
+              <div
+                className={`${HEADER_CLASS_NAME}__name`}
+                style={{ flexGrow: 0 }}
+              >
+                {headerName}
+              </div>
+              {!isMe && gextTags && gextTags.length > 0 && (
+                <GextTagList tags={gextTags} />
+              )}
+            </div>
             <Timestamp timestamp={headerDate} i18n={i18n} />
           </div>
           {messageText || isUnread ? (

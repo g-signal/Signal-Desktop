@@ -98,6 +98,8 @@ import { isPaymentNotificationEvent } from '../../types/Payment.std.js';
 import type { AnyPaymentEvent } from '../../types/Payment.std.js';
 import { getPaymentEventDescription } from '../../messages/payments.std.js';
 import { PanelType } from '../../types/Panels.std.js';
+import { GextTagList } from '../GextTagList';
+import type { GextTag } from '../../types/GextTag';
 import { isPollReceiveEnabled } from '../../types/Polls.dom.js';
 import type { PollWithResolvedVotersType } from '../../state/selectors/message.preload.js';
 import { PollMessageContents } from './poll-message/PollMessageContents.dom.js';
@@ -269,6 +271,7 @@ export type PropsData = {
   direction: DirectionType;
   timestamp: number;
   receivedAtMS?: number;
+  authorGextTags?: ReadonlyArray<GextTag>;
   status?: MessageStatusType;
   contact?: ReadonlyDeep<EmbeddedContactForUIType>;
   author: Pick<
@@ -1136,7 +1139,8 @@ export class Message extends React.PureComponent<Props, State> {
   }
 
   #renderAuthor(): ReactNode {
-    const { author, contactNameColor, i18n, isSticker } = this.props;
+    const { author, contactNameColor, authorGextTags, i18n, isSticker } =
+      this.props;
 
     if (!this.#shouldRenderAuthor()) {
       return null;
@@ -1152,6 +1156,19 @@ export class Message extends React.PureComponent<Props, State> {
           title={author.isMe ? i18n('icu:you') : author.title}
           module={moduleName}
         />
+        {!author.isMe && authorGextTags && authorGextTags.length > 0 && (
+          <span
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              flexShrink: 0,
+              marginLeft: '4px',
+              minWidth: 'max-content',
+            }}
+          >
+            <GextTagList tags={authorGextTags} height={13} />
+          </span>
+        )}
       </div>
     );
   }

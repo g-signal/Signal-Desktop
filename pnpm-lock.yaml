@@ -129,8 +129,8 @@ importers:
         specifier: 3.27.0
         version: 3.27.0(react@18.3.1)
       '@signalapp/libsignal-client':
-        specifier: 0.86.12
-        version: 0.86.12
+        specifier: npm:@gg-signal/libsignal-client@0.81.1
+        version: '@gg-signal/libsignal-client@0.81.1'
       '@signalapp/minimask':
         specifier: 1.0.1
         version: 1.0.1
@@ -1663,6 +1663,9 @@ packages:
 
   '@gar/promisify@1.1.3':
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
+
+  '@gg-signal/libsignal-client@0.81.1':
+    resolution: {integrity: sha512-W5j0N2pi0Ry/W6fIPRrUlnZOBixrr+fXFntj2bVZpiuwNPop4id/H9QQw5Iz7F9xF0HaiMYvKW5W3NcGdHcWCw==}
 
   '@gitbeaker/core@38.12.1':
     resolution: {integrity: sha512-8XMVcBIdVAAoxn7JtqmZ2Ee8f+AZLcCPmqEmPFOXY2jPS84y/DERISg/+sbhhb18iRy+ZsZhpWgQ/r3CkYNJOQ==}
@@ -3494,9 +3497,6 @@ packages:
 
   '@signalapp/libsignal-client@0.76.7':
     resolution: {integrity: sha512-iGWTlFkko7IKlm96Iy91Wz5sIN089nj02ifOk6BWtLzeVi0kFaNj+jK26Sl1JRXy/VfXevcYtiOivOg43BPqpg==}
-
-  '@signalapp/libsignal-client@0.86.12':
-    resolution: {integrity: sha512-GJYT0uSfDv6hsu4uqFlUK/pS43/mCJ86rRODS8RNDdQ1XioGyFE0JT4etHF27f5n+xNkpd4XKYhiquZfxazOgA==}
 
   '@signalapp/minimask@1.0.1':
     resolution: {integrity: sha512-QAwo0joA60urTNbW9RIz6vLKQjy+jdVtH7cvY0wD9PVooD46MAjE40MLssp4xUJrph91n2XvtJ3pbEUDrmT2AA==}
@@ -11809,6 +11809,12 @@ snapshots:
 
   '@gar/promisify@1.1.3': {}
 
+  '@gg-signal/libsignal-client@0.81.1':
+    dependencies:
+      node-gyp-build: 4.8.4
+      type-fest: 4.26.1
+      uuid: 11.0.2
+
   '@gitbeaker/core@38.12.1':
     dependencies:
       '@gitbeaker/requester-utils': 38.12.1
@@ -14282,12 +14288,6 @@ snapshots:
   '@sideway/pinpoint@2.0.0': {}
 
   '@signalapp/libsignal-client@0.76.7':
-    dependencies:
-      node-gyp-build: 4.8.4
-      type-fest: 4.26.1
-      uuid: 11.0.2
-
-  '@signalapp/libsignal-client@0.86.12':
     dependencies:
       node-gyp-build: 4.8.4
       type-fest: 4.26.1

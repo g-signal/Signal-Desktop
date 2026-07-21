@@ -106,6 +106,8 @@ import type {
 } from '../../types/Avatar.std.js';
 import { getDefaultAvatars } from '../../types/Avatar.std.js';
 import { getAvatarData } from '../../util/getAvatarData.dom.js';
+import type { GextTag } from '../../types/GextTag.js';
+import type { GextRobot } from '../../types/GextRobot.js';
 import { isSameAvatarData } from '../../util/isSameAvatarData.std.js';
 import { longRunningTaskWrapper } from '../../util/longRunningTaskWrapper.dom.js';
 import {
@@ -455,6 +457,8 @@ export type ConversationType = ReadonlyDeep<
           isVisible: boolean;
         }
     >;
+    gextTags?: ReadonlyArray<GextTag>;
+    gextRobot?: GextRobot;
   } & (
     | {
         type: 'direct';
