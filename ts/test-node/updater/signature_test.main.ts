@@ -21,7 +21,6 @@ import { createLogger } from '../../logging/log.std.js';
 
 const { copy } = fsExtra;
 
-const { copy } = fsExtra;
 
 const log = createLogger('signature_test');
 

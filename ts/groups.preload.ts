@@ -132,9 +132,6 @@ import { itemStorage } from './textsecure/Storage.preload.js';
 const { compact, difference, flatten, fromPairs, isNumber, omit, values } =
   lodash;
 
-const { compact, difference, flatten, fromPairs, isNumber, omit, values } =
-  lodash;
-
 const log = createLogger('groups');
 
 type AccessRequiredEnum = Proto.AccessControl.AccessRequired;

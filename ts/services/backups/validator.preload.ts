@@ -14,7 +14,6 @@ import { itemStorage } from '../../textsecure/Storage.preload.js';
 
 const { Reader } = protobufjs;
 
-const { Reader } = protobufjs;
 
 export enum ValidationType {
   Export = 'Export',

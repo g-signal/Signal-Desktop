@@ -21,7 +21,6 @@ import { createLogger } from '../../logging/log.std.js';
 
 const { pathExists } = fsExtra;
 
-const { pathExists } = fsExtra;
 
 const log = createLogger('common_test');
 

@@ -14,7 +14,6 @@ import { start } from '../../../app/base_config.node.js';
 
 const { pathExists, readJsonSync } = fsExtra;
 
-const { pathExists, readJsonSync } = fsExtra;
 
 describe('base_config', () => {
   let targetDir: string;

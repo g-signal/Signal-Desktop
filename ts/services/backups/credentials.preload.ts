@@ -59,8 +59,6 @@ import { itemStorage } from '../../textsecure/Storage.preload.js';
 
 const { throttle } = lodashFp;
 
-const { throttle } = lodashFp;
-
 const log = createLogger('Backup.Credentials');
 
 const FETCH_INTERVAL = 3 * DAY;

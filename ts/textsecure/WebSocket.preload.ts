@@ -20,8 +20,6 @@ import { handleStatusCode, translateError } from './Utils.dom.js';
 
 const { client: WebSocketClient } = ws;
 
-const { client: WebSocketClient } = ws;
-
 const log = createLogger('WebSocket');
 
 const TEN_SECONDS = 10 * durations.SECOND;

@@ -11,7 +11,6 @@ const { readJsonSync, writeJsonSync } = fsExtra;
 
 const { orderBy } = lodash;
 
-const { readJsonSync, writeJsonSync } = fsExtra;
 
 
 export const ENCODING = 'utf8';

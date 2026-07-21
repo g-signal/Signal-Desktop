@@ -16,7 +16,6 @@ import { parseUnknown } from '../ts/util/schemas.std.js';
 
 const { realpath, readdir, readFile, unlink, stat } = fsExtra;
 
-const { realpath, readdir, readFile, unlink, stat } = fsExtra;
 
 // See https://github.com/rust-minidump/rust-minidump/blob/main/minidump-processor/json-schema.md
 const dumpString = z.string().or(z.null()).optional();

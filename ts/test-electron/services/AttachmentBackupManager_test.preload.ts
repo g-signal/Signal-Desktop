@@ -34,7 +34,6 @@ import { itemStorage } from '../../textsecure/Storage.preload.js';
 
 const { ensureFile } = fsExtra;
 
-const { ensureFile } = fsExtra;
 
 const TRANSIT_CDN = 2;
 const TRANSIT_CDN_FOR_NEW_UPLOAD = 42;
