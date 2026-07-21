@@ -3,19 +3,19 @@
 
 import type * as client from '@signalapp/libsignal-client';
 
-import type { SignalService as Proto } from '../protobuf/index.js';
-import type { IncomingWebSocketRequest } from './WebsocketResources.js';
+import type { SignalService as Proto } from '../protobuf/index.std.js';
+import type { IncomingWebSocketRequest } from './WebsocketResources.preload.js';
 import type {
   ServiceIdString,
   AciString,
   PniString,
-} from '../types/ServiceId.js';
-import type { TextAttachmentType } from '../types/Attachment.js';
-import type { GiftBadgeStates } from '../components/conversation/Message.js';
-import type { MIMEType } from '../types/MIME.js';
-import type { DurationInSeconds } from '../util/durations/index.js';
-import type { AnyPaymentEvent } from '../types/Payment.js';
-import type { RawBodyRange } from '../types/BodyRange.js';
+} from '../types/ServiceId.std.js';
+import type { TextAttachmentType } from '../types/Attachment.std.js';
+import type { GiftBadgeStates } from '../types/GiftBadgeStates.std.js';
+import type { MIMEType } from '../types/MIME.std.js';
+import type { DurationInSeconds } from '../util/durations/index.std.js';
+import type { AnyPaymentEvent } from '../types/Payment.std.js';
+import type { RawBodyRange } from '../types/BodyRange.std.js';
 
 export {
   IdentityKeyType,
@@ -30,7 +30,7 @@ export {
   SignedPreKeyIdType,
   SignedPreKeyType,
   UnprocessedType,
-} from '../sql/Interface.ts';
+} from '../sql/Interface.std.js';
 
 export type StorageServiceCallOptionsType = {
   credentials?: StorageServiceCredentials;
@@ -185,6 +185,12 @@ export type ProcessedReaction = {
   targetTimestamp?: number;
 };
 
+export type ProcessedPinMessage = Readonly<{
+  targetAuthorAci: AciString;
+  targetSentTimestamp: number;
+  pinDuration: DurationInSeconds | null;
+}>;
+
 export type ProcessedPollCreate = {
   question?: string;
   options?: Array<string>;
@@ -218,6 +224,11 @@ export type ProcessedGiftBadge = {
   state: GiftBadgeStates;
 };
 
+export type ProcessedUnpinMessage = Readonly<{
+  targetAuthorAci: AciString;
+  targetSentTimestamp: number;
+}>;
+
 export type ProcessedStoryContext = {
   authorAci: AciString | undefined;
   sentTimestamp: number;
@@ -243,6 +254,7 @@ export type ProcessedDataMessage = {
   isStory?: boolean;
   isViewOnce: boolean;
   reaction?: ProcessedReaction;
+  pinMessage?: ProcessedPinMessage;
   pollCreate?: ProcessedPollCreate;
   pollVote?: ProcessedPollVote;
   pollTerminate?: ProcessedPollTerminate;
@@ -251,6 +263,7 @@ export type ProcessedDataMessage = {
   groupCallUpdate?: ProcessedGroupCallUpdate;
   storyContext?: ProcessedStoryContext;
   giftBadge?: ProcessedGiftBadge;
+  unpinMessage?: ProcessedUnpinMessage;
   canReplyToStory?: boolean;
 };
 

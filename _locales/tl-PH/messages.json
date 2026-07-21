@@ -42,7 +42,7 @@
     "messageformat": "Ang pag-send ng high quality media will use more data."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Mag-donate sa B&A"
+    "messageformat": "Mag-donate sa Signal"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standard"
@@ -78,10 +78,10 @@
     "messageformat": "Unknown group"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Hindi Mabuksan ang B&A"
+    "messageformat": "Hindi Mabuksan ang Signal"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Para maayos ang isyu, sundin ang recovery guide sa support page o kontakin ang B&A support para matulungan ka.\n\nKung kailangan mong gamitin agad ang B&A, maaari mong burahin ang data mo at i-relink ang desktop na ito. May option kang ilipat ang message history mula sa phone mo."
+    "messageformat": "Para maayos ang isyu, sundin ang recovery guide sa support page o kontakin ang Signal support para matulungan ka.\n\nKung kailangan mong gamitin agad ang Signal, maaari mong burahin ang data mo at i-relink ang desktop na ito. May option kang ilipat ang message history mula sa phone mo."
   },
   "icu:databaseError": {
     "messageformat": "Database Error"
@@ -93,16 +93,25 @@
     "messageformat": "Permanenteng Burahin ang Lahat ng Data"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Ang lahat ng message history at media mo ay permanenteng buburahin sa device na ito. Hindi nito buburahin ang anumang data sa phone mo.\n\nPwede mong gamitin ang B&A sa device na ito pagkatapos mo itong i-relink. May option kang ilipat ang message history mula sa phone mo."
+    "messageformat": "Ang lahat ng message history at media mo ay permanenteng buburahin sa device na ito. Hindi nito buburahin ang anumang data sa phone mo.\n\nPwede mong gamitin ang Signal sa device na ito pagkatapos mo itong i-relink. May option kang ilipat ang message history mula sa phone mo."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Hindi magka-match ang version ng database mo at ang version na ito ng B&A. Siguraduhing buksan ang pinakabagong version ng B&A sa computer mo."
+    "messageformat": "Hindi magka-match ang version ng database mo at ang version na ito ng Signal. Siguraduhing buksan ang pinakabagong version ng Signal sa computer mo."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Hindi ma-access ang database encryption key dahil nagbago ang OS encryption keyring backend mula {previousBackend} sa {currentBackend}. Nangyayari ito kapag nagbago ang desktop environment, halimbawa gaya ng GNOME at KDE.\n\nMag-switch pabalik sa dating desktop environment."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Hindi ma-access ang database encryption key dahil nagbago ang OS encryption keyring backend mula {previousBackend} at naging {currentBackend}. Nangyayari ito kapag nagbago ang desktop environment, halimbawa ay sa pagitan ng GNOME at KDE.\n\nBumalik sa dating desktop environment o subukang patakbuhin ang B&A gamit ang command line flag --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Hindi ma-access ang database encryption key dahil nagbago ang OS encryption keyring backend mula {previousBackend} at naging {currentBackend}. Nangyayari ito kapag nagbago ang desktop environment, halimbawa ay sa pagitan ng GNOME at KDE.\n\nBumalik sa dating desktop environment o subukang patakbuhin ang Signal gamit ang command line flag --password-store=\"{previousBackendFlag}\""
+  },
+  "icu:systemEncryptionError": {
+    "messageformat": "System encryption error"
+  },
+  "icu:systemEncryptionError__linuxSafeStorageDecryptionError": {
+    "messageformat": "Unable to decrypt the database encryption key using the OS encryption keyring. This can occur in certain containerized environments such as Flatpak.\n\nWe recommend quitting and checking your OS encryption backend such as gnome-libsecret or kwallet, then trying again.\n\nYou may choose to continue anyway, however the database key will be stored in plaintext on the filesystem and other apps may be able to access it."
+  },
+  "icu:systemEncryptionError__continueWithPlaintextKey": {
+    "messageformat": "Continue with plaintext key"
   },
   "icu:mainMenuFile": {
     "messageformat": "&File"
@@ -138,7 +147,7 @@
     "messageformat": "Ipakita Lahat"
   },
   "icu:appMenuQuit": {
-    "messageformat": "I-close ang B&A App"
+    "messageformat": "I-close ang Signal App"
   },
   "icu:editMenuUndo": {
     "messageformat": "Undo"
@@ -233,6 +242,12 @@
   "icu:archivedConversations": {
     "messageformat": "Archived Chats"
   },
+  "icu:LeftPane__MoreActionsMenu__AddChatFolder": {
+    "messageformat": "Mag-add ng chat folder"
+  },
+  "icu:LeftPane__MoreActionsMenu__FolderSettings": {
+    "messageformat": "Folder settings"
+  },
   "icu:LeftPane--pinned": {
     "messageformat": "Pinned"
   },
@@ -271,6 +286,45 @@
   },
   "icu:LeftPaneFindByHelper__description--findByUsername": {
     "messageformat": "Magsulat ng username at sundan ng tuldok at ng hanay ng mga numero nito."
+  },
+  "icu:LeftPane__EmptyView--WithSelectedChatFolder": {
+    "messageformat": "Walang makitang chats"
+  },
+  "icu:LeftPane__EmptyView--WithSelectedChatFolder__FolderSettings": {
+    "messageformat": "Folder settings"
+  },
+  "icu:LeftPaneChatFolders__ItemLabel--All--Short": {
+    "messageformat": "Lahat"
+  },
+  "icu:LeftPaneChatFolders__ItemLabel--All": {
+    "messageformat": "Lahat ng chats"
+  },
+  "icu:LeftPaneChatFolders__ItemUnreadBadge__MaxCount": {
+    "messageformat": "{maxCount,number}+"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MarkAllRead": {
+    "messageformat": "Markahan ang lahat na nabasa na"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MuteNotifications": {
+    "messageformat": "I-mute ang notifications"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MuteNotifications__UnmuteAll": {
+    "messageformat": "I-unmute lahat"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__UnmuteAll": {
+    "messageformat": "I-unmute lahat"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__EditFolder": {
+    "messageformat": "I-edit ang folder"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderToggleChatsItem": {
+    "messageformat": "Idagdag sa folder"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderToggleChatsMenu__CreateFolderItem": {
+    "messageformat": "Gumawa ng folder"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderRemoveChatItem": {
+    "messageformat": "Tanggalin sa folder"
   },
   "icu:CountryCodeSelect__placeholder": {
     "messageformat": "Country code"
@@ -322,6 +376,9 @@
   },
   "icu:markUnread": {
     "messageformat": "I-mark as unread"
+  },
+  "icu:markRead": {
+    "messageformat": "Markahang nabasa na"
   },
   "icu:ConversationHeader__menu__selectMessages": {
     "messageformat": "Pumili ng messages"
@@ -429,10 +486,10 @@
     "messageformat": "You marked your Safety Number with {name} as not verified mula sa isa pang device"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Ang safety number na sinusubukan mong i-verify ay nagbago. I-review ang iyong safety number with {name1}. Tandaan, this change could mean na may nagtatangkang i-interrupt ang inyong communication, o maaaring nag-reinstall ng B&A app si {name2}."
+    "messageformat": "Ang safety number na sinusubukan mong i-verify ay nagbago. I-review ang iyong safety number with {name1}. Tandaan, this change could mean na may nagtatangkang i-interrupt ang inyong communication, o maaaring nag-reinstall ng Signal app si {name2}."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Maaaring nag-reinstall ng B&A o nagpalit ng devices ang mga sumusunod na user. I-click ang isang recipient para ma-confirm ang kanyang bagong safety number. Ito ay optional."
+    "messageformat": "Maaaring nag-reinstall ng Signal o nagpalit ng devices ang mga sumusunod na user. I-click ang isang recipient para ma-confirm ang kanyang bagong safety number. Ito ay optional."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "I-send ang pending messages"
@@ -441,7 +498,7 @@
     "messageformat": "I-review"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Mayroon kang {count,number} connection na maaaring nag-reinstall ng B&A o nagpalit ng devices. Pwede mong i-review ang kanyang safety numbers bago mag-send ng message.} other {Mayroon kang {count,number} connections na maaaring nag-reinstall ng B&A o nagpalit ng devices. Pwede mong i-review ang kanilang safety numbers bago mag-send ng message.}}"
+    "messageformat": "{count, plural, one {Mayroon kang {count,number} connection na maaaring nag-reinstall ng Signal o nagpalit ng devices. Pwede mong i-review ang kanyang safety numbers bago mag-send ng message.} other {Mayroon kang {count,number} connections na maaaring nag-reinstall ng Signal o nagpalit ng devices. Pwede mong i-review ang kanilang safety numbers bago mag-send ng message.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Na-review na ang lahat ng connections, i-tap ang send para magpatuloy."
@@ -482,8 +539,11 @@
   "icu:debugLogExplanation": {
     "messageformat": "Kapag na-click mo na ang Submit, ang iyong log ay ipo-post sa isang unique, unpublished URL online sa loob ng 30 days. Maaari mo muna itong i-Save locally."
   },
+  "icu:debugLogExplanation--close": {
+    "messageformat": "Ipapakita sa lahat online ang log na ito para makita ng contributors. Maaari mo itong i-download bago i-submit."
+  },
   "icu:debugLogError": {
-    "messageformat": "Something went wrong with the upload! Mag-email sa support@baxs.com at i-attach ang iyong log as a text file."
+    "messageformat": "Something went wrong with the upload! Mag-email sa support@signal.org at i-attach ang iyong log as a text file."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Debug log submitted"
@@ -538,18 +598,6 @@
   },
   "icu:media": {
     "messageformat": "Media"
-  },
-  "icu:mediaEmptyState": {
-    "messageformat": "Walang media sa chat na ito"
-  },
-  "icu:allMedia": {
-    "messageformat": "Lahat ng media"
-  },
-  "icu:documents": {
-    "messageformat": "Mga dokumento"
-  },
-  "icu:documentsEmptyState": {
-    "messageformat": "Walang documents sa chat na ito"
   },
   "icu:today": {
     "messageformat": "Ngayong araw"
@@ -607,6 +655,15 @@
   },
   "icu:Toast--ReceiptSaveFailed": {
     "messageformat": "Nagkaroon ng error sa pag-save ng receipt. Paki subukan ulit."
+  },
+  "icu:Toast--ChatFolderAddedChat": {
+    "messageformat": "Idinagdag sa \"{chatFolderName}\""
+  },
+  "icu:Toast--ChatFolderRemovedChat": {
+    "messageformat": "Inalis mula sa \"{chatFolderName}\""
+  },
+  "icu:Toast--ChatFolderCreated": {
+    "messageformat": "In-add ang {chatFolderName} folder"
   },
   "icu:cannotSelectPhotosAndVideosAlongWithFiles": {
     "messageformat": "Hindi ka pwedeng pumili ng photos at videos kasabay ng files."
@@ -672,16 +729,10 @@
     "messageformat": "Sticker pack creator"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "About B&A Desktop"
+    "messageformat": "About Signal Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Sharing screen"
-  },
-  "icu:callingDeveloperTools": {
-    "messageformat": "Calling Developer Tools"
-  },
-  "icu:callingDeveloperToolsDescription": {
-    "messageformat": "Ginagamit ang window na ito sa development para i-display ang diagnostics mula sa ongoing calls."
   },
   "icu:speech": {
     "messageformat": "Speech"
@@ -696,7 +747,7 @@
     "messageformat": "Quit"
   },
   "icu:signalDesktop": {
-    "messageformat": "B&A Desktop"
+    "messageformat": "Signal Desktop"
   },
   "icu:search": {
     "messageformat": "Maghanap"
@@ -750,10 +801,13 @@
     "messageformat": "Hanapin gamit ang phone number"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Welcome sa B&A"
+    "messageformat": "Welcome sa Signal"
   },
   "icu:whatsNew": {
     "messageformat": "See {whatsNew} in this update"
+  },
+  "icu:signalNonProfit": {
+    "messageformat": "Ang Signal ay isang nonprofit"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "what's new"
@@ -837,13 +891,13 @@
     "messageformat": "Ikaw"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Para mag-send ng audio message, bigyan ang B&A Desktop ng access sa iyong microphone."
+    "messageformat": "Para mag-send ng audio message, bigyan ang Signal Desktop ng access sa iyong microphone."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Para makapag-call, i-allow ang B&A Desktop na magkaroon ng access sa iyong microphone."
+    "messageformat": "Para makapag-call, i-allow ang Signal Desktop na magkaroon ng access sa iyong microphone."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Para makapag-video call, i-allow ang B&A Desktop na magkaroon ng access sa iyong camera."
+    "messageformat": "Para makapag-video call, i-allow ang Signal Desktop na magkaroon ng access sa iyong camera."
   },
   "icu:allowAccess": {
     "messageformat": "Allow Access"
@@ -867,13 +921,13 @@
     "messageformat": "I-mute"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Hindi ma-update ang B&A. <retryUpdateButton>Subukan ulit ang pag-update</retryUpdateButton> o pumunta ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
+    "messageformat": "Hindi ma-update ang Signal. <retryUpdateButton>Subukan ulit ang pag-update</retryUpdateButton> o pumunta ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Hindi ma-update ang B&A. Puntahan ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
+    "messageformat": "Hindi ma-update ang Signal. Puntahan ang {url} para i-install ito manually. Pagkatapos, <contactSupportLink>kontakin ang support</contactSupportLink> tungkol sa problemang ito"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Ang B&A Desktop ay maaaring nasa macOS quarantine, at hindi pwedeng mag-auto update. Subukang i-move ang {app} sa {folder} with Finder."
+    "messageformat": "Ang Signal Desktop ay maaaring nasa macOS quarantine, at hindi pwedeng mag-auto update. Subukang i-move ang {app} sa {folder} with Finder."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -918,7 +972,7 @@
     "messageformat": "Buburahin ang message mula sa device na ito."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Mabubura ang message na ito sa lahat ng nasa chat kung sila'y nasa recent version ng B&A. Makikita nilang nag-delete ka ng message."
+    "messageformat": "Mabubura ang message na ito sa lahat ng nasa chat kung sila'y nasa recent version ng Signal. Makikita nilang nag-delete ka ng message."
   },
   "icu:from": {
     "messageformat": "From"
@@ -960,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" ang profile name na inilagay ng taong ito para sa sarili n'ya sa B&A."
+    "messageformat": "\"{title}\" ang profile name na inilagay ng taong ito para sa sarili n'ya sa Signal."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Beripikado"
@@ -975,7 +1029,7 @@
     "messageformat": "Walang direktang message kay {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "B&A Connection"
+    "messageformat": "Signal Connection"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "Si {name} ay nasa system contacts mo"
@@ -1031,6 +1085,93 @@
   "icu:MessageContextMenu__info": {
     "messageformat": "Info"
   },
+  "icu:MessageContextMenu__PinMessage": {
+    "messageformat": "I-pin"
+  },
+  "icu:MessageContextMenu__UnpinMessage": {
+    "messageformat": "I-unpin"
+  },
+  "icu:Poll__end-poll": {
+    "messageformat": "Tapusin ang poll"
+  },
+  "icu:PollMessage--SelectOne": {
+    "messageformat": "Poll · Pumili ng isa"
+  },
+  "icu:PollMessage--SelectMultiple": {
+    "messageformat": "Poll · Pumili ng isa o higit pa"
+  },
+  "icu:PollMessage--FinalResults": {
+    "messageformat": "Poll · Final results"
+  },
+  "icu:PollMessage__ViewVotesButton": {
+    "messageformat": "Tignan ang mga boto"
+  },
+  "icu:PollMessage--YouVoted": {
+    "messageformat": "Bumoto ka"
+  },
+  "icu:PollTerminate--you": {
+    "messageformat": "Tinapos mo ang poll: {poll}"
+  },
+  "icu:PollTerminate--other": {
+    "messageformat": "Tinapos ni {name} ang poll: {poll}"
+  },
+  "icu:PollTerminate__view-poll": {
+    "messageformat": "Tignan ang poll"
+  },
+  "icu:PollVotesModal__title": {
+    "messageformat": "Mga detalye ng poll"
+  },
+  "icu:PollVotesModal__questionLabel": {
+    "messageformat": "Question"
+  },
+  "icu:PollVotesModal__voteCount": {
+    "messageformat": "{count, plural, one {{count,number} boto} other {{count,number} boto}}"
+  },
+  "icu:PollVotesModal__noVotes": {
+    "messageformat": "Walang boto"
+  },
+  "icu:PollVotesModal__winningOption": {
+    "messageformat": "Panalong option"
+  },
+  "icu:Toast--PinnedMessageNotFound": {
+    "messageformat": "Hindi matagpuan ang pinned message"
+  },
+  "icu:Toast--PollNotFound": {
+    "messageformat": "Walang makitang poll"
+  },
+  "icu:PollCreateModal__title": {
+    "messageformat": "Bagong poll"
+  },
+  "icu:PollCreateModal__questionLabel": {
+    "messageformat": "Question"
+  },
+  "icu:PollCreateModal__questionPlaceholder": {
+    "messageformat": "Magtanong"
+  },
+  "icu:PollCreateModal__optionsLabel": {
+    "messageformat": "Options"
+  },
+  "icu:PollCreateModal__optionPlaceholder": {
+    "messageformat": "Option {number}"
+  },
+  "icu:PollCreateModal__allowMultipleVotes": {
+    "messageformat": "Payagan ang maramihang pagboto"
+  },
+  "icu:PollCreateModal__sendButton": {
+    "messageformat": "I-send"
+  },
+  "icu:PollCreateModal__Error--RequiresQuestion": {
+    "messageformat": "Required ang poll question"
+  },
+  "icu:PollCreateModal__Error--RequiresTwoOptions": {
+    "messageformat": "Nangangailangan ng hindi bababa sa 2 options ang poll"
+  },
+  "icu:PollCreateModal__Error--QuestionTooLong": {
+    "messageformat": "Masyadong mahaba ang tanong"
+  },
+  "icu:PollCreateModal__Error--OptionTooLong": {
+    "messageformat": "Masyadong mahaba ang option"
+  },
   "icu:deleteConversation": {
     "messageformat": "Burahin"
   },
@@ -1055,6 +1196,141 @@
   "icu:ConversationHeader__CannotLeaveGroupBecauseYouAreLastAdminAlert__description": {
     "messageformat": "Bago ka umalis, kailangan mong pumili ng kahit isang bagong admin para sa group na ito."
   },
+  "icu:PinnedMessageNotification__Message--You": {
+    "messageformat": "Nag-pin ka ng message"
+  },
+  "icu:PinnedMessageNotification__Message--SomeoneElse": {
+    "messageformat": "Si {sender} ay nag-pin ng message"
+  },
+  "icu:PinnedMessageNotification__Button": {
+    "messageformat": "Pumunta sa message"
+  },
+  "icu:PinMessageDialog__Title": {
+    "messageformat": "I-pin ang message sa loob ng..."
+  },
+  "icu:PinMessageDialog__Close": {
+    "messageformat": "Isara"
+  },
+  "icu:PinMessageDialog__Option--TIME_24_HOURS": {
+    "messageformat": "24 oras"
+  },
+  "icu:PinMessageDialog__Option--TIME_7_DAYS": {
+    "messageformat": "7 araw"
+  },
+  "icu:PinMessageDialog__Option--TIME_30_DAYS": {
+    "messageformat": "30 days"
+  },
+  "icu:PinMessageDialog__Option--FOREVER": {
+    "messageformat": "Forever"
+  },
+  "icu:PinMessageDialog__Cancel": {
+    "messageformat": "I-cancel"
+  },
+  "icu:PinMessageDialog__Pin": {
+    "messageformat": "I-pin"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Title": {
+    "messageformat": "Palitan ang pinakalumang pin?"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Description": {
+    "messageformat": "Ang pag-pin ng message na ito ay papalitan ang pinakalumang naka-pin."
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Cancel": {
+    "messageformat": "I-cancel"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Continue": {
+    "messageformat": "Magpatuloy"
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Title": {
+    "messageformat": "Pag-pin ng disappearing message"
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Description": {
+    "messageformat": "Matatanggal ang pin ng disappearing messages kapag nag-expire ang timer nito at natanggal ang message mula sa chat."
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Okay": {
+    "messageformat": "Okay"
+  },
+  "icu:PinnedMessagesBar__AccessibilityLabel": {
+    "messageformat": "{pinsCount, plural, one {Pinned message} other {Pinned messages}}"
+  },
+  "icu:PinnedMessagesBar__Tab__AccessibilityLabel": {
+    "messageformat": "Pumunta sa pin {pinNumber,number}"
+  },
+  "icu:PinnedMessagesBar__GoToMessageClickableArea__AccessibilityLabel": {
+    "messageformat": "Pumunta sa message"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__Button__AccessibilityLabel": {
+    "messageformat": "Iba pang actions"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__UnpinMessage": {
+    "messageformat": "I-unpin"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__GoToMessage": {
+    "messageformat": "Pumunta sa message"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__SeeAllMessages": {
+    "messageformat": "Tignan ang lahat ng messages"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--VoiceMessage": {
+    "messageformat": "Voice message"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Gif": {
+    "messageformat": "GIF"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--File": {
+    "messageformat": "File"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Payment": {
+    "messageformat": "Payment"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Poll": {
+    "messageformat": "Poll"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Sticker": {
+    "messageformat": "Sticker"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--ViewOnceMedia": {
+    "messageformat": "View-once na media"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Photo": {
+    "messageformat": "Larawan"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Video": {
+    "messageformat": "Video"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--VoiceMessage": {
+    "messageformat": "Voice message"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Gif": {
+    "messageformat": "GIF"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Payment": {
+    "messageformat": "Payment"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Sticker": {
+    "messageformat": "Sticker"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--ViewOnceMedia": {
+    "messageformat": "View-once na media"
+  },
+  "icu:PinnedMessagesPanel__Title": {
+    "messageformat": "Pinned messages"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages": {
+    "messageformat": "I-unpin Lahat ng Messages"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Title": {
+    "messageformat": "Gusto mo bang i-unpin ang lahat ng messages?"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Description": {
+    "messageformat": "Tatanggalin ang mga naka-pin na message para sa members ng chat na ito."
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Cancel": {
+    "messageformat": "I-cancel"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Unpin": {
+    "messageformat": "I-unpin"
+  },
   "icu:sessionEnded": {
     "messageformat": "Nai-reset na ang secure session"
   },
@@ -1065,7 +1341,7 @@
     "messageformat": "Matuto pa"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Ang B&A ay gumagamit ng end-to-end encryption at kinakailangan mong i-refesh ang iyong chat session minsan. Hindi maaapektuhan ang security ng chats mo pero baka may ma-miss kang message mula sa contact na ito kaya pwede mo siyang sabihan na i-resend ito."
+    "messageformat": "Ang Signal ay gumagamit ng end-to-end encryption at kinakailangan mong i-refesh ang iyong chat session minsan. Hindi maaapektuhan ang security ng chats mo pero baka may ma-miss kang message mula sa contact na ito kaya pwede mo siyang sabihan na i-resend ito."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Makipag-ugnayan sa Suporta"
@@ -1092,7 +1368,7 @@
     "messageformat": "Pinalitan ni {sender} ang kanyang phone number"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Sumali ang kontak sa B&A"
+    "messageformat": "Sumali ang kontak sa Signal"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "Magkaparehong account ang {obsoleteConversationTitle} at {conversationTitle}. Nandito ang inyong message history para sa parehong chats."
@@ -1172,36 +1448,6 @@
   "icu:attachmentNotAvailable__tapToViewCannotDownload": {
     "messageformat": "Hindi ma-download ang view once media"
   },
-  "icu:AttachmentNotAvailableModal__title--file": {
-    "messageformat": "Hindi available ang file"
-  },
-  "icu:AttachmentNotAvailableModal__title--long-text": {
-    "messageformat": "Hindi available ang kumpletong message"
-  },
-  "icu:AttachmentNotAvailableModal__title--media": {
-    "messageformat": "Hindi available ang media"
-  },
-  "icu:AttachmentNotAvailableModal__title--sticker": {
-    "messageformat": "Hindi available ang sticker"
-  },
-  "icu:AttachmentNotAvailableModal__title--voice-message": {
-    "messageformat": "Hindi available ang voice message"
-  },
-  "icu:AttachmentNotAvailableModal__body--file": {
-    "messageformat": "Hindi nalipat ang file na ito mula sa phone mo noong ni-link ang device na ito. Ang media at files na higit sa 45 araw noong ni-link ang device ay hindi masy-sync."
-  },
-  "icu:AttachmentNotAvailableModal__body--long-text": {
-    "messageformat": "Ang kumpletong text sa message na ito ay hindi nalipat mula sa phone mo noong ni-link ang device na ito. Ang mahabang text messages na higit sa 45 araw noong ni-link ang device ay hindi masy-sync."
-  },
-  "icu:AttachmentNotAvailableModal__body--media": {
-    "messageformat": "Ang media na ito ay hindi nalipat mula sa phone mo noong ni-link ang device na ito. Ang media na higit sa 45 araw noong ni-link ang device ay hindi masy-sync."
-  },
-  "icu:AttachmentNotAvailableModal__body--sticker": {
-    "messageformat": "Ang sticker na ito ay hindi nalipat mula sa phone mo noong ni-link ang device na ito. Ang media at files na higit sa 45 araw noong ni-link ang device ay hindi masy-sync."
-  },
-  "icu:AttachmentNotAvailableModal__body--voice-message": {
-    "messageformat": "Ang voice message na ito ay hindi nalipat mula sa phone mo noong ni-link ang device na ito. Ang media at files na higit sa 45 araw noong ni-link ang device ay hindi masy-sync."
-  },
   "icu:TapToViewNotAvailableModal__body--expired": {
     "messageformat": "Ang view once media na ito ay hindi na available para ma-download. Sabihan si {name} na i-send ulit ito."
   },
@@ -1212,7 +1458,7 @@
     "messageformat": "Hindi ma-download ang media"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "I-check ang desktop mo at ang internet connection ng iyong phone. Buksan ang B&A sa phone mo, at subukang mag-download ulit."
+    "messageformat": "I-check ang desktop mo at ang internet connection ng iyong phone. Buksan ang Signal sa phone mo, at subukang mag-download ulit."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Ang media na ito ay hindi na available sa phone mo at hindi na maaaring ma-download."
@@ -1233,10 +1479,10 @@
     "messageformat": "Matuto pa"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "I-scan ang code na ito sa B&A app on your phone"
+    "messageformat": "I-scan ang code na ito sa Signal app on your phone"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "I-open ang B&A sa iyong phone"
+    "messageformat": "I-open ang Signal sa iyong phone"
   },
   "icu:Install__instructions__2": {
     "messageformat": "I-tap ang {settings}, pagkatapos ay i-tap naman ang {linkedDevices}"
@@ -1254,7 +1500,7 @@
     "messageformat": "<paragraph>Nagkaroon ng hindi inaasahang error.</paragraph><paragraph>Subukan ulit.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Hindi ma-link ng B&A ang device na ito gamit ang iyong current network."
+    "messageformat": "Hindi ma-link ng Signal ang device na ito gamit ang iyong current network."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Subukang muli"
@@ -1278,7 +1524,7 @@
     "messageformat": "Device name"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Para palitan ang pangalan ng device na ito, buksan ang B&A sa phone mo at pumunta sa Settings > Linked devices"
+    "messageformat": "Para palitan ang pangalan ng device na ito, buksan ang Signal sa phone mo at pumunta sa Settings > Linked devices"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Skin tone ng emoji"
@@ -1289,8 +1535,20 @@
   "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title": {
     "messageformat": "Magdagdag ng chat folder"
   },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title--WithChatFolders": {
+    "messageformat": "Magdagdag o mag-edit ng folders"
+  },
   "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description": {
     "messageformat": "I-organize ang chats mo sa iba't-ibang folders at mag-switch nang mabilis sa mga ito sa iyong chat list."
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description--WithChatFolders": {
+    "messageformat": "{chatFoldersCount, plural, one {{chatFoldersCount,number} folder} other {{chatFoldersCount,number} folders}}"
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button": {
+    "messageformat": "I-set up"
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button--WithChatFolders": {
+    "messageformat": "I-manage"
   },
   "icu:Preferences__ChatsPage__ChatFoldersSection__ChatFolderItem__ContextMenu__EditFolder": {
     "messageformat": "I-edit ang folder"
@@ -1325,14 +1583,14 @@
   "icu:Preferences__ChatFoldersPage__FoldersSection__CreateAFolderButton": {
     "messageformat": "Gumawa ng folder"
   },
+  "icu:Preferences__ChatFoldersPage__FoldersSection__DragHandle__Label": {
+    "messageformat": "I-drag para ilipat ang chat folder"
+  },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__Title": {
     "messageformat": "Suggested folders"
   },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__AddButton": {
     "messageformat": "Mag-add"
-  },
-  "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__AddButton__Toast": {
-    "messageformat": "In-add ang {chatFolderTitle} folder"
   },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__UnreadFolder__Title": {
     "messageformat": "Unread"
@@ -1354,6 +1612,9 @@
   },
   "icu:Preferences__EditChatFolderPage__Title": {
     "messageformat": "Gumawa ng folder"
+  },
+  "icu:Preferences__EditChatFolderPage__Title--EditingExistingChatFolder": {
+    "messageformat": "I-edit ang folder"
   },
   "icu:Preferences__EditChatFolderPage__FolderNameField__Label": {
     "messageformat": "Pangalan ng folder"
@@ -1464,7 +1725,7 @@
     "messageformat": "Paumanhin, masyado ka nang maraming devices na naka-link. Subukang magtanggal ng ilan."
   },
   "icu:installTooOld": {
-    "messageformat": "I-update ang B&A sa device na ito para ma-link ang iyong phone."
+    "messageformat": "I-update ang Signal sa device na ito para ma-link ang iyong phone."
   },
   "icu:installErrorHeader": {
     "messageformat": "Nagkaroon ng problema!"
@@ -1515,7 +1776,7 @@
     "messageformat": "Hindi na valid ang call link na ito."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Tawag sa B&A"
+    "messageformat": "Tawag sa Signal"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Hindi mabura ang link. I-check ang iyong connection at subukan ulit."
@@ -1531,6 +1792,12 @@
   },
   "icu:calling__removed-from-call-title": {
     "messageformat": "Tinanggal sa tawag"
+  },
+  "icu:calling__has-max-devices": {
+    "messageformat": "Naabot na ang maximum number ng participants sa call na ito. Subukan ulit mamaya."
+  },
+  "icu:calling__has-max-devices--title": {
+    "messageformat": "Puno na ang call"
   },
   "icu:CallingLobby__CallLinkNotice": {
     "messageformat": "Makikita ang pangalan at photo mo ng sinumang sumali sa call na ito gamit ang link."
@@ -1665,16 +1932,16 @@
     "messageformat": "{count, plural, one {{count,number} tao ang nasa call na ito} other {{count,number} tao ang nasa call na ito}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Tatawagan ng B&A si {person}"
+    "messageformat": "Tatawagan ng Signal si {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Tatawagan ng B&A sila {first} at {second}"
+    "messageformat": "Tatawagan ng Signal sila {first} at {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "B&A will ring {first}, {second}, and {third}"
+    "messageformat": "SIgnal will ring {first}, {second}, and {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Tatawagan ng B&A sila {first}, {second}, at {others,number} other} other {Tatawagan ng B&A sila {first}, {second}, at {others,number} others}}"
+    "messageformat": "{others, plural, one {Tatawagan ng Signal sila {first}, {second}, at {others,number} other} other {Tatawagan ng Signal sila {first}, {second}, at {others,number} others}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "Si {person} ay ino-notify"
@@ -1728,13 +1995,13 @@
     "messageformat": "Nagre-reconnect…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Nawala ang connection mo. Nagre-reconnect ang B&A."
+    "messageformat": "Nawala ang connection mo. Nagre-reconnect ang Signal."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "B&A is sharing {window}."
+    "messageformat": "Signal is sharing {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Active ang B&A screen sharing"
+    "messageformat": "Active ang Signal screen sharing"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Nagre-reconnect…"
@@ -1755,7 +2022,7 @@
     "messageformat": "Permission needed"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Kailangan ng B&A ang iyong permission to access your computer's screen recording."
+    "messageformat": "Kailangan ng SIgnal ang iyong permission to access your computer's screen recording."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Pumunta sa System Preferences."
@@ -1764,7 +2031,7 @@
     "messageformat": "I-click ang lock icon sa bottom left at i-enter ang computer's password."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Sa kanan, i-check ang box sa tabi ng B&A. Kung hindi mo makita ang B&A sa list, i-click ang + para ma-add ito."
+    "messageformat": "Sa kanan, i-check ang box sa tabi ng Signal. Kung hindi mo makita ang Signal sa list, i-click ang + para ma-add ito."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Open System Preferences"
@@ -1773,10 +2040,10 @@
     "messageformat": "I-dismiss"
   },
   "icu:alwaysRelayCallsDescription": {
-    "messageformat": "Laging padaain ang tawag sa server ng B&A"
+    "messageformat": "Laging padaain ang tawag sa server ng Signal"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Padaanin sa server ng B&A ang lahat ng tawag upang maiwasang mailantad ang iyong IP address sa kontak mo. Bababa ang kalidad ng tawag kapag naka-enable."
+    "messageformat": "Padaanin sa server ng Signal ang lahat ng tawag upang maiwasang mailantad ang iyong IP address sa kontak mo. Bababa ang kalidad ng tawag kapag naka-enable."
   },
   "icu:permissions": {
     "messageformat": "Permissions"
@@ -1794,10 +2061,10 @@
     "messageformat": "Ipakita ang text formatting popover kapag may piniling text"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Spell check will be enabled pagkatapos i-restart ang B&A."
+    "messageformat": "Spell check will be enabled pagkatapos i-restart ang Signal."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Spell check will be disabled pagkatapos i-restart ang B&A."
+    "messageformat": "Spell check will be disabled pagkatapos i-restart ang Signal."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimize to system tray"
@@ -1821,13 +2088,13 @@
     "messageformat": "Gusto mo bang i-burahin ang lahat ng data?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Gusto mo bang burahin ang lahat ng data at messages mula sa version na ito ng B&A Desktop? Hindi mabubura ang iyong B&A account at data nito sa phone mo o ibang linked devices."
+    "messageformat": "Gusto mo bang burahin ang lahat ng data at messages mula sa version na ito ng Signal Desktop? Hindi mabubura ang iyong Signal account at data nito sa phone mo o ibang linked devices."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Dini-disconnect at binubura ang lahat ng data…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Mayroon kang lumang data mula sa lumang installation ng B&A Desktop. Mabubura ito kapag nagpatuloy ka at magsisimula ka ulit sa simula."
+    "messageformat": "Mayroon kang lumang data mula sa lumang installation ng Signal Desktop. Mabubura ito kapag nagpatuloy ka at magsisimula ka ulit sa simula."
   },
   "icu:deleteOldData": {
     "messageformat": "Burahin ang Lumang Data"
@@ -1850,6 +2117,9 @@
   "icu:notificationReactionMessage": {
     "messageformat": "Nag-react si {sender} ng {emoji} sa: {message}"
   },
+  "icu:notificationPollVoteMessage": {
+    "messageformat": "Si {sender} ay bumoto sa poll na: \"{pollQuestion}\""
+  },
   "icu:sendFailed": {
     "messageformat": "Failed ang pag-send"
   },
@@ -1869,10 +2139,10 @@
     "messageformat": "Hindi nabura lahat, i-click para masubukan ulit"
   },
   "icu:expiredWarning": {
-    "messageformat": "Expired na ang version na ito ng B&A Desktop. Mangyaring mag-upgrade sa pinakabagong version upang magpatuloy na makapagpadala ng mensahe."
+    "messageformat": "Expired na ang version na ito ng Signal Desktop. Mangyaring mag-upgrade sa pinakabagong version upang magpatuloy na makapagpadala ng mensahe."
   },
   "icu:upgrade": {
-    "messageformat": "I-click para pumunta sa ba-chat.com/download"
+    "messageformat": "I-click para pumunta sa signal.org/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mensaheng media"
@@ -1881,7 +2151,7 @@
     "messageformat": "Mag-import ng contacts"
   },
   "icu:syncExplanation": {
-    "messageformat": "I-import ang lahat ng B&A groups at contacts mula sa iyong cellphone."
+    "messageformat": "I-import ang lahat ng Signal groups at contacts mula sa iyong cellphone."
   },
   "icu:syncNow": {
     "messageformat": "Import now"
@@ -1917,7 +2187,7 @@
     "messageformat": "Kahapon {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Maaaring may paparating na message na hindi ma-process ng B&A."
+    "messageformat": "Maaaring may paparating na message na hindi ma-process ng Signal."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Masyadong mahaba ang message body."
@@ -2067,16 +2337,19 @@
     "messageformat": "Failed ang pag-download"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Failed ang pag-download ng attachment mula sa backup"
+    "messageformat": "Attachment missing from backup CDN"
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "May 3 oras ka lang para i-edit ang message pagkatapos mo itong i-send."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "Si {atUsername} ay hindi isang B&A user. Siguraduhing nailagay mo ang kumpletong username."
+    "messageformat": "Si {atUsername} ay hindi isang Signal user. Siguraduhing nailagay mo ang kumpletong username."
+  },
+  "icu:startConversation--username-not-valid": {
+    "messageformat": "Ang {atUsername} ay isang invalid username. Siguraduhing nailagay mo ang kumpletong username na sinundan ng numero."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "User not found. Ang number na \"{phoneNumber}\" ay hindi isang B&A user."
+    "messageformat": "User not found. Ang number na \"{phoneNumber}\" ay hindi isang Signal user."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "User not found. Ang number na \"{phoneNumber}\" ay hindi valid phone number."
@@ -2097,13 +2370,13 @@
     "messageformat": "Maximum group size reached"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Ang B&A groups ay may maximum na {max,number} members."
+    "messageformat": "Ang Signal groups ay may maximum na {max,number} members."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Recommended member limit reached"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "B&A groups perform best with {max,number} members or less. Ang pagdagdag ng mas maraming members ay maaaring magdulot ng delay sa pag-send at pag-receive ng messages."
+    "messageformat": "Signal groups perform best with {max,number} members or less. Ang pagdagdag ng mas maraming members ay maaaring magdulot ng delay sa pag-send at pag-receive ng messages."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Bigyan ng pangalan ang group na ito"
@@ -2133,7 +2406,7 @@
     "messageformat": "Failed to update the group. I-check ang iyong internet connection at subukan ulit."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "I-click para ma-relink ang B&A Desktop sa iyong mobile device to continue messaging."
+    "messageformat": "I-click para ma-relink ang Signal Desktop sa iyong mobile device to continue messaging."
   },
   "icu:unlinked": {
     "messageformat": "Unlinked"
@@ -2145,16 +2418,16 @@
     "messageformat": "Retry update"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Click to restart B&A"
+    "messageformat": "Click to restart Signal"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Click to download update"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Hindi ma-update ang B&A. Subukan ulit."
+    "messageformat": "Hindi ma-update ang Signal. Subukan ulit."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Restart B&A"
+    "messageformat": "Restart Signal"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignore update"
@@ -2228,6 +2501,9 @@
   "icu:message--getNotificationText--stickers": {
     "messageformat": "Sticker message"
   },
+  "icu:Poll--preview": {
+    "messageformat": "Poll: {pollQuestion}"
+  },
   "icu:message--getNotificationText--text-with-emoji": {
     "messageformat": "{emoji} {text}"
   },
@@ -2256,7 +2532,7 @@
     "messageformat": "Masyadong malaki ang ilang attachments para i-display."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Gamitin ang link na ito para sumali sa B&A Call"
+    "messageformat": "Gamitin ang link na ito para sumali sa Signal Call"
   },
   "icu:donation--missing": {
     "messageformat": "Hindi makuha ang donation details"
@@ -2268,7 +2544,7 @@
     "messageformat": "I-tap ang message na ito sa mobile para makita ang donation mo"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "Nag-donate sa B&A si {sender} para sa iyo"
+    "messageformat": "Nag-donate sa Signal si {sender} para sa iyo"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "I-check ang iyong phone para mabuksan ang donation na ito"
@@ -2284,6 +2560,12 @@
   },
   "icu:message--donation--preview--sent": {
     "messageformat": "Nag-donate ka para kay {recipient}"
+  },
+  "icu:message--pinned--preview--received": {
+    "messageformat": "Si {sender} ay nag-pin ng message"
+  },
+  "icu:message--pinned--preview--sent": {
+    "messageformat": "Nag-pin ka ng message"
   },
   "icu:message--donation": {
     "messageformat": "Donation"
@@ -2319,7 +2601,7 @@
     "messageformat": "Maraming salamat sa iyong suporta!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Nag-donate ka sa B&A para kay {name}. Mabibigyan siya ng option na ipakita sa kanyang profile ang kanyang suporta."
+    "messageformat": "Nag-donate ka sa Signal para kay {name}. Mabibigyan siya ng option na ipakita sa kanyang profile ang kanyang suporta."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Hindi ma-install ang sticker pack"
@@ -2334,10 +2616,10 @@
     "messageformat": "Walang naka-install na sticker"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "B&A Artist Series"
+    "messageformat": "Signal Artist Series"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Walang B&A Artist stickers na available"
+    "messageformat": "Walang Signal Artist stickers na available"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Mga Sticker na Natanggap Mo"
@@ -2354,101 +2636,11 @@
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Hindi mo pwedeng i-reinstall ang sticker pack na ito kung wala na sa'yo ang source message."
   },
-  "icu:stickers--StickerManager--Introduction--Image": {
-    "messageformat": "Introducing Stickers: Bandit the Cat"
-  },
-  "icu:stickers--StickerManager--Introduction--Title": {
-    "messageformat": "Introducing Stickers"
-  },
-  "icu:stickers--StickerManager--Introduction--Body": {
-    "messageformat": "May gusto ka bang sabihin? Maaari mo nang daanin sa stickers!"
-  },
-  "icu:stickers--StickerPicker--Open": {
-    "messageformat": "I-open ang sticker picker"
-  },
-  "icu:stickers--StickerPicker--AddPack": {
-    "messageformat": "Mag-add ng sticker pack"
-  },
-  "icu:stickers--StickerPicker--NextPage": {
-    "messageformat": "Next Page"
-  },
-  "icu:stickers--StickerPicker--PrevPage": {
-    "messageformat": "Previous Page"
-  },
-  "icu:stickers--StickerPicker--Recents": {
-    "messageformat": "Recent Sticker"
-  },
-  "icu:stickers--StickerPicker--DownloadError": {
-    "messageformat": "Hindi ma-download ang ibang stickers."
-  },
-  "icu:stickers--StickerPicker--DownloadPending": {
-    "messageformat": "Nagi-install ng sticker pack…"
-  },
-  "icu:stickers--StickerPicker--Empty": {
-    "messageformat": "No stickers found"
-  },
-  "icu:stickers--StickerPicker--Hint": {
-    "messageformat": "New sticker packs from your messages are available to install"
-  },
-  "icu:stickers--StickerPicker--NoPacks": {
-    "messageformat": "No sticker packs found"
-  },
-  "icu:stickers--StickerPicker--NoRecents": {
-    "messageformat": "Lalabas dito ang recently used stickers."
-  },
-  "icu:stickers__StickerPicker__recent": {
-    "messageformat": "Recents"
-  },
-  "icu:stickers__StickerPicker__featured": {
-    "messageformat": "Featured"
-  },
-  "icu:stickers__StickerPicker__analog-time": {
-    "messageformat": "Analog time"
-  },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Sticker Pack"
   },
   "icu:stickers--StickerPreview--Error": {
     "messageformat": "Error opening sticker pack. I-check ang iyong internet connection at subukan ulit."
-  },
-  "icu:EmojiPicker--empty": {
-    "messageformat": "No emoji found"
-  },
-  "icu:EmojiPicker--search-close": {
-    "messageformat": "Isara ang emoji search"
-  },
-  "icu:EmojiPicker--search-placeholder": {
-    "messageformat": "Mag-search ng emoji"
-  },
-  "icu:EmojiPicker--skin-tone": {
-    "messageformat": "Skin tone {tone}"
-  },
-  "icu:EmojiPicker__button--recents": {
-    "messageformat": "Recents"
-  },
-  "icu:EmojiPicker__button--emoji": {
-    "messageformat": "Emoji"
-  },
-  "icu:EmojiPicker__button--animal": {
-    "messageformat": "Animal"
-  },
-  "icu:EmojiPicker__button--food": {
-    "messageformat": "Food"
-  },
-  "icu:EmojiPicker__button--activity": {
-    "messageformat": "Activity"
-  },
-  "icu:EmojiPicker__button--travel": {
-    "messageformat": "Travel"
-  },
-  "icu:EmojiPicker__button--object": {
-    "messageformat": "Object"
-  },
-  "icu:EmojiPicker__button--symbol": {
-    "messageformat": "Symbol"
-  },
-  "icu:EmojiPicker__button--flag": {
-    "messageformat": "Flag"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -2558,6 +2750,9 @@
   "icu:FunPanelStickers__SubNavCategoryLabel--Recents": {
     "messageformat": "Recently Used"
   },
+  "icu:FunPanelStickers__SubNavButton--AddStickerPack": {
+    "messageformat": "Mag-add ng sticker pack"
+  },
   "icu:FunPanelStickers__SectionTitle--SearchResults": {
     "messageformat": "Search Results"
   },
@@ -2576,8 +2771,14 @@
   "icu:FunPanelGifs__SearchLabel--Tenor": {
     "messageformat": "Maghanap ng GIFs sa Tenor"
   },
+  "icu:FunPanelGifs__SearchLabel": {
+    "messageformat": "Mag-search ng GIFs"
+  },
   "icu:FunPanelGifs__SearchPlaceholder--Tenor": {
     "messageformat": "Maghanap sa Tenor"
+  },
+  "icu:FunPanelGifs__SearchPlaceholder": {
+    "messageformat": "Mag-search ng GIFs"
   },
   "icu:FunPanelGifs__SubNavLabel": {
     "messageformat": "Mga Kategorya ng GIF"
@@ -2623,6 +2824,9 @@
   },
   "icu:FunPanelGifs__LightboxDialog__Label": {
     "messageformat": "Preview ng GIF"
+  },
+  "icu:FunPanelGifs__GiphyAttribution__AccessibilityLabel": {
+    "messageformat": "Powered by GIPHY"
   },
   "icu:FunSearch__ClearButtonLabel": {
     "messageformat": "Clear Search"
@@ -2679,19 +2883,19 @@
     "messageformat": "Masyadong mahaba ang message para i-display"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "Nag-send ng message si {contact} that can't be processed or displayed dahil gumagamit siya ng bagong B&A feature."
+    "messageformat": "Nag-send ng message si {contact} that can't be processed or displayed dahil gumagamit siya ng bagong Signal feature."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Pwede mong sabihan si {contact} na i-resend ang message na ito now that you are using an updated version of B&A."
+    "messageformat": "Pwede mong sabihan si {contact} na i-resend ang message na ito now that you are using an updated version of Signal."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Ang isa sa devices mo ay nag-send ng message na hindi ma-process o ma-display dahil gumagamit siya ng bagong B&A feature."
+    "messageformat": "Ang isa sa devices mo ay nag-send ng message na hindi ma-process o ma-display dahil gumagamit siya ng bagong Signal feature."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Future messages like this will be synchronized now dahil gumagamit ka na ng updated version of B&A."
+    "messageformat": "Future messages like this will be synchronized now dahil gumagamit ka na ng updated version of Signal."
   },
   "icu:Message--update-signal": {
-    "messageformat": "I-update ang B&A"
+    "messageformat": "I-update ang Signal"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Nakita na"
@@ -2955,7 +3159,7 @@
     "messageformat": "Na-mark as unread na ang chat"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "I-set up ang B&A sa iyong phone at desktop para magamit ang Sticker Pack Creator"
+    "messageformat": "I-set up ang Signal sa iyong phone at desktop para magamit ang Sticker Pack Creator"
   },
   "icu:Reactions--remove": {
     "messageformat": "Tanggalin ang reaction"
@@ -2979,7 +3183,7 @@
     "messageformat": "Pekeng pangalan at accounts"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Hindi kailanman makikipag-ugnayan sa 'yo ang B&A para hingin ang registration code o PIN mo. Mag-ingat sa requests na nagpapanggap bilang ibang tao. Ang profile names ay pinili ng may-ari ng account at hindi verified."
+    "messageformat": "Hindi kailanman makikipag-ugnayan sa 'yo ang Signal para hingin ang registration code o PIN mo. Mag-ingat sa requests na nagpapanggap bilang ibang tao. Ang profile names ay pinili ng may-ari ng account at hindi verified."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Mga scam kaugnay ng crypto o pera"
@@ -3069,13 +3273,13 @@
     "messageformat": "Gusto mo ba itong i-report bilang spam?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Aabisuhan ang B&A na maaaring nagpapadala ng spam ang taong ito. Hindi nababasa ng B&A ang nilalaman ng anumang mga chat."
+    "messageformat": "Aabisuhan ang signal na maaaring nagpapadala ng spam ang taong ito. Hindi nababasa ng Signal ang nilalaman ng anumang mga chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Ang B&A ay aabisuhan na ang taong nag-imbita sa iyo sa grupong ito ay maaaring nagpapadala ng spam. Hindi nababasa ng B&A ang nilalaman ng anumang chat."
+    "messageformat": "Ang Signal ay aabisuhan na ang taong nag-imbita sa iyo sa grupong ito ay maaaring nagpapadala ng spam. Hindi nababasa ng Signal ang nilalaman ng anumang chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Ang B&A ay aabisuhan na si {name}, na siyang nag-imbita sa iyo sa grupong ito, ay maaaring nagpapadala ng spam. Hindi nababasa ng B&A ang nilalaman ng anumang chat."
+    "messageformat": "Ang Signal ay aabisuhan na si {name}, na siyang nag-imbita sa iyo sa grupong ito, ay maaaring nagpapadala ng spam. Hindi nababasa ng Signal ang nilalaman ng anumang chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Iulat bilang spam"
@@ -3171,7 +3375,7 @@
     "messageformat": "Hindi verified ang <clickable>Profile names</clickable>"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Ito ang opisyal at natatanging chat mula sa B&A"
+    "messageformat": "Ito ang opisyal at natatanging chat mula sa Signal"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Maging updated sa mga balita at release notes."
@@ -3237,10 +3441,10 @@
     "messageformat": "Unanswered video call"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Tumatakbo pa ang B&A"
+    "messageformat": "Tumatakbo pa ang Signal"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Patuloy na tatakbo ang B&A sa notification area. Pwede mo itong baguhin sa B&A settings."
+    "messageformat": "Patuloy na tatakbo ang Signal sa notification area. Pwede mo itong baguhin sa Signal settings."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Incoming voice call"
@@ -3450,7 +3654,7 @@
     "messageformat": "Kopyahin ang call link"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "I-share ang call link sa B&A"
+    "messageformat": "I-share ang call link sa Signal"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Tanggalin ang taong ito sa call"
@@ -3524,9 +3728,6 @@
   "icu:muteExpirationLabel": {
     "messageformat": "Naka-mute hanggang {duration}"
   },
-  "icu:EmojiButton__label": {
-    "messageformat": "Emoji"
-  },
   "icu:ErrorModal--title": {
     "messageformat": "Nagkaroon ng problema!"
   },
@@ -3552,7 +3753,7 @@
     "messageformat": "{max, plural, one {{max,number} beses lang pwedeng i-edit ang message na 'to.} other {{max,number} beses lang pwedeng i-edit ang message na 'to.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Sorry, walang sense ang baxs:// link!"
+    "messageformat": "Sorry, walang sense ang sgnl:// link!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "Hindi ka pwedeng mag-send ng messages sa group na ito."
@@ -3579,7 +3780,7 @@
     "messageformat": "Unknown link version"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Ang link na ito ay hindi supported nitong B&A Desktop version ."
+    "messageformat": "Ang link na ito ay hindi supported nitong Signal Desktop version ."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Hindi Maka-join sa Group"
@@ -4134,22 +4335,22 @@
     "messageformat": "Maaari itong tumagal nang ilang minuto"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Mag-donate sa B&A"
+    "messageformat": "Mag-donate sa Signal"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Mag-donate sa B&A"
+    "messageformat": "Mag-donate sa Signal"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "B&A is powered by people like you. Mag-contribute para maka-receive ng badge."
+    "messageformat": "Signal is powered by people like you. Mag-contribute para maka-receive ng badge."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "I-open ang B&A sa iyong phone"
+    "messageformat": "I-open ang Signal sa iyong phone"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "I-tap ang iyong profile photo sa top left para mabuksan ang Settings"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "I-tap ang \"Donate to B&A\" at mag-subscribe"
+    "messageformat": "I-tap ang \"Donate to Signal\" at mag-subscribe"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Inilipat ang profile mo"
@@ -4275,7 +4476,7 @@
     "messageformat": "Kinakailangang hakbang"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Kailangan mong buksan ang B&A sa phone mo para patuloy mong magamit ang account na ito. Kung hindi mo bubuksan ang B&A sa phone mo, mabubura ang iyong account. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Kailangan mong buksan ang Signal sa phone mo para patuloy mong magamit ang account na ito. Kung hindi mo bubuksan ang Signal sa phone mo, mabubura ang iyong account. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Hindi ma-restore ang media"
@@ -4289,11 +4490,23 @@
   "icu:CompositionArea--attach-file": {
     "messageformat": "Attach file"
   },
+  "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
+    "messageformat": "Photos at videos"
+  },
+  "icu:CompositionArea__AttachMenu__File": {
+    "messageformat": "File"
+  },
+  "icu:CompositionArea__AttachMenu__Poll": {
+    "messageformat": "Poll"
+  },
+  "icu:CompositionArea--attach-plus": {
+    "messageformat": "Magdagdag ng attachment o poll"
+  },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Ang taong ito'y hindi gumagamit ng B&A"
+    "messageformat": "Ang taong ito'y hindi gumagamit ng Signal"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Hindi suportado ng B&A Desktop ang pag-message sa non-B&A contacts. Sabihan ang taong ito na mag-install ng B&A para sa mas secure na messaging experience."
+    "messageformat": "Hindi suportado ng Signal Desktop ang pag-message sa non-Signal contacts. Sabihan ang taong ito na mag-install ng Signal para sa mas secure na messaging experience."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Checking contact's registration status"
@@ -4439,7 +4652,7 @@
   "icu:ConversationDetailsActions--block-group-modal-confirm": {
     "messageformat": "I-block"
   },
-  "icu:ConversationDetailsActions--unblock-group-modal-content": {
+  "icu:ConversationDetailsActions--unblock-group-modal-body": {
     "messageformat": "Maaari kang i-add ng contacts mo sa group na ito."
   },
   "icu:ConversationDetailsActions--unblock-group-modal-confirm": {
@@ -4476,7 +4689,7 @@
     "messageformat": "Nickname"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Ang nicknames at notes ay nakatago sa B&A at end-to-end encrypted. Ikaw lang ang makakakita nito."
+    "messageformat": "Ang nicknames at notes ay nakatago sa Signal at end-to-end encrypted. Ikaw lang ang makakakita nito."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "First name"
@@ -4527,7 +4740,7 @@
     "messageformat": "I-require ang admin na mag-approve ng bagong members na nag-join gamit ang group link."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopyahin ang B&A group link sa clipboard"
+    "messageformat": "Kopyahin ang signal.group link sa clipboard"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Requests ({count,number})"
@@ -4731,13 +4944,13 @@
     "messageformat": "Hindi ma-forward ang messages na walang laman o binura na"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Gamitin ang link na ito para sumali sa B&A call: {url}"
+    "messageformat": "Gamitin ang link na ito para sumali sa Signal call: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Tips Para Sa Kaligtasan"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Tingnan nang maigi ang requests. Nakakita ang B&A ng isa pang contact na may kaparehong pangalan. <reviewRequestLink>Tingnan ang request</reviewRequestLink>"
+    "messageformat": "Tingnan nang maigi ang requests. Nakakita ang Signal ng isa pang contact na may kaparehong pangalan. <reviewRequestLink>Tingnan ang request</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} group member ang may magkaparehong pangalan. <reviewRequestLink>I-review ang member</reviewRequestLink>} other {{count,number} group members ang may magkaparehong pangalan. <reviewRequestLink>I-review ang members</reviewRequestLink>}}"
@@ -4770,7 +4983,7 @@
     "messageformat": "Walang ibang common groups"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "B&A Connection"
+    "messageformat": "Signal Connection"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Recently changed their profile name from {oldName} to {newName}"
@@ -4788,7 +5001,7 @@
     "messageformat": "I-verify to continue messaging"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Para makaiwas sa spam dito sa B&A, kumpletuhin ang verification."
+    "messageformat": "Para makaiwas sa spam dito sa Signal, kumpletuhin ang verification."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Pagkatapos mag-verify, pwede ka nang magpatuloy sa messaging. Ang paused messages ay automatic na mase-send."
@@ -4943,6 +5156,66 @@
   "icu:ConversationDetailsHeader--add-group-description": {
     "messageformat": "Mag-add ng group description…"
   },
+  "icu:AudioListItem__subtitle--voice-message": {
+    "messageformat": "Voice na Mensahe"
+  },
+  "icu:AudioListItem__subtitle--audio": {
+    "messageformat": "Audio"
+  },
+  "icu:ContactListItem__subtitle": {
+    "messageformat": "Contact"
+  },
+  "icu:LinkPreviewItem__alt": {
+    "messageformat": "Buksan ang link sa browser"
+  },
+  "icu:ListItem__show-message": {
+    "messageformat": "Ipakita ang message sa conversation"
+  },
+  "icu:MediaGallery__tab__audio": {
+    "messageformat": "Audio"
+  },
+  "icu:MediaGallery__tab__files": {
+    "messageformat": "Mga file"
+  },
+  "icu:MediaGallery__tab__links": {
+    "messageformat": "Links"
+  },
+  "icu:MediaGallery__sort": {
+    "messageformat": "Pagsunod-sunurin ayon sa"
+  },
+  "icu:MediaGallery__sort--header": {
+    "messageformat": "Pagsunod-sunurin ayon sa"
+  },
+  "icu:MediaGallery__sort__date": {
+    "messageformat": "Petsa"
+  },
+  "icu:MediaGallery__sort__size": {
+    "messageformat": "Laki"
+  },
+  "icu:MediaGallery__EmptyState__title--media": {
+    "messageformat": "Walang media"
+  },
+  "icu:MediaGallery__EmptyState__description--media": {
+    "messageformat": "Lalabas dito ang Photos, Videos, at GIFs na ipinapadala at natatanggap mo"
+  },
+  "icu:MediaGallery__EmptyState__title--audio": {
+    "messageformat": "Walang Audio"
+  },
+  "icu:MediaGallery__EmptyState__description--audio": {
+    "messageformat": "Lalabas dito ang Voice Messages at Audio Files na ipinapadala at natatanggap mo"
+  },
+  "icu:MediaGallery__EmptyState__title--links": {
+    "messageformat": "Walang Links"
+  },
+  "icu:MediaGallery__EmptyState__description--links-2": {
+    "messageformat": "Lalabas dito ang links na ipinapadala at natatanggap mo"
+  },
+  "icu:MediaGallery__EmptyState__title--documents": {
+    "messageformat": "Walang Files"
+  },
+  "icu:MediaGallery__EmptyState__description--documents-2": {
+    "messageformat": "Lalabas dito ang files na ipinapadala at natatanggap mo"
+  },
   "icu:MediaQualitySelector--button": {
     "messageformat": "Pumili ng media quality"
   },
@@ -5094,7 +5367,7 @@
     "messageformat": "Nais mo bang balewalain ang mga pagbabagong ito?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Gusto mo bang isara ang B&A at tapusin ang call?"
+    "messageformat": "Gusto mo bang isara ang Signal at tapusin ang call?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Hindi na Muna"
@@ -5181,7 +5454,7 @@
     "messageformat": "General"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Mag-donate sa B&A"
+    "messageformat": "Mag-donate sa Signal"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Hitsura"
@@ -5262,7 +5535,7 @@
     "messageformat": "Mag-generate ng link previews"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Para mabago ang setting na ito, buksan ang B&A app sa iyong mobile device at pumunta sa Settings > Chats"
+    "messageformat": "Para mabago ang setting na ito, buksan ang Signal app sa iyong mobile device at pumunta sa Settings > Chats"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Gawing emoji ang typed emoticons"
@@ -5282,17 +5555,356 @@
   "icu:Preferences--notification-content": {
     "messageformat": "Notification content"
   },
+  "icu:PlaintextExport--PreferencesRow--Header": {
+    "messageformat": "I-export ang chat history"
+  },
+  "icu:PlaintextExport--PreferencesRow--Description": {
+    "messageformat": "I-export ang machine-readable JSON copy ng lahat ng chats mo. Hindi ma-e-export ang disappearing messages."
+  },
+  "icu:PlaintextExport--ActionButton": {
+    "messageformat": "I-export"
+  },
+  "icu:PlaintextExport--Confirmation--Header": {
+    "messageformat": "I-export ang chat history?"
+  },
+  "icu:PlaintextExport--Confirmation--Description": {
+    "messageformat": "<bold>MAG-INGAT!</bold> HUWAG i-share ang file na ito sa kahit sino. Ang chat history mo ay masa-save sa computer mo at pwede itong ma-access ng ibang apps depende sa permissions ng computer mo."
+  },
+  "icu:PlaintextExport--Confirmation--IncludeMedia": {
+    "messageformat": "Isama ang media <secondary>(mas malaking file size)</secondary>"
+  },
+  "icu:PlaintextExport--Confirmation--ContinueButton": {
+    "messageformat": "Magpatuloy"
+  },
+  "icu:PlaintextExport--Confirmation--WaitingLabel": {
+    "messageformat": "Naghihintay ng input"
+  },
+  "icu:PlaintextExport--OSPrompt--Mac": {
+    "messageformat": "i-export ang chat history mo"
+  },
+  "icu:PlaintextExport--OSPrompt--Windows": {
+    "messageformat": "I-verify ang identity mo para ma-export ang iyong chat history."
+  },
+  "icu:PlaintextExport--OSPrompt--description--Linux": {
+    "messageformat": "I-export"
+  },
+  "icu:PlaintextExport--OSPrompt--message--Linux": {
+    "messageformat": "Kinakailangan ng authentication para ma-export ang chat history mo."
+  },
+  "icu:PlaintextExport--ProgressDialog--Header": {
+    "messageformat": "I-export ang chat history"
+  },
+  "icu:PlaintextExport--ProgressDialog--Progress": {
+    "messageformat": "Ine-export ang {currentBytes} ng {totalBytes} ({percentage,number,percent})..."
+  },
+  "icu:PlaintextExport--ProgressDialog--TimeWarning": {
+    "messageformat": "Maaari itong tumagal nang ilang minuto"
+  },
+  "icu:PlaintextExport--CompleteDialog--Header": {
+    "messageformat": "Tapos na ang pag-export"
+  },
+  "icu:PlaintextExport--CompleteDialog--Description": {
+    "messageformat": "<bold>MAG-INGAT</bold> kung saan mo ilalagay ang chat export file mo at huwag itong i-share kahit kanino. Pwede itong ma-access ng ibang apps depende sa permissions ng computer mo. "
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Mac": {
+    "messageformat": "Ipakita sa Finder"
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Linux": {
+    "messageformat": "Show in folder"
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Windows": {
+    "messageformat": "Show in folder"
+  },
+  "icu:PlaintextExport--Error--General--Title": {
+    "messageformat": "Hindi ma-export ang chat history"
+  },
+  "icu:PlaintextExport--Error--General--Description": {
+    "messageformat": "Nagkaroon ng error at hindi ma-export ang chat history mo."
+  },
+  "icu:PlaintextExport--Error--NotEnoughStorage--Title": {
+    "messageformat": "Walang sapat na storage space"
+  },
+  "icu:PlaintextExport--Error--NotEnoughStorage--Detail": {
+    "messageformat": "Hindi ma-export ang chat history mo dahil walang sapat na storage space ang computer mo. Magbawas ng {bytes} ng space at subukan ulit."
+  },
+  "icu:PlaintextExport--Error--RanOutOfStorage--Title": {
+    "messageformat": "Hindi ma-export ang chat history"
+  },
+  "icu:PlaintextExport--Error--RanOutOfStorage--Detail": {
+    "messageformat": "Hindi ma-export ang chat history mo dahil walang sapat na storage space ang computer mo. Magbawas ng {bytes} ng space at subukan ulit."
+  },
+  "icu:PlaintextExport--Error--DiskPermssions--Title": {
+    "messageformat": "Hindi ma-export ang chat history"
+  },
+  "icu:PlaintextExport--Error--DiskPermssions--Detail": {
+    "messageformat": "Hindi ma-export ang chat history mo dahil ang Signal ay walang permiso para magsulat ng files sa disk. Subukang baguhin ang permissions ng iyong disk o i-update ang system settings mo at subukan ulit mag-export."
+  },
+  "icu:LocalBackupExport--ProgressDialog--Header": {
+    "messageformat": "Ine-export ang backup"
+  },
+  "icu:LocalBackupExport--CompleteDialog--Header": {
+    "messageformat": "Tapos na ang pag-export ng backup"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsHeader": {
+    "messageformat": "Para ma-restore ang backup na ito:"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsTransfer": {
+    "messageformat": "Ilipat ang backup folder mo sa storage ng iyong phone"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
+    "messageformat": "Mag-install ng bagong kopya ng Signal sa phone mo"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
+    "messageformat": "I-tap ang \"Restore o Transfer\" at piliin ang \"Sa Backup ng Device\""
+  },
+  "icu:NotificationProfile--moon-icon": {
+    "messageformat": "Icon ng buwan"
+  },
+  "icu:NotificationProfile--copy-label": {
+    "messageformat": "Kopya ng {profileName}"
+  },
+  "icu:NotificationProfile--am": {
+    "messageformat": "AM"
+  },
+  "icu:NotificationProfile--pm": {
+    "messageformat": "PM"
+  },
+  "icu:NotificationProfile--time-separator": {
+    "messageformat": ":"
+  },
+  "icu:NotificationProfileMenuItem": {
+    "messageformat": "Profile ng notification"
+  },
+  "icu:NotificationProfileMenu--header": {
+    "messageformat": "Notification Profile"
+  },
+  "icu:NotificationProfileMenu--on": {
+    "messageformat": "On"
+  },
+  "icu:NotificationProfileMenu--on-with-end": {
+    "messageformat": "On until {endTime}"
+  },
+  "icu:NotificationProfileMenu--for-one-hour": {
+    "messageformat": "Sa loob ng isang oras"
+  },
+  "icu:NotificationProfileMenu--until-time": {
+    "messageformat": "Hanggang {time}"
+  },
+  "icu:NotificationProfileMenu--settings": {
+    "messageformat": "Settings"
+  },
+  "icu:NotificationProfilesToast--enabled": {
+    "messageformat": "Naka-on an g\"{name}\""
+  },
+  "icu:NotificationProfilesToast--disabled": {
+    "messageformat": "Naka-off ang \"{name}\""
+  },
+  "icu:NotificationProfilesToast--enabled--label": {
+    "messageformat": "Naka-enable na ang notification profile"
+  },
+  "icu:NotificationProfilesToast--disabled--label": {
+    "messageformat": "Naka-disable na ang notification profile"
+  },
+  "icu:NotificationProfiles--setting": {
+    "messageformat": "Notification profiles"
+  },
+  "icu:NotificationProfiles--setup": {
+    "messageformat": "I-set up"
+  },
+  "icu:NotificationProfiles--title": {
+    "messageformat": "Notification profiles"
+  },
+  "icu:NotificationProfiles--setup-description": {
+    "messageformat": "Gumawa ng profile para maka-receive ng notifications at calls na galing lamang sa mga tao at groups na pinili mo"
+  },
+  "icu:NotificationProfiles--setup-continue": {
+    "messageformat": "Magpatuloy"
+  },
+  "icu:NotificationProfiles--manage-description": {
+    "messageformat": "Magdagdag o mag-edit ng notification profiles"
+  },
+  "icu:NotificationProfiles--manage-profiles": {
+    "messageformat": "{profileCount, plural, one {Isang profile} other {{profileCount,number} profiles}}"
+  },
+  "icu:NotificationProfiles--create": {
+    "messageformat": "Mag-create ng profile"
+  },
+  "icu:NotificationProfiles--name-title": {
+    "messageformat": "Name your profile"
+  },
+  "icu:NotificationProfiles--name-title--editing": {
+    "messageformat": "Pangalan"
+  },
+  "icu:NotificationProfiles--name-placeholder": {
+    "messageformat": "Profile name"
+  },
+  "icu:NotificationProfiles--sample-name__work": {
+    "messageformat": "Trabaho"
+  },
+  "icu:NotificationProfiles--sample-name__sleep": {
+    "messageformat": "Sleep"
+  },
+  "icu:NotificationProfiles--sample-name__driving": {
+    "messageformat": "Driving"
+  },
+  "icu:NotificationProfiles--sample-name__downtime": {
+    "messageformat": "Downtime"
+  },
+  "icu:NotificationProfiles--sample-name__focus": {
+    "messageformat": "Focus"
+  },
+  "icu:NotificationProfiles--allowed-title": {
+    "messageformat": "Allowed notifications"
+  },
+  "icu:NotificationProfiles--allowed-description": {
+    "messageformat": "Mag-add ng mga tao at group na gusto mong makapag-send sa 'yo ng notifications kapag naka-on ang profile na ito"
+  },
+  "icu:NotificationProfiles--allowed-add-label": {
+    "messageformat": "Mag-add ng people o groups"
+  },
+  "icu:NotificationProfiles--exceptions": {
+    "messageformat": "Exceptions"
+  },
+  "icu:NotificationProfiles--exceptions--allow-all-calls": {
+    "messageformat": "I-allow lahat ng calls"
+  },
+  "icu:NotificationProfiles--exceptions--notify-for-mentions": {
+    "messageformat": "Mag-notify sa lahat ng mentions"
+  },
+  "icu:NotificationProfiles--schedule-title": {
+    "messageformat": "Mag-add ng schedule"
+  },
+  "icu:NotificationProfiles--schedule-title--editing": {
+    "messageformat": "Schedule"
+  },
+  "icu:NotificationProfiles--schedule-description": {
+    "messageformat": "I-enable at i-edit ang schedule mo para ma-automate ang notification profile mo."
+  },
+  "icu:NotificationProfiles--schedule-enable": {
+    "messageformat": "I-on automatically"
+  },
+  "icu:NotificationProfiles--schedule": {
+    "messageformat": "Schedule"
+  },
+  "icu:NotificationProfiles--schedule-from": {
+    "messageformat": "From"
+  },
+  "icu:NotificationProfiles--schedule-until": {
+    "messageformat": "Hanggang"
+  },
+  "icu:NotificationProfiles--open-time-picker": {
+    "messageformat": "Buksan ang time picker"
+  },
+  "icu:NotificationProfiles--schedule-sunday": {
+    "messageformat": "Linggo"
+  },
+  "icu:NotificationProfiles--schedule-monday": {
+    "messageformat": "Lunes"
+  },
+  "icu:NotificationProfiles--schedule-tuesday": {
+    "messageformat": "Martes"
+  },
+  "icu:NotificationProfiles--schedule-wednesday": {
+    "messageformat": "Miyerkules"
+  },
+  "icu:NotificationProfiles--schedule-thursday": {
+    "messageformat": "Huwebes"
+  },
+  "icu:NotificationProfiles--schedule-friday": {
+    "messageformat": "Biyernes"
+  },
+  "icu:NotificationProfiles--schedule-saturday": {
+    "messageformat": "Sabado"
+  },
+  "icu:NotificationProfiles--done-title": {
+    "messageformat": "Profile created"
+  },
+  "icu:NotificationProfiles--done-description": {
+    "messageformat": "Kung naglagay ka ng schedule, automatic na magiging off o on ang profile. Maaari mo ring i-click ang ··· icon sa itaas ng chat list para i-on o off ito manually."
+  },
+  "icu:NotificationProfiles--schedule-sunday-short": {
+    "messageformat": "Sun"
+  },
+  "icu:NotificationProfiles--schedule-monday-short": {
+    "messageformat": "Mon"
+  },
+  "icu:NotificationProfiles--schedule-tuesday-short": {
+    "messageformat": "Tue"
+  },
+  "icu:NotificationProfiles--schedule-wednesday-short": {
+    "messageformat": "Wed"
+  },
+  "icu:NotificationProfiles--schedule-thursday-short": {
+    "messageformat": "Thu"
+  },
+  "icu:NotificationProfiles--schedule-friday-short": {
+    "messageformat": "Fri"
+  },
+  "icu:NotificationProfiles--schedule-saturday-short": {
+    "messageformat": "Sat"
+  },
+  "icu:NotificationProfiles--schedule-weekdays": {
+    "messageformat": "Weekdays"
+  },
+  "icu:NotificationProfiles--schedule-weekends": {
+    "messageformat": "Weekends"
+  },
+  "icu:NotificationProfiles--schedule-daily": {
+    "messageformat": "Araw-araw"
+  },
+  "icu:NotificationProfiles--schedule-separator": {
+    "messageformat": ", "
+  },
+  "icu:NotificationProfiles--list--header": {
+    "messageformat": "Profiles"
+  },
+  "icu:NotificationProfiles--list--sync": {
+    "messageformat": "I-sync sa lahat ng devices"
+  },
+  "icu:NotificationProfiles--list--sync--description": {
+    "messageformat": "Ang profiles mo ay naka-sync sa devices mo. Ang pag-on ng isang profile sa isang device ay mangyayari rin sa ibang devices."
+  },
+  "icu:NotificationProfiles--delete": {
+    "messageformat": "Burahin ang profile"
+  },
+  "icu:NotificationProfiles--delete-confirmation": {
+    "messageformat": "Permanenteng burahin ang notification profile na ito?"
+  },
+  "icu:NotificationProfiles--delete-button": {
+    "messageformat": "Burahin"
+  },
+  "icu:NotificationProfiles--edit--is-active": {
+    "messageformat": "On"
+  },
+  "icu:NotificationProfiles--edit--is-not-active": {
+    "messageformat": "Off"
+  },
+  "icu:NotificationProfiles--edit--edit-name-label": {
+    "messageformat": "I-edit ang pangalan ng profile na ito"
+  },
+  "icu:NotificationProfiles--edit--allowed": {
+    "messageformat": "Allowed notifications"
+  },
+  "icu:NotificationProfiles--edit--schedule-timing": {
+    "messageformat": "{startTime} hanggang {endTime}"
+  },
+  "icu:NotificationProfiles--edit--schedule-enabled": {
+    "messageformat": "On"
+  },
+  "icu:NotificationProfiles--edit--schedule-disabled": {
+    "messageformat": "Off"
+  },
   "icu:Preferences--blocked": {
     "messageformat": "Naka-block"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "B&A Secure Backups"
+    "messageformat": "Signal Secure Backups"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatic backups na may secure end-to-end encrypted storage service ng B&A. Simulan sa phone mo. <learnMoreLink>Matuto pa</learnMoreLink>."
+    "messageformat": "Automatic backups na may secure end-to-end encrypted storage service ng Signal. Simulan sa phone mo. <learnMoreLink>Matuto pa</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "I-back up ang message history mo para hindi mawala ang data mo kapag nagpalit ka ng phone o ni-reinstall mo ang B&A."
+    "messageformat": "I-back up ang message history mo para hindi mawala ang data mo kapag nagpalit ka ng phone o ni-reinstall mo ang Signal."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Backup details"
@@ -5301,7 +5913,10 @@
     "messageformat": "Backup ng text + lahat ng media"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Hindi mahanap ang iyong subscription. Mag-renew para patuloy mong magamit ang B&A Secure Backups."
+    "messageformat": "Hindi mahanap ang iyong subscription. I-check ang phone mo para matignan ang backup details mo."
+  },
+  "icu:Preferences--backup-subscription-monthly-cost": {
+    "messageformat": "{cost}/buwan"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Backup ng text + media ng nakaraang {mediaDayCount,number} araw} other {Backup ng text + media ng nakaraang {mediaDayCount,number} araw}}"
@@ -5319,13 +5934,13 @@
     "messageformat": "Kinancel ang subscription"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Maaari mong i-manage o kanselahin ang iyong subscription sa B&A Secure Backups sa phone mo."
+    "messageformat": "Maaari mong i-manage o kanselahin ang iyong subscription sa Signal Secure Backups sa phone mo."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Maaari mong i-manage o i-upgrade ang B&A Secure Backups sa phone mo."
+    "messageformat": "Maaari mong i-manage o i-upgrade ang Signal Secure Backups sa phone mo."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Maaari mong i-manage at i-renew ang iyong B&A Secure Backups subscription sa phone mo."
+    "messageformat": "Maaari mong i-manage at i-renew ang iyong Signal Secure Backups subscription sa phone mo."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Huling backup"
@@ -5343,7 +5958,7 @@
     "messageformat": "Gumawa ng isang end-to-end encrypted backup na pwede mong i-restore sa phone mo. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Para mag-restore ng backup, mag-install ng bagong kopya ng B&A. Buksan ang app at i-tap ang Restore backup, pagkatapos ay hanapin ang backup folder. <learnMoreLink>Matuto pa.</learnMoreLink>"
+    "messageformat": "Para mag-restore ng backup, mag-install ng bagong kopya ng Signal. Buksan ang app at i-tap ang Restore backup, pagkatapos ay hanapin ang backup folder. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Pumili ng folder"
@@ -5356,6 +5971,18 @@
   },
   "icu:Preferences--local-backups-view-backup-key-done": {
     "messageformat": "Tapos na"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt--mac": {
+    "messageformat": "ipakita ang iyong backup key"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt--windows": {
+    "messageformat": "I-verify ang identity mo para makita ang iyong backup key."
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt-description--linux": {
+    "messageformat": "Tingnan ang backup key"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt-message--linux": {
+    "messageformat": "Kinakailangan ng authentication para makita ang backup key mo."
   },
   "icu:Preferences--local-backups-backup-key-text-box": {
     "messageformat": "Text box ng backup key"
@@ -5379,13 +6006,22 @@
     "messageformat": "Panatilihing ligtas ang iyong key"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Hindi ka matutulungan ng B&A na i-restore ang backup mo kapag nawala mo ang iyong key. Ilagay ito sa ligtas na lugar, at huwag itong i-share sa iba."
+    "messageformat": "Hindi ka matutulungan ng Signal na i-restore ang backup mo kapag nawala mo ang iyong key. Ilagay ito sa ligtas na lugar, at huwag itong i-share sa iba."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Magpatuloy"
   },
   "icu:Preferences--local-backups-see-backup-key-again": {
     "messageformat": "Tingnan ulit ang key"
+  },
+  "icu:Preferences__local-backups-last-backup": {
+    "messageformat": "Huling backup"
+  },
+  "icu:Preferences__local-backups-last-backup-never": {
+    "messageformat": "Hindi kailanman"
+  },
+  "icu:Preferences__local-backups-backup-now": {
+    "messageformat": "Mag-back up na ngayon"
   },
   "icu:Preferences__local-backups-folder": {
     "messageformat": "Backup folder"
@@ -5398,6 +6034,18 @@
   },
   "icu:Preferences__local-backups-copied-key": {
     "messageformat": "Nakopya ang backup key"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt--mac": {
+    "messageformat": "I-enable ang mga backup?"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt--windows": {
+    "messageformat": "I-verify ang identity mo para ma-enable ang backups."
+  },
+  "icu:Preferences__local-backups--enable--os-prompt-description--linux": {
+    "messageformat": "I-enable ang mga backup?"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt-message--linux": {
+    "messageformat": "Kinakailangan ng authentication para i-enable ang backups."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Tignan ang key"
@@ -5415,13 +6063,13 @@
     "messageformat": "{num, plural, one {{num,number} contact} other {{num,number} contacts}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Para mabago itong mga settings, buksan ang B&A app sa iyong mobile device at pumunta sa Settings > Privacy"
+    "messageformat": "Para mabago itong mga settings, buksan ang Signal app sa iyong mobile device at pumunta sa Settings > Privacy"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Phone Number"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Piliin kung sinong pwedeng makakita ng phone number mo at kung sinong pwedeng kumontak sa 'yo sa B&A gamit ito."
+    "messageformat": "Piliin kung sinong pwedeng makakita ng phone number mo at kung sinong pwedeng kumontak sa 'yo sa Signal gamit ito."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Baguhin…"
@@ -5451,10 +6099,10 @@
     "messageformat": "Sinong makakahanap sa 'kin gamit ang number ko"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Makikita ka sa B&A at pwede kang i-chat ng sinumang mayroong phone number mo."
+    "messageformat": "Makikita ka sa Signal at pwede kang i-chat ng sinumang mayroong phone number mo."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Walang makakakita na nasa B&A ka maliban sa mga taong minessage o naka-chat mo."
+    "messageformat": "Walang makakakita na nasa Signal ka maliban sa mga taong minessage o naka-chat mo."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Lahat"
@@ -5466,7 +6114,7 @@
     "messageformat": "Sigurado ka ba?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Magiging mas mahirap para sa iba na hanapin ka sa B&A kapag ginawa mong \"{nobodyLabel}\" ang \"{settingTitle}\"."
+    "messageformat": "Magiging mas mahirap para sa iba na hanapin ka sa Signal kapag ginawa mong \"{nobodyLabel}\" ang \"{settingTitle}\"."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Messaging"
@@ -5520,7 +6168,7 @@
     "messageformat": "I-set"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "I-restart ang B&A para i-apply"
+    "messageformat": "I-restart ang Signal para i-apply"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Para mabago ang wika, kailangang mag-restart ng app na ito."
@@ -5535,13 +6183,13 @@
     "messageformat": "Seguridad ng screen"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Pigilan ang pag-screenshot sa B&A sa computer na ito para sa karagdagang privacy."
+    "messageformat": "Pigilan ang pag-screenshot sa Signal sa computer na ito para sa karagdagang privacy."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "I-disable ang screen security?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Kung naka-disable ito, maaari nitong payagan ang Microsoft Windows na kumuha ng screenshots ng B&A at gamitin ang mga ito para sa mga feature na maaaring hindi pribado."
+    "messageformat": "Kung naka-disable ito, maaari nitong payagan ang Microsoft Windows na kumuha ng screenshots ng Signal at gamitin ang mga ito para sa mga feature na maaaring hindi pribado."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "I-disable"
@@ -5556,25 +6204,25 @@
     "messageformat": "Na-download na ang Update"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "I-open ang B&A sa iyong phone"
+    "messageformat": "I-open ang Signal sa iyong phone"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Mabubura na ang account mo kapag hindi mo binuksan ang B&A app sa phone mo. Mawawala ang message na ito kung nagawa mo ito successfully. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Mabubura na ang account mo kapag hindi mo binuksan ang Signal app sa phone mo. Mawawala ang message na ito kung nagawa mo ito successfully. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Buksan ang B&A sa phone mo para mapanatiling active ang iyong account"
+    "messageformat": "Buksan ang Signal sa phone mo para mapanatiling active ang iyong account"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Matuto pa"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Nakakaranas ng mga teknikal na problema ang B&A. Nagsisikap kaming ibalik ang serbisyo sa lalong madaling panahon."
+    "messageformat": "Nakakaranas ng mga teknikal na problema ang Signal. Nagsisikap kaming ibalik ang serbisyo sa lalong madaling panahon."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "May Required na Update"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Para makumpleto ang pag-sync sa messages mo, i-update na ang B&A desktop."
+    "messageformat": "Para makumpleto ang pag-sync sa messages mo, i-update na ang Signal desktop."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "I-update"
@@ -5583,19 +6231,19 @@
     "messageformat": "May Required na Update"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Para patuloy na magamit ang B&A, mag-update sa latest version nito."
+    "messageformat": "Para patuloy na magamit ang Signal, mag-update sa latest version nito."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "I-download {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "I-restart ang B&A para ma-install ang update."
+    "messageformat": "I-restart ang Signal para ma-install ang update."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Hindi na-update ng B&A Desktop, pero may bagong version na available. Pumunta sa {downloadUrl} at i-install ang bagong version manually, pagkatapos ay kontakin ang support o mag-file ng bug tungkol dito."
+    "messageformat": "Hindi na-update ng Signal Desktop, pero may bagong version na available. Pumunta sa {downloadUrl} at i-install ang bagong version manually, pagkatapos ay kontakin ang support o mag-file ng bug tungkol dito."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Hindi pwedeng i-close ang B&A.",
+    "messageformat": "Hindi pwedeng i-close ang Signal.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5615,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Installed na ang bagong version ng B&A. Sigurado ka bang gusto mong magpatuloy?",
+    "messageformat": "Installed na ang bagong version ng Signal. Sigurado ka bang gusto mong magpatuloy?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Application crashed"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Nag-restart ang B&A after ng crash. Pwede kang mag-submit ng crash report para ma-investigate ng B&A ang issue."
+    "messageformat": "Nag-restart ang Signal after ng crash. Pwede kang mag-submit ng crash report para ma-investigate ng Signal ang issue."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "I-send"
@@ -5727,7 +6375,7 @@
     "messageformat": "I-click ang \"{buttonName}\" sa ibaba"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "I-on ang \"B&A\""
+    "messageformat": "I-on ang \"Signal\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Pumunta sa settings"
@@ -5817,7 +6465,7 @@
     "messageformat": "Matuto pa"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "B&A Connections"
+    "messageformat": "Signal Connections"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} ay mga taong pinagkatiwalaan mo, sa pamamagitan ng alinman sa mga sumusunod:"
@@ -5967,7 +6615,7 @@
     "messageformat": "I-hide ang story kay"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "All B&A connections"
+    "messageformat": "All Signal connections"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Lahat maliban kay…"
@@ -5985,7 +6633,7 @@
     "messageformat": "View Receipts"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Para mabago ang setting na ito, buksan ang B&A app sa iyong mobile device at pumunta sa Settings -> Stories"
+    "messageformat": "Para mabago ang setting na ito, buksan ang Signal app sa iyong mobile device at pumunta sa Settings -> Stories"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Sinong pwedeng makakita ng story na ito"
@@ -6045,7 +6693,7 @@
     "messageformat": "Privacy ng Story Ko"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Piliin kung sino sa iyong B&A connections ang pwedeng mag-view ng story mo. Pwede mo itong baguhin anumang oras sa privacy settings. <learnMoreLink>Matuto pa.</learnMoreLink>"
+    "messageformat": "Piliin kung sino sa iyong Signal connections ang pwedeng mag-view ng story mo. Pwede mo itong baguhin anumang oras sa privacy settings. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Burahin ang story"
@@ -6114,7 +6762,7 @@
     "messageformat": "I-download ang Attachment"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "I-enable ang read receipts para makita kung sinong nag-view ng stories mo. Buksan ang B&A app sa iyong mobile device at pumunta sa Settings > Stories."
+    "messageformat": "I-enable ang read receipts para makita kung sinong nag-view ng stories mo. Buksan ang Signal app sa iyong mobile device at pumunta sa Settings > Stories."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Wala pang replies"
@@ -6300,7 +6948,7 @@
     "messageformat": "Na-reset ang iyong QR code at link at ang iyong username ay {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "I-scan ang QR code na ito gamit ang phone mo para maka-chat ako sa B&A.",
+    "messageformat": "I-scan ang QR code na ito gamit ang phone mo para maka-chat ako sa Signal.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6376,16 +7024,19 @@
     "messageformat": "I-dismiss"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Malapit nang hindi masuportahan ng B&A ang {OS} version ng iyong computer. Para patuloy na magamit ang B&A, i-update ang operating system ng computer mo bago sumapit ang {expirationDate}. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Malapit nang hindi masuportahan ng Signal ang {OS} version ng iyong computer. Para patuloy na magamit ang Signal, i-update ang operating system ng computer mo bago sumapit ang {expirationDate}. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Hindi na gumagana ang B&A desktop sa computer na ito. Para magamit muli ang B&A desktop, i-update ang {OS} version ng iyong computer. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Hindi na gumagana ang Signal desktop sa computer na ito. Para magamit muli ang Signal desktop, i-update ang {OS} version ng iyong computer. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Hindi na gumagana ang B&A desktop sa computer na ito. Para magamit muli ang B&A desktop, i-update ang {OS} version ng iyong computer."
+    "messageformat": "Hindi na gumagana ang Signal desktop sa computer na ito. Para magamit muli ang Signal desktop, i-update ang {OS} version ng iyong computer."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "In-edit"
+  },
+  "icu:MessageMetadata__pinned": {
+    "messageformat": "Pinned"
   },
   "icu:DraftGifMessageSendModal__Title": {
     "messageformat": "Mag-add ng message"
@@ -6398,6 +7049,9 @@
   },
   "icu:EditHistoryMessagesModal__title": {
     "messageformat": "History ng edits"
+  },
+  "icu:EditHistoryMessagesModal__Message__ContextMenu__CopyTimestamp": {
+    "messageformat": "Copy timestamp"
   },
   "icu:ResendMessageEdit__body": {
     "messageformat": "Hindi ma-send ang edit na ito. I-check ang iyong connection at subukan ulit"
@@ -6550,7 +7204,7 @@
     "messageformat": "Kopyahin ang link"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "I-share ang link via B&A"
+    "messageformat": "I-share ang link via Signal"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Burahin ang link"
@@ -6616,7 +7270,7 @@
     "messageformat": "Para baguhin ang setting na ito, i-set sa \"Nobody\" ang \"Who can see my number\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Ang profile names sa B&A ay pinili ng may-ari ng account:"
+    "messageformat": "Ang profile names sa Signal ay pinili ng may-ari ng account:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Hindi verified ang profile names"
@@ -6648,8 +7302,14 @@
   "icu:PreferencesDonations__title": {
     "messageformat": "Privacy over Profit"
   },
+  "icu:PreferencesDonations__title-v2": {
+    "messageformat": "Proudly Nonprofit"
+  },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Private messaging na suportado mo. Walang ads, walang tracking, walang kompromiso. Mag-donate na para suportahan ang B&A. <readMoreLink>Magbasa pa</readMoreLink>"
+    "messageformat": "Private messaging na suportado mo. Walang ads, walang tracking, walang kompromiso. Mag-donate na para suportahan ang Signal. <readMoreLink>Magbasa pa</readMoreLink>"
+  },
+  "icu:PreferencesDonations__description-v2": {
+    "messageformat": "Mag-donate para suportahan ang private messaging. Panatilihing malaya at ad-free ang Signal. <readMoreLink>Magbasa pa</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Mag-donate"
@@ -6673,7 +7333,7 @@
     "messageformat": "Pribado ang iyong impormasyon"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Hindi kinokolekta o sine-save ng B&A ang anumang personal na impormasyon mo kapag nag-donate ka.</paragraph><paragraph>Ginagamit namin ang Stripe bilang aming tagaproseso ng pagbabayad upang matanggap ang mga donasyon mo. Hindi namin ina-access, itinatago, o sine-save ang anumang impormasyong ibinibigay mo sa kanila.</paragraph><paragraph>Hindi kinokonekta at hindi maikokonekta ng B&A ang iyong donasyon sa B&A account mo.</paragraph><paragraph>Maraming salamat sa iyong suporta!</paragraph>"
+    "messageformat": "<paragraph>Hindi kinokolekta o sine-save ng Signal ang anumang personal na impormasyon mo kapag nag-donate ka.</paragraph><paragraph>Ginagamit namin ang Stripe bilang aming tagaproseso ng pagbabayad upang matanggap ang mga donasyon mo. Hindi namin ina-access, itinatago, o sine-save ang anumang impormasyong ibinibigay mo sa kanila.</paragraph><paragraph>Hindi kinokonekta at hindi maikokonekta ng Signal ang iyong donasyon sa Signal account mo.</paragraph><paragraph>Maraming salamat sa iyong suporta!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -6688,13 +7348,10 @@
     "messageformat": "Donor FAQs"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Hindi nagsi-sync ang receipts sa iba't-ibang devices. Kung ni-reinstall mo ang B&A app, hindi magiging available ang receipts ng lumang donations."
+    "messageformat": "Hindi nagsi-sync ang receipts sa iba't-ibang devices. Kung ni-reinstall mo ang Signal app, hindi magiging available ang receipts ng lumang donations."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Walang receipts"
-  },
-  "icu:PreferencesDonations__ReceiptModal--title": {
-    "messageformat": "Mga Detalye"
   },
   "icu:PreferencesDonations__ReceiptModal--download": {
     "messageformat": "I-download ang receipt"
@@ -6721,7 +7378,7 @@
     "messageformat": "Credit o debit card"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Ilagay ang credit o debit card details mo. Hindi kinokolekta o itinatago ng B&A ang iyong personal na impormasyon. <learnMoreLink>Matuto pa</learnMoreLink>"
+    "messageformat": "Ilagay ang credit o debit card details mo. Hindi kinokolekta o itinatago ng Signal ang iyong personal na impormasyon. <learnMoreLink>Matuto pa</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Card number"
@@ -6733,7 +7390,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Mag-donate ng {formattedCurrencyAmount} sa B&A"
+    "messageformat": "Mag-donate ng {formattedCurrencyAmount} sa Signal"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Invalid ang card number"
@@ -6751,7 +7408,7 @@
     "messageformat": "Masyadong maikli ang code"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Kunin ang B&A Boost badge sa loob ng 30 days"
+    "messageformat": "Kunin ang Signal Boost badge sa loob ng 30 days"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Ang minimum donation ay {formattedCurrencyAmount}"
@@ -6787,7 +7444,7 @@
     "messageformat": "Isang beses"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Maraming salamat sa pagsuporta sa B&A. Ang iyong contribution ay nakatutulong para maipagpatuloy ang aming mission na protektahan ang malayang pamamahayag at pag-enable sa secure global communication para sa milyun-milyong katao sa buong mundo, sa pamamagitan ng open source privacy technology. Kung ika'y isang residente ng United States, ingatan ang receipt na ito para sa tax records mo. Ang B&A Technology Foundation ay isang tax-exempt nonprofit organization sa United States sa ilalim ng section 501c3 ng Internal Revenue Code. Ang aming Federal Tax ID ay 82-4506840."
+    "messageformat": "Maraming salamat sa pagsuporta sa Signal. Ang iyong contribution ay nakatutulong para maipagpatuloy ang aming mission na protektahan ang malayang pamamahayag at pag-enable sa secure global communication para sa milyun-milyong katao sa buong mundo, sa pamamagitan ng open source privacy technology. Kung ika'y isang residente ng United States, ingatan ang receipt na ito para sa tax records mo. Ang Signal Technology Foundation ay isang tax-exempt nonprofit organization sa United States sa ilalim ng section 501c3 ng Internal Revenue Code. Ang aming Federal Tax ID ay 82-4506840."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Offline ka. Mag-connect sa internet para kumpletuhin ang pag-donate."
@@ -6813,14 +7470,11 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Mayroon kang kasalukuyang donation na nangangailangan ng confirmation."
   },
-  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
-    "messageformat": "Pumasok ang donation, pero hindi namin ma-update ang iyong badge settings"
-  },
   "icu:Donations__BadgeApplicationFailed__Title": {
     "messageformat": "Pumasok ang donation, pero hindi namin ma-update ang iyong badge settings"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Para i-update ang badge settings mo sa iyong device, pumunta sa Settings → Mag-donate sa B&A → Badges."
+    "messageformat": "Para i-update ang badge settings mo sa iyong device, pumunta sa Settings → Mag-donate sa Signal → Badges."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Naputol ang pag-donate"
@@ -6847,7 +7501,7 @@
     "messageformat": "Nagkaroon ng error sa iyong donation"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Maaaring hindi naproseso ang iyong donation. I-click ang \"Mag-donate sa B&A\" at i-click ang \"Donation Receipts\" para ma-check at ma-confirm ang iyong mga resibo."
+    "messageformat": "Maaaring hindi naproseso ang iyong donation. I-click ang \"Mag-donate sa Signal\" at i-click ang \"Donation Receipts\" para ma-check at ma-confirm ang iyong mga resibo."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Subukan ulit o mag-submit ng debug log sa Support para matulungan kang makumpleto ang donation mo. Ang debug logs ay makatutulong sa amin para ma-diagnose at maayos ang issue, at wala itong nilalaman na identifying information."
@@ -6889,20 +7543,134 @@
     "messageformat": "Maraming salamat sa iyong suporta!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Nakakuha ka ng isang donor badge mula sa B&A! I-display ito sa profile mo para maipakita ang iyong suporta."
+    "messageformat": "Nakakuha ka ng isang donor badge mula sa Signal! I-display ito sa profile mo para maipakita ang iyong suporta."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "I-display sa Profile"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Maaari mo itong ayusin sa iyong mobile device sa Settings → Mag-donate sa B&A → Badges"
+    "messageformat": "Maaari mo itong ayusin sa iyong mobile device sa Settings → Mag-donate sa Signal → Badges"
+  },
+  "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
+    "messageformat": "Isara"
+  },
+  "icu:CallQualitySurvey__BackButton__AccessibilityLabel": {
+    "messageformat": "Bumalik"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
+    "messageformat": "Kumusta ang tawag mo?"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
+    "messageformat": "Nakatutulong ito sa amin na mapabuti pa ang mga tawag sa Signal. Walang personal identifiable information na ise-save."
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
+    "messageformat": "Nagkaroon ng mga isyu"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__Response__Great": {
+    "messageformat": "Mabuti"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__PageTitle": {
+    "messageformat": "Anong mga isyu ang naranasan mo?"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__IssuesList__Heading": {
+    "messageformat": "Piliin ang lahat ng naaangkop"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO": {
+    "messageformat": "Isyu sa audio"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_STUTTERING": {
+    "messageformat": "Putol-putol na audio"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_LOCAL_ECHO": {
+    "messageformat": "Nakarinig ako ng echo"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_REMOTE_ECHO": {
+    "messageformat": "Nakarinig ang iba ng echo"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_DROP": {
+    "messageformat": "Patigil-tigil na audio"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO": {
+    "messageformat": "Isyu sa video"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_NO_CAMERA": {
+    "messageformat": "Hindi gumana ang camera"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_LOW_QUALITY": {
+    "messageformat": "Mababang video quality"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_LOW_RESOLUTION": {
+    "messageformat": "Mababang resolution"
+  },
+  "icu:CallQualitySurvey__Issue--CALL_DROPPED": {
+    "messageformat": "Naputol ang tawag"
+  },
+  "icu:CallQualitySurvey__Issue--OTHER": {
+    "messageformat": "Iba pa"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__AccessibilityLabel": {
+    "messageformat": "Ilarawan ang issue mo"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
+    "messageformat": "Pakisama ang anumang detalye na may kaugnayan sa isyu. Anumang ibinahagi mo rito ay mapapanatiling pribado at gagamitin lamang para sa pagpapabuti ng mga tawag dito sa Signal."
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
+    "messageformat": "Pakilarawan ang isyu mo"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__ContinueButton": {
+    "messageformat": "Magpatuloy"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__ContinueButton__DisabledTooltip": {
+    "messageformat": "Pumili para maagpatuloy"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
+    "messageformat": "Tulungan kaming mag-improve"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
+    "messageformat": "Makatutulong ito sa amin para mas mapabuti pa ang quality ng calls. Maaari mong tignan ang debug log mo bago mag-submit."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
+    "messageformat": "Ang pag-submit ay magbabahagi ng feedback mo kasama ang <diagnosticInfoLink>diagnostic information tungkol sa tawag mo</diagnosticInfoLink>. Maaari ka ring magbahagi ng debug log para matulungan mo kaming mapaganda ang call quality."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__Label": {
+    "messageformat": "I-share ang debug log"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
+    "messageformat": "Tingnan"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
+    "messageformat": "Ang debug logs ay naglalaman ng mababang level ng impormasyon ng app at hindi nagpapakita ng anumang nilalaman ng messages mo."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
+    "messageformat": "Ang impormasyong ibinahagi sa amin ay naglalaman ng mababang antas ng impormasyon ng app at hindi kasama ang mga nilalaman ng iyong mga tawag."
+  },
+  "icu:CallDiagnosticWindow__title": {
+    "messageformat": "Diagnostic na impormasyon"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__SubmitButton": {
+    "messageformat": "Isumite"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__Submitting": {
+    "messageformat": "Sinu-submit ang survey..."
+  },
+  "icu:CallQualitySurvey__SubmissionFailed": {
+    "messageformat": "Hindi na-submit ang survey"
+  },
+  "icu:CallQualitySurvey__SubmissionFailed__Retry": {
+    "messageformat": "Subukang muli"
+  },
+  "icu:CallQualitySurvey__SubmissionSuccess": {
+    "messageformat": "Maraming salamat sa feedback mo!"
+  },
+  "icu:Megaphone__ExpandNarrowSidebar": {
+    "messageformat": "Palakihin ang sidebar para makipag-interact sa megaphone"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Ang version na ito'y may small tweaks at bug fixes to keep B&A running smoothly.",
+    "messageformat": "Ang version na ito'y may small tweaks at bug fixes to keep Signal running smoothly.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng B&A!",
+    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng Signal!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6922,10 +7690,13 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng B&A!",
+    "messageformat": "Dagdag na maliliit na pag-aayos, pag-alis ng bugs, at pagpapaganda ng takbo ng app. Maraming salamat sa paggamit ng Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.73": {
-    "messageformat": "Kasama sa update na ito ang bagong performance optimizations na makatutulong na pagandahin ang battery life mo."
+  "icu:WhatsNew__7.86--0": {
+    "messageformat": "May inayos kaming minor display bug sa raised hand indicator sa group calls."
+  },
+  "icu:WhatsNew__7.87--0": {
+    "messageformat": "Pinapadali ng pinned messages ang pag-access ng importanteng impormasyon sa pamamagitan ng paglagay nito sa taas ng chat."
   }
 }

@@ -365,7 +365,8 @@ message DataMessage {
     CDN_SELECTOR_ATTACHMENTS = 5;
     MENTIONS = 6;
     PAYMENTS = 7;
-    CURRENT = 7;
+    POLLS = 8;
+    CURRENT = 8;
   }
 
   message GiftBadge {
@@ -387,6 +388,20 @@ message DataMessage {
     optional uint64 targetSentTimestamp = 2;
     repeated uint32 optionIndexes = 3;
     optional uint32 voteCount = 4;
+  }
+
+  message PinMessage {
+    optional bytes targetAuthorAciBinary = 1; // 16-byte UUID
+    optional uint64 targetSentTimestamp = 2;
+    oneof pinDuration {
+      uint32 pinDurationSeconds = 3;
+      bool pinDurationForever = 4;
+    }
+  }
+
+  message UnpinMessage {
+    optional bytes targetAuthorAciBinary = 1; // 16-byte UUID
+    optional uint64 targetSentTimestamp = 2;
   }
 
   optional string body = 1;
@@ -414,7 +429,9 @@ message DataMessage {
   optional PollCreate pollCreate = 24;
   optional PollTerminate pollTerminate = 25;
   optional PollVote pollVote = 26;
-  // NEXT ID: 27
+  optional PinMessage pinMessage = 27;
+  optional UnpinMessage unpinMessage = 28;
+  // NEXT ID: 29
 }
 
 message NullMessage {

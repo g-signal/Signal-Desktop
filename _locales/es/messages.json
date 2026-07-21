@@ -42,7 +42,7 @@
     "messageformat": "Si seleccionas alta calidad, se usarán más datos."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Haz una donación a B&A"
+    "messageformat": "Haz una donación a Signal"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Estándar"
@@ -66,7 +66,7 @@
     "messageformat": "{appEnv} (Intel)"
   },
   "icu:copyErrorAndQuit": {
-    "messageformat": "Copiar error y cerrar B&A"
+    "messageformat": "Copiar error y cerrar Signal"
   },
   "icu:unknownContact": {
     "messageformat": "Contacto desconocido"
@@ -78,10 +78,10 @@
     "messageformat": "Grupo desconocido"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "No se puede abrir B&A"
+    "messageformat": "No se puede abrir Signal"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Para solucionar el problema, consulta la guía de recuperación en la página de asistencia o ponte en contacto con el equipo de asistencia de B&A.\n\nSi necesitas usar B&A de inmediato, puedes eliminar tus datos y volver a vincular este dispositivo de escritorio. Tendrás la opción de transferir tu historial de mensajes desde tu teléfono."
+    "messageformat": "Para solucionar el problema, consulta la guía de recuperación en la página de asistencia o ponte en contacto con el equipo de Asistencia de Signal.\n\nSi necesitas usar Signal de inmediato, puedes eliminar tus datos y volver a vincular este dispositivo de escritorio. Tendrás la opción de transferir tu historial de mensajes desde tu teléfono."
   },
   "icu:databaseError": {
     "messageformat": "Error en la base de datos"
@@ -93,19 +93,28 @@
     "messageformat": "¿Eliminar todos los datos de forma permanente?"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Todos tus mensajes y archivos multimedia se eliminarán de forma permanente de este dispositivo. Esta acción no eliminará ningún dato de tu teléfono.\n\nPodrás usar B&A en este dispositivo después de volver a vincularlo. Tendrás la opción de transferir tu historial de mensajes desde tu teléfono."
+    "messageformat": "Todos tus mensajes y archivos multimedia se eliminarán de forma permanente de este dispositivo. Esta acción no eliminará ningún dato de tu teléfono.\n\nPodrás usar Signal en este dispositivo después de volver a vincularlo. Tendrás la opción de transferir tu historial de mensajes desde tu teléfono."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "La versión de tu base de datos no coincide con esta versión de B&A. Asegúrate de abrir la versión más reciente de B&A en tu equipo de escritorio."
+    "messageformat": "La versión de tu base de datos no coincide con esta versión de Signal. Asegúrate de abrir la versión más reciente de Signal en tu equipo de escritorio."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "No se puede acceder a la clave de cifrado de la base de datos porque el backend del almacén de claves de cifrado del SO ha cambiado de {previousBackend} a {currentBackend}. Esto puede ocurrir si el entorno de escritorio cambia, por ejemplo, de GNOME a KDE.\n\nVuelve al entorno de escritorio anterior."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "No se puede acceder a la clave de cifrado de la base de datos porque el backend del almacén de claves de cifrado del SO ha cambiado de {previousBackend} a {currentBackend}. Esto puede ocurrir si el entorno de escritorio cambia, por ejemplo, de GNOME a KDE.\n\nVuelve al entorno de escritorio anterior o intenta ejecutar B&A con la marca de línea de comandos --password-store=\"{previousBackendFlag}\"."
+    "messageformat": "No se puede acceder a la clave de cifrado de la base de datos porque el backend del almacén de claves de cifrado del SO ha cambiado de {previousBackend} a {currentBackend}. Esto puede ocurrir si el entorno de escritorio cambia, por ejemplo, de GNOME a KDE.\n\nVuelve al entorno de escritorio anterior o intenta ejecutar Signal con la marca de línea de comandos --password-store=\"{previousBackendFlag}\"."
+  },
+  "icu:systemEncryptionError": {
+    "messageformat": "System encryption error"
+  },
+  "icu:systemEncryptionError__linuxSafeStorageDecryptionError": {
+    "messageformat": "Unable to decrypt the database encryption key using the OS encryption keyring. This can occur in certain containerized environments such as Flatpak.\n\nWe recommend quitting and checking your OS encryption backend such as gnome-libsecret or kwallet, then trying again.\n\nYou may choose to continue anyway, however the database key will be stored in plaintext on the filesystem and other apps may be able to access it."
+  },
+  "icu:systemEncryptionError__continueWithPlaintextKey": {
+    "messageformat": "Continue with plaintext key"
   },
   "icu:mainMenuFile": {
-    "messageformat": "A&rchivo"
+    "messageformat": "&Archivo"
   },
   "icu:mainMenuCreateStickers": {
     "messageformat": "Crear/subir paquete de stickers"
@@ -120,7 +129,7 @@
     "messageformat": "Ve&ntana"
   },
   "icu:mainMenuHelp": {
-    "messageformat": "&Ayuda"
+    "messageformat": "A&yuda"
   },
   "icu:mainMenuSettings": {
     "messageformat": "Ajustes…"
@@ -138,7 +147,7 @@
     "messageformat": "Mostrar todas"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Cerrar B&A"
+    "messageformat": "Cerrar Signal"
   },
   "icu:editMenuUndo": {
     "messageformat": "Deshacer"
@@ -233,6 +242,12 @@
   "icu:archivedConversations": {
     "messageformat": "Chats archivados"
   },
+  "icu:LeftPane__MoreActionsMenu__AddChatFolder": {
+    "messageformat": "Añadir carpeta de chats"
+  },
+  "icu:LeftPane__MoreActionsMenu__FolderSettings": {
+    "messageformat": "Ajustes de las carpetas"
+  },
   "icu:LeftPane--pinned": {
     "messageformat": "Fijados"
   },
@@ -271,6 +286,45 @@
   },
   "icu:LeftPaneFindByHelper__description--findByUsername": {
     "messageformat": "Introduce un alias seguido de un punto y su conjunto de números."
+  },
+  "icu:LeftPane__EmptyView--WithSelectedChatFolder": {
+    "messageformat": "No hay chats para mostrar"
+  },
+  "icu:LeftPane__EmptyView--WithSelectedChatFolder__FolderSettings": {
+    "messageformat": "Ajustes de las carpetas"
+  },
+  "icu:LeftPaneChatFolders__ItemLabel--All--Short": {
+    "messageformat": "Todos"
+  },
+  "icu:LeftPaneChatFolders__ItemLabel--All": {
+    "messageformat": "Todos los chats"
+  },
+  "icu:LeftPaneChatFolders__ItemUnreadBadge__MaxCount": {
+    "messageformat": "{maxCount,number}+"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MarkAllRead": {
+    "messageformat": "Marcar todos como leídos"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MuteNotifications": {
+    "messageformat": "Silenciar notificaciones"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MuteNotifications__UnmuteAll": {
+    "messageformat": "Reactivar notificaciones"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__UnmuteAll": {
+    "messageformat": "Reactivar notificaciones"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__EditFolder": {
+    "messageformat": "Editar carpeta"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderToggleChatsItem": {
+    "messageformat": "Añadir a una carpeta"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderToggleChatsMenu__CreateFolderItem": {
+    "messageformat": "Crear carpeta"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderRemoveChatItem": {
+    "messageformat": "Eliminar de la carpeta"
   },
   "icu:CountryCodeSelect__placeholder": {
     "messageformat": "Código de país"
@@ -322,6 +376,9 @@
   },
   "icu:markUnread": {
     "messageformat": "Marcar como no leído"
+  },
+  "icu:markRead": {
+    "messageformat": "Marcar como leído"
   },
   "icu:ConversationHeader__menu__selectMessages": {
     "messageformat": "Seleccionar mensajes"
@@ -429,10 +486,10 @@
     "messageformat": "Has marcado tu número de seguridad con {name} como no verificado en otro dispositivo"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "El número de seguridad que estás intentando verificar ha cambiado. Revisa tu nuevo número de seguridad con {name1}. Este cambio puede deberse a que alguien ha tratado de interceptar la comunicación o simplemente que {name2} ha reinstalado B&A."
+    "messageformat": "El número de seguridad que estás intentando verificar ha cambiado. Revisa tu nuevo número de seguridad con {name1}. Este cambio puede deberse a que alguien ha tratado de interceptar la comunicación o simplemente que {name2} ha reinstalado Signal."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Es posible que las siguientes personas hayan reinstalado B&A o cambiado de dispositivo. Si lo deseas, haz clic sobre un destinatario para confirmar su nuevo número de seguridad."
+    "messageformat": "Es posible que las siguientes personas hayan reinstalado Signal o cambiado de dispositivo. Puedes hacer clic sobre un destinatario para confirmar su nuevo número de seguridad."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Enviar mensajes pendientes"
@@ -441,7 +498,7 @@
     "messageformat": "Revisar"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Es posible que {count,number} de tus contactos haya reinstalado B&A o cambiado de dispositivo. Antes de compartir tu historia con esta persona, puedes revisar su número de seguridad.} other {Es posible que {count,number} de tus contactos hayan reinstalado B&A o cambiado de dispositivo. Antes de compartir tu historia con estas personas, puedes revisar sus números de seguridad.}}"
+    "messageformat": "{count, plural, one {Es posible que {count,number} de tus contactos haya reinstalado Signal o cambiado de dispositivo. Antes de compartir tu historia con esta persona, puedes revisar su número de seguridad.} other {Es posible que {count,number} de tus contactos hayan reinstalado Signal o cambiado de dispositivo. Antes de compartir tu historia con estas personas, puedes revisar sus números de seguridad.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Se han revisado todos los contactos. Haz clic en Enviar para continuar."
@@ -482,14 +539,17 @@
   "icu:debugLogExplanation": {
     "messageformat": "Si seleccionas Enviar, tu registro se publicará durante 30 días en una URL única y privada. Lo podrás guardar en tu dispositivo como primera opción."
   },
+  "icu:debugLogExplanation--close": {
+    "messageformat": "Este registro se publicará online y será de acceso público para todas las personas que colaboran con nosotros. Lo puedes descargar antes de enviarlo."
+  },
   "icu:debugLogError": {
-    "messageformat": "No se ha podido completar la carga. Envía el registro de depuración en un archivo de texto a support@baxs.com."
+    "messageformat": "No se ha podido completar la carga. Envía el registro de depuración en un archivo de texto a support@signal.org."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Registro de depuración enviado"
   },
   "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Se ha completado la carga del registro de depuración. Cuando contactes con el equipo de asistencia, copia la URL que se muestra más abajo y envíala junto con una descripción del problema que has tenido y los pasos para reproducirlo."
+    "messageformat": "Se ha completado la carga del registro de depuración. Cuando contactes con el equipo de Asistencia, copia la URL que se muestra más abajo y envíala junto con una descripción del problema que has tenido y los pasos para reproducirlo."
   },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… para ver el registro de depuración completo, haz clic en Guardar"
@@ -538,18 +598,6 @@
   },
   "icu:media": {
     "messageformat": "Multimedia"
-  },
-  "icu:mediaEmptyState": {
-    "messageformat": "No hay ningún archivo multimedia en este chat"
-  },
-  "icu:allMedia": {
-    "messageformat": "Todos los archivos"
-  },
-  "icu:documents": {
-    "messageformat": "Documentos"
-  },
-  "icu:documentsEmptyState": {
-    "messageformat": "No hay ningún documento en este chat"
   },
   "icu:today": {
     "messageformat": "Hoy"
@@ -607,6 +655,15 @@
   },
   "icu:Toast--ReceiptSaveFailed": {
     "messageformat": "No se ha podido guardar el recibo. Inténtalo de nuevo."
+  },
+  "icu:Toast--ChatFolderAddedChat": {
+    "messageformat": "Añadido a \"{chatFolderName}\""
+  },
+  "icu:Toast--ChatFolderRemovedChat": {
+    "messageformat": "Eliminado de \"{chatFolderName}\""
+  },
+  "icu:Toast--ChatFolderCreated": {
+    "messageformat": "Carpeta añadida: {chatFolderName}"
   },
   "icu:cannotSelectPhotosAndVideosAlongWithFiles": {
     "messageformat": "No se pueden adjuntar fotos y vídeos junto con documentos."
@@ -672,16 +729,10 @@
     "messageformat": "Creador de paquetes de stickers"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Acerca de B&A Desktop"
+    "messageformat": "Acerca de Signal Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Compartir pantalla"
-  },
-  "icu:callingDeveloperTools": {
-    "messageformat": "Herramientas para desarrolladores de llamadas"
-  },
-  "icu:callingDeveloperToolsDescription": {
-    "messageformat": "Esta ventana se utiliza durante el desarrollo para mostrar los diagnósticos de las llamadas en curso."
   },
   "icu:speech": {
     "messageformat": "Leer en voz alta"
@@ -696,7 +747,7 @@
     "messageformat": "Salir"
   },
   "icu:signalDesktop": {
-    "messageformat": "B&A Desktop"
+    "messageformat": "Signal Desktop"
   },
   "icu:search": {
     "messageformat": "Buscar"
@@ -750,10 +801,13 @@
     "messageformat": "Buscar por número de teléfono"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "¡Ya estás en B&A!"
+    "messageformat": "¡Ya estás en Signal!"
   },
   "icu:whatsNew": {
     "messageformat": "Descubre {whatsNew} de esta actualización"
+  },
+  "icu:signalNonProfit": {
+    "messageformat": "Signal es una organización sin ánimo de lucro"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "las novedades"
@@ -837,13 +891,13 @@
     "messageformat": "Tú"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Para enviar mensajes de voz, permite a B&A Desktop acceder a tu micrófono."
+    "messageformat": "Para enviar mensajes de voz, permite a Signal Desktop acceder a tu micrófono."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Para hacer llamadas, permite a B&A Desktop acceder a tu micrófono."
+    "messageformat": "Para hacer llamadas, permite a Signal Desktop acceder a tu micrófono."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Para hacer videollamadas, permite a B&A Desktop acceder a tu cámara."
+    "messageformat": "Para hacer videollamadas, permite a Signal Desktop acceder a tu cámara."
   },
   "icu:allowAccess": {
     "messageformat": "Permitir acceso"
@@ -867,13 +921,13 @@
     "messageformat": "Silenciar"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "No se ha podido actualizar B&A. <retryUpdateButton>Intenta actualizar de nuevo</retryUpdateButton> o ve a {url} para instalar la aplicación manualmente. Luego, puedes <contactSupportLink>contactar con asistencia</contactSupportLink> para informar del problema."
+    "messageformat": "No se ha podido actualizar Signal. <retryUpdateButton>Intenta actualizar de nuevo</retryUpdateButton> o ve a {url} para instalar la aplicación manualmente. Luego, puedes <contactSupportLink>contactar con asistencia</contactSupportLink> para informar del problema."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "No se ha podido actualizar B&A. Ve a {url} para instalar la aplicación manualmente. Luego, <contactSupportLink>contacta con asistencia</contactSupportLink> para informar sobre el problema."
+    "messageformat": "No se ha podido actualizar Signal. Ve a {url} para instalar la aplicación manualmente. Luego, <contactSupportLink>contacta con asistencia</contactSupportLink> para informar sobre el problema."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "B&A Desktop probablemente se encuentra en cuarentena en macOS y no se podrá actualizar automáticamente. Intenta transferir {app} a {folder} con Finder."
+    "messageformat": "Signal Desktop probablemente se encuentra en cuarentena en macOS y no se podrá actualizar automáticamente. Intenta transferir {app} a {folder} con Finder."
   },
   "icu:ok": {
     "messageformat": "Aceptar"
@@ -918,7 +972,7 @@
     "messageformat": "Este mensaje se eliminará de este dispositivo."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Este mensaje se eliminará para todas las personas en el chat si usan una versión reciente de B&A. Podrán ver que has eliminado un mensaje."
+    "messageformat": "Este mensaje se eliminará para todas las personas en el chat si usan una versión reciente de Signal. Podrán ver que has eliminado un mensaje."
   },
   "icu:from": {
     "messageformat": "De"
@@ -960,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" es el nombre de perfil que esta persona ha elegido en B&A."
+    "messageformat": "\"{title}\" es el nombre de perfil que esta persona ha elegido en Signal."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Identidad verificada"
@@ -975,7 +1029,7 @@
     "messageformat": "No tienes mensajes privados con {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Contacto de B&A"
+    "messageformat": "Contacto de Signal"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} está en tus contactos del sistema"
@@ -1031,6 +1085,93 @@
   "icu:MessageContextMenu__info": {
     "messageformat": "Detalles"
   },
+  "icu:MessageContextMenu__PinMessage": {
+    "messageformat": "Fijar"
+  },
+  "icu:MessageContextMenu__UnpinMessage": {
+    "messageformat": "Desfijar"
+  },
+  "icu:Poll__end-poll": {
+    "messageformat": "Finalizar encuesta"
+  },
+  "icu:PollMessage--SelectOne": {
+    "messageformat": "Encuesta · Elige una opción"
+  },
+  "icu:PollMessage--SelectMultiple": {
+    "messageformat": "Encuesta · Elige una o más opciones"
+  },
+  "icu:PollMessage--FinalResults": {
+    "messageformat": "Encuesta · Resultados finales"
+  },
+  "icu:PollMessage__ViewVotesButton": {
+    "messageformat": "Ver votos"
+  },
+  "icu:PollMessage--YouVoted": {
+    "messageformat": "Tu voto"
+  },
+  "icu:PollTerminate--you": {
+    "messageformat": "Has finalizado la encuesta \"{poll}\""
+  },
+  "icu:PollTerminate--other": {
+    "messageformat": "{name} ha finalizado la encuesta \"{poll}\""
+  },
+  "icu:PollTerminate__view-poll": {
+    "messageformat": "Ver encuesta"
+  },
+  "icu:PollVotesModal__title": {
+    "messageformat": "Detalles de la encuesta"
+  },
+  "icu:PollVotesModal__questionLabel": {
+    "messageformat": "Pregunta"
+  },
+  "icu:PollVotesModal__voteCount": {
+    "messageformat": "{count, plural, one {{count,number} voto} other {{count,number} votos}}"
+  },
+  "icu:PollVotesModal__noVotes": {
+    "messageformat": "Sin votos"
+  },
+  "icu:PollVotesModal__winningOption": {
+    "messageformat": "Opción ganadora"
+  },
+  "icu:Toast--PinnedMessageNotFound": {
+    "messageformat": "No se ha encontrado el mensaje fijado"
+  },
+  "icu:Toast--PollNotFound": {
+    "messageformat": "No se ha encontrado la encuesta"
+  },
+  "icu:PollCreateModal__title": {
+    "messageformat": "Nueva encuesta"
+  },
+  "icu:PollCreateModal__questionLabel": {
+    "messageformat": "Pregunta"
+  },
+  "icu:PollCreateModal__questionPlaceholder": {
+    "messageformat": "Escribe aquí tu pregunta"
+  },
+  "icu:PollCreateModal__optionsLabel": {
+    "messageformat": "Opciones"
+  },
+  "icu:PollCreateModal__optionPlaceholder": {
+    "messageformat": "Opción {number}"
+  },
+  "icu:PollCreateModal__allowMultipleVotes": {
+    "messageformat": "Permitir varios votos"
+  },
+  "icu:PollCreateModal__sendButton": {
+    "messageformat": "Enviar"
+  },
+  "icu:PollCreateModal__Error--RequiresQuestion": {
+    "messageformat": "La pregunta de la encuesta es obligatoria"
+  },
+  "icu:PollCreateModal__Error--RequiresTwoOptions": {
+    "messageformat": "Incluye al menos 2 opciones en la encuesta"
+  },
+  "icu:PollCreateModal__Error--QuestionTooLong": {
+    "messageformat": "La pregunta es demasiado larga"
+  },
+  "icu:PollCreateModal__Error--OptionTooLong": {
+    "messageformat": "La opción es demasiado larga"
+  },
   "icu:deleteConversation": {
     "messageformat": "Eliminar"
   },
@@ -1055,6 +1196,141 @@
   "icu:ConversationHeader__CannotLeaveGroupBecauseYouAreLastAdminAlert__description": {
     "messageformat": "Antes de abandonar el grupo, designa a otra persona como admin."
   },
+  "icu:PinnedMessageNotification__Message--You": {
+    "messageformat": "Has fijado un mensaje"
+  },
+  "icu:PinnedMessageNotification__Message--SomeoneElse": {
+    "messageformat": "{sender} ha fijado un mensaje"
+  },
+  "icu:PinnedMessageNotification__Button": {
+    "messageformat": "Ir al mensaje"
+  },
+  "icu:PinMessageDialog__Title": {
+    "messageformat": "Fijar mensaje…"
+  },
+  "icu:PinMessageDialog__Close": {
+    "messageformat": "Cerrar"
+  },
+  "icu:PinMessageDialog__Option--TIME_24_HOURS": {
+    "messageformat": "24 horas"
+  },
+  "icu:PinMessageDialog__Option--TIME_7_DAYS": {
+    "messageformat": "7 días"
+  },
+  "icu:PinMessageDialog__Option--TIME_30_DAYS": {
+    "messageformat": "30 días"
+  },
+  "icu:PinMessageDialog__Option--FOREVER": {
+    "messageformat": "para siempre"
+  },
+  "icu:PinMessageDialog__Cancel": {
+    "messageformat": "Cancelar"
+  },
+  "icu:PinMessageDialog__Pin": {
+    "messageformat": "Fijar"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Title": {
+    "messageformat": "¿Reemplazar el mensaje fijado más antiguo?"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Description": {
+    "messageformat": "Si fijas este mensaje, se reemplazará el más antiguo."
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Cancel": {
+    "messageformat": "Cancelar"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Continue": {
+    "messageformat": "Continuar"
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Title": {
+    "messageformat": "Fijar mensajes temporales"
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Description": {
+    "messageformat": "Los mensajes temporales permanecerán fijados hasta que la duración establecida finalice y el mensaje desaparezca del chat."
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Okay": {
+    "messageformat": "Aceptar"
+  },
+  "icu:PinnedMessagesBar__AccessibilityLabel": {
+    "messageformat": "{pinsCount, plural, one {Mensaje fijado} other {Mensajes fijados}}"
+  },
+  "icu:PinnedMessagesBar__Tab__AccessibilityLabel": {
+    "messageformat": "Ir al mensaje fijado {pinNumber,number}"
+  },
+  "icu:PinnedMessagesBar__GoToMessageClickableArea__AccessibilityLabel": {
+    "messageformat": "Ir al mensaje"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__Button__AccessibilityLabel": {
+    "messageformat": "Más acciones"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__UnpinMessage": {
+    "messageformat": "Desfijar"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__GoToMessage": {
+    "messageformat": "Ir al mensaje"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__SeeAllMessages": {
+    "messageformat": "Ver todos los mensajes"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--VoiceMessage": {
+    "messageformat": "Mensaje de voz"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Gif": {
+    "messageformat": "GIF"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--File": {
+    "messageformat": "Documento"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Payment": {
+    "messageformat": "Pago"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Poll": {
+    "messageformat": "Encuesta"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Sticker": {
+    "messageformat": "Sticker"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--ViewOnceMedia": {
+    "messageformat": "Archivo de visualización única"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Photo": {
+    "messageformat": "Foto"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Video": {
+    "messageformat": "Vídeo"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--VoiceMessage": {
+    "messageformat": "Mensaje de voz"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Gif": {
+    "messageformat": "GIF"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Payment": {
+    "messageformat": "Pago"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Sticker": {
+    "messageformat": "Sticker"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--ViewOnceMedia": {
+    "messageformat": "Archivo de visualización única"
+  },
+  "icu:PinnedMessagesPanel__Title": {
+    "messageformat": "Mensajes fijados"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages": {
+    "messageformat": "Desfijar todos los mensajes"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Title": {
+    "messageformat": "¿Desfijar todos los mensajes?"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Description": {
+    "messageformat": "Los mensajes se desfijarán para los participantes de este chat."
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Cancel": {
+    "messageformat": "Cancelar"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Unpin": {
+    "messageformat": "Desfijar"
+  },
   "icu:sessionEnded": {
     "messageformat": "Sesión segura restablecida"
   },
@@ -1065,7 +1341,7 @@
     "messageformat": "Más información"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "B&A usa cifrado de extremo a extremo y es posible que en determinados casos deba reiniciarse la sesión de un chat. Este reinicio no afecta a la seguridad, pero puede ocurrir que no hayas recibido el último mensaje que este contacto te envió antes del reinicio. Si es así, pídele que vuelva a enviarte el mensaje."
+    "messageformat": "Signal usa cifrado de extremo a extremo y es posible que en determinados casos deba reiniciarse la sesión de un chat. Este reinicio no afecta a la seguridad, pero puede ocurrir que no hayas recibido el último mensaje que este contacto te envió antes del reinicio. Si es así, pídele que vuelva a enviarte el mensaje."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Contactar con asistencia"
@@ -1092,7 +1368,7 @@
     "messageformat": "{sender} ha cambiado su número de teléfono"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Alguien de tus contactos ha comenzado a usar B&A"
+    "messageformat": "Alguien de tus contactos ha comenzado a usar Signal"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} y {conversationTitle} corresponden a la misma cuenta. Tu historial de mensajes de ambos chats está aquí."
@@ -1172,36 +1448,6 @@
   "icu:attachmentNotAvailable__tapToViewCannotDownload": {
     "messageformat": "No se puede descargar el archivo de visualización única"
   },
-  "icu:AttachmentNotAvailableModal__title--file": {
-    "messageformat": "Archivo no disponible"
-  },
-  "icu:AttachmentNotAvailableModal__title--long-text": {
-    "messageformat": "Mensaje completo no disponible"
-  },
-  "icu:AttachmentNotAvailableModal__title--media": {
-    "messageformat": "Archivo multimedia no disponible"
-  },
-  "icu:AttachmentNotAvailableModal__title--sticker": {
-    "messageformat": "Sticker no disponible"
-  },
-  "icu:AttachmentNotAvailableModal__title--voice-message": {
-    "messageformat": "Mensaje de voz no disponible"
-  },
-  "icu:AttachmentNotAvailableModal__body--file": {
-    "messageformat": "Este archivo no se transfirió desde tu teléfono cuando se vinculó este dispositivo. No se pueden sincronizar los archivos que en el momento de vinculación del dispositivo tengan más de 45 días de antigüedad."
-  },
-  "icu:AttachmentNotAvailableModal__body--long-text": {
-    "messageformat": "El texto completo de este mensaje no se transfirió desde tu teléfono cuando se vinculó este dispositivo. No se pueden sincronizar los mensajes de texto largos que en el momento de vinculación del dispositivo tengan más de 45 días de antigüedad."
-  },
-  "icu:AttachmentNotAvailableModal__body--media": {
-    "messageformat": "Este archivo no se transfirió desde tu teléfono cuando se vinculó este dispositivo. No se pueden sincronizar los archivos que en el momento de vinculación del dispositivo tengan más de 45 días de antigüedad."
-  },
-  "icu:AttachmentNotAvailableModal__body--sticker": {
-    "messageformat": "Este sticker no se transfirió desde tu teléfono cuando se vinculó este dispositivo. No se pueden sincronizar los archivos que en el momento de vinculación del dispositivo tengan más de 45 días de antigüedad."
-  },
-  "icu:AttachmentNotAvailableModal__body--voice-message": {
-    "messageformat": "Este mensaje de voz no se transfirió desde tu teléfono cuando se vinculó este dispositivo. No se pueden sincronizar los archivos que en el momento de vinculación del dispositivo tengan más de 45 días de antigüedad."
-  },
   "icu:TapToViewNotAvailableModal__body--expired": {
     "messageformat": "Este archivo de visualización única ya no se puede descargar. Pídele a {name} que lo envíe de nuevo."
   },
@@ -1212,7 +1458,7 @@
     "messageformat": "No se puede descargar el archivo"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Comprueba la conexión a Internet de tu equipo de escritorio y de tu teléfono. Abre B&A en tu teléfono e intenta descargar el archivo de nuevo."
+    "messageformat": "Comprueba la conexión a Internet de tu equipo de escritorio y de tu teléfono. Abre Signal en tu teléfono e intenta descargar el archivo de nuevo."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Este archivo multimedia ya no está disponible en tu teléfono y no se puede descargar."
@@ -1233,10 +1479,10 @@
     "messageformat": "Más información"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Escanea este código con la aplicación B&A en tu teléfono"
+    "messageformat": "Escanea este código con la aplicación Signal en tu teléfono"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Abre B&A en tu teléfono"
+    "messageformat": "Abre Signal en tu teléfono"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Toca {settings} y luego {linkedDevices}"
@@ -1254,7 +1500,7 @@
     "messageformat": "<paragraph>Se ha producido un error inesperado.</paragraph><paragraph> Inténtalo de nuevo.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "B&A no puede vincular este dispositivo utilizando tu red actual."
+    "messageformat": "Signal no puede vincular este dispositivo usando tu red actual."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Reintentar"
@@ -1278,7 +1524,7 @@
     "messageformat": "Nombre del dispositivo"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Para cambiar el nombre de este dispositivo, abre B&A en tu teléfono y ve a Ajustes > Dispositivos vinculados"
+    "messageformat": "Para cambiar el nombre de este dispositivo, abre Signal en tu teléfono y ve a Ajustes > Dispositivos vinculados"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Tono de piel de los emojis"
@@ -1289,8 +1535,20 @@
   "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title": {
     "messageformat": "Añadir una carpeta de chats"
   },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title--WithChatFolders": {
+    "messageformat": "Añadir o editar carpetas"
+  },
   "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description": {
     "messageformat": "Organiza tus chats en carpetas y cambia rápidamente de una a otra en tu lista de chats."
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description--WithChatFolders": {
+    "messageformat": "{chatFoldersCount, plural, one {{chatFoldersCount,number} carpeta} other {{chatFoldersCount,number} carpetas}}"
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button": {
+    "messageformat": "Configurar"
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button--WithChatFolders": {
+    "messageformat": "Gestionar"
   },
   "icu:Preferences__ChatsPage__ChatFoldersSection__ChatFolderItem__ContextMenu__EditFolder": {
     "messageformat": "Editar carpeta"
@@ -1325,14 +1583,14 @@
   "icu:Preferences__ChatFoldersPage__FoldersSection__CreateAFolderButton": {
     "messageformat": "Nueva carpeta"
   },
+  "icu:Preferences__ChatFoldersPage__FoldersSection__DragHandle__Label": {
+    "messageformat": "Arrastra la carpeta de chats para moverla"
+  },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__Title": {
     "messageformat": "Carpetas sugeridas"
   },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__AddButton": {
     "messageformat": "Añadir"
-  },
-  "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__AddButton__Toast": {
-    "messageformat": "Carpeta añadida: {chatFolderTitle}"
   },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__UnreadFolder__Title": {
     "messageformat": "No leídos"
@@ -1354,6 +1612,9 @@
   },
   "icu:Preferences__EditChatFolderPage__Title": {
     "messageformat": "Nueva carpeta"
+  },
+  "icu:Preferences__EditChatFolderPage__Title--EditingExistingChatFolder": {
+    "messageformat": "Editar carpeta"
   },
   "icu:Preferences__EditChatFolderPage__FolderNameField__Label": {
     "messageformat": "Nombre de la carpeta"
@@ -1464,7 +1725,7 @@
     "messageformat": "Tienes demasiados dispositivos vinculados. Elimina alguno."
   },
   "icu:installTooOld": {
-    "messageformat": "Actualiza B&A en este dispositivo para vincularlo con tu teléfono."
+    "messageformat": "Actualiza Signal en este dispositivo para vincularlo con tu teléfono."
   },
   "icu:installErrorHeader": {
     "messageformat": "Se ha producido un error"
@@ -1515,7 +1776,7 @@
     "messageformat": "Este enlace de llamada ya no es válido."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Llamada de B&A"
+    "messageformat": "Llamada de Signal"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "No se ha podido eliminar el enlace. Comprueba tu conexión e inténtalo de nuevo."
@@ -1531,6 +1792,12 @@
   },
   "icu:calling__removed-from-call-title": {
     "messageformat": "Ya no estás en la llamada"
+  },
+  "icu:calling__has-max-devices": {
+    "messageformat": "Se alcanzó el máximo de participantes para esta llamada. Inténtalo de nuevo más tarde."
+  },
+  "icu:calling__has-max-devices--title": {
+    "messageformat": "La llamada está completa"
   },
   "icu:CallingLobby__CallLinkNotice": {
     "messageformat": "Cualquier persona que se una a esta llamada usando el enlace podrá ver tu nombre y foto de perfil."
@@ -1584,7 +1851,7 @@
     "messageformat": "Reaccionar"
   },
   "icu:calling__button--ring__disabled-because-group-is-too-large": {
-    "messageformat": "No se puede realizar la llamada porque el grupo es demasiado grande."
+    "messageformat": "No se puede hacer la llamada porque el grupo es demasiado grande."
   },
   "icu:CallingButton__ring-off": {
     "messageformat": "Desactivar sonido"
@@ -1665,16 +1932,16 @@
     "messageformat": "{count, plural, one {{count,number} persona está en esta llamada} other {{count,number} personas están en esta llamada}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "B&A sonará en la app de {person}"
+    "messageformat": "Signal sonará en la app de {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "B&A sonará en la app de {first} y {second}"
+    "messageformat": "Signal sonará en la app de {first} y {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "B&A sonará en la app de {first}, {second} y {third}"
+    "messageformat": "Signal sonará en la app de {first}, {second} y {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {B&A sonará en la app de {first}, {second} y {others,number} más} other {B&A sonará en la app de {first}, {second} y {others,number} más}}"
+    "messageformat": "{others, plural, one {Signal sonará en la app de {first}, {second} y {others,number} más} other {Signal sonará en la app de {first}, {second} y {others,number} más}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "Se notificará a {person}"
@@ -1728,13 +1995,13 @@
     "messageformat": "Reconectando…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Se ha perdido la conexión. B&A está volviendo a conectarse."
+    "messageformat": "Se ha perdido la conexión. Signal está volviendo a conectarse."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "B&A está compartiendo {window}."
+    "messageformat": "Signal está compartiendo {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Estás compartiendo tu pantalla en B&A"
+    "messageformat": "Estás compartiendo tu pantalla en Signal"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Reconectando…"
@@ -1755,7 +2022,7 @@
     "messageformat": "Se requiere permiso"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "B&A necesita acceso a la grabación de pantalla de tu dispositivo."
+    "messageformat": "Signal necesita acceso a la grabación de pantalla de tu dispositivo."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Ve a Ajustes del sistema."
@@ -1764,19 +2031,19 @@
     "messageformat": "Haz clic sobre el icono de candado en la esquina inferior izquierda e introduce la contraseña de tu dispositivo."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "A la derecha, marca la casilla junto a B&A. Si B&A no aparece en la lista, haz clic en el signo + para añadirlo."
+    "messageformat": "A la derecha, marca la casilla junto a Signal. Si Signal no aparece en la lista, haz clic en el signo + para añadirlo."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Abrir Ajustes del sistema"
   },
   "icu:calling__presenting--permission-cancel": {
-    "messageformat": "Ignorar"
+    "messageformat": "Cerrar"
   },
   "icu:alwaysRelayCallsDescription": {
     "messageformat": "Redirigir llamadas siempre"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Redirige todas las llamadas a través del servidor de B&A para evitar revelar tu dirección IP. Si activas esta opción, se reducirá la calidad de las llamadas."
+    "messageformat": "Redirige todas las llamadas a través del servidor de Signal para evitar revelar tu dirección IP. Si activas esta opción, se reducirá la calidad de las llamadas."
   },
   "icu:permissions": {
     "messageformat": "Permisos"
@@ -1794,10 +2061,10 @@
     "messageformat": "Muestra ventana emergente de formato de texto al seleccionar texto"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "El corrector ortográfico se activará la próxima vez que se inicie B&A."
+    "messageformat": "El corrector ortográfico se activará la próxima vez que se inicie Signal."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "El corrector ortográfico se desactivará la próxima vez que se inicie B&A."
+    "messageformat": "El corrector ortográfico se desactivará la próxima vez que se inicie Signal."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimizar a la bandeja del sistema"
@@ -1821,22 +2088,22 @@
     "messageformat": "¿Eliminar todos los datos?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "¿Eliminar todos los datos y mensajes de esta versión de B&A Desktop? No se eliminará tu cuenta de B&A ni los datos de tu teléfono u otros dispositivos vinculados."
+    "messageformat": "¿Eliminar todos los datos y mensajes de esta versión de Signal Desktop? No se eliminará tu cuenta de Signal ni los datos de tu teléfono u otros dispositivos vinculados."
   },
   "icu:deleteAllDataProgress": {
-    "messageformat": "Desconectando B&A y eliminando datos…"
+    "messageformat": "Desconectando Signal y eliminando datos…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Hemos encontrado datos obsoletos de una versión anterior de B&A Desktop. Si decides continuar, se eliminarán esos datos y se instalará B&A desde cero."
+    "messageformat": "Hemos encontrado datos obsoletos de una versión anterior de Signal Desktop. Si decides continuar, se eliminarán esos datos y se instalará Signal desde cero."
   },
   "icu:deleteOldData": {
     "messageformat": "Eliminar datos antiguos"
   },
   "icu:nameAndMessage": {
-    "messageformat": "Nombre, contenido y acciones"
+    "messageformat": "Nombre, mensaje y acciones"
   },
   "icu:noNameOrMessage": {
-    "messageformat": "Ni nombre ni contenido"
+    "messageformat": "Ni nombre ni mensaje"
   },
   "icu:nameOnly": {
     "messageformat": "Solo nombre"
@@ -1849,6 +2116,9 @@
   },
   "icu:notificationReactionMessage": {
     "messageformat": "{sender} ha reaccionado con {emoji} a \"{message}\""
+  },
+  "icu:notificationPollVoteMessage": {
+    "messageformat": "{sender} ha votado en la encuesta \"{pollQuestion}\""
   },
   "icu:sendFailed": {
     "messageformat": "No enviado"
@@ -1869,10 +2139,10 @@
     "messageformat": "Eliminado parcialmente. Haz clic para reintentar."
   },
   "icu:expiredWarning": {
-    "messageformat": "Esta versión de B&A Desktop ha caducado. Actualiza a la última versión para seguir chateando."
+    "messageformat": "Esta versión de Signal Desktop ha caducado. Actualiza a la última versión para seguir chateando."
   },
   "icu:upgrade": {
-    "messageformat": "Haz clic para ir a ba-chat.com/download"
+    "messageformat": "Haz clic para ir a signal.org/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Mensaje multimedia"
@@ -1881,7 +2151,7 @@
     "messageformat": "Importar contactos"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importa todos tus grupos y contactos de B&A desde tu dispositivo móvil."
+    "messageformat": "Importa todos tus grupos y contactos de Signal desde tu dispositivo móvil."
   },
   "icu:syncNow": {
     "messageformat": "Importar ahora"
@@ -1890,7 +2160,7 @@
     "messageformat": "Importando…"
   },
   "icu:syncFailed": {
-    "messageformat": "No se ha podido realizar la importación. Asegúrate de que tu equipo de escritorio y tu dispositivo móvil estén conectados a Internet."
+    "messageformat": "No se ha podido completar la importación. Asegúrate de que tu equipo de escritorio y tu dispositivo móvil estén conectados a Internet."
   },
   "icu:timestamp_s": {
     "messageformat": "ahora"
@@ -1917,7 +2187,7 @@
     "messageformat": "Ayer {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Es posible que B&A no pueda procesar un mensaje entrante."
+    "messageformat": "Es posible que Signal no pueda procesar un mensaje entrante."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Mensaje demasiado largo."
@@ -2037,7 +2307,7 @@
     "messageformat": "Historias"
   },
   "icu:contactSearchPlaceholder": {
-    "messageformat": "Nombre de perfil, alias o número"
+    "messageformat": "Nombre, alias o número"
   },
   "icu:noContactsFound": {
     "messageformat": "No se han encontrado contactos"
@@ -2067,16 +2337,19 @@
     "messageformat": "No se ha podido descargar"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Error en la descarga del archivo adjunto desde la copia de seguridad"
+    "messageformat": "Attachment missing from backup CDN"
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Solo puedes hacer cambios hasta 24 horas después del momento en que enviaste este mensaje."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} no usa B&A. Asegúrate de haber introducido el alias completo."
+    "messageformat": "{atUsername} no usa Signal. Asegúrate de haber introducido el alias completo."
+  },
+  "icu:startConversation--username-not-valid": {
+    "messageformat": "{atUsername} no es un alias válido. Asegúrate de haber introducido el alias completo seguido de su conjunto de dígitos."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "No se ha encontrado a esta persona. {phoneNumber} no usa B&A."
+    "messageformat": "No se ha encontrado a esta persona. {phoneNumber} no usa Signal."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "No se ha encontrado a esta persona. {phoneNumber} no es un número de teléfono válido."
@@ -2097,13 +2370,13 @@
     "messageformat": "Se ha alcanzado el número máximo de participantes"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Los grupos de B&A permiten un máximo de {max,number} participantes."
+    "messageformat": "Los grupos de Signal permiten un máximo de {max,number} participantes."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Se ha alcanzado el límite recomendado de participantes"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Los grupos de B&A funcionan mejor con {max,number} o menos participantes. Añadir más participantes causará retrasos al enviar y recibir mensajes."
+    "messageformat": "Los grupos de Signal funcionan mejor con {max,number} o menos participantes. Añadir más participantes causará retrasos al enviar y recibir mensajes."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Asigna un nombre a este grupo"
@@ -2133,7 +2406,7 @@
     "messageformat": "No se ha podido actualizar el grupo. Comprueba tu conexión e inténtalo de nuevo."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Haz clic para volver a vincular B&A Desktop con tu dispositivo móvil y seguir chateando."
+    "messageformat": "Haz clic para volver a vincular Signal Desktop con tu dispositivo móvil y seguir chateando."
   },
   "icu:unlinked": {
     "messageformat": "Desvinculado"
@@ -2145,16 +2418,16 @@
     "messageformat": "Intenta actualizar de nuevo"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Haz clic para reiniciar B&A"
+    "messageformat": "Haz clic para reiniciar Signal"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Haz clic para descargar la actualización"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "B&A no se ha podido actualizar. Haz clic para intentarlo de nuevo."
+    "messageformat": "Signal no se ha podido actualizar. Haz clic para intentarlo de nuevo."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Reiniciar B&A"
+    "messageformat": "Reiniciar Signal"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignorar actualización"
@@ -2228,6 +2501,9 @@
   "icu:message--getNotificationText--stickers": {
     "messageformat": "Mensaje con sticker"
   },
+  "icu:Poll--preview": {
+    "messageformat": "Encuesta: {pollQuestion}"
+  },
   "icu:message--getNotificationText--text-with-emoji": {
     "messageformat": "{emoji} {text}"
   },
@@ -2256,7 +2532,7 @@
     "messageformat": "Algunos archivos son demasiado grandes para visualizarlos."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Usa este enlace para unirte a una llamada de B&A"
+    "messageformat": "Usa este enlace para unirte a una llamada de Signal"
   },
   "icu:donation--missing": {
     "messageformat": "No se han podido recuperar los detalles de la donación"
@@ -2268,13 +2544,13 @@
     "messageformat": "Abre este mensaje en tu dispositivo móvil para ver tu donación"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} ha hecho una donación a B&A en tu nombre"
+    "messageformat": "{sender} ha hecho una donación a Signal en tu nombre"
   },
   "icu:message--donation--unopened--toast--incoming": {
-    "messageformat": "Ve a B&A en tu teléfono para abrir esta donación"
+    "messageformat": "Ve a Signal en tu teléfono para abrir esta donación"
   },
   "icu:message--donation--unopened--toast--outgoing": {
-    "messageformat": "Ve a B&A en tu teléfono para ver tu donación"
+    "messageformat": "Ve a Signal en tu teléfono para ver tu donación"
   },
   "icu:message--donation--preview--unopened": {
     "messageformat": "{sender} ha hecho una donación en tu nombre"
@@ -2284,6 +2560,12 @@
   },
   "icu:message--donation--preview--sent": {
     "messageformat": "Has hecho una donación en nombre de {recipient}"
+  },
+  "icu:message--pinned--preview--received": {
+    "messageformat": "{sender} ha fijado un mensaje"
+  },
+  "icu:message--pinned--preview--sent": {
+    "messageformat": "Has fijado un mensaje"
   },
   "icu:message--donation": {
     "messageformat": "Donación"
@@ -2319,7 +2601,7 @@
     "messageformat": "¡Gracias por tu apoyo!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Has hecho una donación a B&A en nombre de {name}. Ahora podrá mostrar su insignia de apoyo a B&A en su perfil."
+    "messageformat": "Has hecho una donación a Signal en nombre de {name}. Ahora podrá mostrar su insignia de apoyo a Signal en su perfil."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "No se ha podido instalar el paquete de stickers"
@@ -2334,10 +2616,10 @@
     "messageformat": "No hay ningún paquete de stickers instalado"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Stickers de artistas de B&A"
+    "messageformat": "Stickers de artistas de Signal"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "No hay stickers de artistas de B&A disponibles"
+    "messageformat": "No hay stickers de artistas de Signal disponibles"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Stickers recibidos"
@@ -2354,101 +2636,11 @@
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Es posible que no puedas reinstalar este paquete de stickers si no conservas el mensaje en el que se recibió."
   },
-  "icu:stickers--StickerManager--Introduction--Image": {
-    "messageformat": "¡Los stickers han llegado a B&A!"
-  },
-  "icu:stickers--StickerManager--Introduction--Title": {
-    "messageformat": "¡Los stickers han llegado a B&A!"
-  },
-  "icu:stickers--StickerManager--Introduction--Body": {
-    "messageformat": "¿Por qué usar palabras si puedes usar stickers?"
-  },
-  "icu:stickers--StickerPicker--Open": {
-    "messageformat": "Abrir el selector de stickers"
-  },
-  "icu:stickers--StickerPicker--AddPack": {
-    "messageformat": "Añadir un paquete de stickers"
-  },
-  "icu:stickers--StickerPicker--NextPage": {
-    "messageformat": "Página siguiente"
-  },
-  "icu:stickers--StickerPicker--PrevPage": {
-    "messageformat": "Página anterior"
-  },
-  "icu:stickers--StickerPicker--Recents": {
-    "messageformat": "Stickers recientes"
-  },
-  "icu:stickers--StickerPicker--DownloadError": {
-    "messageformat": "No se han podido descargar algunos stickers."
-  },
-  "icu:stickers--StickerPicker--DownloadPending": {
-    "messageformat": "Instalando paquete de stickers…"
-  },
-  "icu:stickers--StickerPicker--Empty": {
-    "messageformat": "No se han encontrado stickers"
-  },
-  "icu:stickers--StickerPicker--Hint": {
-    "messageformat": "Hay nuevos paquetes de stickers de tus mensajes disponibles para instalar"
-  },
-  "icu:stickers--StickerPicker--NoPacks": {
-    "messageformat": "No se han encontrado paquetes de stickers"
-  },
-  "icu:stickers--StickerPicker--NoRecents": {
-    "messageformat": "Aquí se mostrarán los stickers usados recientemente."
-  },
-  "icu:stickers__StickerPicker__recent": {
-    "messageformat": "Recientes"
-  },
-  "icu:stickers__StickerPicker__featured": {
-    "messageformat": "Destacados"
-  },
-  "icu:stickers__StickerPicker__analog-time": {
-    "messageformat": "Hora analógica"
-  },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Paquete de stickers"
   },
   "icu:stickers--StickerPreview--Error": {
     "messageformat": "No se ha podido abrir el paquete de stickers. Comprueba tu conexión a Internet e inténtalo de nuevo."
-  },
-  "icu:EmojiPicker--empty": {
-    "messageformat": "Emoji no encontrado"
-  },
-  "icu:EmojiPicker--search-close": {
-    "messageformat": "Cerrar búsqueda de emojis"
-  },
-  "icu:EmojiPicker--search-placeholder": {
-    "messageformat": "Buscar emojis"
-  },
-  "icu:EmojiPicker--skin-tone": {
-    "messageformat": "Tono de piel {tone}"
-  },
-  "icu:EmojiPicker__button--recents": {
-    "messageformat": "Recientes"
-  },
-  "icu:EmojiPicker__button--emoji": {
-    "messageformat": "Emojis"
-  },
-  "icu:EmojiPicker__button--animal": {
-    "messageformat": "Animales y naturaleza"
-  },
-  "icu:EmojiPicker__button--food": {
-    "messageformat": "Comida y bebida"
-  },
-  "icu:EmojiPicker__button--activity": {
-    "messageformat": "Actividades"
-  },
-  "icu:EmojiPicker__button--travel": {
-    "messageformat": "Viajes y destinos"
-  },
-  "icu:EmojiPicker__button--object": {
-    "messageformat": "Objectos"
-  },
-  "icu:EmojiPicker__button--symbol": {
-    "messageformat": "Símbolos"
-  },
-  "icu:EmojiPicker__button--flag": {
-    "messageformat": "Banderas"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emojis"
@@ -2558,6 +2750,9 @@
   "icu:FunPanelStickers__SubNavCategoryLabel--Recents": {
     "messageformat": "Usados recientemente"
   },
+  "icu:FunPanelStickers__SubNavButton--AddStickerPack": {
+    "messageformat": "Añadir un paquete de stickers"
+  },
   "icu:FunPanelStickers__SectionTitle--SearchResults": {
     "messageformat": "Resultados de la búsqueda"
   },
@@ -2576,8 +2771,14 @@
   "icu:FunPanelGifs__SearchLabel--Tenor": {
     "messageformat": "Buscar GIF en Tenor"
   },
+  "icu:FunPanelGifs__SearchLabel": {
+    "messageformat": "Buscar GIF"
+  },
   "icu:FunPanelGifs__SearchPlaceholder--Tenor": {
     "messageformat": "Buscar en Tenor"
+  },
+  "icu:FunPanelGifs__SearchPlaceholder": {
+    "messageformat": "Buscar GIF"
   },
   "icu:FunPanelGifs__SubNavLabel": {
     "messageformat": "Categorías de GIF"
@@ -2623,6 +2824,9 @@
   },
   "icu:FunPanelGifs__LightboxDialog__Label": {
     "messageformat": "Vista previa del GIF"
+  },
+  "icu:FunPanelGifs__GiphyAttribution__AccessibilityLabel": {
+    "messageformat": "Con la tecnología de GIPHY"
   },
   "icu:FunSearch__ClearButtonLabel": {
     "messageformat": "Borrar búsqueda"
@@ -2679,19 +2883,19 @@
     "messageformat": "El mensaje es demasiado largo para mostrarlo completo."
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} te ha enviado un mensaje que no se puede procesar ni mostrar porque usa una función nueva de B&A."
+    "messageformat": "{contact} te ha enviado un mensaje que no se puede procesar ni mostrar porque usa una función nueva de Signal."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Puedes pedirle a {contact} que te vuelva a enviar el mensaje ahora que ya tienes una versión actualizada de B&A."
+    "messageformat": "Puedes pedirle a {contact} que te vuelva a enviar el mensaje ahora que ya tienes una versión actualizada de Signal."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Has enviado un mensaje desde uno de tus dispositivos que no se puede procesar ni mostrar porque usa una función nueva de B&A."
+    "messageformat": "Has enviado un mensaje desde uno de tus dispositivos que no se puede procesar ni mostrar porque usa una función nueva de Signal."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Si recibes más mensajes como este, se podrán sincronizar ahora que usas una versión actualizada de B&A."
+    "messageformat": "Si recibes más mensajes como este, se podrán sincronizar ahora que usas una versión actualizada de Signal."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Actualizar B&A"
+    "messageformat": "Actualizar Signal"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Visto"
@@ -2802,7 +3006,7 @@
     "messageformat": "Reenviar mensajes seleccionados"
   },
   "icu:Keyboard--add-newline": {
-    "messageformat": "Añadir una nueva línea al mensaje"
+    "messageformat": "Añadir nueva línea al mensaje"
   },
   "icu:Keyboard--expand-composer": {
     "messageformat": "Expandir campo de escritura"
@@ -2892,10 +3096,10 @@
     "messageformat": "Spoiler"
   },
   "icu:Keyboard--scroll-to-top": {
-    "messageformat": "Desplazarse al inicio de la lista"
+    "messageformat": "Desplazarse hacia arriba en el chat"
   },
   "icu:Keyboard--scroll-to-bottom": {
-    "messageformat": "Desplazarse al final de la lista"
+    "messageformat": "Desplazarse al final del chat"
   },
   "icu:Keyboard--close-curent-conversation": {
     "messageformat": "Cerrar chat actual"
@@ -2955,7 +3159,7 @@
     "messageformat": "Chat marcado como no leído"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Configura B&A en tu teléfono y vincula tu dispositivo de escritorio para usar el creador de paquetes de stickers"
+    "messageformat": "Configura Signal en tu teléfono y vincula tu dispositivo de escritorio para usar el creador de paquetes de stickers"
   },
   "icu:Reactions--remove": {
     "messageformat": "Eliminar reacción"
@@ -2973,13 +3177,13 @@
     "messageformat": "Consejos de seguridad"
   },
   "icu:SafetyTipsModal__Description": {
-    "messageformat": "Ten cuidado al aceptar solicitudes de mensajes de personas que no conoces. Presta atención a lo siguiente:"
+    "messageformat": "Ten cuidado al aceptar solicitudes de mensajes de personas que no conoces. Aquí hay algunas recomendaciones a tener en cuenta:"
   },
   "icu:SafetyTipsModal__TipTitle--Fake": {
     "messageformat": "Cuentas y nombres falsos"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "B&A nunca se pondrá en contacto contigo para pedirte tu código de registro o PIN. Ten cuidado con las solicitudes de personas que se hacen pasar por otras. Los nombres de perfil los elige quien crea la cuenta y no se verifican."
+    "messageformat": "Signal nunca se pondrá en contacto contigo para pedirte tu código de registro o PIN. Ten cuidado con las solicitudes de personas que se hacen pasar por otras. Los nombres de perfil los elige quien crea la cuenta y no se verifican."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Estafas de criptomonedas o dinero"
@@ -3027,7 +3231,7 @@
     "messageformat": "¿Permitir que {name} te envíe mensajes y compartir tu nombre y foto de perfil con esta persona? No recibirás ninguno de sus mensajes hasta la desbloquees."
   },
   "icu:MessageRequests--message-group": {
-    "messageformat": "¿Unirte a este grupo y compartir tu nombre y foto de perfil con sus participantes? No sabrán que has visto sus mensajes hasta que aceptes."
+    "messageformat": "¿Quieres unirte a este grupo y compartir tu nombre y foto de perfil con sus participantes? No sabrán que has visto sus mensajes hasta que aceptes."
   },
   "icu:MessageRequests--message-group-blocked": {
     "messageformat": "¿Desbloquear este grupo y compartir tu nombre y foto de perfil con sus participantes? No recibirás ningún mensaje del grupo hasta que lo desbloquees."
@@ -3066,16 +3270,16 @@
     "messageformat": "Denunciar"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-title": {
-    "messageformat": "¿Denunciar como spam?"
+    "messageformat": "¿Denunciar spam?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Se notificará a B&A que esta persona podría estar enviando spam. B&A no puede ver el contenido de ningún chat."
+    "messageformat": "Se notificará a Signal que esta persona podría estar enviando spam. Signal no puede ver el contenido de ningún chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Se notificará a B&A que la persona que te ha invitado a este grupo podría estar enviando spam. B&A no puede ver el contenido de ningún chat."
+    "messageformat": "Se notificará a Signal que la persona que te ha invitado a este grupo podría estar enviando spam. Signal no puede ver el contenido de ningún chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Se notificará a B&A que {name}, la persona que te ha invitado a este grupo, podría estar enviando spam. B&A no puede ver el contenido de ningún chat."
+    "messageformat": "Se notificará a Signal que {name}, la persona que te ha invitado a este grupo, podría estar enviando spam. Signal no puede ver el contenido de ningún chat."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Denunciar spam"
@@ -3171,10 +3375,10 @@
     "messageformat": "<clickable>Los nombres de perfil</clickable> no se verifican"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Este es el único chat oficial de B&A"
+    "messageformat": "Este es el único chat oficial de Signal"
   },
   "icu:ConversationHero--release-notes": {
-    "messageformat": "Mantente al día con las novedades y las notas de la versión."
+    "messageformat": "Mantente al día con las novedades y las notas de las nuevas versiones."
   },
   "icu:member-of-1-group": {
     "messageformat": "Está en \"{group}\""
@@ -3237,10 +3441,10 @@
     "messageformat": "Videollamada no atendida"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "B&A sigue activo"
+    "messageformat": "Signal sigue activo"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "B&A seguirá activo en el área de notificaciones. Puedes cambiar esto en los ajustes de B&A."
+    "messageformat": "La aplicación Signal seguirá activa en el área de notificaciones, pero puedes cambiarlo en Ajustes de Signal."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Llamada entrante"
@@ -3450,7 +3654,7 @@
     "messageformat": "Copiar enlace de llamada"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Compartir enlace de llamada vía B&A"
+    "messageformat": "Compartir enlace de llamada vía Signal"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Eliminar a esta persona de la llamada"
@@ -3524,14 +3728,11 @@
   "icu:muteExpirationLabel": {
     "messageformat": "Silenciado hasta {duration}"
   },
-  "icu:EmojiButton__label": {
-    "messageformat": "Emojis"
-  },
   "icu:ErrorModal--title": {
     "messageformat": "Se ha producido un error"
   },
   "icu:ErrorModal--description": {
-    "messageformat": "Inténtalo de nuevo o contacta con nuestro equipo de asistencia."
+    "messageformat": "Inténtalo de nuevo o contacta con nuestro equipo de Asistencia."
   },
   "icu:DebugLogErrorModal__UnexpectedError": {
     "messageformat": "Se ha producido un error inesperado"
@@ -3552,7 +3753,7 @@
     "messageformat": "{max, plural, one {Solo se puede hacer {max,number} cambio en este mensaje.} other {Solo se pueden hacer {max,number} cambios en este mensaje.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "El enlace baxs:// no es válido."
+    "messageformat": "El enlace sgnl:// no es válido."
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "No puedes enviar mensajes en ese grupo."
@@ -3579,7 +3780,7 @@
     "messageformat": "Versión de enlace desconocida"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Este enlace no es compatible con esta versión de B&A Desktop."
+    "messageformat": "Este enlace no es compatible con esta versión de Signal Desktop."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "No es posible unirse al grupo"
@@ -4134,22 +4335,22 @@
     "messageformat": "Este proceso puede llevar unos minutos"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Donar a B&A"
+    "messageformat": "Haz una donación a Signal"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Haz una donación a B&A"
+    "messageformat": "Haz una donación a Signal"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "B&A es posible gracias a personas como tú. Haz una donación y recibe una insignia para lucir en tu perfil."
+    "messageformat": "Signal es posible gracias a personas como tú. Haz una donación y recibe una insignia para lucir en tu perfil."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Abre B&A en tu teléfono"
+    "messageformat": "Abre Signal en tu teléfono"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Toca sobre tu foto de perfil en la parte superior izquierda para abrir Ajustes"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Toca \"Donar a B&A\" para suscribirte"
+    "messageformat": "Toca \"Haz una donación a Signal\" para suscribirte"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Hemos cambiado la ubicación de tu perfil"
@@ -4275,7 +4476,7 @@
     "messageformat": "Acción requerida en tu cuenta"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Para seguir usando esta cuenta, debes abrir B&A en tu teléfono. Si no abres B&A en tu teléfono, tu cuenta se eliminará pronto. <learnMoreLink>Más información</learnMoreLink>"
+    "messageformat": "Para seguir usando esta cuenta, debes abrir Signal en tu teléfono. Si no abres Signal en tu teléfono, tu cuenta se eliminará pronto. <learnMoreLink>Más información</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "No se pueden restaurar los archivos multimedia"
@@ -4289,11 +4490,23 @@
   "icu:CompositionArea--attach-file": {
     "messageformat": "Adjuntar archivo"
   },
+  "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
+    "messageformat": "Fotos y vídeos"
+  },
+  "icu:CompositionArea__AttachMenu__File": {
+    "messageformat": "Documento"
+  },
+  "icu:CompositionArea__AttachMenu__Poll": {
+    "messageformat": "Encuesta"
+  },
+  "icu:CompositionArea--attach-plus": {
+    "messageformat": "Añadir archivo o encuesta"
+  },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Esta persona no usa B&A"
+    "messageformat": "Esta persona no usa Signal"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "B&A Desktop no permite enviar mensajes a personas que no usan B&A. Invita a esta persona a instalar B&A para disfrutar de una experiencia de mensajería más segura y privada."
+    "messageformat": "Signal Desktop no permite enviar mensajes a personas que no usan Signal. Invita a esta persona a instalar Signal para disfrutar de una experiencia de mensajería más segura y privada."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Comprobando si el contacto está registrado"
@@ -4439,7 +4652,7 @@
   "icu:ConversationDetailsActions--block-group-modal-confirm": {
     "messageformat": "Bloquear"
   },
-  "icu:ConversationDetailsActions--unblock-group-modal-content": {
+  "icu:ConversationDetailsActions--unblock-group-modal-body": {
     "messageformat": "Tus contactos podrán añadirte a este grupo."
   },
   "icu:ConversationDetailsActions--unblock-group-modal-confirm": {
@@ -4476,7 +4689,7 @@
     "messageformat": "Apodo"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Los apodos y las notas se guardan en B&A y están cifrados de extremo a extremo. Solo tú los puedes ver."
+    "messageformat": "Los apodos y las notas se guardan en Signal y están cifrados de extremo a extremo. Solo tú los puedes ver."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Nombre"
@@ -4503,7 +4716,7 @@
     "messageformat": "Recibe notificaciones si te mencionan en un chat silenciado"
   },
   "icu:ConversationNotificationsSettings__mentions__select__always-notify": {
-    "messageformat": "Notificar siempre"
+    "messageformat": "Notificarme siempre"
   },
   "icu:ConversationNotificationsSettings__mentions__select__dont-notify-for-mentions-if-muted": {
     "messageformat": "No notificar en chat silenciado"
@@ -4527,7 +4740,7 @@
     "messageformat": "Alguien que sea admin debe aprobar a nuevos participantes que se unan mediante enlace"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Copiar el enlace B&A group al portapapeles"
+    "messageformat": "Copiar el enlace signal.group al portapapeles"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Solicitudes ({count,number})"
@@ -4731,13 +4944,13 @@
     "messageformat": "No se pueden reenviar mensajes vacíos o eliminados"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Usa este enlace para unirte a una llamada de B&A: {url}"
+    "messageformat": "Usa este enlace para unirte a una llamada de Signal: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Consejos de seguridad"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Revisa detenidamente las solicitudes. B&A ha encontrado otro contacto con el mismo nombre. <reviewRequestLink>Revisar solicitud</reviewRequestLink>"
+    "messageformat": "Revisa detenidamente las solicitudes. Signal ha encontrado otro contacto con el mismo nombre. <reviewRequestLink>Revisar solicitud</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} participante tiene el mismo nombre. <reviewRequestLink>Revisar participantes</reviewRequestLink>} other {{count,number} participantes tienen el mismo nombre. <reviewRequestLink>Revisar participantes</reviewRequestLink>}}"
@@ -4749,7 +4962,7 @@
     "messageformat": "Revisar solicitud"
   },
   "icu:ContactSpoofingReviewDialog__description": {
-    "messageformat": "Si no sabes quién te ha enviado esta solicitud, revisa la siguiente lista de contactos y selecciona la opción que desees."
+    "messageformat": "Si no sabes quién te ha enviado esta solicitud, revisa la siguiente lista de contactos y selecciona la opción que quieras."
   },
   "icu:ContactSpoofingReviewDialog__possibly-unsafe-title": {
     "messageformat": "Solicitud"
@@ -4761,16 +4974,16 @@
     "messageformat": "Revisar participantes"
   },
   "icu:ContactSpoofingReviewDialog__group__description": {
-    "messageformat": "{count, plural, one {{count,number} participante del grupo tiene el mismo nombre. Revisa la lista de participantes a continuación y selecciona la opción que desees.} other {{count,number} participantes del grupo tienen el mismo nombre. Revisa la lista de participantes a continuación y selecciona la opción que desees.}}"
+    "messageformat": "{count, plural, one {{count,number} participante del grupo tiene el mismo nombre. Revisa la lista de participantes a continuación y selecciona la opción que quieras.} other {{count,number} participantes del grupo tienen el mismo nombre. Revisa la lista de participantes a continuación y selecciona la opción que quieras.}}"
   },
   "icu:ContactSpoofingReviewDialog__group__multiple-conflicts__description": {
-    "messageformat": "{count, plural, one {Se ha encontrado {count,number} conflicto de nombre en este grupo. Revisa la lista de participantes a continuación y selecciona la opción que desees.} other {Se han encontrado {count,number} conflictos de nombre en este grupo. Revisa la lista de participantes a continuación y selecciona la opción que desees.}}"
+    "messageformat": "{count, plural, one {Se ha encontrado {count,number} conflicto de nombre en este grupo. Revisa la lista de participantes a continuación y selecciona la opción que quieras.} other {Se han encontrado {count,number} conflictos de nombre en este grupo. Revisa la lista de participantes a continuación y selecciona la opción que quieras.}}"
   },
   "icu:ContactSpoofingReviewDialog__group__members__no-shared-groups": {
     "messageformat": "No tienes otros grupos en común"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Contacto de B&A"
+    "messageformat": "Contacto de Signal"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Ha cambiado su nombre de perfil recientemente de \"{oldName}\" a \"{newName}\""
@@ -4788,7 +5001,7 @@
     "messageformat": "Verificar para seguir chateando"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Para ayudarnos a prevenir spam en B&A, completa la verificación."
+    "messageformat": "Para ayudarnos a prevenir spam en Signal, completa la verificación."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Después de completar la verificación, podrás seguir chateando y se enviarán todos los mensajes pausados."
@@ -4806,7 +5019,7 @@
     "messageformat": "Verificación completada."
   },
   "icu:verificationFailed": {
-    "messageformat": "No se ha podido realizar la verificación. Inténtalo de nuevo más tarde."
+    "messageformat": "No se ha podido completar la verificación. Inténtalo de nuevo más tarde."
   },
   "icu:deleteForEveryoneFailed": {
     "messageformat": "No se ha podido eliminar el mensaje para todos. Inténtalo de nuevo más tarde."
@@ -4942,6 +5155,66 @@
   },
   "icu:ConversationDetailsHeader--add-group-description": {
     "messageformat": "Añadir descripción del grupo…"
+  },
+  "icu:AudioListItem__subtitle--voice-message": {
+    "messageformat": "Mensaje de voz"
+  },
+  "icu:AudioListItem__subtitle--audio": {
+    "messageformat": "Audio"
+  },
+  "icu:ContactListItem__subtitle": {
+    "messageformat": "Contacto"
+  },
+  "icu:LinkPreviewItem__alt": {
+    "messageformat": "Abre el enlace en un navegador"
+  },
+  "icu:ListItem__show-message": {
+    "messageformat": "Mostrar mensaje en el chat"
+  },
+  "icu:MediaGallery__tab__audio": {
+    "messageformat": "Audio"
+  },
+  "icu:MediaGallery__tab__files": {
+    "messageformat": "Documentos"
+  },
+  "icu:MediaGallery__tab__links": {
+    "messageformat": "Enlaces"
+  },
+  "icu:MediaGallery__sort": {
+    "messageformat": "Ordenar por"
+  },
+  "icu:MediaGallery__sort--header": {
+    "messageformat": "Ordenar por"
+  },
+  "icu:MediaGallery__sort__date": {
+    "messageformat": "Fecha"
+  },
+  "icu:MediaGallery__sort__size": {
+    "messageformat": "Tamaño"
+  },
+  "icu:MediaGallery__EmptyState__title--media": {
+    "messageformat": "No hay archivos multimedia"
+  },
+  "icu:MediaGallery__EmptyState__description--media": {
+    "messageformat": "Aquí se mostrarán las fotos, vídeos y GIF que envíes y recibas."
+  },
+  "icu:MediaGallery__EmptyState__title--audio": {
+    "messageformat": "No hay archivos de audio"
+  },
+  "icu:MediaGallery__EmptyState__description--audio": {
+    "messageformat": "Aquí se mostrarán los mensajes de voz y archivos de audio que envíes y recibas."
+  },
+  "icu:MediaGallery__EmptyState__title--links": {
+    "messageformat": "No hay enlaces"
+  },
+  "icu:MediaGallery__EmptyState__description--links-2": {
+    "messageformat": "Aquí se mostrarán los enlaces que envíes y recibas."
+  },
+  "icu:MediaGallery__EmptyState__title--documents": {
+    "messageformat": "No hay documentos"
+  },
+  "icu:MediaGallery__EmptyState__description--documents-2": {
+    "messageformat": "Aquí se mostrarán los documentos que envíes y recibas."
   },
   "icu:MediaQualitySelector--button": {
     "messageformat": "Seleccionar calidad de fotos y vídeos"
@@ -5094,7 +5367,7 @@
     "messageformat": "¿Quieres descartar estos cambios?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "¿Cerrar B&A y finalizar la llamada?"
+    "messageformat": "¿Cerrar Signal y finalizar la llamada?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ahora no"
@@ -5181,7 +5454,7 @@
     "messageformat": "General"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Donar a B&A"
+    "messageformat": "Haz una donación a Signal"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Apariencia"
@@ -5262,7 +5535,7 @@
     "messageformat": "Generar vista previa de enlaces"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Para cambiar este ajuste, abre B&A en tu dispositivo móvil y ve a Ajustes > Chats"
+    "messageformat": "Para cambiar este ajuste, abre Signal en tu dispositivo móvil y ve a Ajustes > Chats"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Convertir emoticones escritos en emojis"
@@ -5282,17 +5555,356 @@
   "icu:Preferences--notification-content": {
     "messageformat": "Contenido de las notificaciones"
   },
+  "icu:PlaintextExport--PreferencesRow--Header": {
+    "messageformat": "Exportar historial de chat"
+  },
+  "icu:PlaintextExport--PreferencesRow--Description": {
+    "messageformat": "Exporta una copia JSON legible por máquina de todos tus chats. Los mensajes temporales no se exportarán."
+  },
+  "icu:PlaintextExport--ActionButton": {
+    "messageformat": "Exportar"
+  },
+  "icu:PlaintextExport--Confirmation--Header": {
+    "messageformat": "¿Exportar historial de chat?"
+  },
+  "icu:PlaintextExport--Confirmation--Description": {
+    "messageformat": "<bold>ATENCIÓN</bold> <strong>No</strong> compartas este archivo con nadie. Tu historial de chat se guardará en tu dispositivo y, dependiendo de los permisos que tengas activados, otras aplicaciones podrán acceder a él."
+  },
+  "icu:PlaintextExport--Confirmation--IncludeMedia": {
+    "messageformat": "Incluir archivos multimedia <secondary>(el tamaño del archivo será mayor)</secondary>"
+  },
+  "icu:PlaintextExport--Confirmation--ContinueButton": {
+    "messageformat": "Continuar"
+  },
+  "icu:PlaintextExport--Confirmation--WaitingLabel": {
+    "messageformat": "Esperando información"
+  },
+  "icu:PlaintextExport--OSPrompt--Mac": {
+    "messageformat": "exportar tu historial de chat"
+  },
+  "icu:PlaintextExport--OSPrompt--Windows": {
+    "messageformat": "Verifica tu identidad para exportar tu historial de chat."
+  },
+  "icu:PlaintextExport--OSPrompt--description--Linux": {
+    "messageformat": "Exportar"
+  },
+  "icu:PlaintextExport--OSPrompt--message--Linux": {
+    "messageformat": "Se requiere autenticación para exportar tu historial de chat."
+  },
+  "icu:PlaintextExport--ProgressDialog--Header": {
+    "messageformat": "Exportar historial de chat"
+  },
+  "icu:PlaintextExport--ProgressDialog--Progress": {
+    "messageformat": "Exportando {currentBytes} de {totalBytes} ({percentage,number,percent})"
+  },
+  "icu:PlaintextExport--ProgressDialog--TimeWarning": {
+    "messageformat": "Este proceso puede llevar unos minutos"
+  },
+  "icu:PlaintextExport--CompleteDialog--Header": {
+    "messageformat": "Exportación completa"
+  },
+  "icu:PlaintextExport--CompleteDialog--Description": {
+    "messageformat": "<bold>ATENCIÓN</bold>: Elige con cuidado dónde guardar tu archivo de exportación del chat y no lo compartas con nadie. Dependiendo de los permisos que tengas activados, otras aplicaciones podrán acceder a él. "
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Mac": {
+    "messageformat": "Mostrar en Finder"
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Linux": {
+    "messageformat": "Mostrar en la carpeta"
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Windows": {
+    "messageformat": "Mostrar en la carpeta"
+  },
+  "icu:PlaintextExport--Error--General--Title": {
+    "messageformat": "No se ha podido exportar el historial de chat"
+  },
+  "icu:PlaintextExport--Error--General--Description": {
+    "messageformat": "Se ha producido un error y no se ha podido exportar tu historial de chat."
+  },
+  "icu:PlaintextExport--Error--NotEnoughStorage--Title": {
+    "messageformat": "No hay suficiente espacio disponible"
+  },
+  "icu:PlaintextExport--Error--NotEnoughStorage--Detail": {
+    "messageformat": "No se puede exportar tu historial de chat porque tu dispositivo no tiene suficiente espacio libre de almacenamiento. Libera {bytes} de espacio y vuelve a intentarlo."
+  },
+  "icu:PlaintextExport--Error--RanOutOfStorage--Title": {
+    "messageformat": "No se ha podido exportar el historial de chat"
+  },
+  "icu:PlaintextExport--Error--RanOutOfStorage--Detail": {
+    "messageformat": "No se ha podido exportar tu historial de chat porque tu dispositivo no tiene suficiente espacio libre de almacenamiento. Libera {bytes} de espacio y vuelve a intentarlo."
+  },
+  "icu:PlaintextExport--Error--DiskPermssions--Title": {
+    "messageformat": "No se puede exportar el historial de chat"
+  },
+  "icu:PlaintextExport--Error--DiskPermssions--Detail": {
+    "messageformat": "No se puede exportar tu historial de chat porque Signal no tiene permiso para generar archivos en tu almacenamiento. Actualiza tus ajustes del sistema para cambiar los permisos de tu almacenamiento y vuelve a intentarlo."
+  },
+  "icu:LocalBackupExport--ProgressDialog--Header": {
+    "messageformat": "Exportando copia de seguridad"
+  },
+  "icu:LocalBackupExport--CompleteDialog--Header": {
+    "messageformat": "Exportación de copia de seguridad completada"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsHeader": {
+    "messageformat": "Para restaurar esta copia de seguridad:"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsTransfer": {
+    "messageformat": "Transfiere tu carpeta de copia de seguridad al almacenamiento de tu teléfono."
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
+    "messageformat": "Vuelve a instalar Signal en tu teléfono."
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
+    "messageformat": "Toca \"Restaurar o transferir\" y elige \"Copias de seguridad locales\"."
+  },
+  "icu:NotificationProfile--moon-icon": {
+    "messageformat": "Icono de luna"
+  },
+  "icu:NotificationProfile--copy-label": {
+    "messageformat": "Copia de {profileName}"
+  },
+  "icu:NotificationProfile--am": {
+    "messageformat": "AM"
+  },
+  "icu:NotificationProfile--pm": {
+    "messageformat": "PM"
+  },
+  "icu:NotificationProfile--time-separator": {
+    "messageformat": ":"
+  },
+  "icu:NotificationProfileMenuItem": {
+    "messageformat": "Perfil de notificaciones"
+  },
+  "icu:NotificationProfileMenu--header": {
+    "messageformat": "Perfil de notificaciones"
+  },
+  "icu:NotificationProfileMenu--on": {
+    "messageformat": "Activado"
+  },
+  "icu:NotificationProfileMenu--on-with-end": {
+    "messageformat": "Activado hasta {endTime}"
+  },
+  "icu:NotificationProfileMenu--for-one-hour": {
+    "messageformat": "1 hora"
+  },
+  "icu:NotificationProfileMenu--until-time": {
+    "messageformat": "Hasta {time}"
+  },
+  "icu:NotificationProfileMenu--settings": {
+    "messageformat": "Ajustes"
+  },
+  "icu:NotificationProfilesToast--enabled": {
+    "messageformat": "\"{name}\" activado"
+  },
+  "icu:NotificationProfilesToast--disabled": {
+    "messageformat": "\"{name}\" desactivado"
+  },
+  "icu:NotificationProfilesToast--enabled--label": {
+    "messageformat": "Perfil de notificaciones activado"
+  },
+  "icu:NotificationProfilesToast--disabled--label": {
+    "messageformat": "Perfil de notificaciones desactivado"
+  },
+  "icu:NotificationProfiles--setting": {
+    "messageformat": "Perfiles de notificaciones"
+  },
+  "icu:NotificationProfiles--setup": {
+    "messageformat": "Configurar"
+  },
+  "icu:NotificationProfiles--title": {
+    "messageformat": "Perfiles de notificaciones"
+  },
+  "icu:NotificationProfiles--setup-description": {
+    "messageformat": "Crea un perfil para recibir notificaciones y llamadas solo de las personas y los grupos que tú decidas"
+  },
+  "icu:NotificationProfiles--setup-continue": {
+    "messageformat": "Continuar"
+  },
+  "icu:NotificationProfiles--manage-description": {
+    "messageformat": "Añadir o editar perfiles de notificaciones"
+  },
+  "icu:NotificationProfiles--manage-profiles": {
+    "messageformat": "{profileCount, plural, one {1 perfil} other {{profileCount,number} perfiles}}"
+  },
+  "icu:NotificationProfiles--create": {
+    "messageformat": "Crear perfil"
+  },
+  "icu:NotificationProfiles--name-title": {
+    "messageformat": "Elige un nombre de perfil"
+  },
+  "icu:NotificationProfiles--name-title--editing": {
+    "messageformat": "Nombre"
+  },
+  "icu:NotificationProfiles--name-placeholder": {
+    "messageformat": "Nombre de perfil"
+  },
+  "icu:NotificationProfiles--sample-name__work": {
+    "messageformat": "En el trabajo"
+  },
+  "icu:NotificationProfiles--sample-name__sleep": {
+    "messageformat": "Durmiendo"
+  },
+  "icu:NotificationProfiles--sample-name__driving": {
+    "messageformat": "Al volante"
+  },
+  "icu:NotificationProfiles--sample-name__downtime": {
+    "messageformat": "Descansando"
+  },
+  "icu:NotificationProfiles--sample-name__focus": {
+    "messageformat": "No molestar"
+  },
+  "icu:NotificationProfiles--allowed-title": {
+    "messageformat": "Notificaciones permitidas"
+  },
+  "icu:NotificationProfiles--allowed-description": {
+    "messageformat": "Añade personas y grupos de los que quieras recibir notificaciones cuando este perfil esté activado"
+  },
+  "icu:NotificationProfiles--allowed-add-label": {
+    "messageformat": "Añadir personas o grupos"
+  },
+  "icu:NotificationProfiles--exceptions": {
+    "messageformat": "Excepciones"
+  },
+  "icu:NotificationProfiles--exceptions--allow-all-calls": {
+    "messageformat": "Permitir todas las llamadas"
+  },
+  "icu:NotificationProfiles--exceptions--notify-for-mentions": {
+    "messageformat": "Notificarme cuando alguien me mencione"
+  },
+  "icu:NotificationProfiles--schedule-title": {
+    "messageformat": "Añadir un horario"
+  },
+  "icu:NotificationProfiles--schedule-title--editing": {
+    "messageformat": "Horario"
+  },
+  "icu:NotificationProfiles--schedule-description": {
+    "messageformat": "Activa y edita tu horario para automatizar tu perfil de notificaciones."
+  },
+  "icu:NotificationProfiles--schedule-enable": {
+    "messageformat": "Activar automáticamente"
+  },
+  "icu:NotificationProfiles--schedule": {
+    "messageformat": "Horario"
+  },
+  "icu:NotificationProfiles--schedule-from": {
+    "messageformat": "De"
+  },
+  "icu:NotificationProfiles--schedule-until": {
+    "messageformat": "A"
+  },
+  "icu:NotificationProfiles--open-time-picker": {
+    "messageformat": "Abrir el selector de horario"
+  },
+  "icu:NotificationProfiles--schedule-sunday": {
+    "messageformat": "domingo"
+  },
+  "icu:NotificationProfiles--schedule-monday": {
+    "messageformat": "lunes"
+  },
+  "icu:NotificationProfiles--schedule-tuesday": {
+    "messageformat": "martes"
+  },
+  "icu:NotificationProfiles--schedule-wednesday": {
+    "messageformat": "miércoles"
+  },
+  "icu:NotificationProfiles--schedule-thursday": {
+    "messageformat": "jueves"
+  },
+  "icu:NotificationProfiles--schedule-friday": {
+    "messageformat": "viernes"
+  },
+  "icu:NotificationProfiles--schedule-saturday": {
+    "messageformat": "sábado"
+  },
+  "icu:NotificationProfiles--done-title": {
+    "messageformat": "Perfil creado"
+  },
+  "icu:NotificationProfiles--done-description": {
+    "messageformat": "Si has añadido un horario, tu perfil se activará y desactivará automáticamente. También puedes hacer clic en el icono ··· ubicado en la parte superior de la lista de chats para activarlo o desactivarlo manualmente."
+  },
+  "icu:NotificationProfiles--schedule-sunday-short": {
+    "messageformat": "dom."
+  },
+  "icu:NotificationProfiles--schedule-monday-short": {
+    "messageformat": "lun."
+  },
+  "icu:NotificationProfiles--schedule-tuesday-short": {
+    "messageformat": "mar."
+  },
+  "icu:NotificationProfiles--schedule-wednesday-short": {
+    "messageformat": "miérc."
+  },
+  "icu:NotificationProfiles--schedule-thursday-short": {
+    "messageformat": "juev."
+  },
+  "icu:NotificationProfiles--schedule-friday-short": {
+    "messageformat": "vier."
+  },
+  "icu:NotificationProfiles--schedule-saturday-short": {
+    "messageformat": "sáb."
+  },
+  "icu:NotificationProfiles--schedule-weekdays": {
+    "messageformat": "De lunes a viernes"
+  },
+  "icu:NotificationProfiles--schedule-weekends": {
+    "messageformat": "Fines de semana"
+  },
+  "icu:NotificationProfiles--schedule-daily": {
+    "messageformat": "Todos los días"
+  },
+  "icu:NotificationProfiles--schedule-separator": {
+    "messageformat": ", "
+  },
+  "icu:NotificationProfiles--list--header": {
+    "messageformat": "Perfiles"
+  },
+  "icu:NotificationProfiles--list--sync": {
+    "messageformat": "Sincronización entre dispositivos"
+  },
+  "icu:NotificationProfiles--list--sync--description": {
+    "messageformat": "Tus perfiles se sincronizarán en todos tus dispositivos. Si activas un perfil en un dispositivo, se activará en todos los demás."
+  },
+  "icu:NotificationProfiles--delete": {
+    "messageformat": "Eliminar perfil"
+  },
+  "icu:NotificationProfiles--delete-confirmation": {
+    "messageformat": "¿Eliminar este perfil de notificaciones de forma permanente?"
+  },
+  "icu:NotificationProfiles--delete-button": {
+    "messageformat": "Eliminar"
+  },
+  "icu:NotificationProfiles--edit--is-active": {
+    "messageformat": "Activado"
+  },
+  "icu:NotificationProfiles--edit--is-not-active": {
+    "messageformat": "Desactivado"
+  },
+  "icu:NotificationProfiles--edit--edit-name-label": {
+    "messageformat": "Editar el nombre de este perfil"
+  },
+  "icu:NotificationProfiles--edit--allowed": {
+    "messageformat": "Notificaciones permitidas"
+  },
+  "icu:NotificationProfiles--edit--schedule-timing": {
+    "messageformat": "De {startTime} a {endTime}"
+  },
+  "icu:NotificationProfiles--edit--schedule-enabled": {
+    "messageformat": "Activado"
+  },
+  "icu:NotificationProfiles--edit--schedule-disabled": {
+    "messageformat": "Desactivado"
+  },
   "icu:Preferences--blocked": {
     "messageformat": "Bloqueados"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Copias Seguras de B&A"
+    "messageformat": "Copias Seguras de Signal"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Copias de seguridad automáticas con el servicio de almacenamiento seguro y cifrado de extremo a extremo de B&A. Configúralas en tu teléfono. <learnMoreLink>Más información</learnMoreLink>."
+    "messageformat": "Copias de seguridad automáticas con el servicio de almacenamiento seguro y cifrado de extremo a extremo de Signal. Configúralas en tu teléfono. <learnMoreLink>Más información</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Haz una copia de seguridad de tu historial de mensajes para no perder ningún dato si cambias de teléfono o reinstalas B&A."
+    "messageformat": "Haz una copia de seguridad de tu historial de mensajes para no perder ningún dato si cambias de teléfono o reinstalas Signal."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Detalles de la copia de seguridad"
@@ -5301,7 +5913,10 @@
     "messageformat": "Mensajes de texto + todos tus archivos multimedia"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "No se ha encontrado tu suscripción. Renuévala para seguir usando Copias Seguras de B&A."
+    "messageformat": "No se ha encontrado tu suscripción. Comprueba tu teléfono para ver la información de tu copia de seguridad."
+  },
+  "icu:Preferences--backup-subscription-monthly-cost": {
+    "messageformat": "{cost}/mes"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, one {Mensajes de texto + {mediaDayCount,number} día de archivos multimedia} other {Mensajes de texto + {mediaDayCount,number} días de archivos multimedia}}"
@@ -5319,13 +5934,13 @@
     "messageformat": "Suscripción cancelada"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Puedes gestionar o cancelar tu suscripción a Copias Seguras de B&A desde tu teléfono."
+    "messageformat": "Puedes gestionar o cancelar tu suscripción a Copias Seguras de Signal desde tu teléfono."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Puedes gestionar o actualizar tu suscripción a Copias Seguras de B&A desde tu teléfono."
+    "messageformat": "Puedes gestionar o actualizar tu suscripción a Copias Seguras de Signal desde tu teléfono."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Puedes gestionar o renovar tu suscripción a Copias Seguras de B&A desde tu teléfono."
+    "messageformat": "Puedes gestionar o renovar tu suscripción a Copias Seguras de Signal desde tu teléfono."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Última copia de seguridad"
@@ -5343,7 +5958,7 @@
     "messageformat": "Crea una copia de seguridad cifrada de extremo a extremo que puedes restaurar en tu teléfono. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Para restaurar una copia de seguridad, debes reinstalar B&A. Luego, abre la aplicación, toca &quot;Restaurar copia&quot; y busca la carpeta de copias de seguridad. <learnMoreLink>Más información.</learnMoreLink>"
+    "messageformat": "Para restaurar una copia de seguridad, debes reinstalar Signal. Luego, abre la aplicación, toca &quot;Restaurar copia&quot; y busca la carpeta de copias de seguridad. <learnMoreLink>Más información.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Selecciona una carpeta"
@@ -5356,6 +5971,18 @@
   },
   "icu:Preferences--local-backups-view-backup-key-done": {
     "messageformat": "Listo"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt--mac": {
+    "messageformat": "mostrar la clave de tu copia de seguridad"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt--windows": {
+    "messageformat": "Verifica tu identidad para ver la clave de tu copia de seguridad."
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt-description--linux": {
+    "messageformat": "Ver clave de copia de seguridad"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt-message--linux": {
+    "messageformat": "Se requiere autenticación para ver tu clave de copia de seguridad."
   },
   "icu:Preferences--local-backups-backup-key-text-box": {
     "messageformat": "Cuadro de texto de clave de copia de seguridad"
@@ -5379,13 +6006,22 @@
     "messageformat": "Guarda bien tu clave"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "B&A no podrá ayudarte a restaurar tu copia de seguridad si pierdes tu clave. Guárdala en un lugar seguro y no la compartas con otras personas."
+    "messageformat": "Signal no podrá ayudarte a restaurar tu copia de seguridad si pierdes tu clave. Guárdala en un lugar seguro y no la compartas con otras personas."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Continuar"
   },
   "icu:Preferences--local-backups-see-backup-key-again": {
     "messageformat": "Volver a ver la clave"
+  },
+  "icu:Preferences__local-backups-last-backup": {
+    "messageformat": "Última copia de seguridad"
+  },
+  "icu:Preferences__local-backups-last-backup-never": {
+    "messageformat": "Nunca"
+  },
+  "icu:Preferences__local-backups-backup-now": {
+    "messageformat": "Iniciar copia"
   },
   "icu:Preferences__local-backups-folder": {
     "messageformat": "Carpeta de copia de seguridad"
@@ -5398,6 +6034,18 @@
   },
   "icu:Preferences__local-backups-copied-key": {
     "messageformat": "Clave de copia de seguridad copiada"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt--mac": {
+    "messageformat": "habilitar copias de seguridad"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt--windows": {
+    "messageformat": "Verifica tu identidad para habilitar las copias de seguridad."
+  },
+  "icu:Preferences__local-backups--enable--os-prompt-description--linux": {
+    "messageformat": "Habilitar copias de seguridad"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt-message--linux": {
+    "messageformat": "Se requiere autenticación para habilitar las copias de seguridad."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Ver clave"
@@ -5415,13 +6063,13 @@
     "messageformat": "{num, plural, one {{num,number} contacto} other {{num,number} contactos}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Para cambiar estos ajustes, abre B&A en tu dispositivo móvil y ve a Ajustes > Privacidad"
+    "messageformat": "Para cambiar estos ajustes, abre Signal en tu dispositivo móvil y ve a Ajustes > Privacidad"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Número de teléfono"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Elige quién puede ver tu número de teléfono y quién puede usarlo para buscarte en B&A."
+    "messageformat": "Elige quién puede ver tu número de teléfono y quién puede usarlo para buscarte en Signal."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Cambiar…"
@@ -5433,7 +6081,7 @@
     "messageformat": "Tu número de teléfono será visible para las personas y los grupos a los que les envíes mensajes."
   },
   "icu:Preferences__pnp__sharing--description--nobody": {
-    "messageformat": "Tu número de teléfono no será visible para nadie a menos que lo tenga guardado en los contactos de su teléfono."
+    "messageformat": "Tu número de teléfono no será visible para nadie a menos que lo tenga guardado en su teléfono."
   },
   "icu:Preferences__pnp__sharing--description--nobody--not-discoverable": {
     "messageformat": "Tu número de teléfono no será visible para nadie."
@@ -5451,10 +6099,10 @@
     "messageformat": "Quién puede encontrarme con mi número"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Cualquiera que tenga tu número de teléfono verá que estás en B&A y podrá iniciar chats contigo."
+    "messageformat": "Cualquiera que tenga tu número de teléfono verá que estás en Signal y podrá iniciar chats contigo."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Nadie podrá ver que estás en B&A a menos que le envíes un mensaje o ya tengas un chat con esa persona."
+    "messageformat": "Nadie podrá ver que estás en Signal a menos que le envíes un mensaje o ya tengas un chat con esa persona."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Cualquiera"
@@ -5466,7 +6114,7 @@
     "messageformat": "¿Seguro que quieres hacer esto?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Si cambias el ajuste \"{settingTitle}\" a \"{nobodyLabel}\", será más difícil que las personas te encuentren en B&A."
+    "messageformat": "Si cambias el ajuste \"{settingTitle}\" a \"{nobodyLabel}\", será más difícil que las personas te encuentren en Signal."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Mensajes"
@@ -5520,7 +6168,7 @@
     "messageformat": "Aplicar"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Reinicia B&A para aplicar los cambios"
+    "messageformat": "Reinicia Signal para aplicar los cambios"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Para cambiar el idioma, la app debe reiniciarse."
@@ -5535,13 +6183,13 @@
     "messageformat": "Seguridad de la pantalla"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Evita las capturas de pantalla de B&A en este dispositivo para mayor privacidad."
+    "messageformat": "Bloquea las capturas de pantalla de Signal en este dispositivo para mayor privacidad."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "¿Desactivar la seguridad de la pantalla?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Si desactivas esta opción, es posible que Microsoft Windows haga capturas de pantalla de B&A y las use para funciones que podrían no ser privadas."
+    "messageformat": "Si desactivas esta opción, es posible que Microsoft Windows haga capturas de pantalla de Signal y las use para funciones que podrían no ser privadas."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Desactivar"
@@ -5556,25 +6204,25 @@
     "messageformat": "Actualización descargada"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Abre B&A en tu teléfono"
+    "messageformat": "Abre Signal en tu teléfono"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Tu cuenta se eliminará pronto a menos que abras B&A en tu teléfono. Este mensaje desaparecerá en cuanto lo hagas. <learnMoreLink>Más información</learnMoreLink>"
+    "messageformat": "Tu cuenta se eliminará pronto a menos que abras Signal en tu teléfono. Este mensaje desaparecerá en cuanto lo hagas. <learnMoreLink>Más información</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Abre B&A en tu teléfono para mantener tu cuenta activa"
+    "messageformat": "Abre Signal en tu teléfono para mantener tu cuenta activa"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Más información"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "B&A está teniendo dificultades técnicas. Estamos trabajando para restablecer el servicio lo antes posible."
+    "messageformat": "Signal está teniendo dificultades técnicas. Estamos trabajando para restablecer el servicio lo antes posible."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Actualización necesaria"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Para completar la sincronización de tus mensajes, actualiza B&A Desktop ahora."
+    "messageformat": "Para completar la sincronización de tus mensajes, actualiza Signal Desktop ahora."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Actualizar"
@@ -5583,19 +6231,19 @@
     "messageformat": "Actualización necesaria"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Para seguir usando B&A, debes actualizar a la última versión."
+    "messageformat": "Para seguir usando Signal, debes actualizar a la última versión."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Descargar {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Reinicia B&A para instalar la actualización."
+    "messageformat": "Reinicia Signal para instalar la actualización."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "B&A Desktop no se ha actualizado, pero hay una nueva versión disponible. Ve a {downloadUrl} e instala la nueva versión manualmente. Luego, puedes contactar con el equipo de asistencia o enviar un informe sobre este problema."
+    "messageformat": "Signal Desktop no se ha actualizado, pero hay una nueva versión disponible. Ve a {downloadUrl} e instala la nueva versión manualmente. Luego, puedes contactar con el equipo de Asistencia o enviar un informe sobre este problema."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "No se puede cerrar B&A.",
+    "messageformat": "No se puede cerrar Signal.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5615,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Ya está instalada una versión más reciente de B&A. ¿Continuar de todos modos?",
+    "messageformat": "Ya está instalada una versión más reciente de Signal. ¿Continuar de todos modos?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "La aplicación se ha cerrado"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "B&A se ha reiniciado tras un cerrarse de manera inesperada. Puedes enviarnos un informe de incidencia para ayudarnos a investigar el problema."
+    "messageformat": "Signal se ha reiniciado tras un cerrarse de manera inesperada. Puedes enviarnos un informe de incidencia para ayudarnos a investigar el problema."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Enviar"
@@ -5727,7 +6375,7 @@
     "messageformat": "Haz clic en el botón \"{buttonName}\" de abajo"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Activa \"B&A\""
+    "messageformat": "Activa \"Signal\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Ir a Ajustes"
@@ -5772,7 +6420,7 @@
     "messageformat": "{sender} ha iniciado un pago para ti"
   },
   "icu:payment-event-activation-request-label": {
-    "messageformat": "{sender} quiere que actives Pagos. Envía pagos solo a personas de confianza. Para activar Pagos, abre B&A en tu dispositivo móvil y ve a Ajustes > Pagos."
+    "messageformat": "{sender} quiere que actives Pagos. Envía pagos solo a personas de confianza. Para activar Pagos, abre Signal en tu dispositivo móvil y ve a Ajustes > Pagos."
   },
   "icu:payment-event-activation-request-you-label": {
     "messageformat": "Has enviado una solicitud a {receiver} para que active Pagos."
@@ -5817,10 +6465,10 @@
     "messageformat": "Más información"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Contactos de B&A"
+    "messageformat": "Contactos de Signal"
   },
   "icu:SignalConnectionsModal__header": {
-    "messageformat": "Tus <strong>contactos de B&A</strong> son personas en las que has decidido confiar por alguno de los siguientes motivos:"
+    "messageformat": "Tus <strong>contactos de Signal</strong> son personas en las que has decidido confiar por alguno de los siguientes motivos:"
   },
   "icu:SignalConnectionsModal__bullet--1": {
     "messageformat": "Has iniciado un chat con ellas."
@@ -5967,7 +6615,7 @@
     "messageformat": "Ocultar historia para"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Mis contactos de B&A"
+    "messageformat": "Mis contactos de Signal"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Mis contactos excepto…"
@@ -5985,7 +6633,7 @@
     "messageformat": "Confirmaciones de visualización"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Para cambiar este ajuste, abre B&A en tu dispositivo móvil y ve a Ajustes > Historias"
+    "messageformat": "Para cambiar este ajuste, abre Signal en tu dispositivo móvil y ve a Ajustes > Historias"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Quién puede ver esta historia"
@@ -6045,7 +6693,7 @@
     "messageformat": "Privacidad de mis historias"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Elige quiénes de tus contactos de B&A pueden ver tus historias. Siempre podrás cambiarlo en los Ajustes de privacidad. <learnMoreLink>Más información.</learnMoreLink>"
+    "messageformat": "Elige quiénes de tus contactos de Signal pueden ver tus historias. Siempre podrás cambiarlo en los Ajustes de privacidad. <learnMoreLink>Más información.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Eliminar historia"
@@ -6114,7 +6762,7 @@
     "messageformat": "Descargar archivo"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Habilita las confirmaciones de visualización para saber quién ha visto tus historias. Abre B&A en tu dispositivo móvil y ve a Ajustes > Historias."
+    "messageformat": "Habilita las confirmaciones de visualización para saber quién ha visto tus historias. Abre Signal en tu dispositivo móvil y ve a Ajustes > Historias."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Aún no hay respuestas"
@@ -6300,7 +6948,7 @@
     "messageformat": "Tu código QR y enlace se han restablecido y tu alias es {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Escanea este código QR con tu teléfono para chatear conmigo en B&A.",
+    "messageformat": "Escanea este código QR con tu teléfono para chatear conmigo en Signal.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6367,25 +7015,28 @@
     "messageformat": "Nuevas formas de conectarte"
   },
   "icu:UsernameMegaphone__body": {
-    "messageformat": "Protege la privacidad de tu número de teléfono, elige un alias opcional y descubre los enlaces de B&A."
+    "messageformat": "Protege la privacidad de tu número de teléfono, elige un alias opcional y descubre los enlaces de Signal."
   },
   "icu:UsernameMegaphone__learn-more": {
     "messageformat": "Más información"
   },
   "icu:UsernameMegaphone__dismiss": {
-    "messageformat": "Ignorar"
+    "messageformat": "Cerrar"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "B&A Desktop pronto dejará de ser compatible con la versión del {OS} de tu equipo de escritorio. Para seguir usando B&A, actualiza el sistema operativo de tu equipo antes del {expirationDate}. <learnMoreLink>Más información</learnMoreLink>"
+    "messageformat": "Signal Desktop pronto dejará de ser compatible con la versión del {OS} de tu equipo de escritorio. Para seguir usando Signal, actualiza el sistema operativo de tu equipo antes del {expirationDate}. <learnMoreLink>Más información</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "B&A Desktop ya no funciona en este dispositivo. Para volver a usar B&A Desktop, actualiza la versión del {OS} de tu equipo de escritorio. <learnMoreLink>Más información</learnMoreLink>"
+    "messageformat": "Signal Desktop ya no es compatible con este dispositivo. Para volver a usar Signal Desktop, actualiza la versión del {OS} de tu equipo de escritorio. <learnMoreLink>Más información</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "B&A Desktop ya no funciona en este dispositivo. Para volver a usar B&A Desktop, actualiza la versión del {OS} de tu equipo de escritorio."
+    "messageformat": "Signal Desktop ya no es compatible con este dispositivo. Para volver a usar Signal Desktop, actualiza la versión del {OS} de tu equipo de escritorio."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Editado"
+  },
+  "icu:MessageMetadata__pinned": {
+    "messageformat": "Fijado"
   },
   "icu:DraftGifMessageSendModal__Title": {
     "messageformat": "Añadir un mensaje"
@@ -6398,6 +7049,9 @@
   },
   "icu:EditHistoryMessagesModal__title": {
     "messageformat": "Historial de cambios"
+  },
+  "icu:EditHistoryMessagesModal__Message__ContextMenu__CopyTimestamp": {
+    "messageformat": "Copiar marca de tiempo"
   },
   "icu:ResendMessageEdit__body": {
     "messageformat": "No se ha podido enviar este mensaje editado. Comprueba tu conexión e inténtalo de nuevo."
@@ -6550,7 +7204,7 @@
     "messageformat": "Copiar enlace"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Compartir enlace vía B&A"
+    "messageformat": "Compartir enlace vía Signal"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Eliminar enlace"
@@ -6616,7 +7270,7 @@
     "messageformat": "Para cambiar este ajuste, selecciona la opción \"Nadie\" en \"Quién puede ver mi número\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Los nombres de perfil en B&A los elige quien crea la cuenta:"
+    "messageformat": "Los nombres de perfil en Signal los elige quien crea la cuenta:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Los nombres de perfil no se verifican"
@@ -6648,8 +7302,14 @@
   "icu:PreferencesDonations__title": {
     "messageformat": "Privacidad sin ánimo de lucro"
   },
+  "icu:PreferencesDonations__title-v2": {
+    "messageformat": "Orgullosamente sin ánimo de lucro"
+  },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Mensajería privada, financiada por ti. Sin anuncios, sin seguimiento, sin comprometer tu privacidad. Haz una donación ahora para apoyar a B&A. <readMoreLink>Más información</readMoreLink>"
+    "messageformat": "Mensajería privada, financiada por ti. Sin anuncios, sin seguimiento, sin comprometer tu privacidad. Haz una donación ahora para apoyar a Signal. <readMoreLink>Más información</readMoreLink>"
+  },
+  "icu:PreferencesDonations__description-v2": {
+    "messageformat": "Haz una donación para apoyar la mensajería privada. Ayuda a Signal a seguir siendo independiente y sin anuncios. <readMoreLink>Más información</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Donar"
@@ -6673,7 +7333,7 @@
     "messageformat": "Tu información es privada"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>B&A no recoge ni almacena tu información personal cuando haces una donación.</paragraph><paragraph>Usamos Stripe para procesar las donaciones que recibimos. No accedemos, almacenamos, ni guardamos ninguno de los datos que le proporcionas.</paragraph><paragraph>B&A no vincula ni puede vincular tu donación con tu cuenta de B&A.</paragraph><paragraph>¡Gracias por tu apoyo!</paragraph>"
+    "messageformat": "<paragraph>Signal no recoge ni almacena tu información personal cuando haces una donación.</paragraph><paragraph>Usamos Stripe para procesar las donaciones que recibimos. No accedemos, almacenamos, ni guardamos ninguno de los datos que le proporcionas.</paragraph><paragraph>Signal no vincula ni puede vincular tu donación con tu cuenta de Signal.</paragraph><paragraph>¡Gracias por tu apoyo!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "Aceptar"
@@ -6688,13 +7348,10 @@
     "messageformat": "Preguntas frecuentes sobre donaciones"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Los recibos no se sincronizan entre dispositivos. Si has vuelto a instalar B&A, los recibos de donaciones anteriores no estarán disponibles."
+    "messageformat": "Los recibos no se sincronizan entre dispositivos. Si has vuelto a instalar Signal, los recibos de donaciones anteriores no estarán disponibles."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "No hay ningún recibo"
-  },
-  "icu:PreferencesDonations__ReceiptModal--title": {
-    "messageformat": "Detalles"
   },
   "icu:PreferencesDonations__ReceiptModal--download": {
     "messageformat": "Descargar recibo"
@@ -6721,7 +7378,7 @@
     "messageformat": "Tarjeta de crédito o débito"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Introduce los datos de tu tarjeta de crédito o débito. B&A no recoge ni almacena tu información personal. <learnMoreLink>Más información</learnMoreLink>"
+    "messageformat": "Introduce los datos de tu tarjeta de crédito o débito. Signal no recoge ni almacena tu información personal. <learnMoreLink>Más información</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Número de tarjeta"
@@ -6733,7 +7390,7 @@
     "messageformat": "MM/AA"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Donar {formattedCurrencyAmount} a B&A"
+    "messageformat": "Donar {formattedCurrencyAmount} a Signal"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Número de tarjeta no válido"
@@ -6751,7 +7408,7 @@
     "messageformat": "Código demasiado corto"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Consigue la insignia Apoyo B&A durante 30 días"
+    "messageformat": "Consigue la insignia Apoyo Signal durante 30 días"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "El importe mínimo de donación es de{formattedCurrencyAmount}"
@@ -6763,7 +7420,7 @@
     "messageformat": "El importe máximo de donación es de{formattedCurrencyAmount}"
   },
   "icu:DonateFlow__discard-dialog-body": {
-    "messageformat": "Si sales de esta página, se eliminará los datos de tu tarjeta de crédito. ¿Quieres continuar?"
+    "messageformat": "Si sales de esta página, se eliminarán los datos de tu tarjeta de crédito. ¿Quieres continuar?"
   },
   "icu:DonateFlow__discard-dialog-remove-info": {
     "messageformat": "Eliminar datos"
@@ -6787,7 +7444,7 @@
     "messageformat": "Puntual"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Gracias por apoyar a B&A. Con tu contribución, impulsas nuestra misión de proteger la libertad de expresión y permitir una comunicación segura para millones de personas en todo el mundo gracias a una tecnología de código abierto centrada en la privacidad. Si resides en Estados Unidos, guarda este recibo para tus declaraciones fiscales. B&A Technology Foundation es una organización sin ánimo de lucro exenta de impuestos en Estados Unidos bajo la sección 501(c)(3) del código tributario de EE. UU. (Internal Revenue Code). Nuestro número de identificación fiscal es 82-4506840."
+    "messageformat": "Gracias por apoyar a Signal. Con tu contribución, impulsas nuestra misión de proteger la libertad de expresión y permitir una comunicación segura para millones de personas en todo el mundo gracias a una tecnología de código abierto centrada en la privacidad. Si resides en Estados Unidos, guarda este recibo para tus declaraciones fiscales. Signal Technology Foundation es una organización sin ánimo de lucro exenta de impuestos en Estados Unidos bajo la sección 501(c)(3) del código tributario de EE. UU. (Internal Revenue Code). Nuestro número de identificación fiscal es 82-4506840."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "No tienes conexión. Conéctate a Internet para completar una donación."
@@ -6813,14 +7470,11 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Tienes una donación en curso pendiente de confirmación."
   },
-  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
-    "messageformat": "La donación se realizó correctamente, pero no pudimos actualizar los ajustes de tu insignia"
-  },
   "icu:Donations__BadgeApplicationFailed__Title": {
-    "messageformat": "La donación se realizó correctamente, pero no pudimos actualizar los ajustes de tu insignia"
+    "messageformat": "La donación se completó correctamente, pero no pudimos actualizar tu insignia"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Para actualizar los ajustes de tu insignia en tu dispositivo móvil, ve a Ajustes > Haz una donación a B&A > Insignias."
+    "messageformat": "Para actualizar los ajustes de tu insignia en tu dispositivo móvil, ve a Ajustes > Haz una donación a Signal > Insignias."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Donación interrumpida"
@@ -6841,13 +7495,13 @@
     "messageformat": "Error en la verificación"
   },
   "icu:Donations__Failed3dsValidation__Description": {
-    "messageformat": "No se ha podido realizar la verificación adicional. Inténtalo de nuevo."
+    "messageformat": "No se ha podido completar la verificación adicional. Inténtalo de nuevo."
   },
   "icu:Donations__GenericError": {
     "messageformat": "Se ha producido un error con tu donación"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Es posible que tu donación no se haya procesado. Haz clic en \"Donar a B&A\" y luego en \"Recibos de donación\" para verificar tus recibos y confirmar."
+    "messageformat": "Es posible que tu donación no se haya procesado. Haz clic en \"Haz una donación a Signal\" y luego en \"Recibos de donación\" para verificar tus recibos y confirmar la operación."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Inténtalo de nuevo o envía un registro de depuración al equipo de Asistencia para que te ayudemos a completar tu donación. Los registros de depuración nos ayudan a diagnosticar y solucionar el problema, y no contienen información que pueda identificarte."
@@ -6889,20 +7543,134 @@
     "messageformat": "¡Gracias por tu apoyo!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Has ganado una insignia por tu donación. Añádela a tu perfil para mostrar que apoyas a B&A."
+    "messageformat": "Has ganado una insignia por tu donación. Añádela a tu perfil para mostrar que apoyas a Signal."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Mostrar en mi perfil"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Puedes configurarlo en tu dispositivo móvil en Ajustes > Haz una donación a B&A > Insignias"
+    "messageformat": "Puedes configurarlo en tu dispositivo móvil en Ajustes > Haz una donación a Signal > Insignias"
+  },
+  "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
+    "messageformat": "Cerrar"
+  },
+  "icu:CallQualitySurvey__BackButton__AccessibilityLabel": {
+    "messageformat": "Atrás"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
+    "messageformat": "¿Qué tal ha ido tu llamada?"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
+    "messageformat": "Tu opinión nos ayuda a mejorar las llamadas en Signal. No se almacenará ningún dato de identificación personal."
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
+    "messageformat": "He tenido problemas"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__Response__Great": {
+    "messageformat": "Ha ido genial"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__PageTitle": {
+    "messageformat": "¿Qué problemas has tenido?"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__IssuesList__Heading": {
+    "messageformat": "Selecciona todas las opciones que correspondan"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO": {
+    "messageformat": "Problema de audio"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_STUTTERING": {
+    "messageformat": "Audio entrecortado"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_LOCAL_ECHO": {
+    "messageformat": "Oía un eco"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_REMOTE_ECHO": {
+    "messageformat": "Otras personas oían eco"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_DROP": {
+    "messageformat": "El audio se detuvo"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO": {
+    "messageformat": "Problema de vídeo"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_NO_CAMERA": {
+    "messageformat": "La cámara no funcionaba"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_LOW_QUALITY": {
+    "messageformat": "Mala calidad del vídeo"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_LOW_RESOLUTION": {
+    "messageformat": "Baja resolución"
+  },
+  "icu:CallQualitySurvey__Issue--CALL_DROPPED": {
+    "messageformat": "La llamada se cortó"
+  },
+  "icu:CallQualitySurvey__Issue--OTHER": {
+    "messageformat": "Otro problema"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__AccessibilityLabel": {
+    "messageformat": "Descripción del problema"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
+    "messageformat": "Incluye cualquier detalle relevante sobre el problema. Garantizamos la privacidad de toda la información que compartas aquí. Solo se usará para ayudarnos a mejorar las llamadas en Signal."
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
+    "messageformat": "Describe tu problema"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__ContinueButton": {
+    "messageformat": "Continuar"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__ContinueButton__DisabledTooltip": {
+    "messageformat": "Selecciona una opción para continuar"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
+    "messageformat": "Ayúdanos a mejorar"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
+    "messageformat": "Tu opinión nos ayuda a saber qué funciona y qué falla durante las llamadas. Puedes ver tu registro de depuración antes de enviarlo."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
+    "messageformat": "Si seleccionas Enviar, se compartirán tus comentarios junto con <diagnosticInfoLink>la información de diagnóstico de tu llamada</diagnosticInfoLink>. De manera opcional, puedes compartir tu registro de depuración para ayudarnos a mejorar la calidad de las llamadas."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__Label": {
+    "messageformat": "Compartir registro de depuración"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
+    "messageformat": "Ver"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
+    "messageformat": "Los registros de depuración contienen información técnica de la aplicación y no revelan el contenido de ninguno de tus mensajes."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
+    "messageformat": "La información que compartes con nosotros contiene únicamente datos técnicos de la aplicación y nunca incluye el contenido de tus llamadas."
+  },
+  "icu:CallDiagnosticWindow__title": {
+    "messageformat": "Información de diagnóstico"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__SubmitButton": {
+    "messageformat": "Enviar"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__Submitting": {
+    "messageformat": "Enviando encuesta…"
+  },
+  "icu:CallQualitySurvey__SubmissionFailed": {
+    "messageformat": "No se ha podido enviar la encuesta"
+  },
+  "icu:CallQualitySurvey__SubmissionFailed__Retry": {
+    "messageformat": "Reintentar"
+  },
+  "icu:CallQualitySurvey__SubmissionSuccess": {
+    "messageformat": "¡Gracias por tus comentarios!"
+  },
+  "icu:Megaphone__ExpandNarrowSidebar": {
+    "messageformat": "Expande la barra lateral para interactuar con el megáfono"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Esta versión incluye una series de ajustes y correcciones de errores para que B&A funcione sin problemas.",
+    "messageformat": "Esta versión incluye una series de ajustes y correcciones de errores para que Signal funcione sin problemas.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "También hemos hecho algunos ajustes, correcciones de errores y mejoras en el rendimiento. ¡Gracias por usar B&A!",
+    "messageformat": "También hemos hecho algunos ajustes, correcciones de errores y mejoras en el rendimiento. ¡Gracias por usar Signal!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6922,10 +7690,13 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Hemos hecho algunos ajustes, correcciones de errores y mejoras en el rendimiento. ¡Gracias por usar B&A!",
+    "messageformat": "Hemos hecho algunos ajustes, correcciones de errores y mejoras en el rendimiento. ¡Gracias por usar Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.73": {
-    "messageformat": "Esta actualización mejora el rendimiento y la duración de la batería, así siempre tendrás carga suficiente para las conversaciones cargadas de emociones."
+  "icu:WhatsNew__7.86--0": {
+    "messageformat": "No podemos arreglar los silencios incómodos en las llamadas grupales, pero sí hemos corregido un error que hacía que el indicador de \"mano levantada\" quedara visible (con un conteo de cero) si alguien levantaba y bajaba la mano muy rápido."
+  },
+  "icu:WhatsNew__7.87--0": {
+    "messageformat": "Mantén la información importante siempre accesible con los mensajes fijados. ¿Tu lista de pendientes de la semana o los planes de vacaciones ya son lo primero en lo que piensas? Ahora también pueden ser lo primero que aparezca en tus chats."
   }
 }

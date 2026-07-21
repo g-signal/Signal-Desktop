@@ -5,14 +5,13 @@ import type { AudioDevice } from '@signalapp/ringrtc';
 import type {
   CustomColorsItemType,
   DefaultConversationColorType,
-} from './Colors.js';
-import type { PhoneNumberDiscoverability } from '../util/phoneNumberDiscoverability.js';
-import type { PhoneNumberSharingMode } from '../util/phoneNumberSharingMode.js';
-import type { RetryItemType } from '../util/retryPlaceholders.js';
-import type { ConfigMapType as RemoteConfigType } from '../RemoteConfig.js';
+} from './Colors.std.js';
+import type { PhoneNumberDiscoverability } from '../util/phoneNumberDiscoverability.std.js';
+import type { RetryItemType } from '../services/retryPlaceholders.std.js';
+import type { ConfigMapType as RemoteConfigType } from '../RemoteConfig.dom.js';
 import type { ExtendedStorageID, UnknownRecord } from './StorageService.d.ts';
 
-import type { GroupCredentialType } from '../textsecure/WebAPI.js';
+import type { GroupCredentialType } from '../textsecure/WebAPI.preload.js';
 import type {
   SessionResetsType,
   StorageServiceCredentials,
@@ -21,11 +20,13 @@ import type {
   BackupCredentialWrapperType,
   BackupsSubscriptionType,
   BackupStatusType,
-} from './backups.js';
-import type { ServiceIdString } from './ServiceId.js';
-import type { RegisteredChallengeType } from '../challenge.js';
-import type { ServerAlertsType } from '../util/handleServerAlerts.js';
-import type { NotificationProfileOverride } from './NotificationProfile.js';
+} from './backups.node.js';
+import type { ServiceIdString } from './ServiceId.std.js';
+import type { RegisteredChallengeType } from '../challenge.dom.js';
+import type { ServerAlertsType } from '../util/handleServerAlerts.preload.js';
+import type { NotificationProfileOverride } from './NotificationProfile.std.js';
+import type { PhoneNumberSharingMode } from './PhoneNumberSharingMode.std.js';
+import type { LocalBackupExportMetadata } from './LocalExport.std.js';
 
 export type AutoDownloadAttachmentType = {
   photos: boolean;
@@ -66,6 +67,9 @@ export type StorageAccessType = {
   'blocked-uuids': ReadonlyArray<ServiceIdString>;
   'call-ringtone-notification': boolean;
   'call-system-notification': boolean;
+  lastCallQualitySurveyTime: number;
+  lastCallQualityFailureSurveyTime: number;
+  cqsTestMode: boolean;
   'hide-menu-bar': boolean;
   'incoming-call-notification': boolean;
   'notification-draw-attention': boolean;
@@ -80,12 +84,14 @@ export type StorageAccessType = {
 
   customColors: CustomColorsItemType;
   device_name: string;
+  deviceCreatedAt: number;
   existingOnboardingStoryMessageIds: ReadonlyArray<string> | undefined;
   hasSetMyStoriesPrivacy: boolean;
   hasCompletedUsernameOnboarding: boolean;
   hasCompletedUsernameLinkOnboarding: boolean;
   hasCompletedSafetyNumberOnboarding: boolean;
   hasSeenGroupStoryEducationSheet: boolean;
+  hasSeenNotificationProfileOnboarding: boolean;
   hasViewedOnboardingStory: boolean;
   hasStoriesDisabled: boolean;
   storyViewReceiptsEnabled: boolean | undefined;
@@ -111,6 +117,7 @@ export type StorageAccessType = {
   sessionResets: SessionResetsType;
   showStickerPickerHint: boolean;
   showStickersIntroduction: boolean;
+  seenPinMessageDisappearingMessagesWarningCount: number;
   signedKeyId: number;
   signedKeyIdPNI: number;
   signedKeyUpdateTime: number;
@@ -200,6 +207,10 @@ export type StorageAccessType = {
   needOrphanedAttachmentCheck: boolean;
   needProfileMovedModal: boolean;
   notificationProfileOverride: NotificationProfileOverride | undefined;
+  notificationProfileOverrideFromPrimary:
+    | NotificationProfileOverride
+    | undefined;
+  notificationProfileSyncDisabled: boolean;
   observedCapabilities: {
     attachmentBackfill?: true;
 
@@ -227,9 +238,10 @@ export type StorageAccessType = {
 
   backupTier: number | undefined;
   cloudBackupStatus: BackupStatusType | undefined;
-  backupSubscriptionStatus: BackupsSubscriptionType;
+  backupSubscriptionStatus: BackupsSubscriptionType | undefined;
 
   backupKeyViewed: boolean;
+  lastLocalBackup: LocalBackupExportMetadata;
   localBackupFolder: string | undefined;
 
   // If true Desktop message history was restored from backup
@@ -241,6 +253,19 @@ export type StorageAccessType = {
   // Stored solely for pesistance during import/export sequence
   svrPin: string;
   optimizeOnDeviceStorage: boolean;
+  pinReminders: boolean | undefined;
+  screenLockTimeoutMinutes: number | undefined;
+  'auto-download-attachment-primary':
+    | undefined
+    | {
+        photos: number;
+        audio: number;
+        videos: number;
+        documents: number;
+      };
+  androidSpecificSettings: unknown;
+  callsUseLessDataSetting: unknown;
+  allowSealedSenderFromAnyone: unknown;
 
   postRegistrationSyncsStatus: 'incomplete' | 'complete';
 
@@ -269,6 +294,7 @@ export type StorageAccessType = {
   versionedExpirationTimer: never;
   primarySendsSms: never;
   backupMediaDownloadIdle: never;
+  callQualitySurveyCooldownDisabled: never;
 };
 
 export type StorageInterface = {

@@ -42,7 +42,7 @@
     "messageformat": "Việc gửi tập tin đa phương tiện chất lượng cao sẽ tốn nhiều lưu lượng hơn."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Ủng hộ B&A"
+    "messageformat": "Ủng hộ Signal"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Tiêu chuẩn"
@@ -78,10 +78,10 @@
     "messageformat": "Nhóm chưa biết"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Không thể mở B&A"
+    "messageformat": "Không thể mở Signal"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Để khắc phục vấn đề, hãy làm theo hướng dẫn khôi phục trên trang hỗ trợ hoặc liên hệ với bộ phận hỗ trợ của B&A để được trợ giúp khắc phục vấn đề.\n\nNếu bạn cần sử dụng B&A ngay, bạn có thể xóa dữ liệu của mình và liên kết lại với máy tính này. Bạn sẽ có tùy chọn chuyển lịch sử tin nhắn từ điện thoại của mình."
+    "messageformat": "Để khắc phục vấn đề, hãy làm theo hướng dẫn khôi phục trên trang hỗ trợ hoặc liên hệ với bộ phận hỗ trợ của Signal để được trợ giúp khắc phục vấn đề.\n\nNếu bạn cần sử dụng Signal ngay, bạn có thể xóa dữ liệu của mình và liên kết lại với máy tính này. Bạn sẽ có tùy chọn chuyển lịch sử tin nhắn từ điện thoại của mình."
   },
   "icu:databaseError": {
     "messageformat": "Lỗi Cơ sở dữ liệu"
@@ -93,16 +93,25 @@
     "messageformat": "Xóa vĩnh viễn tất cả dữ liệu"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Tất cả lịch sử tin nhắn và tệp đa phương tiện của bạn sẽ bị xóa vĩnh viễn khỏi thiết bị này. Thao tác này sẽ không xóa bất kỳ dữ liệu nào trên điện thoại của bạn.\n\nBạn sẽ có thể sử dụng B&A trên thiết bị này sau khi liên kết lại. Bạn sẽ có tùy chọn chuyển lịch sử tin nhắn từ điện thoại của mình."
+    "messageformat": "Tất cả lịch sử tin nhắn và tệp đa phương tiện của bạn sẽ bị xóa vĩnh viễn khỏi thiết bị này. Thao tác này sẽ không xóa bất kỳ dữ liệu nào trên điện thoại của bạn.\n\nBạn sẽ có thể sử dụng Signal trên thiết bị này sau khi liên kết lại. Bạn sẽ có tùy chọn chuyển lịch sử tin nhắn từ điện thoại của mình."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Phiên bản cơ sở dữ liệu của bạn không khớp với phiên bản B&A này. Đảm bảo bạn đang sử dụng phiên bản B&A mới nhất trên máy tính của mình."
+    "messageformat": "Phiên bản cơ sở dữ liệu của bạn không khớp với phiên bản Signal này. Đảm bảo bạn đang sử dụng phiên bản Signal mới nhất trên máy tính của mình."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Không thể truy cập cơ sở dữ liệu khóa mã hóa vì phần backend của keyring của hệ điều hành đã được đổi từ {previousBackend} thành {currentBackend}. Điều này có thể xảy ra khi môi trường desktop thay đổi, ví dụ như giữa GNOME và KDE.\n\nVui lòng chuyển thành môi trường desktop trước đó."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Không thể truy cập cơ sở dữ liệu khóa mã hóa vì phần backend của keyring của hệ điều hành đã được đổi từ {previousBackend} thành {currentBackend}. Điều này có thể xảy ra khi môi trường desktop thay đổi, ví dụ như giữa GNOME và KDE.\n\nVui lòng chuyển thành môi trường desktop trước đó hoặc thử chạy B&A bằng dòng lệnh --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Không thể truy cập cơ sở dữ liệu khóa mã hóa vì phần backend của keyring của hệ điều hành đã được đổi từ {previousBackend} thành {currentBackend}. Điều này có thể xảy ra khi môi trường desktop thay đổi, ví dụ như giữa GNOME và KDE.\n\nVui lòng chuyển thành môi trường desktop trước đó hoặc thử chạy Signal bằng dòng lệnh --password-store=\"{previousBackendFlag}\""
+  },
+  "icu:systemEncryptionError": {
+    "messageformat": "System encryption error"
+  },
+  "icu:systemEncryptionError__linuxSafeStorageDecryptionError": {
+    "messageformat": "Unable to decrypt the database encryption key using the OS encryption keyring. This can occur in certain containerized environments such as Flatpak.\n\nWe recommend quitting and checking your OS encryption backend such as gnome-libsecret or kwallet, then trying again.\n\nYou may choose to continue anyway, however the database key will be stored in plaintext on the filesystem and other apps may be able to access it."
+  },
+  "icu:systemEncryptionError__continueWithPlaintextKey": {
+    "messageformat": "Continue with plaintext key"
   },
   "icu:mainMenuFile": {
     "messageformat": "&Tập tin"
@@ -138,7 +147,7 @@
     "messageformat": "Hiển thị Tất cả"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Thoát B&A"
+    "messageformat": "Thoát Signal"
   },
   "icu:editMenuUndo": {
     "messageformat": "Hoàn tác"
@@ -233,6 +242,12 @@
   "icu:archivedConversations": {
     "messageformat": "Cuộc trò chuyện đã lưu trữ"
   },
+  "icu:LeftPane__MoreActionsMenu__AddChatFolder": {
+    "messageformat": "Thêm thư mục trò chuyện"
+  },
+  "icu:LeftPane__MoreActionsMenu__FolderSettings": {
+    "messageformat": "Cài đặt thư mục"
+  },
   "icu:LeftPane--pinned": {
     "messageformat": "Đã ghim"
   },
@@ -271,6 +286,45 @@
   },
   "icu:LeftPaneFindByHelper__description--findByUsername": {
     "messageformat": "Nhập tên người dùng, sau đó là một dấu chấm và dãy số của tên người dùng."
+  },
+  "icu:LeftPane__EmptyView--WithSelectedChatFolder": {
+    "messageformat": "Không có cuộc trò chuyện"
+  },
+  "icu:LeftPane__EmptyView--WithSelectedChatFolder__FolderSettings": {
+    "messageformat": "Cài đặt thư mục"
+  },
+  "icu:LeftPaneChatFolders__ItemLabel--All--Short": {
+    "messageformat": "Tất cả"
+  },
+  "icu:LeftPaneChatFolders__ItemLabel--All": {
+    "messageformat": "Tất cả cuộc trò chuyện"
+  },
+  "icu:LeftPaneChatFolders__ItemUnreadBadge__MaxCount": {
+    "messageformat": "{maxCount,number}+"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MarkAllRead": {
+    "messageformat": "Đánh dấu tất cả đã đọc"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MuteNotifications": {
+    "messageformat": "Tắt tiếng thông báo"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__MuteNotifications__UnmuteAll": {
+    "messageformat": "Bỏ tắt tiếng tất cả"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__UnmuteAll": {
+    "messageformat": "Bỏ tắt tiếng tất cả"
+  },
+  "icu:LeftPaneChatFolders__Item__ContextMenu__EditFolder": {
+    "messageformat": "Chỉnh sửa thư mục"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderToggleChatsItem": {
+    "messageformat": "Thêm vào thư mục"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderToggleChatsMenu__CreateFolderItem": {
+    "messageformat": "Tạo thư mục"
+  },
+  "icu:LeftPane__ConversationListItem__ContextMenu__ChatFolderRemoveChatItem": {
+    "messageformat": "Xóa khỏi thư mục"
   },
   "icu:CountryCodeSelect__placeholder": {
     "messageformat": "Mã quốc gia"
@@ -322,6 +376,9 @@
   },
   "icu:markUnread": {
     "messageformat": "Đánh dấu chưa đọc"
+  },
+  "icu:markRead": {
+    "messageformat": "Đánh dấu đã đọc"
   },
   "icu:ConversationHeader__menu__selectMessages": {
     "messageformat": "Chọn tin nhắn"
@@ -429,10 +486,10 @@
     "messageformat": "Bạn đã đánh dấu Số An toàn của bạn với {name} là chưa được xác minh từ thiế bị khác"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Số an toàn bạn đang cố để xác minh đã thay đổi. Xin hãy xem lại số an toàn mới của bạn với {name1}. Xin nhớ rằng, thay đổi này có thể có nghĩa là có người đang cố gắng chặn liên lạc của bạn hoặc đơn giản là {name2} đã cài đặt lại B&A."
+    "messageformat": "Số an toàn bạn đang cố để xác minh đã thay đổi. Xin hãy xem lại số an toàn mới của bạn với {name1}. Xin nhớ rằng, thay đổi này có thể có nghĩa là có người đang cố gắng chặn liên lạc của bạn hoặc đơn giản là {name2} đã cài đặt lại Signal."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Những người sau có thể đã cài đặt lại B&A hoặc đã đổi thiết bị. Bấm vào một người nhận để xác nhận mã số an toàn mới của người đó. Thao tác này không bắt buộc."
+    "messageformat": "Những người sau có thể đã cài đặt lại Signal hoặc đã đổi thiết bị. Bấm vào một người nhận để xác nhận mã số an toàn mới của người đó. Thao tác này không bắt buộc."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Gửi tin nhắn chờ"
@@ -441,7 +498,7 @@
     "messageformat": "Duyệt lại"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {Bạn có {count,number} liên hệ có thể đã cài đặt lại B&A hoặc đã đổi thiết bị. Bạn có thể chọn duyệt lại mã số an toàn của họ trước khi gửi.}}"
+    "messageformat": "{count, plural, other {Bạn có {count,number} liên hệ có thể đã cài đặt lại Signal hoặc đã đổi thiết bị. Bạn có thể chọn duyệt lại mã số an toàn của họ trước khi gửi.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Tất cả liên hệ đã được xem xét, nhấn gửi để tiếp tục."
@@ -482,8 +539,11 @@
   "icu:debugLogExplanation": {
     "messageformat": "Khi bạn bấm Gửi, nhật ký của bạn sẽ được đăng online trong 30 ngày tại một URL độc nhất, chưa được xuất bản. Bạn có thể Lưu trên thiết bị trước."
   },
+  "icu:debugLogExplanation--close": {
+    "messageformat": "Nhật ký này sẽ được đăng trực tuyến công khai cho những người đóng góp theo dõi. Bạn có thể tải nhật ký xuống trước khi gửi."
+  },
   "icu:debugLogError": {
-    "messageformat": "Đã xảy ra sự cố với quá trình tải lên! Vui lòng gửi email tới support@baxs.com và đính kèm nhật ký của bạn dưới dạng tệp văn bản."
+    "messageformat": "Đã xảy ra sự cố với quá trình tải lên! Vui lòng gửi email tới support@signal.org và đính kèm nhật ký của bạn dưới dạng tệp văn bản."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Đã gửi nhật ký gỡ lỗi"
@@ -538,18 +598,6 @@
   },
   "icu:media": {
     "messageformat": "Đa phương tiện"
-  },
-  "icu:mediaEmptyState": {
-    "messageformat": "Bạn không có tệp đa phương tiện nào trong cuộc trò chuyện này"
-  },
-  "icu:allMedia": {
-    "messageformat": "Tất cả Tập tin đa phương tiện"
-  },
-  "icu:documents": {
-    "messageformat": "Tài liệu"
-  },
-  "icu:documentsEmptyState": {
-    "messageformat": "Bạn không có tài liệu nào trong cuộc trò chuyện này"
   },
   "icu:today": {
     "messageformat": "Hôm nay"
@@ -607,6 +655,15 @@
   },
   "icu:Toast--ReceiptSaveFailed": {
     "messageformat": "Lỗi khi lưu biên lai. Vui lòng thử lại."
+  },
+  "icu:Toast--ChatFolderAddedChat": {
+    "messageformat": "Đã thêm vào “{chatFolderName}”"
+  },
+  "icu:Toast--ChatFolderRemovedChat": {
+    "messageformat": "Đã xóa khỏi “{chatFolderName}”"
+  },
+  "icu:Toast--ChatFolderCreated": {
+    "messageformat": "Đã thêm thư mục {chatFolderName}"
   },
   "icu:cannotSelectPhotosAndVideosAlongWithFiles": {
     "messageformat": "Bạn không thể chọn ảnh và video cùng các tập tin."
@@ -672,16 +729,10 @@
     "messageformat": "Tác giả gói nhãn dán"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Giới thiệu B&A Desktop"
+    "messageformat": "Giới thiệu Signal Desktop"
   },
   "icu:screenShareWindow": {
     "messageformat": "Chia sẻ màn hình"
-  },
-  "icu:callingDeveloperTools": {
-    "messageformat": "Công cụ Nhà phát triển của Cuộc gọi"
-  },
-  "icu:callingDeveloperToolsDescription": {
-    "messageformat": "Cửa sổ này được sử dụng trong quá trình phát triển để hiển thị thông tin chẩn đoán từ những cuộc gọi đang diễn ra."
   },
   "icu:speech": {
     "messageformat": "Nói"
@@ -696,7 +747,7 @@
     "messageformat": "Thoát"
   },
   "icu:signalDesktop": {
-    "messageformat": "B&A Desktop"
+    "messageformat": "Signal Desktop"
   },
   "icu:search": {
     "messageformat": "Tìm kiếm"
@@ -750,10 +801,13 @@
     "messageformat": "Tìm theo số điện thoại"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Chào mừng đến với B&A"
+    "messageformat": "Chào mừng đến với Signal"
   },
   "icu:whatsNew": {
     "messageformat": "Nhìn xem {whatsNew} trong bản cập nhật này"
+  },
+  "icu:signalNonProfit": {
+    "messageformat": "Signal là một tổ chức phi lợi nhuận"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "có gì mới"
@@ -837,13 +891,13 @@
     "messageformat": "Bạn"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Để gửi tin nhắn thoại, cho phép B&A Desktop truy cập microphone."
+    "messageformat": "Để gửi tin nhắn thoại, cho phép Signal Desktop truy cập microphone."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Để thực hiện cuộc gọi, bạn cần phải cho phép B&A Desktop truy cập microphone của bạn."
+    "messageformat": "Để thực hiện cuộc gọi, bạn cần phải cho phép Signal Desktop truy cập microphone của bạn."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Để thực hiện cuộc gọi video, bạn cần phải cho phép B&A Desktop truy cập camera của bạn."
+    "messageformat": "Để thực hiện cuộc gọi video, bạn cần phải cho phép Signal Desktop truy cập camera của bạn."
   },
   "icu:allowAccess": {
     "messageformat": "Cho phép Truy cập"
@@ -867,13 +921,13 @@
     "messageformat": "Tắt tiếng"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "B&A không thể cập nhật. <retryUpdateButton>Thử cập nhật lại</retryUpdateButton> hoặc truy cập {url} để cài thủ công. Sau đó, <contactSupportLink>liên hệ bộ phận hỗ trợ</contactSupportLink> về vấn đề này"
+    "messageformat": "Signal không thể cập nhật. <retryUpdateButton>Thử cập nhật lại</retryUpdateButton> hoặc truy cập {url} để cài thủ công. Sau đó, <contactSupportLink>liên hệ bộ phận hỗ trợ</contactSupportLink> về vấn đề này"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "B&A không thể cập nhật. Truy cập {url} để cài thủ công. Sau đó, <contactSupportLink>liên hệ bộ phận hỗ trợ</contactSupportLink> về vấn đề này"
+    "messageformat": "Signal không thể cập nhật. Truy cập {url} để cài thủ công. Sau đó, <contactSupportLink>liên hệ bộ phận hỗ trợ</contactSupportLink> về vấn đề này"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "B&A Desktop đang trong tình trạng cách ly trên macOS, và sẽ không thể tự-cập nhật được. Xin hãy dời {app} đến {folder} với ứng dụng Finder."
+    "messageformat": "Signal Desktop đang trong tình trạng cách ly trên macOS, và sẽ không thể tự-cập nhật được. Xin hãy dời {app} đến {folder} với ứng dụng Finder."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -918,7 +972,7 @@
     "messageformat": "Tin nhắn này sẽ được xoá khỏi thiết bị này."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Tin nhắn này sẽ được xóa cho tất cả mọi người trong cuộc trò chuyện nếu họ sử dụng phiên bản mới của B&A. Họ sẽ có thể thấy rằng bạn đã xoá tin nhắn."
+    "messageformat": "Tin nhắn này sẽ được xóa cho tất cả mọi người trong cuộc trò chuyện nếu họ sử dụng phiên bản mới của Signal. Họ sẽ có thể thấy rằng bạn đã xoá tin nhắn."
   },
   "icu:from": {
     "messageformat": "Từ"
@@ -960,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” là tên hồ sơ người này đặt cho chính mình trong B&A."
+    "messageformat": "“{title}” là tên hồ sơ người này đặt cho chính mình trong Signal."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Đã xác minh"
@@ -975,7 +1029,7 @@
     "messageformat": "Không có tin nhắn trực tiếp với {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Liên hệ B&A"
+    "messageformat": "Liên hệ Signal"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} có trong danh bạ của thiết bị"
@@ -1031,6 +1085,93 @@
   "icu:MessageContextMenu__info": {
     "messageformat": "Thông tin"
   },
+  "icu:MessageContextMenu__PinMessage": {
+    "messageformat": "Ghim"
+  },
+  "icu:MessageContextMenu__UnpinMessage": {
+    "messageformat": "Bỏ ghim"
+  },
+  "icu:Poll__end-poll": {
+    "messageformat": "Kết thúc"
+  },
+  "icu:PollMessage--SelectOne": {
+    "messageformat": "Hỏi ý kiến · Chọn một"
+  },
+  "icu:PollMessage--SelectMultiple": {
+    "messageformat": "Hỏi ý kiến · Chọn một hoặc hơn"
+  },
+  "icu:PollMessage--FinalResults": {
+    "messageformat": "Hỏi ý kiến · Kết quả"
+  },
+  "icu:PollMessage__ViewVotesButton": {
+    "messageformat": "Xem các bình chọn"
+  },
+  "icu:PollMessage--YouVoted": {
+    "messageformat": "Bạn đã bình chọn"
+  },
+  "icu:PollTerminate--you": {
+    "messageformat": "Bạn đã kết thúc hỏi ý kiến: {poll}"
+  },
+  "icu:PollTerminate--other": {
+    "messageformat": "{name} đã kết thúc hỏi ý kiến: {poll}"
+  },
+  "icu:PollTerminate__view-poll": {
+    "messageformat": "Xem câu hỏi"
+  },
+  "icu:PollVotesModal__title": {
+    "messageformat": "Hỏi ý kiến"
+  },
+  "icu:PollVotesModal__questionLabel": {
+    "messageformat": "Câu hỏi"
+  },
+  "icu:PollVotesModal__voteCount": {
+    "messageformat": "{count, plural, other {{count,number} bình chọn}}"
+  },
+  "icu:PollVotesModal__noVotes": {
+    "messageformat": "Không có bình chọn"
+  },
+  "icu:PollVotesModal__winningOption": {
+    "messageformat": "Lựa chọn chiếm ưu thế"
+  },
+  "icu:Toast--PinnedMessageNotFound": {
+    "messageformat": "Không tìm thấy tin nhắn ghim"
+  },
+  "icu:Toast--PollNotFound": {
+    "messageformat": "Không tìm thấy câu hỏi"
+  },
+  "icu:PollCreateModal__title": {
+    "messageformat": "Câu hỏi mới"
+  },
+  "icu:PollCreateModal__questionLabel": {
+    "messageformat": "Câu hỏi"
+  },
+  "icu:PollCreateModal__questionPlaceholder": {
+    "messageformat": "Hỏi một câu hỏi"
+  },
+  "icu:PollCreateModal__optionsLabel": {
+    "messageformat": "Tùy chọn"
+  },
+  "icu:PollCreateModal__optionPlaceholder": {
+    "messageformat": "Lựa chọn {number}"
+  },
+  "icu:PollCreateModal__allowMultipleVotes": {
+    "messageformat": "Nhiều bình chọn"
+  },
+  "icu:PollCreateModal__sendButton": {
+    "messageformat": "Gửi"
+  },
+  "icu:PollCreateModal__Error--RequiresQuestion": {
+    "messageformat": "Cần có câu hỏi"
+  },
+  "icu:PollCreateModal__Error--RequiresTwoOptions": {
+    "messageformat": "Cần ít nhất 2 lựa chọn để hỏi ý kiến"
+  },
+  "icu:PollCreateModal__Error--QuestionTooLong": {
+    "messageformat": "Câu hỏi quá dài"
+  },
+  "icu:PollCreateModal__Error--OptionTooLong": {
+    "messageformat": "Lựa chọn quá dài"
+  },
   "icu:deleteConversation": {
     "messageformat": "Xóa"
   },
@@ -1055,6 +1196,141 @@
   "icu:ConversationHeader__CannotLeaveGroupBecauseYouAreLastAdminAlert__description": {
     "messageformat": "Trước khi rời nhóm, bạn phải chọn ít nhất một quản trị viên mới cho nhóm này."
   },
+  "icu:PinnedMessageNotification__Message--You": {
+    "messageformat": "Bạn đã ghim một tin nhắn"
+  },
+  "icu:PinnedMessageNotification__Message--SomeoneElse": {
+    "messageformat": "{sender} đã ghim một tin nhắn"
+  },
+  "icu:PinnedMessageNotification__Button": {
+    "messageformat": "Đến Tin nhắn"
+  },
+  "icu:PinMessageDialog__Title": {
+    "messageformat": "Ghim tin nhắn trong…"
+  },
+  "icu:PinMessageDialog__Close": {
+    "messageformat": "Đóng"
+  },
+  "icu:PinMessageDialog__Option--TIME_24_HOURS": {
+    "messageformat": "24 giờ"
+  },
+  "icu:PinMessageDialog__Option--TIME_7_DAYS": {
+    "messageformat": "7 ngày"
+  },
+  "icu:PinMessageDialog__Option--TIME_30_DAYS": {
+    "messageformat": "30 ngày"
+  },
+  "icu:PinMessageDialog__Option--FOREVER": {
+    "messageformat": "Vĩnh viễn"
+  },
+  "icu:PinMessageDialog__Cancel": {
+    "messageformat": "Hủy"
+  },
+  "icu:PinMessageDialog__Pin": {
+    "messageformat": "Ghim"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Title": {
+    "messageformat": "Thay thế ghim cũ nhất?"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Description": {
+    "messageformat": "Thao tác ghim tin nhắn này sẽ thay thế tin nhắn được ghim cũ nhất."
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Cancel": {
+    "messageformat": "Hủy"
+  },
+  "icu:PinMessageDialog--HasMaxPinnedMessages__Continue": {
+    "messageformat": "Tiếp tục"
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Title": {
+    "messageformat": "Ghim tin nhắn tự xóa"
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Description": {
+    "messageformat": "Tin nhắn tự xóa sẽ được bỏ ghim khi đồng hồ hết giờ và tin nhắn bị xóa khỏi cuộc trò chuyện."
+  },
+  "icu:PinMessageDisappearingMessagesWarningDialog__Okay": {
+    "messageformat": "OK"
+  },
+  "icu:PinnedMessagesBar__AccessibilityLabel": {
+    "messageformat": "{pinsCount, plural, other {Tin nhắn đã ghim}}"
+  },
+  "icu:PinnedMessagesBar__Tab__AccessibilityLabel": {
+    "messageformat": "Chuyển đến ghim {pinNumber,number}"
+  },
+  "icu:PinnedMessagesBar__GoToMessageClickableArea__AccessibilityLabel": {
+    "messageformat": "Đến Tin nhắn"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__Button__AccessibilityLabel": {
+    "messageformat": "Các thao tác khác"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__UnpinMessage": {
+    "messageformat": "Bỏ ghim"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__GoToMessage": {
+    "messageformat": "Đến Tin nhắn"
+  },
+  "icu:PinnedMessagesBar__ActionsMenu__SeeAllMessages": {
+    "messageformat": "Xem tất cả tin nhắn"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--VoiceMessage": {
+    "messageformat": "Tin nhắn thoại"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Gif": {
+    "messageformat": "Ảnh GIF"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--File": {
+    "messageformat": "Tệp"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Payment": {
+    "messageformat": "Thanh toán"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Poll": {
+    "messageformat": "Hỏi ý kiến"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Sticker": {
+    "messageformat": "Nhãn dán"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--ViewOnceMedia": {
+    "messageformat": "Đa phương tiện xem một lần"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Photo": {
+    "messageformat": "Ảnh"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Video": {
+    "messageformat": "Video"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--VoiceMessage": {
+    "messageformat": "Tin nhắn thoại"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Gif": {
+    "messageformat": "Ảnh GIF"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Payment": {
+    "messageformat": "Thanh toán"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--Sticker": {
+    "messageformat": "Nhãn dán"
+  },
+  "icu:PinnedMessagesBar__MessagePreview__Text--ViewOnceMedia": {
+    "messageformat": "Đa phương tiện xem một lần"
+  },
+  "icu:PinnedMessagesPanel__Title": {
+    "messageformat": "Tin nhắn đã ghim"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages": {
+    "messageformat": "Bỏ ghim tất cả tin nhắn"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Title": {
+    "messageformat": "Bỏ ghim tất cả tin nhắn?"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Description": {
+    "messageformat": "Tin nhắn sẽ được bỏ ghim đối với thành viên của cuộc trò chuyện này."
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Cancel": {
+    "messageformat": "Hủy"
+  },
+  "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Unpin": {
+    "messageformat": "Bỏ ghim"
+  },
   "icu:sessionEnded": {
     "messageformat": "Đặt lại phiên bảo mật"
   },
@@ -1065,7 +1341,7 @@
     "messageformat": "Tìm hiểu thêm"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "B&A sử dụng công nghệ mã hóa đầu cuối và đôi lúc cần làm mới phiên trò chuyện của bạn. Việc này không ảnh hưởng sự bảo mật của cuộc trò chuyện của bạn nhưng bạn có thể bỏ lỡ tin nhắn từ liên hệ này và bạn có thể nhờ người này gửi lại."
+    "messageformat": "Signal sử dụng công nghệ mã hóa đầu cuối và đôi lúc cần làm mới phiên trò chuyện của bạn. Việc này không ảnh hưởng sự bảo mật của cuộc trò chuyện của bạn nhưng bạn có thể bỏ lỡ tin nhắn từ liên hệ này và bạn có thể nhờ người này gửi lại."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Liên lạc Hỗ trợ"
@@ -1092,7 +1368,7 @@
     "messageformat": "{sender} đã đổi số điện thoại của họ"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Liên hệ bắt đầu dùng B&A"
+    "messageformat": "Liên hệ bắt đầu dùng Signal"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} và {conversationTitle} là cùng một tài khoản. Lịch sử tin nhắn của bạn của các cuộc trò chuyện ở hai bên đều ở đây."
@@ -1172,36 +1448,6 @@
   "icu:attachmentNotAvailable__tapToViewCannotDownload": {
     "messageformat": "Không thể tải xuống đa phương tiện xem một lần"
   },
-  "icu:AttachmentNotAvailableModal__title--file": {
-    "messageformat": "Tập tin không có sẵn"
-  },
-  "icu:AttachmentNotAvailableModal__title--long-text": {
-    "messageformat": "Tin nhắn hoàn chỉnh không có sẵn"
-  },
-  "icu:AttachmentNotAvailableModal__title--media": {
-    "messageformat": "Đa phương tiện không có sẵn"
-  },
-  "icu:AttachmentNotAvailableModal__title--sticker": {
-    "messageformat": "Nhãn dán không có sẵn"
-  },
-  "icu:AttachmentNotAvailableModal__title--voice-message": {
-    "messageformat": "Tin nhắn thoại không có sẵn"
-  },
-  "icu:AttachmentNotAvailableModal__body--file": {
-    "messageformat": "Tập tin này không được chuyển từ điện thoại của bạn khi thiết bị này được liên kết. Đa phương tiện và tập tin cũ hơn 45 ngày tại thời điểm liên kết thiết bị thì không thể được đồng bộ."
-  },
-  "icu:AttachmentNotAvailableModal__body--long-text": {
-    "messageformat": "Văn bản hoàn chỉnh của tin nhắn không được chuyển từ điện thoại của bạn khi thiết bị này được liên kết. Tin nhắn văn bản có nội dung dài cũ hơn 45 ngày tại thời điểm liên kết thiết bị thì không thể được đồng bộ."
-  },
-  "icu:AttachmentNotAvailableModal__body--media": {
-    "messageformat": "Đa phương tiện này không được chuyển từ điện thoại của bạn khi thiết bị này được liên kết. Đa phương tiện cũ hơn 45 ngày tại thời điểm liên kết thiết bị thì không thể được đồng bộ."
-  },
-  "icu:AttachmentNotAvailableModal__body--sticker": {
-    "messageformat": "Nhãn dán này không được chuyển từ điện thoại của bạn khi thiết bị này được liên kết. Đa phương tiện và tập tin cũ hơn 45 ngày tại thời điểm liên kết thiết bị thì không thể được đồng bộ."
-  },
-  "icu:AttachmentNotAvailableModal__body--voice-message": {
-    "messageformat": "Tin nhắn thoại này không được chuyển từ điện thoại của bạn khi thiết bị này được liên kết. Đa phương tiện và tập tin cũ hơn 45 ngày tại thời điểm liên kết thiết bị thì không thể được đồng bộ."
-  },
   "icu:TapToViewNotAvailableModal__body--expired": {
     "messageformat": "Đa phương tiện xem một lần này không còn sẵn có để tải xuống. Hãy nhờ {name} gửi lại."
   },
@@ -1212,7 +1458,7 @@
     "messageformat": "Không tải tập tin đa phương tiện"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Kiểm tra kết nối internet của máy tính và điện thoại. Mở B&A trên điện thoại của bạn, sau đó thử tải xuống lại."
+    "messageformat": "Kiểm tra kết nối internet của máy tính và điện thoại. Mở Signal trên điện thoại của bạn, sau đó thử tải xuống lại."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Tập tin đa phương tiện này không còn trên điện thoại của bạn và không thể tải xuống."
@@ -1233,10 +1479,10 @@
     "messageformat": "Tìm hiểu thêm"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Quét mã này trong ứng dụng B&A trên điện thoại của bạn."
+    "messageformat": "Quét mã này trong ứng dụng Signal trên điện thoại của bạn."
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Mở B&A trên điện thoại của bạn"
+    "messageformat": "Mở Signal trên điện thoại của bạn"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Nhấn vào {settings}. sau đó nhấn {linkedDevices}"
@@ -1254,7 +1500,7 @@
     "messageformat": "<paragraph>Có lỗi không mong muốn xảy ra.</paragraph><paragraph>Xin hãy thử lại.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "B&A không thể liên kết thiết bị này khi sử dụng mạng hiện tại của bạn."
+    "messageformat": "Signal không thể liên kết thiết bị này khi sử dụng mạng hiện tại của bạn."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Thử lại"
@@ -1278,7 +1524,7 @@
     "messageformat": "Tên thiết bị"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Để đổi tên thiết bị này, mở B&A trên điện thoại của bạn và đến mục Cài đặt > Các thiết bị đã liên kết"
+    "messageformat": "Để đổi tên thiết bị này, mở Signal trên điện thoại của bạn và đến mục Cài đặt > Các thiết bị đã liên kết"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Màu da của emoji"
@@ -1289,8 +1535,20 @@
   "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title": {
     "messageformat": "Thêm thư mục trò chuyện"
   },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title--WithChatFolders": {
+    "messageformat": "Thêm hoặc chỉnh sửa thư mục"
+  },
   "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description": {
     "messageformat": "Sắp xếp và nhanh chóng chuyển giữa các cuộc trò chuyện trong danh sách."
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description--WithChatFolders": {
+    "messageformat": "{chatFoldersCount, plural, other {{chatFoldersCount,number} thư mục}}"
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button": {
+    "messageformat": "Thiết Lập"
+  },
+  "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button--WithChatFolders": {
+    "messageformat": "Quản lý"
   },
   "icu:Preferences__ChatsPage__ChatFoldersSection__ChatFolderItem__ContextMenu__EditFolder": {
     "messageformat": "Chỉnh sửa thư mục"
@@ -1325,14 +1583,14 @@
   "icu:Preferences__ChatFoldersPage__FoldersSection__CreateAFolderButton": {
     "messageformat": "Tạo thư mục"
   },
+  "icu:Preferences__ChatFoldersPage__FoldersSection__DragHandle__Label": {
+    "messageformat": "Kéo để di chuyển thư mục trò chuyện"
+  },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__Title": {
     "messageformat": "Thư mục đề xuất"
   },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__AddButton": {
     "messageformat": "Thêm"
-  },
-  "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__AddButton__Toast": {
-    "messageformat": "Đã thêm thư mục {chatFolderTitle}"
   },
   "icu:Preferences__ChatFoldersPage__SuggestedFoldersSection__UnreadFolder__Title": {
     "messageformat": "Chưa đọc"
@@ -1354,6 +1612,9 @@
   },
   "icu:Preferences__EditChatFolderPage__Title": {
     "messageformat": "Tạo thư mục"
+  },
+  "icu:Preferences__EditChatFolderPage__Title--EditingExistingChatFolder": {
+    "messageformat": "Chỉnh sửa thư mục"
   },
   "icu:Preferences__EditChatFolderPage__FolderNameField__Label": {
     "messageformat": "Tên thư mục"
@@ -1464,7 +1725,7 @@
     "messageformat": "Rất tiếc, bạn có quá nhiều thiết bị đã được liên kết. Hãy thử gỡ bỏ vài thiết bị."
   },
   "icu:installTooOld": {
-    "messageformat": "Cập nhật B&A trên thiết bị này để kết nối với điện thoại của bạn."
+    "messageformat": "Cập nhật Signal trên thiết bị này để kết nối với điện thoại của bạn."
   },
   "icu:installErrorHeader": {
     "messageformat": "Đã xảy ra lỗi!"
@@ -1515,7 +1776,7 @@
     "messageformat": "Đường dẫn cuộc gọi không còn hiệu lực."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Cuộc gọi B&A"
+    "messageformat": "Cuộc gọi Signal"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Không thể xóa đường dẫn. Kiểm tra kết nối của bạn và thử lại."
@@ -1531,6 +1792,12 @@
   },
   "icu:calling__removed-from-call-title": {
     "messageformat": "Đã bị gỡ khỏi cuộc gọi"
+  },
+  "icu:calling__has-max-devices": {
+    "messageformat": "Đã đạt số người tham gia tối đa cho cuộc gọi này. Thử lại sau."
+  },
+  "icu:calling__has-max-devices--title": {
+    "messageformat": "Cuộc gọi đã đầy"
   },
   "icu:CallingLobby__CallLinkNotice": {
     "messageformat": "Bất kỳ ai tham gia cuộc gọi này qua đường dẫn sẽ thấy tên và ảnh của bạn."
@@ -1665,16 +1932,16 @@
     "messageformat": "{count, plural, other {{count,number} người đang trong cuộc gọi này}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "B&A sẽ đổ chuông {person}"
+    "messageformat": "Signal sẽ đổ chuông {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "B&A sẽ đổ chuông {first} và {second}"
+    "messageformat": "Signal sẽ đổ chuông {first} và {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "B&A sẽ đổ chuông {first}, {second}, và {third}"
+    "messageformat": "Signal sẽ đổ chuông {first}, {second}, và {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {B&A sẽ đổ chuông {first}, {second}, và {others,number} người khác}}"
+    "messageformat": "{others, plural, other {Signal sẽ đổ chuông {first}, {second}, và {others,number} người khác}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} sẽ được thông báo"
@@ -1728,13 +1995,13 @@
     "messageformat": "Đang kết nối lại…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Kết nối của bạn đã mất. B&A đang kết nối lại."
+    "messageformat": "Kết nối của bạn đã mất. Signal đang kết nối lại."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "B&A đang chia sẻ {window}."
+    "messageformat": "Signal đang chia sẻ {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Tính năng chia sẻ màn hình của B&A đang hoạt động"
+    "messageformat": "Tính năng chia sẻ màn hình của Signal đang hoạt động"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Đang kết nối lại…"
@@ -1755,7 +2022,7 @@
     "messageformat": "Cần sự cho phép"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "B&A cần sự cho phép để truy cập ghi màn hình của máy tính của bạn."
+    "messageformat": "Signal cần sự cho phép để truy cập ghi màn hình của máy tính của bạn."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Đi đến Tuỳ chỉnh Hệ thống."
@@ -1764,7 +2031,7 @@
     "messageformat": "Nhấn vào biểu tượng ổ khoá ở góc bên trái phía dưới và nhập mật khẩu máy tính của bạn."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Phía bên tay phải, đánh dấu vào ô cạnh chữ B&A. Nếu bạn không thấy B&A trong danh sách, nhấn dấu + để thêm vào."
+    "messageformat": "Phía bên tay phải, đánh dấu vào ô cạnh chữ Signal. Nếu bạn không thấy Signal trong danh sách, nhấn dấu + để thêm vào."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Mở Tuỳ chỉnh Hệ thống."
@@ -1776,7 +2043,7 @@
     "messageformat": "Luôn chuyển tiếp cuộc gọi"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Chuyển tiếp tất cả cuộc gọi qua máy chủ B&A để tránh lộ địa chỉ IP với đối tác. Bật tính năng này sẽ giảm chất lượng cuộc gọi."
+    "messageformat": "Chuyển tiếp tất cả cuộc gọi qua máy chủ Signal để tránh lộ địa chỉ IP với đối tác. Bật tính năng này sẽ giảm chất lượng cuộc gọi."
   },
   "icu:permissions": {
     "messageformat": "Quyền"
@@ -1794,10 +2061,10 @@
     "messageformat": "Hiển thị tiện ích định dạng văn bản hiển thị khi văn bản được chọn"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Kiểm tra chính tả sẽ được bật lên lần tiếp theo B&A khởi động."
+    "messageformat": "Kiểm tra chính tả sẽ được bật lên lần tiếp theo Signal khởi động."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Kiểm tra chính tả đã được tắt lần tiếp theo B&A khởi động."
+    "messageformat": "Kiểm tra chính tả đã được tắt lần tiếp theo Signal khởi động."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Thu nhỏ vào thanh hệ thống"
@@ -1821,13 +2088,13 @@
     "messageformat": "Xóa tất cả dữ liệu ?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Xóa tất cả ứng dụng và tin nhắn khỏi phiên bản B&A Desktop này? Tài khoản B&A và dữ liệu của bạn trên điện thoại hoặc các thiết bị đã liên kết sẽ không bị xóa."
+    "messageformat": "Xóa tất cả ứng dụng và tin nhắn khỏi phiên bản Signal Desktop này? Tài khoản Signal và dữ liệu của bạn trên điện thoại hoặc các thiết bị đã liên kết sẽ không bị xóa."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Đang ngắt kết nối và xóa toàn bộ dữ liệu…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Bạn có dữ liệu cũ từ một lần cài đặt trước của B&A Desktop. Nếu bạn chọn để tiếp tục, dữ liệu sẽ bị xoá và bạn sẽ bắt đầu lại từ đầu."
+    "messageformat": "Bạn có dữ liệu cũ từ một lần cài đặt trước của Signal Desktop. Nếu bạn chọn để tiếp tục, dữ liệu sẽ bị xoá và bạn sẽ bắt đầu lại từ đầu."
   },
   "icu:deleteOldData": {
     "messageformat": "Xoá Dữ liệu Cũ"
@@ -1850,6 +2117,9 @@
   "icu:notificationReactionMessage": {
     "messageformat": "{sender} đã phản hồi {emoji} cho: {message}"
   },
+  "icu:notificationPollVoteMessage": {
+    "messageformat": "{sender} đã bình chọn trong cuộc hỏi ý kiến: \"{pollQuestion}\""
+  },
   "icu:sendFailed": {
     "messageformat": "Không gửi được"
   },
@@ -1869,10 +2139,10 @@
     "messageformat": "Đã xóa một phần, bấm để thử lại"
   },
   "icu:expiredWarning": {
-    "messageformat": "Phiên bản này của B&A Desktop đã hết hạn. Vui lòng nâng cấp lên phiên bản mới nhất để tiếp tục nhắn tin."
+    "messageformat": "Phiên bản này của Signal Desktop đã hết hạn. Vui lòng nâng cấp lên phiên bản mới nhất để tiếp tục nhắn tin."
   },
   "icu:upgrade": {
-    "messageformat": "Nhấn để truy cập ba-chat.com/download"
+    "messageformat": "Nhấn để truy cập signal.org/download"
   },
   "icu:mediaMessage": {
     "messageformat": "Tin nhắn Đa phương tiện"
@@ -1881,7 +2151,7 @@
     "messageformat": "Nhập danh bạ"
   },
   "icu:syncExplanation": {
-    "messageformat": "Nhập tất cả liên hệ và nhóm của B&A từ thiết bị di động của bạn."
+    "messageformat": "Nhập tất cả liên hệ và nhóm của Signal từ thiết bị di động của bạn."
   },
   "icu:syncNow": {
     "messageformat": "Nhập ngay"
@@ -1917,7 +2187,7 @@
     "messageformat": "Hôm qua {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "B&A có khả năng không thể xử lý tin nhắn đến."
+    "messageformat": "Signal có khả năng không thể xử lý tin nhắn đến."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Tin nhắn quá dài."
@@ -2067,16 +2337,19 @@
     "messageformat": "Tải xuống không thành công"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Tải xuống tập tin đính kèm từ bản sao lưu không thành công"
+    "messageformat": "Attachment missing from backup CDN"
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Các chỉnh sửa chỉ có thể được thực hiện trong vòng 24 giờ kể từ lúc bạn gửi tin nhắn này."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} không phải là người dùng B&A. Hãy kiểm tra lại bạn đã nhập đầy đủ tên người dùng hay chưa."
+    "messageformat": "{atUsername} không phải là người dùng Signal. Hãy kiểm tra lại bạn đã nhập đầy đủ tên người dùng hay chưa."
+  },
+  "icu:startConversation--username-not-valid": {
+    "messageformat": "Tên người dùng {atUsername} không hợp lệ. Đảm bảo rằng bạn đã nhập đầy đủ tên người dùng có dãy số phía sau."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Không tìm thấy người dùng. \"{phoneNumber}\" không phải là người dùng B&A."
+    "messageformat": "Không tìm thấy người dùng. \"{phoneNumber}\" không phải là người dùng Signal."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Không tìm thấy người dùng. Số điện thoại \"{phoneNumber}\" không hợp lệ."
@@ -2097,13 +2370,13 @@
     "messageformat": "Đã đạt kích cỡ nhóm tối đa"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Nhóm B&A có thể có tối đa {max,number} thành viên."
+    "messageformat": "Nhóm Signal có thể có tối đa {max,number} thành viên."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Đã đạt giới hạn thành viên được khuyến nghị"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Nhóm B&A hoạt động tốt nhất với {max,number} thành viên hoặc ít hơn. Thêm nhiều thành viên hơn sẽ gây trì hoãn trong việc nhận và gửi tin nhắn."
+    "messageformat": "Nhóm Signal hoạt động tốt nhất với {max,number} thành viên hoặc ít hơn. Thêm nhiều thành viên hơn sẽ gây trì hoãn trong việc nhận và gửi tin nhắn."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Đặt tên nhóm này"
@@ -2133,7 +2406,7 @@
     "messageformat": "Cập nhật nhóm không thành công. Kiểm tra kết nối của bạn và thử lại."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Nhấp để liên kết lại B&A Desktop với thiết bị di động của bạn để tiếp tục nhắn tin."
+    "messageformat": "Nhấp để liên kết lại Signal Desktop với thiết bị di động của bạn để tiếp tục nhắn tin."
   },
   "icu:unlinked": {
     "messageformat": "Đã bỏ liên kết"
@@ -2145,16 +2418,16 @@
     "messageformat": "Thử cập nhật lại"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Nhấp để khởi động lại B&A"
+    "messageformat": "Nhấp để khởi động lại Signal"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Nhấp để tải bản cập nhật"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "B&A không thể cập nhật. Bấm để thử lại."
+    "messageformat": "Signal không thể cập nhật. Bấm để thử lại."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Khởi động lại B&A"
+    "messageformat": "Khởi động lại Signal"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Bỏ qua bản cập nhật"
@@ -2228,6 +2501,9 @@
   "icu:message--getNotificationText--stickers": {
     "messageformat": "Nhãn dán tin nhắn"
   },
+  "icu:Poll--preview": {
+    "messageformat": "Hỏi ý kiến: {pollQuestion}"
+  },
   "icu:message--getNotificationText--text-with-emoji": {
     "messageformat": "{emoji} {text}"
   },
@@ -2256,7 +2532,7 @@
     "messageformat": "Không thể hiển thị một số tệp đính kèm vì quá lớn."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Sử dụng đường dẫn này để tham gia cuộc gọi B&A"
+    "messageformat": "Sử dụng đường dẫn này để tham gia cuộc gọi Signal"
   },
   "icu:donation--missing": {
     "messageformat": "Không thể lấy thông tin ủng hộ"
@@ -2268,7 +2544,7 @@
     "messageformat": "Nhấn vào tin nhắn này trên điện thoại để xem khoản ủng hộ của bạn"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} đã thay mặt bạn ủng hộ B&A"
+    "messageformat": "{sender} đã thay mặt bạn ủng hộ Signal"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Kiểm tra điện thoại của bạn để mở khoản ủng hộ này"
@@ -2284,6 +2560,12 @@
   },
   "icu:message--donation--preview--sent": {
     "messageformat": "Bạn đã ủng hộ thay cho {recipient}"
+  },
+  "icu:message--pinned--preview--received": {
+    "messageformat": "{sender} đã ghim một tin nhắn"
+  },
+  "icu:message--pinned--preview--sent": {
+    "messageformat": "Bạn đã ghim một tin nhắn"
   },
   "icu:message--donation": {
     "messageformat": "Khoản Ủng hộ"
@@ -2319,7 +2601,7 @@
     "messageformat": "Cảm ơn bạn đã đóng góp!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Bạn đã gửi một khoản ủng hộ cho B&A thay cho {name}. Họ sẽ có tuỳ chọn để thể hiện sự ủng hộ của mình trên hồ sơ."
+    "messageformat": "Bạn đã gửi một khoản ủng hộ cho Signal thay cho {name}. Họ sẽ có tuỳ chọn để thể hiện sự ủng hộ của mình trên hồ sơ."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Không thể cài đặt gói nhãn dán"
@@ -2334,10 +2616,10 @@
     "messageformat": "Không có nhãn dán nào được cài đặt"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Tuyển tập Nghệ sĩ B&A"
+    "messageformat": "Tuyển tập Nghệ sĩ Signal"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Không có sẵn nhãn dán Nghệ sĩ B&A"
+    "messageformat": "Không có sẵn nhãn dán Nghệ sĩ Signal"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Các Nhãn dán Bạn Đã nhận được"
@@ -2354,101 +2636,11 @@
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Bạn có thể sẽ không cài lại được gói nhãn dán này nếu bạn không còn tin nhắn nguồn."
   },
-  "icu:stickers--StickerManager--Introduction--Image": {
-    "messageformat": "Xin giới thiệu nhãn dán: Bandit the Cat"
-  },
-  "icu:stickers--StickerManager--Introduction--Title": {
-    "messageformat": "Xin giới thiệu Nhãn dán"
-  },
-  "icu:stickers--StickerManager--Introduction--Body": {
-    "messageformat": "Tại sao phải sử dụng từ ngữ khi mà bạn có thể sử dụng nhãn dán?"
-  },
-  "icu:stickers--StickerPicker--Open": {
-    "messageformat": "Mở bộ chọn nhãn dán"
-  },
-  "icu:stickers--StickerPicker--AddPack": {
-    "messageformat": "Đã thêm bộ nhãn dán"
-  },
-  "icu:stickers--StickerPicker--NextPage": {
-    "messageformat": "Trang Tiếp theo"
-  },
-  "icu:stickers--StickerPicker--PrevPage": {
-    "messageformat": "Trang Trước"
-  },
-  "icu:stickers--StickerPicker--Recents": {
-    "messageformat": "Nhãn dán Gần đây"
-  },
-  "icu:stickers--StickerPicker--DownloadError": {
-    "messageformat": "Một vài nhãn dán đã không thể tải xuống."
-  },
-  "icu:stickers--StickerPicker--DownloadPending": {
-    "messageformat": "Đang cài đặt gói nhãn dán…"
-  },
-  "icu:stickers--StickerPicker--Empty": {
-    "messageformat": "Không tìm thấy nhãn dán"
-  },
-  "icu:stickers--StickerPicker--Hint": {
-    "messageformat": "Gói nhãn dán mới từ tin nhắn của bạn có sẵn để cài đặt"
-  },
-  "icu:stickers--StickerPicker--NoPacks": {
-    "messageformat": "Không tìm thấy gói nhãn dán"
-  },
-  "icu:stickers--StickerPicker--NoRecents": {
-    "messageformat": "Các nhãn dán mói được sử dụng sẽ xuất hiện ở đây."
-  },
-  "icu:stickers__StickerPicker__recent": {
-    "messageformat": "Gần đây"
-  },
-  "icu:stickers__StickerPicker__featured": {
-    "messageformat": "Nổi bật"
-  },
-  "icu:stickers__StickerPicker__analog-time": {
-    "messageformat": "Đồng hồ analog"
-  },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Gói Nhãn dán"
   },
   "icu:stickers--StickerPreview--Error": {
     "messageformat": "Lỗi khi mở gói nhãn dán. Kiểm tra kết nối internet của bạn và thử lại."
-  },
-  "icu:EmojiPicker--empty": {
-    "messageformat": "Không tìm thấy biểu tượng cảm xúc"
-  },
-  "icu:EmojiPicker--search-close": {
-    "messageformat": "Đóng tìm kiếm emoji"
-  },
-  "icu:EmojiPicker--search-placeholder": {
-    "messageformat": "Tìm kiếm Biểu tượng cảm xúc"
-  },
-  "icu:EmojiPicker--skin-tone": {
-    "messageformat": "Màu da {tone}"
-  },
-  "icu:EmojiPicker__button--recents": {
-    "messageformat": "Gần đây"
-  },
-  "icu:EmojiPicker__button--emoji": {
-    "messageformat": "Emoji"
-  },
-  "icu:EmojiPicker__button--animal": {
-    "messageformat": "Thú vật"
-  },
-  "icu:EmojiPicker__button--food": {
-    "messageformat": "Thức ăn"
-  },
-  "icu:EmojiPicker__button--activity": {
-    "messageformat": "Hoạt động"
-  },
-  "icu:EmojiPicker__button--travel": {
-    "messageformat": "Du lịch"
-  },
-  "icu:EmojiPicker__button--object": {
-    "messageformat": "Vật dụng"
-  },
-  "icu:EmojiPicker__button--symbol": {
-    "messageformat": "Biểu tượng"
-  },
-  "icu:EmojiPicker__button--flag": {
-    "messageformat": "Cờ"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -2558,6 +2750,9 @@
   "icu:FunPanelStickers__SubNavCategoryLabel--Recents": {
     "messageformat": "Sử dụng gần đây"
   },
+  "icu:FunPanelStickers__SubNavButton--AddStickerPack": {
+    "messageformat": "Đã thêm bộ nhãn dán"
+  },
   "icu:FunPanelStickers__SectionTitle--SearchResults": {
     "messageformat": "Kết quả tìm kiếm"
   },
@@ -2576,8 +2771,14 @@
   "icu:FunPanelGifs__SearchLabel--Tenor": {
     "messageformat": "Tìm GIF qua Tenor"
   },
+  "icu:FunPanelGifs__SearchLabel": {
+    "messageformat": "Tìm GIF"
+  },
   "icu:FunPanelGifs__SearchPlaceholder--Tenor": {
     "messageformat": "Tìm qua Tenor"
+  },
+  "icu:FunPanelGifs__SearchPlaceholder": {
+    "messageformat": "Tìm GIF"
   },
   "icu:FunPanelGifs__SubNavLabel": {
     "messageformat": "Danh mục GIF"
@@ -2623,6 +2824,9 @@
   },
   "icu:FunPanelGifs__LightboxDialog__Label": {
     "messageformat": "Xem trước GIF"
+  },
+  "icu:FunPanelGifs__GiphyAttribution__AccessibilityLabel": {
+    "messageformat": "Được cung cấp bởi GIPHY"
   },
   "icu:FunSearch__ClearButtonLabel": {
     "messageformat": "Xoá Tìm kiếm"
@@ -2679,19 +2883,19 @@
     "messageformat": "Không thể hiển thị thêm vì tin nhắn quá dài"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} đã gửi cho bạn một tin nhắn nhưng không thể xử lý hoặc hiển thị vì sử dụng tính năng B&A mới."
+    "messageformat": "{contact} đã gửi cho bạn một tin nhắn nhưng không thể xử lý hoặc hiển thị vì sử dụng tính năng Signal mới."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Bạn có thể yêu cầu {contact} gửi lại tin nhắn này khi bạn đang sử dụng phiên bản B&A mới cập nhật."
+    "messageformat": "Bạn có thể yêu cầu {contact} gửi lại tin nhắn này khi bạn đang sử dụng phiên bản Signal mới cập nhật."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Một trong những thiết bị của bạn đã gửi một tin nhắn không thể xử lý hoặc hiển thị vì sử dụng tính năng B&A mới."
+    "messageformat": "Một trong những thiết bị của bạn đã gửi một tin nhắn không thể xử lý hoặc hiển thị vì sử dụng tính năng Signal mới."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Các tin nhắn như thế này trong tương lai sẽ được đồng bộ hóa khi bạn đang sử dụng phiên bản  B&A cập nhật."
+    "messageformat": "Các tin nhắn như thế này trong tương lai sẽ được đồng bộ hóa khi bạn đang sử dụng phiên bản  Signal cập nhật."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Cập nhật B&A"
+    "messageformat": "Cập nhật Signal"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Đã xem"
@@ -2955,7 +3159,7 @@
     "messageformat": "Cuộc trò chuyện đã được đánh dấu chưa đọc"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Vui lòng cài B&A trên điện thoại và máy tính để sử dụng Công Cụ Tạo Nhãn Dán B&A"
+    "messageformat": "Vui lòng cài Signal trên điện thoại và máy tính để sử dụng Công Cụ Tạo Nhãn Dán Signal"
   },
   "icu:Reactions--remove": {
     "messageformat": "Gỡ biểu cảm"
@@ -2979,7 +3183,7 @@
     "messageformat": "Tên và tài khoản giả"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "B&A sẽ không bao giờ liên hệ bạn để lấy mã đăng ký hoặc mã PIN. Hãy cẩn trọng với các yêu cầu mạo danh. Tên hồ sơ được chọn bởi chủ tài khoản và không được xác minh."
+    "messageformat": "Signal sẽ không bao giờ liên hệ bạn để lấy mã đăng ký hoặc mã PIN. Hãy cẩn trọng với các yêu cầu mạo danh. Tên hồ sơ được chọn bởi chủ tài khoản và không được xác minh."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Lừa đảo tiền điện tử hoặc tiền"
@@ -3069,13 +3273,13 @@
     "messageformat": "Báo cáo là spam?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "B&A sẽ nhận được thông báo rằng người này có thể đang gửi spam. B&A không thể xem nội dung của bất kỳ cuộc trò chuyện nào."
+    "messageformat": "Signal sẽ nhận được thông báo rằng người này có thể đang gửi spam. Signal không thể xem nội dung của bất kỳ cuộc trò chuyện nào."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "B&A sẽ nhận được thông báo rằng người đã mời bạn vào nhóm này có thể đang gửi spam. B&A không thể xem nội dung của bất kỳ cuộc trò chuyện nào."
+    "messageformat": "Signal sẽ nhận được thông báo rằng người đã mời bạn vào nhóm này có thể đang gửi spam. Signal không thể xem nội dung của bất kỳ cuộc trò chuyện nào."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "B&A sẽ nhận được thông báo rằng {name}, người đã mời bạn vào nhóm này, có thể đang gửi spam. B&A không thể xem nội dung của bất kỳ cuộc trò chuyện nào."
+    "messageformat": "Signal sẽ nhận được thông báo rằng {name}, người đã mời bạn vào nhóm này, có thể đang gửi spam. Signal không thể xem nội dung của bất kỳ cuộc trò chuyện nào."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Báo cáo spam"
@@ -3171,7 +3375,7 @@
     "messageformat": "<clickable>Tên hồ sơ</clickable> chưa được xác minh"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Đây là cuộc trò chuyện chính thức và duy nhất từ B&A"
+    "messageformat": "Đây là cuộc trò chuyện chính thức và duy nhất từ Signal"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Cập nhật tin tức và thông tin về bản cập nhật."
@@ -3237,10 +3441,10 @@
     "messageformat": "Cuộc gọi video không được trả lời"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "B&A vẫn đang chạy"
+    "messageformat": "Signal vẫn đang chạy"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "B&A sẽ tiếp tục chạy ở vùng thông báo. Bạn có thể thay đổi trong mục cài đặt của B&A."
+    "messageformat": "Signal sẽ tiếp tục chạy ở vùng thông báo. Bạn có thể thay đổi trong mục cài đặt của Signal."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Cuộc gọi thoại đến"
@@ -3524,9 +3728,6 @@
   "icu:muteExpirationLabel": {
     "messageformat": "Tắt tiếng cho tới {duration}"
   },
-  "icu:EmojiButton__label": {
-    "messageformat": "Emoji"
-  },
   "icu:ErrorModal--title": {
     "messageformat": "Đã xảy ra lỗi!"
   },
@@ -3552,7 +3753,7 @@
     "messageformat": "{max, plural, other {Chỉ {max,number} chỉnh sửa có thể được áp dụng cho tin nhắn này.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Xin lỗi, đường dẫn baxs:// không đúng!"
+    "messageformat": "Xin lỗi, đường dẫn sgnl:// không đúng!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "Bạn không thể gửi tin nhắn cho nhóm đó."
@@ -3579,7 +3780,7 @@
     "messageformat": "Không rõ phiên bản đường dẫn"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Đường dẫn này không được hỗ trợ bởi phiên bản B&A Desktop này."
+    "messageformat": "Đường dẫn này không được hỗ trợ bởi phiên bản Signal Desktop này."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Không thể Tham gia Nhóm"
@@ -4134,22 +4335,22 @@
     "messageformat": "Quá trình này có thể mất ít phút"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Ủng hộ B&A"
+    "messageformat": "Ủng hộ Signal"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Ủng hộ B&A"
+    "messageformat": "Ủng hộ Signal"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "B&A được hỗ trợ bởi những người như bạn. Đóng góp và nhận huy hiệu."
+    "messageformat": "Signal được hỗ trợ bởi những người như bạn. Đóng góp và nhận huy hiệu."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Mở B&A trên điện thoại của bạn"
+    "messageformat": "Mở Signal trên điện thoại của bạn"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Nhấn vào ảnh đại diện của bạn ở góc trên bên trái để mở Cài đặt"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Nhấn nút \"Ủng hộ B&A\" và đăng ký ủng hộ"
+    "messageformat": "Nhấn nút \"Ủng hộ Signal\" và đăng ký ủng hộ"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Hồ sơ của bạn đã được dịch chuyển"
@@ -4275,7 +4476,7 @@
     "messageformat": "Cần thao tác"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Bạn phải mở B&A trên điện thoại để tiếp tục sử dụng tài khoản này. Nếu không mở B&A trên điện thoại, tài khoản của bạn sẽ sớm bị xóa. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
+    "messageformat": "Bạn phải mở Signal trên điện thoại để tiếp tục sử dụng tài khoản này. Nếu không mở Signal trên điện thoại, tài khoản của bạn sẽ sớm bị xóa. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Không thể khôi phục tập tin đa phương tiện"
@@ -4289,11 +4490,23 @@
   "icu:CompositionArea--attach-file": {
     "messageformat": "Đính kèm tệp"
   },
+  "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
+    "messageformat": "Ảnh & video"
+  },
+  "icu:CompositionArea__AttachMenu__File": {
+    "messageformat": "Tệp"
+  },
+  "icu:CompositionArea__AttachMenu__Poll": {
+    "messageformat": "Hỏi ý kiến"
+  },
+  "icu:CompositionArea--attach-plus": {
+    "messageformat": "Thêm tập tin hoặc hỏi ý kiến"
+  },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Người này đang không dùng B&A"
+    "messageformat": "Người này đang không dùng Signal"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "B&A Desktop không hỗ trợ nhắn tin cho các liên hệ ngoài-B&A. Hãy hỏi người này cài đặt B&A để có trải nghiệm nhắn tin bảo mật hơn."
+    "messageformat": "Signal Desktop không hỗ trợ nhắn tin cho các liên hệ ngoài-Signal. Hãy hỏi người này cài đặt Signal để có trải nghiệm nhắn tin bảo mật hơn."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Kiểm tra trạng thái đăng kí của liên hệ"
@@ -4439,8 +4652,8 @@
   "icu:ConversationDetailsActions--block-group-modal-confirm": {
     "messageformat": "Chặn"
   },
-  "icu:ConversationDetailsActions--unblock-group-modal-content": {
-    "messageformat": "Các liên hệ của bạn sẽ được thêm vào nhóm này."
+  "icu:ConversationDetailsActions--unblock-group-modal-body": {
+    "messageformat": "Các liên hệ sẽ có thể thêm bạn vào nhóm này."
   },
   "icu:ConversationDetailsActions--unblock-group-modal-confirm": {
     "messageformat": "Bỏ chặn"
@@ -4476,7 +4689,7 @@
     "messageformat": "Biệt danh"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Biệt danh và ghi chú được lưu trữ với B&A và được mã hóa đầu cuối của B&A. Những nội dung này chỉ hiển thị với bạn."
+    "messageformat": "Biệt danh và ghi chú được lưu trữ với Signal và được mã hóa đầu cuối của Signal. Những nội dung này chỉ hiển thị với bạn."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Tên"
@@ -4527,7 +4740,7 @@
     "messageformat": "Yêu cầu người quản lý chấp duyệt thành viên mới tham gia qua đường dẫn nhóm"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Sao chép đường dẫn B&A group vào clipboard"
+    "messageformat": "Sao chép đường dẫn signal.group vào clipboard"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Yêu cầu ({count,number})"
@@ -4731,13 +4944,13 @@
     "messageformat": "Không thể chuyển tiếp tin nhắn trống hoặc đã xóa"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Sử dụng đường dẫn này để tham gia cuộc gọi B&A: {url}"
+    "messageformat": "Sử dụng đường dẫn này để tham gia cuộc gọi Signal: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Lời khuyên để giữ an toàn"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Kiểm tra các yêu cầu một cách kĩ lưỡng. B&A tìm thấy một liên hệ cùng tên. <reviewRequestLink>Kiểm tra yêu cầu</reviewRequestLink>"
+    "messageformat": "Kiểm tra các yêu cầu một cách kĩ lưỡng. Signal tìm thấy một liên hệ cùng tên. <reviewRequestLink>Kiểm tra yêu cầu</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {{count,number} thành viên nhóm có tên giống nhau. <reviewRequestLink>Kiểm tra thành viên</reviewRequestLink>}}"
@@ -4770,7 +4983,7 @@
     "messageformat": "Không có nhóm chung nào khác"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Liên hệ B&A"
+    "messageformat": "Liên hệ Signal"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Gần đây đã đổi tên hồ sơ từ {oldName} thành {newName}"
@@ -4788,7 +5001,7 @@
     "messageformat": "Hãy xác minh để tiếp tục nhắn tin."
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Để hạn chế spam trên B&A, vui lòng thực hiện xác minh."
+    "messageformat": "Để hạn chế spam trên Signal, vui lòng thực hiện xác minh."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Sau khi xác minh, bạn có thể tiếp tục nhắn tin. Những tin nhắn đang tạm dừng sẽ được tự động gửi."
@@ -4943,6 +5156,66 @@
   "icu:ConversationDetailsHeader--add-group-description": {
     "messageformat": "Thêm miêu tả nhóm…"
   },
+  "icu:AudioListItem__subtitle--voice-message": {
+    "messageformat": "Tin nhắn Thoại"
+  },
+  "icu:AudioListItem__subtitle--audio": {
+    "messageformat": "Âm thanh"
+  },
+  "icu:ContactListItem__subtitle": {
+    "messageformat": "Liên hệ"
+  },
+  "icu:LinkPreviewItem__alt": {
+    "messageformat": "Mở đường dẫn trong trình duyệt"
+  },
+  "icu:ListItem__show-message": {
+    "messageformat": "Hiển thị tin nhắn trong cuộc trò chuyện"
+  },
+  "icu:MediaGallery__tab__audio": {
+    "messageformat": "Âm thanh"
+  },
+  "icu:MediaGallery__tab__files": {
+    "messageformat": "Tệp"
+  },
+  "icu:MediaGallery__tab__links": {
+    "messageformat": "Đường dẫn"
+  },
+  "icu:MediaGallery__sort": {
+    "messageformat": "Sắp xếp theo"
+  },
+  "icu:MediaGallery__sort--header": {
+    "messageformat": "Sắp xếp theo"
+  },
+  "icu:MediaGallery__sort__date": {
+    "messageformat": "Ngày"
+  },
+  "icu:MediaGallery__sort__size": {
+    "messageformat": "Dung lượng"
+  },
+  "icu:MediaGallery__EmptyState__title--media": {
+    "messageformat": "Không có đa phương tiện"
+  },
+  "icu:MediaGallery__EmptyState__description--media": {
+    "messageformat": "Ảnh, Video và hình GIF bạn gửi và nhận sẽ hiển thị ở đây"
+  },
+  "icu:MediaGallery__EmptyState__title--audio": {
+    "messageformat": "Không có tệp Âm thanh"
+  },
+  "icu:MediaGallery__EmptyState__description--audio": {
+    "messageformat": "Tin nhắn Thoại và Tệp Âm thanh bạn gửi và nhận sẽ hiển thị ở đây"
+  },
+  "icu:MediaGallery__EmptyState__title--links": {
+    "messageformat": "Không có đường dẫn"
+  },
+  "icu:MediaGallery__EmptyState__description--links-2": {
+    "messageformat": "Đường dẫn bạn gửi và nhận sẽ hiển thị ở đây"
+  },
+  "icu:MediaGallery__EmptyState__title--documents": {
+    "messageformat": "Không có tập tin"
+  },
+  "icu:MediaGallery__EmptyState__description--documents-2": {
+    "messageformat": "Tập tin bạn gửi và nhận sẽ hiển thị ở đây"
+  },
   "icu:MediaQualitySelector--button": {
     "messageformat": "Chọn chất lượng đa phương tiện"
   },
@@ -5094,7 +5367,7 @@
     "messageformat": "Bạn có muốn bỏ các thay đổi này?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Đóng B&A và kết thúc cuộc gọi?"
+    "messageformat": "Đóng Signal và kết thúc cuộc gọi?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Để sau"
@@ -5181,7 +5454,7 @@
     "messageformat": "Chung"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Ủng hộ B&A"
+    "messageformat": "Ủng hộ Signal"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Diện mạo"
@@ -5262,7 +5535,7 @@
     "messageformat": "Tạo xem trước liên kết"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Để thay đổi cài đặt này, hãy mở ứng dụng B&A trên thiết bị di động của bạn và điều hướng đến Cài đặt > Trò chuyện"
+    "messageformat": "Để thay đổi cài đặt này, hãy mở ứng dụng Signal trên thiết bị di động của bạn và điều hướng đến Cài đặt > Trò chuyện"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Chuyển đổi biểu tượng cảm xúc khi bạn nhập thành emoji"
@@ -5282,17 +5555,356 @@
   "icu:Preferences--notification-content": {
     "messageformat": "Nội dung thông báo"
   },
+  "icu:PlaintextExport--PreferencesRow--Header": {
+    "messageformat": "Xuất lịch sử trò chuyện"
+  },
+  "icu:PlaintextExport--PreferencesRow--Description": {
+    "messageformat": "Xuất định dạng JSON máy có thể đọc được của tất cả các cuộc trò chuyện của bạn. Tin nhắn tự xóa sẽ không được xuất."
+  },
+  "icu:PlaintextExport--ActionButton": {
+    "messageformat": "Xuất"
+  },
+  "icu:PlaintextExport--Confirmation--Header": {
+    "messageformat": "Xuất lịch sử trò chuyện?"
+  },
+  "icu:PlaintextExport--Confirmation--Description": {
+    "messageformat": "<bold>HÃY CẨN THẬN!</bold> KHÔNG chia sẻ tập tin này với bất kỳ ai. Lịch sử trò chuyện của bạn sẽ được lưu vào máy tính của bạn và các ứng dụng khác có thể truy cập nó tùy vào quyền của máy tính."
+  },
+  "icu:PlaintextExport--Confirmation--IncludeMedia": {
+    "messageformat": "Bao gồm đa phương tiện <secondary>(dung lượng tập tin lớn hơn)</secondary>"
+  },
+  "icu:PlaintextExport--Confirmation--ContinueButton": {
+    "messageformat": "Tiếp tục"
+  },
+  "icu:PlaintextExport--Confirmation--WaitingLabel": {
+    "messageformat": "Đang chờ"
+  },
+  "icu:PlaintextExport--OSPrompt--Mac": {
+    "messageformat": "xuất lịch sử trò chuyện"
+  },
+  "icu:PlaintextExport--OSPrompt--Windows": {
+    "messageformat": "Xác minh danh tính của bạn để xuất lịch sử trò chuyện của bạn."
+  },
+  "icu:PlaintextExport--OSPrompt--description--Linux": {
+    "messageformat": "Xuất"
+  },
+  "icu:PlaintextExport--OSPrompt--message--Linux": {
+    "messageformat": "Cần xác thực để xuất lịch sử trò chuyện của bạn."
+  },
+  "icu:PlaintextExport--ProgressDialog--Header": {
+    "messageformat": "Đang xuất lịch sử trò chuyện"
+  },
+  "icu:PlaintextExport--ProgressDialog--Progress": {
+    "messageformat": "Đang xuất {currentBytes} của tổng số {totalBytes} ({percentage,number,percent})…"
+  },
+  "icu:PlaintextExport--ProgressDialog--TimeWarning": {
+    "messageformat": "Quá trình này có thể mất ít phút"
+  },
+  "icu:PlaintextExport--CompleteDialog--Header": {
+    "messageformat": "Xuất thành công"
+  },
+  "icu:PlaintextExport--CompleteDialog--Description": {
+    "messageformat": "<bold>HÃY CẨN THẬN</bold> khi chọn nơi lưu tập tin xuất cuộc trò chuyện và không chia sẻ nó với bất kỳ ai. Các ứng dụng khác trên máy tính của bạn có thể truy cập tập tin đó tùy thuộc vào quyền của máy tính của bạn. "
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Mac": {
+    "messageformat": "Hiển thị trong Finder"
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Linux": {
+    "messageformat": "Hiển thị trong thư mục"
+  },
+  "icu:PlaintextExport--CompleteDialog--ShowFiles--Windows": {
+    "messageformat": "Hiển thị trong thư mục"
+  },
+  "icu:PlaintextExport--Error--General--Title": {
+    "messageformat": "Không thể xuất lịch sử trò chuyện"
+  },
+  "icu:PlaintextExport--Error--General--Description": {
+    "messageformat": "Đã xảy ra lỗi và không thể xuất lịch sử trò chuyện của bạn."
+  },
+  "icu:PlaintextExport--Error--NotEnoughStorage--Title": {
+    "messageformat": "Không đủ dung lượng"
+  },
+  "icu:PlaintextExport--Error--NotEnoughStorage--Detail": {
+    "messageformat": "Không thể xuất lịch sử trò chuyện của bạn vì máy tính của bạn không đủ dung lượng lưu trữ trống. Giải phóng {bytes} dung lượng và sau đó thử lại."
+  },
+  "icu:PlaintextExport--Error--RanOutOfStorage--Title": {
+    "messageformat": "Không thể xuất lịch sử trò chuyện"
+  },
+  "icu:PlaintextExport--Error--RanOutOfStorage--Detail": {
+    "messageformat": "Không thể xuất lịch sử trò chuyện của bạn vì máy tính của bạn không có đủ dung lượng lưu trữ trống. Giải phóng {bytes} dung lượng và sau đó thử lại."
+  },
+  "icu:PlaintextExport--Error--DiskPermssions--Title": {
+    "messageformat": "Không thể xuất lịch sử trò chuyện"
+  },
+  "icu:PlaintextExport--Error--DiskPermssions--Detail": {
+    "messageformat": "Lịch sử trò chuyện của bạn không thể được xuất vì Signal không có quyền ghi tập tin vào ổ lưu trữ. Hãy thử thay đổi quyền của ổ lưu trữ hoặc cập nhật cài đặt hệ thống của bạn và sau đó xuất lại."
+  },
+  "icu:LocalBackupExport--ProgressDialog--Header": {
+    "messageformat": "Đang xuất bản sao lưu"
+  },
+  "icu:LocalBackupExport--CompleteDialog--Header": {
+    "messageformat": "Hoàn tất xuất bản sao lưu"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsHeader": {
+    "messageformat": "Để khôi phục bản sao lưu này:"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsTransfer": {
+    "messageformat": "Chuyển thư mục sao lưu vào bộ nhớ trên điện thoại của bạn"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
+    "messageformat": "Cài mới Signal trên điện thoại của bạn"
+  },
+  "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
+    "messageformat": "Nhấn \"Khôi phục hoặc chuyển\" và chọn \"Sao lưu trên thiết bị\""
+  },
+  "icu:NotificationProfile--moon-icon": {
+    "messageformat": "Biểu tượng mặt trăng"
+  },
+  "icu:NotificationProfile--copy-label": {
+    "messageformat": "Bản sao của {profileName}"
+  },
+  "icu:NotificationProfile--am": {
+    "messageformat": "AM"
+  },
+  "icu:NotificationProfile--pm": {
+    "messageformat": "PM"
+  },
+  "icu:NotificationProfile--time-separator": {
+    "messageformat": ":"
+  },
+  "icu:NotificationProfileMenuItem": {
+    "messageformat": "Cấu hình thông báo"
+  },
+  "icu:NotificationProfileMenu--header": {
+    "messageformat": "Cấu hình Thông báo"
+  },
+  "icu:NotificationProfileMenu--on": {
+    "messageformat": "Bật"
+  },
+  "icu:NotificationProfileMenu--on-with-end": {
+    "messageformat": "Bật cho đến khi {endTime}"
+  },
+  "icu:NotificationProfileMenu--for-one-hour": {
+    "messageformat": "Một giờ"
+  },
+  "icu:NotificationProfileMenu--until-time": {
+    "messageformat": "Cho đến {time}"
+  },
+  "icu:NotificationProfileMenu--settings": {
+    "messageformat": "Cài đặt"
+  },
+  "icu:NotificationProfilesToast--enabled": {
+    "messageformat": "Đã bật \"{name}\""
+  },
+  "icu:NotificationProfilesToast--disabled": {
+    "messageformat": "Đã tắt \"{name}\""
+  },
+  "icu:NotificationProfilesToast--enabled--label": {
+    "messageformat": "Đã bật cấu hình thông báo"
+  },
+  "icu:NotificationProfilesToast--disabled--label": {
+    "messageformat": "Đã tắt cấu hình thông báo"
+  },
+  "icu:NotificationProfiles--setting": {
+    "messageformat": "Cấu hình thông báo"
+  },
+  "icu:NotificationProfiles--setup": {
+    "messageformat": "Thiết Lập"
+  },
+  "icu:NotificationProfiles--title": {
+    "messageformat": "Cấu hình thông báo"
+  },
+  "icu:NotificationProfiles--setup-description": {
+    "messageformat": "Tạo cấu hình để chỉ nhận thông báo và cuộc gọi từ những người và nhóm bạn chọn"
+  },
+  "icu:NotificationProfiles--setup-continue": {
+    "messageformat": "Tiếp tục"
+  },
+  "icu:NotificationProfiles--manage-description": {
+    "messageformat": "Thêm hoặc chỉnh sửa cấu hình thông báo"
+  },
+  "icu:NotificationProfiles--manage-profiles": {
+    "messageformat": "{profileCount, plural, other {{profileCount,number} cấu hình}}"
+  },
+  "icu:NotificationProfiles--create": {
+    "messageformat": "Tạo cấu hình"
+  },
+  "icu:NotificationProfiles--name-title": {
+    "messageformat": "Tên cấu hình của bạn"
+  },
+  "icu:NotificationProfiles--name-title--editing": {
+    "messageformat": "Tên"
+  },
+  "icu:NotificationProfiles--name-placeholder": {
+    "messageformat": "Tên hồ sơ"
+  },
+  "icu:NotificationProfiles--sample-name__work": {
+    "messageformat": "Công việc"
+  },
+  "icu:NotificationProfiles--sample-name__sleep": {
+    "messageformat": "Ngủ"
+  },
+  "icu:NotificationProfiles--sample-name__driving": {
+    "messageformat": "Lái xe"
+  },
+  "icu:NotificationProfiles--sample-name__downtime": {
+    "messageformat": "Ngừng hoạt động"
+  },
+  "icu:NotificationProfiles--sample-name__focus": {
+    "messageformat": "Tập trung"
+  },
+  "icu:NotificationProfiles--allowed-title": {
+    "messageformat": "Các thông báo được phép"
+  },
+  "icu:NotificationProfiles--allowed-description": {
+    "messageformat": "Thêm người và nhóm bạn muốn nhận thông báo khi cấu hình này được bật"
+  },
+  "icu:NotificationProfiles--allowed-add-label": {
+    "messageformat": "Thêm người hoặc nhóm"
+  },
+  "icu:NotificationProfiles--exceptions": {
+    "messageformat": "Ngoại trừ"
+  },
+  "icu:NotificationProfiles--exceptions--allow-all-calls": {
+    "messageformat": "Đồng ý tất cả cuộc gọi"
+  },
+  "icu:NotificationProfiles--exceptions--notify-for-mentions": {
+    "messageformat": "Thông báo cho tất cả đề cập"
+  },
+  "icu:NotificationProfiles--schedule-title": {
+    "messageformat": "Thêm lịch trình"
+  },
+  "icu:NotificationProfiles--schedule-title--editing": {
+    "messageformat": "Lịch trình"
+  },
+  "icu:NotificationProfiles--schedule-description": {
+    "messageformat": "Bật và chỉnh sửa lịch của bạn để tự động hóa cấu hình thông báo."
+  },
+  "icu:NotificationProfiles--schedule-enable": {
+    "messageformat": "Bật tự động"
+  },
+  "icu:NotificationProfiles--schedule": {
+    "messageformat": "Lịch trình"
+  },
+  "icu:NotificationProfiles--schedule-from": {
+    "messageformat": "Từ"
+  },
+  "icu:NotificationProfiles--schedule-until": {
+    "messageformat": "Cho đến"
+  },
+  "icu:NotificationProfiles--open-time-picker": {
+    "messageformat": "Mở bảng chọn thời gian"
+  },
+  "icu:NotificationProfiles--schedule-sunday": {
+    "messageformat": "Chủ nhật"
+  },
+  "icu:NotificationProfiles--schedule-monday": {
+    "messageformat": "Thứ 2"
+  },
+  "icu:NotificationProfiles--schedule-tuesday": {
+    "messageformat": "Thứ 3"
+  },
+  "icu:NotificationProfiles--schedule-wednesday": {
+    "messageformat": "Thứ 4"
+  },
+  "icu:NotificationProfiles--schedule-thursday": {
+    "messageformat": "Thứ 5"
+  },
+  "icu:NotificationProfiles--schedule-friday": {
+    "messageformat": "Thứ 6"
+  },
+  "icu:NotificationProfiles--schedule-saturday": {
+    "messageformat": "Thứ 7"
+  },
+  "icu:NotificationProfiles--done-title": {
+    "messageformat": "Cấu hình đã tạo"
+  },
+  "icu:NotificationProfiles--done-description": {
+    "messageformat": "Nếu đã thêm lịch, cấu hình của bạn sẽ tự động bật và tắt. Bạn cũng có thể bấm vào biểu tượng ··· ở đầu danh sách trò chuyện để bật hoặc tắt thủ công cấu hình."
+  },
+  "icu:NotificationProfiles--schedule-sunday-short": {
+    "messageformat": "CN"
+  },
+  "icu:NotificationProfiles--schedule-monday-short": {
+    "messageformat": "Th 2"
+  },
+  "icu:NotificationProfiles--schedule-tuesday-short": {
+    "messageformat": "Th 3"
+  },
+  "icu:NotificationProfiles--schedule-wednesday-short": {
+    "messageformat": "Thứ 4"
+  },
+  "icu:NotificationProfiles--schedule-thursday-short": {
+    "messageformat": "Thứ 5"
+  },
+  "icu:NotificationProfiles--schedule-friday-short": {
+    "messageformat": "Thứ 6"
+  },
+  "icu:NotificationProfiles--schedule-saturday-short": {
+    "messageformat": "Th 7"
+  },
+  "icu:NotificationProfiles--schedule-weekdays": {
+    "messageformat": "Ngày trong tuần"
+  },
+  "icu:NotificationProfiles--schedule-weekends": {
+    "messageformat": "Cuối tuần"
+  },
+  "icu:NotificationProfiles--schedule-daily": {
+    "messageformat": "Hằng ngày"
+  },
+  "icu:NotificationProfiles--schedule-separator": {
+    "messageformat": ", "
+  },
+  "icu:NotificationProfiles--list--header": {
+    "messageformat": "Cấu hình"
+  },
+  "icu:NotificationProfiles--list--sync": {
+    "messageformat": "Đồng bộ trên các thiết bị"
+  },
+  "icu:NotificationProfiles--list--sync--description": {
+    "messageformat": "Các cấu hình sẽ được đồng bộ trên các thiết bị của bạn. Khi bật cấu hình cho một thiết bị, cấu hình đó cũng sẽ được bật trên các thiết bị khác."
+  },
+  "icu:NotificationProfiles--delete": {
+    "messageformat": "Xóa cấu hình"
+  },
+  "icu:NotificationProfiles--delete-confirmation": {
+    "messageformat": "Xóa vĩnh viễn cấu hình thông báo này?"
+  },
+  "icu:NotificationProfiles--delete-button": {
+    "messageformat": "Xóa"
+  },
+  "icu:NotificationProfiles--edit--is-active": {
+    "messageformat": "Bật"
+  },
+  "icu:NotificationProfiles--edit--is-not-active": {
+    "messageformat": "Tắt"
+  },
+  "icu:NotificationProfiles--edit--edit-name-label": {
+    "messageformat": "Chỉnh sửa tên cấu hình này"
+  },
+  "icu:NotificationProfiles--edit--allowed": {
+    "messageformat": "Các thông báo được phép"
+  },
+  "icu:NotificationProfiles--edit--schedule-timing": {
+    "messageformat": "{startTime} đến {endTime}"
+  },
+  "icu:NotificationProfiles--edit--schedule-enabled": {
+    "messageformat": "Bật"
+  },
+  "icu:NotificationProfiles--edit--schedule-disabled": {
+    "messageformat": "Tắt"
+  },
   "icu:Preferences--blocked": {
     "messageformat": "Đã chặn"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Sao lưu bảo mật B&A"
+    "messageformat": "Sao lưu bảo mật Signal"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Sao lưu tự động với dịch vụ lưu trữ bảo mật, được mã hóa đầu cuối của B&A. Bắt đầu trên điện thoại. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>."
+    "messageformat": "Sao lưu tự động với dịch vụ lưu trữ bảo mật, được mã hóa đầu cuối của Signal. Bắt đầu trên điện thoại. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Sao lưu lịch sử tin nhắn để không bao giờ mất dữ liệu khi bạn có điện thoại mới hoặc cài lại B&A."
+    "messageformat": "Sao lưu lịch sử tin nhắn để không bao giờ mất dữ liệu khi bạn có điện thoại mới hoặc cài lại Signal."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Thông tin bản sao lưu"
@@ -5301,7 +5913,10 @@
     "messageformat": "Bản sao lưu tin nhắn + tất cả tập tin đa phương tiện"
   },
   "icu:Preferences--backup-plan-not-found__description": {
-    "messageformat": "Không tìm thấy gói đăng ký của bạn. Gia hạn gói đăng ký Sao lưu bảo mật B&A để tiếp tục sử dụng."
+    "messageformat": "Không tìm thấy gói đăng ký của bạn. Kiểm tra điện thoại của bạn để xem thông tin bản sao lưu."
+  },
+  "icu:Preferences--backup-subscription-monthly-cost": {
+    "messageformat": "{cost}/tháng"
   },
   "icu:Preferences--backup-messages-plan__description": {
     "messageformat": "{mediaDayCount, plural, other {Bản sao lưu tin nhắn văn bản + tập tin đa phương tiện {mediaDayCount,number} ngày qua}}"
@@ -5319,13 +5934,13 @@
     "messageformat": "Gói đăng ký đã được hủy"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Bạn có thể quản lý hoặc hủy gói đăng ký Sao lưu bảo mật B&A trên điện thoại của bạn."
+    "messageformat": "Bạn có thể quản lý hoặc hủy gói đăng ký Sao lưu bảo mật Signal trên điện thoại của bạn."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Bạn có thể quản lý hoặc nâng cấp gói đăng ký Sao lưu bảo mật B&A trên điện thoại của bạn."
+    "messageformat": "Bạn có thể quản lý hoặc nâng cấp gói đăng ký Sao lưu bảo mật Signal trên điện thoại của bạn."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Bạn có thể quản lý hoặc gia hạn gói đăng ký Sao lưu bảo mật B&A trên điện thoại của bạn."
+    "messageformat": "Bạn có thể quản lý hoặc gia hạn gói đăng ký Sao lưu bảo mật Signal trên điện thoại của bạn."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Bản sao lưu gần nhất"
@@ -5343,7 +5958,7 @@
     "messageformat": "Tạo một bản sao lưu được mã hóa đầu cuối bạn có thể lưu trên điện thoại. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Để khôi phục bản sao lưu, hãy cài đặt mới B&A. Mở ứng dụng và nhấn Khôi phục bản sao lưu, sau đó tìm thư mục sao lưu. <learnMoreLink>Tìm hiểu thêm.</learnMoreLink>"
+    "messageformat": "Để khôi phục bản sao lưu, hãy cài đặt mới Signal. Mở ứng dụng và nhấn Khôi phục bản sao lưu, sau đó tìm thư mục sao lưu. <learnMoreLink>Tìm hiểu thêm.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Chọn thư mục"
@@ -5356,6 +5971,18 @@
   },
   "icu:Preferences--local-backups-view-backup-key-done": {
     "messageformat": "Xong"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt--mac": {
+    "messageformat": "hiển thị mã khóa sao lưu của bạn"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt--windows": {
+    "messageformat": "Xác minh danh tính để xem mã khóa sao lưu của bạn."
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt-description--linux": {
+    "messageformat": "Xem mã khóa sao lưu"
+  },
+  "icu:Preferences--local-backups--view-backup-key--os-prompt-message--linux": {
+    "messageformat": "Cần xác thực để xem mã khóa sao lưu của bạn."
   },
   "icu:Preferences--local-backups-backup-key-text-box": {
     "messageformat": "Khung văn bản của mã khóa sao lưu"
@@ -5379,13 +6006,22 @@
     "messageformat": "Cất giữ an toàn mã khóa"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "B&A sẽ không thể giúp bạn khôi phục bản sao lưu nếu bạn để mất mã khóa. Lưu mã khóa ở nơi an toàn và bảo mật, và không chia sẻ với ai khác."
+    "messageformat": "Signal sẽ không thể giúp bạn khôi phục bản sao lưu nếu bạn để mất mã khóa. Lưu mã khóa ở nơi an toàn và bảo mật, và không chia sẻ với ai khác."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Tiếp tục"
   },
   "icu:Preferences--local-backups-see-backup-key-again": {
     "messageformat": "Xem lại mã khóa"
+  },
+  "icu:Preferences__local-backups-last-backup": {
+    "messageformat": "Bản sao lưu gần nhất"
+  },
+  "icu:Preferences__local-backups-last-backup-never": {
+    "messageformat": "Không bao giờ"
+  },
+  "icu:Preferences__local-backups-backup-now": {
+    "messageformat": "Sao lưu Ngay"
   },
   "icu:Preferences__local-backups-folder": {
     "messageformat": "Thư mục sao lưu"
@@ -5398,6 +6034,18 @@
   },
   "icu:Preferences__local-backups-copied-key": {
     "messageformat": "Đã sao chép mã khóa sao lưu"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt--mac": {
+    "messageformat": "Bật sao lưu"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt--windows": {
+    "messageformat": "Xác minh danh tính của bạn để bật sao lưu."
+  },
+  "icu:Preferences__local-backups--enable--os-prompt-description--linux": {
+    "messageformat": "Bật sao lưu"
+  },
+  "icu:Preferences__local-backups--enable--os-prompt-message--linux": {
+    "messageformat": "Cần xác thực để bật sao lưu."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Xem mã khóa"
@@ -5415,13 +6063,13 @@
     "messageformat": "{num, plural, other {{num,number} liên hệ}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Để thay đổi các cài đặt này, hãy mở ứng dụng B&A trên thiết bị di động của bạn và điều hướng đến Cài đặt> Quyền riêng tư"
+    "messageformat": "Để thay đổi các cài đặt này, hãy mở ứng dụng Signal trên thiết bị di động của bạn và điều hướng đến Cài đặt> Quyền riêng tư"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Số điện thoại"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Chọn người có thể thấy số điện thoại của bạn và người có thể liên hệ với bạn trên B&A với số đó."
+    "messageformat": "Chọn người có thể thấy số điện thoại của bạn và người có thể liên hệ với bạn trên Signal với số đó."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Đổi…"
@@ -5451,10 +6099,10 @@
     "messageformat": "Ai Có Thể Tìm Tôi Bằng Số Điện Thoại"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Bất kỳ ai có số điện thoại của bạn sẽ thấy bạn trên B&A và có thể bắt đầu trò chuyện với bạn."
+    "messageformat": "Bất kỳ ai có số điện thoại của bạn sẽ thấy bạn trên Signal và có thể bắt đầu trò chuyện với bạn."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Sẽ không có ai nhìn thấy số điện thoại của bạn trên B&A, trừ khi bạn nhắn tin với người đó hoặc đã có một cuộc trò chuyện với người đó."
+    "messageformat": "Sẽ không có ai nhìn thấy số điện thoại của bạn trên Signal, trừ khi bạn nhắn tin với người đó hoặc đã có một cuộc trò chuyện với người đó."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Bất cứ ai"
@@ -5466,7 +6114,7 @@
     "messageformat": "Bạn có chắc không?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Việc bạn đổi “{settingTitle}” thành “{nobodyLabel}” sẽ làm mọi người khó tìm được bạn hơn trên B&A."
+    "messageformat": "Việc bạn đổi “{settingTitle}” thành “{nobodyLabel}” sẽ làm mọi người khó tìm được bạn hơn trên Signal."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Nhắn tin"
@@ -5520,7 +6168,7 @@
     "messageformat": "Thiết lập"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Khởi động lại B&A để áp dụng"
+    "messageformat": "Khởi động lại Signal để áp dụng"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Để đổi ngôn ngữ, cần khởi động lại ứng dụng."
@@ -5535,13 +6183,13 @@
     "messageformat": "An ninh màn hình"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Ngăn ảnh chụp màn hình B&A trên máy tính này để tăng quyền riêng tư."
+    "messageformat": "Ngăn ảnh chụp màn hình Signal trên máy tính này để tăng quyền riêng tư."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Tắt bảo mật màn hình?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Nếu tắt, tùy chọn này sẽ cho phép Microsoft Windows chụp ảnh màn hình B&A và sử dụng cho các tính năng có thể không đảm bảo sự riêng tư."
+    "messageformat": "Nếu tắt, tùy chọn này sẽ cho phép Microsoft Windows chụp ảnh màn hình Signal và sử dụng cho các tính năng có thể không đảm bảo sự riêng tư."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Tắt"
@@ -5556,25 +6204,25 @@
     "messageformat": "Đã tải Bản Cập Nhật"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Mở B&A trên điện thoại của bạn"
+    "messageformat": "Mở Signal trên điện thoại của bạn"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Tài khoản của bạn sẽ sớm bị xóa trừ khi bạn mở B&A trên điện thoại của mình. Thông điệp này sẽ không còn nếu bạn hoàn thành việc đó. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
+    "messageformat": "Tài khoản của bạn sẽ sớm bị xóa trừ khi bạn mở Signal trên điện thoại của mình. Thông điệp này sẽ không còn nếu bạn hoàn thành việc đó. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Mở B&A trên điện thoại để giữ cho tài khoản của bạn hoạt động"
+    "messageformat": "Mở Signal trên điện thoại để giữ cho tài khoản của bạn hoạt động"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Tìm hiểu thêm"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "B&A đang gặp trục trặc kĩ thuật. Chúng thôi đang cố hết sức để khôi phục dịch vụ càng sớm càng tốt."
+    "messageformat": "Signal đang gặp trục trặc kĩ thuật. Chúng thôi đang cố hết sức để khôi phục dịch vụ càng sớm càng tốt."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Yêu cầu Cập nhật"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Để hoàn thành đồng bộ tin nhắn, cập nhật B&A Desktop ngay."
+    "messageformat": "Để hoàn thành đồng bộ tin nhắn, cập nhật Signal Desktop ngay."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Cập nhật"
@@ -5583,19 +6231,19 @@
     "messageformat": "Yêu cầu Cập nhật"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Để tiếp tục sử dụng B&A, bạn phải cập nhật phiên bản mới nhất của B&A."
+    "messageformat": "Để tiếp tục sử dụng Signal, bạn phải cập nhật phiên bản mới nhất của Signal."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Tải {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Khởi động lại B&A để cài đặt bản cập nhật."
+    "messageformat": "Khởi động lại Signal để cài đặt bản cập nhật."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "B&A Desktop cập nhật không thành công, nhưng hiện có phiên bản mới. Truy cập {downloadUrl} và cài đặt thủ công phiên bản mới, sau đó liên hệ bộ phận hỗ trợ hoặc báo cáo về vấn đề này."
+    "messageformat": "Signal Desktop cập nhật không thành công, nhưng hiện có phiên bản mới. Truy cập {downloadUrl} và cài đặt thủ công phiên bản mới, sau đó liên hệ bộ phận hỗ trợ hoặc báo cáo về vấn đề này."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "B&A không thể đóng",
+    "messageformat": "Signal không thể đóng",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -5615,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Đã có phiên bản mới hơn của B&A được cài đặt. Bạn có chắc muốn tiếp tục?",
+    "messageformat": "Đã có phiên bản mới hơn của Signal được cài đặt. Bạn có chắc muốn tiếp tục?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Ứng dụng bị trở ngại"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "B&A sẽ tự khởi động lại sau khi bị lỗi. Bạn có thể thông báo lỗi này để giúp B&A tìm hiểu và khắc phục."
+    "messageformat": "Signal sẽ tự khởi động lại sau khi bị lỗi. Bạn có thể thông báo lỗi này để giúp Signal tìm hiểu và khắc phục."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Gửi"
@@ -5727,7 +6375,7 @@
     "messageformat": "Bấm vào nút \"{buttonName}\" dưới đây"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Bật \"B&A\""
+    "messageformat": "Bật \"Signal\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Đến mục cài đặt"
@@ -5817,7 +6465,7 @@
     "messageformat": "Tìm hiểu thêm"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Liên hệ B&A"
+    "messageformat": "Liên hệ Signal"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} là những người bạn chọn để tin tưởng, bằng việc:"
@@ -5967,7 +6615,7 @@
     "messageformat": "Ẩn story với"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Tất cả liên hệ B&A"
+    "messageformat": "Tất cả liên hệ Signal"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Tất Cả Trừ…"
@@ -5985,7 +6633,7 @@
     "messageformat": "Thông báo Đã xem"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Để thay đổi cài đặt này, hãy mở ứng dụng B&A trên thiết bị di động của bạn và điều hướng đến Cài đặt -> Trò chuyện"
+    "messageformat": "Để thay đổi cài đặt này, hãy mở ứng dụng Signal trên thiết bị di động của bạn và điều hướng đến Cài đặt -> Trò chuyện"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Ai có thể xem story này"
@@ -6045,7 +6693,7 @@
     "messageformat": "Sự Riêng tư của Story của tôi"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Chọn các liên hệ B&A có thể xem story của bạn. Bạn luôn có thể thay đổi trong phần cài đặt sự riêng tư. <learnMoreLink>Tìm hiểu thêm.</learnMoreLink>"
+    "messageformat": "Chọn các liên hệ Signal có thể xem story của bạn. Bạn luôn có thể thay đổi trong phần cài đặt sự riêng tư. <learnMoreLink>Tìm hiểu thêm.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Xóa story"
@@ -6114,7 +6762,7 @@
     "messageformat": "Tải Tập tin đính kèm"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Bật thông báo đã xem để biết ai đã xem story của bạn. Hãy mở ứng dụng B&A trên thiết bị di động của bạn và điều hướng đến Cài đặt > Story."
+    "messageformat": "Bật thông báo đã xem để biết ai đã xem story của bạn. Hãy mở ứng dụng Signal trên thiết bị di động của bạn và điều hướng đến Cài đặt > Story."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Chưa có câu trả lời"
@@ -6300,7 +6948,7 @@
     "messageformat": "Mã QR và đường dẫn của bạn đã được đặt lại và tên người dùng của bạn là {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Quét mã QR này bằng điện thoại của bạn để trò chuyện với tôi trên B&A.",
+    "messageformat": "Quét mã QR này bằng điện thoại của bạn để trò chuyện với tôi trên Signal.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -6376,16 +7024,19 @@
     "messageformat": "Bỏ qua"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "B&A desktop sẽ sớm không còn hỗ trợ phiên bản hiện tại của hệ điều hành {OS} trên máy tính bạn. Để có thể tiếp tục sử dụng B&A, cập nhật phiên bản hệ điều hành trên máy tính bạn trước {expirationDate}. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
+    "messageformat": "Signal desktop sẽ sớm không còn hỗ trợ phiên bản hiện tại của hệ điều hành {OS} trên máy tính bạn. Để có thể tiếp tục sử dụng Signal, cập nhật phiên bản hệ điều hành trên máy tính bạn trước {expirationDate}. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "B&A desktop không còn hoạt động được trên máy tính này. Để có thể tiếp tục sử dụng B&A desktop, cập nhật phiên bản của hệ điều hành {OS} trên máy tính bạn. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
+    "messageformat": "Signal desktop không còn hoạt động được trên máy tính này. Để có thể tiếp tục sử dụng Signal desktop, cập nhật phiên bản của hệ điều hành {OS} trên máy tính bạn. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "B&A desktop không còn hoạt động được trên máy tính này. Để có thể tiếp tục sử dụng B&A desktop, cập nhật phiên bản của hệ điều hành {OS} trên máy tính bạn."
+    "messageformat": "Signal desktop không còn hoạt động được trên máy tính này. Để có thể tiếp tục sử dụng Signal desktop, cập nhật phiên bản của hệ điều hành {OS} trên máy tính bạn."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Đã chỉnh sửa"
+  },
+  "icu:MessageMetadata__pinned": {
+    "messageformat": "Đã ghim"
   },
   "icu:DraftGifMessageSendModal__Title": {
     "messageformat": "Thêm vào một tin nhắn"
@@ -6398,6 +7049,9 @@
   },
   "icu:EditHistoryMessagesModal__title": {
     "messageformat": "Lịch sử chỉnh sửa"
+  },
+  "icu:EditHistoryMessagesModal__Message__ContextMenu__CopyTimestamp": {
+    "messageformat": "Sao chép dấu thời gian"
   },
   "icu:ResendMessageEdit__body": {
     "messageformat": "Không thể gửi chỉnh sửa này. Kiểm tra kết nối của bạn và thử lại"
@@ -6550,7 +7204,7 @@
     "messageformat": "Sao chép đường dẫn"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Chia sẻ đường dẫn qua B&A"
+    "messageformat": "Chia sẻ đường dẫn qua Signal"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Xóa liên kết"
@@ -6616,7 +7270,7 @@
     "messageformat": "Để đổi cài đặt này, đặt mục “Ai có thể thấy số của tôi” thành “Không ai cả”."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Tên hồ sơ trên B&A được chọn bởi chủ tài khoản:"
+    "messageformat": "Tên hồ sơ trên Signal được chọn bởi chủ tài khoản:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Tên hồ sơ chưa được xác minh"
@@ -6648,8 +7302,14 @@
   "icu:PreferencesDonations__title": {
     "messageformat": "Quyền riêng tư được đặt trên Lợi nhuận"
   },
+  "icu:PreferencesDonations__title-v2": {
+    "messageformat": "Tự hào là một tổ chức phi lợi nhuận"
+  },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Nền tảng nhắn tin riêng tư, được tài trợ bởi chính bạn. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay để hỗ trợ B&A. <readMoreLink>Đọc thêm</readMoreLink>"
+    "messageformat": "Nền tảng nhắn tin riêng tư, được tài trợ bởi chính bạn. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay để hỗ trợ Signal. <readMoreLink>Đọc thêm</readMoreLink>"
+  },
+  "icu:PreferencesDonations__description-v2": {
+    "messageformat": "Ủng hộ để hỗ trợ cho nền tảng nhắn tin riêng tư. Giúp Signal duy trì trạng thái độc lập, không quảng cáo. <readMoreLink>Đọc thêm</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Ủng hộ"
@@ -6673,7 +7333,7 @@
     "messageformat": "Thông tin của bạn là riêng tư"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>B&A không thu thập hay lưu trữ thông tin cá nhân của bạn khi bạn gửi khoản ủng hộ.</paragraph><paragraph>Chúng tôi sử dụng Stripe làm hệ thống xử lý thanh toán để nhận các khoản ủng hộ. Chúng tôi không truy cập, lưu trữ, hoặc lưu bất kỳ thông tin nào bạn cung cấp cho phía hệ thống.</paragraph><paragraph>B&A không và không thể liên kết thông tin thanh toán với tài khoản B&A của bạn.</paragraph><paragraph>Cảm ơn sự đóng góp của bạn!</paragraph>"
+    "messageformat": "<paragraph>Signal không thu thập hay lưu trữ thông tin cá nhân của bạn khi bạn gửi khoản ủng hộ.</paragraph><paragraph>Chúng tôi sử dụng Stripe làm hệ thống xử lý thanh toán để nhận các khoản ủng hộ. Chúng tôi không truy cập, lưu trữ, hoặc lưu bất kỳ thông tin nào bạn cung cấp cho phía hệ thống.</paragraph><paragraph>Signal không và không thể liên kết thông tin thanh toán với tài khoản Signal của bạn.</paragraph><paragraph>Cảm ơn sự đóng góp của bạn!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -6688,13 +7348,10 @@
     "messageformat": "Câu hỏi thường gặp về Nhà Ủng hộ"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Người nhận không đồng bộ trên các thiết bị. Nếu bạn đã cài đặt lại B&A, các biên lai của các lần ủng hộ trước sẽ không còn nữa."
+    "messageformat": "Người nhận không đồng bộ trên các thiết bị. Nếu bạn đã cài đặt lại Signal, các biên lai của các lần ủng hộ trước sẽ không còn nữa."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Không có biên lai"
-  },
-  "icu:PreferencesDonations__ReceiptModal--title": {
-    "messageformat": "Chi tiết"
   },
   "icu:PreferencesDonations__ReceiptModal--download": {
     "messageformat": "Tải biên lai"
@@ -6721,7 +7378,7 @@
     "messageformat": "Thẻ tín dụng hoặc ghi nợ"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Nhập thông tin thẻ tín dụng hoặc thẻ ghi nợ của bạn. B&A không thu thập hay lưu trữ thông tin cá nhân của bạn. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
+    "messageformat": "Nhập thông tin thẻ tín dụng hoặc thẻ ghi nợ của bạn. Signal không thu thập hay lưu trữ thông tin cá nhân của bạn. <learnMoreLink>Tìm hiểu thêm</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Số thẻ"
@@ -6733,7 +7390,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Ủng hộ {formattedCurrencyAmount} cho B&A"
+    "messageformat": "Ủng hộ {formattedCurrencyAmount} cho Signal"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Số thẻ không hợp lệ"
@@ -6787,7 +7444,7 @@
     "messageformat": "Một lần"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Cảm ơn bạn đã hỗ trợ B&A. Đóng góp của bạn giúp duy trì sứ mệnh bảo vệ việc tự biểu đạt và cung cấp nền tảng giao tiếp bảo mật cho hàng triệu người trên thế giới, thông qua công nghệ mã nguồn mở hướng tới quyền riêng tư. Nếu bạn là một cư dân của Hoa Kỳ, vui lòng giữ biên lai này cho hồ sơ thuế. B&A Technology Foundation là một tổ chức phi lợi nhuận được miễn trừ nghĩa vụ thuế ở Hoa Kỳ theo mục 501c3 của Internal Revenue Code. ID Thuế Liên bang của chúng tôi là 82-4506840."
+    "messageformat": "Cảm ơn bạn đã hỗ trợ Signal. Đóng góp của bạn giúp duy trì sứ mệnh bảo vệ việc tự biểu đạt và cung cấp nền tảng giao tiếp bảo mật cho hàng triệu người trên thế giới, thông qua công nghệ mã nguồn mở hướng tới quyền riêng tư. Nếu bạn là một cư dân của Hoa Kỳ, vui lòng giữ biên lai này cho hồ sơ thuế. Signal Technology Foundation là một tổ chức phi lợi nhuận được miễn trừ nghĩa vụ thuế ở Hoa Kỳ theo mục 501c3 của Internal Revenue Code. ID Thuế Liên bang của chúng tôi là 82-4506840."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Bạn đang ngoại tuyến. Vui lòng kết nối internet để hoàn tất khoản ủng hộ."
@@ -6813,14 +7470,11 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Bạn có một khoản ủng hộ đang tiến hành cần được xác nhận."
   },
-  "icu:Donations__Toast__DonationCompletedAndBadgeApplicationFailed": {
-    "messageformat": "Bạn đã ủng hộ thành công, nhưng chúng tôi không thể cập nhật cài đặt huy hiệu của bạn"
-  },
   "icu:Donations__BadgeApplicationFailed__Title": {
     "messageformat": "Bạn đã ủng hộ thành công, nhưng chúng tôi không thể cập nhật cài đặt huy hiệu của bạn"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Để cập nhật cài đặt huy hiệu của bạn trên thiết bị di động, vào mục Cài đặt → Ủng hộ B&A → Huy hiệu."
+    "messageformat": "Để cập nhật cài đặt huy hiệu của bạn trên thiết bị di động, vào mục Cài đặt → Ủng hộ Signal → Huy hiệu."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Quá trình bị gián đoạn"
@@ -6847,7 +7501,7 @@
     "messageformat": "Đã xảy ra lỗi với khoản ủng hộ của bạn"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Có thể khoản ủng hộ của bạn chưa được xử lý. Bấm \"Ủng hộ B&A\", sau đó bấm \"Biên lai Ủng hộ\" để xem biên lai của bạn và xác nhận."
+    "messageformat": "Có thể khoản ủng hộ của bạn chưa được xử lý. Bấm \"Ủng hộ Signal\", sau đó bấm \"Biên lai Ủng hộ\" để xem biên lai của bạn và xác nhận."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Hãy thử lại hoặc gửi nhật ký gỡ lỗi cho bộ phận Hỗ trợ để được trợ giúp hoàn tất khoản ủng hộ. Nhật ký gỡ lỗi giúp chúng tôi xác định và khắc phục vấn đề, và không chứa thông tin nhận dạng."
@@ -6889,20 +7543,134 @@
     "messageformat": "Cảm ơn bạn đã đóng góp!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Bạn nhận được một huy hiệu nhà ủng hộ từ B&A! Hãy hiển thị huy hiệu trên hồ sơ của bạn để thể hiện sự ủng hộ."
+    "messageformat": "Bạn nhận được một huy hiệu nhà ủng hộ từ Signal! Hãy hiển thị huy hiệu trên hồ sơ của bạn để thể hiện sự ủng hộ."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Hiển thị trên thông tin cá nhân"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Bạn có thể điều chỉnh cài đặt này trên thiết bị di động ở mục Cài đặt → Ủng hộ B&A → Huy hiệu"
+    "messageformat": "Bạn có thể điều chỉnh cài đặt này trên thiết bị di động ở mục Cài đặt → Ủng hộ Signal → Huy hiệu"
+  },
+  "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
+    "messageformat": "Đóng"
+  },
+  "icu:CallQualitySurvey__BackButton__AccessibilityLabel": {
+    "messageformat": "Trở lại"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
+    "messageformat": "Cuộc gọi của bạn thế nào?"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
+    "messageformat": "Điều này giúp chúng tôi cải thiện chất lượng cuộc gọi Signal. Chúng tôi sẽ không lưu thông tin thông tin nhận dạng cá nhân."
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
+    "messageformat": "Gặp vấn đề"
+  },
+  "icu:CallQualitySurvey__HowWasYourCall__Response__Great": {
+    "messageformat": "Tuyệt vời"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__PageTitle": {
+    "messageformat": "Bạn đã gặp vấn đề gì?"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__IssuesList__Heading": {
+    "messageformat": "Chọn tất cả lựa chọn phù hợp"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO": {
+    "messageformat": "Vấn đề âm thanh"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_STUTTERING": {
+    "messageformat": "Lặp âm thanh"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_LOCAL_ECHO": {
+    "messageformat": "Tôi nghe tiếng vọng"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_REMOTE_ECHO": {
+    "messageformat": "Mọi người nghe tiếng vọng"
+  },
+  "icu:CallQualitySurvey__Issue--AUDIO_DROP": {
+    "messageformat": "Âm thanh bị cắt"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO": {
+    "messageformat": "Vấn đề về video"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_NO_CAMERA": {
+    "messageformat": "Camera không hoạt động"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_LOW_QUALITY": {
+    "messageformat": "Chất lượng video kém"
+  },
+  "icu:CallQualitySurvey__Issue--VIDEO_LOW_RESOLUTION": {
+    "messageformat": "Độ phân giải thấp"
+  },
+  "icu:CallQualitySurvey__Issue--CALL_DROPPED": {
+    "messageformat": "Cuộc gọi bị ngắt"
+  },
+  "icu:CallQualitySurvey__Issue--OTHER": {
+    "messageformat": "Khác"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__AccessibilityLabel": {
+    "messageformat": "Mô tả vấn đề"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
+    "messageformat": "Vui lòng cung cấp mọi thông tin liên quan đến vấn đề. Mọi thông tin bạn chia sẻ ở đây sẽ được bảo mật và chỉ được sử dụng để tăng chất lượng cuộc gọi Signal."
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
+    "messageformat": "Vui lòng mô tả vấn đề của bạn"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__ContinueButton": {
+    "messageformat": "Tiếp tục"
+  },
+  "icu:CallQualitySurvey__WhatIssuesDidYouHave__ContinueButton__DisabledTooltip": {
+    "messageformat": "Chọn để tiếp tục"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
+    "messageformat": "Giúp chúng tôi cải thiện"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
+    "messageformat": "Điều này giúp chúng tôi tìm hiểu thêm về chất lượng cuộc gọi và biết khi có vấn đề. Bạn có thể xem nhật ký gỡ lỗi trước khi gửi."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
+    "messageformat": "Khi gửi, bạn sẽ chia sẻ phản hồi cùng <diagnosticInfoLink>thông tin chẩn đoán về cuộc gọi của bạn</diagnosticInfoLink>. Bạn có thể chia sẻ (không bắt buộc) nhật ký gỡ lỗi để giúp chúng tôi tăng chất lượng cuộc gọi."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__Label": {
+    "messageformat": "Chia sẻ nhật ký gỡ lỗi"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
+    "messageformat": "Xem"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
+    "messageformat": "Nhật ký gỡ lỗi chứa thông tin ứng dụng cấp thấp và không tiết lộ bất kỳ nội dung tin nhắn nào của bạn."
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
+    "messageformat": "Thông tin được chia sẻ với chúng tôi chứa thông tin ứng dụng ở mức thấp và không bao gồm nội dung cuộc gọi của bạn."
+  },
+  "icu:CallDiagnosticWindow__title": {
+    "messageformat": "Thông tin chẩn đoán"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__SubmitButton": {
+    "messageformat": "Gửi"
+  },
+  "icu:CallQualitySurvey__ConfirmSubmission__Submitting": {
+    "messageformat": "Đang gửi khảo sát…"
+  },
+  "icu:CallQualitySurvey__SubmissionFailed": {
+    "messageformat": "Không thể gửi khảo sát"
+  },
+  "icu:CallQualitySurvey__SubmissionFailed__Retry": {
+    "messageformat": "Thử lại"
+  },
+  "icu:CallQualitySurvey__SubmissionSuccess": {
+    "messageformat": "Cảm ơn góp ý của bạn!"
+  },
+  "icu:Megaphone__ExpandNarrowSidebar": {
+    "messageformat": "Mở rộng thanh bên để tương tác với biểu tượng loa cầm tay"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Phiên bản này có một số tinh chỉnh và sửa lỗi để giữ cho B&A hoạt động mượt mà.",
+    "messageformat": "Phiên bản này có một số tinh chỉnh và sửa lỗi để giữ cho Signal hoạt động mượt mà.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Các tinh chỉnh, sửa lỗi, và cải thiện hiệu năng khác. Cảm ơn bạn đã sử dụng B&A!",
+    "messageformat": "Các tinh chỉnh, sửa lỗi, và cải thiện hiệu năng khác. Cảm ơn bạn đã sử dụng Signal!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -6922,10 +7690,13 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Các tinh chỉnh, sửa lỗi, và cải thiện hiệu năng. Cảm ơn bạn đã sử dụng B&A!",
+    "messageformat": "Các tinh chỉnh, sửa lỗi, và cải thiện hiệu năng. Cảm ơn bạn đã sử dụng Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.73": {
-    "messageformat": "Bản cập nhật này có các điều chỉnh mới để tối ưu hóa hiệu suất giúp cải thiện thời lượng pin."
+  "icu:WhatsNew__7.86--0": {
+    "messageformat": "Chúng tôi đã sửa một lỗi nhỏ liên quan đến chỉ báo giơ tay trong cuộc gọi nhóm."
+  },
+  "icu:WhatsNew__7.87--0": {
+    "messageformat": "Tính năng ghim tin nhắn ở đầu cuộc trò chuyện có thể giúp dễ dàng tham khảo thông tin quan trọng."
   }
 }
