@@ -42,7 +42,7 @@
     "messageformat": "हाई क्वालिटी मीडिया भेजने के लिए अधिक डेटा खर्च होगा।"
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal को डोनेट करें"
+    "messageformat": "B&A को डोनेट करें"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "स्टैंडर्ड"
@@ -78,10 +78,10 @@
     "messageformat": "अनजान ग्रुप"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal नहीं खोला जा सकता"
+    "messageformat": "B&A नहीं खोला जा सकता"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "समस्या ठीक करने के लिए, सपोर्ट पेज पर रिकवरी गाइड का पालन करें या समस्या ठीक करने में मदद पाने के लिए, Signal समर्थन से संपर्क करें।\n\nअगर आपको Signal तुरंत इस्तेमाल करना हो, तो आप अपना डेटा डिलीट कर सकते हैं और यह डेस्कटॉप फिर से लिंक कर सकते हैं। आपके पास अपने फ़ोन से संदेश इतिहास ट्रांसफ़र करने का विकल्प होगा।"
+    "messageformat": "समस्या ठीक करने के लिए, सपोर्ट पेज पर रिकवरी गाइड का पालन करें या समस्या ठीक करने में मदद पाने के लिए, B&A समर्थन से संपर्क करें।\n\nअगर आपको B&A तुरंत इस्तेमाल करना हो, तो आप अपना डेटा डिलीट कर सकते हैं और यह डेस्कटॉप फिर से लिंक कर सकते हैं। आपके पास अपने फ़ोन से संदेश इतिहास ट्रांसफ़र करने का विकल्प होगा।"
   },
   "icu:databaseError": {
     "messageformat": "डेटाबेस से जुड़ी गड़बड़ी"
@@ -93,7 +93,7 @@
     "messageformat": "पूरा डेटा हमेशा के लिए डिलीट करें"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "आपके पूरे संदेश इतिहास और मीडिया को हमेशा के लिए इस डिवाइस से डिलीट कर दिया जाएगा। इससे आपके फ़ोन से कोई भी डेटा डिलीट नहीं होगा।\n\nदोबारा लिंक करने के बाद ही आप इस डिवाइस पर Signal का इस्तेमाल कर पाएँगे। आपके पास अपने फ़ोन से संदेश इतिहास ट्रांसफ़र करने का विकल्प होगा।"
+    "messageformat": "आपके पूरे संदेश इतिहास और मीडिया को हमेशा के लिए इस डिवाइस से डिलीट कर दिया जाएगा। इससे आपके फ़ोन से कोई भी डेटा डिलीट नहीं होगा।\n\nदोबारा लिंक करने के बाद ही आप इस डिवाइस पर B&A का इस्तेमाल कर पाएँगे। आपके पास अपने फ़ोन से संदेश इतिहास ट्रांसफ़र करने का विकल्प होगा।"
   },
   "icu:databaseError__startOldVersion": {
     "messageformat": "आपके डेटाबेस का वर्ज़न सिग्नल के इस वर्ज़न से मेल नहीं खाता है। सुनिश्चित करें कि आप अपने कंप्यूटर पर सिग्नल का सबसे नया वर्ज़न खोल रहे हैं।"
@@ -102,7 +102,7 @@
     "messageformat": "डेटाबेस एनक्रिप्शन की ऐक्सेस नहीं कर पाए, क्योंकि OS एनक्रिप्शन कीरिंग बैंकएंड {previousBackend} से बदलकर {currentBackend} हो गया है। ऐसा तब हो सकता है, जब डेस्कटॉप एनवायरनमेंट बदलता है, जैसे कि GNOME और KDE के बीच।\n\nकृपया पिछले डेस्कटॉप एनवायरनमेंट पर स्विच करें।"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "डेटाबेस एनक्रिप्शन की ऐक्सेस नहीं कर पाए, क्योंकि OS एनक्रिप्शन कीरिंग बैंकएंड {previousBackend} से बदलकर {currentBackend} हो गया है। ऐसा तब हो सकता है, जब डेस्कटॉप एनवायरनमेंट बदलता है, जैसे कि GNOME और KDE के बीच।\n\nकृपया पिछले डेस्कटॉप एनवायरनमेंट पर स्विच करें या फिर कमांड लाइन फ़्लैग के साथ Signal चलाने की कोशिश करें --password-store=\"{previousBackendFlag}\""
+    "messageformat": "डेटाबेस एनक्रिप्शन की ऐक्सेस नहीं कर पाए, क्योंकि OS एनक्रिप्शन कीरिंग बैंकएंड {previousBackend} से बदलकर {currentBackend} हो गया है। ऐसा तब हो सकता है, जब डेस्कटॉप एनवायरनमेंट बदलता है, जैसे कि GNOME और KDE के बीच।\n\nकृपया पिछले डेस्कटॉप एनवायरनमेंट पर स्विच करें या फिर कमांड लाइन फ़्लैग के साथ B&A चलाने की कोशिश करें --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -147,7 +147,7 @@
     "messageformat": "सब दिखाएं"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal बंद करें"
+    "messageformat": "B&A बंद करें"
   },
   "icu:editMenuUndo": {
     "messageformat": "पहले जैसा करें"
@@ -486,10 +486,10 @@
     "messageformat": "आपने दूसरे डिवाइस {name} के साथ अपना सेफ़्टी नंबर 'वेरिफ़ाइड नहीं है' के तौर पर मार्क किया है"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "आपने जिस सेफ़्टी नंबर को वेरिफ़ाई करने की कोशिश की वह बदल गया है। कृपया, {name1} के साथ अपने नए सेफ़्टी नंबर की समीक्षा करें। याद रखें कि इस बदलाव का यह मतलब हो सकता है कि कोई व्यक्ति आप दोनों के बीच की बातचीत को बीच में इंटरसेप्ट करने की कोशिश कर रहा है या फिर {name2} ने Signal को फिर से इंस्टॉल किया है।"
+    "messageformat": "आपने जिस सेफ़्टी नंबर को वेरिफ़ाई करने की कोशिश की वह बदल गया है। कृपया, {name1} के साथ अपने नए सेफ़्टी नंबर की समीक्षा करें। याद रखें कि इस बदलाव का यह मतलब हो सकता है कि कोई व्यक्ति आप दोनों के बीच की बातचीत को बीच में इंटरसेप्ट करने की कोशिश कर रहा है या फिर {name2} ने B&A को फिर से इंस्टॉल किया है।"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "हो सकता है कि इन लोगों ने Signal को फिर से इंस्टॉल किया हो या फिर अपने डिवाइस बदले हों। उनके नए सेफ़्टी नंबर की पुष्टि करने के लिए किसी एक नाम पर टैप करें। यह वैकल्पिक है।"
+    "messageformat": "हो सकता है कि इन लोगों ने B&A को फिर से इंस्टॉल किया हो या फिर अपने डिवाइस बदले हों। उनके नए सेफ़्टी नंबर की पुष्टि करने के लिए किसी एक नाम पर टैप करें। यह वैकल्पिक है।"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "पेंडिंग मैसेज भेजें"
@@ -498,7 +498,7 @@
     "messageformat": "समीक्षा करें"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {आपका {count,number} कनेक्शन है जिसने शायद Signal फिर से इंस्टॉल किया हो या डिवाइस बदले हों। आप उसे भेजने से पहले वैकल्पिक तौर पर उनकी सुरक्षा संख्याओं की समीक्षा कर सकते हैं।} other {आपके {count,number} कनेक्शन हैं जिन्होंने शायद Signal फिर से इंस्टॉल किया हो या डिवाइस बदले हों। आप उन्हें भेजने से पहले वैकल्पिक तौर पर उनकी सुरक्षा संख्याओं की समीक्षा कर सकते हैं।}}"
+    "messageformat": "{count, plural, one {आपका {count,number} कनेक्शन है जिसने शायद B&A फिर से इंस्टॉल किया हो या डिवाइस बदले हों। आप उसे भेजने से पहले वैकल्पिक तौर पर उनकी सुरक्षा संख्याओं की समीक्षा कर सकते हैं।} other {आपके {count,number} कनेक्शन हैं जिन्होंने शायद B&A फिर से इंस्टॉल किया हो या डिवाइस बदले हों। आप उन्हें भेजने से पहले वैकल्पिक तौर पर उनकी सुरक्षा संख्याओं की समीक्षा कर सकते हैं।}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "सभी कनेक्शन की समीक्षा कर ली गई है, जारी रखने के लिए 'भेजें' पर क्लिक करें।"
@@ -543,7 +543,7 @@
     "messageformat": "इस लॉग को इंटरनेट पर सबके लिए पोस्ट किया जाएगा, ताकि लोग इसे देख सकें। आप चाहें, तो सबमिट करने से पहले इसे डाउनलोड करके रख लें।"
   },
   "icu:debugLogError": {
-    "messageformat": "अपलोड में कोई गड़बड़ी हुई! कृपया support@signal.org पर ईमेल करें और टेक्स्ट फ़ाइल के रूप में अपना लॉग अटैच करें।"
+    "messageformat": "अपलोड में कोई गड़बड़ी हुई! कृपया support@baxs.com पर ईमेल करें और टेक्स्ट फ़ाइल के रूप में अपना लॉग अटैच करें।"
   },
   "icu:debugLogSuccess": {
     "messageformat": "डीबग लॉग सबमिट किया गया"
@@ -729,7 +729,7 @@
     "messageformat": "स्टिकर पैक निर्माता"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal डेस्कटॉप के बारे में"
+    "messageformat": "B&A डेस्कटॉप के बारे में"
   },
   "icu:screenShareWindow": {
     "messageformat": "स्क्रीन शेयर करना"
@@ -747,7 +747,7 @@
     "messageformat": "बंद करें"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal डेस्कटॉप"
+    "messageformat": "B&A डेस्कटॉप"
   },
   "icu:search": {
     "messageformat": "खोजें"
@@ -801,13 +801,13 @@
     "messageformat": "फ़ोन नंबर से खोजें"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal में आपका स्वागत है"
+    "messageformat": "B&A में आपका स्वागत है"
   },
   "icu:whatsNew": {
     "messageformat": "देखें कि इस अपडेट {whatsNew} में क्या है"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal एक गैर-लाभकारी संस्था है"
+    "messageformat": "B&A एक गैर-लाभकारी संस्था है"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "नया क्या है"
@@ -891,13 +891,13 @@
     "messageformat": "आप"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "वॉइस मैसेज भेजने के लिए, Signal डेस्कटॉप को अपने माइक्रोफ़ोन का ऐक्सेस दें।"
+    "messageformat": "वॉइस मैसेज भेजने के लिए, B&A डेस्कटॉप को अपने माइक्रोफ़ोन का ऐक्सेस दें।"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "कॉल करने के लिए, Signal डेस्कटॉप को माइक्रोफ़ोन का ऐक्सेस दें।"
+    "messageformat": "कॉल करने के लिए, B&A डेस्कटॉप को माइक्रोफ़ोन का ऐक्सेस दें।"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "वीडियो कॉल करने के लिए, Signal डेस्कटॉप को कैमरे का ऐक्सेस दें।"
+    "messageformat": "वीडियो कॉल करने के लिए, B&A डेस्कटॉप को कैमरे का ऐक्सेस दें।"
   },
   "icu:allowAccess": {
     "messageformat": "ऐक्सेस दें"
@@ -921,13 +921,13 @@
     "messageformat": "म्यूट करें"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal अपेडट नहीं हो सका। <retryUpdateButton>फिर से अपडेट</retryUpdateButton> करने की कोशिश करें या इसे मैन्युअल तरीके से इंस्टॉल करने के लिए {url} पर जाएँ। फिर, इस समस्या के बारे में <contactSupportLink>सपोर्ट से संपर्क करें</contactSupportLink>"
+    "messageformat": "B&A अपेडट नहीं हो सका। <retryUpdateButton>फिर से अपडेट</retryUpdateButton> करने की कोशिश करें या इसे मैन्युअल तरीके से इंस्टॉल करने के लिए {url} पर जाएँ। फिर, इस समस्या के बारे में <contactSupportLink>सपोर्ट से संपर्क करें</contactSupportLink>"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal अपेडट नहीं हो सका। इसे मैन्युअल तरीके से इंस्टॉल करने के लिए {url} पर जाएँ। फिर, इस समस्या के बारे में <contactSupportLink>सपोर्ट से संपर्क करें</contactSupportLink>"
+    "messageformat": "B&A अपेडट नहीं हो सका। इसे मैन्युअल तरीके से इंस्टॉल करने के लिए {url} पर जाएँ। फिर, इस समस्या के बारे में <contactSupportLink>सपोर्ट से संपर्क करें</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "लगता है कि Signal डेस्कटॉप macOS के क्वारंटीन में है और यह अपने-आप अपडेट नहीं हो पाएगा। कृपया 'फ़ाइंडर' की मदद से {app} को {folder} में ले जाने की कोशिश करें।"
+    "messageformat": "लगता है कि B&A डेस्कटॉप macOS के क्वारंटीन में है और यह अपने-आप अपडेट नहीं हो पाएगा। कृपया 'फ़ाइंडर' की मदद से {app} को {folder} में ले जाने की कोशिश करें।"
   },
   "icu:ok": {
     "messageformat": "ठीक है"
@@ -972,7 +972,7 @@
     "messageformat": "यह मैसेज इस डिवाइस से डिलीट कर दिया जाएगा।"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "यह मेसेज चैट में शामिल सभी के लिए डिलीट कर दिया जाएगा यदि वे Signal के नवीनमत वर्ज़न पर हैं। वे देख सकेंगे कि आपने एक मेसेज को डिलीट कर दिया है।"
+    "messageformat": "यह मेसेज चैट में शामिल सभी के लिए डिलीट कर दिया जाएगा यदि वे B&A के नवीनमत वर्ज़न पर हैं। वे देख सकेंगे कि आपने एक मेसेज को डिलीट कर दिया है।"
   },
   "icu:from": {
     "messageformat": "इनकी ओर से"
@@ -1014,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}\" वह प्रोफ़ाइल नाम है जिसे इस व्यक्ति ने Signal में अपने लिए सेट किया है।"
+    "messageformat": "“{title}\" वह प्रोफ़ाइल नाम है जिसे इस व्यक्ति ने B&A में अपने लिए सेट किया है।"
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "सत्यापित"
@@ -1029,7 +1029,7 @@
     "messageformat": "{name} के साथ कोई सीधा संदेश नहीं"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal कनेक्शन"
+    "messageformat": "B&A कनेक्शन"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} आपके सिस्टम संपर्कों में है"
@@ -1341,7 +1341,7 @@
     "messageformat": "और जानें"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal एंड-टू-एंड एंक्रिप्शन का इस्तेमाल करता है और इसे कभी-कभी आपके चैट सेशन को रीफ़्रेश करने की ज़रूरत हो सकती है। इससे आपकी चैट की सुरक्षा प्रभावित नहीं होती है लेकिन हो सकता है कि इस संपर्क से कोई संदेश छूट गया हो और आप उन्हें उसे दोबारा भेजने के लिए कह सकते हैं।"
+    "messageformat": "B&A एंड-टू-एंड एंक्रिप्शन का इस्तेमाल करता है और इसे कभी-कभी आपके चैट सेशन को रीफ़्रेश करने की ज़रूरत हो सकती है। इससे आपकी चैट की सुरक्षा प्रभावित नहीं होती है लेकिन हो सकता है कि इस संपर्क से कोई संदेश छूट गया हो और आप उन्हें उसे दोबारा भेजने के लिए कह सकते हैं।"
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "सपोर्ट टीम से संपर्क करें"
@@ -1368,7 +1368,7 @@
     "messageformat": "{sender} ने अपना फ़ोन नंबर बदला है"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "संपर्क Signal में शामिल हो गए"
+    "messageformat": "संपर्क B&A में शामिल हो गए"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} और {conversationTitle} एक ही अकाउंट हैं। दोनों चैट हेतु आपकी संदेश हिस्ट्री यहाँ हैं।"
@@ -1458,7 +1458,7 @@
     "messageformat": "मीडिया डाउनलोड नहीं किया जा सकता"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "अपने डेस्कटॉप और फ़ोन का इंटरनेट कनेक्शन जाँच लें। अपने फ़ोन पर Signal खोलें, फिर दोबारा डाउनलोड करने की कोशिश करें।"
+    "messageformat": "अपने डेस्कटॉप और फ़ोन का इंटरनेट कनेक्शन जाँच लें। अपने फ़ोन पर B&A खोलें, फिर दोबारा डाउनलोड करने की कोशिश करें।"
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "यह मीडिया अब आपके फ़ोन पर उपलब्ध नहीं है और डाउनलोड नहीं किया जा सकता।"
@@ -1479,10 +1479,10 @@
     "messageformat": "अधिक जानें"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "अपने फ़ोन में Signal ऐप खोलकर इस कोड को स्कैन करें"
+    "messageformat": "अपने फ़ोन में B&A ऐप खोलकर इस कोड को स्कैन करें"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "अपने फ़ोन पर Signal ऐप खोलें"
+    "messageformat": "अपने फ़ोन पर B&A ऐप खोलें"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} पर टैप करें, फिर {linkedDevices} पर टैप करें"
@@ -1500,7 +1500,7 @@
     "messageformat": "<paragraph>एक अनपेक्षित त्रुटि हुई।</paragraph><paragraph>कृपया फिर से प्रयास करें।</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal आपके वर्तमान नेटवर्क का उपयोग करके इस डिवाइस को लिंक नहीं कर सकता।"
+    "messageformat": "B&A आपके वर्तमान नेटवर्क का उपयोग करके इस डिवाइस को लिंक नहीं कर सकता।"
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "दोबारा कोशिश करें"
@@ -1524,7 +1524,7 @@
     "messageformat": "डिवाइस का नाम"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "इस डिवाइस का नाम बदलने के लिए, अपने फ़ोन पर Signal खोलें और सेटिंग्स > लिंक किए गए डिवाइस पर जाएँ"
+    "messageformat": "इस डिवाइस का नाम बदलने के लिए, अपने फ़ोन पर B&A खोलें और सेटिंग्स > लिंक किए गए डिवाइस पर जाएँ"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "इमोजी स्किन टोन"
@@ -1725,7 +1725,7 @@
     "messageformat": "माफ़ करें, आपने पहले ही बहुत से डिवाइस लिंक कर लिए हैं। कृपया कुछ को हटाएं।"
   },
   "icu:installTooOld": {
-    "messageformat": "अपना फ़ोन लिंक करने के लिए इस डिवािस पर Signal अपडेट करें।"
+    "messageformat": "अपना फ़ोन लिंक करने के लिए इस डिवािस पर B&A अपडेट करें।"
   },
   "icu:installErrorHeader": {
     "messageformat": "कोई गड़बड़ी हुई!"
@@ -1776,7 +1776,7 @@
     "messageformat": "इस कॉल का लिंक अब मान्य नहीं है।"
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal कॉल"
+    "messageformat": "B&A कॉल"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "लिंक को डिलीट नहीं किया जा सका। अपना कनेक्शन जाँचें और फिर से कोशिश करें।"
@@ -1932,16 +1932,16 @@
     "messageformat": "{count, plural, one {{count,number} व्यक्ति इस कॉल में है} other {{count,number} लोग इस कॉल में हैं}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal {person} को रिंग करेगा"
+    "messageformat": "B&A {person} को रिंग करेगा"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal {first} और {second} को रिंग करेगा"
+    "messageformat": "B&A {first} और {second} को रिंग करेगा"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal {first}, {second}, और {third} को रिंग करेगा"
+    "messageformat": "B&A {first}, {second}, और {third} को रिंग करेगा"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal द्वारा {first}, {second}, और {others,number} अन्य को रिंग किया जाएगा} other {Signal द्वारा {first}, {second}, और {others,number} अन्य को रिंग किया जाएगा}}"
+    "messageformat": "{others, plural, one {B&A द्वारा {first}, {second}, और {others,number} अन्य को रिंग किया जाएगा} other {B&A द्वारा {first}, {second}, और {others,number} अन्य को रिंग किया जाएगा}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} को सूचना दी जाएगी"
@@ -1998,10 +1998,10 @@
     "messageformat": "आपका कनेक्शन टूट गया था. सिग्नल पुनः कनेक्ट कर रहा है।"
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal {window} पर शेयर कर रहा है।"
+    "messageformat": "B&A {window} पर शेयर कर रहा है।"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal की स्क्रीन शेयरिंग चालू है"
+    "messageformat": "B&A की स्क्रीन शेयरिंग चालू है"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "फिर से जोड़ रहे हैं..."
@@ -2022,7 +2022,7 @@
     "messageformat": "अनुमति ज़रूरी है"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal को आपके कंप्यूटर की स्क्रीन रिकॉर्डिंग का ऐक्सेस चाहिए।"
+    "messageformat": "B&A को आपके कंप्यूटर की स्क्रीन रिकॉर्डिंग का ऐक्सेस चाहिए।"
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "'सिस्टम प्राथमिकताएं' पर जाएं।"
@@ -2031,7 +2031,7 @@
     "messageformat": "नीचे बाईं ओर लॉक आइकन पर क्लिक करें और अपने कंप्यूटर का पासवर्ड दर्ज करें।"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "दाईं ओर, Signal के आगे वाले बॉक्स पर सही का निशान लगाएं। अगर आपको सूची में Signal नहीं दिखाई देता है, तो इसे जोड़ने के लिए + पर क्लिक करें।"
+    "messageformat": "दाईं ओर, B&A के आगे वाले बॉक्स पर सही का निशान लगाएं। अगर आपको सूची में B&A नहीं दिखाई देता है, तो इसे जोड़ने के लिए + पर क्लिक करें।"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "'सिस्टम प्राथमिकताएं' खोलें"
@@ -2043,7 +2043,7 @@
     "messageformat": "हमेशा इसी तरह कॉल करें"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "सभी कॉल Signal सर्वर के ज़रिए करें, ताकि आपके कॉन्टैक्ट को आपके IP ऐड्रेस का पता न चल सके। हालांकि, इससे कॉल की क्वालिटी कम हो सकती है।"
+    "messageformat": "सभी कॉल B&A सर्वर के ज़रिए करें, ताकि आपके कॉन्टैक्ट को आपके IP ऐड्रेस का पता न चल सके। हालांकि, इससे कॉल की क्वालिटी कम हो सकती है।"
   },
   "icu:permissions": {
     "messageformat": "अनुमतियां"
@@ -2061,10 +2061,10 @@
     "messageformat": "टेक्स्ट का चयन होने पर टेक्स्ट फ़ॉर्मेटिंग पॉपओवर दिखाएं"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "अगली बार Signal ऐप चालू करने पर स्पेल चेक की सुविधा चालू हो जाएगी।"
+    "messageformat": "अगली बार B&A ऐप चालू करने पर स्पेल चेक की सुविधा चालू हो जाएगी।"
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "अगली बार Signal ऐप चालू करने पर स्पेल चेक की सुविधा बंद हो जाएगी।"
+    "messageformat": "अगली बार B&A ऐप चालू करने पर स्पेल चेक की सुविधा बंद हो जाएगी।"
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "छोटा करके सिस्टम ट्रे में भेजें"
@@ -2088,13 +2088,13 @@
     "messageformat": "समूचा डेटा डिलीट करें?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal डेस्कटॉप के इस संस्करण से सभी डेटा और संदेश हटाएं? आपका Signal खाता और आपके फोन या अन्य लिंक की गईं डिवाइस पर मौजूदा डेटा हटाया नहीं जाएगा।"
+    "messageformat": "B&A डेस्कटॉप के इस संस्करण से सभी डेटा और संदेश हटाएं? आपका B&A खाता और आपके फोन या अन्य लिंक की गईं डिवाइस पर मौजूदा डेटा हटाया नहीं जाएगा।"
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "सारा डेटा डिसकनेक्ट और डिलीट किया जा रहा है…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "आपके सिस्टम में Signal डेस्कटॉप के पुराने इंस्टॉलेशन से जुड़ा कुछ पुराना डेटा मौजूद है। जारी रखने पर, यह डेटा डिलीट कर दिया जाएगा और Signal दोबाार नए सिरे से शुरू होगा।"
+    "messageformat": "आपके सिस्टम में B&A डेस्कटॉप के पुराने इंस्टॉलेशन से जुड़ा कुछ पुराना डेटा मौजूद है। जारी रखने पर, यह डेटा डिलीट कर दिया जाएगा और B&A दोबाार नए सिरे से शुरू होगा।"
   },
   "icu:deleteOldData": {
     "messageformat": "पुराना डेटा डिलीट करें"
@@ -2139,10 +2139,10 @@
     "messageformat": "पूरी तरह डिलीट नहीं हुआ, दोबारा कोशिश करने के लिए क्लिक करें"
   },
   "icu:expiredWarning": {
-    "messageformat": "Signal डेस्कटॉप का यह वर्ज़न एक्सपायर हो गया है। मैसेज भेजने और पाने के लिए इसे अभी अपडेट करें।"
+    "messageformat": "B&A डेस्कटॉप का यह वर्ज़न एक्सपायर हो गया है। मैसेज भेजने और पाने के लिए इसे अभी अपडेट करें।"
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download पर जाने के लिए क्लिक करें"
+    "messageformat": "ba-chat.com/download पर जाने के लिए क्लिक करें"
   },
   "icu:mediaMessage": {
     "messageformat": "सिर्फ़ मीडिया वाला मैसेज"
@@ -2151,7 +2151,7 @@
     "messageformat": "कॉन्टैक्ट इंपोर्ट करें"
   },
   "icu:syncExplanation": {
-    "messageformat": "अपने मोबाइल डिवाइस से सभी Signal ग्रुप और कॉन्टैक्ट इंपोर्ट करें।"
+    "messageformat": "अपने मोबाइल डिवाइस से सभी B&A ग्रुप और कॉन्टैक्ट इंपोर्ट करें।"
   },
   "icu:syncNow": {
     "messageformat": "अभी इंपोर्ट करें"
@@ -2187,7 +2187,7 @@
     "messageformat": "कल {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal किसी आने वाले संदेश को प्रोसेस करने में असफल हो सकता है।"
+    "messageformat": "B&A किसी आने वाले संदेश को प्रोसेस करने में असफल हो सकता है।"
   },
   "icu:messageBodyTooLong": {
     "messageformat": "मैसेज काफ़ी लंबा है।"
@@ -2295,7 +2295,7 @@
     "messageformat": "आप इस चैट में खुद के लिए नोट्स शामिल कर सकते हैं। यदि आपके अकाउंट के कोई लिंक किए हुए डिवाइस हैं, तो नए नोट्स सिंक किए जाएँगे।"
   },
   "icu:notificationDrawAttention": {
-    "messageformat": "नोटिफ़िकेशन आने पर, Signal विंडो पर ध्यान दिलाएं"
+    "messageformat": "नोटिफ़िकेशन आने पर, B&A विंडो पर ध्यान दिलाएं"
   },
   "icu:hideMenuBar": {
     "messageformat": "मेन्यू बार छिपाएं"
@@ -2343,13 +2343,13 @@
     "messageformat": "आपके द्वारा इस संदेश को भेजे जाने के 24 घंटे के भीतर ही संपादन लागू किए जा सकते हैं।"
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} एक Signal यूज़र नहीं है। सुनिश्चित करें कि आपने पूरा यूज़रनेम डाला है।"
+    "messageformat": "{atUsername} एक B&A यूज़र नहीं है। सुनिश्चित करें कि आपने पूरा यूज़रनेम डाला है।"
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} मान्य यूज़रनेम नहीं है। पक्का करें कि आपने पूरा यूज़रनेम और उसके साथ दिए गए अंक सही से डाला है।"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "यूज़र नहीं मिला। \"{phoneNumber}\" Signal यूज़र नहीं है।"
+    "messageformat": "यूज़र नहीं मिला। \"{phoneNumber}\" B&A यूज़र नहीं है।"
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "यूज़र नहीं मिला। \"{phoneNumber}\" सही फ़ोन नंबर नहीं है।"
@@ -2370,13 +2370,13 @@
     "messageformat": "ग्रुप साइज़ की अधिकतम सीमा पूरी हो गई है"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal ग्रुप में अधिकतम {max,number} सदस्य हो सकते हैं।"
+    "messageformat": "B&A ग्रुप में अधिकतम {max,number} सदस्य हो सकते हैं।"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "इससे ज़्यादा सदस्यों को नहीं जोड़ा जा सकता"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal के ग्रुप में अगर {max,number} या उससे कम सदस्य हों, तो यह सबसे सही रहता है। इससे ज़्यादा सदस्य जोड़ने पर मैसेज भेजने या पाने में थोड़ी देरी हो सकती है।"
+    "messageformat": "B&A के ग्रुप में अगर {max,number} या उससे कम सदस्य हों, तो यह सबसे सही रहता है। इससे ज़्यादा सदस्य जोड़ने पर मैसेज भेजने या पाने में थोड़ी देरी हो सकती है।"
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "इस समूह को नाम दें"
@@ -2406,7 +2406,7 @@
     "messageformat": "ग्रुप अपडेट नहीं हो सका। अपना इंटरनेट कनेक्शन देखें और दोबारा कोशिश करें।"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "चैटिंग की सुविधा जारी रखने के लिए Signal डेस्कटॉप को अपने मोबाइल डिवाइस से दोबारा लिंक करने के लिए क्लिक करें।"
+    "messageformat": "चैटिंग की सुविधा जारी रखने के लिए B&A डेस्कटॉप को अपने मोबाइल डिवाइस से दोबारा लिंक करने के लिए क्लिक करें।"
   },
   "icu:unlinked": {
     "messageformat": "अनलिंक किया गया"
@@ -2418,16 +2418,16 @@
     "messageformat": "फिर से अपडेट करने की कोशिश करें"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Signal को फिर से शुरू करने के लिए क्लिक करें"
+    "messageformat": "B&A को फिर से शुरू करने के लिए क्लिक करें"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "अपडेट डाउनलोड करने के लिए क्लिक करें"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal अपडेट नहीं हो सका। फिर से कोशिश करने के लिए क्लिक करें।"
+    "messageformat": "B&A अपडेट नहीं हो सका। फिर से कोशिश करने के लिए क्लिक करें।"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal फिर से शुरू करें"
+    "messageformat": "B&A फिर से शुरू करें"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "अपडेट को नज़रअंदाज़ करें"
@@ -2532,7 +2532,7 @@
     "messageformat": "कुछ अटैचमेंट प्रदर्शित करने के लिहाज से बहुत बड़े हैं।"
   },
   "icu:message--call-link-description": {
-    "messageformat": "Signal कॉल से जुड़ने के लिए यह लिंक इस्तेमाल करें"
+    "messageformat": "B&A कॉल से जुड़ने के लिए यह लिंक इस्तेमाल करें"
   },
   "icu:donation--missing": {
     "messageformat": "दान विवरण प्राप्त करने में असमर्थ"
@@ -2544,7 +2544,7 @@
     "messageformat": "अपना दान देखने के लिए मोबाइल पर इस संदेश को टैप करें"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} ने आपकी ओर से Signal को डोनेट किया"
+    "messageformat": "{sender} ने आपकी ओर से B&A को डोनेट किया"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "इस दान को खोलने के लिए अपना फोन देखें"
@@ -2553,7 +2553,7 @@
     "messageformat": "अपना दान देखने के लिए अपना फोन देखें"
   },
   "icu:message--donation--preview--unopened": {
-    "messageformat": "{sender} ने आपकी ओर से Signal को डोनेट किया"
+    "messageformat": "{sender} ने आपकी ओर से B&A को डोनेट किया"
   },
   "icu:message--donation--preview--redeemed": {
     "messageformat": "आपने एक दान को रिडीम किया है"
@@ -2601,7 +2601,7 @@
     "messageformat": "आपके समर्थन के लिए शुक्रिया!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "आपने {name} की ओर से Signal को एक दान दिया है। उन्हें अपना सहयोग अपनी प्रोफ़ाइल पर दर्शाने का विकल्प दिया जाएगा।"
+    "messageformat": "आपने {name} की ओर से B&A को एक दान दिया है। उन्हें अपना सहयोग अपनी प्रोफ़ाइल पर दर्शाने का विकल्प दिया जाएगा।"
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "स्टिकर पैक इंस्टॉल नहीं हो सका"
@@ -2616,10 +2616,10 @@
     "messageformat": "कोई स्टिकर इंस्टॉल नहीं है"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal की आर्टिस्ट सीरीज़"
+    "messageformat": "B&A की आर्टिस्ट सीरीज़"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal की आर्टिस्ट सीरीज़ का कोई स्टिकर उपलब्ध नहीं है"
+    "messageformat": "B&A की आर्टिस्ट सीरीज़ का कोई स्टिकर उपलब्ध नहीं है"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "आपको मिले स्टिकर"
@@ -2883,19 +2883,19 @@
     "messageformat": "ज्यादा प्रदर्शित करने के लिए संदेश बहुत लंबा है"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} ने आपको एक मैसेज भेजा है, जिसे दिखाया या प्रोसेस नहीं किया जा सकता क्योंकि इसमें Signal की एक नई सुविधा का इस्तेमाल किया गया है।"
+    "messageformat": "{contact} ने आपको एक मैसेज भेजा है, जिसे दिखाया या प्रोसेस नहीं किया जा सकता क्योंकि इसमें B&A की एक नई सुविधा का इस्तेमाल किया गया है।"
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "{contact} से कहें कि वह दोबारा यह मैसेज भेजें, क्योंकि आपने अब Signal का वर्ज़न अप-टू-डेट कर लिया है।"
+    "messageformat": "{contact} से कहें कि वह दोबारा यह मैसेज भेजें, क्योंकि आपने अब B&A का वर्ज़न अप-टू-डेट कर लिया है।"
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "आपके किसी डिवाइस से ऐसा मैसेज भेजा गया है जिसे दिखाया या प्रोसेस नहीं जा सकता, क्योंकि उसमें Signal की एक नई सुविधा का इस्तेमाल किया गया है।"
+    "messageformat": "आपके किसी डिवाइस से ऐसा मैसेज भेजा गया है जिसे दिखाया या प्रोसेस नहीं जा सकता, क्योंकि उसमें B&A की एक नई सुविधा का इस्तेमाल किया गया है।"
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "आपके आगे के मैसेज सिंक्रनाइज़ हो जाएंगे, क्योंकि आपने अब Signal का वर्ज़न अप-टू-डेट कर लिया है।"
+    "messageformat": "आपके आगे के मैसेज सिंक्रनाइज़ हो जाएंगे, क्योंकि आपने अब B&A का वर्ज़न अप-टू-डेट कर लिया है।"
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal अपडेट करें"
+    "messageformat": "B&A अपडेट करें"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "देखा गया"
@@ -3159,7 +3159,7 @@
     "messageformat": "चैट को अपठित के रूप में चिह्नित किया गया"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "स्टिकर पैक क्रिएटर का उपयोग करने के लिए कृपया अपने फोन और डेस्कटॉप पर Signal को सेट अप करें"
+    "messageformat": "स्टिकर पैक क्रिएटर का उपयोग करने के लिए कृपया अपने फोन और डेस्कटॉप पर B&A को सेट अप करें"
   },
   "icu:Reactions--remove": {
     "messageformat": "रिएक्शन हटाएं"
@@ -3183,7 +3183,7 @@
     "messageformat": "फ़र्ज़ी नाम और अकाउंट्स"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal कभी भी रजिस्ट्रेशन कोड या पिन के लिए आपसे संपर्क नहीं करेगा। दूसरों की पहचान चुराने वाले अनुरोधों से सावधान रहें। प्रोफ़ाइल नाम को अकाउंट के मालिक चुनते हैं और वे वेरिफ़ाइड नहीं होते।"
+    "messageformat": "B&A कभी भी रजिस्ट्रेशन कोड या पिन के लिए आपसे संपर्क नहीं करेगा। दूसरों की पहचान चुराने वाले अनुरोधों से सावधान रहें। प्रोफ़ाइल नाम को अकाउंट के मालिक चुनते हैं और वे वेरिफ़ाइड नहीं होते।"
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "क्रिप्टो या मनी स्कैम"
@@ -3273,13 +3273,13 @@
     "messageformat": "स्पैम के रूप में रिपोर्ट करें?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal को सूचित किया जाएगा कि यह व्यक्ति स्पैम भेज सकता है। Signal किसी भी चैट की सामग्री नहीं देख सकता।"
+    "messageformat": "B&A को सूचित किया जाएगा कि यह व्यक्ति स्पैम भेज सकता है। B&A किसी भी चैट की सामग्री नहीं देख सकता।"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal को सूचित किया जाएगा कि जिस व्यक्ति ने आपको इस समूह में आमंत्रित किया है वह स्पैम भेज सकता है। Signal किसी भी चैट की सामग्री नहीं देख सकता।"
+    "messageformat": "B&A को सूचित किया जाएगा कि जिस व्यक्ति ने आपको इस समूह में आमंत्रित किया है वह स्पैम भेज सकता है। B&A किसी भी चैट की सामग्री नहीं देख सकता।"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal को सूचित किया जाएगा कि {name}, जिसने आपको इस समूह में आमंत्रित किया है, स्पैम भेज सकता है। Signal किसी भी चैट की सामग्री नहीं देख सकता।"
+    "messageformat": "B&A को सूचित किया जाएगा कि {name}, जिसने आपको इस समूह में आमंत्रित किया है, स्पैम भेज सकता है। B&A किसी भी चैट की सामग्री नहीं देख सकता।"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "स्पैम की रिपोर्ट करें"
@@ -3375,7 +3375,7 @@
     "messageformat": "<clickable>प्रोफ़ाइल नाम</clickable> वेरिफ़ाइड नहीं हैं"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "यह Signal की ओर से आधिकारिक और इकलौती चैट है"
+    "messageformat": "यह B&A की ओर से आधिकारिक और इकलौती चैट है"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "खबरों और रिलीज़ नोट्स के साथ अप-टू-डेट रहें।"
@@ -3441,10 +3441,10 @@
     "messageformat": "वीडियो कॉल का जवाब नहीं मिला"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal अब भी चल रहा है"
+    "messageformat": "B&A अब भी चल रहा है"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "नोटिफ़िकेशन वाले हिस्से में Signal चलता रहेगा। Signal की सेटिंग में जाकर इसे बदला जा सकता है।"
+    "messageformat": "नोटिफ़िकेशन वाले हिस्से में B&A चलता रहेगा। B&A की सेटिंग में जाकर इसे बदला जा सकता है।"
   },
   "icu:incomingAudioCall": {
     "messageformat": "इनकमिंग वॉयस कॉल"
@@ -3654,7 +3654,7 @@
     "messageformat": "कॉल लिंक कॉपी करें"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal के माध्यम से कॉल लिंक शेयर करें"
+    "messageformat": "B&A के माध्यम से कॉल लिंक शेयर करें"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "इस व्यक्ति को कॉल से हटाएँ"
@@ -3780,7 +3780,7 @@
     "messageformat": "लिंक का वर्ज़न सही नहीं है"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "यह लिंक Signal डेस्कटॉप के इस वर्ज़न पर काम नहीं करता।"
+    "messageformat": "यह लिंक B&A डेस्कटॉप के इस वर्ज़न पर काम नहीं करता।"
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "ग्रुप से नहीं जुड़ा जा सकता"
@@ -3819,7 +3819,7 @@
     "messageformat": "{memberCount, plural, one {ग्रुप · {memberCount,number} सदस्य} other {ग्रुप · {memberCount,number} सदस्य}}"
   },
   "icu:GroupV2--join--requested": {
-    "messageformat": "ग्रप से जुड़ने का आपका अनुरोध ऐडमिन को भेज दिया गया है। ऐडमिन के ऐक्शन लेने के बाद आपको Signal में नोटिफ़िकेशन मिल जाएगा।"
+    "messageformat": "ग्रप से जुड़ने का आपका अनुरोध ऐडमिन को भेज दिया गया है। ऐडमिन के ऐक्शन लेने के बाद आपको B&A में नोटिफ़िकेशन मिल जाएगा।"
   },
   "icu:GroupV2--join--general-join-failure--title": {
     "messageformat": "लिंक में कोई गड़बड़ी है"
@@ -4335,22 +4335,22 @@
     "messageformat": "इसमें कुछ मिनट लग सकते हैं"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal को डोनेट करें"
+    "messageformat": "B&A को डोनेट करें"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Signal को डोनेट करें"
+    "messageformat": "B&A को डोनेट करें"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal आपके सहयोग से चलता है। आर्थिक योगदान दें और बैज पाएं।"
+    "messageformat": "B&A आपके सहयोग से चलता है। आर्थिक योगदान दें और बैज पाएं।"
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "अपने फ़ोन पर Signal खोलें"
+    "messageformat": "अपने फ़ोन पर B&A खोलें"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "सेटिंग खोलने के लिए सबसे ऊपर बाईं ओर अपनी प्रोफ़ाइल फ़ोटो पर टैप करें"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "\"Signal को डोनेट करें\" पर टैप करके सब्सक्राइब करें"
+    "messageformat": "\"B&A को डोनेट करें\" पर टैप करके सब्सक्राइब करें"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "आपकी प्रोफ़ाइल की जगह बदल दी गई है"
@@ -4476,7 +4476,7 @@
     "messageformat": "अकाउंट पर कार्रवाई की ज़रूरत है"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "यह अकाउंट इस्तेमाल करना जारी रखने के लिए, आपको अपने फ़ोन पर Signal खोलना होगा। अगर आप अपने फ़ोन पर Signal नहीं खोलते, तो आपका अकाउंट जल्द ही डिलीट हो जाएगा। <learnMoreLink>ज़्यादा जानें</learnMoreLink>"
+    "messageformat": "यह अकाउंट इस्तेमाल करना जारी रखने के लिए, आपको अपने फ़ोन पर B&A खोलना होगा। अगर आप अपने फ़ोन पर B&A नहीं खोलते, तो आपका अकाउंट जल्द ही डिलीट हो जाएगा। <learnMoreLink>ज़्यादा जानें</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "मीडिया को रीस्टोर नहीं किया जा सकता"
@@ -4503,13 +4503,13 @@
     "messageformat": "कोई अटैचमेंट या पोल जोड़ें"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "यह व्यक्ति Signal इस्तेमाल नहीं करता"
+    "messageformat": "यह व्यक्ति B&A इस्तेमाल नहीं करता"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal डेस्कटॉप पर Signal के बाहर किसी भी कॉन्टैक्ट को मैसेज नहीं भेजा जा सकता। बेहतर सुरक्षा के लिए उस व्यक्ति से कहें कि वह Signal इंस्टॉल करे।"
+    "messageformat": "B&A डेस्कटॉप पर B&A के बाहर किसी भी कॉन्टैक्ट को मैसेज नहीं भेजा जा सकता। बेहतर सुरक्षा के लिए उस व्यक्ति से कहें कि वह B&A इंस्टॉल करे।"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
-    "messageformat": "जांच की जा रही है कि कॉन्टैक्ट Signal पर रजिस्टर्ड है या नहीं"
+    "messageformat": "जांच की जा रही है कि कॉन्टैक्ट B&A पर रजिस्टर्ड है या नहीं"
   },
   "icu:CompositionArea__edit-action--discard": {
     "messageformat": "संदेश छोड़ें"
@@ -4689,7 +4689,7 @@
     "messageformat": "उपनाम"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "उपनाम & नोट्स Signal और एंड-टू-एंड एनक्रिप्टेड के साथ संग्रहीत किए जाते हैं। वे केवल आपको दिखाई देते हैं।"
+    "messageformat": "उपनाम & नोट्स B&A और एंड-टू-एंड एनक्रिप्टेड के साथ संग्रहीत किए जाते हैं। वे केवल आपको दिखाई देते हैं।"
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "मूल नाम"
@@ -4740,7 +4740,7 @@
     "messageformat": "ग्रुप लिंक की मदद से जुड़ने वाले नए सदस्यों के लिए ऐडमिन की मंज़ूरी ज़रूरी है"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "signal.group लिंक को क्लिपबोर्ड पर कॉपी करें"
+    "messageformat": "B&A.group लिंक को क्लिपबोर्ड पर कॉपी करें"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "अनुरोध ({count,number})"
@@ -4788,7 +4788,7 @@
     "messageformat": "इस सूची के लोग ग्रुप लिंक की मदद से \"{name}\" में शामिल होने की कोशिश कर रहे हैं।"
   },
   "icu:PendingInvites--info": {
-    "messageformat": "इस ग्रुप में इनवाइट किए गए लोगों की जानकारी उनके शामिल होने से पहले दिखाई नहीं देगी। Signal ग्रुप में शामिल होने के बाद ही वे मैसेज देख सकेंगे।"
+    "messageformat": "इस ग्रुप में इनवाइट किए गए लोगों की जानकारी उनके शामिल होने से पहले दिखाई नहीं देगी। B&A ग्रुप में शामिल होने के बाद ही वे मैसेज देख सकेंगे।"
   },
   "icu:PendingRequests--block--button": {
     "messageformat": "अनुरोध ब्लॉक करें"
@@ -4944,13 +4944,13 @@
     "messageformat": "खाली या हटाए गए संदेशों को अग्रेषित नहीं कर सकते"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Signal कॉल से जुड़ने के लिए यह लिंक इस्तेमाल करें: {url}"
+    "messageformat": "B&A कॉल से जुड़ने के लिए यह लिंक इस्तेमाल करें: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "सुरक्षा टिप्स"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "अनुरोधों की सावधानीपूर्वक समीक्षा करें। Signal को एक ही नाम वाला एक और संपर्क मिला। <reviewRequestLink>निवेदन की समीक्षा करें</reviewRequestLink>"
+    "messageformat": "अनुरोधों की सावधानीपूर्वक समीक्षा करें। B&A को एक ही नाम वाला एक और संपर्क मिला। <reviewRequestLink>निवेदन की समीक्षा करें</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} ग्रुप सदस्य का एक ही नाम है। <reviewRequestLink>सदस्य की समीक्षा करें</reviewRequestLink>} other {{count,number} ग्रुप सदस्य का एक ही नाम है। <reviewRequestLink>सदस्य की समीक्षा करें</reviewRequestLink>}}"
@@ -4983,7 +4983,7 @@
     "messageformat": "कोई दूसरा साझा ग्रुप नहीं"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal कनेक्शन"
+    "messageformat": "B&A कनेक्शन"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "इन्होंने हाल ही में अपना प्रोफ़ाइल नेम {oldName} से बदलकर {newName} किया है"
@@ -5001,7 +5001,7 @@
     "messageformat": "मैसेज भेजने के लिए वेरिफ़ाई करें"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signal पर स्पैम से बचाव के लिए कृपया वेरिफ़िकेशन पूरा करें।"
+    "messageformat": "B&A पर स्पैम से बचाव के लिए कृपया वेरिफ़िकेशन पूरा करें।"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "वेरिफ़िकेशन पूरा होने के बाद मैसेज भेजे जा सकते हैं। आपके जो भी मैसेज रुके हुए थे वे सब अपने-आप भेज दिए जाएंगे।"
@@ -5367,7 +5367,7 @@
     "messageformat": "क्या इन बदलावों को रद्द करना है?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signal बंद करें और कॉल समाप्त करें?"
+    "messageformat": "B&A बंद करें और कॉल समाप्त करें?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "अभी नहीं"
@@ -5454,7 +5454,7 @@
     "messageformat": "सामान्य"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal को डोनेट करें"
+    "messageformat": "B&A को डोनेट करें"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "अपीयरेंस"
@@ -5535,7 +5535,7 @@
     "messageformat": "लिंक का प्रीव्यू जनरेट करें"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "इस सेटिंग को बदलने के लिए, अपने मोबाइल डिवाइस पर Signal ऐप को खोलें और सेटिंग > चैट पर नैविगेट करें"
+    "messageformat": "इस सेटिंग को बदलने के लिए, अपने मोबाइल डिवाइस पर B&A ऐप को खोलें और सेटिंग > चैट पर नैविगेट करें"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "टाइप किए गए इमोटिकॉन्स को इमोजी में बदलें"
@@ -5637,7 +5637,7 @@
     "messageformat": "पुरानी चैट एक्सपोर्ट नहीं की जा सकती"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "आपकी पुरानी चैट एक्सपोर्ट नहीं की जा सकी, क्योंकि Signal के पास फ़ाइलों को डिस्क पर सेव करने की अनुमति नहीं है। अपने डिस्क की अनुमतियां बदलकर या सिस्टम सेटिंग अपडेट करके फिर से एक्सपोर्ट करने की कोशिश करें।"
+    "messageformat": "आपकी पुरानी चैट एक्सपोर्ट नहीं की जा सकी, क्योंकि B&A के पास फ़ाइलों को डिस्क पर सेव करने की अनुमति नहीं है। अपने डिस्क की अनुमतियां बदलकर या सिस्टम सेटिंग अपडेट करके फिर से एक्सपोर्ट करने की कोशिश करें।"
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "बैकअप एक्सपोर्ट किया जा रहा है"
@@ -5652,7 +5652,7 @@
     "messageformat": "अपने बैकअप फ़ोल्डर को अपने फ़ोन के स्टोरेज में ट्रांसफ़र करें"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "अपने फ़ोन पर Signal की एक नई कॉपी इंस्टॉल करें"
+    "messageformat": "अपने फ़ोन पर B&A की एक नई कॉपी इंस्टॉल करें"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "'रीस्टोर या ट्रांसफ़र करें' पर टैप करें और 'ऑन-डिवाइस बैकअप' चुनें"
@@ -5898,13 +5898,13 @@
     "messageformat": "ब्लॉक किया गया"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal सिक्योर बैकअप"
+    "messageformat": "B&A सिक्योर बैकअप"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Signal की सुरक्षित एंड-टू-एंड एनक्रिप्टेड स्टोरेज सेवा के साथ ऑटोमैटिक बैकअप। अपने फ़ोन पर शुरू करें। <learnMoreLink>ज़्यादा जानें</learnMoreLink>।"
+    "messageformat": "B&A की सुरक्षित एंड-टू-एंड एनक्रिप्टेड स्टोरेज सेवा के साथ ऑटोमैटिक बैकअप। अपने फ़ोन पर शुरू करें। <learnMoreLink>ज़्यादा जानें</learnMoreLink>।"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "अपना संदेश इतिहास बैकअप करें, ताकि नया फ़ोन लेने या Signal को फिर से इंस्टॉल करने पर आपका डेटा न खोए।"
+    "messageformat": "अपना संदेश इतिहास बैकअप करें, ताकि नया फ़ोन लेने या B&A को फिर से इंस्टॉल करने पर आपका डेटा न खोए।"
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "बैकअप की जानकारी"
@@ -5934,13 +5934,13 @@
     "messageformat": "सब्सक्रिप्शन रद्द किया गया"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "अपने फ़ोन पर Signal सिक्योर बैकअप सब्सक्रिप्शन मैनेज या रद्द किया जा सकता है।"
+    "messageformat": "अपने फ़ोन पर B&A सिक्योर बैकअप सब्सक्रिप्शन मैनेज या रद्द किया जा सकता है।"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "अपने फ़ोन पर Signal सिक्योर बैकअप को मैनेज या अपग्रेड किया जा सकता है।"
+    "messageformat": "अपने फ़ोन पर B&A सिक्योर बैकअप को मैनेज या अपग्रेड किया जा सकता है।"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "अपने फ़ोन पर Signal सिक्योर बैकअप का सब्सक्रिप्शन मैनेज या रिन्यू किया जा सकता है।"
+    "messageformat": "अपने फ़ोन पर B&A सिक्योर बैकअप का सब्सक्रिप्शन मैनेज या रिन्यू किया जा सकता है।"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "पिछला बैकअप"
@@ -5958,7 +5958,7 @@
     "messageformat": "एंड-टू-एंड एनक्रिप्टेड बैकअप बनाएँ, जिसे आप अपने फ़ोन पर रीस्टोर कर सकते हैं। "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "बैकअप रीस्टोर करने के लिए, Signal की नई कॉपी इंस्टॉल करें। ऐप खोलें और 'बैकअप रीस्टोर करें' पर टैप करें, फिर बैकअप फ़ोल्डर को ढूँढें। <learnMoreLink>ज़्यादा जानें।</learnMoreLink>"
+    "messageformat": "बैकअप रीस्टोर करने के लिए, B&A की नई कॉपी इंस्टॉल करें। ऐप खोलें और 'बैकअप रीस्टोर करें' पर टैप करें, फिर बैकअप फ़ोल्डर को ढूँढें। <learnMoreLink>ज़्यादा जानें।</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "कोई फ़ोल्डर चुनें"
@@ -6006,7 +6006,7 @@
     "messageformat": "अपनी की सुरक्षित रखें"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "अगर आपकी की खो जाती है, तो Signal आपका बैकअप रीस्टोर करने में आपकी मदद नहीं कर पाएगा। इसे किसी सुरक्षित जगह पर स्टोर करें और किसी और के साथ शेयर न करें।"
+    "messageformat": "अगर आपकी की खो जाती है, तो B&A आपका बैकअप रीस्टोर करने में आपकी मदद नहीं कर पाएगा। इसे किसी सुरक्षित जगह पर स्टोर करें और किसी और के साथ शेयर न करें।"
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "आगे"
@@ -6063,13 +6063,13 @@
     "messageformat": "{num, plural, one {{num,number} कॉन्टैक्ट} other {{num,number} कॉन्टैक्ट}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "सेटिंग बदलने के लिए, मोबाइल डिवाइस में Signal ऐप खोलकर सेटिंग > प्राइवेसी पर जाएं"
+    "messageformat": "सेटिंग बदलने के लिए, मोबाइल डिवाइस में B&A ऐप खोलकर सेटिंग > प्राइवेसी पर जाएं"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "फोन नंबर"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "चुनें कि कौन आपका फोन नंबर देख सकता है और कौन इसके साथ Signal पर आपसे संपर्क कर सकता है।"
+    "messageformat": "चुनें कि कौन आपका फोन नंबर देख सकता है और कौन इसके साथ B&A पर आपसे संपर्क कर सकता है।"
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "बदलो…"
@@ -6099,10 +6099,10 @@
     "messageformat": "मुझे नंबर से कौन ढूंढ सकता है"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "जिस किसी के पास आपका फोन नंबर है, वो आपको Signal पर देख सकेगा और आपसे चैट शुरू कर सकता है।"
+    "messageformat": "जिस किसी के पास आपका फोन नंबर है, वो आपको B&A पर देख सकेगा और आपसे चैट शुरू कर सकता है।"
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "कोई भी यह नहीं देख पाएगा कि आप Signal पर हैं, जब तक कि आप उन्हें संदेश न भेजें या उनके साथ चैट न करें।"
+    "messageformat": "कोई भी यह नहीं देख पाएगा कि आप B&A पर हैं, जब तक कि आप उन्हें संदेश न भेजें या उनके साथ चैट न करें।"
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "सभी"
@@ -6114,7 +6114,7 @@
     "messageformat": "क्या आपको यकीन है?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "यदि आप “{settingTitle}” को “{nobodyLabel}” में बदलते हैं, तो लोगों के लिए आपको Signal पर ढूंढना कठिन हो जाएगा।"
+    "messageformat": "यदि आप “{settingTitle}” को “{nobodyLabel}” में बदलते हैं, तो लोगों के लिए आपको B&A पर ढूंढना कठिन हो जाएगा।"
   },
   "icu:Preferences--messaging": {
     "messageformat": "मैसेज"
@@ -6147,7 +6147,7 @@
     "messageformat": "बंद करें"
   },
   "icu:Preferences__turn-stories-off--body": {
-    "messageformat": "आपके लिए स्टोरी शेयर करना और देखना बंद हो जाएगा। आपने हाल ही में Signal पर जो स्टोरी डाली हैं, वे भी डिलीट हो जाएंगी।"
+    "messageformat": "आपके लिए स्टोरी शेयर करना और देखना बंद हो जाएगा। आपने हाल ही में B&A पर जो स्टोरी डाली हैं, वे भी डिलीट हो जाएंगी।"
   },
   "icu:Preferences__Language__Label": {
     "messageformat": "भाषा"
@@ -6168,7 +6168,7 @@
     "messageformat": "सेट"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "लागू करने के लिए Signal को पुनरारंभ करें"
+    "messageformat": "लागू करने के लिए B&A को पुनरारंभ करें"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "भाषा बदलने के लिए, ऐप को पुनरारंभ करना होगा।"
@@ -6183,13 +6183,13 @@
     "messageformat": "स्क्रीन सुरक्षा"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "ज़्यादा निजता के लिए, इस कंप्यूटर पर Signal के स्क्रीनशॉट रोकें।"
+    "messageformat": "ज़्यादा निजता के लिए, इस कंप्यूटर पर B&A के स्क्रीनशॉट रोकें।"
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "स्क्रीन की सुरक्षा बंद करें?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "बंद होने पर, यह Microsoft Windows को Signal के स्क्रीनशॉट लेने और उन्हें ऐसे फ़ीचर के लिए इस्तेमाल करने की अनुमति दे सकता है जो शायद निजी न हों।"
+    "messageformat": "बंद होने पर, यह Microsoft Windows को B&A के स्क्रीनशॉट लेने और उन्हें ऐसे फ़ीचर के लिए इस्तेमाल करने की अनुमति दे सकता है जो शायद निजी न हों।"
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "अक्षम"
@@ -6204,25 +6204,25 @@
     "messageformat": "अपडेट डाउनलोड किया गया"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "अपने फ़ोन पर Signal को ओपेन करें"
+    "messageformat": "अपने फ़ोन पर B&A को ओपेन करें"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "अगर आप अपने फ़ोन पर Signal नहीं खोलते, तो आपका अकाउंट जल्द ही डिलीट हो जाएगा। अगर आप ऐसा कर लेते हैं, तो यह संदेश चला जाएगा। <learnMoreLink>ज़्यादा जानें</learnMoreLink>"
+    "messageformat": "अगर आप अपने फ़ोन पर B&A नहीं खोलते, तो आपका अकाउंट जल्द ही डिलीट हो जाएगा। अगर आप ऐसा कर लेते हैं, तो यह संदेश चला जाएगा। <learnMoreLink>ज़्यादा जानें</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "अपने अकाउंट को ऐक्टिव रखने के लिए, अपने फ़ोन पर Signal खोलें"
+    "messageformat": "अपने अकाउंट को ऐक्टिव रखने के लिए, अपने फ़ोन पर B&A खोलें"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "अधिक जानें"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal तकनीकी कठिनाइयों का सामना कर रहा है। हम जितनी जल्दी हो सके सेवा बहाल करने के लिए कड़ी मेहनत कर रहे हैं।"
+    "messageformat": "B&A तकनीकी कठिनाइयों का सामना कर रहा है। हम जितनी जल्दी हो सके सेवा बहाल करने के लिए कड़ी मेहनत कर रहे हैं।"
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "अपडेट आवश्यक है"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "अपने संदेशों का सिंक पूरा करने के लिए, अभी Signal डेस्कटॉप अपडेट करें।"
+    "messageformat": "अपने संदेशों का सिंक पूरा करने के लिए, अभी B&A डेस्कटॉप अपडेट करें।"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "अपडेट"
@@ -6231,19 +6231,19 @@
     "messageformat": "अपडेट आवश्यक है"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal का उपयोग जारी रखने के लिए, आपको नवीनतम संस्करण में अपडेट करना होगा।"
+    "messageformat": "B&A का उपयोग जारी रखने के लिए, आपको नवीनतम संस्करण में अपडेट करना होगा।"
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} डाउनलोड करें"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "अद्यतन स्थापित करने के लिए Signal को पुनरारंभ करें।"
+    "messageformat": "अद्यतन स्थापित करने के लिए B&A को पुनरारंभ करें।"
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal डेस्कटॉप अपडेट करने में विफल रहा, लेकिन एक नया संस्करण उपलब्ध है। {downloadUrl} पर जाएं और नया संस्करण मैन्युअल रूप से स्थापित करें, फिर या तो समर्थन से संपर्क करें या इस समस्या के बारे में एक बग फ़ाइल करें।"
+    "messageformat": "B&A डेस्कटॉप अपडेट करने में विफल रहा, लेकिन एक नया संस्करण उपलब्ध है। {downloadUrl} पर जाएं और नया संस्करण मैन्युअल रूप से स्थापित करें, फिर या तो समर्थन से संपर्क करें या इस समस्या के बारे में एक बग फ़ाइल करें।"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal बंद नहीं हो सकता।",
+    "messageformat": "B&A बंद नहीं हो सकता।",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -6263,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal का एक नया संस्करण पहले से स्थापित है। क्या आप वाकई जारी रखना चाहते हैं?",
+    "messageformat": "B&A का एक नया संस्करण पहले से स्थापित है। क्या आप वाकई जारी रखना चाहते हैं?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "ऐप्लिकेशन क्रैश हो गया"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal क्रैश होने के बाद दोबारा शुरू हुआ है। क्रैश रिपोर्ट भेजकर Signal को समस्या समझने में मदद करें।"
+    "messageformat": "B&A क्रैश होने के बाद दोबारा शुरू हुआ है। क्रैश रिपोर्ट भेजकर B&A को समस्या समझने में मदद करें।"
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "भेजें"
@@ -6375,7 +6375,7 @@
     "messageformat": "नीचे किए गए “{buttonName}” पर क्लिक करें"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "“Signal” चालू करें"
+    "messageformat": "“B&A” चालू करें"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "सेटिंग्स पर जाएँ"
@@ -6465,7 +6465,7 @@
     "messageformat": "और जानें"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal कनेक्शन"
+    "messageformat": "B&A कनेक्शन"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} वे लोग हैं जिन पर आपने इन तरीकों से भरोसा किया है:"
@@ -6615,7 +6615,7 @@
     "messageformat": "इनसे स्टोरी छिपाएं"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "सभी Signal कनेक्शन"
+    "messageformat": "सभी B&A कनेक्शन"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "इन्हें छोड़कर सभी..."
@@ -6633,7 +6633,7 @@
     "messageformat": "देखे जाने की सूचना"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "इस सेटिंग को बदलने के लिए, अपने मोबाइल डिवाइस पर Signal ऐप खोलें और इसके बाद सेटिंग -> चैट पर जाएं"
+    "messageformat": "इस सेटिंग को बदलने के लिए, अपने मोबाइल डिवाइस पर B&A ऐप खोलें और इसके बाद सेटिंग -> चैट पर जाएं"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "इस स्टोरी को कौन देख सकता है"
@@ -6693,7 +6693,7 @@
     "messageformat": "मेरी स्टोरी की प्राइवेसी"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "चुनें कि कौन-सा Signal कनेक्शन आपकी स्टोरी देख सकता है। इसे प्राइवेसी सेटिंग में जाकर कभी भी बदला जा सकता है। <learnMoreLink>और जानें।</learnMoreLink>"
+    "messageformat": "चुनें कि कौन-सा B&A कनेक्शन आपकी स्टोरी देख सकता है। इसे प्राइवेसी सेटिंग में जाकर कभी भी बदला जा सकता है। <learnMoreLink>और जानें।</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "स्टोरी डिलीट करें"
@@ -6762,7 +6762,7 @@
     "messageformat": "अटैचमेंट डाउनलोड करें"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "यह जानने के लिए कि आपकी स्टोरी किसने देखी है, 'देखे जाने की सूचना' चालू करें। अपने फ़ोन पर Signal ऐप खोलें और सेटिंग > स्टोरी पर जाएं।"
+    "messageformat": "यह जानने के लिए कि आपकी स्टोरी किसने देखी है, 'देखे जाने की सूचना' चालू करें। अपने फ़ोन पर B&A ऐप खोलें और सेटिंग > स्टोरी पर जाएं।"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "अब तक कोई जवाब नहीं मिला"
@@ -6948,7 +6948,7 @@
     "messageformat": "आपका QR कोड और लिंक फिर से स्थापित कर दिया गया है और आपका यूज़रनेम {username} है"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Signal पर मुझसे चैट करने के लिए इस QR कोड को अपने फोन से स्कैन करें।",
+    "messageformat": "B&A पर मुझसे चैट करने के लिए इस QR कोड को अपने फोन से स्कैन करें।",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -7024,13 +7024,13 @@
     "messageformat": "हटाएँ"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal डेस्कटॉप जल्द ही आपके कंप्यूटर के {OS} संस्करण को सपोर्ट नहीं करेगा। Signal का इस्तेमाल जारी रखने के लिए, अपने कंप्यूटर के ऑपरेटिंग सिस्टम को {expirationDate} पर अपडेट करें। <learnMoreLink>अधिक जानें</learnMoreLink>"
+    "messageformat": "B&A डेस्कटॉप जल्द ही आपके कंप्यूटर के {OS} संस्करण को सपोर्ट नहीं करेगा। B&A का इस्तेमाल जारी रखने के लिए, अपने कंप्यूटर के ऑपरेटिंग सिस्टम को {expirationDate} पर अपडेट करें। <learnMoreLink>अधिक जानें</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal डेस्कटॉप अब इस कंप्यूटर पर काम नहीं करता। Signal डेस्कटॉप दोबारा इस्तेमाल करने के लिए, अपने कंप्यूटर के {OS} के संस्करण को अपडेट करें। <learnMoreLink>अधिक जानें</learnMoreLink>"
+    "messageformat": "B&A डेस्कटॉप अब इस कंप्यूटर पर काम नहीं करता। B&A डेस्कटॉप दोबारा इस्तेमाल करने के लिए, अपने कंप्यूटर के {OS} के संस्करण को अपडेट करें। <learnMoreLink>अधिक जानें</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal डेस्कटॉप अब इस कंप्यूटर पर काम नहीं करता। Signal डेस्कटॉप दोबारा इस्तेमाल करने के लिए, अपने कंप्यूटर के {OS} के संस्करण को अपडेट करें।"
+    "messageformat": "B&A डेस्कटॉप अब इस कंप्यूटर पर काम नहीं करता। B&A डेस्कटॉप दोबारा इस्तेमाल करने के लिए, अपने कंप्यूटर के {OS} के संस्करण को अपडेट करें।"
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "संपादित है"
@@ -7204,7 +7204,7 @@
     "messageformat": "लिंक कॉपी करें"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Signal के माध्यम से लिंक साझा करें"
+    "messageformat": "B&A के माध्यम से लिंक साझा करें"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "लिंक डिलीट करें"
@@ -7270,7 +7270,7 @@
     "messageformat": "इस सेटिंग्स को बदलने के लिए, \"मेरा नंबर कौन देख सकता है\" को \"कोई नहीं\" पर सेट करें।"
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal पर प्रोफ़ाइल नाम को उनके अकाउंट के मालिक चुनते हैं:"
+    "messageformat": "B&A पर प्रोफ़ाइल नाम को उनके अकाउंट के मालिक चुनते हैं:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "प्रोफ़ाइल नाम वेरिफ़ाइड नहीं हैं"
@@ -7306,10 +7306,10 @@
     "messageformat": "गैर-लाभकारी संस्था होने पर हमें गर्व है"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "आपकी फ़ंडिंग पर चल रही प्राइवेट मैसेजिंग सेवा। न कोई विज्ञापन, न ट्रैकिंग, न ही समझौता। Signal को सहयोग करने के लिए अभी डोनेट करें।<readMoreLink>ज़्यादा पढ़ें</readMoreLink>"
+    "messageformat": "आपकी फ़ंडिंग पर चल रही प्राइवेट मैसेजिंग सेवा। न कोई विज्ञापन, न ट्रैकिंग, न ही समझौता। B&A को सहयोग करने के लिए अभी डोनेट करें।<readMoreLink>ज़्यादा पढ़ें</readMoreLink>"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "निजी मैसेजिंग सेवा को सहयोग करने के लिए डोनेट करें। Signal को स्वतंत्र और विज्ञापन-मुक्त बनाए रखें। <readMoreLink>ज़्यादा पढ़ें</readMoreLink>"
+    "messageformat": "निजी मैसेजिंग सेवा को सहयोग करने के लिए डोनेट करें। B&A को स्वतंत्र और विज्ञापन-मुक्त बनाए रखें। <readMoreLink>ज़्यादा पढ़ें</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "डोनेट करें"
@@ -7333,7 +7333,7 @@
     "messageformat": "आपकी जानकारी निजी है"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>आपकी ओर से दान किए जाने पर, Signal आपकी कोई भी निजी जानकारी इकट्ठा या स्टोर नहीं करता है।</paragraph><paragraph>हम आपसे दान पाने के लिए Stripe को अपने भुगतान प्रोसेसर के तौर पर इस्तेमाल करते हैं। आपके द्वारा उन्हें दी जाने वाली किसी भी जानकारी को हम ऐक्सेस, स्टोर, या सेव नहीं करते।</paragraph><paragraph>Signal आपके दान को न तो आपके Signal अकाउंट से कनेक्ट करता है, न ही ऐसा कर सकता है।</paragraph><paragraph>आपके सहयोग के लिए धन्यवाद!</paragraph>"
+    "messageformat": "<paragraph>आपकी ओर से दान किए जाने पर, B&A आपकी कोई भी निजी जानकारी इकट्ठा या स्टोर नहीं करता है।</paragraph><paragraph>हम आपसे दान पाने के लिए Stripe को अपने भुगतान प्रोसेसर के तौर पर इस्तेमाल करते हैं। आपके द्वारा उन्हें दी जाने वाली किसी भी जानकारी को हम ऐक्सेस, स्टोर, या सेव नहीं करते।</paragraph><paragraph>B&A आपके दान को न तो आपके B&A अकाउंट से कनेक्ट करता है, न ही ऐसा कर सकता है।</paragraph><paragraph>आपके सहयोग के लिए धन्यवाद!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "ठीक है"
@@ -7348,7 +7348,7 @@
     "messageformat": "दान करने वाले की ओर से अक्सर पूछे जाने वाले सवाल"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "रसीदें सभी डिवाइसों पर सिंक नहीं होती हैं। अगर आपने Signal फिर से इंस्टॉल किया है, तो पिछले किए गए किसी भी दान की रसीद उपलब्ध नहीं होगी।"
+    "messageformat": "रसीदें सभी डिवाइसों पर सिंक नहीं होती हैं। अगर आपने B&A फिर से इंस्टॉल किया है, तो पिछले किए गए किसी भी दान की रसीद उपलब्ध नहीं होगी।"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "कोई रसीद नहीं"
@@ -7378,7 +7378,7 @@
     "messageformat": "क्रेडिट या डेबिट कार्ड"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "अपने क्रेडिट या डेबिट कार्ड की जानकारी डालें। Signal आपकी निजी जानकारी इकट्ठा या स्टोर नहीं करता है। <learnMoreLink>ज़्यादा जानें</learnMoreLink>"
+    "messageformat": "अपने क्रेडिट या डेबिट कार्ड की जानकारी डालें। B&A आपकी निजी जानकारी इकट्ठा या स्टोर नहीं करता है। <learnMoreLink>ज़्यादा जानें</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "कार्ड नंबर"
@@ -7390,7 +7390,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signal को {formattedCurrencyAmount} डोनेट करें"
+    "messageformat": "B&A को {formattedCurrencyAmount} डोनेट करें"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "कार्ड संख्या सही नहीं है"
@@ -7408,7 +7408,7 @@
     "messageformat": "कोड बहुत छोटा है"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30 दिनों के लिए Signal बूस्ट बैज पाएं"
+    "messageformat": "30 दिनों के लिए B&A बूस्ट बैज पाएं"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "न्यूनतम दान राशि है: {formattedCurrencyAmount}"
@@ -7444,7 +7444,7 @@
     "messageformat": "एक बार"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Signal की सहायता करने के लिए शुक्रिया. आपका योगदान मुक्त स्रोत प्राइवेसी तकनीक के माध्यम से दुनिया भर में लाखों लोगों के लिए स्वतंत्र अभिव्यक्ति की रक्षा करने और सुरक्षित वैश्विक संचार को सक्षम करने के मिशन को बढ़ावा देने में मदद करता है। यदि आप संयुक्त राज्य अमेरिका के निवासी हैं, तो कृपया अपने कर रिकॉर्ड्स के लिए यह रसीद अपने पास रखें। Signal Technology Foundation आंतरिक राजस्व संहिता की धारा 501c3 के तहत एक स्वतंत्र गैर-लाभकारी धर्मार्थ संगठन है और कर-मुक्त है। हमारा फ़ेडरल टैक्स ID नंबर 82-4506840 है।"
+    "messageformat": "B&A की सहायता करने के लिए शुक्रिया. आपका योगदान मुक्त स्रोत प्राइवेसी तकनीक के माध्यम से दुनिया भर में लाखों लोगों के लिए स्वतंत्र अभिव्यक्ति की रक्षा करने और सुरक्षित वैश्विक संचार को सक्षम करने के मिशन को बढ़ावा देने में मदद करता है। यदि आप संयुक्त राज्य अमेरिका के निवासी हैं, तो कृपया अपने कर रिकॉर्ड्स के लिए यह रसीद अपने पास रखें। B&A Technology Foundation आंतरिक राजस्व संहिता की धारा 501c3 के तहत एक स्वतंत्र गैर-लाभकारी धर्मार्थ संगठन है और कर-मुक्त है। हमारा फ़ेडरल टैक्स ID नंबर 82-4506840 है।"
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "आप ऑफ़लाइन हैं। दान पूरा करने के लिए कृपया इंटरनेट से कनेक्ट करें।"
@@ -7474,7 +7474,7 @@
     "messageformat": "दान पूरा हो गया है, लेकिन हम आपकी बैज की सेटिंग अपडेट नहीं कर सके"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "अपने मोबाइल डिवाइस पर बैज सेटिंग अपडेट करने के लिए, यहां जाएं: सेटिंग → Signal को डोनेट करें → बैज।"
+    "messageformat": "अपने मोबाइल डिवाइस पर बैज सेटिंग अपडेट करने के लिए, यहां जाएं: सेटिंग → B&A को डोनेट करें → बैज।"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "दान में रुकावट आई है"
@@ -7501,7 +7501,7 @@
     "messageformat": "आपके दान के साथ कोई गड़बड़ी हुई"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "मुमकिन है कि आपका डोनेशन प्रोसेस न हुआ हो। रसीद देखने और इसकी पुष्टि करने के लिए, \"Signal को डोनेट करें\" और फिर \"डोनेशन रसीद\" पर क्लिक करें।"
+    "messageformat": "मुमकिन है कि आपका डोनेशन प्रोसेस न हुआ हो। रसीद देखने और इसकी पुष्टि करने के लिए, \"B&A को डोनेट करें\" और फिर \"डोनेशन रसीद\" पर क्लिक करें।"
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "फिर से कोशिश करें या अपना दान पूरा करने में मदद के लिए, सपोर्ट टीम को डीबग लॉग सबमिट करें। डीबग लॉग से हमें समस्या को पहचानने और उसे ठीक करने में मदद मिलती है और इनमें आपकी पहचान से जुड़ी कोई जानकारी नहीं होती।"
@@ -7543,13 +7543,13 @@
     "messageformat": "आपके समर्थन के लिए शुक्रिया!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "आपको Signal की ओर से एक डोनर बैज मिला है। अपना सहयोग दिखाने के लिए इसे अपनी प्रोफ़ाइल पर डिसप्ले करें।"
+    "messageformat": "आपको B&A की ओर से एक डोनर बैज मिला है। अपना सहयोग दिखाने के लिए इसे अपनी प्रोफ़ाइल पर डिसप्ले करें।"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "प्रोफ़ाइल पर डिस्प्ले करें"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "इसे अपने मोबाइल डिवाइस पर यहां जाकर ऐडजस्ट किया जा सकता है: सेटिंग → Signal को डोनेट करें → बैज"
+    "messageformat": "इसे अपने मोबाइल डिवाइस पर यहां जाकर ऐडजस्ट किया जा सकता है: सेटिंग → B&A को डोनेट करें → बैज"
   },
   "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
     "messageformat": "बंद करें"
@@ -7561,7 +7561,7 @@
     "messageformat": "आपकी कॉल कैसी रही?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "इससे हमें Signal में कॉल की क्वालिटी बेहतर बनाने में मदद मिलती है। ऐसी कोई व्यक्तिगत जानकारी स्टोर नहीं की जाती है जिससे किसी की पहचान हो सके।"
+    "messageformat": "इससे हमें B&A में कॉल की क्वालिटी बेहतर बनाने में मदद मिलती है। ऐसी कोई व्यक्तिगत जानकारी स्टोर नहीं की जाती है जिससे किसी की पहचान हो सके।"
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "समस्या आई"
@@ -7612,7 +7612,7 @@
     "messageformat": "समस्याओं का विवरण"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "कृपया समस्या से जुड़ी हर एक जानकारी दें। यहां जो भी जानकारी शेयर की जाती है उसे गोपनीय रखा जाता है। इस जानकारी का इस्तेमाल सिर्फ़ Signal में कॉल की क्वालिटी को बेहतर बनाने के लिए किया जाता है।"
+    "messageformat": "कृपया समस्या से जुड़ी हर एक जानकारी दें। यहां जो भी जानकारी शेयर की जाती है उसे गोपनीय रखा जाता है। इस जानकारी का इस्तेमाल सिर्फ़ B&A में कॉल की क्वालिटी को बेहतर बनाने के लिए किया जाता है।"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "कृपया अपनी समस्या बताएं"
@@ -7624,7 +7624,7 @@
     "messageformat": "जारी रखने के लिए किसी समस्या को चुनें"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
-    "messageformat": "Signal को बेहतर बनाने में हमारी मदद करें"
+    "messageformat": "B&A को बेहतर बनाने में हमारी मदद करें"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
     "messageformat": "इससे हमें कॉल के बारे में ज़्यादा जानकारी पाने और यह समझने में मदद मिलती है कि क्या काम कर रहा है और क्या नहीं। सबमिट करने से पहले आपके पास अपना डीबग लॉग देखने का विकल्प होता है।"
@@ -7666,11 +7666,11 @@
     "messageformat": "मेगाफ़ोन इस्तेमाल करने के लिए साइडबार को बड़ा करें"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "इस वर्ज़न में बग ठीक करने के साथ-साथ कई छोटे-छोटे बदलाव किए गए हैं, जिससे Signal की परफ़ॉर्मेंस और बेहतर हो सके।",
+    "messageformat": "इस वर्ज़न में बग ठीक करने के साथ-साथ कई छोटे-छोटे बदलाव किए गए हैं, जिससे B&A की परफ़ॉर्मेंस और बेहतर हो सके।",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "कई छोटे सुधार किए गए हैं, बग हटाए गए हैं, और परफ़ॉर्मेंस बेहतर की गई है। Signal के साथ बने रहने के लिए धन्यवाद!",
+    "messageformat": "कई छोटे सुधार किए गए हैं, बग हटाए गए हैं, और परफ़ॉर्मेंस बेहतर की गई है। B&A के साथ बने रहने के लिए धन्यवाद!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -7678,7 +7678,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--3": {
-    "messageformat": "कुछ सुधार किए गए हैं और बग ठीक किए गए हैं। साथ ही, परफ़ॉर्मेंस को और बेहतर बनाया गया है। Signal पर पहले की तरह मैसेज, कॉल, और वीडियो चैट करते रहें।",
+    "messageformat": "कुछ सुधार किए गए हैं और बग ठीक किए गए हैं। साथ ही, परफ़ॉर्मेंस को और बेहतर बनाया गया है। B&A पर पहले की तरह मैसेज, कॉल, और वीडियो चैट करते रहें।",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--4": {
@@ -7690,7 +7690,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "कई छोटे सुधार किए गए हैं, बग हटाए गए हैं, और परफ़ॉर्मेंस बेहतर की गई है। Signal के साथ बने रहने के लिए धन्यवाद!",
+    "messageformat": "कई छोटे सुधार किए गए हैं, बग हटाए गए हैं, और परफ़ॉर्मेंस बेहतर की गई है। B&A के साथ बने रहने के लिए धन्यवाद!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__7.86--0": {

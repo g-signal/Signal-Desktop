@@ -42,7 +42,7 @@
     "messageformat": "Жоғары сапалы мультимедианы жібергенде, трафик көбірек қолданылады."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "B&A-ды демеу"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Стандарт"
@@ -78,10 +78,10 @@
     "messageformat": "Белгісіз топ"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal ашылмады"
+    "messageformat": "B&A ашылмады"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Бұл ақауды түзету үшін қолдау көрсету бетіндегі қалпына келтіру нұсқауларын орындаңыз немесе Signal қолдау орталығына хабарласыңыз.\n\nSignal-ды дәл қазір қолдану керек болса, деректерді жойып, осы жұмыс үстеліне қайта қосыла аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
+    "messageformat": "Бұл ақауды түзету үшін қолдау көрсету бетіндегі қалпына келтіру нұсқауларын орындаңыз немесе B&A қолдау орталығына хабарласыңыз.\n\nB&A-ды дәл қазір қолдану керек болса, деректерді жойып, осы жұмыс үстеліне қайта қосыла аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
   },
   "icu:databaseError": {
     "messageformat": "Дерекқор қатесі"
@@ -93,16 +93,16 @@
     "messageformat": "Барлық деректі біржола жою"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Хабарлар тарихы және мультимедиа түгелдей осы құрылғыдан біржола жойылып кетеді. Бірақ телефоныңыздағы деректердің ешқайсысы жойылмайды.\n\nSignal-ды осы құрылғыда қайта байланыстырған соң пайдалана аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
+    "messageformat": "Хабарлар тарихы және мультимедиа түгелдей осы құрылғыдан біржола жойылып кетеді. Бірақ телефоныңыздағы деректердің ешқайсысы жойылмайды.\n\nB&A-ды осы құрылғыда қайта байланыстырған соң пайдалана аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Дерекқордың нұсқасы Signal-дың бұл нұсқасына сәйкес келмейді. Компьютеріңізде Signal-дың соңғы нұсқасын ашып отырғаныңзға көз жеткізіңіз."
+    "messageformat": "Дерекқордың нұсқасы B&A-дың бұл нұсқасына сәйкес келмейді. Компьютеріңізде B&A-дың соңғы нұсқасын ашып отырғаныңзға көз жеткізіңіз."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Дерекқорды шифрлау кілтіне кіру мүмкін болмады, себебі операциялық жүйені шифрлау кілті серверін ({previousBackend}) {currentBackend} деп өзгерту мүмкін болмады. GNOME және KDE арасында жұмыс үстелінің ортасы өзгерсе, осындай жағдай орын алады.\n\nАлдыңғы жұмыс үстелі ортасына ауысыңыз."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Дерекқорды шифрлау кілтіне кіру мүмкін болмады, себебі операциялық жүйені шифрлау кілті серверін ({previousBackend}) {currentBackend} деп өзгерту мүмкін болмады. GNOME және KDE арасында жұмыс үстелінің ортасы өзгерсе, осындай жағдай орын алады.\n\nАлдыңғы жұмыс орнының ортасына ауысыңыз немесе Signal-ды --password-store=\"{previousBackendFlag}\" пәрмен жолының жалаушасымен іске қосып көріңіз."
+    "messageformat": "Дерекқорды шифрлау кілтіне кіру мүмкін болмады, себебі операциялық жүйені шифрлау кілті серверін ({previousBackend}) {currentBackend} деп өзгерту мүмкін болмады. GNOME және KDE арасында жұмыс үстелінің ортасы өзгерсе, осындай жағдай орын алады.\n\nАлдыңғы жұмыс орнының ортасына ауысыңыз немесе B&A-ды --password-store=\"{previousBackendFlag}\" пәрмен жолының жалаушасымен іске қосып көріңіз."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -147,7 +147,7 @@
     "messageformat": "Барлығын көрсету"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal-ды жабу"
+    "messageformat": "B&A-ды жабу"
   },
   "icu:editMenuUndo": {
     "messageformat": "Болдырмау"
@@ -486,10 +486,10 @@
     "messageformat": "{name} деген контактімен араңыздағы қауіпсіздік нөмірін басқа құрылғыдан тексерілмеді деп белгіледіңіз"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Сіз верификациядан өткізгіңіз келетін қауіпсіздік нөмірі өзгеріп кетті. {name1} деген контактімен араңыздағы жаңа қауіпсіздік нөмірін қараңыз. Бұл біреудің сіздің әңгімелеріңізге тыңшылық жасағысы келетінін немесе {name2} жай ғана Signal-ды қайта орнатқанын білдіретінін есте сақтаңыз."
+    "messageformat": "Сіз верификациядан өткізгіңіз келетін қауіпсіздік нөмірі өзгеріп кетті. {name1} деген контактімен араңыздағы жаңа қауіпсіздік нөмірін қараңыз. Бұл біреудің сіздің әңгімелеріңізге тыңшылық жасағысы келетінін немесе {name2} жай ғана B&A-ды қайта орнатқанын білдіретінін есте сақтаңыз."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Төмендегі адамдар Signal қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Алушыны басып, жаңа қауіпсіздік нөмірін растаңыз. Олай істеу міндетті емес."
+    "messageformat": "Төмендегі адамдар B&A қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Алушыны басып, жаңа қауіпсіздік нөмірін растаңыз. Олай істеу міндетті емес."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Жіберілмей күтіп тұрған хаттарды жіберу"
@@ -498,7 +498,7 @@
     "messageformat": "Тексеру"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Сізде Signal қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен 1 контакт бар. Жібермес бұрын олардың қауіпсіздік нөмірлерін тексеріп алуға болады.} other {{count,number} контактіңіз Signal-ды қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Жібермес бұрын оның қауіпсіздік нөмірлерін тексеріп алуға болады.}}"
+    "messageformat": "{count, plural, one {Сізде B&A қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен 1 контакт бар. Жібермес бұрын олардың қауіпсіздік нөмірлерін тексеріп алуға болады.} other {{count,number} контактіңіз B&A-ды қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Жібермес бұрын оның қауіпсіздік нөмірлерін тексеріп алуға болады.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Барлық контакт тексерілді, жалғастыру үшін жіберу түймесін басыңыз."
@@ -543,7 +543,7 @@
     "messageformat": "Бұл журнал баршаға ашық жарияланады және үлес қосушылар оны онлайн көре алады. Жібермес бұрын оны жүктеп алуыңызға болады."
   },
   "icu:debugLogError": {
-    "messageformat": "Жүктеп салу кезінде бірдеңе дұрыс болмады! support@signal.org электрондық мекенжайына хат жазып, журналыңызды мәтіндік файл ретінде тіркеңіз."
+    "messageformat": "Жүктеп салу кезінде бірдеңе дұрыс болмады! support@baxs.com электрондық мекенжайына хат жазып, журналыңызды мәтіндік файл ретінде тіркеңіз."
   },
   "icu:debugLogSuccess": {
     "messageformat": "Ақауларды түзету журналы жіберілді"
@@ -729,7 +729,7 @@
     "messageformat": "Стикерлер жинағының авторы"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы туралы ақпарат"
+    "messageformat": "B&A-дың компьютерлік нұсқасы туралы ақпарат"
   },
   "icu:screenShareWindow": {
     "messageformat": "Экранды бөлісу"
@@ -747,7 +747,7 @@
     "messageformat": "Шығу"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы"
+    "messageformat": "B&A-дың компьютерлік нұсқасы"
   },
   "icu:search": {
     "messageformat": "Іздеу"
@@ -801,13 +801,13 @@
     "messageformat": "Телефон нөмірі бойынша іздеу"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal қолданбасына қош келдіңіз"
+    "messageformat": "B&A қолданбасына қош келдіңіз"
   },
   "icu:whatsNew": {
     "messageformat": "Осы жаңа нұсқадағы {whatsNew} тізімін көру"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal – коммерциялық емес жоба"
+    "messageformat": "B&A – коммерциялық емес жоба"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "жаңалықтар"
@@ -891,13 +891,13 @@
     "messageformat": "Сіз"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Дауыстық хаттарды жіберу үшін Signal-дың компьютерлік нұсқасына микрофонды пайдалануға рұқсат етіңіз."
+    "messageformat": "Дауыстық хаттарды жіберу үшін B&A-дың компьютерлік нұсқасына микрофонды пайдалануға рұқсат етіңіз."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Қоңырау шалу үшін Signal-дың компьютерлік нұсқасына микрофонды пайдалануға рұқсат етіңіз."
+    "messageformat": "Қоңырау шалу үшін B&A-дың компьютерлік нұсқасына микрофонды пайдалануға рұқсат етіңіз."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Видеоқоңырау шалу үшін Signal-дың компьютерлік нұсқасына камераны пайдалануға рұқсат етуіңіз керек."
+    "messageformat": "Видеоқоңырау шалу үшін B&A-дың компьютерлік нұсқасына камераны пайдалануға рұқсат етуіңіз керек."
   },
   "icu:allowAccess": {
     "messageformat": "Пайдалануға рұқсат беру"
@@ -921,13 +921,13 @@
     "messageformat": "Дыбысын өшіру"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal-ды жаңарту мүмкін болмады. <retryUpdateButton>Қайта жаңартып көріңіз</retryUpdateButton> немесе {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
+    "messageformat": "B&A-ды жаңарту мүмкін болмады. <retryUpdateButton>Қайта жаңартып көріңіз</retryUpdateButton> немесе {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal-ды жаңарту мүмкін болмады. {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
+    "messageformat": "B&A-ды жаңарту мүмкін болмады. {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы macOS карантинінде сияқты, сондықтан автоматты түрде жаңартылмайды. Finder арқылы {app} қолданбасын {folder} қалтасына ауыстырып көріңіз."
+    "messageformat": "B&A-дың компьютерлік нұсқасы macOS карантинінде сияқты, сондықтан автоматты түрде жаңартылмайды. Finder арқылы {app} қолданбасын {folder} қалтасына ауыстырып көріңіз."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -972,7 +972,7 @@
     "messageformat": "Бұл хат осы құрылғыдан жойылады."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Signal-дың соңғы нұсқасы орнатылған болса, бұл хат чаттағы әрбір адамда жойылады. Олар сіздің хатты жойғаныңызды көретін болады."
+    "messageformat": "B&A-дың соңғы нұсқасы орнатылған болса, бұл хат чаттағы әрбір адамда жойылады. Олар сіздің хатты жойғаныңызды көретін болады."
   },
   "icu:from": {
     "messageformat": "Кімнен"
@@ -1014,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” – осы кісінің Signal-да өзіне орнатқан профиль атауы."
+    "messageformat": "“{title}” – осы кісінің B&A-да өзіне орнатқан профиль атауы."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Тексерілді"
@@ -1029,7 +1029,7 @@
     "messageformat": "{name} деген кісімен тікелей хат алмаспағансыз"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal контактісі"
+    "messageformat": "B&A контактісі"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} сіздің жүйелік контактілеріңізде бар"
@@ -1341,7 +1341,7 @@
     "messageformat": "Толығырақ"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal өтпелі шифрлау функциясын пайдаланады, сондықтан кейде чат сеансын жаңартып тұруы керек болуы мүмкін. Бұл чаттың қауіпсіздігіне әсер етпейді, бірақ осы контакт жіберген хат келмей қалуы мүмкін. Оны қайта жіберуін сұрауыңызға болады."
+    "messageformat": "B&A өтпелі шифрлау функциясын пайдаланады, сондықтан кейде чат сеансын жаңартып тұруы керек болуы мүмкін. Бұл чаттың қауіпсіздігіне әсер етпейді, бірақ осы контакт жіберген хат келмей қалуы мүмкін. Оны қайта жіберуін сұрауыңызға болады."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Қолдау қызметіне хабарласу"
@@ -1368,7 +1368,7 @@
     "messageformat": "{sender} өзінің телефон нөмірін өзгертті"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Контакт Signal-ға қосылды"
+    "messageformat": "Контакт B&A-ға қосылды"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} және {conversationTitle} екеуі – бір аккаунт. Екі чат үшін де хаттар тарихын осы жерден таба аласыз."
@@ -1458,7 +1458,7 @@
     "messageformat": "Мультимедиа жүктеп алынбады"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Компьютеріңіздің және телефоныңыздың интернет байланысын тексеріңіз. Телефоныңызда Signal қолданбасын ашыңыз да, қайта жүктеп алып көріңіз."
+    "messageformat": "Компьютеріңіздің және телефоныңыздың интернет байланысын тексеріңіз. Телефоныңызда B&A қолданбасын ашыңыз да, қайта жүктеп алып көріңіз."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Бұл мультимедиа файлы телефоныңызда енді жоқ және оны жүктеп алу мүмкін емес."
@@ -1479,10 +1479,10 @@
     "messageformat": "Толық ақпарат"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Телефоныңыздағы Signal қолданбасында осы кодты сканерлеңіз"
+    "messageformat": "Телефоныңыздағы B&A қолданбасында осы кодты сканерлеңіз"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Телефоныңызда Signal қолданбасын ашыңыз"
+    "messageformat": "Телефоныңызда B&A қолданбасын ашыңыз"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} опциясын, содан кейін {linkedDevices} басыңыз"
@@ -1500,7 +1500,7 @@
     "messageformat": "<paragraph>Күтпеген қате шықты.</paragraph><paragraph>Қайталап көріңіз.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Ағымдағы желінің көмегімен Signal бұл құрылғыға байланыса алмайды."
+    "messageformat": "Ағымдағы желінің көмегімен B&A бұл құрылғыға байланыса алмайды."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Қайтадан байқап көру"
@@ -1524,7 +1524,7 @@
     "messageformat": "Құрылғы аты"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Бұл құрылғының атауын өзгерту үшін телефоныңызда Signal қолданбасын ашып, \"Параметрлер > Байланыстырылған құрылғылар\" тармағына өтіңіз"
+    "messageformat": "Бұл құрылғының атауын өзгерту үшін телефоныңызда B&A қолданбасын ашып, \"Параметрлер > Байланыстырылған құрылғылар\" тармағына өтіңіз"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Эмоджи терісінің түсі"
@@ -1725,7 +1725,7 @@
     "messageformat": "Кешіріңіз, тым көп құрылғы байланыстырылған. Бірнешеуін өшіріңіз."
   },
   "icu:installTooOld": {
-    "messageformat": "Телефоныңызды байланыстыру үшін осы құрылғыда Signal-ды жаңартыңыз."
+    "messageformat": "Телефоныңызды байланыстыру үшін осы құрылғыда B&A-ды жаңартыңыз."
   },
   "icu:installErrorHeader": {
     "messageformat": "Бірдеңе дұрыс болмады!"
@@ -1776,7 +1776,7 @@
     "messageformat": "Бұл қоңырау сілтемесі енді жарамды емес."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal қоңырауы"
+    "messageformat": "B&A қоңырауы"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Сілтеме жойылмады. Байланысты тексеріп, қайталап көріңіз."
@@ -1932,16 +1932,16 @@
     "messageformat": "{count, plural, one {Бұл қоңырауға {count,number} адам қатысып жатыр} other {Бұл қоңырауға {count,number} адам қатысып жатыр}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal {person} деген кісіге қоңырау шалады"
+    "messageformat": "B&A {person} деген кісіге қоңырау шалады"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal {first} және {second} деген кісілерге қоңырау шалады"
+    "messageformat": "B&A {first} және {second} деген кісілерге қоңырау шалады"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal {first}, {second} және {third} деген кісілерге қоңырау шалады"
+    "messageformat": "B&A {first}, {second} және {third} деген кісілерге қоңырау шалады"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal {first}, {second} және тағы {others,number} адамға қоңырау шалады} other {Signal {first}, {second} және тағы {others,number} адамға қоңырау шалады}}"
+    "messageformat": "{others, plural, one {B&A {first}, {second} және тағы {others,number} адамға қоңырау шалады} other {B&A {first}, {second} және тағы {others,number} адамға қоңырау шалады}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} хабарландыру алады"
@@ -1995,13 +1995,13 @@
     "messageformat": "Байланыс қайта орнатылуда..."
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Байланыс үзілді. Signal қайта қосылуда."
+    "messageformat": "Байланыс үзілді. B&A қайта қосылуда."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal {window} бөлісіп жатыр."
+    "messageformat": "B&A {window} бөлісіп жатыр."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal экраны көрсетіліп жатыр"
+    "messageformat": "B&A экраны көрсетіліп жатыр"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Байланыс қайта орнатылуда..."
@@ -2022,7 +2022,7 @@
     "messageformat": "Рұқсат керек"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal компьютеріңіздің экранын жазу функциясын пайдалануға рұқсат алу керек."
+    "messageformat": "B&A компьютеріңіздің экранын жазу функциясын пайдалануға рұқсат алу керек."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Жүйе параметрлеріне өтіңіз."
@@ -2031,7 +2031,7 @@
     "messageformat": "Астыңғы сол жақтағы құлып белгішесін басыңыз да, компьютердің құпиясөзін енгізіңіз."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Оң жақта Signal-дың жанындағы терезені қараңыз. Егер тізімде Signal болмаса, оны қосу үшін + таңбасын басыңыз."
+    "messageformat": "Оң жақта B&A-дың жанындағы терезені қараңыз. Егер тізімде B&A болмаса, оны қосу үшін + таңбасын басыңыз."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Жүйе параметрлерін ашу"
@@ -2043,7 +2043,7 @@
     "messageformat": "Қоңырауларды үнемі қайта трансляциялау"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Контактіңізге IP мекенжайыңызды көрсетпеу үшін барлық қоңырауды Signal сервері арқылы қайта трансляциялап шығыңыз. Оны қоссаңыз, қоңырау сапасы нашарлайды."
+    "messageformat": "Контактіңізге IP мекенжайыңызды көрсетпеу үшін барлық қоңырауды B&A сервері арқылы қайта трансляциялап шығыңыз. Оны қоссаңыз, қоңырау сапасы нашарлайды."
   },
   "icu:permissions": {
     "messageformat": "Рұқсаттар"
@@ -2061,10 +2061,10 @@
     "messageformat": "Мәтін таңдалғанда, мәтінді форматтаудың қалқымалы мәзірін көрсету"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Келесіде Signal-ды қосқанда, емле тексерісі қосылып тұрады."
+    "messageformat": "Келесіде B&A-ды қосқанда, емле тексерісі қосылып тұрады."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Келесіде Signal іске қосылғанда, емле тексерісі өшіп тұрады."
+    "messageformat": "Келесіде B&A іске қосылғанда, емле тексерісі өшіп тұрады."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Жүйелік тақтаны кішірейту"
@@ -2088,13 +2088,13 @@
     "messageformat": "Барлық деректі жою керек пе?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal Desktop-тың осы нұсқасынан барлық деректі және хатты жою керек пе? Signal аккаунтыңыз және телефоныңыздағы деректер немесе басқа да байланыстырылған құрылғылар жойылмайды."
+    "messageformat": "B&A Desktop-тың осы нұсқасынан барлық деректі және хатты жою керек пе? B&A аккаунтыңыз және телефоныңыздағы деректер немесе басқа да байланыстырылған құрылғылар жойылмайды."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Қолданба ажыратылып жатыр және деректер толығымен жойылып жатыр…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Signal-дың компьютерлік нұсқасын бұған дейін орнатқаннан ескі деректер қалып қойған. Жалғастыратын болсаңыз, ол жойылады және бәрін басынан бастайсыз."
+    "messageformat": "B&A-дың компьютерлік нұсқасын бұған дейін орнатқаннан ескі деректер қалып қойған. Жалғастыратын болсаңыз, ол жойылады және бәрін басынан бастайсыз."
   },
   "icu:deleteOldData": {
     "messageformat": "Ескі деректі жою"
@@ -2139,10 +2139,10 @@
     "messageformat": "Ішінара жойылды, қайталап көру үшін басыңыз"
   },
   "icu:expiredWarning": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы ескірді. Әрі қарай хат алмасуды жалғастыру үшін соңғы нұсқаға жаңартыңыз."
+    "messageformat": "B&A-дың компьютерлік нұсқасы ескірді. Әрі қарай хат алмасуды жалғастыру үшін соңғы нұсқаға жаңартыңыз."
   },
   "icu:upgrade": {
-    "messageformat": "signal.org/download бөліміне өту үшін басыңыз"
+    "messageformat": "ba-chat.com/download бөліміне өту үшін басыңыз"
   },
   "icu:mediaMessage": {
     "messageformat": "Мультимедиа хаты"
@@ -2151,7 +2151,7 @@
     "messageformat": "Контактілерді импорттау"
   },
   "icu:syncExplanation": {
-    "messageformat": "Мобильдік құрылғыңыздан барлық Signal тобы мен контактісін импорттаңыз."
+    "messageformat": "Мобильдік құрылғыңыздан барлық B&A тобы мен контактісін импорттаңыз."
   },
   "icu:syncNow": {
     "messageformat": "Қазір импорттау"
@@ -2187,7 +2187,7 @@
     "messageformat": "Кеше {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal кіріс хабарды өңдей алмай жатқан сияқты."
+    "messageformat": "B&A кіріс хабарды өңдей алмай жатқан сияқты."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Хаттың негізгі бөлімі тым ұзақ."
@@ -2343,13 +2343,13 @@
     "messageformat": "Бұл хатты жіберген соң, оны 24 сағаттың ішінде ғана өзгертуге болады."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} Signal пайдаланушысы емес. Толық пайдаланушы атын енгізіңіз."
+    "messageformat": "{atUsername} B&A пайдаланушысы емес. Толық пайдаланушы атын енгізіңіз."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} жарамды пайдаланушы аты емес. Пайдаланушы атын цифрлар жинағымен бірге енгізіңіз."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Пайдаланушы табылмады. \"{phoneNumber}\" – Signal пайдаланушысы емес."
+    "messageformat": "Пайдаланушы табылмады. \"{phoneNumber}\" – B&A пайдаланушысы емес."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Пайдаланушы табылмады. \"{phoneNumber}\" телефон нөмірі дұрыс емес."
@@ -2370,13 +2370,13 @@
     "messageformat": "Топ өлшемі максималды мәнге жетті"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal тобында максимум {max,number} мүше болуы керек."
+    "messageformat": "B&A тобында максимум {max,number} мүше болуы керек."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Мүшелердің ұсынылған санына жетті"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Топтағы мүшелер саны {max,number} немесе одан аз болғанда, Signal жақсы жұмыс істейді. Топ мүшелерінің саны одан асып кетсе, хаттар кеш жіберіліп, алынады."
+    "messageformat": "Топтағы мүшелер саны {max,number} немесе одан аз болғанда, B&A жақсы жұмыс істейді. Топ мүшелерінің саны одан асып кетсе, хаттар кеш жіберіліп, алынады."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Осы топқа ат қойыңыз"
@@ -2406,7 +2406,7 @@
     "messageformat": "Топ жаңартылмады. Байланысты тексеріп, қайталап көріңіз."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Хат алмасуды жалғастыру үшін Signal-дың компьютерлік нұсқасын мобильдік құрылғыңызға қайта байланыстыру үшін басыңыз."
+    "messageformat": "Хат алмасуды жалғастыру үшін B&A-дың компьютерлік нұсқасын мобильдік құрылғыңызға қайта байланыстыру үшін басыңыз."
   },
   "icu:unlinked": {
     "messageformat": "Байланыс ажыратылды"
@@ -2418,16 +2418,16 @@
     "messageformat": "Қайта жаңартып көру"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Signal-ды өшіріп, қайта қосу үшін басыңыз"
+    "messageformat": "B&A-ды өшіріп, қайта қосу үшін басыңыз"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Жаңа нұсқаны жүктеп алу үшін басыңыз"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal жаңартылмады. Қайталап көру үшін басыңыз."
+    "messageformat": "B&A жаңартылмады. Қайталап көру үшін басыңыз."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal-ды қайта іске қосу"
+    "messageformat": "B&A-ды қайта іске қосу"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Жаңа нұсқаны елемеу"
@@ -2532,7 +2532,7 @@
     "messageformat": "Кейбір тіркемелер өте үлкен болғандықтан, оны көрсету мүмкін емес."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Signal қоңырауына қосылу үшін осы сілтемені пайдаланыңыз"
+    "messageformat": "B&A қоңырауына қосылу үшін осы сілтемені пайдаланыңыз"
   },
   "icu:donation--missing": {
     "messageformat": "Демеушілік туралы мәліметті алу мүмкін болмады"
@@ -2544,7 +2544,7 @@
     "messageformat": "Демеуіңізді көру үшін мобильдік құрылғыда осы хатты түртіңіз"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} сіздің атыңыздан Signal-ға демеу берді"
+    "messageformat": "{sender} сіздің атыңыздан B&A-ға демеу берді"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Бұл демеуді ашу үшін телефоныңызды тексеріңіз"
@@ -2601,7 +2601,7 @@
     "messageformat": "Қолдау көрсеткеніңіз үшін рақмет!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Сіз {name} деген кісінің атынан Signal-ға демеу жасадыңыз. Ол өз профилінен демеу бергенін көрсете алады."
+    "messageformat": "Сіз {name} деген кісінің атынан B&A-ға демеу жасадыңыз. Ол өз профилінен демеу бергенін көрсете алады."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Стикерлер жинағын орнату мүмкін болмады"
@@ -2616,10 +2616,10 @@
     "messageformat": "Стикерлер орнатылмады"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Artist топтамасы"
+    "messageformat": "B&A Artist топтамасы"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal Artist стикерлері жоқ"
+    "messageformat": "B&A Artist стикерлері жоқ"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Алынған стикерлер"
@@ -2883,19 +2883,19 @@
     "messageformat": "Хат өте ұзын, жалғасын көрсету мүмкін емес"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} сізге жіберген хаты өңделмейді немесе көрсетілмейді, себебі жаңа Signal функциясын пайдаланады."
+    "messageformat": "{contact} сізге жіберген хаты өңделмейді немесе көрсетілмейді, себебі жаңа B&A функциясын пайдаланады."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Өзіңізде Signal нұсқасын жаңартып алғаннан кейін {contact} хатты қайта жіберуін сұрауға болады."
+    "messageformat": "Өзіңізде B&A нұсқасын жаңартып алғаннан кейін {contact} хатты қайта жіберуін сұрауға болады."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Сіздің құрылғыларыңыздың бірі жіберген хат өңделмейді немесе көрсетілмейді, себебі ол жаңа Signal нұсқасын пайдаланады."
+    "messageformat": "Сіздің құрылғыларыңыздың бірі жіберген хат өңделмейді немесе көрсетілмейді, себебі ол жаңа B&A нұсқасын пайдаланады."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Өзіңізде Signal нұсқасын жаңартып алғаннан кейін болашақта келетін осындай хаттар синхрондалады."
+    "messageformat": "Өзіңізде B&A нұсқасын жаңартып алғаннан кейін болашақта келетін осындай хаттар синхрондалады."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal-ды жаңарту"
+    "messageformat": "B&A-ды жаңарту"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Қаралды"
@@ -3159,7 +3159,7 @@
     "messageformat": "Чат оқылмады деп белгіленді"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Стикерлер жинағының генераторын пайдалану үшін телефоныңыз бен жұмыс үстеліңізге Signal қолданбасын орнатыңыз"
+    "messageformat": "Стикерлер жинағының генераторын пайдалану үшін телефоныңыз бен жұмыс үстеліңізге B&A қолданбасын орнатыңыз"
   },
   "icu:Reactions--remove": {
     "messageformat": "Реакцияны өшіру"
@@ -3183,7 +3183,7 @@
     "messageformat": "Жалған атаулар мен аккаунттар"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal сізге хабарласып, тіркеу кодын немесе PIN кодын сұрамайды. Басқа біреулердің атын жамылған сұраулардан абай болыңыз. Профиль атауларын аккаунт иелері таңдайды және олар расталмайды."
+    "messageformat": "B&A сізге хабарласып, тіркеу кодын немесе PIN кодын сұрамайды. Басқа біреулердің атын жамылған сұраулардан абай болыңыз. Профиль атауларын аккаунт иелері таңдайды және олар расталмайды."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Криптовалютаға немесе ақшаға қатысты алаяқтық"
@@ -3273,13 +3273,13 @@
     "messageformat": "Спам деп хабарлау керек пе?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Бұл адамның спам жіберіп жатуы мүмкін екендігі туралы Signal-ға хабарландыру жіберіледі. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Бұл адамның спам жіберіп жатуы мүмкін екендігі туралы B&A-ға хабарландыру жіберіледі. B&A ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Сізді осы топқа шақырған адам спам жіберген жағдайда Signal ол туралы хабарландыру алады. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Сізді осы топқа шақырған адам спам жіберген жағдайда B&A ол туралы хабарландыру алады. B&A ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Сізді осы топқа шақырған {name} спам жіберген жағдайда Signal ол туралы хабарландыру алады. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Сізді осы топқа шақырған {name} спам жіберген жағдайда B&A ол туралы хабарландыру алады. B&A ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Спам деп хабарлау"
@@ -3375,7 +3375,7 @@
     "messageformat": "<clickable>Профиль атаулары</clickable> расталмайды"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Бұл – Signal-дың ресми және жалғыз чаты"
+    "messageformat": "Бұл – B&A-дың ресми және жалғыз чаты"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Жаңалықтар мен шығарылым туралы ескертпелерден хабардар болыңыз."
@@ -3441,10 +3441,10 @@
     "messageformat": "Жауап берілмеген видеоқоңырау"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal әлі жұмыс істеп тұр"
+    "messageformat": "B&A әлі жұмыс істеп тұр"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal хабарландырулар аймағында жұмыс істеп тұра береді. Signal параметрлеріне кіріп, оны өзгертуіңізге болады."
+    "messageformat": "B&A хабарландырулар аймағында жұмыс істеп тұра береді. B&A параметрлеріне кіріп, оны өзгертуіңізге болады."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Кіріс дауыстық қоңырау"
@@ -3654,7 +3654,7 @@
     "messageformat": "Қоңырау сілтемесін көшіру"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal арқылы қоңырау сілтемесін бөлісу"
+    "messageformat": "B&A арқылы қоңырау сілтемесін бөлісу"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "Бұл адамды қоңыраудан өшіріп тастау"
@@ -3780,7 +3780,7 @@
     "messageformat": "Сілтеме нұсқасы белгісіз"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы бұл сілтемені аша алмайды."
+    "messageformat": "B&A-дың компьютерлік нұсқасы бұл сілтемені аша алмайды."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Топқа қосылу мүмкін емес"
@@ -4335,22 +4335,22 @@
     "messageformat": "Оған бірнеше минут кетуі мүмкін"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "B&A-ды демеу"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "B&A-ды демеу"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal сіз сияқты адамдардың арқасында жұмыс істеп тұр. Үлес қосып, таңба алыңыз."
+    "messageformat": "B&A сіз сияқты адамдардың арқасында жұмыс істеп тұр. Үлес қосып, таңба алыңыз."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Телефоныңызда Signal қолданбасын ашыңыз"
+    "messageformat": "Телефоныңызда B&A қолданбасын ашыңыз"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Параметрлерді ашу үшін жоғарғы сол жақтағы профиль фотосуретіңізді басыңыз"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "\"Signal-ға демеу көрсету\" түймесін басыңыз да, жазылыңыз"
+    "messageformat": "\"B&A-ға демеу көрсету\" түймесін басыңыз да, жазылыңыз"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "Профиліңіз көшірілді"
@@ -4476,7 +4476,7 @@
     "messageformat": "Аккаунтқа қатысты әрекет қажет"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Осы аккаунтты әрі қарай пайдалана беру үшін телефоныңызда Signal қолданбасын ашыңыз. Телефоныңызда Signal қолданбасын ашпасаңыз, аккаунтыңыз көп ұзамай жойылады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
+    "messageformat": "Осы аккаунтты әрі қарай пайдалана беру үшін телефоныңызда B&A қолданбасын ашыңыз. Телефоныңызда B&A қолданбасын ашпасаңыз, аккаунтыңыз көп ұзамай жойылады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Мультимедианы қалпына келтіру мүмкін емес"
@@ -4503,10 +4503,10 @@
     "messageformat": "Тіркеме немесе сауалнама қосыңыз"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Бұл адам Signal-ды пайдаланбайды"
+    "messageformat": "Бұл адам B&A-ды пайдаланбайды"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы арқылы Signal қолданбасы жоқ контактілерге хат жібере алмайсыз. Қауіпсіз хат алмасу үшін ол адамға хабарласып, Signal орнатып алуын өтініңіз."
+    "messageformat": "B&A-дың компьютерлік нұсқасы арқылы B&A қолданбасы жоқ контактілерге хат жібере алмайсыз. Қауіпсіз хат алмасу үшін ол адамға хабарласып, B&A орнатып алуын өтініңіз."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Контактінің тіркелу статусын тексеру"
@@ -4689,7 +4689,7 @@
     "messageformat": "Лақап ат"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Лақап аттар мен ескертпелер Signal-да сақталады және толықтай шифрланады. Ол тек сізге көрінеді."
+    "messageformat": "Лақап аттар мен ескертпелер B&A-да сақталады және толықтай шифрланады. Ол тек сізге көрінеді."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Аты"
@@ -4740,7 +4740,7 @@
     "messageformat": "Әкімші топ сілтемесі арқылы жаңа мүшелердің қосылуын мақұлдауын сұраңыз"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Буферге signal.group сілтемесін көшіріңіз"
+    "messageformat": "Буферге B&A.group сілтемесін көшіріңіз"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Өтініштер ({count,number})"
@@ -4944,13 +4944,13 @@
     "messageformat": "Бос немесе жойылған хаттарды басқа біреуге жіберу мүмкін емес"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Signal қоңырауына қосылу үшін осы сілтемені пайдаланыңыз: {url}"
+    "messageformat": "B&A қоңырауына қосылу үшін осы сілтемені пайдаланыңыз: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Қауіпсіздікке қатысты кеңестер"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Өтініштерді мұқият қарап шығыңыз. Signal аты дәл осындай тағы бір адамды тапты. <reviewRequestLink>Өтінішті қарап шығу</reviewRequestLink>"
+    "messageformat": "Өтініштерді мұқият қарап шығыңыз. B&A аты дәл осындай тағы бір адамды тапты. <reviewRequestLink>Өтінішті қарап шығу</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} топ мүшесінің аты дәл осындай. <reviewRequestLink>Топ мүшелерін қарап шығу</reviewRequestLink>} other {{count,number} топ мүшесінің аты дәл осындай. <reviewRequestLink>Топ мүшелерін қарап шығу</reviewRequestLink>}}"
@@ -4983,7 +4983,7 @@
     "messageformat": "Басқа ортақ топтар жоқ"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal-мен байланыс"
+    "messageformat": "B&A-мен байланыс"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Профиль атауы {oldName} болған, енді {newName} деп өзгертті"
@@ -5001,7 +5001,7 @@
     "messageformat": "Хат алмасуды жалғастыру үшін тексеру"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signal-да спамның алдын алу үшін тексеруден өтіңіз."
+    "messageformat": "B&A-да спамның алдын алу үшін тексеруден өтіңіз."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Верификациядан өткен соң, әрі қарай хат алмаса аласыз. Жіберілмей қалған хаттардың барлығы автоматты түрде жіберіледі."
@@ -5367,7 +5367,7 @@
     "messageformat": "Осы өзгертулерді жойғыңыз келе ме?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signal-ды жауып, қоңырауды аяқтау керек пе?"
+    "messageformat": "B&A-ды жауып, қоңырауды аяқтау керек пе?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Қазір емес"
@@ -5454,7 +5454,7 @@
     "messageformat": "Жалпы"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "B&A-ды демеу"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Сыртқы көрінісі"
@@ -5535,7 +5535,7 @@
     "messageformat": "Сілтеменің шағын көріністерін жасау"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "Осы параметрді өзгерту үшін мобильдік құрылғыңызда Signal қолданбасын ашыңыз және \"Параметрлер > Чаттар\" бөліміне өтіңіз"
+    "messageformat": "Осы параметрді өзгерту үшін мобильдік құрылғыңызда B&A қолданбасын ашыңыз және \"Параметрлер > Чаттар\" бөліміне өтіңіз"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "Терілген эмотикондарды эмодзилерге түрлендіру"
@@ -5637,7 +5637,7 @@
     "messageformat": "Чат тарихын экспорттау мүмкін емес"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Чат тарихын экспорттау мүмкін емес, себебі Signal-да файлдарды дискіге жазу рұқсаты жоқ. Диск рұқсаттарын өзгертіп немесе жүйе параметрлерін жаңартып, әрекетті қайталап көріңіз."
+    "messageformat": "Чат тарихын экспорттау мүмкін емес, себебі B&A-да файлдарды дискіге жазу рұқсаты жоқ. Диск рұқсаттарын өзгертіп немесе жүйе параметрлерін жаңартып, әрекетті қайталап көріңіз."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Сақтық көшірме экспортталып жатыр"
@@ -5652,7 +5652,7 @@
     "messageformat": "Сақтық көшірме қалтасын телефоныңыздың жадына тасымалдаңыз"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Телефоныңызда Signal-дың жаңа нұсқасын орнатыңыз"
+    "messageformat": "Телефоныңызда B&A-дың жаңа нұсқасын орнатыңыз"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "\"Қалпына келтіру немесе тасымалдау\" түймесін түртіңіз және \"Сақтық көшірмені құрылғыда жасау\" опциясын таңдаңыз"
@@ -5898,13 +5898,13 @@
     "messageformat": "Блокталған"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal қауіпсіз сақтық көшірмелері"
+    "messageformat": "B&A қауіпсіз сақтық көшірмелері"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Автоматты cақтық көшірмелер Signal-дың қауіпсіз және тура шифрланған жад қызметі арқылы жасалады. Телефоныңызда бастаңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Автоматты cақтық көшірмелер B&A-дың қауіпсіз және тура шифрланған жад қызметі арқылы жасалады. Телефоныңызда бастаңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Хабарлар тарихының сақтық көшірмесін жасаңыз. Сонда жаңа телефон алсаңыз да, Signal-ды қайта орнатсаңыз да, деректеріңізді ешқашан жоғалтпайсыз."
+    "messageformat": "Хабарлар тарихының сақтық көшірмесін жасаңыз. Сонда жаңа телефон алсаңыз да, B&A-ды қайта орнатсаңыз да, деректеріңізді ешқашан жоғалтпайсыз."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Резервтік көшірме туралы мәліметтер"
@@ -5934,13 +5934,13 @@
     "messageformat": "Жазылым тоқтатылды."
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Signal Secure Backups жазылымын телефонда басқаруға немесе тоқтатуға болады."
+    "messageformat": "B&A Secure Backups жазылымын телефонда басқаруға немесе тоқтатуға болады."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Signal Secure Backups жазылымын телефонда басқаруға және жаңартуға болады."
+    "messageformat": "B&A Secure Backups жазылымын телефонда басқаруға және жаңартуға болады."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Signal Secure Backups жазылымын телефонда басқаруға немесе жаңартуға болады."
+    "messageformat": "B&A Secure Backups жазылымын телефонда басқаруға немесе жаңартуға болады."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Соңғы резервтік көшірме"
@@ -5958,7 +5958,7 @@
     "messageformat": "Телефоныңызда қалпына келтіруге болатын тура шифрланған сақтық көшірме жасаңыз. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Сақтық көшірмені қалпына келтіру үшін Signal-дың жаңа нұсқасын орнатыңыз. Қолданбаны ашып, &quot;Сақтық көшірмені қалпына келтіру&quot; опциясын басыңыз да, сақтық көшірме қалтасын тауып алыңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Сақтық көшірмені қалпына келтіру үшін B&A-дың жаңа нұсқасын орнатыңыз. Қолданбаны ашып, &quot;Сақтық көшірмені қалпына келтіру&quot; опциясын басыңыз да, сақтық көшірме қалтасын тауып алыңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Қалта таңдаңыз"
@@ -6006,7 +6006,7 @@
     "messageformat": "Кілтіңізді қауіпсіз сақтаңыз"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Кілтіңізді жоғалтып алсаңыз, Signal резервтік көшірмені қалпына келтіруге көмектесе алмайды. Оны қауіпсіз жерде сақтаңыз және ешкіммен бөліспеңіз."
+    "messageformat": "Кілтіңізді жоғалтып алсаңыз, B&A резервтік көшірмені қалпына келтіруге көмектесе алмайды. Оны қауіпсіз жерде сақтаңыз және ешкіммен бөліспеңіз."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Жалғастыру"
@@ -6063,13 +6063,13 @@
     "messageformat": "{num, plural, one {1 контакт} other {{num,number} контакт}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "Осы параметрлерді өзгерту үшін мобильдік құрылғыңызда Signal қолданбасын ашыңыз және \"Параметрлер > Құпиялылық\" бөлімін ашыңыз"
+    "messageformat": "Осы параметрлерді өзгерту үшін мобильдік құрылғыңызда B&A қолданбасын ашыңыз және \"Параметрлер > Құпиялылық\" бөлімін ашыңыз"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Телефон нөмірі"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Телефон нөміріңізді кім көре алатынын және Signal-да сізге кім жаза алатынын таңдаңыз."
+    "messageformat": "Телефон нөміріңізді кім көре алатынын және B&A-да сізге кім жаза алатынын таңдаңыз."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Өзгерту…"
@@ -6099,10 +6099,10 @@
     "messageformat": "Мені нөмірім арқылы кім таба алады?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Телефон нөміріңізді білетін кез келген адам сіздің Signal қолданбасын пайдаланатыныңызды біле алады және сізбен чат аша алады."
+    "messageformat": "Телефон нөміріңізді білетін кез келген адам сіздің B&A қолданбасын пайдаланатыныңызды біле алады және сізбен чат аша алады."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Сіз біреуге хат жазбайынша немесе біреумен чат ашпайынша, сіздің Signal қолданбасын пайдаланатыныңызды ешкім білмейді."
+    "messageformat": "Сіз біреуге хат жазбайынша немесе біреумен чат ашпайынша, сіздің B&A қолданбасын пайдаланатыныңызды ешкім білмейді."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Барлығы"
@@ -6114,7 +6114,7 @@
     "messageformat": "Сенімдісіз бе?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "\"{settingTitle}\" параметрін \"{nobodyLabel}\" деп өзгертсеңіз, адамдардың сізді Signal-да табуы қиынға соғады."
+    "messageformat": "\"{settingTitle}\" параметрін \"{nobodyLabel}\" деп өзгертсеңіз, адамдардың сізді B&A-да табуы қиынға соғады."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Хат алмасу"
@@ -6168,7 +6168,7 @@
     "messageformat": "Орнату"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Қолдану үшін Signal-ды өшіріп, қайта қосыңыз"
+    "messageformat": "Қолдану үшін B&A-ды өшіріп, қайта қосыңыз"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Тілді өзгерту үшін қолданбаны өшіріп, қайта қосу керек."
@@ -6183,13 +6183,13 @@
     "messageformat": "Экран қауіпсіздігі"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Дерек құпиялығын сақтау үшін осы компьютерде Signal-дың скриншоттарын жасамаңыз."
+    "messageformat": "Дерек құпиялығын сақтау үшін осы компьютерде B&A-дың скриншоттарын жасамаңыз."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Экран қауіпсіздігін өшіру керек пе?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Өшіріп қойсаңыз, бұл Microsoft Windows жүйесіне Signal-дың скриншоттарын түсіруге және баршаға ашық функциялар үшін қолдануға мүмкіндік береді."
+    "messageformat": "Өшіріп қойсаңыз, бұл Microsoft Windows жүйесіне B&A-дың скриншоттарын түсіруге және баршаға ашық функциялар үшін қолдануға мүмкіндік береді."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Өшіру"
@@ -6204,25 +6204,25 @@
     "messageformat": "Жаңа нұсқасы жүктеп алынды"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Телефоныңызда Signal қолданбасын ашыңыз"
+    "messageformat": "Телефоныңызда B&A қолданбасын ашыңыз"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Аккаунтыңыз көп ұзамай жойылады. Оны сақтап қалу үшін телефоныңызда Signal қолданбасын ашыңыз. Бәрі дұрыс болса, бұл хабар өзі-ақ жоғалады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
+    "messageformat": "Аккаунтыңыз көп ұзамай жойылады. Оны сақтап қалу үшін телефоныңызда B&A қолданбасын ашыңыз. Бәрі дұрыс болса, бұл хабар өзі-ақ жоғалады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Аккаунтыңыз белсенді болып тұруы үшін телефоныңызда Signal-ды ашыңыз"
+    "messageformat": "Аккаунтыңыз белсенді болып тұруы үшін телефоныңызда B&A-ды ашыңыз"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Толық ақпарат"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal қолданбасында техникалық қиындықтар туындады. Қызметті мүмкіндігінше тезірек қалпына келтіру үшін аянбай жұмыс істеп жатырмыз."
+    "messageformat": "B&A қолданбасында техникалық қиындықтар туындады. Қызметті мүмкіндігінше тезірек қалпына келтіру үшін аянбай жұмыс істеп жатырмыз."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Жаңарту керек"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Хабарларды синхрондау процесін аяқтау үшін Signal Desktop қолданбасын қазір жаңартыңыз."
+    "messageformat": "Хабарларды синхрондау процесін аяқтау үшін B&A Desktop қолданбасын қазір жаңартыңыз."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Жаңарту"
@@ -6231,19 +6231,19 @@
     "messageformat": "Жаңарту керек"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal-ды әрі қарай қолдана беру үшін оның соңғы нұсқасын орнатып алуыңыз керек."
+    "messageformat": "B&A-ды әрі қарай қолдана беру үшін оның соңғы нұсқасын орнатып алуыңыз керек."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} жүктеп алу"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Жаңа нұсқасы орнатылуы үшін, Signal-ды өшіріп, қайта қосыңыз."
+    "messageformat": "Жаңа нұсқасы орнатылуы үшін, B&A-ды өшіріп, қайта қосыңыз."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Компьютерге арналған Signal жаңартылмады, бірақ оның жаңа нұсқасы бар. {downloadUrl} веб-бетіне кіріп, жаңа нұсқасын қолмен орнатыңыз, содан кейін қолдау қызметіне хабарласыңыз немесе бұл мәселе бойынша тикет ашыңыз."
+    "messageformat": "Компьютерге арналған B&A жаңартылмады, бірақ оның жаңа нұсқасы бар. {downloadUrl} веб-бетіне кіріп, жаңа нұсқасын қолмен орнатыңыз, содан кейін қолдау қызметіне хабарласыңыз немесе бұл мәселе бойынша тикет ашыңыз."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal-ды жабу мүмкін емес.",
+    "messageformat": "B&A-ды жабу мүмкін емес.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -6263,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal-дың жаңа нұсқасы орнатылып қойды. Шынымен де жалғастырғыңыз келе ме?",
+    "messageformat": "B&A-дың жаңа нұсқасы орнатылып қойды. Шынымен де жалғастырғыңыз келе ме?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Қолданба бұзылды"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal жұмысы бұзылған соң қайта іске қосылды. Signal ақаудың төркінін анықтай алуы үшін, бұзылу туралы есеп жіберуіңізге болады."
+    "messageformat": "B&A жұмысы бұзылған соң қайта іске қосылды. B&A ақаудың төркінін анықтай алуы үшін, бұзылу туралы есеп жіберуіңізге болады."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Жіберу"
@@ -6375,7 +6375,7 @@
     "messageformat": "Төмендегі \"{buttonName}\" түймесін басыңыз"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "\"Signal\" қолданбасын қосыңыз"
+    "messageformat": "\"B&A\" қолданбасын қосыңыз"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Параметрлерге өту"
@@ -6465,7 +6465,7 @@
     "messageformat": "Толығырақ"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal контактілері"
+    "messageformat": "B&A контактілері"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} – сіз сенім артатын адамдар немесе:"
@@ -6615,7 +6615,7 @@
     "messageformat": "Стористі мына адамдардан жасыру"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Барлық Signal контактісі"
+    "messageformat": "Барлық B&A контактісі"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Мыналардан басқалары..."
@@ -6633,7 +6633,7 @@
     "messageformat": "Көрілгендігі туралы хаттар"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "Осы параметрді өзгерту үшін, мобильдік құрылғыңызда Signal қолданбасын ашыңыз да, \"Параметрлер > Стористер\" бөліміне өтіңіз"
+    "messageformat": "Осы параметрді өзгерту үшін, мобильдік құрылғыңызда B&A қолданбасын ашыңыз да, \"Параметрлер > Стористер\" бөліміне өтіңіз"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Бұл стористі кім көре алады"
@@ -6693,7 +6693,7 @@
     "messageformat": "Сторис құпиялылығы"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Signal контактілерінің қайсысы стористеріңізді көре алатынын таңдаңыз. Оны құпиялылық параметрлерінен кез келген уақытта өзгерте аласыз. <learnMoreLink>Толығырақ.</learnMoreLink>"
+    "messageformat": "B&A контактілерінің қайсысы стористеріңізді көре алатынын таңдаңыз. Оны құпиялылық параметрлерінен кез келген уақытта өзгерте аласыз. <learnMoreLink>Толығырақ.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Стористі жою"
@@ -6762,7 +6762,7 @@
     "messageformat": "Тіркемені жүктеп алу"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Көрілгені туралы растаманы қосып, стористеріңізді кім көргенін біле аласыз. Мобильдік құрылғыңыздағы Signal қолданбасын ашып, \"Параметрлер > Сторис\" бөліміне өтіңіз."
+    "messageformat": "Көрілгені туралы растаманы қосып, стористеріңізді кім көргенін біле аласыз. Мобильдік құрылғыңыздағы B&A қолданбасын ашып, \"Параметрлер > Сторис\" бөліміне өтіңіз."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Ешкім жауап жазбаған"
@@ -6948,7 +6948,7 @@
     "messageformat": "QR кодыңыз бен сілтемеңіз қалпына келтірілді және пайдаланушы атыңыз – {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Телефоныңызбен мына QR кодты сканерлеп, Signal-да менімен чат арқылы сөйлесіңіз.",
+    "messageformat": "Телефоныңызбен мына QR кодты сканерлеп, B&A-да менімен чат арқылы сөйлесіңіз.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -7024,13 +7024,13 @@
     "messageformat": "Жабу"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы жақында компьютеріңіздегі {OS} нұсқасымен жұмыс істемейтін болады. Signal-ды пайдалана беру үшін {expirationDate} күніне дейін компьютеріңіздің операциялық жүйесін жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
+    "messageformat": "B&A-дың компьютерлік нұсқасы жақында компьютеріңіздегі {OS} нұсқасымен жұмыс істемейтін болады. B&A-ды пайдалана беру үшін {expirationDate} күніне дейін компьютеріңіздің операциялық жүйесін жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы бұдан былай бұл компьютерде жұмыс істемейді. Signal-дың компьютерлік нұсқасын қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
+    "messageformat": "B&A-дың компьютерлік нұсқасы бұдан былай бұл компьютерде жұмыс істемейді. B&A-дың компьютерлік нұсқасын қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы бұдан былай бұл компьютерде жұмыс істемейді. Signal-дың компьютерлік нұсқасын қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз."
+    "messageformat": "B&A-дың компьютерлік нұсқасы бұдан былай бұл компьютерде жұмыс істемейді. B&A-дың компьютерлік нұсқасын қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Өзгертілді"
@@ -7204,7 +7204,7 @@
     "messageformat": "Сілтемені көшіру"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Сілтемені Signal арқылы бөлісу"
+    "messageformat": "Сілтемені B&A арқылы бөлісу"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Сілтемені жою"
@@ -7270,7 +7270,7 @@
     "messageformat": "Бұл параметрді өзгерту үшін \"Менің нөмірімді кім көре алады\" деген бөлімде \"Ешкім\" опциясын таңдаңыз."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal-дағы профиль атауларын аккаунт иесі таңдайды:"
+    "messageformat": "B&A-дағы профиль атауларын аккаунт иесі таңдайды:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "Профиль атаулары расталмайды"
@@ -7306,10 +7306,10 @@
     "messageformat": "Мақтан тұтарлық коммерциялық емес жоба"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Сіз демеушілік жасаған қауіпсіз хабар алмасу қолданбасы. Жарнамасыз, бақылаусыз, ымырасыз. Signal-ға қазір демеушілік жасаңыз. <readMoreLink>Толық ақпарат</readMoreLink>"
+    "messageformat": "Сіз демеушілік жасаған қауіпсіз хабар алмасу қолданбасы. Жарнамасыз, бақылаусыз, ымырасыз. B&A-ға қазір демеушілік жасаңыз. <readMoreLink>Толық ақпарат</readMoreLink>"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Жеке хабар алмасуға қаржылай қолдау көрсетіңіз. Signal-дың тәуелсіз әрі жарнамасыз болуына атсалысыңыз. <readMoreLink>Толық ақпарат</readMoreLink>"
+    "messageformat": "Жеке хабар алмасуға қаржылай қолдау көрсетіңіз. B&A-дың тәуелсіз әрі жарнамасыз болуына атсалысыңыз. <readMoreLink>Толық ақпарат</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Демеу"
@@ -7333,7 +7333,7 @@
     "messageformat": "Ақпаратыңыз құпия сақталады"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Сіз демеушілік жасағанда, Signal сіздің ешқандай жеке ақпаратыңызды жинамайды немесе сақтамайды.</paragraph><paragraph>Демеу мақсатында жіберген қаражатыңызды қабылдау үшін Stripe төлем операторын қолданамыз. Оларға берген ақпаратыңыздың ешқайсысын пайдаланбаймыз немесе сақтамаймыз.</paragraph><paragraph>Signal сіздің демеушілігіңізді Signal аккаунтыңызбен байланыстырмайды.</paragraph><paragraph>Қолдау көрсеткеніңіз үшін рақмет!</paragraph>"
+    "messageformat": "<paragraph>Сіз демеушілік жасағанда, B&A сіздің ешқандай жеке ақпаратыңызды жинамайды немесе сақтамайды.</paragraph><paragraph>Демеу мақсатында жіберген қаражатыңызды қабылдау үшін Stripe төлем операторын қолданамыз. Оларға берген ақпаратыңыздың ешқайсысын пайдаланбаймыз немесе сақтамаймыз.</paragraph><paragraph>B&A сіздің демеушілігіңізді B&A аккаунтыңызбен байланыстырмайды.</paragraph><paragraph>Қолдау көрсеткеніңіз үшін рақмет!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -7348,7 +7348,7 @@
     "messageformat": "Donor туралы сұрақ-жауап"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Түбіртектер барлық құрылғыда синхрондалмайды. Signal-ды қайта орнатқан болсаңыз, алдыңғы қайырымдылық түбіртектері қолжетімді болмайды."
+    "messageformat": "Түбіртектер барлық құрылғыда синхрондалмайды. B&A-ды қайта орнатқан болсаңыз, алдыңғы қайырымдылық түбіртектері қолжетімді болмайды."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Чек жоқ"
@@ -7378,7 +7378,7 @@
     "messageformat": "Несиелік немесе дебеттік карта"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Несиелік немесе дебеттік картаңыздың мәліметін енгізіңіз. Signal сіздің жеке басыңызға қатысты ақпаратты жинамайды немесе сақтамайды. <learnMoreLink>Толық ақпарат</learnMoreLink>"
+    "messageformat": "Несиелік немесе дебеттік картаңыздың мәліметін енгізіңіз. B&A сіздің жеке басыңызға қатысты ақпаратты жинамайды немесе сақтамайды. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Карта нөмірі"
@@ -7390,7 +7390,7 @@
     "messageformat": "АА/ЖЖ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signal-ға {formattedCurrencyAmount} аудару"
+    "messageformat": "B&A-ға {formattedCurrencyAmount} аудару"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Карта нөмірі дұрыс емес"
@@ -7408,7 +7408,7 @@
     "messageformat": "Код өте қысқа"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30 күнге Signal Boost танымбелгісін алыңыз"
+    "messageformat": "30 күнге B&A Boost танымбелгісін алыңыз"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Минималды донат сомасы – {formattedCurrencyAmount}"
@@ -7444,7 +7444,7 @@
     "messageformat": "Бір рет"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Signal-ға қолдау көрсеткеніңіз үшін рақмет. Сіздің қосқан үлесіңіз ашық кодты құпиялық технологиясы арқылы әлемдегі миллиондаған адам үшін сөз еркіндігін қорғау және жаһандық байланыс орнату қауіпсіздігін қамтамасыз ету миссиясын жүзеге асыруға ықпал етеді. Егер Америка Құрама Штаттарының резиденті болсаңыз, осы түбіртекті салық жазбалары үшін сақтап қойыңыз. Signal Technology Foundation – Салық кодексінің 501c3 бөліміне сәйкес Америка Құрама Штаттарындағы салықтан босатылған коммерциялық емес ұйым. Біздің федералдық салық идентификаторымыз: 82-4506840."
+    "messageformat": "B&A-ға қолдау көрсеткеніңіз үшін рақмет. Сіздің қосқан үлесіңіз ашық кодты құпиялық технологиясы арқылы әлемдегі миллиондаған адам үшін сөз еркіндігін қорғау және жаһандық байланыс орнату қауіпсіздігін қамтамасыз ету миссиясын жүзеге асыруға ықпал етеді. Егер Америка Құрама Штаттарының резиденті болсаңыз, осы түбіртекті салық жазбалары үшін сақтап қойыңыз. B&A Technology Foundation – Салық кодексінің 501c3 бөліміне сәйкес Америка Құрама Штаттарындағы салықтан босатылған коммерциялық емес ұйым. Біздің федералдық салық идентификаторымыз: 82-4506840."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Желіге қосылмағансыз. Демеушілік процесін аяқтау үшін интернетке қосылыңыз."
@@ -7474,7 +7474,7 @@
     "messageformat": "Қайырымдылыққа арналған қаражат жіберілгенмен, танымбелгі параметрлеріңізді жаңарта алмадық"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Мобильдік құрылғыңызда танымбелгі параметрлерін жаңарту үшін \"Параметрлер → Signal-ды демеу\" → Танымбелгілер\" тармағына өтіңіз."
+    "messageformat": "Мобильдік құрылғыңызда танымбелгі параметрлерін жаңарту үшін \"Параметрлер → B&A-ды демеу\" → Танымбелгілер\" тармағына өтіңіз."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Демеушілік үзілді"
@@ -7501,7 +7501,7 @@
     "messageformat": "Қайырымдылыққа жіберген қаражатыңызды өңдеу кезінде қате шықты"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Қайырымдылыққа жіберген қаражатыңыз өңделмей қалған болуы мүмкін. \"Signal-ды демеу\" түймесін, содан кейін \"Демеу чегі\" түймесін басып, чектеріңізді тексеріңіз және растаңыз."
+    "messageformat": "Қайырымдылыққа жіберген қаражатыңыз өңделмей қалған болуы мүмкін. \"B&A-ды демеу\" түймесін, содан кейін \"Демеу чегі\" түймесін басып, чектеріңізді тексеріңіз және растаңыз."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Әрекетті қайталап көріңіз немесе демеушілік процесін аяқтау жөнінде көмек сұрау үшін Қолдау орталығына ақауларды түзету журналын жіберіңіз. Ақауларды түзету журналдары диагностика жасап, ақауларды түзетуге мүмкіндік береді және онда жеке басты анықтайтын ақпарат болмайды."
@@ -7543,13 +7543,13 @@
     "messageformat": "Қолдау көрсеткеніңіз үшін рақмет!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Signal-дан донор таңбасын алдыңыз! Демеушілік жасағаныңызды көрсету үшін, оны профиліңізге қойыңыз."
+    "messageformat": "B&A-дан донор таңбасын алдыңыз! Демеушілік жасағаныңызды көрсету үшін, оны профиліңізге қойыңыз."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Профильде көрсету"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Оны мобильдік құрылғыңыздағы «Параметрлер → Signal-ды демеу → Танымбелгілер» тармағынан реттей аласыз"
+    "messageformat": "Оны мобильдік құрылғыңыздағы «Параметрлер → B&A-ды демеу → Танымбелгілер» тармағынан реттей аласыз"
   },
   "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
     "messageformat": "Жабу"
@@ -7561,7 +7561,7 @@
     "messageformat": "Қоңырау сапасы қалай болды?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Бұл Signal-дағы қоңыраулар сапасын жақсартуға көмектеседі. Жеке басты анықтайтын ақпарат сақталмайды."
+    "messageformat": "Бұл B&A-дағы қоңыраулар сапасын жақсартуға көмектеседі. Жеке басты анықтайтын ақпарат сақталмайды."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Ақаулары бар"
@@ -7612,7 +7612,7 @@
     "messageformat": "Ақаулардың сипаттамасы"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Осы ақауға қатысты деректердің барлығын енгізіңіз. Осы жерде бөліскен ақпаратыңыздың барлығы құпия сақталады және Signal-дағы қоңыраулар сапасын жақсарту үшін ғана қолданылады."
+    "messageformat": "Осы ақауға қатысты деректердің барлығын енгізіңіз. Осы жерде бөліскен ақпаратыңыздың барлығы құпия сақталады және B&A-дағы қоңыраулар сапасын жақсарту үшін ғана қолданылады."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Мәселеңізді сипаттаңыз"
@@ -7666,11 +7666,11 @@
     "messageformat": "Мегафонмен әрекеттесу үшін бүйірлік жолақты кеңейтіңіз"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Бұл нұсқада Signal-дың еш кінәратсыз жұмыс істеуіне қажетті бірнеше шағын түзетпе жасалды және ақаулар түзетілді.",
+    "messageformat": "Бұл нұсқада B&A-дың еш кінәратсыз жұмыс істеуіне қажетті бірнеше шағын түзетпе жасалды және ақаулар түзетілді.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Қосымша шағын реттеулер жасалды, ақаулар түзетілді және жұмысы жақсартылды. Signal-ды қолданғаныңыз үшін рақмет!",
+    "messageformat": "Қосымша шағын реттеулер жасалды, ақаулар түзетілді және жұмысы жақсартылды. B&A-ды қолданғаныңыз үшін рақмет!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -7690,7 +7690,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Кішігірім түзетпелер жасалды, ақаулар жөнделді және жұмысы жақсартылды. Signal-ды қолданғаныңыз үшін рақмет!",
+    "messageformat": "Кішігірім түзетпелер жасалды, ақаулар жөнделді және жұмысы жақсартылды. B&A-ды қолданғаныңыз үшін рақмет!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__7.86--0": {

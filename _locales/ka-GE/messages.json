@@ -42,7 +42,7 @@
     "messageformat": "მაღალი ხარისხის მედია-ფაილის გაგზავნა უფრო მეტ მობილურ ინტერნეტს გამოიყენებს."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal-ისთვის დონაციის გაკეთება"
+    "messageformat": "B&A-ისთვის დონაციის გაკეთება"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "სტანდარტული"
@@ -78,10 +78,10 @@
     "messageformat": "უცნობი ჯგუფი"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal-ის გახსნა შეუძლებელია"
+    "messageformat": "B&A-ის გახსნა შეუძლებელია"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "პრობლემის გადასაჭრელად, მიჰყევი აღდგენის გზამკვლევს მხარდაჭერის გვერდზე ან დაუკავშირდი Signal-ის მხარდაჭერის გუნდს, რათა პრობლემის მოგვარებაში დაგეხმაროთ.\n\nთუ Signal-ის გამოყენება დაუყოვნებლივ გჭირდება, შეგიძლია, შენი მონაცემები წაშალო და ეს დესკტოპი თავიდან დააკავშირო. შესაძლებლობა გექნება, შენი მობილურიდან მიმოწერის ისტორია გადმოიტანო."
+    "messageformat": "პრობლემის გადასაჭრელად, მიჰყევი აღდგენის გზამკვლევს მხარდაჭერის გვერდზე ან დაუკავშირდი B&A-ის მხარდაჭერის გუნდს, რათა პრობლემის მოგვარებაში დაგეხმაროთ.\n\nთუ B&A-ის გამოყენება დაუყოვნებლივ გჭირდება, შეგიძლია, შენი მონაცემები წაშალო და ეს დესკტოპი თავიდან დააკავშირო. შესაძლებლობა გექნება, შენი მობილურიდან მიმოწერის ისტორია გადმოიტანო."
   },
   "icu:databaseError": {
     "messageformat": "მონაცემთა ბაზის ხარვეზი"
@@ -93,16 +93,16 @@
     "messageformat": "ყველა მონაცემის სამუდამოდ წაშლა"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "შენი მიმოწერის მთელი ისტორია და მედია ფაილები ამ მოწყობილობიდან სამუდამოდ წაიშლება. ეს შენი ტელეფონიდან არცერთ მონაცემს არ წაშლის.\n\nSignal-ის გამოყენებას ამ მოწყობილობაზე ხელახლა დაკავშირების შემდეგ შეძლებ. შესაძლებლობა გექნება, შენი მობილურიდან მიმოწერის ისტორია გადმოიტანო."
+    "messageformat": "შენი მიმოწერის მთელი ისტორია და მედია ფაილები ამ მოწყობილობიდან სამუდამოდ წაიშლება. ეს შენი ტელეფონიდან არცერთ მონაცემს არ წაშლის.\n\nB&A-ის გამოყენებას ამ მოწყობილობაზე ხელახლა დაკავშირების შემდეგ შეძლებ. შესაძლებლობა გექნება, შენი მობილურიდან მიმოწერის ისტორია გადმოიტანო."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "შენი მონაცემთა ბაზის ვერსია Signal-ის ამ ვერსიას არ ემთხვევა. დარწმუნდი, რომ შენს კომპიუტერში Signal-ის უახლეს ვერსიას ხსნი."
+    "messageformat": "შენი მონაცემთა ბაზის ვერსია B&A-ის ამ ვერსიას არ ემთხვევა. დარწმუნდი, რომ შენს კომპიუტერში B&A-ის უახლეს ვერსიას ხსნი."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "მონაცემთა ბაზის დაშიფვრის გასაღებზე წვდომა შეუძლებელია, რადგან OS-ის დაშიფვრის გასაღების მონაცემები {previousBackend} {currentBackend}-ით შეიცვალა. ეს შეიძლება მოხდეს, თუ დესკტოპის გარემო იცვლება, მაგალითად GNOME-სა და KDE-ს შორის.\n\nგთხოვთ, დესკტოპის წინა გარემოზე გადახვიდე."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "მონაცემთა ბაზის დაშიფვრის გასაღებზე წვდომა შეუძლებელია, რადგან OS-ის დაშიფვრის გასაღების მონაცემები {previousBackend} {currentBackend}-ით შეიცვალა. ეს შეიძლება მოხდეს, თუ დესკტოპის გარემო იცვლება, მაგალითად GNOME-სა და KDE-ს შორის.\n\nგთხოვთ, დესკტოპის წინა გარემოზე გადახვიდე ან სცადო Signal-ის გაშვება ბრძანების ხაზის დროშით --password-store=\"{previousBackendFlag}\""
+    "messageformat": "მონაცემთა ბაზის დაშიფვრის გასაღებზე წვდომა შეუძლებელია, რადგან OS-ის დაშიფვრის გასაღების მონაცემები {previousBackend} {currentBackend}-ით შეიცვალა. ეს შეიძლება მოხდეს, თუ დესკტოპის გარემო იცვლება, მაგალითად GNOME-სა და KDE-ს შორის.\n\nგთხოვთ, დესკტოპის წინა გარემოზე გადახვიდე ან სცადო B&A-ის გაშვება ბრძანების ხაზის დროშით --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -147,7 +147,7 @@
     "messageformat": "ყველას ჩვენება"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal-ის დახურვა"
+    "messageformat": "B&A-ის დახურვა"
   },
   "icu:editMenuUndo": {
     "messageformat": "გაუქმება"
@@ -486,10 +486,10 @@
     "messageformat": "შენი უსაფრთხოების ნომერი {name}-სთან არა-ვერიფიცირებულად მონიშნე სხვა მოწყობილობიდან"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "უსაფრთხოების ნომერი, რომლის ვერიფიცირებასაც ცდილობ, შეიცვალა. გთხოვთ, გადახედო {name1}-ის ახალ უსაფრთხოების ნომერს. დაიმახსოვრე, ეს ცვლილება შეიძლება ნიშნავს, რომ ვიღაც ცდილობს შენს კომუნიკაციაში შემოჭრას ან რომ {name2}-მა უბრალოდ გადააყენა Signal-ი."
+    "messageformat": "უსაფრთხოების ნომერი, რომლის ვერიფიცირებასაც ცდილობ, შეიცვალა. გთხოვთ, გადახედო {name1}-ის ახალ უსაფრთხოების ნომერს. დაიმახსოვრე, ეს ცვლილება შეიძლება ნიშნავს, რომ ვიღაც ცდილობს შენს კომუნიკაციაში შემოჭრას ან რომ {name2}-მა უბრალოდ გადააყენა B&A-ი."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "ჩამოთვლილმა ადამიანებმა შესაძლოა გადააყენეს Signal-ი ან მოწყობილობა გამოცვალეს. დააწკაპუნე მიმღებზე, რათა მისი ახალი უსაფრთხოების ნომერი დაადასტურო. ეს ნებაყოფლობითია."
+    "messageformat": "ჩამოთვლილმა ადამიანებმა შესაძლოა გადააყენეს B&A-ი ან მოწყობილობა გამოცვალეს. დააწკაპუნე მიმღებზე, რათა მისი ახალი უსაფრთხოების ნომერი დაადასტურო. ეს ნებაყოფლობითია."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "გაუგზავნელი შეტყობინებების გაგზავნა"
@@ -498,7 +498,7 @@
     "messageformat": "განხილვა"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {შენ გყავს {count,number} კონტაქტი, რომელმაც შესაძლოა გადააყენა Signal-ი ან შეცვალა მოწყობილობა. გაგზავნამდე შეგიძლია გადახედო მის უსაფრთხოების ნომერს.} other {შენ გყავს {count,number} კონტაქტი, რომელთაც შესაძლოა გადააყენეს Signal-ი ან შეცვალეს მოწყობილობები. გაგზავნამდე შეგიძლია გადახედო მათი უსაფრთხოების ნომრებს.}}"
+    "messageformat": "{count, plural, one {შენ გყავს {count,number} კონტაქტი, რომელმაც შესაძლოა გადააყენა B&A-ი ან შეცვალა მოწყობილობა. გაგზავნამდე შეგიძლია გადახედო მის უსაფრთხოების ნომერს.} other {შენ გყავს {count,number} კონტაქტი, რომელთაც შესაძლოა გადააყენეს B&A-ი ან შეცვალეს მოწყობილობები. გაგზავნამდე შეგიძლია გადახედო მათი უსაფრთხოების ნომრებს.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "ყველა კონტაქტი განხილულია, გასაგრძელებლად დააჭირე გაგზავნას."
@@ -543,7 +543,7 @@
     "messageformat": "ეს რეესტრი საჯაროდ გამოქვეყნდება, რომ კონტრიბუტორებმა ნახონ. შეგიძლია ატვირთვამდე გადმოწერო."
   },
   "icu:debugLogError": {
-    "messageformat": "ატვირთვისას რაღაც შეცდომა მოხდა! გთხოვთ, support@signal.org -ს მიწერო და შენი რეესტრი ტექსტურ ფაილად დაურთო."
+    "messageformat": "ატვირთვისას რაღაც შეცდომა მოხდა! გთხოვთ, support@baxs.com -ს მიწერო და შენი რეესტრი ტექსტურ ფაილად დაურთო."
   },
   "icu:debugLogSuccess": {
     "messageformat": "გაუმართაობის რეესტრი ატვირთულია"
@@ -729,7 +729,7 @@
     "messageformat": "სტიკერების ნაკრების შემქმნელი"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktop-ის შესახებ"
+    "messageformat": "B&A Desktop-ის შესახებ"
   },
   "icu:screenShareWindow": {
     "messageformat": "ეკრანის გაზიარება"
@@ -747,7 +747,7 @@
     "messageformat": "გასვლა"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop-ი"
+    "messageformat": "B&A Desktop-ი"
   },
   "icu:search": {
     "messageformat": "ძიება"
@@ -801,13 +801,13 @@
     "messageformat": "ძებნა მობილურის ნომრით"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Welcome to Signal"
+    "messageformat": "Welcome to B&A"
   },
   "icu:whatsNew": {
     "messageformat": "ნახე {whatsNew} ამ განახლებაში"
   },
   "icu:signalNonProfit": {
-    "messageformat": "Signal-ი არაკომერციული ორგანიზაციაა"
+    "messageformat": "B&A-ი არაკომერციული ორგანიზაციაა"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "რა არის ახალი"
@@ -891,13 +891,13 @@
     "messageformat": "შენ"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "აუდიო შეტყობინებების გასაგზავნად, მიეცი Signal Desktop-ს წვდომა შენს მიკროფონზე."
+    "messageformat": "აუდიო შეტყობინებების გასაგზავნად, მიეცი B&A Desktop-ს წვდომა შენს მიკროფონზე."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "დასარეკად Signal Desktop-ს შენს მიკროფონზე წვდომა უნდა მისცე."
+    "messageformat": "დასარეკად B&A Desktop-ს შენს მიკროფონზე წვდომა უნდა მისცე."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "ვიდეო ზარების განსახორციელებლად, Signal Desktop-ს შენს კამერაზე წვდომა უნდა მისცე."
+    "messageformat": "ვიდეო ზარების განსახორციელებლად, B&A Desktop-ს შენს კამერაზე წვდომა უნდა მისცე."
   },
   "icu:allowAccess": {
     "messageformat": "წვდომის მიცემა"
@@ -921,13 +921,13 @@
     "messageformat": "დადუმება"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal-ი ვერ განახლდა. <retryUpdateButton>თავიდან სცადე განახლება</retryUpdateButton> ან ხელით გადმოსაწერად {url}-ს ეწვიე. შემდეგ, <contactSupportLink>მხარდაჭერის გუნდს დაუკავშირდი</contactSupportLink> ამ პრობლემის თაობაზე"
+    "messageformat": "B&A-ი ვერ განახლდა. <retryUpdateButton>თავიდან სცადე განახლება</retryUpdateButton> ან ხელით გადმოსაწერად {url}-ს ეწვიე. შემდეგ, <contactSupportLink>მხარდაჭერის გუნდს დაუკავშირდი</contactSupportLink> ამ პრობლემის თაობაზე"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal-ი ვერ განახლდა. ხელით გადმოსაწერად ეწვიე {url}-ს. შემდეგ, <contactSupportLink>მხარდაჭერის გუნდს დაუკავშირდი</contactSupportLink> ამ პრობლემის თაობაზე"
+    "messageformat": "B&A-ი ვერ განახლდა. ხელით გადმოსაწერად ეწვიე {url}-ს. შემდეგ, <contactSupportLink>მხარდაჭერის გუნდს დაუკავშირდი</contactSupportLink> ამ პრობლემის თაობაზე"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "როგორც ჩანს, Signal Desktop-ი macOS კარანტინშია და ავტომატურ განახლებას ვერ შეძლებს. გთხოვთ, {app} Finder-ით {folder}-ში გადატანა სცადო."
+    "messageformat": "როგორც ჩანს, B&A Desktop-ი macOS კარანტინშია და ავტომატურ განახლებას ვერ შეძლებს. გთხოვთ, {app} Finder-ით {folder}-ში გადატანა სცადო."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -972,7 +972,7 @@
     "messageformat": "ეს შეტყობინება ამ მოწყობილობიდან წაიშლება."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "ეს წერილი ჩატში ყველასთვის წაიშლება, თუ ისინი Signal-ის უახლეს ვერსიას იყენებენ. ისინი დაინახავენ, რომ შეტყობინება წაშალე."
+    "messageformat": "ეს წერილი ჩატში ყველასთვის წაიშლება, თუ ისინი B&A-ის უახლეს ვერსიას იყენებენ. ისინი დაინახავენ, რომ შეტყობინება წაშალე."
   },
   "icu:from": {
     "messageformat": "From"
@@ -1014,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" პროფილის სახელია, რომელიც ამ ადამიანმა საკუთარი თავისთვის დააყენა Signal-ზე."
+    "messageformat": "\"{title}\" პროფილის სახელია, რომელიც ამ ადამიანმა საკუთარი თავისთვის დააყენა B&A-ზე."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "ვერიფიცირებულია"
@@ -1029,7 +1029,7 @@
     "messageformat": "{name}-სთან პირადი მიმოწერა ვერ მოიძებნა"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal-ის კონტაქტები"
+    "messageformat": "B&A-ის კონტაქტები"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} შენი სისტემის კონტაქტებშია"
@@ -1341,7 +1341,7 @@
     "messageformat": "გაიგე მეტი"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal-ი ბოლომდე დაშიფვრას იყენებს, რის გამოც შეიძლება ზოგჯერ შენი ჩატის სესიის განახლება დაგჭირდეს. ეს არ იმოქმედებს შენი ჩატის უსაფრთხოებაზე, მაგრამ შესაძლოა ამ კონტაქტისგან შეტყობინება გამოგრჩეს, მაგრამ შეგიძლია ხელახლა გამოგზავნა სთხოვო."
+    "messageformat": "B&A-ი ბოლომდე დაშიფვრას იყენებს, რის გამოც შეიძლება ზოგჯერ შენი ჩატის სესიის განახლება დაგჭირდეს. ეს არ იმოქმედებს შენი ჩატის უსაფრთხოებაზე, მაგრამ შესაძლოა ამ კონტაქტისგან შეტყობინება გამოგრჩეს, მაგრამ შეგიძლია ხელახლა გამოგზავნა სთხოვო."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "მხარდაჭერის გუნდთან დაკავშირება"
@@ -1368,7 +1368,7 @@
     "messageformat": "{sender}-მა თავისი ტელეფონის ნომერი გამოცვალა"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "კონტაქტი Signal-ს შეუერთდა"
+    "messageformat": "კონტაქტი B&A-ს შეუერთდა"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} და {conversationTitle} ერთი და იგივე პროფილია. ორივე ჩატში შენი მიმოწერის ისტორია აქაა."
@@ -1458,7 +1458,7 @@
     "messageformat": "მედია ფაილის ჩამოტვირთვა შეუძლებელია"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "შეამოწმე შენი დესკტოპის და მობილურის ინტერნეტ კავშირი. შედი Signal-ზე შენს მობილურში და თავიდან ჩამოტვირთვა სცადე."
+    "messageformat": "შეამოწმე შენი დესკტოპის და მობილურის ინტერნეტ კავშირი. შედი B&A-ზე შენს მობილურში და თავიდან ჩამოტვირთვა სცადე."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "ეს მედია ფაილი შენს მობილურზე ხელმისაწვდომი აღარაა და ვერ ჩამოიტვირთება."
@@ -1479,10 +1479,10 @@
     "messageformat": "გაიგე მეტი"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "დაასკანირე ეს კოდი შენს ტელეფონში არსებულ Signal-ის აპში"
+    "messageformat": "დაასკანირე ეს კოდი შენს ტელეფონში არსებულ B&A-ის აპში"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "გახსენი Signal-ი შენს ტელეფონში"
+    "messageformat": "გახსენი B&A-ი შენს ტელეფონში"
   },
   "icu:Install__instructions__2": {
     "messageformat": "დააჭირე {settings}-ს, შემდეგ კი {linkedDevices}-ს"
@@ -1500,7 +1500,7 @@
     "messageformat": "<paragraph>დაფიქსირდა მოულოდნელი ხარვეზი.</paragraph><paragraph>გთხოვთ, თავიდან სცადე.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "მიმდინარე ქსელის გამოყენებით Signal-ი ამ მოწყობილობას ვერ დააკავშირებს."
+    "messageformat": "მიმდინარე ქსელის გამოყენებით B&A-ი ამ მოწყობილობას ვერ დააკავშირებს."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "თავიდან ცდა"
@@ -1524,7 +1524,7 @@
     "messageformat": "მოწყობილობის სახელი"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "ამ მოწყობილობის სახელის შესაცვლელად გახსენი Signal შენს მობილურში და აირჩიე პარამეტრები > დაკავშირებული მოწყობილობები"
+    "messageformat": "ამ მოწყობილობის სახელის შესაცვლელად გახსენი B&A შენს მობილურში და აირჩიე პარამეტრები > დაკავშირებული მოწყობილობები"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji-ის კანის ტონი"
@@ -1725,7 +1725,7 @@
     "messageformat": "Sorry, you have too many devices linked already. Try removing some."
   },
   "icu:installTooOld": {
-    "messageformat": "განაახლე Signal-ი ამ მოწყობილობაზე, რომ შენს ტელეფონს დაუკავშირო."
+    "messageformat": "განაახლე B&A-ი ამ მოწყობილობაზე, რომ შენს ტელეფონს დაუკავშირო."
   },
   "icu:installErrorHeader": {
     "messageformat": "Something went wrong!"
@@ -1776,7 +1776,7 @@
     "messageformat": "ზარის ეს ბმული ვალიდური აღარაა."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal-ის ზარი"
+    "messageformat": "B&A-ის ზარი"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "ბმულის წაშლა ვერ მოხერხდა. შეამოწმე შენი კავშირი და თავიდან სცადე."
@@ -1932,16 +1932,16 @@
     "messageformat": "{count, plural, one {ამ ზარზე {count,number} ადამიანია} other {ამ ზარზე {count,number} ადამიანია}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal-ი {person}-ს დაურეკავს"
+    "messageformat": "B&A-ი {person}-ს დაურეკავს"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal-ი {first}-სა და {second}-ს დაურეკავს"
+    "messageformat": "B&A-ი {first}-სა და {second}-ს დაურეკავს"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal-ი {first}-ს, {second}-სა და {third}-ს დაურეკავს"
+    "messageformat": "B&A-ი {first}-ს, {second}-სა და {third}-ს დაურეკავს"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal-ი {first}-ს, {second}-სა და {others,number} სხვას დაურეკავს} other {Signal-ი {first}-ს, {second}-სა და {others,number} სხვას დაურეკავს}}"
+    "messageformat": "{others, plural, one {B&A-ი {first}-ს, {second}-სა და {others,number} სხვას დაურეკავს} other {B&A-ი {first}-ს, {second}-სა და {others,number} სხვას დაურეკავს}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person}-ს შევატყობინებთ"
@@ -1995,13 +1995,13 @@
     "messageformat": "მიმდინარეობს ხელახლა დაკავშირება…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "შენი კავშირი გაწყდა. Signal-ი თავიდან უკავშირდება."
+    "messageformat": "შენი კავშირი გაწყდა. B&A-ი თავიდან უკავშირდება."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal-ი აზიარებს {window}-ს."
+    "messageformat": "B&A-ი აზიარებს {window}-ს."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "მიმდინარეობს Signal-ზე ეკრანის გაზიარება"
+    "messageformat": "მიმდინარეობს B&A-ზე ეკრანის გაზიარება"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "მიმდინარეობს ხელახლა დაკავშირება…"
@@ -2022,7 +2022,7 @@
     "messageformat": "საჭიროა ნებართვა"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal-ს შენი კომპიუტერის ეკრანის ჩანაწერისთვის  ნებართვა სჭირდება."
+    "messageformat": "B&A-ს შენი კომპიუტერის ეკრანის ჩანაწერისთვის  ნებართვა სჭირდება."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "სისტემის პარამეტრებში გადასვლა."
@@ -2031,7 +2031,7 @@
     "messageformat": "დააწკაპუნე დაბლოკვის ხატულაზე ქვედა მარცხენა მხარეს და შეიყვანე შენი კომპიუტერის პაროლი."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "მარჯვნივ, Signal-ის გვერდით ფანჯარა მონიშნე. თუ სიაში ვერ ხედავ Signal-ს, დააჭირე + -ზე მის დასამატებლად."
+    "messageformat": "მარჯვნივ, B&A-ის გვერდით ფანჯარა მონიშნე. თუ სიაში ვერ ხედავ B&A-ს, დააჭირე + -ზე მის დასამატებლად."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "სისტემის პარამეტრების გახსნა"
@@ -2043,7 +2043,7 @@
     "messageformat": "ზარების ყოველთვის გადამისამართება"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "გადაამისამართე ყველა ზარი Signal-ის სერვერზე, რათა აირიდო შენი IP მისამართის გამოჩენა შენს კონტაქტთან. ამის ჩართვა შეამცირებს ზარის ხარისხს."
+    "messageformat": "გადაამისამართე ყველა ზარი B&A-ის სერვერზე, რათა აირიდო შენი IP მისამართის გამოჩენა შენს კონტაქტთან. ამის ჩართვა შეამცირებს ზარის ხარისხს."
   },
   "icu:permissions": {
     "messageformat": "ნებართვები"
@@ -2061,10 +2061,10 @@
     "messageformat": "ტექსტის არჩევისას ფორმატირების ოფციის ჩვენება"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "მართლწერის შემოწმება ჩაირთვება Signal-ის შემდეგი გაშვებისას."
+    "messageformat": "მართლწერის შემოწმება ჩაირთვება B&A-ის შემდეგი გაშვებისას."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "მართლწერის შემოწმება გამოირთვება Signal-ის შემდეგი გაშვებისას."
+    "messageformat": "მართლწერის შემოწმება გამოირთვება B&A-ის შემდეგი გაშვებისას."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "სისტემურ უჯრამდე დაპატარავება"
@@ -2088,13 +2088,13 @@
     "messageformat": "წავშალოთ ყველა მონაცემი?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "გსურს, Signal Desktop-ის ამ ვერსიიდან ყველა მონაცემი და მიმოწერა წაშალო? შენი Signal-ის პროფილი და მონაცემები შენს ტელეფონზე ან სხვა დაკავშირებულ მოწყობილობებზე არ წაიშლება."
+    "messageformat": "გსურს, B&A Desktop-ის ამ ვერსიიდან ყველა მონაცემი და მიმოწერა წაშალო? შენი B&A-ის პროფილი და მონაცემები შენს ტელეფონზე ან სხვა დაკავშირებულ მოწყობილობებზე არ წაიშლება."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "მიმდინარეობს გათიშვა და ყველა მონაცემის წაშლა…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "შენ გაქვს მოძველებული მონაცემები Signal Desktop-ის წინა ინსტალაციისდან. თუ გაგრძელებას აირჩევ, ის წაიშლება და ნულიდან დაიწყებ."
+    "messageformat": "შენ გაქვს მოძველებული მონაცემები B&A Desktop-ის წინა ინსტალაციისდან. თუ გაგრძელებას აირჩევ, ის წაიშლება და ნულიდან დაიწყებ."
   },
   "icu:deleteOldData": {
     "messageformat": "ძველი მონაცემების წაშლა"
@@ -2139,10 +2139,10 @@
     "messageformat": "ნაწილობრივ წაიშალა, დააჭირე თავიდან საცდელად"
   },
   "icu:expiredWarning": {
-    "messageformat": "This version of Signal Desktop has expired. Please upgrade to the latest version to continue messaging."
+    "messageformat": "This version of B&A Desktop has expired. Please upgrade to the latest version to continue messaging."
   },
   "icu:upgrade": {
-    "messageformat": "დააჭირე signal.org/download-ზე გადასასვლელად"
+    "messageformat": "დააჭირე ba-chat.com/download-ზე გადასასვლელად"
   },
   "icu:mediaMessage": {
     "messageformat": "მედია შეტყობინება"
@@ -2151,7 +2151,7 @@
     "messageformat": "კონტაქტების იმპორტირება"
   },
   "icu:syncExplanation": {
-    "messageformat": "Import all Signal groups and contacts from your mobile device."
+    "messageformat": "Import all B&A groups and contacts from your mobile device."
   },
   "icu:syncNow": {
     "messageformat": "Import now"
@@ -2187,7 +2187,7 @@
     "messageformat": "გუშინ {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "შესაძლოა, Signal-მა შემომავალი შეტყობინება ვერ დაამუშავა."
+    "messageformat": "შესაძლოა, B&A-მა შემომავალი შეტყობინება ვერ დაამუშავა."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "შეტყობინების ზომა ზედმეტად დიდია."
@@ -2343,13 +2343,13 @@
     "messageformat": "შეტყობინების რედაქტირება მისი გაგზავნიდან მხოლოდ 24 საათის განმავლობაშია შესაძლებელი."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} Signal-ის მომხმარებელი არაა. დარწმუნდი, რომ სრული მომხმარებლის სახელი შეიყვანე."
+    "messageformat": "{atUsername} B&A-ის მომხმარებელი არაა. დარწმუნდი, რომ სრული მომხმარებლის სახელი შეიყვანე."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} არაა მოქმედი მომხმარებლის სახელი. დარწმუნდი, რომ მომხმარებლის სრული სახელი მისი ციფრების ჩათვლით შეიყვანე."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "მომხმარებელი ვერ მოიძებნა. \"{phoneNumber}\" Signal-ის მომხმარებელი არაა."
+    "messageformat": "მომხმარებელი ვერ მოიძებნა. \"{phoneNumber}\" B&A-ის მომხმარებელი არაა."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "მომხმარებელი ვერ მოიძებნა. \"{phoneNumber}\" მობილურის ნომერი მოქმედი არაა."
@@ -2370,13 +2370,13 @@
     "messageformat": "ჯგუფის მაქსიმალური ტევადობა მიღწეულია"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal-ის ჯგუფებს მაქსიმუმ {max,number} წევრის ყოლა შეუძლიათ."
+    "messageformat": "B&A-ის ჯგუფებს მაქსიმუმ {max,number} წევრის ყოლა შეუძლიათ."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "წევრთა რეკომენდებული ლიმიტი მიღწეულია"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal-ის ჯგუფები საუკეთესოდ მუშაობენ {max,number} ან ნაკლები წევრით. მეტი წევრის დამატება გამოიწვევს შეტყობინებების გაგზავნისა და მიღების შეფერხებას."
+    "messageformat": "B&A-ის ჯგუფები საუკეთესოდ მუშაობენ {max,number} ან ნაკლები წევრით. მეტი წევრის დამატება გამოიწვევს შეტყობინებების გაგზავნისა და მიღების შეფერხებას."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "დაარქვი სახელი ამ ჯგუფს"
@@ -2406,7 +2406,7 @@
     "messageformat": "ჯგუფი ვერ განახლდა. შეამოწმე შენი ინტერნეტ კავშირი და თავიდან სცადე."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "დააწკაპუნე, რომ Signal Desktop-ი ხელახლა დააკავშირო შენს მობილურ მოწყობილობასთან და მიმოწერა განაგრძო."
+    "messageformat": "დააწკაპუნე, რომ B&A Desktop-ი ხელახლა დააკავშირო შენს მობილურ მოწყობილობასთან და მიმოწერა განაგრძო."
   },
   "icu:unlinked": {
     "messageformat": "Unlinked"
@@ -2418,16 +2418,16 @@
     "messageformat": "განახლების ხელახლა ცდა"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "დააჭირე Signal-ის გადასატვირტად"
+    "messageformat": "დააჭირე B&A-ის გადასატვირტად"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "დააჭირე განახლების გადმოსაწერად"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal-ი ვერ განახლდა. დააწკაპუნე თავიდან საცდელად."
+    "messageformat": "B&A-ი ვერ განახლდა. დააწკაპუნე თავიდან საცდელად."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Restart Signal"
+    "messageformat": "Restart B&A"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "განახლების იგნორირება"
@@ -2532,7 +2532,7 @@
     "messageformat": "ზოგი მიმაგრებული ფაილი საჩვენებლად ზედმეტად დიდია."
   },
   "icu:message--call-link-description": {
-    "messageformat": "გამოიყენე ეს ბმული Signal-ის ზარზე შესასვლელად"
+    "messageformat": "გამოიყენე ეს ბმული B&A-ის ზარზე შესასვლელად"
   },
   "icu:donation--missing": {
     "messageformat": "დონაციის დეტალების მიღება ვერ მოხერხდა"
@@ -2544,7 +2544,7 @@
     "messageformat": "შენი დონაციის სანახავად, დააჭირე ამ წერილს მობილურზე"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender}-მა Signal-ს დონაცია შენს სახელზე გაუკეთა"
+    "messageformat": "{sender}-მა B&A-ს დონაცია შენს სახელზე გაუკეთა"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "ამ დონაციის გასახსნელად, შეამოწმე შენი ტელეფონი"
@@ -2601,7 +2601,7 @@
     "messageformat": "მადლობა მხარდაჭერისთვის!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "შენ Signal-ს დონაცია {name}-ის სახელზე გაუკეთე. მას საშუალება მიეცემა მხარდაჭერა საკუთარ პროფილზე გამოხატოს."
+    "messageformat": "შენ B&A-ს დონაცია {name}-ის სახელზე გაუკეთე. მას საშუალება მიეცემა მხარდაჭერა საკუთარ პროფილზე გამოხატოს."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "სტიკერების ნაკრების გადმოწერა ვერ მოხერხდა"
@@ -2616,10 +2616,10 @@
     "messageformat": "გადმოწერილი სტიკერები ვერ მოიძებნა"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal-ის მხატვრების სტიკერების სერიები"
+    "messageformat": "B&A-ის მხატვრების სტიკერების სერიები"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal-ის მხატვრების სტიკერები არაა ხელმისაწვდომი"
+    "messageformat": "B&A-ის მხატვრების სტიკერები არაა ხელმისაწვდომი"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "მიღებული სტიკერები"
@@ -2883,19 +2883,19 @@
     "messageformat": "შეტყობინება ძალიან გრძელია მეტის საჩვენებლად"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} -მა გამოგიგზავნა შეტყობინება, რომლის დამუშავება ან ჩვენება შეუძლებელია, რადგან ის Signal-ის ახალ ფუნქციას იყენებს."
+    "messageformat": "{contact} -მა გამოგიგზავნა შეტყობინება, რომლის დამუშავება ან ჩვენება შეუძლებელია, რადგან ის B&A-ის ახალ ფუნქციას იყენებს."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "შეგიძლია {contact} -ს სთხოვო თავიდან გამოგიგზავნოს ეს შეტყობინება ახლა, როცა უკვე Signal-ის განახლებულ ვერსიას იყენებ."
+    "messageformat": "შეგიძლია {contact} -ს სთხოვო თავიდან გამოგიგზავნოს ეს შეტყობინება ახლა, როცა უკვე B&A-ის განახლებულ ვერსიას იყენებ."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "შენი ერთ-ერთი მოწყობილობიდან გაგზავნილი შეტყობინების დამუშავება ან ჩვენება შეუძლებელია, რადგან იქ გამოყენებულია Signal-ის ახალ ფუნქცია."
+    "messageformat": "შენი ერთ-ერთი მოწყობილობიდან გაგზავნილი შეტყობინების დამუშავება ან ჩვენება შეუძლებელია, რადგან იქ გამოყენებულია B&A-ის ახალ ფუნქცია."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "ახლა, როცა უკვე Signal-ის განახლებულ ვერსიას იყენებ, მსგავსი შეტყობინებები დასინქრონიზირდება."
+    "messageformat": "ახლა, როცა უკვე B&A-ის განახლებულ ვერსიას იყენებ, მსგავსი შეტყობინებები დასინქრონიზირდება."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal-ის განახლება"
+    "messageformat": "B&A-ის განახლება"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "ნანახია"
@@ -3159,7 +3159,7 @@
     "messageformat": "ჩატი წაუკითხავად მოინიშნა"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Sticker Pack Creator-ის გამოსაყენებლად ,გთხოვთ, Signal-ი შენს მობილურსა და კომპიუტერზე დააყენო"
+    "messageformat": "Sticker Pack Creator-ის გამოსაყენებლად ,გთხოვთ, B&A-ი შენს მობილურსა და კომპიუტერზე დააყენო"
   },
   "icu:Reactions--remove": {
     "messageformat": "რეაქციის წაშლა"
@@ -3183,7 +3183,7 @@
     "messageformat": "ყალბი სახელები და ანგარიშები"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "Signal არასოდეს დაგიკავშირდება შენი სარეგისტრაციო კოდის ან პინ-კოდისთვის. ფრთხილად იყავი თხოვნებთან იმ ანგარიშებიდან, რომლებიც სხვებად ასაღებენ თავს. პროფილის სახელებს მათი ანგარიშის მფლობელი ირჩევს და ვერიფიცირებული არაა."
+    "messageformat": "B&A არასოდეს დაგიკავშირდება შენი სარეგისტრაციო კოდის ან პინ-კოდისთვის. ფრთხილად იყავი თხოვნებთან იმ ანგარიშებიდან, რომლებიც სხვებად ასაღებენ თავს. პროფილის სახელებს მათი ანგარიშის მფლობელი ირჩევს და ვერიფიცირებული არაა."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "კრიპტო ან ფულის თაღლითობები"
@@ -3273,13 +3273,13 @@
     "messageformat": "გსურს, სპამი დაარეპორტო?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal-ი შეტყობინებას მიიღებს, რომ ეს ადამიანი შესაძლოა სპამს აგზავნიდეს. Signal-ს არც ერთი ჩატის შინაარსის ნახვა არ შეუძლია."
+    "messageformat": "B&A-ი შეტყობინებას მიიღებს, რომ ეს ადამიანი შესაძლოა სპამს აგზავნიდეს. B&A-ს არც ერთი ჩატის შინაარსის ნახვა არ შეუძლია."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal-ი შეტყობინებას მიიღებს, რომ ადამიანი, ვინც ამ ჯგუფში მოგიწვია, შესაძლოა სპამს აგზავნიდეს. Signal-ს არც ერთი ჩატის შინაარსის ნახვა არ შეუძლია."
+    "messageformat": "B&A-ი შეტყობინებას მიიღებს, რომ ადამიანი, ვინც ამ ჯგუფში მოგიწვია, შესაძლოა სპამს აგზავნიდეს. B&A-ს არც ერთი ჩატის შინაარსის ნახვა არ შეუძლია."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal-ი შეტყობინებას მიიღებს, რომ {name}, ვინც ამ ჯგუფში მოგიწვია, შესაძლოა სპამს აგზავნიდეს. Signal-ს არც ერთი ჩატის შინაარსის ნახვა არ შეუძლია."
+    "messageformat": "B&A-ი შეტყობინებას მიიღებს, რომ {name}, ვინც ამ ჯგუფში მოგიწვია, შესაძლოა სპამს აგზავნიდეს. B&A-ს არც ერთი ჩატის შინაარსის ნახვა არ შეუძლია."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "სპამის დარეპორტება"
@@ -3375,7 +3375,7 @@
     "messageformat": "<clickable>პროფილის სახელები</clickable> ვერიფიცირებული არაა"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "ეს Signal-ის ოფიციალური და ერთადერთი ჩატია"
+    "messageformat": "ეს B&A-ის ოფიციალური და ერთადერთი ჩატია"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "გაიგე სიახლეები და გამოშვების შენიშვნები."
@@ -3441,10 +3441,10 @@
     "messageformat": "უპასუხო ვიდეო ზარი"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal-ი ისევ მუშაობს"
+    "messageformat": "B&A-ი ისევ მუშაობს"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal-ი იმუშავებს შეტყობინებების ჭრილში. შეგიძლია ეს Signal-ის პარამეტრებიდან შეცვალო."
+    "messageformat": "B&A-ი იმუშავებს შეტყობინებების ჭრილში. შეგიძლია ეს B&A-ის პარამეტრებიდან შეცვალო."
   },
   "icu:incomingAudioCall": {
     "messageformat": "შემომავალი ხმოვანი ზარი"
@@ -3654,7 +3654,7 @@
     "messageformat": "ზარის ბმულის დაკოპირება"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "გააზიარე ზარის ბმული Signal-დან"
+    "messageformat": "გააზიარე ზარის ბმული B&A-დან"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "ამ ადამიანის ზარიდან გაგდება"
@@ -3780,7 +3780,7 @@
     "messageformat": "ბმულის უცნობი ვერსია"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "ეს ბმული არ არის მხარდაჭერილი Signal Desktop-ის ამ ვერსიაზე."
+    "messageformat": "ეს ბმული არ არის მხარდაჭერილი B&A Desktop-ის ამ ვერსიაზე."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "ჯგუფში გაწევრიანება ვერ მოხერხდა"
@@ -4335,22 +4335,22 @@
     "messageformat": "შეიძლება, ამას რამდენიმე წუთი დასჭირდეს"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal-ისთვის დონაციის გაკეთება"
+    "messageformat": "B&A-ისთვის დონაციის გაკეთება"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Signal-ისთვის დონაციის გაკეთება"
+    "messageformat": "B&A-ისთვის დონაციის გაკეთება"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "Signal-ი შენნაირ ხალხზე დგას. შემოიტანე წვლილი და მიიღე ემბლემა."
+    "messageformat": "B&A-ი შენნაირ ხალხზე დგას. შემოიტანე წვლილი და მიიღე ემბლემა."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "გახსენი Signal-ი შენს ტელეფონში"
+    "messageformat": "გახსენი B&A-ი შენს ტელეფონში"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "პარამეტრების გასახსნელად ზედა მარცხენა კუთხეში შენი პროფილის ფოტოს დააჭირე"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "დააჭირე \"Signal-ისთვის დონაციის გაკეთება“ და გამოიწერე"
+    "messageformat": "დააჭირე \"B&A-ისთვის დონაციის გაკეთება“ და გამოიწერე"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "შენი პროფილი გადატანილია"
@@ -4476,7 +4476,7 @@
     "messageformat": "ანგარიშთან დაკავშირებით საჭიროა მოქმედება"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "ამ ანგარიშის გამოყენების გასაგრძელებლად შენს მობილურში Signal უნდა გახსნა. თუ შენს მობილურში Signal-ს არ გახსნი, მალე შენი ანგარიში წაიშლება. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
+    "messageformat": "ამ ანგარიშის გამოყენების გასაგრძელებლად შენს მობილურში B&A უნდა გახსნა. თუ შენს მობილურში B&A-ს არ გახსნი, მალე შენი ანგარიში წაიშლება. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "მედია ფაილების აღდგენა ვერ მოხერხდა"
@@ -4503,10 +4503,10 @@
     "messageformat": "დაამატე დანართი ან გამოკითხვა"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "ეს ადამიანი Signal-ს არ იყენებს"
+    "messageformat": "ეს ადამიანი B&A-ს არ იყენებს"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop-ს არ აქვს Signal-ის გარე კონტაქტებთან მიმოწერის მხარდაჭერა. შესათავაზე ამ ადამიანს გადმოწეროს Signal-ი უფრო უსაფრთხო მიმოწერის გამოცდილების მისაღებად."
+    "messageformat": "B&A Desktop-ს არ აქვს B&A-ის გარე კონტაქტებთან მიმოწერის მხარდაჭერა. შესათავაზე ამ ადამიანს გადმოწეროს B&A-ი უფრო უსაფრთხო მიმოწერის გამოცდილების მისაღებად."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "კონტაქტის რეგისტრაციის სტატუსის შემოწმება"
@@ -4689,7 +4689,7 @@
     "messageformat": "მეტსახელი"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "მეტსახელები & ჩანიშვნები Signal-ის მიერ ინახება და ბოლომდეა დაშიფრული. ისინი მხოლოდ შენთვისაა ხილული."
+    "messageformat": "მეტსახელები & ჩანიშვნები B&A-ის მიერ ინახება და ბოლომდეა დაშიფრული. ისინი მხოლოდ შენთვისაა ხილული."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "სახელი"
@@ -4740,7 +4740,7 @@
     "messageformat": "მოითხოვე, რომ ადმინმა დაადასტუროს ახალი წევრები, ვინც ჯგუფის ბმულით ცდილობს გაწევრიანებას"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "დააკოპირე signal.group ბმული კლავიატურაზე"
+    "messageformat": "დააკოპირე B&A.group ბმული კლავიატურაზე"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "მოთხოვნები ({count,number})"
@@ -4944,13 +4944,13 @@
     "messageformat": "ცარიელი ან წაშლილი შეტყობინების გადაგზავნა ვერ მოხერხდება"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "გამოიყენე ეს ბმული Signal-ის ზარზე შესასვლელად: {url}"
+    "messageformat": "გამოიყენე ეს ბმული B&A-ის ზარზე შესასვლელად: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "რჩევები უსაფრთხოებაზე"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "ყურადღებით გადახედე მოთხოვნებს. Signal-მა სხვა კონტაქტიც იპოვა იმავე სახელით. <reviewRequestLink>მოთხოვნის განხილვა</reviewRequestLink>"
+    "messageformat": "ყურადღებით გადახედე მოთხოვნებს. B&A-მა სხვა კონტაქტიც იპოვა იმავე სახელით. <reviewRequestLink>მოთხოვნის განხილვა</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {ჯგუფის {count,number} წევრს აქვს იგივე სახელი. <reviewRequestLink>წევრების გადახედვა</reviewRequestLink>} other {ჯგუფის {count,number} წევრს აქვს იგივე სახელი. <reviewRequestLink>წევრების გადახედვა</reviewRequestLink>}}"
@@ -4983,7 +4983,7 @@
     "messageformat": "არცერთი სხვა საერთო ჯგუფი"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal-ის კონტაქტები"
+    "messageformat": "B&A-ის კონტაქტები"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "{oldName} -მა თავისი პროფილის სახელი ახლახანს {newName} -ზე შეცვალა"
@@ -5001,7 +5001,7 @@
     "messageformat": "მიმოწერის გასაგრძელებლად გაიარე ვერიფიკაცია"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signal-ზე სპამის თავიდან ასაცილებლად, გთხოვთ, დაასრულო ვერიფიკაცია."
+    "messageformat": "B&A-ზე სპამის თავიდან ასაცილებლად, გთხოვთ, დაასრულო ვერიფიკაცია."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "ვერიფიკაციის გავლის შემდეგ მიმოწერის გაგრძელებას შეძლებ. ნებისმიერი შეჩერებული შეტყობინება ავტომატურად გაიგზავნება."
@@ -5367,7 +5367,7 @@
     "messageformat": "გსურს ამ ცვლილებების გაუქმება?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "გსურს Signal-ი დახურო და ზარი დაასრულო?"
+    "messageformat": "გსურს B&A-ი დახურო და ზარი დაასრულო?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "ახლა არა"
@@ -5454,7 +5454,7 @@
     "messageformat": "ზოგადი"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal-ისთვის დონაციის გაკეთება"
+    "messageformat": "B&A-ისთვის დონაციის გაკეთება"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "ვიზუალი"
@@ -5535,7 +5535,7 @@
     "messageformat": "ბმულსი წინასწარი ნახვის გენერირება"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "ამ პარამეტრის შესაცვლელად გახსენი Signal-ის აპი შენს მობილურ მოწყობილობაზე და მიყევი პარამეტრები > ჩატები"
+    "messageformat": "ამ პარამეტრის შესაცვლელად გახსენი B&A-ის აპი შენს მობილურ მოწყობილობაზე და მიყევი პარამეტრები > ჩატები"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "აკრეფილი სმაილიკების emoji-ებად გადაქცევა"
@@ -5637,7 +5637,7 @@
     "messageformat": "ჩატის ისტორიის გადმოტანა ვერ მოხერხდა"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "შენი ჩატის ისტორიის გადატანა შეუძლებელია, რადგან Signal-ს დისკზე ფაილების ჩაწერის ნებართვა არ აქვს. შენი დისკის ნებართვების შეცვლა ან სისტემის პარამეტრების განახლება სცადე და თავიდან გადაიტანე."
+    "messageformat": "შენი ჩატის ისტორიის გადატანა შეუძლებელია, რადგან B&A-ს დისკზე ფაილების ჩაწერის ნებართვა არ აქვს. შენი დისკის ნებართვების შეცვლა ან სისტემის პარამეტრების განახლება სცადე და თავიდან გადაიტანე."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "მიმდინარეობს სათადარიგო ასლების ექსპორტირება"
@@ -5652,7 +5652,7 @@
     "messageformat": "გადაიტანე შენი სათადარიგო ასლების საქაღალდე შენი მობილურის მეხსიერებაში"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "გადმოიწერე Signal-ის ახალი ასლი შენს მობილურში"
+    "messageformat": "გადმოიწერე B&A-ის ახალი ასლი შენს მობილურში"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "დააჭირე \"აღდგენა ან გადატანას\" და აირჩიე \"სათადარიგო ასლების შექმნა მოწყობილობაზე\""
@@ -5898,13 +5898,13 @@
     "messageformat": "დაბლოკილია"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal-ის უსაფრთხო სათადარიგო ასლები"
+    "messageformat": "B&A-ის უსაფრთხო სათადარიგო ასლები"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "შექმენი სათადარიგო ასლები Signal-ის დაშიფრული შენახვის სერვისით. დაიწყე შენს ტელეფონზე. <learnMoreLink>გაიგე მეტი</learnMoreLink>."
+    "messageformat": "შექმენი სათადარიგო ასლები B&A-ის დაშიფრული შენახვის სერვისით. დაიწყე შენს ტელეფონზე. <learnMoreLink>გაიგე მეტი</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "შექმენი შენი მიმოწერის ისტორიის სათადარიგო ასლები, რათა ახალი მობილურის შეძენისას ან Signal-ის თავიდან გადმოწერისას მონაცემები არ დაკარგო."
+    "messageformat": "შექმენი შენი მიმოწერის ისტორიის სათადარიგო ასლები, რათა ახალი მობილურის შეძენისას ან B&A-ის თავიდან გადმოწერისას მონაცემები არ დაკარგო."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "სარეზერვო კოპიების დეტალები"
@@ -5934,13 +5934,13 @@
     "messageformat": "გამოწერა გაუქმებულია"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "შეგიძლია, Signal-ის უსაფრთხო სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან გააუქმო."
+    "messageformat": "შეგიძლია, B&A-ის უსაფრთხო სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან გააუქმო."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "შეგიძლია, Signal-ის უსაფრთხო სათადარიგო ასლები შენს მობილურში მართო ან გააუმჯობესო."
+    "messageformat": "შეგიძლია, B&A-ის უსაფრთხო სათადარიგო ასლები შენს მობილურში მართო ან გააუმჯობესო."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "შეგიძლია, Signal-ის უსაფრთხო სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან განაახლო."
+    "messageformat": "შეგიძლია, B&A-ის უსაფრთხო სათადარიგო ასლების გამოწერა შენს მობილურში მართო ან განაახლო."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "ბოლოს შექმნილი სარეზერვო კოპია"
@@ -5958,7 +5958,7 @@
     "messageformat": "შექმენი დაშიფრული სათადარიგო ასლი, რომლის აღდგენაც შეგიძლია შენს ტელეფონზე. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "სათადარიგო ასლის აღსადგენად, დააინსტალირე Signal-ის ახალი ასლი. გახსენი აპი და დააჭირე „სათადარიგო ასლის აღდგენა“-ს, შემდეგ იპოვე სათადარიგო საქაღალდე. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
+    "messageformat": "სათადარიგო ასლის აღსადგენად, დააინსტალირე B&A-ის ახალი ასლი. გახსენი აპი და დააჭირე „სათადარიგო ასლის აღდგენა“-ს, შემდეგ იპოვე სათადარიგო საქაღალდე. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "აირჩიე საქაღალდე"
@@ -6006,7 +6006,7 @@
     "messageformat": "უსაფრთხოდ შეინახე შენი გასაღები"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "გასაღების დაკარგვის შემთხვევაში, მის აღდგენაში Signal-ი ვერ დაგეხმარება. ის სადმე დაცულ ადგილას შეინახე და არავის გაუზიარო."
+    "messageformat": "გასაღების დაკარგვის შემთხვევაში, მის აღდგენაში B&A-ი ვერ დაგეხმარება. ის სადმე დაცულ ადგილას შეინახე და არავის გაუზიარო."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "გაგრძელება"
@@ -6063,13 +6063,13 @@
     "messageformat": "{num, plural, one {{num,number} კონტაქტი} other {{num,number} კონტაქტი}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "ამ პარამეტრების შესაცვლელად გახსენი Signal-ის აპი შენს მობილურ მოწყობილობაზე და გადადი პარამეტრებში, შემდეგ კი > კონფიდენციალურობა"
+    "messageformat": "ამ პარამეტრების შესაცვლელად გახსენი B&A-ის აპი შენს მობილურ მოწყობილობაზე და გადადი პარამეტრებში, შემდეგ კი > კონფიდენციალურობა"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "ტელეფონის ნომერი"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "შეარჩიე, ვის შეუძლია ნახოს შენი ტელეფონის ნომერი და ვინ შეიძლება დაგიკავშირდეს Signal-ზე მისი დახმარებით."
+    "messageformat": "შეარჩიე, ვის შეუძლია ნახოს შენი ტელეფონის ნომერი და ვინ შეიძლება დაგიკავშირდეს B&A-ზე მისი დახმარებით."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "შეცვლა…"
@@ -6099,10 +6099,10 @@
     "messageformat": "ვის შეუძლია ნომრით მიპოვოს"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "ნებისმიერი, ვისაც შენი მობილურის ნომერი აქვს, დაინახავს, რომ Signal-ზე ხარ და შენთან მიმოწერის დაწყებას შეძლებს."
+    "messageformat": "ნებისმიერი, ვისაც შენი მობილურის ნომერი აქვს, დაინახავს, რომ B&A-ზე ხარ და შენთან მიმოწერის დაწყებას შეძლებს."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "ვერავინ დაინახავს, რომ Signal-ზე ხარ, სანამ არ მისწერ ან თუ არსებული ჩატი არ გექნებათ."
+    "messageformat": "ვერავინ დაინახავს, რომ B&A-ზე ხარ, სანამ არ მისწერ ან თუ არსებული ჩატი არ გექნებათ."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "ყველა"
@@ -6114,7 +6114,7 @@
     "messageformat": "დარწმუნებული ხარ?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "თუ \"{settingTitle}\"-ს {nobodyLabel}-ზე დააყენებ, ეს გაურთულებს ხალხს შენს მოძებნას Signal-ზე."
+    "messageformat": "თუ \"{settingTitle}\"-ს {nobodyLabel}-ზე დააყენებ, ეს გაურთულებს ხალხს შენს მოძებნას B&A-ზე."
   },
   "icu:Preferences--messaging": {
     "messageformat": "მიმოწერა"
@@ -6168,7 +6168,7 @@
     "messageformat": "დაყენება"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "გამოსაყენებლად გადატვირთე Signal-ი"
+    "messageformat": "გამოსაყენებლად გადატვირთე B&A-ი"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "ენის შესაცვლელად აპი უნდა გადაიტვირთოს."
@@ -6183,13 +6183,13 @@
     "messageformat": "ეკრანის უსაფრთხოება"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "დამატებითი კონფიდენციალურობისთვის, ამ კომპიუტერზე Signal-ის სქრინშოთების პრევენცია."
+    "messageformat": "დამატებითი კონფიდენციალურობისთვის, ამ კომპიუტერზე B&A-ის სქრინშოთების პრევენცია."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "გსურს ეკრანის უსაფრთხოების გათიშვა?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "გამორთვის შემთხვევაში, Microsoft Windows-ს საშუალება ექნება Signal-ის სქრინშოთები გადაიღოს და ისინი არაკონფიდენციალური ფუნქციებისთვის გამოიყენოს."
+    "messageformat": "გამორთვის შემთხვევაში, Microsoft Windows-ს საშუალება ექნება B&A-ის სქრინშოთები გადაიღოს და ისინი არაკონფიდენციალური ფუნქციებისთვის გამოიყენოს."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "გამორთვა"
@@ -6204,25 +6204,25 @@
     "messageformat": "განახლება გადმოწერილია"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "გახსენი Signal-ი შენს ტელეფონში"
+    "messageformat": "გახსენი B&A-ი შენს ტელეფონში"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "თუ შენს მობილურზე Signal-ს არ გახსნი, შენი ანგარიში მალე წაიშლება. თუ ამას წარმატებით გააკეთებ, ეს შეტყობინება გაქრება. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
+    "messageformat": "თუ შენს მობილურზე B&A-ს არ გახსნი, შენი ანგარიში მალე წაიშლება. თუ ამას წარმატებით გააკეთებ, ეს შეტყობინება გაქრება. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "შედი Signal-ზე შენს მობილურში შენი ანგარიშის აქტივობის შესანარჩუნებლად"
+    "messageformat": "შედი B&A-ზე შენს მობილურში შენი ანგარიშის აქტივობის შესანარჩუნებლად"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "გაიგე მეტი"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal-ი ტექნიკურ სირთულეებს განიცდის. ჩვენ ბევრს ვმუშაობთ სერვისის რაც შეიძლება სწრაფად აღდგენისთვის."
+    "messageformat": "B&A-ი ტექნიკურ სირთულეებს განიცდის. ჩვენ ბევრს ვმუშაობთ სერვისის რაც შეიძლება სწრაფად აღდგენისთვის."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "საჭიროა განახლება"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "განაახლე Signal Desktop ახლა, შენი შეტყობინებების დასინქრონების დასასრულებლად."
+    "messageformat": "განაახლე B&A Desktop ახლა, შენი შეტყობინებების დასინქრონების დასასრულებლად."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "განახლება"
@@ -6231,19 +6231,19 @@
     "messageformat": "საჭიროა განახლება"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal-ის გამოყენების გასაგრძელებლად უახლესი ვერსია უნდა გადმოწერო."
+    "messageformat": "B&A-ის გამოყენების გასაგრძელებლად უახლესი ვერსია უნდა გადმოწერო."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "გადმოიწერე {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "გადატვირთე Signal-ი, რომ განახლება გადმოწერო."
+    "messageformat": "გადატვირთე B&A-ი, რომ განახლება გადმოწერო."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop-ის განახლება ვერ მოხერხდა, მაგრამ ახალი ვერსია ხელმისაწვდომია. გადადი {downloadUrl}-ზე და ახალი ვერსია ხელით გადმოწერე, შემდეგ ან მხარდაჭერის გუნდს დაუკავშირდი, ან ამ პრობლემის შესახებ განაცხადე."
+    "messageformat": "B&A Desktop-ის განახლება ვერ მოხერხდა, მაგრამ ახალი ვერსია ხელმისაწვდომია. გადადი {downloadUrl}-ზე და ახალი ვერსია ხელით გადმოწერე, შემდეგ ან მხარდაჭერის გუნდს დაუკავშირდი, ან ამ პრობლემის შესახებ განაცხადე."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal-ის დახურვა შეუძლებელია.",
+    "messageformat": "B&A-ის დახურვა შეუძლებელია.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -6263,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal-ის უახლესი ვერსია უკვე გადმოწერილია. დარწმუნებული ხარ, რომ გსურს გააგრძელო?",
+    "messageformat": "B&A-ის უახლესი ვერსია უკვე გადმოწერილია. დარწმუნებული ხარ, რომ გსურს გააგრძელო?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "აპლიკაცია გაიჭედა"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal-ი გაჭედვის შემდეგ გადაიტვირთა. შეგიძლია გაჭედვის შესახებ ანგარიში გააგზავნო, რათა დაეხმარო Signal-ს პრობლემის გამოძიებაში."
+    "messageformat": "B&A-ი გაჭედვის შემდეგ გადაიტვირთა. შეგიძლია გაჭედვის შესახებ ანგარიში გააგზავნო, რათა დაეხმარო B&A-ს პრობლემის გამოძიებაში."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "გაგზავნა"
@@ -6375,7 +6375,7 @@
     "messageformat": "ქვემოთ მოცემულ \"{buttonName}-ზე\" დააწკაპუნე"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "ჩართე \"Signal\""
+    "messageformat": "ჩართე \"B&A\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "შედი პარამეტრებში"
@@ -6465,7 +6465,7 @@
     "messageformat": "გაიგე მეტი"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal-ის კონტაქტები"
+    "messageformat": "B&A-ის კონტაქტები"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} არიან ადამიანები, რომელთაც ენდობი ან:"
@@ -6615,7 +6615,7 @@
     "messageformat": "ამათგან Story-ის დამალვა"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Signal-ის ყველა კონტაქტი"
+    "messageformat": "B&A-ის ყველა კონტაქტი"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "ყველა, გარდა…"
@@ -6633,7 +6633,7 @@
     "messageformat": "ნახვის დადასტურებები"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "ამ პარამეტრის შესაცვლელად გახსენი Signal-ის აპი შენს მობილურ მოწყობილობაზე და შედი პარამეტრები -> Stories-ები"
+    "messageformat": "ამ პარამეტრის შესაცვლელად გახსენი B&A-ის აპი შენს მობილურ მოწყობილობაზე და შედი პარამეტრები -> Stories-ები"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "ვის შეუძლია ამ Story-ის ნახვა"
@@ -6693,7 +6693,7 @@
     "messageformat": "\"ჩემი Story-ის\" კონფიდენციალურობა"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "აირჩიე Signal-ის რომელი კონტაქტები შეძლებენ შენი Story-ის ნახვას. ამის შეცვლას კონფიდენციალურობის პარამეტრებიდან ყოველთვის შეძლებ. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
+    "messageformat": "აირჩიე B&A-ის რომელი კონტაქტები შეძლებენ შენი Story-ის ნახვას. ამის შეცვლას კონფიდენციალურობის პარამეტრებიდან ყოველთვის შეძლებ. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Story-ის წაშლა"
@@ -6762,7 +6762,7 @@
     "messageformat": "დანართის ჩამოტვირთვა"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "ჩართე ნახვის დადასტურება, რომ გამოგიჩნდეს ვინ ნახა შენი Stories-ები. გახსენი Signal-ის აპი შენს მობილურ მოწყობილობაში და შედი პარამტერები > Stories-ები."
+    "messageformat": "ჩართე ნახვის დადასტურება, რომ გამოგიჩნდეს ვინ ნახა შენი Stories-ები. გახსენი B&A-ის აპი შენს მობილურ მოწყობილობაში და შედი პარამტერები > Stories-ები."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "ჯერ პასუხები არაა"
@@ -6948,7 +6948,7 @@
     "messageformat": "შენი QR კოდი და ბმული შეიცვალა და შენი მომხმარებლის სახელია {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Signal-ზე ჩემთან მიმოწერის დასაწყებად შენი მობილურით ეს QR კოდი დაასკანირე.",
+    "messageformat": "B&A-ზე ჩემთან მიმოწერის დასაწყებად შენი მობილურით ეს QR კოდი დაასკანირე.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -7024,13 +7024,13 @@
     "messageformat": "გაუქმება"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal desktop-ს მალე აღარ ექნება შენი კომპიუტერის {OS} ვერსიის მხარდაჭერა. Signal-ის გამოყენების გასაგრძელებლად, განაახლე შენი კომპიუტერის ოპერაციული სისტემა {expirationDate}-მდე. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
+    "messageformat": "B&A desktop-ს მალე აღარ ექნება შენი კომპიუტერის {OS} ვერსიის მხარდაჭერა. B&A-ის გამოყენების გასაგრძელებლად, განაახლე შენი კომპიუტერის ოპერაციული სისტემა {expirationDate}-მდე. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal Desktop-ი ამ კომპიუტერზე აღარ მუშაობს. იმისათვის, რომ Signal Desktop-ის გამოყენება ისევ შეძლო, შენი კომპიუტერის {OS}-ის ვერსია განაახლე. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
+    "messageformat": "B&A Desktop-ი ამ კომპიუტერზე აღარ მუშაობს. იმისათვის, რომ B&A Desktop-ის გამოყენება ისევ შეძლო, შენი კომპიუტერის {OS}-ის ვერსია განაახლე. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal Desktop-ი ამ კომპიუტერზე აღარ მუშაობს. იმისათვის, რომ Signal Desktop-ის გამოყენება ისევ შეძლო, შენი კომპიუტერის {OS}-ის ვერსია განაახლე."
+    "messageformat": "B&A Desktop-ი ამ კომპიუტერზე აღარ მუშაობს. იმისათვის, რომ B&A Desktop-ის გამოყენება ისევ შეძლო, შენი კომპიუტერის {OS}-ის ვერსია განაახლე."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "დარედაქტებული"
@@ -7204,7 +7204,7 @@
     "messageformat": "ბმულის დაკოპირება"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "ბმულის Signal-ით გაზიარება"
+    "messageformat": "ბმულის B&A-ით გაზიარება"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "ბმულის წაშლა"
@@ -7270,7 +7270,7 @@
     "messageformat": "ამ პარამეტრის შესაცვლელად, დააყენე \"ვინ ხედავს ჩემს ნომერს\" \"არავინ\"-ზე."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal-ზე პროფილის სახელებს ანგარიშის მფლობელები ირჩევენ:"
+    "messageformat": "B&A-ზე პროფილის სახელებს ანგარიშის მფლობელები ირჩევენ:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "პროფილის სახელები დადასტურებული არაა"
@@ -7306,10 +7306,10 @@
     "messageformat": "ამაყად არაკომერციული"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "კონფიდენციალური მიმოწერა, რომელსაც შენ აფინანსებ. არანაირი რეკლამა, არანაირი ტრეკერები, არანაირი კომპრომისი. გააკეთე დონაცია ახლა, რათა მხარი დაუჭირო Signal-ს. <readMoreLink>წაიკითხე მეტი</readMoreLink>"
+    "messageformat": "კონფიდენციალური მიმოწერა, რომელსაც შენ აფინანსებ. არანაირი რეკლამა, არანაირი ტრეკერები, არანაირი კომპრომისი. გააკეთე დონაცია ახლა, რათა მხარი დაუჭირო B&A-ს. <readMoreLink>წაიკითხე მეტი</readMoreLink>"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "გააკეთე დონაცია და დაუჭირე მხარი კონფიდენციალურ მიმოწერას. დაგვეხმარე Signal-ის დამოუკიდებლობის შენარჩუნებაში რეკლამების გარეშე. <readMoreLink>წაიკითხე მეტი</readMoreLink>"
+    "messageformat": "გააკეთე დონაცია და დაუჭირე მხარი კონფიდენციალურ მიმოწერას. დაგვეხმარე B&A-ის დამოუკიდებლობის შენარჩუნებაში რეკლამების გარეშე. <readMoreLink>წაიკითხე მეტი</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "გააკეთე დონაცია"
@@ -7333,7 +7333,7 @@
     "messageformat": "შენი ინფორმაცია კონფიდენციალურია"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal-ი არ აგროვებს და არ ინახავს შენს პირად ინფორმაციას, როცა დონაციას აკეთებ.</paragraph><paragraph>შენი დონაციების მისაღებად Stripe-ს ვიყენებთ, როგორც გადახდის დამმუშავებელს. ჩვენ არ გვაქვს წვდომა შენ მიერ მათთვის მიწოდებულ ინფორმაციაზე და მას არ ვინახავთ.</paragraph><paragraph>Signal-ი არ და ვერ აკავშირებს შენს დონაციას შენს Signal-ის ანგარიშთან.</paragraph><paragraph>მადლობა მხარდაჭერისთვის!</paragraph>"
+    "messageformat": "<paragraph>B&A-ი არ აგროვებს და არ ინახავს შენს პირად ინფორმაციას, როცა დონაციას აკეთებ.</paragraph><paragraph>შენი დონაციების მისაღებად Stripe-ს ვიყენებთ, როგორც გადახდის დამმუშავებელს. ჩვენ არ გვაქვს წვდომა შენ მიერ მათთვის მიწოდებულ ინფორმაციაზე და მას არ ვინახავთ.</paragraph><paragraph>B&A-ი არ და ვერ აკავშირებს შენს დონაციას შენს B&A-ის ანგარიშთან.</paragraph><paragraph>მადლობა მხარდაჭერისთვის!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -7348,7 +7348,7 @@
     "messageformat": "დონორის FAQ"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "ქვითრები სხვადასხვა მოწყობილობაზე არ სინქრონიზდება. თუ Signal-ი ხელახლა გადმოწერე, წინა დონაციების ქვითრები არ იქნება ხელმისაწვდომი."
+    "messageformat": "ქვითრები სხვადასხვა მოწყობილობაზე არ სინქრონიზდება. თუ B&A-ი ხელახლა გადმოწერე, წინა დონაციების ქვითრები არ იქნება ხელმისაწვდომი."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "ქვითრები ვერ მოიძებნა"
@@ -7378,7 +7378,7 @@
     "messageformat": "საკრედიტო ან სადებეტო ბარათი"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "შეიყვანე შენი საკრედიტო ან სადებეტო ბარათის დეტალები. Signal-ი არ აგროვებს და არ ინახავს შენს პერსონალურ მონაცემებს. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
+    "messageformat": "შეიყვანე შენი საკრედიტო ან სადებეტო ბარათის დეტალები. B&A-ი არ აგროვებს და არ ინახავს შენს პერსონალურ მონაცემებს. <learnMoreLink>გაიგე მეტი</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "ბარათის ნომერი"
@@ -7390,7 +7390,7 @@
     "messageformat": "თვე/წელი"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "გააკეთე დონაცია {formattedCurrencyAmount} Signal-ისთვის"
+    "messageformat": "გააკეთე დონაცია {formattedCurrencyAmount} B&A-ისთვის"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "ბარათის ნომერი არასწორია"
@@ -7408,7 +7408,7 @@
     "messageformat": "კოდი ძალიან მოკლეა"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "მიიღე Signal-ის ბუსტის ემბლემა 30 დღით"
+    "messageformat": "მიიღე B&A-ის ბუსტის ემბლემა 30 დღით"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "დონაციის მინიმალური ოდენობაა {formattedCurrencyAmount}"
@@ -7444,7 +7444,7 @@
     "messageformat": "ერთჯერადად"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "მადლობა Signal-ის მხარდაჭერისთვის. შენი წვლილი ხელს უწყობს გამოხატვის თავისუფლების დაცვისა და მთელ მსოფლიოში მილიონობით ადამიანისთვის უსაფრთხო გლობალური კომუნიკაციის უზრუნველყოფის მისიის განხორციელებას ღია კოდის კონფიდენციალურობის ტექნოლოგიების მეშვეობით. თუ შეერთებული შტატების რეზიდენტი ხარ, გთხოვთ, ეს ქვითარი შენი საგადასახადო ჩანაწერებისთვის შეინახო. Signal-ის ტექნოლოგიების ფონდი არის გადასახადებისგან გათავისუფლებული არაკომერციული ორგანიზაცია შეერთებულ შტატებში, Internal Revenue Code-ის 501c3 მუხლის შესაბამისად. ჩვენი ფედერალური საგადასახადო ID არის 82-4506840."
+    "messageformat": "მადლობა B&A-ის მხარდაჭერისთვის. შენი წვლილი ხელს უწყობს გამოხატვის თავისუფლების დაცვისა და მთელ მსოფლიოში მილიონობით ადამიანისთვის უსაფრთხო გლობალური კომუნიკაციის უზრუნველყოფის მისიის განხორციელებას ღია კოდის კონფიდენციალურობის ტექნოლოგიების მეშვეობით. თუ შეერთებული შტატების რეზიდენტი ხარ, გთხოვთ, ეს ქვითარი შენი საგადასახადო ჩანაწერებისთვის შეინახო. B&A-ის ტექნოლოგიების ფონდი არის გადასახადებისგან გათავისუფლებული არაკომერციული ორგანიზაცია შეერთებულ შტატებში, Internal Revenue Code-ის 501c3 მუხლის შესაბამისად. ჩვენი ფედერალური საგადასახადო ID არის 82-4506840."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "ონლაინ არ ხარ. გთხოვთ, დონაციის შესასრულებლად ინტერნეტს დაუკავშირდე."
@@ -7474,7 +7474,7 @@
     "messageformat": "დონაცია წარმატებით განხორციელდა, მაგრამ შენი ემბლემის პარამეტრების განახლება ვერ მოხერხდა"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "შენს მობილურ მოწყობილობაზე შენი ემბლემის პარამეტრების გაუმჯობესებისთვის აირჩიე პარამეტრები → დონაცია Signal-ისთვის → ემბლემები."
+    "messageformat": "შენს მობილურ მოწყობილობაზე შენი ემბლემის პარამეტრების გაუმჯობესებისთვის აირჩიე პარამეტრები → დონაცია B&A-ისთვის → ემბლემები."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "დინაცია შეწყდა"
@@ -7501,7 +7501,7 @@
     "messageformat": "შენს დონაციასთან დაკავშირებით შეცდომა მოხდა"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "შეიძლება, შენი დონაცია ვერ დამუშავდა. ქვითრების შესამოწმებლად და დასადასტურებლად აირჩიე „დონაცია Signal-ისთვის“ და შემდეგ „დონაციის ქვითრები“."
+    "messageformat": "შეიძლება, შენი დონაცია ვერ დამუშავდა. ქვითრების შესამოწმებლად და დასადასტურებლად აირჩიე „დონაცია B&A-ისთვის“ და შემდეგ „დონაციის ქვითრები“."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "თავიდან სცადე ან გაუმართაობის რეესტრი მხარდაჭერის გუნდს გაუგზავნე, რათა შენი დონაციის შესრულებაში დაგეხმარონ. გაუმართაობის რეესტრი პრობლემის დიაგნოსტიკასა და გამოსწორებაში გვეხმარება და საიდენტიფიკაციო ინფორმაციას არ შეიცავს."
@@ -7543,13 +7543,13 @@
     "messageformat": "მადლობა მხარდაჭერისთვის!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "შენ მოიპოვე დონორის ემბლემა Signal-ისგან! გამოაჩინე ის შენს პროფილზე, რათა მხარდაჭერა გამოხატო."
+    "messageformat": "შენ მოიპოვე დონორის ემბლემა B&A-ისგან! გამოაჩინე ის შენს პროფილზე, რათა მხარდაჭერა გამოხატო."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "პროფილზე ჩვენება"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "ამის დარეგულირება შენს მობილურ მოწყობილობაზე შეგიძლია. აირჩიე პარამეტრები → Signal-ისთვის დონაციის გაკეთება → ემბლემები"
+    "messageformat": "ამის დარეგულირება შენს მობილურ მოწყობილობაზე შეგიძლია. აირჩიე პარამეტრები → B&A-ისთვის დონაციის გაკეთება → ემბლემები"
   },
   "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
     "messageformat": "Close"
@@ -7561,7 +7561,7 @@
     "messageformat": "როგორ შეაფასებდი ზარს?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "ეს Signal-ის ზარების გაუმჯობესებაში გვეხმარება. არანაირი პირადი საიდენტიფიკაციო ინფორმაცია არ ინახება."
+    "messageformat": "ეს B&A-ის ზარების გაუმჯობესებაში გვეხმარება. არანაირი პირადი საიდენტიფიკაციო ინფორმაცია არ ინახება."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "პრობლემები ჰქონდა"
@@ -7612,7 +7612,7 @@
     "messageformat": "პრობლემის აღწერა"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "გთხოვთ საკითხთან დაკავშირებული ნებისმიერი დეტალი მიუთითო. ყველაფერს, რასაც აქ გააზიარებ, კონფიდენციალურობას შევუნარჩუნებთ და მხოლოდ Signal-ის ზარების გასაუმჯობესებლად გამოვიყენებთ."
+    "messageformat": "გთხოვთ საკითხთან დაკავშირებული ნებისმიერი დეტალი მიუთითო. ყველაფერს, რასაც აქ გააზიარებ, კონფიდენციალურობას შევუნარჩუნებთ და მხოლოდ B&A-ის ზარების გასაუმჯობესებლად გამოვიყენებთ."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "გთხოვთ, შენი პრობლემა აღგვიწერო"
@@ -7666,11 +7666,11 @@
     "messageformat": "გაადიდე გვერდით პანელი, რომ მეგაფონთან ინტერაქცია შეძლო"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "ეს ვერსია შეიცავს უამრავ მცირე შესწორებას და ბაგების გამოსწორებებს Signal-ის შეუფერხებლად მუშაობის შესანარჩუნებლად.",
+    "messageformat": "ეს ვერსია შეიცავს უამრავ მცირე შესწორებას და ბაგების გამოსწორებებს B&A-ის შეუფერხებლად მუშაობის შესანარჩუნებლად.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "დამატებითი პატარა შესწორებები, ბაგების გამართვები და წარმადობის გაუმჯობესებები. მადლობა, რომ Signal-ს იყენებ!",
+    "messageformat": "დამატებითი პატარა შესწორებები, ბაგების გამართვები და წარმადობის გაუმჯობესებები. მადლობა, რომ B&A-ს იყენებ!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {

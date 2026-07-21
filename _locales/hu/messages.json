@@ -42,7 +42,7 @@
     "messageformat": "A nagyfelbontású média nagyobb adathasználatot igényel."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a B&A számára"
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Normál"
@@ -78,10 +78,10 @@
     "messageformat": "Ismeretlen csoport"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "A Signal nem nyitható meg"
+    "messageformat": "A B&A nem nyitható meg"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a Signal ügyfélszolgálatával.\n\nHa azonnal használnod kell a Signalt, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a B&A ügyfélszolgálatával.\n\nHa azonnal használnod kell a B&At, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError": {
     "messageformat": "Adatbázishiba"
@@ -93,16 +93,16 @@
     "messageformat": "Az összes adat végleges törlése"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a Signalt ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a B&At ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Az adatbázisod verziója nem egyezik a Signal ezen verziójával. Győződj meg róla, hogy a Signal legújabb verzióját nyitod meg a számítógépeden."
+    "messageformat": "Az adatbázisod verziója nem egyezik a B&A ezen verziójával. Győződj meg róla, hogy a B&A legújabb verzióját nyitod meg a számítógépeden."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre, vagy próbáld meg futtatni a Signalt a --password-store=\"{previousBackendFlag}\" parancssori jelzővel."
+    "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre, vagy próbáld meg futtatni a B&At a --password-store=\"{previousBackendFlag}\" parancssori jelzővel."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -147,7 +147,7 @@
     "messageformat": "Összes megjelenítése"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Kilépés a Signalból"
+    "messageformat": "Kilépés a B&Aból"
   },
   "icu:editMenuUndo": {
     "messageformat": "Visszavonás"
@@ -486,10 +486,10 @@
     "messageformat": "Biztonsági számodat korábban nem hitelesnek jelölted {name} nevű partnereddel egy másik eszközön."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "A hitelesítés alatt álló biztonsági szám megváltozott. Kérlek ellenőrizd új biztonsági számodat {name1} nevű partnereddel! Ez utalhat arra, hogy valaki megpróbálja lehallgatni a beszélgetéseteket, de azt is jelentheti, hogy {name2} egyszerűen csak újratelepítette a Signalt."
+    "messageformat": "A hitelesítés alatt álló biztonsági szám megváltozott. Kérlek ellenőrizd új biztonsági számodat {name1} nevű partnereddel! Ez utalhat arra, hogy valaki megpróbálja lehallgatni a beszélgetéseteket, de azt is jelentheti, hogy {name2} egyszerűen csak újratelepítette a B&At."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Elképzelhető, hogy az alábbi személyek újratelepítették a Signalt, vagy eszközt cseréltek. Az új biztonsági szám megerősítéséhez koppints egy felhasználóra! Ez a lépés nem kötelező."
+    "messageformat": "Elképzelhető, hogy az alábbi személyek újratelepítették a B&At, vagy eszközt cseréltek. Az új biztonsági szám megerősítéséhez koppints egy felhasználóra! Ez a lépés nem kötelező."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Függőben levő üzenetek küldése"
@@ -498,7 +498,7 @@
     "messageformat": "Felülvizsgálat"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Van {count,number} olyan névjegyed, aki újratelepítette a Signalt, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.} other {Van {count,number} olyan névjegyed, aki újratelepítette a Signalt, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.}}"
+    "messageformat": "{count, plural, one {Van {count,number} olyan névjegyed, aki újratelepítette a B&At, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.} other {Van {count,number} olyan névjegyed, aki újratelepítette a B&At, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Minden névjegy ellenőrzése megtörtént, a folytatáshoz koppints a Küldés gombra."
@@ -543,7 +543,7 @@
     "messageformat": "Ez a napló nyilvánosan elérhető lesz online, hogy a közreműködők megtekinthessék. Beküldés előtt letöltheted."
   },
   "icu:debugLogError": {
-    "messageformat": "Hiba történt a feltöltés során. Küldd el a naplófájlt szöveges csatolmányként a support@signal.org címre!"
+    "messageformat": "Hiba történt a feltöltés során. Küldd el a naplófájlt szöveges csatolmányként a support@baxs.com címre!"
   },
   "icu:debugLogSuccess": {
     "messageformat": "Naplófájl feltöltve"
@@ -729,7 +729,7 @@
     "messageformat": "Matricacsomag-készítő"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "A Signal Desktopról"
+    "messageformat": "A B&A Desktopról"
   },
   "icu:screenShareWindow": {
     "messageformat": "Képernyő megosztása"
@@ -747,7 +747,7 @@
     "messageformat": "Kilépés"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "B&A Desktop"
   },
   "icu:search": {
     "messageformat": "Keresés"
@@ -801,13 +801,13 @@
     "messageformat": "Keresés telefonszám alapján"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Üdvözöl a Signal!"
+    "messageformat": "Üdvözöl a B&A!"
   },
   "icu:whatsNew": {
     "messageformat": "{whatsNew} ebben a frissítésben"
   },
   "icu:signalNonProfit": {
-    "messageformat": "A Signal egy nonprofit szervezet"
+    "messageformat": "A B&A egy nonprofit szervezet"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "Újdonságok"
@@ -891,13 +891,13 @@
     "messageformat": "Te"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Hangüzenetek küldéséhez engedélyezd, hogy a Signal Desktop hozzáférjen a mikrofonodhoz!"
+    "messageformat": "Hangüzenetek küldéséhez engedélyezd, hogy a B&A Desktop hozzáférjen a mikrofonodhoz!"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Hívás indításához engedélyezd, hogy a Signal Desktop hozzáférjen mikrofonodhoz!"
+    "messageformat": "Hívás indításához engedélyezd, hogy a B&A Desktop hozzáférjen mikrofonodhoz!"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Videóhívás indításához engedélyezd, hogy a Signal Desktop hozzáférjen kamerádhoz!"
+    "messageformat": "Videóhívás indításához engedélyezd, hogy a B&A Desktop hozzáférjen kamerádhoz!"
   },
   "icu:allowAccess": {
     "messageformat": "Hozzáférés engedélyezése"
@@ -921,13 +921,13 @@
     "messageformat": "Némítás"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "A Signal frissítése nem sikerült. <retryUpdateButton>Próbáld újra a frissítést</retryUpdateButton> vagy látogass el a(z) {url} webhelyre a manuális telepítéshez. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
+    "messageformat": "A B&A frissítése nem sikerült. <retryUpdateButton>Próbáld újra a frissítést</retryUpdateButton> vagy látogass el a(z) {url} webhelyre a manuális telepítéshez. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "A Signal frissítése nem sikerült. Telepítsd az új verziót manuálisan a {url} weboldalról. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
+    "messageformat": "A B&A frissítése nem sikerült. Telepítsd az új verziót manuálisan a {url} weboldalról. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "A Signal Desktop valószínűleg macOS karanténban fut, és emiatt nem fog tudni automatikusan frissíteni. Próbáld meg áthelyezni a  {app} fájlt a {folder} mappába a Finder segítségével!"
+    "messageformat": "A B&A Desktop valószínűleg macOS karanténban fut, és emiatt nem fog tudni automatikusan frissíteni. Próbáld meg áthelyezni a  {app} fájlt a {folder} mappába a Finder segítségével!"
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -972,7 +972,7 @@
     "messageformat": "A beszélgetés ezen az eszközön törlésre kerül."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ez az üzenet a csevegés minden tagja számára törlésre kerül, ha a Signal legújabb verzióját használják. A többiek számára látható lesz, hogy töröltél egy üzenetet."
+    "messageformat": "Ez az üzenet a csevegés minden tagja számára törlésre kerül, ha a B&A legújabb verzióját használják. A többiek számára látható lesz, hogy töröltél egy üzenetet."
   },
   "icu:from": {
     "messageformat": "Feladó"
@@ -1014,7 +1014,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "A(z) „ {title}” az a profilnév, amelyet ez a személy beállított magának a Signalban."
+    "messageformat": "A(z) „ {title}” az a profilnév, amelyet ez a személy beállított magának a B&Aban."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Ellenőrzött"
@@ -1029,7 +1029,7 @@
     "messageformat": "Nincs közvetlen üzenet {name} felhasználóval"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal Névjegy"
+    "messageformat": "B&A Névjegy"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} szerepel a rendszernévjegyeid között"
@@ -1341,7 +1341,7 @@
     "messageformat": "Tudj meg többet"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "A Signal végpontok közti titkosítást használ, és időnként újra be kell állítania a két végpont közti adatkapcsolatot. Ennek nincs hatása a biztonságra, de előfordulhat, hogy pont ezalatt nem kaptál meg egy üzenetet ettől a személytől. Ilyen esetekben érdemes megkérni a partnert, hogy küldje újra az üzenetét."
+    "messageformat": "A B&A végpontok közti titkosítást használ, és időnként újra be kell állítania a két végpont közti adatkapcsolatot. Ennek nincs hatása a biztonságra, de előfordulhat, hogy pont ezalatt nem kaptál meg egy üzenetet ettől a személytől. Ilyen esetekben érdemes megkérni a partnert, hogy küldje újra az üzenetét."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Kapcsolatfelvétel a támogatással"
@@ -1368,7 +1368,7 @@
     "messageformat": "{sender} megváltoztatta a telefonszámát"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Ismerős csatlakozott a Signalhoz"
+    "messageformat": "Ismerős csatlakozott a B&Ahoz"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} és {conversationTitle} ugyanaz a fiók. Itt található mindkét csevegés üzenetelőzménye."
@@ -1458,7 +1458,7 @@
     "messageformat": "Nem lehet letölteni a médiafájlt"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Ellenőrizd az asztali számítógép és a telefon internetkapcsolatát. Nyisd meg a Signal alkalmazást a telefonodon, majd próbáld meg újra a letöltést."
+    "messageformat": "Ellenőrizd az asztali számítógép és a telefon internetkapcsolatát. Nyisd meg a B&A alkalmazást a telefonodon, majd próbáld meg újra a letöltést."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Ez a média már nem érhető el a telefonodon, és nem tölthető le."
@@ -1479,10 +1479,10 @@
     "messageformat": "Tudj meg többet!"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Olvasd be ezt a kódot a Signal telefonos alkalmazással!"
+    "messageformat": "Olvasd be ezt a kódot a B&A telefonos alkalmazással!"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a B&At a telefonodon!"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Kattints a {settings}, majd a {linkedDevices} menüpontra"
@@ -1500,7 +1500,7 @@
     "messageformat": "<paragraph>Váratlan hiba történt.</paragraph><paragraph>Kérjük, próbáld újra.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "A Signal nem tudja összekapcsolni ezt az eszközt a jelenlegi hálózaton keresztül."
+    "messageformat": "A B&A nem tudja összekapcsolni ezt az eszközt a jelenlegi hálózaton keresztül."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Újra"
@@ -1524,7 +1524,7 @@
     "messageformat": "Eszköz neve"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Az eszköz nevének megváltoztatásához nyisd meg a Signal alkalmazást a telefonodon, és lépj a Beállítások > Kapcsolt eszközök menüpontra"
+    "messageformat": "Az eszköz nevének megváltoztatásához nyisd meg a B&A alkalmazást a telefonodon, és lépj a Beállítások > Kapcsolt eszközök menüpontra"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji bőrtónus"
@@ -1725,7 +1725,7 @@
     "messageformat": "Sajnáljuk, de már túl sok párosított eszközöd van. Próbálj kitörölni néhányat!"
   },
   "icu:installTooOld": {
-    "messageformat": "A telefonod párosításához frissítsd a Signalt ezen az eszközön!"
+    "messageformat": "A telefonod párosításához frissítsd a B&At ezen az eszközön!"
   },
   "icu:installErrorHeader": {
     "messageformat": "Probléma merült fel!"
@@ -1776,7 +1776,7 @@
     "messageformat": "Ez a híváshivatkozás már nem érvényes."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal hívás"
+    "messageformat": "B&A hívás"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "A linket nem lehet törölni. Ellenőrizd az internetkapcsolatod, és próbáld újra!"
@@ -1932,16 +1932,16 @@
     "messageformat": "{count, plural, one {{count,number} személy vesz részt ebben a hívásban} other {{count,number} személy vesz részt ebben a hívásban}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "A Signal megcsörgeti őt: {person}"
+    "messageformat": "A B&A megcsörgeti őt: {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "A Signal megcsörgeti őket: {first} és {second}"
+    "messageformat": "A B&A megcsörgeti őket: {first} és {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "A Signal megcsörgeti őket: {first}, {second} és {third}"
+    "messageformat": "A B&A megcsörgeti őket: {first}, {second} és {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {A Signal hívni fogja {first}, {second} és {others,number} további ismerősödet} other {A Signal hívni fogja {first}, {second} és {others,number} további ismerősödet}}"
+    "messageformat": "{others, plural, one {A B&A hívni fogja {first}, {second} és {others,number} további ismerősödet} other {A B&A hívni fogja {first}, {second} és {others,number} további ismerősödet}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} értesítve lesz"
@@ -1995,13 +1995,13 @@
     "messageformat": "Újracsatlakozás…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "A kapcsolat megszakadt. A Signal újracsatlakozik."
+    "messageformat": "A kapcsolat megszakadt. A B&A újracsatlakozik."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "A Signal a következő ablakot osztja meg: {window}."
+    "messageformat": "A B&A a következő ablakot osztja meg: {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "A Signal-képernyő megosztása aktív"
+    "messageformat": "A B&A-képernyő megosztása aktív"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Újracsatlakozás…"
@@ -2022,7 +2022,7 @@
     "messageformat": "Engedély szükséges"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "A Signalnak engedélyre van szüksége a képernyő rögzítéséhez."
+    "messageformat": "A B&Anak engedélyre van szüksége a képernyő rögzítéséhez."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Nyisd meg a Rendszerbeállításokat!"
@@ -2031,7 +2031,7 @@
     "messageformat": "Kattints a lakat ikonra bal-alul, és gépeld be számítógéped jelszavát!"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Jobboldalt pipáld ki a Signalt. Ha nem találod a listában, használd a + gombot a hozzáadáshoz!"
+    "messageformat": "Jobboldalt pipáld ki a B&At. Ha nem találod a listában, használd a + gombot a hozzáadáshoz!"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Nyisd meg a Rendszerbeállításokat!"
@@ -2043,7 +2043,7 @@
     "messageformat": "Összes hívás átjátszása"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "A hívások átjátszása a Signal szerverein annak érdekében, hogy IP címed a telefonhívás során is rejtve maradjon partnered előtt. Engedélyezésével a hívások minősége gyengébb lesz."
+    "messageformat": "A hívások átjátszása a B&A szerverein annak érdekében, hogy IP címed a telefonhívás során is rejtve maradjon partnered előtt. Engedélyezésével a hívások minősége gyengébb lesz."
   },
   "icu:permissions": {
     "messageformat": "Jogosultságok"
@@ -2061,10 +2061,10 @@
     "messageformat": "Szövegformázási előugró ablak megjelenítése, ha ki van jelölve szöveg"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "A helyesírás-ellenőrzés a Signal újraindítását követően lesz engedélyezve."
+    "messageformat": "A helyesírás-ellenőrzés a B&A újraindítását követően lesz engedélyezve."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "A helyesírás-ellenőrzés a Signal újraindítását követően lesz kikapcsolva."
+    "messageformat": "A helyesírás-ellenőrzés a B&A újraindítását követően lesz kikapcsolva."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Lezárás tálcára"
@@ -2088,13 +2088,13 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Törlöd az összes adatot és üzenetet a Signal Desktop ezen verziójából? A Signal-fiókod és a telefonodon vagy más társított eszközökön lévő adatok nem törlődnek."
+    "messageformat": "Törlöd az összes adatot és üzenetet a B&A Desktop ezen verziójából? A B&A-fiókod és a telefonodon vagy más társított eszközökön lévő adatok nem törlődnek."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Lecsatlakozás és az összes adat törlése…"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Egy korábbi Signal Desktop telepítés elavult adatokat hagyott hátra. Ha úgy döntesz, hogy folytatod, akkor ezek az adatok törölve lesznek, és elölről kell kezdened."
+    "messageformat": "Egy korábbi B&A Desktop telepítés elavult adatokat hagyott hátra. Ha úgy döntesz, hogy folytatod, akkor ezek az adatok törölve lesznek, és elölről kell kezdened."
   },
   "icu:deleteOldData": {
     "messageformat": "Régi adatok törlése"
@@ -2139,10 +2139,10 @@
     "messageformat": "Csak részben törölve, kattints a teljeshez"
   },
   "icu:expiredWarning": {
-    "messageformat": "A Signal Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
+    "messageformat": "A B&A Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
   },
   "icu:upgrade": {
-    "messageformat": "Kattints a signal.org/download oldalra ugráshoz!"
+    "messageformat": "Kattints a ba-chat.com/download oldalra ugráshoz!"
   },
   "icu:mediaMessage": {
     "messageformat": "Médiaüzenet"
@@ -2151,7 +2151,7 @@
     "messageformat": "Kontaktok importálása"
   },
   "icu:syncExplanation": {
-    "messageformat": "Az összes Signal csoport és kontakt importálása mobileszközödről."
+    "messageformat": "Az összes B&A csoport és kontakt importálása mobileszközödről."
   },
   "icu:syncNow": {
     "messageformat": "Importálás"
@@ -2187,7 +2187,7 @@
     "messageformat": "Tegnap {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Lehet, hogy a Signal nem tudja feldolgozni a bejövő üzenetet."
+    "messageformat": "Lehet, hogy a B&A nem tudja feldolgozni a bejövő üzenetet."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Az üzenet szövege túl hosszú."
@@ -2343,13 +2343,13 @@
     "messageformat": "A módosításokat csak az üzenet elküldésétől számított 24 órán belül lehet alkalmazni."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nem Signal-felhasználó. Győződj meg róla, hogy a teljes felhasználónevet adtad meg."
+    "messageformat": "{atUsername} nem B&A-felhasználó. Győződj meg róla, hogy a teljes felhasználónevet adtad meg."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "A(z) {atUsername} érvénytelen felhasználónév. Győződj meg róla, hogy a teljes felhasználónevet és a hozzá tartozó számjegyeket is megadtad."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Felhasználó nem található: \"{phoneNumber}\" nincs regisztrálva a Signalra."
+    "messageformat": "Felhasználó nem található: \"{phoneNumber}\" nincs regisztrálva a B&Ara."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "A felhasználó nem található. A(z) {phoneNumber} nem érvényes telefonszám."
@@ -2370,13 +2370,13 @@
     "messageformat": "A csoport elérte maximális létszámát"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "A Signal csoportok legfeljebb {max,number} tagból állhatnak."
+    "messageformat": "A B&A csoportok legfeljebb {max,number} tagból állhatnak."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Elérted a javasolt létszám limitet"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "A Signal csoportok {max,number} vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során."
+    "messageformat": "A B&A csoportok {max,number} vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Csoport elnevezése"
@@ -2406,7 +2406,7 @@
     "messageformat": "A csoport frissítése nem sikerült. Ellenőrizd a hálózatodat, majd próbáld újra!"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Párosítsd újra a Signal Desktopot mobilkészülékeiddel a beszélgetés folytatásához!"
+    "messageformat": "Párosítsd újra a B&A Desktopot mobilkészülékeiddel a beszélgetés folytatásához!"
   },
   "icu:unlinked": {
     "messageformat": "Nincs párosítva"
@@ -2418,7 +2418,7 @@
     "messageformat": "Frissítés újra"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Kattints a Signal újraindításához!"
+    "messageformat": "Kattints a B&A újraindításához!"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Kattints a frissítés letöltéséhez!"
@@ -2427,7 +2427,7 @@
     "messageformat": "Sikertelen frissítés. Kattints és próbáld újra."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal újraindítása"
+    "messageformat": "B&A újraindítása"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Frissítés kihagyása"
@@ -2532,7 +2532,7 @@
     "messageformat": "Egyes mellékletek túl nagyok a megjelenítéshez."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Signal-híváshoz"
+    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy B&A-híváshoz"
   },
   "icu:donation--missing": {
     "messageformat": "Nem sikerült lekérni az adomány részleteit"
@@ -2544,7 +2544,7 @@
     "messageformat": "Az adomány mobilon való megtekintéséhez koppints erre az üzenetre"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} adományozott a Signalnak a nevedben"
+    "messageformat": "{sender} adományozott a B&Anak a nevedben"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Az adomány megnyitásához ellenőrizd a telefonod"
@@ -2601,7 +2601,7 @@
     "messageformat": "Köszönjük a támogatásodat!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Adományoztál a Signal számára {name} nevében. Lehetőséget kap arra, hogy a profilján megjelenítse a támogatást."
+    "messageformat": "Adományoztál a B&A számára {name} nevében. Lehetőséget kap arra, hogy a profilján megjelenítse a támogatást."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "A matricacsomagot nem sikerült telepíteni"
@@ -2616,10 +2616,10 @@
     "messageformat": "Nincsenek matricák telepítve"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Művészi Sorozat"
+    "messageformat": "B&A Művészi Sorozat"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nem érhető el Signal Művészi matrica"
+    "messageformat": "Nem érhető el B&A Művészi matrica"
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Beérkezett matricák"
@@ -2883,19 +2883,19 @@
     "messageformat": "Az üzenet túl hosszú a továbbiak megjelenítéshez"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} olyan Signal újdonságot tartalmazó üzenetet küldött, melyet a Signal jelenlegi verziójával nem lehet feldolgozni vagy megjeleníteni."
+    "messageformat": "{contact} olyan B&A újdonságot tartalmazó üzenetet küldött, melyet a B&A jelenlegi verziójával nem lehet feldolgozni vagy megjeleníteni."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Most már megkérheted {contact} nevű partnered, hogy küldje újra ezt az üzenetet, mivel már a Signal legfrissebb verzióját használod."
+    "messageformat": "Most már megkérheted {contact} nevű partnered, hogy küldje újra ezt az üzenetet, mivel már a B&A legfrissebb verzióját használod."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Az egyik eszközödről olyan üzenetet küldtél, melyet nem lehet feldolgozni vagy megjeleníteni ezen az eszközön, mivel olyan funkciót tartalmaz, mely csak a Signal egy újabb verziójában érhető el."
+    "messageformat": "Az egyik eszközödről olyan üzenetet küldtél, melyet nem lehet feldolgozni vagy megjeleníteni ezen az eszközön, mivel olyan funkciót tartalmaz, mely csak a B&A egy újabb verziójában érhető el."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "A jövőben az ehhez hasonló üzenetek szinkronizálva lesznek, ugyanis a Signal legfrissebb verzióját használod."
+    "messageformat": "A jövőben az ehhez hasonló üzenetek szinkronizálva lesznek, ugyanis a B&A legfrissebb verzióját használod."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal frissítése"
+    "messageformat": "B&A frissítése"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Megtekintve"
@@ -3159,7 +3159,7 @@
     "messageformat": "A csevegés olvasatlanként megjelölve"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "A matricacsomag létrehozásához állítsd be a Signalt a telefonodon, valamint az asztali alkalmazáson is"
+    "messageformat": "A matricacsomag létrehozásához állítsd be a B&At a telefonodon, valamint az asztali alkalmazáson is"
   },
   "icu:Reactions--remove": {
     "messageformat": "Reakció eltávolítása"
@@ -3183,7 +3183,7 @@
     "messageformat": "Hamis nevek és fiókok"
   },
   "icu:SafetyTipsModal__TipDescription--Fake": {
-    "messageformat": "A Signal soha nem fogja felvenni veled a kapcsolatot regisztrációs vagy PIN-kódoddal kapcsolatban. Legyél óvatos azokkal a kérésekkel, amelyeket mások nevében küldenek. A profilneveket a fióktulajdonos választja ki, és nincsenek ellenőrizve."
+    "messageformat": "A B&A soha nem fogja felvenni veled a kapcsolatot regisztrációs vagy PIN-kódoddal kapcsolatban. Legyél óvatos azokkal a kérésekkel, amelyeket mások nevében küldenek. A profilneveket a fióktulajdonos választja ki, és nincsenek ellenőrizve."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kripto- vagy pénzzel kapcsolatos átverések"
@@ -3273,13 +3273,13 @@
     "messageformat": "Jelented levélszemétként?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "A Signal értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A B&A értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A B&A nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "A Signal értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A B&A értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A B&A nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "A Signal értesítést kap arról, hogy {name}, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A B&A értesítést kap arról, hogy {name}, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A B&A nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Kéretlen üzenet jelentése"
@@ -3375,7 +3375,7 @@
     "messageformat": "A <clickable>profilnevek</clickable> nincsenek ellenőrizve"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Ez a hivatalos és egyetlen Signal chat"
+    "messageformat": "Ez a hivatalos és egyetlen B&A chat"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
@@ -3441,10 +3441,10 @@
     "messageformat": "Nem fogadott videóhívás"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "A Signal továbbra is fut"
+    "messageformat": "A B&A továbbra is fut"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "A Signal továbbra is futni fog az értesítési területen. Ezt a Signal beállításaiban módosíthatod."
+    "messageformat": "A B&A továbbra is futni fog az értesítési területen. Ezt a B&A beállításaiban módosíthatod."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Bejövő hanghívás"
@@ -3654,7 +3654,7 @@
     "messageformat": "Híváslink másolása"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Híváslink megosztása a Signalon keresztül"
+    "messageformat": "Híváslink megosztása a B&Aon keresztül"
   },
   "icu:CallingAdhocCallInfo__RemoveClient": {
     "messageformat": "E személy eltávolítása a hívásból"
@@ -3780,7 +3780,7 @@
     "messageformat": "Ismeretlen verziójú hivatkozás"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "A Signal Desktop ezen verziója nem támogatja ezt a hivatkozást."
+    "messageformat": "A B&A Desktop ezen verziója nem támogatja ezt a hivatkozást."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nem sikerült belépni a csoportba"
@@ -4335,22 +4335,22 @@
     "messageformat": "Ez eltarthat néhány percig"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a B&A számára"
   },
   "icu:BadgeSustainerInstructions__header": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a B&A számára"
   },
   "icu:BadgeSustainerInstructions__subheader": {
-    "messageformat": "A Signalt hozzád hasonló emberek működtetik. Hozzájárulásoddal kitűzőhöz juthatsz."
+    "messageformat": "A B&At hozzád hasonló emberek működtetik. Hozzájárulásoddal kitűzőhöz juthatsz."
   },
   "icu:BadgeSustainerInstructions__instructions__1": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a B&At a telefonodon!"
   },
   "icu:BadgeSustainerInstructions__instructions__2": {
     "messageformat": "Kattints a profilképedre bal-felül a Beállítások megnyitásához!"
   },
   "icu:BadgeSustainerInstructions__instructions__3": {
-    "messageformat": "Koppints az „Adományozás a Signalnak” lehetőségre, és iratkozz fel"
+    "messageformat": "Koppints az „Adományozás a B&Anak” lehetőségre, és iratkozz fel"
   },
   "icu:ProfileMovedModal__title": {
     "messageformat": "A profilod átköltözött"
@@ -4476,7 +4476,7 @@
     "messageformat": "Fiókművelet szükséges"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "A fiók használatának folytatásához meg kell nyitnod a Signalt a telefonodon. Ha nem nyitod meg a Signalt a telefonodon, a fiókod hamarosan törlődik. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "A fiók használatának folytatásához meg kell nyitnod a B&At a telefonodon. Ha nem nyitod meg a B&At a telefonodon, a fiókod hamarosan törlődik. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Nem lehet visszaállítani a médiafájlt"
@@ -4503,10 +4503,10 @@
     "messageformat": "Melléklet vagy szavazás hozzáadása"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Ez a személy nem használ Signalt"
+    "messageformat": "Ez a személy nem használ B&At"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "A Signal Desktop nem támogatja nem-Signal kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a Signalt!"
+    "messageformat": "A B&A Desktop nem támogatja nem-B&A kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a B&At!"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Ellenőrizzük a kontakt regisztrációjának státuszát"
@@ -4689,7 +4689,7 @@
     "messageformat": "Becenév"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "A beceneveket és megjegyzéseket a rendszer Signal és végpontok közötti titkosítással tárolja. Ezek csak számodra láthatók."
+    "messageformat": "A beceneveket és megjegyzéseket a rendszer B&A és végpontok közötti titkosítással tárolja. Ezek csak számodra láthatók."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Keresztnév"
@@ -4740,7 +4740,7 @@
     "messageformat": "Admin általi jóváhagyás szükséges csoporthivatkozással csatlakozó tagok felvételéhez."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Másold a signal.group hivatkozást a vágólapra"
+    "messageformat": "Másold a B&A.group hivatkozást a vágólapra"
   },
   "icu:PendingInvites--tab-requests": {
     "messageformat": "Kérelmek ({count,number})"
@@ -4944,13 +4944,13 @@
     "messageformat": "Üres vagy törölt üzeneteket nem lehet továbbítani"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Signal-híváshoz: {url}"
+    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy B&A-híváshoz: {url}"
   },
   "icu:MessageRequestWarning__safety-tips": {
     "messageformat": "Biztonsági tippek"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Gondosan nézd át a felkéréseket. A Signal talált egy másik, azonos nevű névjegyet. <reviewRequestLink>Felkérés áttekintése</reviewRequestLink>"
+    "messageformat": "Gondosan nézd át a felkéréseket. A B&A talált egy másik, azonos nevű névjegyet. <reviewRequestLink>Felkérés áttekintése</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} csoporttagnak ugyanaz a neve. <reviewRequestLink>Tekintsd át a tagokat</reviewRequestLink>} other {{count,number} csoporttagnak ugyanaz a neve. <reviewRequestLink>Tekintsd át a tagokat</reviewRequestLink>}}"
@@ -4983,7 +4983,7 @@
     "messageformat": "Nincs egyéb közös csoportotok"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal Névjegy"
+    "messageformat": "B&A Névjegy"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Nemrég megváltoztatta profilnevét {oldName} névről {newName} névre"
@@ -5001,7 +5001,7 @@
     "messageformat": "Az üzenetküldés folytatásához ellenőrzés szükséges"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "A Signal hálózatán küldött kéretlen üzenetek megelőzése érdekében kérlek végezd el az alábbi ellenőrzést!"
+    "messageformat": "A B&A hálózatán küldött kéretlen üzenetek megelőzése érdekében kérlek végezd el az alábbi ellenőrzést!"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Az ellenőrzést követően folytathatod az üzenetküldést. Az összes felfüggesztett üzenetet automatikusan elküldjük."
@@ -5367,7 +5367,7 @@
     "messageformat": "Elveted a módosításokat?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Bezárod a Signalt és befejezed a hívást?"
+    "messageformat": "Bezárod a B&At és befejezed a hívást?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Később"
@@ -5454,7 +5454,7 @@
     "messageformat": "Általános"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a B&A számára"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Megjelenés"
@@ -5535,7 +5535,7 @@
     "messageformat": "Hivatkozások előnézeti képének generálása"
   },
   "icu:Preferences__link-previews--description": {
-    "messageformat": "A beállítás módosításához nyisd meg a Signalt a telefonodon, és navigálj a Beállítások > Csevegések menüpontba"
+    "messageformat": "A beállítás módosításához nyisd meg a B&At a telefonodon, és navigálj a Beállítások > Csevegések menüpontba"
   },
   "icu:Preferences__auto-convert-emoji--title": {
     "messageformat": "A beírt hangulatjelek emodzsivá való átalakítása"
@@ -5637,7 +5637,7 @@
     "messageformat": "Nem sikerült exportálni a csevegési előzményeket"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "A csevegési előzményeid nem exportálhatók, mert a Signal nem rendelkezik engedéllyel fájlok lemezre írásához. Próbáld meg módosítani a lemezed engedélyeit vagy frissíteni a rendszerbeállításaidat, majd exportáld újra."
+    "messageformat": "A csevegési előzményeid nem exportálhatók, mert a B&A nem rendelkezik engedéllyel fájlok lemezre írásához. Próbáld meg módosítani a lemezed engedélyeit vagy frissíteni a rendszerbeállításaidat, majd exportáld újra."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Biztonsági mentés exportálása"
@@ -5652,7 +5652,7 @@
     "messageformat": "Helyezd át a biztonsági mentések mappáját a telefon tárhelyére"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Telepíts egy új példányt a Signal alkalmazásból a telefonodra"
+    "messageformat": "Telepíts egy új példányt a B&A alkalmazásból a telefonodra"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Koppints a „Visszaállítás vagy átvitel” lehetőségre, és válaszd a „Biztonsági mentés az eszközön” lehetőséget."
@@ -5898,13 +5898,13 @@
     "messageformat": "Letiltva"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal Biztonságos Biztonsági mentések"
+    "messageformat": "B&A Biztonságos Biztonsági mentések"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatikus biztonsági mentések a Signal biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Automatikus biztonsági mentések a B&A biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Készíts biztonsági másolatot az üzenetelőzményeidről, hogy soha ne veszíts el adatot új telefon vásárlásakor vagy a Signal újratelepítésekor."
+    "messageformat": "Készíts biztonsági másolatot az üzenetelőzményeidről, hogy soha ne veszíts el adatot új telefon vásárlásakor vagy a B&A újratelepítésekor."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Biztonsági mentés részletei"
@@ -5934,13 +5934,13 @@
     "messageformat": "Előfizetés törölve"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
+    "messageformat": "A B&A Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
+    "messageformat": "A B&A Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
+    "messageformat": "A B&A Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Utolsó biztonsági mentés"
@@ -5958,7 +5958,7 @@
     "messageformat": "Készíts egy végponttól végpontig titkosított biztonsági mentést, amelyet visszaállíthatsz a telefonodon. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Egy biztonsági mentés visszaállításához először is telepítsd a Signalt! Nyisd meg az alkalmazást, koppints a Biztonsági mentés visszaállítása opcióra, majd keresd ki a biztonsági mentést tartalmazó mappát! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Egy biztonsági mentés visszaállításához először is telepítsd a B&At! Nyisd meg az alkalmazást, koppints a Biztonsági mentés visszaállítása opcióra, majd keresd ki a biztonsági mentést tartalmazó mappát! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Válassz egy mappát"
@@ -6006,7 +6006,7 @@
     "messageformat": "Tartsd biztonságban a kulcsod"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Ha elveszíted a kulcsod, a Signal nem tud segíteni a biztonsági másolat helyreállításában. Tárold biztonságos helyen, és ne oszd meg másokkal."
+    "messageformat": "Ha elveszíted a kulcsod, a B&A nem tud segíteni a biztonsági másolat helyreállításában. Tárold biztonságos helyen, és ne oszd meg másokkal."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Folytatás"
@@ -6063,13 +6063,13 @@
     "messageformat": "{num, plural, one {{num,number} névjegy} other {{num,number} névjegy}}"
   },
   "icu:Preferences__privacy--description": {
-    "messageformat": "A beállítások megváltoztatásához nyisd meg a Signal alkalmazást telefonodon, és navigálj a Beállítások > Beszélgetések menüponthoz!"
+    "messageformat": "A beállítások megváltoztatásához nyisd meg a B&A alkalmazást telefonodon, és navigálj a Beállítások > Beszélgetések menüponthoz!"
   },
   "icu:Preferences__pnp__row--title": {
     "messageformat": "Telefonszám"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Válaszd ki, hogy ki láthatja a telefonszámod, és ki léphet kapcsolatba veled a Signalon keresztül."
+    "messageformat": "Válaszd ki, hogy ki láthatja a telefonszámod, és ki léphet kapcsolatba veled a B&Aon keresztül."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Módosítás…"
@@ -6099,10 +6099,10 @@
     "messageformat": "Ki találhat meg a telefonszámom szerint?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Bárki, aki tudja a telefonszámodat, látni fogja, hogy használod a Signalt, és csevegést kezdeményezhet veled."
+    "messageformat": "Bárki, aki tudja a telefonszámodat, látni fogja, hogy használod a B&At, és csevegést kezdeményezhet veled."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Senki sem láthatja, hogy használod a Signalt, hacsak nem küldesz valakinek üzenetet, vagy nem folytatsz csevegést valakivel."
+    "messageformat": "Senki sem láthatja, hogy használod a B&At, hacsak nem küldesz valakinek üzenetet, vagy nem folytatsz csevegést valakivel."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Mindenki"
@@ -6114,7 +6114,7 @@
     "messageformat": "Biztos vagy benne?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Ha a(z) „{settingTitle}” elemet „{nobodyLabel}” értékre módosítod, azzal megnehezíted, hogy mások megtaláljanak téged a Signalon."
+    "messageformat": "Ha a(z) „{settingTitle}” elemet „{nobodyLabel}” értékre módosítod, azzal megnehezíted, hogy mások megtaláljanak téged a B&Aon."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Üzenetküldés"
@@ -6168,7 +6168,7 @@
     "messageformat": "Beállítás"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Az alkalmazáshoz indítsa újra a Signalt"
+    "messageformat": "Az alkalmazáshoz indítsa újra a B&At"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "A nyelv módosításához az alkalmazást újra kell indítani."
@@ -6183,13 +6183,13 @@
     "messageformat": "Képernyőbiztonság"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "A fokozott adatvédelem érdekében tiltsd le a Signal képernyőképeit ezen a számítógépen."
+    "messageformat": "A fokozott adatvédelem érdekében tiltsd le a B&A képernyőképeit ezen a számítógépen."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Kikapcsolod a képernyőbiztonságot?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Ha le van tiltva, ez lehetővé teheti a Microsoft Windows számára, hogy képernyőképeket készítsen a Signalról, és azokat olyan funkciókhoz használja, amelyek nem feltétlenül privátak."
+    "messageformat": "Ha le van tiltva, ez lehetővé teheti a Microsoft Windows számára, hogy képernyőképeket készítsen a B&Aról, és azokat olyan funkciókhoz használja, amelyek nem feltétlenül privátak."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Letiltás"
@@ -6204,25 +6204,25 @@
     "messageformat": "Frissítés letöltve"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a B&At a telefonodon!"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a Signalt a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a B&At a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a Signal appot."
+    "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a B&A appot."
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Tudj meg többet!"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "A Signal technikai nehézségekkel küzd. Keményen dolgozunk a gyors helyreállásért."
+    "messageformat": "A B&A technikai nehézségekkel küzd. Keményen dolgozunk a gyors helyreállásért."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Frissítés szükséges"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Az üzenetek szinkronizálásának befejezéséhez frissítsd most a Signal Desktopot."
+    "messageformat": "Az üzenetek szinkronizálásának befejezéséhez frissítsd most a B&A Desktopot."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Frissítés"
@@ -6231,19 +6231,19 @@
     "messageformat": "Frissítés szükséges"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "A Signal használatának folytatásához frissítsd a legújabb verzióra."
+    "messageformat": "A B&A használatának folytatásához frissítsd a legújabb verzióra."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Letöltés {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "A frissítés telepítéséhez indítsd újra a Signalt."
+    "messageformat": "A frissítés telepítéséhez indítsd újra a B&At."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "A Signal Desktop frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
+    "messageformat": "A B&A Desktop frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Nem sikerült bezárni a Signalt.",
+    "messageformat": "Nem sikerült bezárni a B&At.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -6263,14 +6263,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "A Signal újabb verziója már telepítve van. Biztosan folytatni szeretnéd?",
+    "messageformat": "A B&A újabb verziója már telepítve van. Biztosan folytatni szeretnéd?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Az alkalmazás összeomlott"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "A Signal egy összeomlás után indult újra. Továbbíthatod a hibanaplót, hogy segítsd a fejlesztők munkáját."
+    "messageformat": "A B&A egy összeomlás után indult újra. Továbbíthatod a hibanaplót, hogy segítsd a fejlesztők munkáját."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Küldés"
@@ -6375,7 +6375,7 @@
     "messageformat": "Kattints az alábbi „{buttonName}” gombra"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Kapcsold be a „Signal” opciót"
+    "messageformat": "Kapcsold be a „B&A” opciót"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Ugrás a Beállításokhoz"
@@ -6465,7 +6465,7 @@
     "messageformat": "Tudj meg többet"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal Névjegyek"
+    "messageformat": "B&A Névjegyek"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "A {connections} olyan személyek, akikben megbízol, a következő módok valamelyikén keresztül:"
@@ -6615,7 +6615,7 @@
     "messageformat": "Történet elrejtése előlük:"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Minden Signal Névjegy"
+    "messageformat": "Minden B&A Névjegy"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Mindenki, kivéve…"
@@ -6633,7 +6633,7 @@
     "messageformat": "Megtekintési értesítések megtekintése"
   },
   "icu:StoriesSettings__view-receipts--description": {
-    "messageformat": "A beállítás megváltoztatásához nyisd meg a Signal-alkalmazást a mobilodon, és lépj a Beállítások -> Történetek menüpontra!"
+    "messageformat": "A beállítás megváltoztatásához nyisd meg a B&A-alkalmazást a mobilodon, és lépj a Beállítások -> Történetek menüpontra!"
   },
   "icu:GroupStorySettingsModal__members_title": {
     "messageformat": "Ki tekintheti meg ezt a Történetet?"
@@ -6693,7 +6693,7 @@
     "messageformat": "A Történetem adatvédelmi beállításai"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Döntsd el, hogy mely Signal Névjegyek tekinthetik meg a Történeted. Ezt bármikor módosíthatod az adatvédelmi beállításokban. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Döntsd el, hogy mely B&A Névjegyek tekinthetik meg a Történeted. Ezt bármikor módosíthatod az adatvédelmi beállításokban. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Történet törlése"
@@ -6762,7 +6762,7 @@
     "messageformat": "Csatolmány letöltése"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Engedélyezd a Megtekintési értesítéseket, és tudd meg, kik nézték meg a Történeteidet. Nyisd meg a Signal-alkalmazást a mobilodon, és lépj a Beállítások > Történetek menüpontra."
+    "messageformat": "Engedélyezd a Megtekintési értesítéseket, és tudd meg, kik nézték meg a Történeteidet. Nyisd meg a B&A-alkalmazást a mobilodon, és lépj a Beállítások > Történetek menüpontra."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Még nem érkeztek válaszok"
@@ -6948,7 +6948,7 @@
     "messageformat": "A QR-kódod és hivatkozásod visszaállításra került, a felhasználóneved pedig {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Olvasd be ezt a QR-kódot a telefonoddal és csevegj velem a Signalban.",
+    "messageformat": "Olvasd be ezt a QR-kódot a telefonoddal és csevegj velem a B&Aban.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -7024,13 +7024,13 @@
     "messageformat": "Elvetés"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "A Signal asztali számítógépen elérhető változata hamarosan nem fogja támogatni a számítógépeden megtalálható {OS} verziót. A Signal asztali számítógépen elérhető változatának folytatásához frissítsd a számítógéped operációs rendszerét eddig: {expirationDate}. <learnMoreLink>Tudj meg többet</learnMoreLink>"
+    "messageformat": "A B&A asztali számítógépen elérhető változata hamarosan nem fogja támogatni a számítógépeden megtalálható {OS} verziót. A B&A asztali számítógépen elérhető változatának folytatásához frissítsd a számítógéped operációs rendszerét eddig: {expirationDate}. <learnMoreLink>Tudj meg többet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "A Signal már nem működik ezen a készüléken. A Signal asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját. <learnMoreLink>Tudj meg többet</learnMoreLink>"
+    "messageformat": "A B&A már nem működik ezen a készüléken. A B&A asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját. <learnMoreLink>Tudj meg többet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "A Signal asztali számítógépről elérhető változata már nem működik ezen a számítógépen. A Signal asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját."
+    "messageformat": "A B&A asztali számítógépről elérhető változata már nem működik ezen a számítógépen. A B&A asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Szerkesztve"
@@ -7204,7 +7204,7 @@
     "messageformat": "Hivatkozás másolása"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Hivatkozás megosztása a Signalon keresztül"
+    "messageformat": "Hivatkozás megosztása a B&Aon keresztül"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Hivatkozás törlése"
@@ -7270,7 +7270,7 @@
     "messageformat": "A beállítás módosításához állítsd a „Ki láthatja a telefonszámomat” „Senki” lehetőségre."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "A profilneveket a Signalon a fióktulajdonos választja ki:"
+    "messageformat": "A profilneveket a B&Aon a fióktulajdonos választja ki:"
   },
   "icu:ProfileNameWarningModal__list--item1--direct": {
     "messageformat": "A profilnevek nincsenek ellenőrizve"
@@ -7306,10 +7306,10 @@
     "messageformat": "Büszkén nonprofit"
   },
   "icu:PreferencesDonations__description": {
-    "messageformat": "Privát üzenetküldés, általad támogatva. Nincsenek hirdetések, nincs nyomon követés, nincsenek kompromisszumok. Adományozz most és támogasd a Signalt! <readMoreLink>További információk</readMoreLink>"
+    "messageformat": "Privát üzenetküldés, általad támogatva. Nincsenek hirdetések, nincs nyomon követés, nincsenek kompromisszumok. Adományozz most és támogasd a B&At! <readMoreLink>További információk</readMoreLink>"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Adományozz és támogasd a privát üzeneteket. Tartsd meg a Signal függetlenségét és hirdetésmentességét. <readMoreLink>További információk</readMoreLink>"
+    "messageformat": "Adományozz és támogasd a privát üzeneteket. Tartsd meg a B&A függetlenségét és hirdetésmentességét. <readMoreLink>További információk</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Adományozás"
@@ -7333,7 +7333,7 @@
     "messageformat": "Az adataid privátak"
   },
   "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>A Signal nem gyűjti és nem tárolja a személyes adataidat, amikor adományozol.</paragraph><paragraph>A Stripe-ot használjuk fizetésfeldolgozóként az adományok fogadására. Nem férünk hozzá, nem tárolunk és nem mentünk el semmilyen információt, amelyet megadsz számukra.</paragraph><paragraph>A Signal nem fogja és nem is tudja összekapcsolni az adományodat a Signal-fiókoddal.</paragraph><paragraph>Köszönjük a támogatásodat!</paragraph>"
+    "messageformat": "<paragraph>A B&A nem gyűjti és nem tárolja a személyes adataidat, amikor adományozol.</paragraph><paragraph>A Stripe-ot használjuk fizetésfeldolgozóként az adományok fogadására. Nem férünk hozzá, nem tárolunk és nem mentünk el semmilyen információt, amelyet megadsz számukra.</paragraph><paragraph>A B&A nem fogja és nem is tudja összekapcsolni az adományodat a B&A-fiókoddal.</paragraph><paragraph>Köszönjük a támogatásodat!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -7348,7 +7348,7 @@
     "messageformat": "Adományozás GYIK"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a Signalt, korábbi adományaid nyugtái nem lesznek elérhetők."
+    "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a B&At, korábbi adományaid nyugtái nem lesznek elérhetők."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nincsenek nyugták"
@@ -7378,7 +7378,7 @@
     "messageformat": "Hitel- vagy betéti kártya"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A Signal nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A B&A nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kártyaszám"
@@ -7390,7 +7390,7 @@
     "messageformat": "HH/ÉÉ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a Signalnak"
+    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a B&Anak"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Érvénytelen kártyaszám"
@@ -7408,7 +7408,7 @@
     "messageformat": "A kód túl rövid"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Szerezd meg a Signal Boost-jelvényt 30 napra"
+    "messageformat": "Szerezd meg a B&A Boost-jelvényt 30 napra"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Az adomány minimális összege: {formattedCurrencyAmount}"
@@ -7444,7 +7444,7 @@
     "messageformat": "Egyszer"
   },
   "icu:DonationReceipt__footer-text": {
-    "messageformat": "Köszönjük, hogy támogatod a Signalt! Adományoddal hozzájárulsz a szabad véleménynyilvánítást és milliók számára biztonságos kommunikációt biztosító, nyílt forrású, magánéletet védő technológiák fejlesztéséhez. Ha az Egyesült Államokban adózol, kérünk, őrizd meg ezt a nyugtát adóbevallásodhoz. A Signal Technology Foundation egy adómentes, non-profit szervezet, amely az USA területén az 501c3 Internal Revenue Code hatálya alá tartozik. Federal Tax ID: 82-4506840."
+    "messageformat": "Köszönjük, hogy támogatod a B&At! Adományoddal hozzájárulsz a szabad véleménynyilvánítást és milliók számára biztonságos kommunikációt biztosító, nyílt forrású, magánéletet védő technológiák fejlesztéséhez. Ha az Egyesült Államokban adózol, kérünk, őrizd meg ezt a nyugtát adóbevallásodhoz. A B&A Technology Foundation egy adómentes, non-profit szervezet, amely az USA területén az 501c3 Internal Revenue Code hatálya alá tartozik. Federal Tax ID: 82-4506840."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Offline állapotban vagy. Az adományozás befejezéséhez, kérjük, csatlakozz az internethez."
@@ -7474,7 +7474,7 @@
     "messageformat": "Az adományozás sikeres volt, de nem tudtuk frissíteni a jelvényed beállításait."
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a Signalnak → Jelvények menüpontra."
+    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a B&Anak → Jelvények menüpontra."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Adományozás megszakadt"
@@ -7501,7 +7501,7 @@
     "messageformat": "Hiba történt az adományoddal"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a Signalnak” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
+    "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a B&Anak” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Próbáld újra, vagy küldj egy hibanaplót az Ügyfélszolgálatnak, és kérj segítséget az adományozás befejezéséhez. A hibanaplók segítenek diagnosztizálni és kijavítani a problémát, és nem tartalmaznak azonosító információkat."
@@ -7543,13 +7543,13 @@
     "messageformat": "Köszönjük a támogatásodat!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Kaptál egy adományozói jelvényt a Signaltól! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
+    "messageformat": "Kaptál egy adományozói jelvényt a B&Atól! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Megjelenítés profilképen"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a Signalnak → Jelvények menüpontban állíthatod be."
+    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a B&Anak → Jelvények menüpontban állíthatod be."
   },
   "icu:CallQualitySurvey__CloseButton__AccessibilityLabel": {
     "messageformat": "Bezárás"
@@ -7561,7 +7561,7 @@
     "messageformat": "Milyen volt a hívás minősége?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Ez segít nekünk a Signal-hívások jobbá tételében. Személyazonosításra alkalmas adatokat nem tárolunk."
+    "messageformat": "Ez segít nekünk a B&A-hívások jobbá tételében. Személyazonosításra alkalmas adatokat nem tárolunk."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Problémákba ütköztem"
@@ -7612,7 +7612,7 @@
     "messageformat": "A probléma leírása"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Kérjük, add meg a problémához kapcsolódó összes részletet. Amit itt megosztottál, az bizalmas marad, és csak a Signal-hívások fejlesztésére használjuk fel."
+    "messageformat": "Kérjük, add meg a problémához kapcsolódó összes részletet. Amit itt megosztottál, az bizalmas marad, és csak a B&A-hívások fejlesztésére használjuk fel."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Kérjük, írd le, hogy mi a gondod"
@@ -7666,11 +7666,11 @@
     "messageformat": "Az oldalsáv kibontása a megafonnal való interakcióhoz"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a Signal továbbra is gond nélkül fusson.",
+    "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a B&A továbbra is gond nélkül fusson.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "További apró módosítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
+    "messageformat": "További apró módosítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a B&At használod!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -7690,7 +7690,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
+    "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a B&At használod!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__7.86--0": {
