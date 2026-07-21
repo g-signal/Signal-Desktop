@@ -10,6 +10,7 @@ const json: {
   name: string;
   version: string;
   productName: string;
+  appName: string;
   build: {
     appId: string;
     mac: {
@@ -31,4 +32,5 @@ export default json;
 export const { name } = json;
 export const { version } = json;
 export const { productName } = json;
+export const { appName } = json;
 export const { build } = json;

@@ -755,6 +755,7 @@ const CHAT_CALLS = {
   multiRecipient: 'v1/messages/multi_recipient',
   phoneNumberDiscoverability: 'v2/accounts/phone_number_discoverability',
   profile: 'v1/profile',
+  gextGroupProfile: 'v1/gext/group/profile',
   backup: 'v1/archives',
   backupMedia: 'v1/archives/media',
   backupMediaBatch: 'v1/archives/media/batch',
@@ -955,6 +956,12 @@ export type ProfileType = Readonly<{
   capabilities?: CapabilitiesType;
   paymentAddress?: string;
   badges?: unknown;
+  gextTags?: unknown;
+  gextRobot?: unknown;
+}>;
+
+export type GextGroupProfileType = Readonly<{
+  gextTags?: unknown;
 }>;
 
 export type GetAccountForUsernameOptionsType = Readonly<{
@@ -2530,6 +2537,19 @@ export async function getProfileUnauth(
     // TODO DESKTOP-8719
     zodSchema: z.unknown(),
   })) as ProfileType;
+}
+
+export async function getGextGroupProfile(
+  groupId: string
+): Promise<GextGroupProfileType> {
+  return (await _ajax({
+    host: 'chatService',
+    call: 'gextGroupProfile',
+    httpType: 'GET',
+    urlParameters: `/${groupId}`,
+    responseType: 'json',
+    zodSchema: z.unknown(),
+  })) as GextGroupProfileType;
 }
 
 export async function getBadgeImageFile(
