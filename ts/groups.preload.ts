@@ -118,7 +118,7 @@ import {
   validateGroupSendEndorsementsExpiration,
 } from './util/groupSendEndorsements.preload.js';
 import { getProfile } from './util/getProfile.preload.js';
-import { fetchGroupGextTags } from './services/profiles';
+import { fetchGroupGextTags } from './services/profiles.preload.js';
 import { generateMessageId } from './util/generateMessageId.node.js';
 import { postSaveUpdates } from './util/cleanup.preload.js';
 import { MessageModel } from './models/messages.preload.js';
