@@ -5,7 +5,6 @@ import React from 'react';
 
 import type { LocalizerType } from '../types/Util.std.js';
 import { useEscapeHandling } from '../hooks/useEscapeHandling.dom.js';
-import { tw } from '../axo/tw.dom.js';
 
 export type AboutProps = Readonly<{
   closeAbout: () => unknown;
@@ -52,12 +51,12 @@ export function About({
         </div>
         <br />
         <div>
-          <a className="privacy" href="https://cdn.ba-chat.com/legal/index.html">
+          <a
+            className="privacy"
+            href="https://cdn.ba-chat.com/legal/index.html"
+          >
             {i18n('icu:privacyPolicy')}
           </a>
-        </div>
-        <div className={tw('text-label-secondary')}>
-          {i18n('icu:signalNonProfit')}
         </div>
       </div>
     </div>

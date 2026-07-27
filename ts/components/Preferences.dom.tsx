@@ -2516,21 +2516,6 @@ export function Preferences({
                   {i18n('icu:Preferences__button--backups')}
                 </button>
               ) : null}
-              <button
-                type="button"
-                className={classNames({
-                  Preferences__button: true,
-                  'Preferences__button--donations': true,
-                  'Preferences__button--selected': isDonationsPage(
-                    settingsLocation.page
-                  ),
-                })}
-                onClick={() =>
-                  setSettingsLocation({ page: SettingsPage.Donations })
-                }
-              >
-                {i18n('icu:Preferences__button--donate')}
-              </button>
               {isInternalUser ? (
                 <button
                   type="button"
