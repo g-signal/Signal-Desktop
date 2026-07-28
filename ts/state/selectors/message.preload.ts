@@ -922,12 +922,18 @@ export const getPropsForMessage = (
     defaultConversationColor
   );
 
+  const authorGextTags =
+    isGroup && authorId
+      ? conversationSelector(authorId).gextTags
+      : undefined;
+
   return {
     attachments: attachments?.map(attachment =>
       getPropsForAttachment(attachment, 'attachment', message)
     ),
     attachmentDroppedDueToSize,
     author,
+    authorGextTags,
     bodyRanges,
     activeCallConversationId,
     previews,
