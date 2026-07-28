@@ -52,6 +52,8 @@ import type {
   MultipleGroupMembersWithSameTitleContactSpoofingWarning,
 } from '../../state/selectors/timeline.preload.js';
 import { tw } from '../../axo/tw.dom.js';
+import type { GextTag } from '../../types/GextTag.js';
+import { GextTagList } from '../GextTagList.js';
 
 function HeaderInfoTitle({
   name,
@@ -61,6 +63,7 @@ function HeaderInfoTitle({
   isMe,
   isSignalConversation,
   headerRef,
+  gextTags,
 }: {
   name: string | null;
   title: string;
@@ -69,6 +72,7 @@ function HeaderInfoTitle({
   isMe: boolean;
   isSignalConversation: boolean;
   headerRef: React.RefObject<HTMLDivElement>;
+  gextTags?: ReadonlyArray<GextTag>;
 }) {
   if (isSignalConversation) {
     return (
@@ -98,6 +102,7 @@ function HeaderInfoTitle({
           tooltipContainerRef={headerRef}
         />
       ) : null}
+      {gextTags && gextTags.length > 0 && <GextTagList tags={gextTags} />}
     </div>
   );
 }
@@ -139,9 +144,11 @@ export type PropsDataType = {
   isSelectMode: boolean;
   isSignalConversation?: boolean;
   isSmsOnlyOrUnregistered?: boolean;
+  isRobot?: boolean;
   outgoingCallButtonStyle: OutgoingCallButtonStyle;
   sharedGroupNames: ReadonlyArray<string>;
   theme: ThemeType;
+  gextTags?: ReadonlyArray<GextTag>;
 
   contactSpoofingWarning: ContactSpoofingWarning | null;
   renderCollidingAvatars: RenderCollidingAvatars;
@@ -206,6 +213,7 @@ export const ConversationHeader = memo(function ConversationHeader({
   isSelectMode,
   isSignalConversation,
   isSmsOnlyOrUnregistered,
+  isRobot,
   localDeleteWarningShown,
   onConversationAccept,
   onConversationArchive,
@@ -233,6 +241,7 @@ export const ConversationHeader = memo(function ConversationHeader({
   setLocalDeleteWarningShown,
   sharedGroupNames,
   theme,
+  gextTags,
 
   contactSpoofingWarning,
   acknowledgeGroupMemberNameCollisions,
@@ -349,8 +358,9 @@ export const ConversationHeader = memo(function ConversationHeader({
                 onViewUserStories={onViewUserStories}
                 onViewConversationDetails={onViewConversationDetails}
                 isSignalConversation={isSignalConversation ?? false}
+                gextTags={gextTags}
               />
-              {!isSmsOnlyOrUnregistered && !isSignalConversation && (
+              {!isSmsOnlyOrUnregistered && !isSignalConversation && !isRobot && (
                 <OutgoingCallButtons
                   conversation={conversation}
                   hasActiveCall={hasActiveCall}
@@ -483,6 +493,7 @@ function HeaderContent({
   isSignalConversation,
   onViewUserStories,
   onViewConversationDetails,
+  gextTags,
 }: {
   conversation: MinimalConversation;
   badge: BadgeType | null;
@@ -494,6 +505,7 @@ function HeaderContent({
   isSignalConversation: boolean;
   onViewUserStories: () => void;
   onViewConversationDetails: () => void;
+  gextTags?: ReadonlyArray<GextTag>;
 }) {
   let onClick: undefined | (() => void);
   const { type } = conversation;
@@ -548,6 +560,7 @@ function HeaderContent({
         isMe={conversation.isMe}
         isSignalConversation={isSignalConversation}
         headerRef={headerRef}
+        gextTags={gextTags}
       />
       {(conversation.expireTimer != null || conversation.isVerified) && (
         <div className="module-ConversationHeader__header__info__subtitle">

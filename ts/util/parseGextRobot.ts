@@ -5,7 +5,7 @@ import type {
   GextRobot,
   GextRobotMsgButtonVisible,
 } from '../types/GextRobot';
-import { isRecord } from './isRecord';
+import { isRecord } from './isRecord.std';
 
 const MSG_BUTTON_KEYS: ReadonlyArray<keyof GextRobotMsgButtonVisible> = [
   'text',

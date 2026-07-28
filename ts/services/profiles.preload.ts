@@ -14,6 +14,7 @@ import type { CapabilitiesType } from '../types/Capabilities.d.ts';
 import type { ProfileType } from '../textsecure/WebAPI.preload.js';
 import {
   checkAccountExistence,
+  getGextGroupProfile,
   getProfile,
   getProfileUnauth,
 } from '../textsecure/WebAPI.preload.js';
@@ -35,6 +36,7 @@ import {
 import { isMe } from '../util/whatTypeOfConversation.dom.js';
 import { parseBadgesFromServer } from '../badges/parseBadgesFromServer.std.js';
 import { parseGextTagsFromServer } from '../util/parseGextTags.std.js';
+import { parseGextRobotFromServer } from '../util/parseGextRobot.js';
 import { strictAssert } from '../util/assert.std.js';
 import { drop } from '../util/drop.std.js';
 import { findRetryAfterTimeFromError } from '../jobs/helpers/findRetryAfterTimeFromError.std.js';
@@ -770,6 +772,24 @@ async function doGetProfile(
     c.set({ badges: undefined });
   }
 
+  // Save profile `gextTags` to conversation attributes
+  if (profile.gextTags !== undefined) {
+    const gextTags = parseGextTagsFromServer(profile.gextTags);
+    c.set({ gextTags });
+    log.info(`${logId}: Saved ${gextTags.length} gextTags`);
+  }
+
+  // Save profile `gextRobot` to conversation attributes
+  if (profile.gextRobot !== undefined) {
+    const gextRobot = parseGextRobotFromServer(profile.gextRobot);
+    if (gextRobot != null) {
+      c.set({ gextRobot });
+      log.info(`${logId}: Saved gextRobot (robot=${gextRobot.robot})`);
+    } else {
+      c.unset('gextRobot');
+    }
+  }
+
   // Step #: Save updated (or clear if missing) profile `credential` to conversation
   if (options.profileCredentialRequestContext != null) {
     if (profile.credential != null && profile.credential.length > 0) {
@@ -873,7 +893,7 @@ export async function fetchGroupGextTags(
 
   try {
     const groupIdHex = Bytes.toHex(Bytes.fromBase64(groupId));
-    const result = await messaging.server.getGextGroupProfile(groupIdHex);
+    const result = await getGextGroupProfile(groupIdHex);
     if (result.gextTags !== undefined) {
       const gextTags = parseGextTagsFromServer(result.gextTags);
       conversation.set({ gextTags });

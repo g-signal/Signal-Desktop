@@ -342,6 +342,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
       setLocalDeleteWarningShown={setLocalDeleteWarningShown}
       sharedGroupNames={conversation.sharedGroupNames}
       theme={theme}
+      gextTags={conversation.gextTags}
       contactSpoofingWarning={contactSpoofingWarning}
       renderCollidingAvatars={renderCollidingAvatars}
       shouldShowMiniPlayer={shouldShowMiniPlayer}

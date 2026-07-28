@@ -13,6 +13,7 @@ import type { ErrorDialogAudioRecorderType } from '../types/AudioRecorder.std.js
 import { RecordingState } from '../types/AudioRecorder.std.js';
 import type { imageToBlurHash } from '../util/imageToBlurHash.dom.js';
 import { dropNull } from '../util/dropNull.std.js';
+import type { GextRobot } from '../types/GextRobot.js';
 import { Spinner } from './Spinner.dom.js';
 import type {
   InputApi,
@@ -209,6 +210,8 @@ export type OwnProps = Readonly<{
 
   onSelectEmoji: (emojiSelection: FunEmojiSelection) => void;
   emojiSkinToneDefault: EmojiSkinTone | null;
+  // GextRobot — controls entry visibility when peer is a robot
+  gextRobot?: GextRobot;
 }>;
 
 export type Props = Pick<
@@ -334,6 +337,7 @@ export const CompositionArea = memo(function CompositionArea({
   toggleForwardMessagesModal,
   // DraftGifMessageSendModal
   toggleDraftGifMessageSendModal,
+  gextRobot,
 }: Props): React.JSX.Element | null {
   const [dirty, setDirty] = useState(false);
   const [large, setLarge] = useState(false);
@@ -573,7 +577,13 @@ export const CompositionArea = memo(function CompositionArea({
     setLarge(l => !l);
   }, [setLarge]);
 
-  const shouldShowMicrophone = !large && isComposerEmpty;
+  const isRobot = gextRobot?.robot === true;
+  const msgButtonVisible = isRobot ? gextRobot?.msgButtonVisible : undefined;
+  const hideStickerButton = msgButtonVisible?.sticker === false;
+  const hideMicrophoneButton = msgButtonVisible?.microphone === false;
+  const hideFileButton = msgButtonVisible?.file === false;
+
+  const shouldShowMicrophone = !large && isComposerEmpty && !hideMicrophoneButton;
 
   const showMediaQualitySelector = draftAttachments.some(isImageAttachment);
 
@@ -683,6 +693,7 @@ export const CompositionArea = memo(function CompositionArea({
           {i18n('icu:CompositionArea__ConfirmGifSelection__Body')}
         </ConfirmationDialog>
       )}
+      {!hideStickerButton && (
       <div className="CompositionArea__button-cell">
         <FunPicker
           placement="top start"
@@ -696,6 +707,7 @@ export const CompositionArea = memo(function CompositionArea({
           <FunPickerButton i18n={i18n} />
         </FunPicker>
       </div>
+      )}
       {showMediaQualitySelector ? (
         <div className="CompositionArea__button-cell">
           <MediaQualitySelector
@@ -745,7 +757,7 @@ export const CompositionArea = memo(function CompositionArea({
   const isRecording = recordingState === RecordingState.Recording;
 
   let attButton;
-  if (draftEditMessage || linkPreviewResult || isRecording) {
+  if (draftEditMessage || linkPreviewResult || isRecording || hideFileButton) {
     attButton = undefined;
   } else if (isPollSendEnabled()) {
     attButton = (

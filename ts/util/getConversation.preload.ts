@@ -273,5 +273,7 @@ export function getConversation(model: ConversationModel): ConversationType {
           storySendMode: attributes.storySendMode ?? StorySendMode.IfActive,
         }),
     voiceNotePlaybackRate: attributes.voiceNotePlaybackRate,
+    gextTags: attributes.gextTags,
+    gextRobot: attributes.gextRobot,
   };
 }
