@@ -99,6 +99,7 @@ import type { SmartPreferencesChatFoldersPageProps } from '../state/smart/Prefer
 import { AxoButton } from '../axo/AxoButton.dom.js';
 import type { ExternalProps as SmartNotificationProfilesProps } from '../state/smart/PreferencesNotificationProfiles.preload.js';
 import type { LocalBackupExportMetadata } from '../types/LocalExport.std.js';
+import { GextTagList } from './GextTagList.js';
 
 const { isNumber, noop, partition } = lodash;
 
@@ -2361,6 +2362,11 @@ export function Preferences({
                   <div className="Preferences__profile-chip__name">
                     {me.title}
                   </div>
+                  {me.gextTags && me.gextTags.length > 0 && (
+                    <div className="Preferences__profile-chip__tags">
+                      <GextTagList tags={me.gextTags} />
+                    </div>
+                  )}
                   <div className="Preferences__profile-chip__number">
                     {me.phoneNumber}
                   </div>

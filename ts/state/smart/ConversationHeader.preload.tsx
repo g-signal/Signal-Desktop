@@ -343,6 +343,7 @@ export const SmartConversationHeader = memo(function SmartConversationHeader({
       sharedGroupNames={conversation.sharedGroupNames}
       theme={theme}
       gextTags={conversation.gextTags}
+      isRobot={conversation.gextRobot?.robot === true}
       contactSpoofingWarning={contactSpoofingWarning}
       renderCollidingAvatars={renderCollidingAvatars}
       shouldShowMiniPlayer={shouldShowMiniPlayer}
