@@ -727,7 +727,7 @@ export const getSuggestedFilename = ({
       prefix = 'image';
       break;
     case 'saving-locally':
-      prefix = 'signal';
+      prefix = 'ba';
       break;
     default:
       throw missingCaseError(scenario);
