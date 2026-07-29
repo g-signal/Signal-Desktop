@@ -44,6 +44,7 @@ export type PropsDataType = {
   readonly i18n: LocalizerType;
   isAdmin: boolean;
   isMember: boolean;
+  isRobot?: boolean;
   theme: ThemeType;
   hasActiveCall: boolean;
   isInFullScreenCall: boolean;
@@ -96,6 +97,7 @@ export function ContactModal({
   i18n,
   isAdmin,
   isMember,
+  isRobot,
   onOpenEditNicknameAndNoteModal,
   onOutgoingAudioCallInConversation,
   onOutgoingVideoCallInConversation,
@@ -182,20 +184,22 @@ export function ContactModal({
           >
             {i18n('icu:ConversationDetails__HeaderButton--Message')}
           </Button>
-          {hasActiveCall ? (
-            <InAnotherCallTooltip i18n={i18n}>
-              {videoCallButton}
-            </InAnotherCallTooltip>
-          ) : (
-            videoCallButton
-          )}
-          {hasActiveCall ? (
-            <InAnotherCallTooltip i18n={i18n}>
-              {audioCallButton}
-            </InAnotherCallTooltip>
-          ) : (
-            audioCallButton
-          )}
+          {!isRobot &&
+            (hasActiveCall ? (
+              <InAnotherCallTooltip i18n={i18n}>
+                {videoCallButton}
+              </InAnotherCallTooltip>
+            ) : (
+              videoCallButton
+            ))}
+          {!isRobot &&
+            (hasActiveCall ? (
+              <InAnotherCallTooltip i18n={i18n}>
+                {audioCallButton}
+              </InAnotherCallTooltip>
+            ) : (
+              audioCallButton
+            ))}
         </div>
       );
     },

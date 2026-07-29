@@ -398,6 +398,7 @@ export const ConversationHeader = memo(function ConversationHeader({
                   isMissingMandatoryProfileSharing={
                     isMissingMandatoryProfileSharing ?? false
                   }
+                  isRobot={isRobot}
                   isSelectMode={isSelectMode}
                   isSignalConversation={isSignalConversation ?? false}
                   onChangeDisappearingMessages={
@@ -609,6 +610,7 @@ function HeaderDropdownMenuContent({
   conversation,
   i18n,
   isMissingMandatoryProfileSharing,
+  isRobot,
   isSelectMode,
   isSignalConversation,
   onChangeDisappearingMessages,
@@ -634,6 +636,7 @@ function HeaderDropdownMenuContent({
   conversation: MinimalConversation;
   i18n: LocalizerType;
   isMissingMandatoryProfileSharing: boolean;
+  isRobot?: boolean;
   isSelectMode: boolean;
   isSignalConversation: boolean;
   onChangeDisappearingMessages: (seconds: DurationInSeconds) => void;
@@ -793,12 +796,12 @@ function HeaderDropdownMenuContent({
     <AxoDropdownMenu.Content>
       {!conversation.acceptedMessageRequest && (
         <>
-          {!conversation.isBlocked && (
+          {!conversation.isBlocked && !isRobot && (
             <AxoDropdownMenu.Item symbol="block" onSelect={onConversationBlock}>
               {i18n('icu:ConversationHeader__MenuItem--Block')}
             </AxoDropdownMenu.Item>
           )}
-          {conversation.isBlocked && (
+          {conversation.isBlocked && !isRobot && (
             <AxoDropdownMenu.Item
               symbol="message-thread"
               onSelect={onConversationUnblock}
@@ -820,9 +823,11 @@ function HeaderDropdownMenuContent({
           >
             {i18n('icu:ConversationHeader__MenuItem--ReportSpam')}
           </AxoDropdownMenu.Item>
-          <AxoDropdownMenu.Item symbol="trash" onSelect={onConversationDelete}>
-            {i18n('icu:ConversationHeader__MenuItem--DeleteChat')}
-          </AxoDropdownMenu.Item>
+          {!isRobot && (
+            <AxoDropdownMenu.Item symbol="trash" onSelect={onConversationDelete}>
+              {i18n('icu:ConversationHeader__MenuItem--DeleteChat')}
+            </AxoDropdownMenu.Item>
+          )}
         </>
       )}
       {conversation.acceptedMessageRequest && (
@@ -935,12 +940,12 @@ function HeaderDropdownMenuContent({
               {i18n('icu:archiveConversation')}
             </AxoDropdownMenu.Item>
           )}
-          {!conversation.isBlocked && (
+          {!conversation.isBlocked && !isRobot && (
             <AxoDropdownMenu.Item symbol="block" onSelect={onConversationBlock}>
               {i18n('icu:ConversationHeader__MenuItem--Block')}
             </AxoDropdownMenu.Item>
           )}
-          {conversation.isBlocked && (
+          {conversation.isBlocked && !isRobot && (
             <AxoDropdownMenu.Item
               symbol="message-thread"
               onSelect={onConversationUnblock}
@@ -948,12 +953,14 @@ function HeaderDropdownMenuContent({
               {i18n('icu:ConversationHeader__MenuItem--Unblock')}
             </AxoDropdownMenu.Item>
           )}
-          <AxoDropdownMenu.Item
-            symbol="trash"
-            onSelect={onConversationDeleteMessages}
-          >
-            {i18n('icu:deleteConversation')}
-          </AxoDropdownMenu.Item>
+          {!isRobot && (
+            <AxoDropdownMenu.Item
+              symbol="trash"
+              onSelect={onConversationDeleteMessages}
+            >
+              {i18n('icu:deleteConversation')}
+            </AxoDropdownMenu.Item>
+          )}
           {isGroup && (
             <AxoDropdownMenu.Item
               symbol="leave"

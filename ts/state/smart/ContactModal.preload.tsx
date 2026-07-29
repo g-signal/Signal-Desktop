@@ -90,6 +90,7 @@ export const SmartContactModal = memo(function SmartContactModal() {
       isAdmin={isAdmin}
       isInFullScreenCall={isInFullScreenCall}
       isMember={isMember}
+      isRobot={contact.gextRobot?.robot === true}
       onOpenEditNicknameAndNoteModal={handleOpenEditNicknameAndNoteModal}
       onOutgoingAudioCallInConversation={onOutgoingAudioCallInConversation}
       onOutgoingVideoCallInConversation={onOutgoingVideoCallInConversation}
