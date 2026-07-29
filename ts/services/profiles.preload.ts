@@ -886,11 +886,6 @@ export async function fetchGroupGextTags(
     return;
   }
 
-  const { messaging } = window.textsecure;
-  if (!messaging) {
-    return;
-  }
-
   try {
     const groupIdHex = Bytes.toHex(Bytes.fromBase64(groupId));
     const result = await getGextGroupProfile(groupIdHex);
