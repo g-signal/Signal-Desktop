@@ -37,8 +37,8 @@ const SignalRouteProtocols = ['https:', 'baxs:', 'baxscaptcha:'] as const;
  */
 const SignalRouteHostnames = [
   'me.baxs.com',
-  'signal.group',
-  'signal.link',
+  'group.baxs.com',
+  'link.baxs.com',
   'signal.art',
   'signaldonations.org',
 ] as const;
@@ -293,15 +293,15 @@ export const contactByEncryptedUsernameRoute = _route(
  * groupInvitesRoute.toWebUrl({
  *   inviteCode: "123",
  * })
- * // URL { "https://signal.group/#123" }
+ * // URL { "https://group.baxs.com/#123" }
  * ```
  */
 export const groupInvitesRoute = _route('groupInvites', {
   patterns: [
-    _pattern('https:', 'signal.group', '{/}?', {
+    _pattern('https:', 'group.baxs.com', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('baxs:', 'signal.group', '{/}?', {
+    _pattern('baxs:', 'group.baxs.com', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
     _pattern('baxs:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
@@ -315,10 +315,10 @@ export const groupInvitesRoute = _route('groupInvites', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.group/#${args.inviteCode}`);
+    return new URL(`https://group.baxs.com/#${args.inviteCode}`);
   },
   toAppUrl(args) {
-    return new URL(`baxs://signal.group/#${args.inviteCode}`);
+    return new URL(`baxs://group.baxs.com/#${args.inviteCode}`);
   },
 });
 
@@ -392,12 +392,12 @@ export const captchaRoute = _route('captcha', {
  * linkCallRoute.toWebUrl({
  *   key: "123",
  * })
- * // URL { "https://signal.link/call#key=123" }
+ * // URL { "https://link.baxs.com/call#key=123" }
  */
 export const linkCallRoute = _route('linkCall', {
   patterns: [
-    _pattern('https:', 'signal.link', '/call{/}?', { hash: ':params' }),
-    _pattern('baxs:', 'signal.link', '/call{/}?', { hash: ':params' }),
+    _pattern('https:', 'link.baxs.com', '/call{/}?', { hash: ':params' }),
+    _pattern('baxs:', 'link.baxs.com', '/call{/}?', { hash: ':params' }),
   ],
   schema: z.object({
     key: paramSchema, // ConsonantBase16
@@ -414,13 +414,13 @@ export const linkCallRoute = _route('linkCall', {
     const params = new URLSearchParams(
       args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
     );
-    return new URL(`https://signal.link/call/#${params.toString()}`);
+    return new URL(`https://link.baxs.com/call/#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams(
       args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
     );
-    return new URL(`baxs://signal.link/call/#${params.toString()}`);
+    return new URL(`baxs://link.baxs.com/call/#${params.toString()}`);
   },
 });
 
