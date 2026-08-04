@@ -210,7 +210,6 @@ export const ConversationHeader = memo(function ConversationHeader({
   isSignalConversation,
   isSmsOnlyOrUnregistered,
   isRobot,
-  localDeleteWarningShown,
   onConversationAccept,
   onConversationArchive,
   onConversationBlock,

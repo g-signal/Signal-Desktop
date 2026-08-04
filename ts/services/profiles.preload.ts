@@ -792,7 +792,7 @@ async function doGetProfile(
       c.set({ gextRobot });
       log.info(`${logId}: Saved gextRobot (robot=${gextRobot.robot})`);
     } else {
-      c.unset('gextRobot');
+      c.set({ gextRobot: undefined });
     }
   }
 

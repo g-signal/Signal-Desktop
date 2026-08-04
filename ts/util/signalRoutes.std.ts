@@ -36,7 +36,7 @@ const SignalRouteProtocols = ['https:', 'baxs:', 'baxscaptcha:'] as const;
  * This doesn't include app-only routes like `linkdevice` or `verify`.
  */
 const SignalRouteHostnames = [
-  'signal.me',
+  'me.baxs.com',
   'signal.group',
   'signal.link',
   'signal.art',

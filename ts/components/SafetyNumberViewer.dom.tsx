@@ -14,7 +14,6 @@ import { SpinnerV2 } from './SpinnerV2.dom.js';
 import type { LocalizerType } from '../types/Util.std.js';
 import type { SafetyNumberType } from '../types/safetyNumber.std.js';
 import {
-  SAFETY_NUMBER_URL,
   KEY_TRANSPARENCY_URL,
 } from '../types/support.std.js';
 import type { KeyTransparencyStatusType } from '../types/KeyTransparency.d.ts';

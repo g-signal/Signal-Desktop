@@ -2991,7 +2991,7 @@ function submitCallQualitySurvey(
         callType,
         success: !isCallFailure(callSummary.callEndReasonText),
         callEndReason: callSummary.callEndReasonText,
-        connectionRttMedian: qualityStats.rttMedianConnectionMillis,
+        connectionRttMedian: qualityStats.rttMedianConnection,
         audioRttMedian: audioStats.rttMedianMillis,
         videoRttMedian: videoStats.rttMedianMillis,
         audioRecvJitterMedian: audioStats.jitterMedianRecvMillis,
