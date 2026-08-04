@@ -614,7 +614,7 @@ export function CallManager({
           activeProfile: activeNotificationProfile,
           conversationId: ringingCallId,
           isCall: true,
-          isMention: false,
+          isMentionOrReply: false,
         })
       ) {
         const redactedId = redactNotificationProfileId(
@@ -728,7 +728,7 @@ export function CallManager({
     if (
       !shouldNotify({
         isCall: true,
-        isMention: false,
+        isMentionOrReply: false,
         conversationId: ringingCall.conversation.id,
         activeProfile: activeNotificationProfile,
       })

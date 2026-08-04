@@ -57,11 +57,18 @@ type AllHostnamePatterns =
   | 'start-call-lobby'
   | 'show-window'
   | 'cancel-presenting'
-  | 'donation-paypal-approved'
-  | 'donation-paypal-canceled'
   | 'donation-validation-complete'
+  | 'paypal'
   | ':captchaId(.+)'
   | '';
+
+/**
+ * Valid actions for sgnl://paypal
+ */
+enum PaypalAction {
+  Approve = 'approve',
+  Cancel = 'cancel',
+}
 
 /**
  * Uses the `URLPattern` syntax to match URLs.
@@ -219,7 +226,7 @@ const paramEpoch = z.nullable(z.string().min(1));
  * contactByPhoneNumberRoute.toWebUrl({
  * 	 phoneNumber: "+1234567890",
  * })
- * // URL { "https://signal.me/#p/+1234567890" }
+ * // URL { "https://me.baxs.com/#p/+1234567890" }
  * ```
  */
 export const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
@@ -250,7 +257,7 @@ export const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
  * contactByEncryptedUsernameRoute.toWebUrl({
  *   encryptedUsername: "123",
  * })
- * // URL { "https://signal.me/#eu/123" }
+ * // URL { "https://me.baxs.com/#eu/123" }
  * ```
  */
 export const contactByEncryptedUsernameRoute = _route(
@@ -291,10 +298,10 @@ export const contactByEncryptedUsernameRoute = _route(
  */
 export const groupInvitesRoute = _route('groupInvites', {
   patterns: [
-    _pattern('https:', 'group.baxs.com', '{/}?', {
+    _pattern('https:', 'signal.group', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
-    _pattern('baxs:', 'group.baxs.com', '{/}?', {
+    _pattern('baxs:', 'signal.group', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
     _pattern('baxs:', 'joingroup', '{/}?', { hash: ':inviteCode([^\\/]+)' }),
@@ -308,10 +315,10 @@ export const groupInvitesRoute = _route('groupInvites', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://group.baxs.com/#${args.inviteCode}`);
+    return new URL(`https://signal.group/#${args.inviteCode}`);
   },
   toAppUrl(args) {
-    return new URL(`baxs://group.baxs.com/#${args.inviteCode}`);
+    return new URL(`baxs://signal.group/#${args.inviteCode}`);
   },
 });
 
@@ -324,7 +331,7 @@ export const groupInvitesRoute = _route('groupInvites', {
  *   pubKey: "abc",
  *   capabilities: "backuo"
  * })
- * // URL { "sgnl://linkdevice?uuid=123&pub_key=abc&capabilities=backup" }
+ * // URL { "baxs://linkdevice?uuid=123&pub_key=abc&capabilities=backup" }
  * ```
  */
 export const linkDeviceRoute = _route('linkDevice', {
@@ -389,8 +396,8 @@ export const captchaRoute = _route('captcha', {
  */
 export const linkCallRoute = _route('linkCall', {
   patterns: [
-    _pattern('https:', 'link.baxs.com', '/call{/}?', { hash: ':params' }),
-    _pattern('baxs:', 'link.baxs.com', '/call{/}?', { hash: ':params' }),
+    _pattern('https:', 'signal.link', '/call{/}?', { hash: ':params' }),
+    _pattern('baxs:', 'signal.link', '/call{/}?', { hash: ':params' }),
   ],
   schema: z.object({
     key: paramSchema, // ConsonantBase16
@@ -407,13 +414,13 @@ export const linkCallRoute = _route('linkCall', {
     const params = new URLSearchParams(
       args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
     );
-    return new URL(`https://link.baxs.com/call/#${params.toString()}`);
+    return new URL(`https://signal.link/call/#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams(
       args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
     );
-    return new URL(`baxs://link.baxs.com/call/#${params.toString()}`);
+    return new URL(`baxs://signal.link/call/#${params.toString()}`);
   },
 });
 
@@ -430,8 +437,7 @@ export const linkCallRoute = _route('linkCall', {
  */
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
-    _pattern('https:', 'sticker.baxs.com', '/addstickers{/}?', { hash: ':params' }),
-    _pattern('baxs:', 'sticker.baxs.com', '/addstickers{/}?', { hash: ':params' }),
+    _pattern('https:', 'signal.art', '/addstickers{/}?', { hash: ':params' }),
     _pattern('baxs:', 'addstickers', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
@@ -452,7 +458,7 @@ export const artAddStickersRoute = _route('artAddStickers', {
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`https://sticker.baxs.com/addstickers#${params.toString()}`);
+    return new URL(`https://signal.art/addstickers#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({
@@ -470,7 +476,7 @@ export const artAddStickersRoute = _route('artAddStickers', {
  * showConversationRoute.toAppUrl({
  *   token: 'abc',
  * })
- * // URL { "sgnl://show-conversation?token=abc" }
+ * // URL { "baxs://show-conversation?token=abc" }
  * ```
  */
 export const showConversationRoute = _route('showConversation', {
@@ -499,7 +505,7 @@ export const showConversationRoute = _route('showConversation', {
  * startCallLobbyRoute.toAppUrl({
  *   token: "123",
  * })
- * // URL { "sgnl://start-call-lobby?token=123" }
+ * // URL { "baxs://start-call-lobby?token=123" }
  * ```
  */
 export const startCallLobbyRoute = _route('startCallLobby', {
@@ -601,22 +607,23 @@ export const donationValidationCompleteRoute = _route(
  * donationPaypalApprovedRoute.toWebURL({
  *   returnToken: "123",
  * })
- * // URL { "sgnl://donation-paypal-approved?returnToken=123" }
+ * // URL { "sgnl://paypal?action=approve&returnToken=123" }
  * ```
  */
 export const donationPaypalApprovedRoute = _route('donationPaypalApproved', {
   patterns: [
-    _pattern('sgnl:', 'donation-paypal-approved', '{/}?', {
-      search: ':params',
+    _pattern('baxs:', 'paypal', '{/}?', {
+      search: `action=${PaypalAction.Approve}:params*`,
     }),
   ],
   schema: z.object({
-    payerId: paramSchema.optional(),
-    paymentToken: paramSchema.optional(),
+    payerId: paramSchema.nullable().optional(),
+    paymentToken: paramSchema.nullable().optional(),
     returnToken: paramSchema,
   }),
   parse(result) {
     const params = new URLSearchParams(result.search.groups.params);
+    // additional params from PayPal
     return {
       payerId: params.get('PayerID'),
       paymentToken: params.get('token'),
@@ -624,9 +631,13 @@ export const donationPaypalApprovedRoute = _route('donationPaypalApproved', {
     };
   },
   toWebUrl(args) {
-    const params = new URLSearchParams({ returnToken: args.returnToken });
+    const params = new URLSearchParams({
+      action: PaypalAction.Approve,
+      returnToken: args.returnToken,
+    });
+    // Redirects to sgnl://paypal?{params}
     return new URL(
-      `https://signaldonations.org/redirect/donation-paypal-approved?${params.toString()}`
+      `https://signaldonations.org/desktop/paypal?${params.toString()}`
     );
   },
 });
@@ -638,13 +649,13 @@ export const donationPaypalApprovedRoute = _route('donationPaypalApproved', {
  * donationPaypalCanceledRoute.toAppUrl({
  *   returnToken: "123",
  * })
- * // URL { "sgnl://donation-paypal-canceled?returnToken=123" }
+ * // URL { "sgnl://paypal?action=cancel&returnToken=123" }
  * ```
  */
 export const donationPaypalCanceledRoute = _route('donationPaypalCanceled', {
   patterns: [
-    _pattern('sgnl:', 'donation-paypal-canceled', '{/}?', {
-      search: ':params',
+    _pattern('baxs:', 'paypal', '{/}?', {
+      search: `action=${PaypalAction.Cancel}:params*`,
     }),
   ],
   schema: z.object({
@@ -657,9 +668,13 @@ export const donationPaypalCanceledRoute = _route('donationPaypalCanceled', {
     };
   },
   toWebUrl(args) {
-    const params = new URLSearchParams({ returnToken: args.returnToken });
+    const params = new URLSearchParams({
+      action: PaypalAction.Cancel,
+      returnToken: args.returnToken,
+    });
+    // Redirects to sgnl://paypal?{params}
     return new URL(
-      `https://signaldonations.org/redirect/donation-paypal-canceled?${params.toString()}`
+      `https://signaldonations.org/desktop/paypal?${params.toString()}`
     );
   },
 });
@@ -694,7 +709,7 @@ strictAssert(
  * A parsed route with the `key` of the route and its parsed `args`.
  * @example
  * ```ts
- * parseSignalRoute(new URL("https://signal.me/#p/+1234567890"))
+ * parseSignalRoute(new URL("https://me.baxs.com/#p/+1234567890"))
  * // {
  * //   key: "contactByPhoneNumber",
  * //   args: { phoneNumber: "+1234567890" },
@@ -745,8 +760,8 @@ function _normalizeUrl(url: URL | string): URL | null {
  * Check if a URL matches a route.
  * @example
  * ```ts
- * isSignalRoute(new URL("https://signal.me/#p/+1234567890")) // true
- * isSignalRoute(new URL("sgnl://signal.me/#p/+1234567890")) // true
+ * isSignalRoute(new URL("https://me.baxs.com/#p/+1234567890")) // true
+ * isSignalRoute(new URL("baxs://me.baxs.com/#p/+1234567890")) // true
  * isSignalRoute(new URL("https://signal.me")) // false
  * isSignalRoute(new URL("https://example.com")) // false
  * ```
@@ -761,9 +776,9 @@ export function isSignalRoute(input: URL | string): boolean {
  * If it we can't match it to a route, return null.
  * @example
  * ```ts
- * parseSignalRoute(new URL("https://signal.me/#p/+1234567890"))
+ * parseSignalRoute(new URL("https://me.baxs.com/#p/+1234567890"))
  * // { key: "contactByPhoneNumber", args: { phoneNumber: "+1234567890" } }
- * parseSignalRoute(new URL("sgnl://signal.me/#p/+1234567890"))
+ * parseSignalRoute(new URL("baxs://me.baxs.com/#p/+1234567890"))
  * // { key: "contactByPhoneNumber", args: { phoneNumber: "+1234567890" } }
  * parseSignalRoute(new URL("https://example.com"))
  * // null
@@ -781,9 +796,9 @@ export function parseSignalRoute(
  * @example
  * ```ts
  * toSignalRouteUrl(new URL("http://username:password@signal.me/#p/+1234567890"))
- * // URL { "https://signal.me/#p/+1234567890" }
- * toSignalRouteUrl(new URL("sgnl://signal.me/#p/+1234567890"))
- * // URL { "sgnl://signal.me/#p/+1234567890" }
+ * // URL { "https://me.baxs.com/#p/+1234567890" }
+ * toSignalRouteUrl(new URL("baxs://me.baxs.com/#p/+1234567890"))
+ * // URL { "baxs://me.baxs.com/#p/+1234567890" }
  * toSignalRouteUrl(new URL("https://example.com"))
  * // null
  * ```
@@ -801,8 +816,8 @@ export function toSignalRouteUrl(input: URL | string): URL | null {
  * If it we can't match it to a route, return null.
  * @example
  * ```ts
- * toSignalRouteAppUrl(new URL("https://signal.me/#p/+1234567890"))
- * // URL { "sgnl://signal.me/#p/+1234567890" }
+ * toSignalRouteAppUrl(new URL("https://me.baxs.com/#p/+1234567890"))
+ * // URL { "baxs://me.baxs.com/#p/+1234567890" }
  * toSignalRouteAppUrl(new URL("https://example.com"))
  * // null
  * ```
@@ -825,8 +840,8 @@ export function toSignalRouteAppUrl(input: URL | string): URL | null {
  * If it we can't match it to a route, return null.
  * @example
  * ```ts
- * toSignalRouteWebUrl(new URL("sgnl://signal.me/#p/+1234567890"))
- * // URL { "https://signal.me/#p/+1234567890" }
+ * toSignalRouteWebUrl(new URL("baxs://me.baxs.com/#p/+1234567890"))
+ * // URL { "https://me.baxs.com/#p/+1234567890" }
  * toSignalRouteWebUrl(new URL("https://example.com"))
  * // null
  * ```

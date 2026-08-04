@@ -206,9 +206,6 @@
   "icu:viewMenuToggleDevTools": {
     "messageformat": "开发者工具开关"
   },
-  "icu:viewMenuOpenCallingDevTools": {
-    "messageformat": "打开调用开发者工具"
-  },
   "icu:menuSetupAsNewDevice": {
     "messageformat": "设置为新设备"
   },
@@ -578,14 +575,95 @@
   "icu:SafetyNumberViewer__hint": {
     "messageformat": "如要验证您与{name}的端对端加密功能，请将上方的数字与对方的设备进行比对。对方也可以使用自己的设备扫描您的二维码。"
   },
+  "icu:SafetyNumberViewer__hint-v2": {
+    "messageformat": "如要验证您与{name}的端对端加密，请将上方的数字与对方的设备进行比对。对方也可以在自己的设备上扫描您的二维码。"
+  },
   "icu:SafetyNumberViewer__learn_more": {
     "messageformat": "了解更多"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__title": {
+    "messageformat": "自动密钥验证"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--idle": {
+    "messageformat": "自动验证"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--running": {
+    "messageformat": "正在验证加密..."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--ok": {
+    "messageformat": "加密已验证"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--fail": {
+    "messageformat": "自动验证不可用"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__hint": {
+    "messageformat": "自动验证并非对所有聊天均可用。"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__learn_more": {
+    "messageformat": "了解更多"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__title": {
+    "messageformat": "此聊天加密已自动验证 "
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body": {
+    "messageformat": "对于通过手机号码连接的联系人，B&A 可以使用一个名为“密钥透明度”的流程自动确认连接是否安全。如要提高安全性，您可以比对前一个屏幕上的数字或扫描对方设备上的二维码以手动验证端对端加密。"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title": {
+    "messageformat": "此聊天已无法使用自动验证"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body": {
+    "messageformat": "B&A 已无法自动验证此聊天的加密。这可能是因为 {name} 更改了手机号码。请通过比对前一个屏幕上的数字或扫描对方设备上的二维码手动验证端对端加密。"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
+    "messageformat": "B&A 只能对通过手机号码连接的联系人的聊天进行自动加密验证。如果使用用户名或在共同群组中发起聊天，请通过比对前一个屏幕上的数字或扫描对方设备上的二维码验证端对端加密。"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
+    "messageformat": "好"
   },
   "icu:SafetyNumberNotReady__body": {
     "messageformat": "在您与对方互发消息后，系统将针对其生成一个安全码。"
   },
   "icu:SafetyNumberNotReady__learn-more": {
     "messageformat": "了解更多"
+  },
+  "icu:KeyTransparencyErrorDialog__Title": {
+    "messageformat": "您的设备目前无法使用自动密钥验证功能。要提交调试日志吗？"
+  },
+  "icu:KeyTransparencyErrorDialog__Description": {
+    "messageformat": "调试日志能帮助我们诊断和解决问题，并且不包含任何可识别身份的信息。"
+  },
+  "icu:KeyTransparencyErrorDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "关闭"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label": {
+    "messageformat": "分享调试日志"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__ViewButton": {
+    "messageformat": "查看"
+  },
+  "icu:KeyTransparencyErrorDialog__Submit": {
+    "messageformat": "提交"
+  },
+  "icu:KeyTransparencyErrorDialog__Cancel": {
+    "messageformat": "不，谢谢。"
+  },
+  "icu:KeyTransparencyErrorDialog__Submitting": {
+    "messageformat": "正在提交..."
+  },
+  "icu:KeyTransparencyOnboardingDialog__Title": {
+    "messageformat": "B&A 现在可以自动验证加密"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Description": {
+    "messageformat": "对于通过手机号码连接的联系人，B&A 可以使用一个名为“密钥透明度”的流程自动确认连接是否安全。如要提高安全性，您还可以使用二维码或比对安全码手动验证连接。"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Continue": {
+    "messageformat": "继续"
+  },
+  "icu:KeyTransparencyOnboardingDialog__LearnMore": {
+    "messageformat": "了解更多"
+  },
+  "icu:KeyTransparencyOnboardingDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "关闭"
   },
   "icu:verified": {
     "messageformat": "已验证"
@@ -1033,6 +1111,12 @@
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name}在您的系统通讯录中"
+  },
+  "icu:AboutContactModal__add-member-label": {
+    "messageformat": "添加成员标签"
+  },
+  "icu:AboutContactModal__your-qr-code": {
+    "messageformat": "您的二维码"
   },
   "icu:NotePreviewModal__Title": {
     "messageformat": "备注"
@@ -1712,6 +1796,15 @@
   "icu:Preferences__EditChatFolderPage__CancelButton": {
     "messageformat": "取消"
   },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Label": {
+    "messageformat": "自动密钥验证"
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
+    "messageformat": "如果启用此功能，B&A 会尝试自动验证一对一聊天加密。"
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
+    "messageformat": "了解更多"
+  },
   "icu:initialSync": {
     "messageformat": "正在同步联系人和群组"
   },
@@ -2338,6 +2431,9 @@
   },
   "icu:Toast--unable-download-from-backup-tier": {
     "messageformat": "Attachment missing from backup CDN"
+  },
+  "icu:ToastManager__CannotAddMemberLabel": {
+    "messageformat": "只有管理员能够在此群组中添加成员标签。"
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "您只能在发送此消息后的 24 小时以内进行编辑。"
@@ -3753,7 +3849,7 @@
     "messageformat": "{max, plural, other {此消息只能应用 {max,number} 次编辑。}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "抱歉， baxs:// 链接无法解析！"
+    "messageformat": "抱歉， sgnl:// 链接无法解析！"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "您无法给该群组发送消息。"
@@ -4538,6 +4634,9 @@
   "icu:ContactModal--rm-admin": {
     "messageformat": "取消其管理员身份"
   },
+  "icu:ContactModal--rm-admin--clear-label": {
+    "messageformat": "此操作会同时清除其成员标签。"
+  },
   "icu:ContactModal--make-admin": {
     "messageformat": "设为管理员"
   },
@@ -4556,6 +4655,18 @@
   "icu:ContactModal--voice": {
     "messageformat": "语音"
   },
+  "icu:GroupMemberLabelInfoModal--title": {
+    "messageformat": "成员标签"
+  },
+  "icu:GroupMemberLabelInfoModal--description": {
+    "messageformat": "您可以设置成员标签来描述您自己或您在此群组中的角色。成员标签仅在此群组内可见。"
+  },
+  "icu:GroupMemberLabelInfoModal--add-label": {
+    "messageformat": "设置标签"
+  },
+  "icu:GroupMemberLabelInfoModal--edit-label": {
+    "messageformat": "编辑您的标签"
+  },
   "icu:showChatColorEditor": {
     "messageformat": "聊天颜色"
   },
@@ -4570,6 +4681,39 @@
   },
   "icu:ConversationDetails--group-link": {
     "messageformat": "群组链接"
+  },
+  "icu:ConversationDetails--member-label": {
+    "messageformat": "成员标签"
+  },
+  "icu:ConversationDetails--member-label--placeholder": {
+    "messageformat": "请输入您的成员标签"
+  },
+  "icu:ConversationDetails--member-label--description": {
+    "messageformat": "设置一个成员标签来描述您自己或您在此群组中的角色。成员标签仅在此群组内可见。"
+  },
+  "icu:ConversationDetails--member-label--preview": {
+    "messageformat": "预览"
+  },
+  "icu:ConversationDetails--member-label--hello": {
+    "messageformat": "你好！"
+  },
+  "icu:ConversationDetails--member-label--list-header": {
+    "messageformat": "有标签的群组成员"
+  },
+  "icu:ConversationDetails--member-label--no-members": {
+    "messageformat": "没有其他成员有标签"
+  },
+  "icu:ConversationDetails--member-label--saving": {
+    "messageformat": "正在保存更改..."
+  },
+  "icu:ConversationDetails--member-label--error-title": {
+    "messageformat": "无法保存成员标签"
+  },
+  "icu:ConversationDetails--member-label--error-generic": {
+    "messageformat": "请检查您的网络连接并重试。"
+  },
+  "icu:ConversationDetails--member-label--error-permissions": {
+    "messageformat": "只有管理员能够设置此群组的成员标签。"
   },
   "icu:ConversationDetails--disappearing-messages-label": {
     "messageformat": "限时消息"
@@ -4604,6 +4748,9 @@
   "icu:ConversationDetails--group-info-info": {
     "messageformat": "选择谁可以编辑群组名称、图片、描述和限时消息计时器。"
   },
+  "icu:ConversationDetails--group-info-info-v2": {
+    "messageformat": "请选择谁可以编辑群组名称、图片、描述、限时消息定时器和置顶消息。"
+  },
   "icu:ConversationDetails--add-members-label": {
     "messageformat": "谁可以添加成员"
   },
@@ -4615,6 +4762,15 @@
   },
   "icu:ConversationDetails--announcement-info": {
     "messageformat": "选择谁可以给群组发送消息。"
+  },
+  "icu:ConversationDetails--label-clear-warning--title": {
+    "messageformat": "成员标签将会被清除"
+  },
+  "icu:ConversationDetails--label-clear-warning--description": {
+    "messageformat": "将此权限更改为“仅限管理员”将会清除此群组中由非管理员设置的成员标签。"
+  },
+  "icu:ConversationDetails--label-clear-warning--continue": {
+    "messageformat": "继续"
   },
   "icu:ConversationDetails--requests-and-invites": {
     "messageformat": "请求与邀请"
@@ -4669,6 +4825,9 @@
   },
   "icu:ConversationDetailsMembershipList--add-members": {
     "messageformat": "添加成员"
+  },
+  "icu:ConversationDetailsMembershipList--add-member-label": {
+    "messageformat": "添加成员标签"
   },
   "icu:ConversationDetailsMembershipList--show-all": {
     "messageformat": "查看全部"
@@ -4843,6 +5002,21 @@
   },
   "icu:DeleteMessagesModal__toast--TooManyMessagesToDeleteForEveryone": {
     "messageformat": "{count, plural, other {您至多只能选择对所有人删除 {count,number} 条消息}}"
+  },
+  "icu:DeleteAttachmentModal__Title": {
+    "messageformat": "要删除项目吗？"
+  },
+  "icu:DeleteAttachmentModal__Body": {
+    "messageformat": "此操作会永久删除此项目。与之关联的所有消息也将会被删除。"
+  },
+  "icu:DeleteAttachmentModal__Close": {
+    "messageformat": "关闭"
+  },
+  "icu:DeleteAttachmentModal__Delete": {
+    "messageformat": "删除"
+  },
+  "icu:DeleteAttachmentModal__Cancel": {
+    "messageformat": "取消"
   },
   "icu:SelectModeActions__toast--TooManyMessagesToForward": {
     "messageformat": "您至多只能转发 30 条消息"
@@ -5216,6 +5390,24 @@
   "icu:MediaGallery__EmptyState__description--documents-2": {
     "messageformat": "您收发的文件会在这里显示"
   },
+  "icu:MediaGallery__ContextMenu__ViewInChat": {
+    "messageformat": "在聊天中查看"
+  },
+  "icu:MediaGallery__ContextMenu__Forward": {
+    "messageformat": "转发"
+  },
+  "icu:MediaGallery__ContextMenu__Save": {
+    "messageformat": "保存"
+  },
+  "icu:MediaGallery__ContextMenu__Send": {
+    "messageformat": "发送消息"
+  },
+  "icu:MediaGallery__ContextMenu__Copy": {
+    "messageformat": "复制链接"
+  },
+  "icu:MediaGallery__ContextMenu__Delete": {
+    "messageformat": "删除"
+  },
   "icu:MediaQualitySelector--button": {
     "messageformat": "选择媒体质量"
   },
@@ -5429,6 +5621,10 @@
   "icu:AnnouncementsOnlyGroupBanner--admins": {
     "messageformat": "管理员"
   },
+  "icu:Avatar__View": {
+    "messageformat": "查看",
+    "limit": 7
+  },
   "icu:AvatarEditor--choose": {
     "messageformat": "选择一个头像"
   },
@@ -5506,15 +5702,6 @@
   },
   "icu:Preferences__button--set-up": {
     "messageformat": "设置"
-  },
-  "icu:Preferences__internal__local-backups": {
-    "messageformat": "本地备份"
-  },
-  "icu:Preferences__internal__export-local-backup": {
-    "messageformat": "导出…"
-  },
-  "icu:Preferences__internal__export-local-backup--description": {
-    "messageformat": "将本地加密备份导出到一个文件夹并对其进行验证"
   },
   "icu:Preferences__internal__validate-backup--description": {
     "messageformat": "将加密备份导出到内存并对其运行验证套件"
@@ -7335,6 +7522,21 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>当您捐款时，B&A 不会收集或储存您的任何个人信息。</paragraph><paragraph>我们使用 Stripe 作为接收捐款的付款处理方。我们不会访问、储存或保存您向 Stripe 提供的任何信息。</paragraph><paragraph>B&A 不会也无法关联您的捐款至您的 B&A 账户。</paragraph><paragraph>感谢您的赞助！</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-intro": {
+    "messageformat": "作为独立的非营利组织， B&A 致力于保护消息和通话的私密性。这里无广告，无跟踪，无监视。立即捐款支持 B&A 吧。"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-1": {
+    "messageformat": "捐款后可在个人资料上显示一个可选徽章"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-2": {
+    "messageformat": "保护您的隐私是我们的使命"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-3": {
+    "messageformat": "B&A 是一个非营利组织。"
+  },
+  "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
+    "messageformat": "B&A 徽标风格的心形图标"
+  },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "好"
   },
@@ -7425,6 +7627,15 @@
   "icu:DonateFlow__discard-dialog-remove-info": {
     "messageformat": "删除信息"
   },
+  "icu:DonateFlow__discard-paypal-dialog-body": {
+    "messageformat": "离开会取消您的捐款操作。"
+  },
+  "icu:DonateFlow__discard-paypal-dialog-discard": {
+    "messageformat": "离开"
+  },
+  "icu:DonateFlow__discard-paypal-dialog-cancel": {
+    "messageformat": "留在本页"
+  },
   "icu:DonateFlow__continue": {
     "messageformat": "继续"
   },
@@ -7470,6 +7681,15 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "您正在进行的捐款需要确认。"
   },
+  "icu:Donations__Toast__PaypalConfirmationNeeded": {
+    "messageformat": "您正在进行的捐款需要确认。"
+  },
+  "icu:Donations__Toast__PaypalCanceled": {
+    "messageformat": "已取消使用 Paypal 捐款"
+  },
+  "icu:Donations__Toast__PaypalError": {
+    "messageformat": "使用 Paypal 捐款发生错误。您尚未被扣款。"
+  },
   "icu:Donations__BadgeApplicationFailed__Title": {
     "messageformat": "捐款成功，但我们无法更新您的徽章设置"
   },
@@ -7485,11 +7705,41 @@
   "icu:Donations__DonationInterrupted__RetryButton": {
     "messageformat": "重试"
   },
+  "icu:Donations__PaymentMethod": {
+    "messageformat": "付款方式"
+  },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "付款方式被拒绝"
   },
   "icu:Donations__PaymentMethodDeclined__Description": {
     "messageformat": "请尝试另一种付款方式或联系您的银行了解详情。"
+  },
+  "icu:DonateFlow__PaymentCardIcon__AccessibilityLabel": {
+    "messageformat": "付款卡图标"
+  },
+  "icu:DonateFlow__CreditOrDebitCard": {
+    "messageformat": "信用卡或借记卡"
+  },
+  "icu:DonateFlow__Paypal__AccessibilityLabel": {
+    "messageformat": "PayPal"
+  },
+  "icu:DonateFlow__Paypal__Cancel": {
+    "messageformat": "取消"
+  },
+  "icu:DonateFlow__Paypal__CompleteDonation": {
+    "messageformat": "完成捐款"
+  },
+  "icu:Donations__PaypalCanceled": {
+    "messageformat": "已取消使用 Paypal 捐款"
+  },
+  "icu:Donations__PaypalCanceled__Description": {
+    "messageformat": "您尚未被扣款。请重试或使用其他付款方式。"
+  },
+  "icu:Donations__PaypalError": {
+    "messageformat": "使用 Paypal 捐款发生错误"
+  },
+  "icu:Donations__PaypalError__Description": {
+    "messageformat": "您尚未被扣款。请重试或使用其他付款方式。"
   },
   "icu:Donations__Failed3dsValidation": {
     "messageformat": "验证失败"
@@ -7626,9 +7876,6 @@
   "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
     "messageformat": "帮助我们不断改进"
   },
-  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
-    "messageformat": "这有助于我们进一步了解通话情况，以及哪些功能正常，哪些存在问题。您可以先查看您的调试日志再提交。"
-  },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
     "messageformat": "提交日志将共享您的反馈以及<diagnosticInfoLink>有关您通话的诊断信息</diagnosticInfoLink>。您可以选择共享调试日志，帮助我们改进通话质量。"
   },
@@ -7637,9 +7884,6 @@
   },
   "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
     "messageformat": "查看"
-  },
-  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
-    "messageformat": "调试日志包含低级应用程序信息，不会显示任何消息内容。"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
     "messageformat": "与我们共享的信息包含应用程序的低等级信息，不包含您的通话内容。"
@@ -7693,10 +7937,13 @@
     "messageformat": "我们进行了功能微调、漏洞修复和性能强化。感谢使用 B&A！",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.86--0": {
-    "messageformat": "我们修复了群组通话中举手指示器的一个微小显示漏洞。"
+  "icu:WhatsNew__7.90--0": {
+    "messageformat": "五款全新官方艺术家贴纸包。"
   },
-  "icu:WhatsNew__7.87--0": {
-    "messageformat": "置顶消息功能可让重要消息固定在聊天顶部，方便快速查看。"
+  "icu:WhatsNew__8.0--0": {
+    "messageformat": "B&A 安全备份现已上线！现在您可以选择启用自动端对端加密备份功能，以防在换手机或重装 B&A 时丢失消息记录。您可以免费备份所有消息和 45 天内的媒体，也可以支付小额月费获取 100 GB 存储空间，备份每个附件。在 B&A 设置中点击备份即可开始。感谢在测试阶段帮助测试此功能的每一位用户！"
+  },
+  "icu:WhatsNew__8.1--0": {
+    "messageformat": "现在您可以选择添加成员标签来描述您自己或您在群组聊天中的角色。成员标签会显示在您的群组昵称旁。群组管理员可通过“编辑群组信息”控制谁可以设置标签。"
   }
 }

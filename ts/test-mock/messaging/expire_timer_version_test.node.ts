@@ -19,6 +19,7 @@ import {
   expectSystemMessages,
   typeIntoInput,
   waitForEnabledComposer,
+  waitForNonProfileKeyUpdateMessage,
 } from '../helpers.node.js';
 
 export const debug = createDebug('mock:test:messaging');
@@ -255,7 +256,8 @@ describe('messaging/expireTimerVersion', function (this: Mocha.Suite) {
       }
 
       debug('Getting message to contact');
-      const { body, dataMessage } = await stranger.waitForMessage();
+      const { body, dataMessage } =
+        await waitForNonProfileKeyUpdateMessage(stranger);
 
       assert.strictEqual(body, 'Hello');
       assert.strictEqual(dataMessage.expireTimer, scenario.finalTimer);

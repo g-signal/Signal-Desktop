@@ -139,14 +139,12 @@ export type PropsDataType = {
   hasPanelShowing?: boolean;
   hasStories?: HasStories;
   hasActiveCall?: boolean;
-  localDeleteWarningShown: boolean;
   isMissingMandatoryProfileSharing?: boolean;
   isSelectMode: boolean;
   isSignalConversation?: boolean;
   isSmsOnlyOrUnregistered?: boolean;
   isRobot?: boolean;
   outgoingCallButtonStyle: OutgoingCallButtonStyle;
-  sharedGroupNames: ReadonlyArray<string>;
   theme: ThemeType;
   gextTags?: ReadonlyArray<GextTag>;
 
@@ -160,8 +158,6 @@ export type PropsDataType = {
 };
 
 export type PropsActionsType = {
-  setLocalDeleteWarningShown: () => void;
-
   onConversationAccept: () => void;
   onConversationArchive: () => void;
   onConversationBlock: () => void;
@@ -238,8 +234,6 @@ export const ConversationHeader = memo(function ConversationHeader({
   onViewConversationDetails,
   onViewUserStories,
   outgoingCallButtonStyle,
-  setLocalDeleteWarningShown,
-  sharedGroupNames,
   theme,
   gextTags,
 
@@ -295,7 +289,6 @@ export const ConversationHeader = memo(function ConversationHeader({
       {hasDeleteMessagesConfirmation && (
         <DeleteMessagesConfirmationDialog
           i18n={i18n}
-          localDeleteWarningShown={localDeleteWarningShown}
           onDestroyMessages={() => {
             setHasDeleteMessagesConfirmation(false);
             onConversationDeleteMessages();
@@ -303,7 +296,6 @@ export const ConversationHeader = memo(function ConversationHeader({
           onClose={() => {
             setHasDeleteMessagesConfirmation(false);
           }}
-          setLocalDeleteWarningShown={setLocalDeleteWarningShown}
         />
       )}
       {hasLeaveGroupConfirmation && (
@@ -353,7 +345,6 @@ export const ConversationHeader = memo(function ConversationHeader({
                 hasStories={hasStories ?? null}
                 headerRef={headerRef}
                 i18n={i18n}
-                sharedGroupNames={sharedGroupNames}
                 theme={theme}
                 onViewUserStories={onViewUserStories}
                 onViewConversationDetails={onViewConversationDetails}
@@ -489,7 +480,6 @@ function HeaderContent({
   hasStories,
   headerRef,
   i18n,
-  sharedGroupNames,
   theme,
   isSignalConversation,
   onViewUserStories,
@@ -501,7 +491,6 @@ function HeaderContent({
   hasStories: HasStories | null;
   headerRef: RefObject<HTMLDivElement>;
   i18n: LocalizerType;
-  sharedGroupNames: ReadonlyArray<string>;
   theme: ThemeType;
   isSignalConversation: boolean;
   onViewUserStories: () => void;
@@ -541,7 +530,6 @@ function HeaderContent({
         onClick={hasStories ? onViewUserStories : onClick}
         phoneNumber={conversation.phoneNumber ?? undefined}
         profileName={conversation.profileName ?? undefined}
-        sharedGroupNames={sharedGroupNames}
         size={AvatarSize.THIRTY_TWO}
         // user may have stories, but we don't show that on Note to Self conversation
         storyRing={conversation.isMe ? undefined : (hasStories ?? undefined)}

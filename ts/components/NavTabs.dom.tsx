@@ -252,6 +252,13 @@ export function NavTabs({
           state: ProfileEditorPage.None,
         },
       });
+    } else if (tab === NavTab.Chats) {
+      onChangeLocation({
+        tab: NavTab.Chats,
+        details: {
+          conversationId: undefined,
+        },
+      });
     } else {
       onChangeLocation({ tab });
     }
@@ -372,9 +379,6 @@ export function NavTabs({
                       profileName={me.profileName}
                       theme={theme}
                       title={me.title}
-                      // `sharedGroupNames` makes no sense for yourself, but
-                      // `<Avatar>` needs it to determine blurring.
-                      sharedGroupNames={[]}
                       size={AvatarSize.TWENTY_EIGHT}
                     />
                   </span>

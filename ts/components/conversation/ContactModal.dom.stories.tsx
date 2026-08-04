@@ -12,6 +12,9 @@ import { HasStories } from '../../types/Stories.std.js';
 import { ThemeType } from '../../types/Util.std.js';
 import { getDefaultConversation } from '../../test-helpers/getDefaultConversation.std.js';
 import { getFakeBadges } from '../../test-helpers/getFakeBadge.std.js';
+import { SignalService as Proto } from '../../protobuf/index.std.js';
+
+const ACCESS_ENUM = Proto.AccessControl.AccessRequired;
 
 const { i18n } = window.SignalContext;
 
@@ -39,6 +42,9 @@ export default {
     badges: [],
     blockConversation: action('blockConversation'),
     contact: defaultContact,
+    contactLabelEmoji: undefined,
+    contactLabelString: undefined,
+    contactNameColor: undefined,
     conversation: defaultGroup,
     hasActiveCall: false,
     hasStories: undefined,
@@ -57,10 +63,8 @@ export default {
     theme: ThemeType.light,
     toggleAboutContactModal: action('AboutContactModal'),
     toggleAdmin: action('toggleAdmin'),
+    toggleGroupMemberLabelInfoModal: action('toggleGroupMemberLabelInfoModal'),
     toggleSafetyNumberModal: action('toggleSafetyNumberModal'),
-    updateConversationModelSharedGroups: action(
-      'updateConversationModelSharedGroups'
-    ),
     viewUserStories: action('viewUserStories'),
   },
 } satisfies Meta<PropsType>;
@@ -73,9 +77,70 @@ AsNonAdmin.args = {
   areWeAdmin: false,
 };
 
+export const WithLabel = Template.bind({});
+WithLabel.args = {
+  areWeAdmin: false,
+  contactLabelEmoji: '💪🏼',
+  contactLabelString: 'Strong',
+  contactNameColor: '180',
+};
+
+export const WithLabelNoEmoji = Template.bind({});
+WithLabelNoEmoji.args = {
+  areWeAdmin: false,
+  contactLabelString: 'Strong',
+  contactNameColor: '220',
+};
+
+export const WithLabelInvalidEmoji = Template.bind({});
+WithLabelInvalidEmoji.args = {
+  areWeAdmin: false,
+  contactLabelEmoji: '%',
+  contactLabelString: 'Strong',
+  contactNameColor: '220',
+};
+
+export const LongLabel = Template.bind({});
+LongLabel.args = {
+  contactLabelEmoji: '🐝',
+  contactLabelString: '𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫𒐫',
+  contactNameColor: '270',
+};
+
+export const LongLabel2 = Template.bind({});
+LongLabel2.args = {
+  contactLabelEmoji: '🐝',
+  contactLabelString: '﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽',
+  contactNameColor: '270',
+};
+
+export const LongLabelAllEmoji = Template.bind({});
+LongLabelAllEmoji.args = {
+  contactLabelEmoji: '🐝',
+  contactLabelString: '🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝🐝',
+  contactNameColor: '270',
+};
+
 export const AsAdmin = Template.bind({});
 AsAdmin.args = {
   areWeAdmin: true,
+};
+
+export const AsAdminViewingAdmin = Template.bind({});
+AsAdminViewingAdmin.args = {
+  areWeAdmin: true,
+  isAdmin: true,
+};
+
+export const AsAdminViewingAdminWithLabel = Template.bind({});
+AsAdminViewingAdminWithLabel.args = {
+  areWeAdmin: true,
+  isAdmin: true,
+  conversation: {
+    ...defaultGroup,
+    accessControlAttributes: ACCESS_ENUM.ADMINISTRATOR,
+  },
+  contactLabelString: 'Contact Label',
 };
 
 export const AsAdminWithNoGroupLink = Template.bind({});
@@ -97,14 +162,6 @@ WithoutPhoneNumber.args = {
   contact: {
     ...defaultContact,
     phoneNumber: undefined,
-  },
-};
-
-export const ViewingSelf = Template.bind({});
-ViewingSelf.args = {
-  contact: {
-    ...defaultContact,
-    isMe: true,
   },
 };
 

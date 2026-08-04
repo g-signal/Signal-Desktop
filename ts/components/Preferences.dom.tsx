@@ -23,6 +23,7 @@ import { ConfirmationDialog } from './ConfirmationDialog.dom.js';
 import { DisappearingTimeDialog } from './DisappearingTimeDialog.dom.js';
 import { PhoneNumberDiscoverability } from '../util/phoneNumberDiscoverability.std.js';
 import { PhoneNumberSharingMode } from '../types/PhoneNumberSharingMode.std.js';
+import { KEY_TRANSPARENCY_URL } from '../types/support.std.js';
 import { Select } from './Select.dom.js';
 import { getCustomColorStyle } from '../util/getCustomColorStyle.dom.js';
 import {
@@ -100,6 +101,8 @@ import { AxoButton } from '../axo/AxoButton.dom.js';
 import type { ExternalProps as SmartNotificationProfilesProps } from '../state/smart/PreferencesNotificationProfiles.preload.js';
 import type { LocalBackupExportMetadata } from '../types/LocalExport.std.js';
 import { GextTagList } from './GextTagList.js';
+import { isDonationsPage } from './PreferencesDonations.dom.js';
+import type { VisibleRemoteMegaphoneType } from '../types/Megaphone.std.js';
 
 const { isNumber, noop, partition } = lodash;
 
@@ -141,6 +144,7 @@ export type PropsDataType = {
   hasCountMutedConversations: boolean;
   hasHideMenuBar?: boolean;
   hasIncomingCallNotifications: boolean;
+  hasKeyTransparencyDisabled: boolean;
   hasLinkPreviews: boolean;
   hasMediaCameraPermissions: boolean | undefined;
   hasMediaPermissions: boolean | undefined;
@@ -194,6 +198,7 @@ export type PropsDataType = {
   isContentProtectionNeeded: boolean;
   isContentProtectionSupported: boolean;
   isHideMenuBarSupported: boolean;
+  isKeyTransparencyAvailable: boolean;
   isNotificationAttentionSupported: boolean;
   isPlaintextExportEnabled: boolean;
   isSyncSupported: boolean;
@@ -286,6 +291,7 @@ type PropsFunctionType = {
     receipt: DonationReceipt,
     i18n: LocalizerType
   ) => Promise<Blob>;
+  addVisibleMegaphone: (megaphone: VisibleRemoteMegaphoneType) => void;
 
   // Change handlers
   onAudioNotificationsChange: CheckboxChangeHandlerType;
@@ -301,6 +307,7 @@ type PropsFunctionType = {
   onContentProtectionChange: CheckboxChangeHandlerType;
   onCountMutedConversationsChange: CheckboxChangeHandlerType;
   onEmojiSkinToneDefaultChange: (emojiSkinTone: EmojiSkinTone) => void;
+  onHasKeyTransparencyDisabledChanged: SelectChangeHandlerType<boolean>;
   onHasStoriesDisabledChanged: SelectChangeHandlerType<boolean>;
   onHideMenuBarChange: CheckboxChangeHandlerType;
   onIncomingCallNotificationsChange: CheckboxChangeHandlerType;
@@ -342,14 +349,6 @@ type PropsFunctionType = {
 export type PropsType = PropsDataType & PropsFunctionType;
 
 export type PropsPreloadType = Omit<PropsType, 'i18n'>;
-
-function isDonationsPage(page: SettingsPage): boolean {
-  return (
-    page === SettingsPage.Donations ||
-    page === SettingsPage.DonationsDonateFlow ||
-    page === SettingsPage.DonationsReceiptList
-  );
-}
 
 enum LanguageDialog {
   Selection,
@@ -423,6 +422,7 @@ export function Preferences({
   hasFailedStorySends,
   hasHideMenuBar,
   hasIncomingCallNotifications,
+  hasKeyTransparencyDisabled,
   hasLinkPreviews,
   hasMediaCameraPermissions,
   hasMediaPermissions,
@@ -445,6 +445,7 @@ export function Preferences({
   isContentProtectionNeeded,
   isContentProtectionSupported,
   isHideMenuBarSupported,
+  isKeyTransparencyAvailable,
   isNotificationAttentionSupported,
   isPlaintextExportEnabled,
   isSyncSupported,
@@ -470,6 +471,7 @@ export function Preferences({
   onContentProtectionChange,
   onCountMutedConversationsChange,
   onEmojiSkinToneDefaultChange,
+  onHasKeyTransparencyDisabledChanged,
   onHasStoriesDisabledChanged,
   onHideMenuBarChange,
   onIncomingCallNotificationsChange,
@@ -542,6 +544,7 @@ export function Preferences({
   internalAddDonationReceipt,
   saveAttachmentToDisk,
   generateDonationReceiptBlob,
+  addVisibleMegaphone,
   internalDeleteAllMegaphones,
   __dangerouslyRunAbitraryReadOnlySqlQuery,
   cqsTestMode,
@@ -1823,6 +1826,40 @@ export function Preferences({
             </div>
           </FlowingControl>
         </SettingsRow>
+        {isKeyTransparencyAvailable && (
+          <SettingsRow>
+            <Checkbox
+              checked={!hasKeyTransparencyDisabled}
+              label={i18n(
+                'icu:Preferences__PrivacyPage__KeyTransparency__Label'
+              )}
+              moduleClassName="Preferences__checkbox"
+              name="keyTransparency"
+              onChange={() =>
+                onHasKeyTransparencyDisabledChanged(!hasKeyTransparencyDisabled)
+              }
+            />
+            <div className="Preferences__padding">
+              <div className="Preferences__description">
+                {i18n(
+                  'icu:Preferences__PrivacyPage__KeyTransparency__Description'
+                )}
+                &ensp;
+                <a
+                  href={KEY_TRANSPARENCY_URL}
+                  rel="noreferrer"
+                  target="_blank"
+                  className={tw('text-label-primary')}
+                >
+                  <I18n
+                    i18n={i18n}
+                    id="icu:Preferences__PrivacyPage__KeyTransparency__LearnMore"
+                  />
+                </a>
+              </div>
+            </div>
+          </SettingsRow>
+        )}
         <SettingsRow>
           <FlowingControl>
             <div
@@ -2294,6 +2331,7 @@ export function Preferences({
             internalAddDonationReceipt={internalAddDonationReceipt}
             saveAttachmentToDisk={saveAttachmentToDisk}
             generateDonationReceiptBlob={generateDonationReceiptBlob}
+            addVisibleMegaphone={addVisibleMegaphone}
             internalDeleteAllMegaphones={internalDeleteAllMegaphones}
             __dangerouslyRunAbitraryReadOnlySqlQuery={
               __dangerouslyRunAbitraryReadOnlySqlQuery
@@ -2352,9 +2390,6 @@ export function Preferences({
                     profileName={me.profileName}
                     theme={theme}
                     title={me.title}
-                    // `sharedGroupNames` makes no sense for yourself, but
-                    // `<Avatar>` needs it to determine blurring.
-                    sharedGroupNames={[]}
                     size={AvatarSize.FORTY_EIGHT}
                   />
                 </div>

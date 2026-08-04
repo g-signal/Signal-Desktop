@@ -46,6 +46,7 @@ import {
   initialize as initializeExpiringMessageService,
   update as updateExpiringMessagesService,
 } from './services/expiringMessagesDeletion.preload.js';
+import { keyTransparency } from './services/keyTransparency.preload.js';
 import {
   initialize as initializeNotificationProfilesService,
   fastUpdate as updateNotificationProfileService,
@@ -477,6 +478,7 @@ export async function startApp(): Promise<void> {
     drop(itemStorage.put('postRegistrationSyncsStatus', 'incomplete'));
     registrationCompleted?.resolve();
     drop(Registration.markDone());
+    drop(keyTransparency.onRegistrationDone());
   });
 
   const cancelInitializationMessage = setAppLoadingScreenMessage(
@@ -1019,9 +1021,19 @@ export async function startApp(): Promise<void> {
           });
         }
       }
+
+      if (window.isBeforeVersion(lastVersion, 'v7.91.0-beta.1')) {
+        await itemStorage.remove('versionedExpirationTimer');
+        await itemStorage.remove('callQualitySurveyCooldownDisabled');
+        await itemStorage.remove('localDeleteWarningShown');
+      }
     }
 
     setAppLoadingScreenMessage(i18n('icu:optimizingApplication'), i18n);
+
+    // These paths are protected while they are referenced in memory but not in
+    // message_attachments, so we can safely clear them at app start
+    await DataWriter.resetProtectedAttachmentPaths();
 
     if (newVersion || itemStorage.get('needOrphanedAttachmentCheck')) {
       await itemStorage.remove('needOrphanedAttachmentCheck');
@@ -1242,6 +1254,8 @@ export async function startApp(): Promise<void> {
         log.info('reconnecting websocket on user change');
         enqueueReconnectToWebSocket();
       }
+
+      drop(keyTransparency.onKnownIdentifierChange());
     });
 
     window.Whisper.events.on('setMenuOptions', (options: MenuOptionsType) => {
@@ -1387,6 +1401,7 @@ export async function startApp(): Promise<void> {
 
     initializeExpiringMessageService();
     initializeNotificationProfilesService();
+    keyTransparency.start();
 
     log.info('Blocked uuids cleanup: starting...');
     const blockedUuids = itemStorage.get(BLOCKED_UUIDS_ID, []);
@@ -2308,16 +2323,12 @@ export async function startApp(): Promise<void> {
     processBatch(batch) {
       const deduped = new Set(batch);
       deduped.forEach(async sender => {
-        try {
-          if (!(await shouldRespondWithProfileKey(sender))) {
-            return;
-          }
-        } catch (error) {
-          log.error(
-            'respondWithProfileKeyBatcher error',
-            Errors.toLogFormat(error)
-          );
+        if (!shouldRespondWithProfileKey(sender)) {
+          return;
         }
+        sender.enableProfileSharing({
+          reason: 'shouldRespondWithProfileKey',
+        });
 
         drop(
           sender.queueJob('sendProfileKeyUpdate', () =>
@@ -3873,9 +3884,6 @@ export async function startApp(): Promise<void> {
   async function onDeleteForMeSync(ev: DeleteForMeSyncEvent) {
     const { confirm, timestamp, envelopeId, deleteForMeSync } = ev;
     const logId = `onDeleteForMeSync(${timestamp})`;
-
-    // The user clearly knows about this feature; they did it on another device!
-    drop(itemStorage.put('localDeleteWarningShown', true));
 
     log.info(`${logId}: Saving ${deleteForMeSync.length} sync tasks`);
 

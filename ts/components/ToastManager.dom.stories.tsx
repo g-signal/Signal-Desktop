@@ -56,6 +56,8 @@ function getToast(toastType: ToastType): AnyToast {
       };
     case ToastType.CallQualitySurveySuccess:
       return { toastType: ToastType.CallQualitySurveySuccess };
+    case ToastType.CannotAddMemberLabel:
+      return { toastType: ToastType.CannotAddMemberLabel };
     case ToastType.CannotEditMessage:
       return { toastType: ToastType.CannotEditMessage };
     case ToastType.CannotForwardEmptyMessage:
@@ -134,8 +136,14 @@ function getToast(toastType: ToastType): AnyToast {
       return { toastType: ToastType.DonationCompleted };
     case ToastType.DonationConfirmationNeeded:
       return { toastType: ToastType.DonationConfirmationNeeded };
+    case ToastType.DonationPaypalConfirmationNeeded:
+      return { toastType: ToastType.DonationPaypalConfirmationNeeded };
     case ToastType.DonationError:
       return { toastType: ToastType.DonationError };
+    case ToastType.DonationPaypalCanceled:
+      return { toastType: ToastType.DonationPaypalCanceled };
+    case ToastType.DonationPaypalError:
+      return { toastType: ToastType.DonationPaypalError };
     case ToastType.DonationProcessing:
       return { toastType: ToastType.DonationProcessing };
     case ToastType.DonationVerificationFailed:

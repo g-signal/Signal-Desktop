@@ -1,7 +1,7 @@
 // Copyright 2020 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import type { ReactNode } from 'react';
 
 import type {
@@ -31,6 +31,14 @@ import {
   InAnotherCallTooltip,
   getTooltipContent,
 } from './InAnotherCallTooltip.dom.js';
+import type {
+  ContactModalStateType,
+  ToggleGroupMemberLabelInfoModalType,
+} from '../../state/ducks/globalModals.preload.js';
+import { GroupMemberLabel } from './ContactName.dom.js';
+import { SignalService as Proto } from '../../protobuf/index.std.js';
+
+const ACCESS_ENUM = Proto.AccessControl.AccessRequired;
 
 const log = createLogger('ContactModal');
 
@@ -39,6 +47,9 @@ export type PropsDataType = {
   areWeAdmin: boolean;
   badges: ReadonlyArray<BadgeType>;
   contact?: ConversationType;
+  contactLabelEmoji: string | undefined;
+  contactLabelString: string | undefined;
+  contactNameColor: string | undefined;
   conversation?: ConversationType;
   hasStories?: HasStories;
   readonly i18n: LocalizerType;
@@ -59,12 +70,12 @@ type PropsActionType = {
   removeMemberFromGroup: (conversationId: string, contactId: string) => void;
   showConversation: ShowConversationType;
   startAvatarDownload: () => void;
+  toggleAboutContactModal: (options: ContactModalStateType) => unknown;
   toggleAdmin: (conversationId: string, contactId: string) => void;
-  toggleAboutContactModal: (conversationId: string) => unknown;
+  toggleAddUserToAnotherGroupModal: (conversationId: string) => void;
+  toggleGroupMemberLabelInfoModal: ToggleGroupMemberLabelInfoModalType;
   togglePip: () => void;
   toggleSafetyNumberModal: (conversationId: string) => unknown;
-  toggleAddUserToAnotherGroupModal: (conversationId: string) => void;
-  updateConversationModelSharedGroups: (conversationId: string) => void;
   viewUserStories: ViewUserStoriesActionCreatorType;
 };
 
@@ -89,6 +100,9 @@ export function ContactModal({
   badges,
   blockConversation,
   contact,
+  contactLabelEmoji,
+  contactLabelString,
+  contactNameColor,
   conversation,
   hasActiveCall,
   hasStories,
@@ -108,9 +122,9 @@ export function ContactModal({
   toggleAboutContactModal,
   toggleAddUserToAnotherGroupModal,
   toggleAdmin,
+  toggleGroupMemberLabelInfoModal,
   togglePip,
   toggleSafetyNumberModal,
-  updateConversationModelSharedGroups,
   viewUserStories,
 }: PropsType): React.JSX.Element {
   if (!contact) {
@@ -122,13 +136,6 @@ export function ContactModal({
     SubModalState.None
   );
   const modalTheme = getThemeByThemeType(theme);
-
-  useEffect(() => {
-    if (contact?.id) {
-      // Kick off the expensive hydration of the current sharedGroupNames
-      updateConversationModelSharedGroups(contact.id);
-    }
-  }, [contact?.id, updateConversationModelSharedGroups]);
 
   const renderQuickActions = React.useCallback(
     (conversationId: string) => {
@@ -227,6 +234,35 @@ export function ContactModal({
         break;
       }
 
+      if (
+        isAdmin &&
+        contactLabelString &&
+        conversation.accessControlAttributes === ACCESS_ENUM.ADMINISTRATOR
+      ) {
+        modalNode = (
+          <ConfirmationDialog
+            dialogName="ContactModal.toggleAdmin"
+            actions={[
+              {
+                action: () => toggleAdmin(conversation.id, contact.id),
+                text: isAdmin
+                  ? i18n('icu:ContactModal--rm-admin')
+                  : i18n('icu:ContactModal--make-admin'),
+                style: 'affirmative',
+              },
+            ]}
+            i18n={i18n}
+            onClose={() => setSubModalState(SubModalState.None)}
+            title={i18n('icu:ContactModal--rm-admin-info', {
+              contact: contact.title,
+            })}
+          >
+            {i18n('icu:ContactModal--rm-admin--clear-label')}
+          </ConfirmationDialog>
+        );
+        break;
+      }
+
       modalNode = (
         <ConfirmationDialog
           dialogName="ContactModal.toggleAdmin"
@@ -236,6 +272,7 @@ export function ContactModal({
               text: isAdmin
                 ? i18n('icu:ContactModal--rm-admin')
                 : i18n('icu:ContactModal--make-admin'),
+              style: 'affirmative',
             },
           ]}
           i18n={i18n}
@@ -347,7 +384,6 @@ export function ContactModal({
               }}
               onClickBadge={() => setView(ContactModalView.ShowingBadges)}
               profileName={contact.profileName}
-              sharedGroupNames={contact.sharedGroupNames}
               size={AvatarSize.EIGHTY}
               storyRing={hasStories}
               theme={theme}
@@ -358,7 +394,7 @@ export function ContactModal({
               className="ContactModal__name"
               onClick={ev => {
                 ev.preventDefault();
-                toggleAboutContactModal(contact.id);
+                toggleAboutContactModal({ contactId: contact.id });
               }}
             >
               <div className="ContactModal__name__text">
@@ -375,6 +411,29 @@ export function ContactModal({
               </div>
               <i className="ContactModal__name__chevron" />
             </button>
+            {contactLabelString && contactNameColor && (
+              <button
+                type="button"
+                className="ContactModal__member-label"
+                onClick={() => {
+                  if (conversation) {
+                    toggleGroupMemberLabelInfoModal({
+                      conversationId: conversation.id,
+                    });
+                  }
+                }}
+              >
+                <GroupMemberLabel
+                  emojiSize={14}
+                  contactLabel={{
+                    labelEmoji: contactLabelEmoji,
+                    labelString: contactLabelString,
+                  }}
+                  contactNameColor={contactNameColor}
+                  context="contact-modal"
+                />
+              </button>
+            )}
             {!contact.isMe && renderQuickActions(contact.id)}
             <div className="ContactModal__divider" />
             <div className="ContactModal__button-container">

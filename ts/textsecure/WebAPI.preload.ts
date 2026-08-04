@@ -15,15 +15,25 @@ import { v4 as getGuid } from 'uuid';
 import { z } from 'zod';
 import type { Readable } from 'node:stream';
 import qs from 'node:querystring';
-import { LibSignalErrorBase, ErrorCode } from '@signalapp/libsignal-client';
-import type {
-  KEMPublicKey,
-  PublicKey,
-  Aci,
-  Pni,
+import {
+  LibSignalErrorBase,
+  ErrorCode,
+  ServiceId,
+  type KEMPublicKey,
+  type PublicKey,
+  type Aci,
+  type Pni,
 } from '@signalapp/libsignal-client';
 import { AccountAttributes } from '@signalapp/libsignal-client/dist/net.js';
+import type {
+  ProvisioningConnection,
+  ProvisioningConnectionListener,
+} from '@signalapp/libsignal-client/dist/net.js';
 import { GroupSendFullToken } from '@signalapp/libsignal-client/zkgroup.js';
+import type {
+  Request as KTRequest,
+  MonitorMode as KTMonitorMode,
+} from '@signalapp/libsignal-client/dist/net/KeyTransparency.js';
 
 import { assertDev, strictAssert } from '../util/assert.std.js';
 import * as durations from '../util/durations/index.std.js';
@@ -89,7 +99,6 @@ import { createLogger } from '../logging/log.std.js';
 import { maybeParseUrl, urlPathFromComponents } from '../util/url.std.js';
 import { HOUR, MINUTE, SECOND } from '../util/durations/index.std.js';
 import { safeParseNumber } from '../util/numbers.std.js';
-import type { IWebSocketResource } from './WebsocketResources.preload.js';
 import { getLibsignalNet } from './preconnect.preload.js';
 import type { GroupSendToken } from '../types/GroupSendEndorsements.std.js';
 import {
@@ -120,6 +129,7 @@ import {
   type RemoteMegaphoneId,
 } from '../types/Megaphone.std.js';
 import { bindRemoteConfigToLibsignalNet } from '../LibsignalNetRemoteConfig.preload.js';
+import { KeyTransparencyStore } from '../LibSignalStores.preload.js';
 
 const { escapeRegExp, isNumber, throttle } = lodash;
 
@@ -375,7 +385,9 @@ async function getFetchOptions<Type extends ResponseType, OutputShape>(
     method: options.type,
     body: typeof options.data === 'function' ? options.data() : options.data,
     headers: {
-      'User-Agent': getUserAgent(options.version),
+      'User-Agent': options.socketManager
+        ? undefined
+        : getUserAgent(options.version),
       'X-Signal-Agent': 'OWD',
       ...options.headers,
     } as FetchHeaderListType,
@@ -728,7 +740,6 @@ export function makeKeysLowercase<V>(
 }
 
 const CHAT_CALLS = {
-  accountExistence: 'v1/accounts/account',
   attachmentUploadForm: 'v4/attachments/form/upload',
   attestation: 'v1/attestation',
   batchIdentityCheck: 'v1/profile/identity_check/batch',
@@ -886,7 +897,7 @@ export type GetGroupLogOptionsType = Readonly<{
 }>;
 export type GroupLogResponseType = {
   changes: Proto.GroupChanges;
-  groupSendEndorsementResponse: Uint8Array | null;
+  groupSendEndorsementsResponse: Uint8Array | null;
 } & (
   | {
       paginated: false;
@@ -1740,12 +1751,7 @@ const PARSE_RANGE_HEADER = /\/(\d+)$/;
 const PARSE_GROUP_LOG_RANGE_HEADER =
   /^versions\s+(\d{1,10})-(\d{1,10})\/(\d{1,10})/;
 
-const socketManager = new SocketManager(libsignalNet, {
-  url: chatServiceUrl,
-  certificateAuthority,
-  version,
-  proxyUrl,
-});
+const socketManager = new SocketManager(libsignalNet);
 
 socketManager.on('statusChange', () => {
   window.Whisper.events.emit('socketStatusChange');
@@ -2358,6 +2364,7 @@ export async function postBatchIdentityCheck(
     data: JSON.stringify({ elements }),
     call: 'batchIdentityCheck',
     httpType: 'POST',
+    unauthenticated: true,
     responseType: 'json',
     // TODO DESKTOP-8719
     zodSchema: z.unknown(),
@@ -2480,11 +2487,49 @@ export async function getAccountForUsername({
   hash,
 }: GetAccountForUsernameOptionsType): Promise<GetAccountForUsernameResultType> {
   const aci = await _retry(async () => {
-    const chat = await socketManager.getUnauthenticatedLibsignalApi();
+    const chat = await socketManager.getUnauthenticatedApi();
     return chat.lookUpUsernameHash({ hash });
   });
 
   return aci ? fromAciObject(aci) : null;
+}
+
+export async function keyTransparencySearch(
+  request: KTRequest,
+  abortSignal?: AbortSignal
+): Promise<void> {
+  return _retry(async () => {
+    const chat = await socketManager.getUnauthenticatedApi();
+    if (abortSignal?.aborted) {
+      throw new Error('Aborted');
+    }
+    const kt = chat.keyTransparencyClient();
+    const store = new KeyTransparencyStore();
+    return kt.search(request, store, { abortSignal });
+  });
+}
+
+export async function keyTransparencyMonitor(
+  request: KTRequest,
+  mode: KTMonitorMode,
+  abortSignal?: AbortSignal
+): Promise<void> {
+  return _retry(async () => {
+    const chat = await socketManager.getUnauthenticatedApi();
+    if (abortSignal?.aborted) {
+      throw new Error('Aborted');
+    }
+    const kt = chat.keyTransparencyClient();
+    const store = new KeyTransparencyStore();
+    return kt.monitor(
+      {
+        ...request,
+        mode,
+      },
+      store,
+      { abortSignal }
+    );
+  });
 }
 
 export async function putProfile(
@@ -2708,7 +2753,7 @@ export async function resolveUsernameLink({
   uuid,
 }: ResolveUsernameByLinkOptionsType): Promise<ResolveUsernameLinkResultType> {
   return _retry(async () => {
-    const chat = await socketManager.getUnauthenticatedLibsignalApi();
+    const chat = await socketManager.getUnauthenticatedApi();
     return chat.lookUpUsernameLink({ uuid, entropy });
   });
 }
@@ -2762,24 +2807,12 @@ export async function requestVerification(
 export async function checkAccountExistence(
   serviceId: ServiceIdString
 ): Promise<boolean> {
-  try {
-    await _ajax({
-      host: 'chatService',
-      httpType: 'HEAD',
-      call: 'accountExistence',
-      urlParameters: `/${serviceId}`,
-      unauthenticated: true,
-      accessKey: undefined,
-      groupSendToken: undefined,
+  return _retry(async () => {
+    const chat = await socketManager.getUnauthenticatedApi();
+    return chat.accountExists({
+      account: ServiceId.parseFromServiceIdString(serviceId),
     });
-    return true;
-  } catch (error) {
-    if (error instanceof HTTPError && error.code === 404) {
-      return false;
-    }
-
-    throw error;
-  }
+  });
 }
 
 export function startRegistration(): unknown {
@@ -3656,7 +3689,7 @@ export async function sendMulti(
   }
 
   const result = await _retry(async () => {
-    const chat = await socketManager.getUnauthenticatedLibsignalApi();
+    const chat = await socketManager.getUnauthenticatedApi();
     return chat.sendMultiRecipientMessage({
       payload,
       timestamp,
@@ -4734,7 +4767,7 @@ export async function getGroupLog(
   });
   const { data, response } = withDetails;
   const changes = Proto.GroupChanges.decode(data);
-  const { groupSendEndorsementResponse } = changes;
+  const { groupSendEndorsementsResponse } = changes;
 
   if (response && response.status === 206) {
     const range = response.headers.get('Content-Range');
@@ -4756,7 +4789,7 @@ export async function getGroupLog(
         start,
         end,
         currentRevision,
-        groupSendEndorsementResponse,
+        groupSendEndorsementsResponse,
       };
     }
   }
@@ -4764,7 +4797,7 @@ export async function getGroupLog(
   return {
     paginated: false,
     changes,
-    groupSendEndorsementResponse,
+    groupSendEndorsementsResponse,
   };
 }
 
@@ -4796,11 +4829,11 @@ export async function getHasSubscription(
   return data.subscription.active;
 }
 
-export function getProvisioningResource(
-  handler: IRequestHandler,
-  timeout?: number
-): Promise<IWebSocketResource> {
-  return socketManager.getProvisioningResource(handler, timeout);
+export function getProvisioningConnection(
+  listener: ProvisioningConnectionListener,
+  timeout: number
+): Promise<ProvisioningConnection> {
+  return socketManager.getProvisioningConnection(listener, timeout);
 }
 
 export async function cdsLookup({

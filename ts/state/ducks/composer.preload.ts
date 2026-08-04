@@ -78,11 +78,7 @@ import { writeDraftAttachment } from '../../util/writeDraftAttachment.preload.js
 import { getMessageById } from '../../messages/getMessageById.preload.js';
 import { canReply, isNormalBubble } from '../selectors/message.preload.js';
 import { getAuthorId } from '../../messages/sources.preload.js';
-import {
-  getActivePanel,
-  getConversationSelector,
-  getSelectedConversationId,
-} from '../selectors/conversations.dom.js';
+import { getConversationSelector } from '../selectors/conversations.dom.js';
 import { enqueueReactionForSend } from '../../reactions/enqueueReactionForSend.preload.js';
 import { enqueuePollTerminateForSend } from '../../polls/enqueuePollTerminateForSend.preload.js';
 import { useBoundActions } from '../../hooks/useBoundActions.std.js';
@@ -107,6 +103,11 @@ import {
   isVideoTypeSupported,
 } from '../../util/GoogleChrome.std.js';
 import type { StateThunk } from '../types.std.js';
+import { itemStorage } from '../../textsecure/Storage.preload.js';
+import {
+  getActivePanel,
+  getSelectedConversationId,
+} from '../selectors/nav.std.js';
 
 const { debounce, isEqual } = lodash;
 
@@ -379,7 +380,7 @@ function scrollToQuotedMessage({
       return;
     }
 
-    if (getState().conversations.selectedConversationId !== conversationId) {
+    if (getSelectedConversationId(getState()) !== conversationId) {
       return;
     }
 
@@ -391,7 +392,10 @@ function scrollToPinnedMessage(
   pinMessage: PinMessageData
 ): StateThunk<ShowToastActionType | ScrollToMessageActionType> {
   return async (dispatch, getState) => {
+    const ourAci = itemStorage.user.getCheckedAci();
+
     const pinnedMessage = await DataReader.getMessageByAuthorAciAndSentAt(
+      ourAci,
       pinMessage.targetAuthorAci,
       pinMessage.targetSentTimestamp,
       { includeEdits: true }
@@ -438,7 +442,7 @@ function scrollToPollMessage(
       return;
     }
 
-    if (getState().conversations.selectedConversationId !== conversationId) {
+    if (getSelectedConversationId(getState()) !== conversationId) {
       return;
     }
 
@@ -457,10 +461,10 @@ export function saveDraftRecordingIfNeeded(): ThunkAction<
   never
 > {
   return (dispatch, getState) => {
-    const { conversations, audioRecorder } = getState();
-    const { selectedConversationId: conversationId } = conversations;
+    const state = getState();
+    const conversationId = getSelectedConversationId(state);
 
-    if (!getIsRecording(audioRecorder) || !conversationId) {
+    if (!getIsRecording(state.audioRecorder) || !conversationId) {
       return;
     }
 
@@ -912,7 +916,7 @@ export function setQuoteByMessageId(
     const quote = await makeQuote(message.attributes);
 
     // In case the conversation changed while we were about to set the quote
-    if (getState().conversations.selectedConversationId !== conversationId) {
+    if (getSelectedConversationId(getState()) !== conversationId) {
       return;
     }
 
@@ -940,7 +944,7 @@ function addAttachment(
     const state = getState();
 
     const isSelectedConversation =
-      state.conversations.selectedConversationId === conversationId;
+      getSelectedConversationId(state) === conversationId;
 
     const conversationComposerState = getComposerStateForConversation(
       state.composer,
@@ -1014,7 +1018,7 @@ function addPendingAttachment(
     const state = getState();
 
     const isSelectedConversation =
-      state.conversations.selectedConversationId === conversationId;
+      getSelectedConversationId(state) === conversationId;
 
     const conversationComposerState = getComposerStateForConversation(
       state.composer,
@@ -1050,7 +1054,7 @@ export function setComposerFocus(
   conversationId: string
 ): ThunkAction<void, RootStateType, unknown, SetFocusActionType> {
   return async (dispatch, getState) => {
-    if (getState().conversations.selectedConversationId !== conversationId) {
+    if (getSelectedConversationId(getState()) !== conversationId) {
       return;
     }
 
@@ -1146,7 +1150,7 @@ function processAttachments({
 
     // If the call came from a conversation we are no longer in we do not
     // update the state.
-    if (getState().conversations.selectedConversationId !== conversationId) {
+    if (getSelectedConversationId(getState()) !== conversationId) {
       return;
     }
 
@@ -1378,7 +1382,7 @@ export function replaceAttachments(
   return (dispatch, getState) => {
     // If the call came from a conversation we are no longer in we do not
     // update the state.
-    if (getState().conversations.selectedConversationId !== conversationId) {
+    if (getSelectedConversationId(getState()) !== conversationId) {
       return;
     }
 

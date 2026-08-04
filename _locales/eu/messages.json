@@ -206,9 +206,6 @@
   "icu:viewMenuToggleDevTools": {
     "messageformat": "Aktibatu/Desaktibatu Garatzaileen Tresnak"
   },
-  "icu:viewMenuOpenCallingDevTools": {
-    "messageformat": "Ireki deietarako garatzaile-tresnak"
-  },
   "icu:menuSetupAsNewDevice": {
     "messageformat": "Ezarri Gailu Berri Gisa"
   },
@@ -578,14 +575,95 @@
   "icu:SafetyNumberViewer__hint": {
     "messageformat": "{name} erabiltzailearekin muturretik muturrerako enkriptatzea egiaztatzeko, alderatu goiko zenbakiak haren gailukoekin. Halaber, zure kodea eskanea dezake bere gailuarekin."
   },
+  "icu:SafetyNumberViewer__hint-v2": {
+    "messageformat": "{name} erabiltzailearekin muturretik muturrerako enkriptatzea egiaztatzeko, alderatu goiko zenbakiak haren gailukoekin. Halaber, zure kodea bere gailuarekin eskanea dezake."
+  },
   "icu:SafetyNumberViewer__learn_more": {
     "messageformat": "Informazio gehiago"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__title": {
+    "messageformat": "Gakoen egiaztapen automatikoa"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--idle": {
+    "messageformat": "Egiaztatu automatikoki"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--running": {
+    "messageformat": "Enkriptatzea egiaztatzen…"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--ok": {
+    "messageformat": "Egiaztatu da enkriptatzea"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--fail": {
+    "messageformat": "Egiaztapen automatikoa ez dago eskuragarri"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__hint": {
+    "messageformat": "Egiaztapen automatikoa ez dago eskuragarri txat guztietan."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__learn_more": {
+    "messageformat": "Informazio gehiago"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__title": {
+    "messageformat": "Enkriptatzea automatikoki egiaztatu da txat honetan "
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body": {
+    "messageformat": "Zurekin telefono-zenbaki bidez konektatuta dauden kontakuei dagokienez, B&A-ek \"gako-gardentasuna\" izeneko prozesu baten bidez egiazta dezake konexioa seguruan den. Segurtasun gehiago izateko, egiaztatu muturretik muturrerako enkriptatzea eskuz, aurreko pantailako zenbakiak alderatuz edo gailuko kodea eskaneatuz."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title": {
+    "messageformat": "Egiaztapen automatikoa ez dago eskuragarri dagoeneko txat honetarako"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body": {
+    "messageformat": "B&A-ek dagoeneko ezin du txat honen enkriptatzea automatikoki egiaztatu. Baliteke {name}(e)k telefonoa aldatu duelako izatea. Egiaztatu muturretik muturrerako enkriptatzea eskuz, aurreko pantailako zenbakiak alderatuz edo gailuko kodea eskaneatuz."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
+    "messageformat": "B&A-ek enkriptatzea automatikoki egiaztatu ahal izateko, zurekin telefono-zenbaki bidez konektatuta dauden pertsonekin izan behar dituzu txatak. Txata erabiltzaile-izen batekin edo talde komun batekin hasi bada, egiaztatu muturretik muturrerako enkriptatzea, aurreko pantailako zenbakiak alderatuz edo gailuko kodea eskaneatuz."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
+    "messageformat": "Ados"
   },
   "icu:SafetyNumberNotReady__body": {
     "messageformat": "Segurtasun-zenbaki bat sortuko da pertsona honekin mezuak trukatu ondoren."
   },
   "icu:SafetyNumberNotReady__learn-more": {
     "messageformat": "Gehiago jakin"
+  },
+  "icu:KeyTransparencyErrorDialog__Title": {
+    "messageformat": "Une honetan, gako-egiaztapen automatikoa ez dago erabilgarri zure gailuan. Arazketa-erregistroa bidali nahi duzu?"
+  },
+  "icu:KeyTransparencyErrorDialog__Description": {
+    "messageformat": "Arazketa-erregistroak arazoa diagnostikatzen eta konpontzen laguntzen digu, eta ez dute identifikazio-informaziorik."
+  },
+  "icu:KeyTransparencyErrorDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "Itxi"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label": {
+    "messageformat": "Partekatu arazketa-erregistroa"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__ViewButton": {
+    "messageformat": "Ikusi"
+  },
+  "icu:KeyTransparencyErrorDialog__Submit": {
+    "messageformat": "Bidali"
+  },
+  "icu:KeyTransparencyErrorDialog__Cancel": {
+    "messageformat": "Ez eskerrik asko"
+  },
+  "icu:KeyTransparencyErrorDialog__Submitting": {
+    "messageformat": "Bidaltzen…"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Title": {
+    "messageformat": "Orain, B&A-ek automatikoki egiazta dezake enkriptatzea"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Description": {
+    "messageformat": "Zurekin telefono-zenbaki bidez konektatuta dauden kontakuei dagokienez, B&A-ek \"gako-gardentasuna\" izeneko prozesu baten bidez egiazta dezake konexioa seguruan den. Segurtasun gehigarria emateko, konexioak eskuz egiazta ditzakezu oraindik ere, QR kode bat erabilita edo segurtasun-zenbakiak konparatuta."
+  },
+  "icu:KeyTransparencyOnboardingDialog__Continue": {
+    "messageformat": "Jarraitu"
+  },
+  "icu:KeyTransparencyOnboardingDialog__LearnMore": {
+    "messageformat": "Informazio gehiago"
+  },
+  "icu:KeyTransparencyOnboardingDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "Itxi"
   },
   "icu:verified": {
     "messageformat": "Egiaztatuta"
@@ -1033,6 +1111,12 @@
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} zure sistemako kontaktuetan dago"
+  },
+  "icu:AboutContactModal__add-member-label": {
+    "messageformat": "Gehitu kide-etiketa bat"
+  },
+  "icu:AboutContactModal__your-qr-code": {
+    "messageformat": "Zure QR kodea"
   },
   "icu:NotePreviewModal__Title": {
     "messageformat": "Oharra"
@@ -1712,6 +1796,15 @@
   "icu:Preferences__EditChatFolderPage__CancelButton": {
     "messageformat": "Utzi"
   },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Label": {
+    "messageformat": "Gakoen egiaztapen automatikoa"
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
+    "messageformat": "Gaitzen baduzu, B&A automatikoki saiatuko da banakako txaten enkriptatzea egiaztatzen."
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
+    "messageformat": "Informazio gehiago"
+  },
   "icu:initialSync": {
     "messageformat": "Kontaktuak eta taldeak sinkronizatzen"
   },
@@ -2338,6 +2431,9 @@
   },
   "icu:Toast--unable-download-from-backup-tier": {
     "messageformat": "Attachment missing from backup CDN"
+  },
+  "icu:ToastManager__CannotAddMemberLabel": {
+    "messageformat": "Adminek bakarrik ezar ditzakete kide-etiketak talde honetan."
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Mezu hau bidali eta 24 orduko epean soilik aplika daitezke aldaketak."
@@ -3753,7 +3849,7 @@
     "messageformat": "{max, plural, one {{max,number} aldaketa bakarrik egin daiteke mezu honetan.} other {{max,number} aldaketa bakarrik egin daitezke mezu honetan.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Barkatu, baxs:// esteka hori ez da zuzena!"
+    "messageformat": "Barkatu, sgnl:// esteka hori ez da zuzena!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "Ezin diozu mezurik bidali talde horri."
@@ -4538,6 +4634,9 @@
   "icu:ContactModal--rm-admin": {
     "messageformat": "Kendu administratzaile-maila"
   },
+  "icu:ContactModal--rm-admin--clear-label": {
+    "messageformat": "Haren kide-etiketa ere ezabatuko da."
+  },
   "icu:ContactModal--make-admin": {
     "messageformat": "Bihurtu administratzaile"
   },
@@ -4556,6 +4655,18 @@
   "icu:ContactModal--voice": {
     "messageformat": "Ahotsa"
   },
+  "icu:GroupMemberLabelInfoModal--title": {
+    "messageformat": "Kide-etiketak"
+  },
+  "icu:GroupMemberLabelInfoModal--description": {
+    "messageformat": "Erabili kide-etiketak zeure burua edo taldean duzun funtzioa deskribatzeko. Kide-etiketak talde barruan bakarrik egongo dira ikusgai."
+  },
+  "icu:GroupMemberLabelInfoModal--add-label": {
+    "messageformat": "Ezarri etiketa bat"
+  },
+  "icu:GroupMemberLabelInfoModal--edit-label": {
+    "messageformat": "Editatu etiketa"
+  },
   "icu:showChatColorEditor": {
     "messageformat": "Txat-kolorea"
   },
@@ -4570,6 +4681,39 @@
   },
   "icu:ConversationDetails--group-link": {
     "messageformat": "Talderako esteka"
+  },
+  "icu:ConversationDetails--member-label": {
+    "messageformat": "Kide-etiketa"
+  },
+  "icu:ConversationDetails--member-label--placeholder": {
+    "messageformat": "Idatzi kide-etiketa"
+  },
+  "icu:ConversationDetails--member-label--description": {
+    "messageformat": "Ezarri kide-etiketa bat zeure burua edo taldean duzun funtzioa deskribatzeko. Kide-etiketak talde barruan bakarrik egongo dira ikusgai."
+  },
+  "icu:ConversationDetails--member-label--preview": {
+    "messageformat": "Aurrebista"
+  },
+  "icu:ConversationDetails--member-label--hello": {
+    "messageformat": "Kaixo!"
+  },
+  "icu:ConversationDetails--member-label--list-header": {
+    "messageformat": "Etiketak dituzten taldeko kideak"
+  },
+  "icu:ConversationDetails--member-label--no-members": {
+    "messageformat": "Ez dago etiketak dituen beste kiderik"
+  },
+  "icu:ConversationDetails--member-label--saving": {
+    "messageformat": "Aldaketak gordetzen…"
+  },
+  "icu:ConversationDetails--member-label--error-title": {
+    "messageformat": "Ezin da gorde kide-etiketa"
+  },
+  "icu:ConversationDetails--member-label--error-generic": {
+    "messageformat": "Egiaztatu Internetera konektatuta zaudela eta saiatu berriro."
+  },
+  "icu:ConversationDetails--member-label--error-permissions": {
+    "messageformat": "Adminek bakarrik ezar ditzakete kide-etiketak talde honetan."
   },
   "icu:ConversationDetails--disappearing-messages-label": {
     "messageformat": "Mezuen desagerpena"
@@ -4604,6 +4748,9 @@
   "icu:ConversationDetails--group-info-info": {
     "messageformat": "Aukeratu nork edita ditzakeen taldearen izena, argazkia, deskribapena eta desagertzen diren mezuen tenporizadorea."
   },
+  "icu:ConversationDetails--group-info-info-v2": {
+    "messageformat": "Aukeratu nork edita ditzakeen taldearen izena, argazkia, azalpena, desagertzen diren mezuen tenporizadoreak eta ainguratutako mezuak."
+  },
   "icu:ConversationDetails--add-members-label": {
     "messageformat": "Nork gehitu ditzake kide berriak"
   },
@@ -4615,6 +4762,15 @@
   },
   "icu:ConversationDetails--announcement-info": {
     "messageformat": "Aukeratu nork bidal ditzakeen mezuak taldera."
+  },
+  "icu:ConversationDetails--label-clear-warning--title": {
+    "messageformat": "Kide-etiketak garbitu egingo dira"
+  },
+  "icu:ConversationDetails--label-clear-warning--description": {
+    "messageformat": "Baimen honetan \"Adminak bakarrik\" aukeratzen baduzu, taldeko adminak ez diren pertsonek ezarri dituzten kide-etiketak kendu egingo dira."
+  },
+  "icu:ConversationDetails--label-clear-warning--continue": {
+    "messageformat": "Jarraitu"
   },
   "icu:ConversationDetails--requests-and-invites": {
     "messageformat": "Eskaerak & Gonbidapenak"
@@ -4669,6 +4825,9 @@
   },
   "icu:ConversationDetailsMembershipList--add-members": {
     "messageformat": "Gehitu kideak"
+  },
+  "icu:ConversationDetailsMembershipList--add-member-label": {
+    "messageformat": "Gehitu kide-etiketa"
   },
   "icu:ConversationDetailsMembershipList--show-all": {
     "messageformat": "Ikusi denak"
@@ -4843,6 +5002,21 @@
   },
   "icu:DeleteMessagesModal__toast--TooManyMessagesToDeleteForEveryone": {
     "messageformat": "{count, plural, one {Gehienez {count,number} mezu hauta dezakezu guztientzat ezabatzeko} other {Gehienez {count,number} mezu hauta ditzakezu guztientzat ezabatzeko}}"
+  },
+  "icu:DeleteAttachmentModal__Title": {
+    "messageformat": "Elementua ezabatu nahi duzu?"
+  },
+  "icu:DeleteAttachmentModal__Body": {
+    "messageformat": "Betiko ezabatuko da elementua. Elementuarekin lotutako testu-mezuak ere ezabatuko dira."
+  },
+  "icu:DeleteAttachmentModal__Close": {
+    "messageformat": "Itxi"
+  },
+  "icu:DeleteAttachmentModal__Delete": {
+    "messageformat": "Ezabatu"
+  },
+  "icu:DeleteAttachmentModal__Cancel": {
+    "messageformat": "Utzi"
   },
   "icu:SelectModeActions__toast--TooManyMessagesToForward": {
     "messageformat": "Gehienez 30 mezu bidal ditzakezu"
@@ -5216,6 +5390,24 @@
   "icu:MediaGallery__EmptyState__description--documents-2": {
     "messageformat": "Bidaltzen eta jasotzen dituzun fitxategiak hemen agertuko dira"
   },
+  "icu:MediaGallery__ContextMenu__ViewInChat": {
+    "messageformat": "Ikusi txatean"
+  },
+  "icu:MediaGallery__ContextMenu__Forward": {
+    "messageformat": "Birbidali"
+  },
+  "icu:MediaGallery__ContextMenu__Save": {
+    "messageformat": "Gorde"
+  },
+  "icu:MediaGallery__ContextMenu__Send": {
+    "messageformat": "Bidali mezua"
+  },
+  "icu:MediaGallery__ContextMenu__Copy": {
+    "messageformat": "Kopiatu esteka"
+  },
+  "icu:MediaGallery__ContextMenu__Delete": {
+    "messageformat": "Ezabatu"
+  },
   "icu:MediaQualitySelector--button": {
     "messageformat": "Hautatu multimedia-edukiaren kalitatea"
   },
@@ -5429,6 +5621,10 @@
   "icu:AnnouncementsOnlyGroupBanner--admins": {
     "messageformat": "Administratzaileak"
   },
+  "icu:Avatar__View": {
+    "messageformat": "Ikusi",
+    "limit": 7
+  },
   "icu:AvatarEditor--choose": {
     "messageformat": "Hautatu abatar bat"
   },
@@ -5506,15 +5702,6 @@
   },
   "icu:Preferences__button--set-up": {
     "messageformat": "Konfiguratu"
-  },
-  "icu:Preferences__internal__local-backups": {
-    "messageformat": "Babeskopia lokalak"
-  },
-  "icu:Preferences__internal__export-local-backup": {
-    "messageformat": "Esportatu…"
-  },
-  "icu:Preferences__internal__export-local-backup--description": {
-    "messageformat": "Esportatu enkriptatutako babeskopia lokala karpeta batera eta baliozko ezazu"
   },
   "icu:Preferences__internal__validate-backup--description": {
     "messageformat": "Esportatu segurtasun-kopia enkriptatua memoriara eta exekutatu baliozkotze-paketea bertan"
@@ -7335,6 +7522,21 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A-ek ez du zure informazio pertsonalik biltzen edo gordetzen dohaintza bat egiten duzunean.</paragraph><paragraph>Stripe erabiltzen dugu ordainketa-prozesadore gisa zure dohaintzak jasotzeko. Ez dugu ematen diezun informaziorik atzitzen edo gordetzen.</paragraph><paragraph>B&A-ek ez du zure dohaintza zure B&A kontuarekin lotzen eta ezin du lotu.</paragraph><paragraph>Eskerrik asko zure babesagatik!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-intro": {
+    "messageformat": "Irabazi asmorik gabeko erakunde independente gisa, B&A-ek konpromisoa du mezu pribatuekiko. Iragarkirik gabe, jarraipen-tresnarik gabe, zaintzarik gabe. Egin dohaintza bat gaur B&A-i laguntzeko."
+  },
+  "icu:PreferencesDonations__privacy-modal-list-1": {
+    "messageformat": "Lortu profilerako aukerako bereizgarri bat dohaintza egitean"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-2": {
+    "messageformat": "Zure pribatutasuna da gure misioa"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-3": {
+    "messageformat": "B&A irabazi-asmorik gabeko erakundea da. US donations are tax deductible."
+  },
+  "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
+    "messageformat": "B&A-en logoaren estiloko bihotz-ikono bat"
+  },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "Ados"
   },
@@ -7425,6 +7627,15 @@
   "icu:DonateFlow__discard-dialog-remove-info": {
     "messageformat": "Kendu informazioa"
   },
+  "icu:DonateFlow__discard-paypal-dialog-body": {
+    "messageformat": "Orain irteten bazara, bertan behera utziko da dohaintza."
+  },
+  "icu:DonateFlow__discard-paypal-dialog-discard": {
+    "messageformat": "Irten"
+  },
+  "icu:DonateFlow__discard-paypal-dialog-cancel": {
+    "messageformat": "Geratu orrian"
+  },
   "icu:DonateFlow__continue": {
     "messageformat": "Jarraitu"
   },
@@ -7470,6 +7681,15 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Berretsi beharreko dohaintza bat duzu abian."
   },
+  "icu:Donations__Toast__PaypalConfirmationNeeded": {
+    "messageformat": "Berretsi beharreko dohaintza bat duzu abian."
+  },
+  "icu:Donations__Toast__PaypalCanceled": {
+    "messageformat": "Bertan behera utzi da PayPal bidezko dohaintza"
+  },
+  "icu:Donations__Toast__PaypalError": {
+    "messageformat": "Errore bat gertatu da PayPal bidezko dohaintza prozesatzean. Ez zaizu ezer kobratu."
+  },
   "icu:Donations__BadgeApplicationFailed__Title": {
     "messageformat": "Egin da dohaintza, baina ezin izan ditugu eguneratu bereizgarrien ezarpenak"
   },
@@ -7485,11 +7705,41 @@
   "icu:Donations__DonationInterrupted__RetryButton": {
     "messageformat": "Saiatu berriro"
   },
+  "icu:Donations__PaymentMethod": {
+    "messageformat": "Ordainketa-metodoa"
+  },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Ordainketa-metodo baztertu egin da"
   },
   "icu:Donations__PaymentMethodDeclined__Description": {
     "messageformat": "Saiatu berriro beste ordainketa-metodo batekin edo jarri harremanetan zure bankuarekin informazio gehiago lortzeko."
+  },
+  "icu:DonateFlow__PaymentCardIcon__AccessibilityLabel": {
+    "messageformat": "Ordainketa-txartelaren ikonoa"
+  },
+  "icu:DonateFlow__CreditOrDebitCard": {
+    "messageformat": "Kreditu- edo zordunketa-txartela"
+  },
+  "icu:DonateFlow__Paypal__AccessibilityLabel": {
+    "messageformat": "PayPal"
+  },
+  "icu:DonateFlow__Paypal__Cancel": {
+    "messageformat": "Utzi"
+  },
+  "icu:DonateFlow__Paypal__CompleteDonation": {
+    "messageformat": "Osatu dohaintza"
+  },
+  "icu:Donations__PaypalCanceled": {
+    "messageformat": "Bertan behera utzi da PayPal bidezko dohaintza"
+  },
+  "icu:Donations__PaypalCanceled__Description": {
+    "messageformat": "Ez zaizu ezer kobratu. Saiatu berriro edo erabili beste ordainketa-metodo bat."
+  },
+  "icu:Donations__PaypalError": {
+    "messageformat": "Errore bat gertatu da PayPal bidezko dohaintza prozesatzean"
+  },
+  "icu:Donations__PaypalError__Description": {
+    "messageformat": "Ez zaizu ezer kobratu. Saiatu berriro edo erabili beste ordainketa-metodo bat."
   },
   "icu:Donations__Failed3dsValidation": {
     "messageformat": "Egiaztapenak huts egin du"
@@ -7626,9 +7876,6 @@
   "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
     "messageformat": "Lagun iezaguzu hobetzen"
   },
-  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
-    "messageformat": "Horrela, deiei buruzko informazio gehiago lortu, eta zerk funtzionatzen duen eta zerk funtzionatzen ez duen jakingo dugu. Bidali aurretik, arazketa-erregistroa ikusi ahalko duzu."
-  },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
     "messageformat": "Bidaliz gero, iritzia eta <diagnosticInfoLink>deiari buruzko diagnostiko-informazioa</diagnosticInfoLink> bidaliko dira. Nahi baduzu, arazketa-erregistro bat parteka dezakezu, deien kalitatea hobetzen lagun diezagun."
   },
@@ -7637,9 +7884,6 @@
   },
   "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
     "messageformat": "Ikusi"
-  },
-  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
-    "messageformat": "Arazketa-erregistroek aplikazioari buruzko maila baxuko informazioa dute, eta ez dute mezuetako edukirik."
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
     "messageformat": "Gurekin partekatutako informazioaren artean, aplikazioaren maila baxuko informazioa dago, eta ez deien edukia."
@@ -7693,10 +7937,13 @@
     "messageformat": "Doikuntza txikiak, akats-konponketak eta errendimendu-hobekuntzak. Eskerrik asko B&A erabiltzeagatik!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.86--0": {
-    "messageformat": "Taldeko deietan eskua jasotzean agertzen zen bistaratze-akats txiki bat konpondu dugu."
+  "icu:WhatsNew__7.90--0": {
+    "messageformat": "Artista ofizialen bost eranskailu-pakete berri."
   },
-  "icu:WhatsNew__7.87--0": {
-    "messageformat": "Mezu ainguratuekin, informazio garrantzitsua eskura izan dezakezu txaten goialdean."
+  "icu:WhatsNew__8.0--0": {
+    "messageformat": "Hemen dira Babeskopia seguruak! Orain, muturretik muturrera enkriptatutako babeskopia automatikoak gai ditzakezu, telefonoz aldatzean edo B&A berriro instalatzean mezurik ez galtzeko. Mezu guztien eta azken 45 egunetako multimedia-edukien babeskopiak egin ditzakezu doan, edo hilean kuota txiki bat ordain dezakezu 100 GB lortzeko eta den-denaren babeskopiak egiteko, eranskinak barne. Hasteko, sakatu \"Babeskopiak\" B&A-en ezarpenetan. Eskerrik asko beta-eginbidea probatu duzuenoi!"
+  },
+  "icu:WhatsNew__8.1--0": {
+    "messageformat": "Orain, nahi baduzu, kide-etiketa bat gehi dezakezu zeure burua edo taldeko txatean duzun funtzioa deskribatzeko. Taldean duzun profileko izenaren alboan agertzen dira, eta taldeko adminek \"Editatu taldeari buruzko informazioa\" baimena erabil dezakete etiketak nork jar ditzakeen kontrolatzeko."
   }
 }

@@ -80,7 +80,6 @@ type PropsType = {
   | 'markedUnread'
   | 'phoneNumber'
   | 'profileName'
-  | 'sharedGroupNames'
   | 'title'
   | 'serviceId'
 > &
@@ -118,7 +117,6 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
       onMouseDown,
       phoneNumber,
       profileName,
-      sharedGroupNames,
       shouldShowSpinner,
       testId: overrideTestId,
       title,
@@ -221,7 +219,6 @@ export const BaseConversationListItem: FunctionComponent<PropsType> =
             phoneNumber={phoneNumber}
             profileName={profileName}
             title={title}
-            sharedGroupNames={sharedGroupNames}
             size={avatarSize ?? AvatarSize.FORTY_EIGHT}
             // This is here to appease the type checker.
             {...(props.badge

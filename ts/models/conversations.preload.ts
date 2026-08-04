@@ -21,7 +21,7 @@ import { DataReader, DataWriter } from '../sql/Client.preload.js';
 import { getConversation } from '../util/getConversation.preload.js';
 import {
   copyAttachmentIntoTempDirectory,
-  deleteAttachmentData,
+  maybeDeleteAttachmentFile,
   doesAttachmentExist,
   getAbsoluteAttachmentPath,
   getAbsoluteTempPath,
@@ -50,7 +50,6 @@ import {
 import { getDraftPreview } from '../util/getDraftPreview.preload.js';
 import { hasDraft } from '../util/hasDraft.std.js';
 import { hydrateStoryContext } from '../util/hydrateStoryContext.preload.js';
-import * as Conversation from '../types/Conversation.node.js';
 import type {
   StickerType,
   StickerWithHydratedData,
@@ -246,6 +245,7 @@ import {
   buildDisappearingMessagesTimerChange,
   buildGroupLink,
   buildInviteLinkPasswordChange,
+  buildModifyMemberLabelChange,
   buildModifyMemberRoleChange,
   buildNewGroupLinkChange,
   buildPromoteMemberChange,
@@ -350,8 +350,6 @@ export class ConversationModel {
   intlCollator = new Intl.Collator(undefined, { sensitivity: 'base' });
 
   lastSuccessfulGroupFetch?: number;
-
-  throttledUpdateSharedGroups?: () => Promise<void>;
 
   #cachedIdenticon?: CachedIdenticon;
 
@@ -510,10 +508,6 @@ export class ConversationModel {
 
     this.throttledBumpTyping = throttle(this.bumpTyping, 300);
     this.throttledUpdateUnread = throttle(this.#updateUnread, 300);
-    this.throttledUpdateSharedGroups = throttle(
-      this.updateSharedGroups.bind(this),
-      FIVE_MINUTES
-    );
     this.throttledFetchSMSOnlyUUID = throttle(
       this.fetchSMSOnlyUUID.bind(this),
       FIVE_MINUTES
@@ -2146,7 +2140,7 @@ export class ConversationModel {
     this.set({ e164: e164 || undefined });
 
     // This user changed their phone number
-    if (oldValue && e164 && this.get('sharingPhoneNumber')) {
+    if (oldValue && e164) {
       void this.addChangeNumberNotification(oldValue, e164);
     }
 
@@ -3697,7 +3691,7 @@ export class ConversationModel {
 
     const message = window.MessageCache.getById(notificationId);
     if (message) {
-      await DataWriter.removeMessage(message.id, {
+      await DataWriter.removeMessageById(message.id, {
         cleanupMessages,
       });
     }
@@ -3740,7 +3734,7 @@ export class ConversationModel {
 
     const message = window.MessageCache.getById(notificationId);
     if (message) {
-      await DataWriter.removeMessage(message.id, {
+      await DataWriter.removeMessageById(message.id, {
         cleanupMessages,
       });
     }
@@ -4220,7 +4214,7 @@ export class ConversationModel {
     if (preview && preview.length && !isForwarding) {
       attachments.forEach(attachment => {
         if (attachment.path) {
-          void deleteAttachmentData(attachment.path);
+          drop(maybeDeleteAttachmentFile(attachment.path));
         }
       });
     }
@@ -4244,7 +4238,7 @@ export class ConversationModel {
           const downscaledAttachment =
             await downscaleOutgoingAttachment(attachment);
           if (downscaledAttachment !== attachment && attachment.path) {
-            drop(deleteAttachmentData(attachment.path));
+            drop(maybeDeleteAttachmentFile(attachment.path));
           }
           return downscaledAttachment;
         })
@@ -4584,6 +4578,34 @@ export class ConversationModel {
       this.set({ messagesDeleted: false });
       await DataWriter.updateConversation(this.attributes);
     }
+  }
+
+  async updateGroupMemberLabel({
+    labelEmoji,
+    labelString,
+  }: {
+    labelEmoji: string | undefined;
+    labelString: string | undefined;
+  }): Promise<void> {
+    if (!isGroupV2(this.attributes)) {
+      return;
+    }
+
+    log.info('updateGroupMemberLabel for conversation', this.idForLogging());
+
+    const ourServiceId = itemStorage.user.getCheckedAci();
+
+    await this.modifyGroupV2({
+      name: 'updateGroupMemberLabel',
+      usingCredentialsFrom: [],
+      createGroupChange: async () =>
+        buildModifyMemberLabelChange({
+          serviceId: ourServiceId,
+          group: this.attributes,
+          labelEmoji,
+          labelString,
+        }),
+    });
   }
 
   async refreshGroupLink(): Promise<void> {
@@ -5022,22 +5044,6 @@ export class ConversationModel {
       );
   }
 
-  // This is an expensive operation we use to populate the message request hero row. It
-  //   shows groups the current user has in common with this potential new contact.
-  async updateSharedGroups(): Promise<void> {
-    const sharedGroups = await this.#getSharedGroups();
-
-    if (sharedGroups == null) {
-      return;
-    }
-
-    const sharedGroupNames = sharedGroups.map(conversation =>
-      conversation.getTitle()
-    );
-
-    this.set({ sharedGroupNames });
-  }
-
   onChangeProfileKey(): void {
     if (isDirectConversation(this.attributes)) {
       drop(this.getProfiles());
@@ -5125,6 +5131,16 @@ export class ConversationModel {
       return;
     }
 
+    const existingProfileAvatar = this.get('profileAvatar');
+
+    if (
+      existingProfileAvatar?.path &&
+      (await doesAttachmentExist(existingProfileAvatar.path)) &&
+      existingProfileAvatar.url === avatarUrl
+    ) {
+      return;
+    }
+
     const avatar = await doGetAvatar(avatarUrl);
 
     // If decryptionKey isn't provided, use the one from the model
@@ -5143,18 +5159,16 @@ export class ConversationModel {
     // decrypt
     const decrypted = decryptProfile(avatar, updatedDecryptionKey);
 
-    // update the conversation avatar only if hash differs
-    if (decrypted) {
-      const newAttributes = await Conversation.maybeUpdateProfileAvatar(
-        this.attributes,
-        {
-          data: decrypted,
-          writeNewAttachmentData,
-          deleteAttachmentData,
-          doesAttachmentExist,
-        }
-      );
-      this.set(newAttributes);
+    const newAttachment = await writeNewAttachmentData(decrypted);
+    this.set({
+      profileAvatar: {
+        url: avatarUrl,
+        ...newAttachment,
+      },
+    });
+
+    if (existingProfileAvatar?.path) {
+      await maybeDeleteAttachmentFile(existingProfileAvatar.path);
     }
   }
 
@@ -5683,7 +5697,7 @@ export class ConversationModel {
       );
       return getAbsoluteTempPath(tempPath);
     } finally {
-      await deleteAttachmentData(plaintextPath);
+      await maybeDeleteAttachmentFile(plaintextPath);
     }
   }
 

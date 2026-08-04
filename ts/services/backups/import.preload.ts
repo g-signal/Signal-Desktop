@@ -280,7 +280,6 @@ export class BackupImportStream extends Writable {
   #customColorById = new Map<number, CustomColorDataType>();
   #releaseNotesRecipientId: Long | undefined;
   #releaseNotesChatId: Long | undefined;
-  #pendingGroupAvatars = new Map<string, string>();
   #pinnedMessages: Array<PinnedMessageParams> = [];
   #frameErrorCount: number = 0;
   #backupTier: BackupLevel | undefined;
@@ -423,7 +422,19 @@ export class BackupImportStream extends Writable {
       // conversation's last message, which uses redux selectors)
       await loadAllAndReinitializeRedux();
 
-      const allConversations = window.ConversationController.getAll();
+      const allConversations = window.ConversationController.getAll().sort(
+        (convoA, convoB) => {
+          if (convoA.get('isPinned')) {
+            return -1;
+          }
+          if (convoB.get('isPinned')) {
+            return 1;
+          }
+          return (
+            (convoB.get('active_at') ?? 0) - (convoA.get('active_at') ?? 0)
+          );
+        }
+      );
 
       // Update last message in every active conversation now that we have
       // them loaded into memory.
@@ -446,12 +457,21 @@ export class BackupImportStream extends Writable {
 
       // Schedule group avatar download.
       await pMap(
-        [...this.#pendingGroupAvatars.entries()],
-        async ([conversationId, newAvatarUrl]) => {
+        allConversations,
+        async conversation => {
           if (this.options.type === 'cross-client-integration-test') {
             return;
           }
-          await groupAvatarJobQueue.add({ conversationId, newAvatarUrl });
+          if (
+            !isGroup(conversation.attributes) ||
+            !conversation.get('remoteAvatarUrl')
+          ) {
+            return;
+          }
+          await groupAvatarJobQueue.add({
+            conversationId: conversation.get('id'),
+            newAvatarUrl: conversation.get('remoteAvatarUrl'),
+          });
         },
         { concurrency: MAX_CONCURRENCY }
       );
@@ -753,6 +773,7 @@ export class BackupImportStream extends Writable {
     androidSpecificSettings,
     bioText,
     bioEmoji,
+    keyTransparencyData,
   }: Backups.IAccountData): Promise<void> {
     strictAssert(this.#ourConversation === undefined, 'Duplicate AccountData');
     const me = {
@@ -793,6 +814,15 @@ export class BackupImportStream extends Writable {
     }
     if (bioEmoji != null) {
       me.aboutEmoji = bioEmoji;
+    }
+    if (Bytes.isNotEmpty(keyTransparencyData)) {
+      const ourAci = this.#ourConversation?.serviceId;
+      strictAssert(
+        isAciString(ourAci),
+        'Must have our aci for Key Transparency data'
+      );
+
+      await DataWriter.setKTAccountData(ourAci, keyTransparencyData);
     }
     if (avatarUrlPath != null) {
       await itemStorage.put('avatarUrl', avatarUrlPath);
@@ -865,6 +895,10 @@ export class BackupImportStream extends Writable {
     await itemStorage.put(
       'hasStoriesDisabled',
       accountSettings?.storiesDisabled === true
+    );
+    await itemStorage.put(
+      'hasKeyTransparencyDisabled',
+      accountSettings?.allowAutomaticKeyVerification !== true
     );
 
     // an undefined value for storyViewReceiptsEnabled is semantically different from
@@ -1133,6 +1167,15 @@ export class BackupImportStream extends Writable {
       }
     }
 
+    if (Bytes.isNotEmpty(contact.keyTransparencyData)) {
+      strictAssert(
+        isAciString(serviceId),
+        'Must have contact aci for Key Transparency data'
+      );
+
+      await DataWriter.setKTAccountData(serviceId, contact.keyTransparencyData);
+    }
+
     return attrs;
   }
 
@@ -1196,6 +1239,7 @@ export class BackupImportStream extends Writable {
             url: avatarUrl,
           }
         : undefined,
+      remoteAvatarUrl: dropNull(avatarUrl),
       color: fromAvatarColor(group.avatarColor),
       colorFromPrimary: dropNull(group.avatarColor),
 
@@ -1219,18 +1263,22 @@ export class BackupImportStream extends Writable {
               SignalService.AccessControl.AccessRequired.UNKNOWN,
           }
         : undefined,
-      membersV2: members?.map(({ userId, role, joinedAtVersion }) => {
-        strictAssert(Bytes.isNotEmpty(userId), 'Empty gv2 member userId');
+      membersV2: members?.map(
+        ({ joinedAtVersion, labelEmoji, labelString, role, userId }) => {
+          strictAssert(Bytes.isNotEmpty(userId), 'Empty gv2 member userId');
 
-        // Note that we deliberately ignore profile key since it has to be
-        // in the Contact frame
+          // Note that we deliberately ignore profile key since it has to be
+          // in the Contact frame
 
-        return {
-          aci: fromAciObject(Aci.fromUuidBytes(userId)),
-          role: dropNull(role) ?? SignalService.Member.Role.UNKNOWN,
-          joinedAtVersion: dropNull(joinedAtVersion) ?? 0,
-        };
-      }),
+          return {
+            aci: fromAciObject(Aci.fromUuidBytes(userId)),
+            joinedAtVersion: dropNull(joinedAtVersion) ?? 0,
+            labelEmoji: dropNull(labelEmoji),
+            labelString: dropNull(labelString),
+            role: dropNull(role) ?? SignalService.Member.Role.UNKNOWN,
+          };
+        }
+      ),
       pendingMembersV2: membersPendingProfileKey?.map(
         ({ member, addedByUserId, timestamp }) => {
           strictAssert(member != null, 'Missing gv2 pending member');
@@ -1293,9 +1341,7 @@ export class BackupImportStream extends Writable {
         : undefined,
       announcementsOnly: dropNull(announcementsOnly),
     };
-    if (avatarUrl) {
-      this.#pendingGroupAvatars.set(attrs.id, avatarUrl);
-    }
+
     if (group.blocked) {
       await itemStorage.blocked.addBlockedGroup(groupId);
     }

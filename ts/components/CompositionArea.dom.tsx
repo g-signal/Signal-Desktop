@@ -43,6 +43,7 @@ import type {
   ShowConversationType,
 } from '../state/ducks/conversations.preload.js';
 import type { GetConversationByIdType } from '../state/selectors/conversations.dom.js';
+import type { GetSharedGroupNamesType } from '../util/sharedGroupNames.dom.js';
 import type { LinkPreviewForUIType } from '../types/message/LinkPreviews.std.js';
 import { isSameLinkPreview } from '../types/message/LinkPreviews.std.js';
 
@@ -95,7 +96,7 @@ export type OwnProps = Readonly<{
   areWeAdmin: boolean | null;
   areWePending: boolean | null;
   areWePendingApproval: boolean | null;
-  sharedGroupNames?: ReadonlyArray<string>;
+  getSharedGroupNames: GetSharedGroupNamesType;
   cancelRecording: () => unknown;
   completeRecording: (
     conversationId: string,
@@ -112,7 +113,11 @@ export type OwnProps = Readonly<{
   errorDialogAudioRecorderType: ErrorDialogAudioRecorderType | null;
   errorRecording: (e: ErrorDialogAudioRecorderType) => unknown;
   focusCounter: number;
-  groupAdmins: Array<ConversationType>;
+  groupAdmins: Array<{
+    member: ConversationType;
+    labelEmoji: string | undefined;
+    labelString: string | undefined;
+  }>;
   groupVersion: 1 | 2 | null;
   i18n: LocalizerType;
   imageToBlurHash: typeof imageToBlurHash;
@@ -121,11 +126,13 @@ export type OwnProps = Readonly<{
   isFormattingEnabled: boolean;
   isGroupV1AndDisabled: boolean | null;
   isMissingMandatoryProfileSharing: boolean | null;
+  isPollSend1to1Enabled: boolean;
   isSignalConversation: boolean | null;
   isActive: boolean;
   lastEditableMessageId: string | null;
   recordingState: RecordingState;
   messageCompositionId: string;
+  memberColors: Map<string, string>;
   shouldHidePopovers: boolean | null;
   isMuted: boolean;
   isSmsOnlyOrUnregistered: boolean | null;
@@ -243,6 +250,7 @@ export const CompositionArea = memo(function CompositionArea({
   i18n,
   imageToBlurHash,
   isDisabled,
+  isPollSend1to1Enabled,
   isSignalConversation,
   isMuted,
   isActive,
@@ -301,6 +309,7 @@ export const CompositionArea = memo(function CompositionArea({
   areWePending,
   areWePendingApproval,
   conversationType,
+  getSharedGroupNames,
   groupVersion,
   isBlocked,
   isHidden,
@@ -322,12 +331,12 @@ export const CompositionArea = memo(function CompositionArea({
   announcementsOnly,
   areWeAdmin,
   groupAdmins,
+  memberColors,
   cancelJoinRequest,
   showConversation,
   // SMS-only contacts
   isSmsOnlyOrUnregistered,
   isFetchingUUID,
-  sharedGroupNames,
   renderSmartCompositionRecording,
   renderSmartCompositionRecordingDraft,
   // Selected messages
@@ -781,7 +790,7 @@ export const CompositionArea = memo(function CompositionArea({
             <AxoDropdownMenu.Item symbol="file" onSelect={launchFilePicker}>
               {i18n('icu:CompositionArea__AttachMenu__File')}
             </AxoDropdownMenu.Item>
-            {conversationType === 'group' && (
+            {(conversationType === 'group' || isPollSend1to1Enabled) && (
               <AxoDropdownMenu.Item
                 symbol="poll"
                 onSelect={handleOpenPollModal}
@@ -923,11 +932,11 @@ export const CompositionArea = memo(function CompositionArea({
         conversationType={conversationType}
         conversationId={conversationId}
         conversationName={conversationName}
+        getSharedGroupNames={getSharedGroupNames}
         i18n={i18n}
         isBlocked={isBlocked}
         isHidden={isHidden}
         isReported={isReported}
-        sharedGroupNames={sharedGroupNames}
         acceptConversation={acceptConversation}
         reportSpam={reportSpam}
         blockAndReportSpam={blockAndReportSpam}
@@ -1016,8 +1025,10 @@ export const CompositionArea = memo(function CompositionArea({
   if (announcementsOnly && !areWeAdmin) {
     return (
       <AnnouncementsOnlyGroupBanner
+        getPreferredBadge={getPreferredBadge}
         groupAdmins={groupAdmins}
         i18n={i18n}
+        memberColors={memberColors}
         showConversation={showConversation}
         theme={theme}
       />

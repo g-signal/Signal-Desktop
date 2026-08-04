@@ -900,7 +900,6 @@ function LightboxHeader({
           i18n={i18n}
           phoneNumber={conversation.e164}
           profileName={conversation.profileName}
-          sharedGroupNames={conversation.sharedGroupNames}
           size={AvatarSize.THIRTY_TWO}
           title={conversation.title}
         />

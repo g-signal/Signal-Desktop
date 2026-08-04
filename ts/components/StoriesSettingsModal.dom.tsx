@@ -178,7 +178,6 @@ function DistributionListItem({
             color={me.color}
             conversationType={me.type}
             i18n={i18n}
-            sharedGroupNames={me.sharedGroupNames}
             size={AvatarSize.THIRTY_TWO}
             title={me.title}
           />
@@ -231,7 +230,6 @@ function GroupStoryItem({
           color={groupStory.color}
           conversationType={groupStory.type}
           i18n={i18n}
-          sharedGroupNames={[]}
           size={AvatarSize.THIRTY_TWO}
           title={groupStory.title}
         />
@@ -698,7 +696,6 @@ export function DistributionListSettingsModal({
                   color={member.color}
                   conversationType={member.type}
                   i18n={i18n}
-                  sharedGroupNames={member.sharedGroupNames}
                   size={AvatarSize.THIRTY_TWO}
                   theme={theme}
                   title={member.title}
@@ -1116,7 +1113,6 @@ export function EditDistributionListModal({
                 color={contact.color}
                 conversationType={contact.type}
                 i18n={i18n}
-                sharedGroupNames={contact.sharedGroupNames}
                 size={AvatarSize.THIRTY_TWO}
                 theme={theme}
                 title={contact.title}
@@ -1214,7 +1210,6 @@ export function EditDistributionListModal({
               isMe={contact.isMe}
               phoneNumber={contact.phoneNumber}
               profileName={contact.profileName}
-              sharedGroupNames={contact.sharedGroupNames}
               title={contact.title}
               onClickRemove={() => toggleSelectedConversation(contact.id)}
             />
@@ -1308,7 +1303,6 @@ export function GroupStorySettingsModal({
           color={group.color}
           conversationType={group.type}
           i18n={i18n}
-          sharedGroupNames={[]}
           size={AvatarSize.THIRTY_TWO}
           title={group.title}
         />
@@ -1336,7 +1330,6 @@ export function GroupStorySettingsModal({
               color={member.color}
               conversationType={member.type}
               i18n={i18n}
-              sharedGroupNames={[]}
               size={AvatarSize.THIRTY_TWO}
               title={member.title}
             />

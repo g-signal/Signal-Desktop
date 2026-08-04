@@ -6,6 +6,7 @@ import lodash from 'lodash';
 
 import type { MutableRefObject, ReactNode } from 'react';
 import { ListBox, ListBoxItem } from 'react-aria-components';
+import type { ReadonlyDeep } from 'type-fest';
 import { getDateTimeFormatter } from '../util/formatTimestamp.dom.js';
 
 import type { LocalizerType, ThemeType } from '../types/Util.std.js';
@@ -70,6 +71,7 @@ type PropsExternalType = {
 export type PropsDataType = {
   i18n: LocalizerType;
   initialCurrency: string;
+  isDonationPaypalEnabled: boolean;
   isOnline: boolean;
   settingsLocation: SettingsLocation;
   didResumeWorkflowAtStartup: boolean;
@@ -79,7 +81,7 @@ export type PropsDataType = {
   color: AvatarColorType | undefined;
   firstName: string | undefined;
   profileAvatarUrl?: string;
-  donationAmountsConfig: OneTimeDonationHumanAmounts | undefined;
+  donationAmountsConfig: ReadonlyDeep<OneTimeDonationHumanAmounts> | undefined;
   validCurrencies: ReadonlyArray<string>;
   donationReceipts: ReadonlyArray<DonationReceipt>;
   theme: ThemeType;
@@ -135,7 +137,7 @@ type PreferencesHomeProps = Pick<
   renderDonationHero: () => React.JSX.Element;
 };
 
-function isDonationPage(page: SettingsPage): page is DonationPage {
+export function isDonationsPage(page: SettingsPage): page is DonationPage {
   return (
     page === SettingsPage.Donations ||
     page === SettingsPage.DonationsDonateFlow ||
@@ -184,7 +186,6 @@ function DonationHero({
           conversationType="direct"
           title={firstName ?? ''}
           i18n={i18n}
-          sharedGroupNames={[]}
           size={AvatarSize.SEVENTY_TWO}
           theme={theme}
         />
@@ -240,7 +241,7 @@ function DonationsHome({
     <span className={tw('mb-8')}>
       <AxoButton.Root
         variant={isOnline ? 'primary' : 'secondary'}
-        size="md"
+        size="lg"
         disabled={!isOnline}
         onClick={handleDonateButtonClicked}
       >
@@ -364,13 +365,17 @@ function PreferencesReceiptList({
     [donationReceipts]
   );
 
-  const receiptsByYear = useMemo(() => {
+  const receiptsByYearEntries = useMemo(() => {
     const sortedReceipts = sortBy(
       donationReceipts,
       receipt => -receipt.timestamp
     );
-    return groupBy(sortedReceipts, receipt =>
+    const yearToReceipts = groupBy(sortedReceipts, receipt =>
       new Date(receipt.timestamp).getFullYear()
+    );
+
+    return Object.entries(yearToReceipts).sort(
+      ([yearA], [yearB]) => parseInt(yearB, 10) - parseInt(yearA, 10)
     );
   }, [donationReceipts]);
 
@@ -428,7 +433,7 @@ function PreferencesReceiptList({
             </div>
           </div>
 
-          {Object.entries(receiptsByYear).map(([year, receipts]) => (
+          {receiptsByYearEntries.map(([year, receipts]) => (
             <div
               key={year}
               className="PreferencesDonations--receiptList-yearContainer"
@@ -544,6 +549,7 @@ export function PreferencesDonations({
   contentsRef,
   i18n,
   initialCurrency,
+  isDonationPaypalEnabled,
   isOnline,
   settingsLocation,
   workflow,
@@ -615,7 +621,7 @@ export function PreferencesDonations({
     [badge, color, firstName, i18n, profileAvatarUrl, theme]
   );
 
-  if (!isDonationPage(settingsLocation.page)) {
+  if (!isDonationsPage(settingsLocation.page)) {
     return null;
   }
 
@@ -717,6 +723,9 @@ export function PreferencesDonations({
           }}
         />
       );
+    } else if (workflow?.type === donationStateSchema.Enum.PAYPAL_INTENT) {
+      // No need to show the dialog here because PreferencesDonateFlow already
+      // initiates a dialog when redirecting to PayPal.
     } else {
       dialog = (
         <DonationProgressModal
@@ -744,13 +753,17 @@ export function PreferencesDonations({
         <PreferencesDonateFlow
           contentsRef={contentsRef}
           i18n={i18n}
+          isDonationPaypalEnabled={isDonationPaypalEnabled}
           isOnline={isOnline}
           initialCurrency={initialCurrency}
           donationAmountsConfig={donationAmountsConfig}
           lastError={lastError}
           validCurrencies={validCurrencies}
           workflow={workflow}
-          clearWorkflow={clearWorkflow}
+          clearWorkflow={() => {
+            clearWorkflow();
+            setIsSubmitted(false);
+          }}
           renderDonationHero={renderDonationHero}
           submitDonation={details => {
             setIsSubmitted(true);

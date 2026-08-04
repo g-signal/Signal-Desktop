@@ -206,9 +206,6 @@
   "icu:viewMenuToggleDevTools": {
     "messageformat": "เปิดปิดเครื่องมือนักพัฒนา"
   },
-  "icu:viewMenuOpenCallingDevTools": {
-    "messageformat": "เปิดเครื่องมือด้านการโทรสำหรับนักพัฒนา"
-  },
   "icu:menuSetupAsNewDevice": {
     "messageformat": "ตั้งค่าให้เป็นอุปกรณ์ใหม่"
   },
@@ -578,14 +575,95 @@
   "icu:SafetyNumberViewer__hint": {
     "messageformat": "เพื่อยืนยันว่าการติดต่อสื่อสารกับ {name} ถูกเข้ารหัสตั้งแต่ต้นทางถึงปลายทาง ให้เปรียบเทียบหมายเลขด้านบนนี้กับหมายเลขบนอุปกรณ์ของคนคนนั้นว่าตรงกันหรือไม่ หรืออาจให้ผู้ติดต่อใช้อุปกรณ์ในการสแกนรหัสของคุณก็ได้"
   },
+  "icu:SafetyNumberViewer__hint-v2": {
+    "messageformat": "เพื่อยืนยันว่าการติดต่อสื่อสารกับ {name} ถูกเข้ารหัสตั้งแต่ต้นทางถึงปลายทาง ให้เปรียบเทียบหมายเลขด้านบนนี้กับหมายเลขบนอุปกรณ์ของคนคนนั้นว่าตรงกันหรือไม่ หรืออาจให้ผู้ติดต่อใช้อุปกรณ์ในการสแกนรหัสของคุณก็ได้"
+  },
   "icu:SafetyNumberViewer__learn_more": {
     "messageformat": "เรียนรู้เพิ่มเติม"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__title": {
+    "messageformat": "การตรวจยืนยันโดยอัตโนมัติ"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--idle": {
+    "messageformat": "ตรวจยืนยันอัตโนมัติ"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--running": {
+    "messageformat": "กำลังตรวจยืนยันการเข้ารหัส..."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--ok": {
+    "messageformat": "ตรวจยืนยันการเข้ารหัสแล้ว"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--fail": {
+    "messageformat": "ไม่สามารถใช้การตรวจยืนยันอัตโนมัติได้"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__hint": {
+    "messageformat": "การตรวจยืนยันอัตโนมัติไม่สามารถใช้ได้กับแชททุกประเภท"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__learn_more": {
+    "messageformat": "เรียนรู้เพิ่มเติม"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__title": {
+    "messageformat": "การเข้ารหัสของแชทนี้ได้รับการตรวจยืนยันโดยอัตโนมัติแล้ว "
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body": {
+    "messageformat": "หากคุณและผู้ติดต่อเชื่อมโยงกันผ่านทางหมายเลขโทรศัพท์ B&A จะสามารถใช้ขั้นตอนที่เรียกว่า Key Transparency ในการยืนยันความปลอดภัยของเครือข่ายโดยอัตโนมัติ เพื่อความปลอดภัยยิ่งขึ้น คุณยังสามารถตรวจยืนยันการเข้ารหัสตั้งแต่ต้นทางถึงปลายทางด้วยตนเองโดยเทียบหมายเลขซึ่งแสดงในหน้าที่แล้วหรือสแกนคิวอาร์โค้ดบนอุปกรณ์ของผู้ติดต่อ"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title": {
+    "messageformat": "ไม่สามารถใช้การตรวจยืนยันอัตโนมัติกับแชทนี้ได้แล้ว"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body": {
+    "messageformat": "B&A ไม่สามารถตรวจยืนยันการเข้ารหัสของแชทนี้โดยอัตโนมัติได้อีกต่อไป นี่น่าจะเป็นเพราะ {name} เปลี่ยนหมายเลขโทรศัพท์ คุณยังสามารถตรวจยืนยันการเข้ารหัสตั้งแต่ต้นทางถึงปลายทางด้วยตนเองโดยเทียบหมายเลขซึ่งแสดงในหน้าที่แล้วหรือสแกนคิวอาร์โค้ดบนอุปกรณ์ของผู้ติดต่อ"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
+    "messageformat": "B&A จะสามารถตรวจยืนยันการเข้ารหัสโดยอัตโนมัติได้เฉพาะในแชทที่คุณและผู้ติดต่อเชื่อมโยงกันผ่านทางหมายเลขโทรศัพท์เท่านั้น ในกรณีของแชทที่เริ่มต้นผ่านทางชื่อผู้ใช้หรือการมีกลุ่มร่วมกัน คุณสามารถตรวจยืนยันการเข้ารหัสตั้งแต่ต้นทางถึงปลายทางโดยเทียบหมายเลขซึ่งแสดงในหน้าที่แล้วหรือสแกนคิวอาร์โค้ดบนอุปกรณ์ของผู้ติดต่อ"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
+    "messageformat": "ตกลง"
   },
   "icu:SafetyNumberNotReady__body": {
     "messageformat": "ระบบจะสร้างหมายเลขความปลอดภัยสำหรับผู้ติดต่อหลังจากที่คุณส่งหรือรับข้อความจากคนคนนี้"
   },
   "icu:SafetyNumberNotReady__learn-more": {
     "messageformat": "เรียนรู้เพิ่มเติม"
+  },
+  "icu:KeyTransparencyErrorDialog__Title": {
+    "messageformat": "ไม่สามารถใช้การตรวจยืนยันโดยอัตโนมัติได้บนอุปกรณ์ของคุณ คุณต้องการส่งบันทึกดีบักหรือไม่"
+  },
+  "icu:KeyTransparencyErrorDialog__Description": {
+    "messageformat": "บันทึกดีบักจะช่วยให้เราสามารถตรวจสอบและแก้ไขปัญหาได้ โดยที่ในบันทึกจะไม่มีข้อมูลที่ใช้ระบุตัวตน"
+  },
+  "icu:KeyTransparencyErrorDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "ปิด"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label": {
+    "messageformat": "แชร์บันทึกดีบัก"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__ViewButton": {
+    "messageformat": "ดู"
+  },
+  "icu:KeyTransparencyErrorDialog__Submit": {
+    "messageformat": "ส่ง"
+  },
+  "icu:KeyTransparencyErrorDialog__Cancel": {
+    "messageformat": "ไม่ ขอบคุณ"
+  },
+  "icu:KeyTransparencyErrorDialog__Submitting": {
+    "messageformat": "กำลังส่ง..."
+  },
+  "icu:KeyTransparencyOnboardingDialog__Title": {
+    "messageformat": "B&A สามารถตรวจยืนยันการเข้ารหัสโดยอัตโนมัติได้แล้ว"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Description": {
+    "messageformat": "หากคุณและผู้ติดต่อเชื่อมโยงกันผ่านทางหมายเลขโทรศัพท์ B&A จะสามารถใช้ขั้นตอนที่เรียกว่า Key Transparency ในการยืนยันความปลอดภัยของเครือข่ายโดยอัตโนมัติ เพื่อความปลอดภัยยิ่งขึ้น คุณยังคงสามารถตรวจยืนยันเครือข่ายด้วยตนเองผ่านทางคิวอาร์โค้ดหรือโดยการเทียบหมายเลขความปลอดภัย"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Continue": {
+    "messageformat": "ดำเนินการต่อ"
+  },
+  "icu:KeyTransparencyOnboardingDialog__LearnMore": {
+    "messageformat": "เรียนรู้เพิ่มเติม"
+  },
+  "icu:KeyTransparencyOnboardingDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "ปิด"
   },
   "icu:verified": {
     "messageformat": "ตรวจยืนยันแล้ว"
@@ -1033,6 +1111,12 @@
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} อยู่ในรายชื่อผู้ติดต่อของระบบคุณ"
+  },
+  "icu:AboutContactModal__add-member-label": {
+    "messageformat": "เพิ่มป้ายกำกับสมาชิก"
+  },
+  "icu:AboutContactModal__your-qr-code": {
+    "messageformat": "คิวอาร์โค้ดของคุณ"
   },
   "icu:NotePreviewModal__Title": {
     "messageformat": "โน้ต"
@@ -1712,6 +1796,15 @@
   "icu:Preferences__EditChatFolderPage__CancelButton": {
     "messageformat": "ยกเลิก"
   },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Label": {
+    "messageformat": "การตรวจยืนยันโดยอัตโนมัติ"
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
+    "messageformat": "หากเปิดใช้งาน B&A จะพยายามตรวจยืนยันการเข้ารหัสของแชทส่วนตัวโดยอัตโนมัติ"
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
+    "messageformat": "เรียนรู้เพิ่มเติม"
+  },
   "icu:initialSync": {
     "messageformat": "กำลังปรับประสานรายชื่อผู้ติดต่อและกลุ่ม"
   },
@@ -2338,6 +2431,9 @@
   },
   "icu:Toast--unable-download-from-backup-tier": {
     "messageformat": "Attachment missing from backup CDN"
+  },
+  "icu:ToastManager__CannotAddMemberLabel": {
+    "messageformat": "มีแค่ผู้ดูแลกลุ่มเท่านั้นที่จะสามารถเพิ่มป้ายกำกับสมาชิกในกลุ่มนี้"
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "สามารถแก้ไขข้อความนี้ได้ภายใน 24 ชั่วโมงนับจากเวลาที่คุณส่ง"
@@ -4538,6 +4634,9 @@
   "icu:ContactModal--rm-admin": {
     "messageformat": "ปลดจากการเป็นผู้ดูแล"
   },
+  "icu:ContactModal--rm-admin--clear-label": {
+    "messageformat": "ป้ายกำกับสมาชิกของผู้ใช้คนนี้จะถูกล้างด้วยเช่นกัน"
+  },
   "icu:ContactModal--make-admin": {
     "messageformat": "แต่งตั้งเป็นผู้ดูแล"
   },
@@ -4556,6 +4655,18 @@
   "icu:ContactModal--voice": {
     "messageformat": "เสียง"
   },
+  "icu:GroupMemberLabelInfoModal--title": {
+    "messageformat": "ป้ายกำกับสมาชิก"
+  },
+  "icu:GroupMemberLabelInfoModal--description": {
+    "messageformat": "ใช้ป้ายกำกับสมาชิกเพื่อบรรยายตัวเองหรือระบุบทบาทของคุณในกลุ่มนี้ โดยระบบจะแสดงป้ายกำกับสมาชิกให้เห็นเฉพาะภายในกลุ่มนี้เท่านั้น"
+  },
+  "icu:GroupMemberLabelInfoModal--add-label": {
+    "messageformat": "กำหนดป้ายกำกับ"
+  },
+  "icu:GroupMemberLabelInfoModal--edit-label": {
+    "messageformat": "แก้ไขป้ายกำกับของคุณ"
+  },
   "icu:showChatColorEditor": {
     "messageformat": "สีแชท"
   },
@@ -4570,6 +4681,39 @@
   },
   "icu:ConversationDetails--group-link": {
     "messageformat": "ลิงก์กลุ่ม"
+  },
+  "icu:ConversationDetails--member-label": {
+    "messageformat": "ป้ายกำกับสมาชิก"
+  },
+  "icu:ConversationDetails--member-label--placeholder": {
+    "messageformat": "ใส่ป้ายกำกับสมาชิกของคุณ"
+  },
+  "icu:ConversationDetails--member-label--description": {
+    "messageformat": "กำหนดป้ายกำกับสมาชิกเพื่อบรรยายตัวเองหรือระบุบทบาทของคุณในกลุ่มนี้ โดยระบบจะแสดงป้ายกำกับสมาชิกให้เห็นเฉพาะภายในกลุ่มนี้เท่านั้น"
+  },
+  "icu:ConversationDetails--member-label--preview": {
+    "messageformat": "ดูตัวอย่าง"
+  },
+  "icu:ConversationDetails--member-label--hello": {
+    "messageformat": "สวัสดี!"
+  },
+  "icu:ConversationDetails--member-label--list-header": {
+    "messageformat": "สมาชิกกลุ่มที่มีป้ายกำกับ"
+  },
+  "icu:ConversationDetails--member-label--no-members": {
+    "messageformat": "ไม่มีสมาชิกคนอื่นที่มีป้ายกำกับ"
+  },
+  "icu:ConversationDetails--member-label--saving": {
+    "messageformat": "กำลังบันทึกการเปลี่ยนแปลง..."
+  },
+  "icu:ConversationDetails--member-label--error-title": {
+    "messageformat": "ไม่สามารถบันทึกป้ายกำกับสมาชิกได้"
+  },
+  "icu:ConversationDetails--member-label--error-generic": {
+    "messageformat": "ตรวจสอบการเชื่อมต่อของคุณแล้วลองอีกครั้ง"
+  },
+  "icu:ConversationDetails--member-label--error-permissions": {
+    "messageformat": "มีแค่ผู้ดูแลกลุ่มเท่านั้นที่จะสามารถกำหนดป้ายกำกับสมาชิกในกลุ่มนี้"
   },
   "icu:ConversationDetails--disappearing-messages-label": {
     "messageformat": "ข้อความที่ลบตัวเอง"
@@ -4604,6 +4748,9 @@
   "icu:ConversationDetails--group-info-info": {
     "messageformat": "เลือกว่าใครสามารถแก้ไขชื่อกลุ่ม รูปภาพ และตั้งเวลาให้ข้อความหายไป"
   },
+  "icu:ConversationDetails--group-info-info-v2": {
+    "messageformat": "เลือกว่าใครสามารถแก้ไขชื่อกลุ่ม รูปภาพ คำอธิบาย รวมถึงตั้งเวลาให้ข้อความหายไปและข้อความที่ปักหมุดไว้"
+  },
   "icu:ConversationDetails--add-members-label": {
     "messageformat": "ใครสามารถเพิ่มสมาชิกได้"
   },
@@ -4615,6 +4762,15 @@
   },
   "icu:ConversationDetails--announcement-info": {
     "messageformat": "เลือกว่าใครสามารถส่งข้อความไปยังกลุ่มได้"
+  },
+  "icu:ConversationDetails--label-clear-warning--title": {
+    "messageformat": "ป้ายกำกับสมาชิกจะถูกล้าง"
+  },
+  "icu:ConversationDetails--label-clear-warning--description": {
+    "messageformat": "เมื่อเปลี่ยนการตั้งค่าสิทธิ์นี้เป็น “เฉพาะผู้ดูแล” ป้ายกำกับสมาชิกที่ไม่ได้กำหนดโดยผู้ดูแลกลุ่มนี้จะถูกล้าง"
+  },
+  "icu:ConversationDetails--label-clear-warning--continue": {
+    "messageformat": "ดำเนินการต่อ"
   },
   "icu:ConversationDetails--requests-and-invites": {
     "messageformat": "คำขอและคำเชิญ"
@@ -4669,6 +4825,9 @@
   },
   "icu:ConversationDetailsMembershipList--add-members": {
     "messageformat": "เพิ่มสมาชิก"
+  },
+  "icu:ConversationDetailsMembershipList--add-member-label": {
+    "messageformat": "เพิ่มป้ายกำกับสมาชิก"
   },
   "icu:ConversationDetailsMembershipList--show-all": {
     "messageformat": "ดูทั้งหมด"
@@ -4843,6 +5002,21 @@
   },
   "icu:DeleteMessagesModal__toast--TooManyMessagesToDeleteForEveryone": {
     "messageformat": "{count, plural, other {คุณสามารถเลือกลบข้อความสำหรับทุกคนได้สูงสุด {count,number} ข้อความ}}"
+  },
+  "icu:DeleteAttachmentModal__Title": {
+    "messageformat": "ลบรายการนี้ใช่หรือไม่"
+  },
+  "icu:DeleteAttachmentModal__Body": {
+    "messageformat": "รายการนี้จะถูกลบอย่างถาวร โดยข้อความที่เกี่ยวข้องกับรายการนี้จะถูกลบด้วย"
+  },
+  "icu:DeleteAttachmentModal__Close": {
+    "messageformat": "ปิด"
+  },
+  "icu:DeleteAttachmentModal__Delete": {
+    "messageformat": "ลบ"
+  },
+  "icu:DeleteAttachmentModal__Cancel": {
+    "messageformat": "ยกเลิก"
   },
   "icu:SelectModeActions__toast--TooManyMessagesToForward": {
     "messageformat": "ส่งต่อข้อความได้สูงสุด 30 รายการเท่านั้น"
@@ -5216,6 +5390,24 @@
   "icu:MediaGallery__EmptyState__description--documents-2": {
     "messageformat": "ไฟล์ที่คุณส่งและได้รับจะปรากฏในหน้านี้"
   },
+  "icu:MediaGallery__ContextMenu__ViewInChat": {
+    "messageformat": "ดูในแชท"
+  },
+  "icu:MediaGallery__ContextMenu__Forward": {
+    "messageformat": "ส่งต่อ"
+  },
+  "icu:MediaGallery__ContextMenu__Save": {
+    "messageformat": "บันทึก"
+  },
+  "icu:MediaGallery__ContextMenu__Send": {
+    "messageformat": "ส่งข้อความ"
+  },
+  "icu:MediaGallery__ContextMenu__Copy": {
+    "messageformat": "คัดลอกลิงก์"
+  },
+  "icu:MediaGallery__ContextMenu__Delete": {
+    "messageformat": "ลบ"
+  },
   "icu:MediaQualitySelector--button": {
     "messageformat": "เลือกคุณภาพสื่อ"
   },
@@ -5429,6 +5621,10 @@
   "icu:AnnouncementsOnlyGroupBanner--admins": {
     "messageformat": "ผู้ดูแล"
   },
+  "icu:Avatar__View": {
+    "messageformat": "ดู",
+    "limit": 7
+  },
   "icu:AvatarEditor--choose": {
     "messageformat": "เลือกอวตาร"
   },
@@ -5506,15 +5702,6 @@
   },
   "icu:Preferences__button--set-up": {
     "messageformat": "ตั้งค่า"
-  },
-  "icu:Preferences__internal__local-backups": {
-    "messageformat": "ข้อมูลสำรองในเครื่อง"
-  },
-  "icu:Preferences__internal__export-local-backup": {
-    "messageformat": "ส่งออก…"
-  },
-  "icu:Preferences__internal__export-local-backup--description": {
-    "messageformat": "ส่งออกข้อมูลสำรองที่เข้ารหัสในเครื่องไปยังโฟลเดอร์และตรวจสอบความถูกต้อง"
   },
   "icu:Preferences__internal__validate-backup--description": {
     "messageformat": "ส่งออกข้อมูลสำรองที่เข้ารหัสไปยังหน่วยความจำและดำเนินการตรวจสอบความถูกต้อง"
@@ -7335,6 +7522,21 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>เมื่อคุณบริจาคเงิน B&A ไม่ได้รวบรวมหรือจัดเก็บข้อมูลส่วนบุคคลใดๆ ของคุณ</paragraph><paragraph>เราใช้ Stripe เป็นผู้ให้บริการการชำระเงินในการรับเงินบริจาคของคุณโดยเราจะไม่เข้าถึง จัดเก็บ หรือบันทึกข้อมูลใดๆ ที่คุณกรอกระหว่างทำธุรกรรม</paragraph><paragraph>B&A จะไม่เชื่อมโยงการบริจาคของคุณเข้ากับบัญชี B&A ของคุณ (และนี่เป็นสิ่งที่เราไม่สามารถทำได้อีกด้วย)</paragraph><paragraph>ขอบคุณสำหรับการสนับสนุนของคุณ!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-intro": {
+    "messageformat": "B&A เป็นแอปอิสระที่ไม่แสวงหาผลกำไร เรามุ่งมั่นให้บริการการส่งข้อความและการโทรที่เป็นส่วนตัว ไม่มีโฆษณา ไม่มีการติดตาม และไม่มีการเก็บข้อมูล บริจาควันนี้เพื่อร่วมสนับสนุน B&A"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-1": {
+    "messageformat": "บริจาคแล้วรับโล่เพื่อเลือกแสดงบนโปรไฟล์ของคุณ"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-2": {
+    "messageformat": "ความเป็นส่วนตัวของคุณคือภารกิจของเรา"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-3": {
+    "messageformat": "B&A เป็นแอปไม่แสวงหาผลกำไร"
+  },
+  "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
+    "messageformat": "ไอคอนรูปหัวใจในรูปแบบเดียวกับโลโก้ B&A"
+  },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "ตกลง"
   },
@@ -7425,6 +7627,15 @@
   "icu:DonateFlow__discard-dialog-remove-info": {
     "messageformat": "ลบข้อมูล"
   },
+  "icu:DonateFlow__discard-paypal-dialog-body": {
+    "messageformat": "การออกจากหน้านี้จะเป็นการยกเลิกการบริจาคของคุณ"
+  },
+  "icu:DonateFlow__discard-paypal-dialog-discard": {
+    "messageformat": "ออก"
+  },
+  "icu:DonateFlow__discard-paypal-dialog-cancel": {
+    "messageformat": "อยู่หน้านี้ต่อ"
+  },
   "icu:DonateFlow__continue": {
     "messageformat": "ดำเนินการต่อ"
   },
@@ -7470,6 +7681,15 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "คุณมีการบริจาคที่ยังรอการยืนยันตัวตน"
   },
+  "icu:Donations__Toast__PaypalConfirmationNeeded": {
+    "messageformat": "คุณมีการบริจาคที่ยังรอการยืนยันตัวตน"
+  },
+  "icu:Donations__Toast__PaypalCanceled": {
+    "messageformat": "ยกเลิกการบริจาคผ่าน PayPal แล้ว"
+  },
+  "icu:Donations__Toast__PaypalError": {
+    "messageformat": "การดำเนินการบริจาคผ่าน PayPal มีข้อผิดพลาด โดยคุณยังไม่ถูกเรียกเก็บเงินในกรณีนี้"
+  },
   "icu:Donations__BadgeApplicationFailed__Title": {
     "messageformat": "การบริจาคสำเร็จแล้ว แต่เราไม่สามารถอัปเดตการตั้งค่าโล่ของคุณได้"
   },
@@ -7485,11 +7705,41 @@
   "icu:Donations__DonationInterrupted__RetryButton": {
     "messageformat": "ลองอีกครั้ง"
   },
+  "icu:Donations__PaymentMethod": {
+    "messageformat": "วิธีการชำระเงิน"
+  },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "วิธีการชำระเงินถูกปฏิเสธ"
   },
   "icu:Donations__PaymentMethodDeclined__Description": {
     "messageformat": "ลองชำระเงินด้วยวิธีอื่น หรือติดต่อธนาคารเพื่อขอข้อมูลเพิ่มเติม"
+  },
+  "icu:DonateFlow__PaymentCardIcon__AccessibilityLabel": {
+    "messageformat": "ไอคอนการชำระเงินด้วยบัตร"
+  },
+  "icu:DonateFlow__CreditOrDebitCard": {
+    "messageformat": "บัตรเครดิตหรือบัตรเดบิต"
+  },
+  "icu:DonateFlow__Paypal__AccessibilityLabel": {
+    "messageformat": "PayPal"
+  },
+  "icu:DonateFlow__Paypal__Cancel": {
+    "messageformat": "ยกเลิก"
+  },
+  "icu:DonateFlow__Paypal__CompleteDonation": {
+    "messageformat": "ยืนยันการบริจาค"
+  },
+  "icu:Donations__PaypalCanceled": {
+    "messageformat": "ยกเลิกการบริจาคผ่าน PayPal แล้ว"
+  },
+  "icu:Donations__PaypalCanceled__Description": {
+    "messageformat": "โดยคุณยังไม่ถูกเรียกเก็บเงินในกรณีนี้ โปรดลองอีกครั้งหรือชำระเงินด้วยวิธีอื่น"
+  },
+  "icu:Donations__PaypalError": {
+    "messageformat": "การดำเนินการบริจาคผ่าน PayPal มีข้อผิดพลาด"
+  },
+  "icu:Donations__PaypalError__Description": {
+    "messageformat": "โดยคุณยังไม่ถูกเรียกเก็บเงินในกรณีนี้ โปรดลองอีกครั้งหรือชำระเงินด้วยวิธีอื่น"
   },
   "icu:Donations__Failed3dsValidation": {
     "messageformat": "การตรวจยืนยันล้มเหลว"
@@ -7626,9 +7876,6 @@
   "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
     "messageformat": "ช่วยเราปรับปรุงการใช้งาน"
   },
-  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
-    "messageformat": "ช่วยให้เรารับทราบเกี่ยวกับประสิทธิภาพในการใช้งานและเข้าใจปัญหาของการโทรยิ่งขึ้น โดยคุณสามารถดูบันทึกดีบักก่อนส่งข้อมูลได้"
-  },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
     "messageformat": "การส่งรายงานจะเป็นการแชร์ความคิดเห็นของคุณรวมถึง<diagnosticInfoLink>ข้อมูลผลการวิเคราะห์ปัญหาเกี่ยวกับการโทรของคุณ</diagnosticInfoLink> คุณยังสามารถเลือกที่จะแชร์บันทึกดีบักเพื่อช่วยให้เราพัฒนาคุณภาพการโทรให้ดียิ่งขึ้น"
   },
@@ -7637,9 +7884,6 @@
   },
   "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
     "messageformat": "ดู"
-  },
-  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
-    "messageformat": "ภายในบันทึกดีบักจะมีข้อมูลแอประดับพื้นฐานและจะไม่เปิดเผยเนื้อหาใดๆ ในข้อความของคุณ"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
     "messageformat": "ข้อมูลที่คุณจะแชร์ให้เราเป็นข้อมูลแอประดับพื้นฐานซึ่งไม่รวมถึงเนื้อหาใดๆ ในการโทรของคุณ"
@@ -7693,10 +7937,13 @@
     "messageformat": "มีการปรับเปลี่ยนเล็กน้อย พร้อมแก้ไขบั๊ก และการพัฒนาประสิทธิภาพให้ดียิ่งขึ้น ขอขอบคุณที่เลือกใช้ B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.86--0": {
-    "messageformat": "แก้ไขบั๊กเกี่ยวกับตัวแจ้งสถานะเมื่อมีคนยกมือในสายโทรกลุ่ม"
+  "icu:WhatsNew__7.90--0": {
+    "messageformat": "สนุกไปกับชุดสติกเกอร์อย่างเป็นทางการห้าเซตใหม่ที่ออกแบบโดยศิลปินของ B&A"
   },
-  "icu:WhatsNew__7.87--0": {
-    "messageformat": "มองเห็นข้อมูลสำคัญได้ทันทีด้วยการปักหมุดข้อความเอาไว้ให้โดดเด่นอยู่ด้านบนสุดของแชท"
+  "icu:WhatsNew__8.0--0": {
+    "messageformat": "การสำรองข้อมูลที่ปลอดภัยของ B&A พร้อมให้บริการแล้ว! ขอแนะนำแพ็กเกจสำรองข้อมูลแบบอัตโนมัติที่ถูกเข้ารหัสตั้งแต่ต้นทางถึงปลายทาง ตัวเลือกใหม่ซึ่งจะช่วยคุณเก็บรักษาทุกข้อความแม้ในกรณีที่เปลี่ยนโทรศัพท์เครื่องใหม่หรือติดตั้ง B&A อีกครั้ง เปิดใช้งานการสำรองข้อความทั้งหมดและไฟล์สื่อของ 45 วันล่าสุดได้ฟรี หรือเลือกชำระค่าบริการรายเดือนสุดคุ้มเพื่อสำรองข้อความรวมถึงไฟล์ทั้งหมดได้ถึง 100 GB เริ่มใช้งานได้แล้ววันนี้ เพียงไปที่การตั้งค่า B&A แล้วแตะข้อมูลสำรอง ขอขอบคุณผู้ใช้ที่ร่วมทดสอบรุ่นเบต้าของฟีเจอร์นี้!"
+  },
+  "icu:WhatsNew__8.1--0": {
+    "messageformat": "ขอแนะนำป้ายกำกับสมาชิก ฟีเจอร์ใหม่ที่ให้คุณเลือกเพิ่มคำบรรยายหรือระบุบทบาทของตัวเองในแชทกลุ่ม ป้ายกำกับนี้จะแสดงอยู่ข้างชื่อโปรไฟล์ของคุณในกลุ่มนั้น และผู้ดูแลกลุ่มจะจัดการได้ว่าจะอนุญาตให้ใครกำหนดป้ายกำกับสมาชิกในหน้าสิทธิ์ \"แก้ไขข้อมูลกลุ่ม\""
   }
 }

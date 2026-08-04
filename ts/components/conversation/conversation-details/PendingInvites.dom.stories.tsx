@@ -40,7 +40,6 @@ const conversation: ConversationType = {
   sortedGroupMembers,
   title: 'Some Conversation',
   type: 'group',
-  sharedGroupNames: [],
   acknowledgedGroupNameCollisions: {},
   storySendMode: StorySendMode.IfActive,
 };

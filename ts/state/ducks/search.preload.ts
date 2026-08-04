@@ -48,6 +48,7 @@ import { searchConversationTitles } from '../../util/searchConversationTitles.st
 import { isDirectConversation } from '../../util/whatTypeOfConversation.dom.js';
 import { isConversationSMSOnly } from '../../util/isConversationSMSOnly.std.js';
 import { isConversationUnread } from '../../util/countUnreadStats.std.js';
+import { getSelectedConversationId } from '../selectors/nav.std.js';
 
 const { debounce, omit, reject } = lodash;
 
@@ -279,7 +280,7 @@ function refreshSearch(): ThunkAction<
   };
 }
 
-function updateSearchResultsOnConversationUpdate(
+export function updateSearchResultsOnConversationUpdate(
   oldConversationLookup: ConversationLookupType,
   updatedConversations: Array<ConversationType>
 ): ThunkAction<
@@ -317,7 +318,7 @@ function updateSearchResultsOnConversationUpdate(
       type: 'MAYBE_REMOVE_READ_CONVERSATIONS',
       payload: {
         conversations: updatedConversations,
-        selectedConversationId: state.conversations.selectedConversationId,
+        selectedConversationId: getSelectedConversationId(state),
       },
     });
   };
@@ -345,7 +346,7 @@ function shouldRemoveConversationFromUnreadList(
   return false;
 }
 
-function maybeRemoveReadConversations(
+export function maybeRemoveReadConversations(
   conversationIds: Array<string>
 ): ThunkAction<
   void,
@@ -354,9 +355,11 @@ function maybeRemoveReadConversations(
   MaybeRemoveReadConversationsActionType
 > {
   return (dispatch, getState) => {
+    const state = getState();
     const {
-      conversations: { selectedConversationId, conversationLookup },
-    } = getState();
+      conversations: { conversationLookup },
+    } = state;
+    const selectedConversationId = getSelectedConversationId(state);
 
     const conversations = conversationIds
       .map(id => conversationLookup[id])
@@ -431,8 +434,7 @@ const doSearch = debounce(
     const noteToSelf = i18n('icu:noteToSelf').toLowerCase();
     const ourConversationId = getUserConversationId(state);
     const searchConversationId = getSearchConversation(state)?.id;
-
-    const { selectedConversationId } = state.conversations;
+    const selectedConversationId = getSelectedConversationId(state);
 
     strictAssert(ourConversationId, 'doSearch our conversation is missing');
 

@@ -92,14 +92,15 @@ export type StorageAccessType = {
   hasCompletedSafetyNumberOnboarding: boolean;
   hasSeenGroupStoryEducationSheet: boolean;
   hasSeenNotificationProfileOnboarding: boolean;
+  hasSeenKeyTransparencyOnboarding: boolean;
   hasViewedOnboardingStory: boolean;
   hasStoriesDisabled: boolean;
+  hasKeyTransparencyDisabled: boolean;
   storyViewReceiptsEnabled: boolean | undefined;
   identityKeyMap: IdentityKeyMap;
   lastAttemptedToRefreshProfilesAt: number;
   lastResortKeyUpdateTime: number;
   lastResortKeyUpdateTimePNI: number;
-  localDeleteWarningShown: boolean;
   accountEntropyPool: string;
   masterKey: string;
 
@@ -271,6 +272,17 @@ export type StorageAccessType = {
 
   avatarsHaveBeenMigrated: boolean;
 
+  // Key Transparency
+  lastDistinguishedTreeHead: Uint8Array;
+  // Meaning of values:
+  //
+  // - undefined - status unknown or uninitialized
+  // - 'ok' - last check passed
+  // - 'intermittent' - last check failed, but we haven't retried yet
+  // - 'fail' - last check failed after retry
+  keyTransparencySelfHealth: undefined | 'ok' | 'intermittent' | 'fail';
+  lastKeyTransparencySelfCheck: number;
+
   // Test-only
   // Not used UI, stored as is when imported from backup during tests
   defaultWallpaperPhotoPointer: Uint8Array;
@@ -295,6 +307,7 @@ export type StorageAccessType = {
   primarySendsSms: never;
   backupMediaDownloadIdle: never;
   callQualitySurveyCooldownDisabled: never;
+  localDeleteWarningShown: never;
 };
 
 export type StorageInterface = {

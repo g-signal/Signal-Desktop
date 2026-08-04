@@ -227,7 +227,6 @@ export function CallsNewCall({
                 conversationType="group"
                 i18n={i18n}
                 title={item.conversation.title}
-                sharedGroupNames={[]}
                 size={AvatarSize.THIRTY_TWO}
                 badge={undefined}
               />

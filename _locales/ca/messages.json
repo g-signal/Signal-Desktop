@@ -206,9 +206,6 @@
   "icu:viewMenuToggleDevTools": {
     "messageformat": "Activa o desactiva les eines de desenvolupament"
   },
-  "icu:viewMenuOpenCallingDevTools": {
-    "messageformat": "Obrir Eines de desenvolupament de trucada"
-  },
   "icu:menuSetupAsNewDevice": {
     "messageformat": "Configura'l com a dispositiu nou"
   },
@@ -578,14 +575,95 @@
   "icu:SafetyNumberViewer__hint": {
     "messageformat": "Per verificar el xifrat amb {name}, compara les xifres de dalt amb les del dispositiu d'aquella persona. També poden escanejar el teu codi amb el seu dispositiu."
   },
+  "icu:SafetyNumberViewer__hint-v2": {
+    "messageformat": "Per verificar el xifrat amb {name}, compara les xifres de dalt amb les del dispositiu d'aquella persona. També poden escanejar el teu codi al el seu dispositiu."
+  },
   "icu:SafetyNumberViewer__learn_more": {
     "messageformat": "Més informació"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__title": {
+    "messageformat": "Verificació automàtica de clau"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--idle": {
+    "messageformat": "Verificar automàticament"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--running": {
+    "messageformat": "Verificant codificació…"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--ok": {
+    "messageformat": "Codificació verificada"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__button--fail": {
+    "messageformat": "La verificació automàtica no està disponible"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__hint": {
+    "messageformat": "La verificació automàtica no està disponible per a tots els xats."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__learn_more": {
+    "messageformat": "Més informació"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__title": {
+    "messageformat": "La codificació d'aquest xat s'ha verificat automàticament "
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body": {
+    "messageformat": "Per als contactes amb qui hagis connectat a través d'un número de telèfon, B&A pot confirmar automàticament si la connexió és segura mitjançant un procés anomenat transparència de claus. Per a més seguretat, verifica la codificació d'extrem a extrem manualment comparant els números de la pantalla anterior o escanejant el codi al dispositiu de l'altra persona."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title": {
+    "messageformat": "La verificació automàtica ja no està disponible per a aquest xat"
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body": {
+    "messageformat": "B&A ja no pot verificar automàticament la codificació d'aquest xat. Probablement, això passa perquè {name} ha canviat el seu número de telèfon. Verifica manualment la codificació d'extrem a extrem comparant els números de la pantalla anterior o escanejant el codi al dispositiu de l'altra persona."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
+    "messageformat": "B&A només pot verificar automàticament la codificació en xats on hagis connectat a través del número de telèfon. Si has iniciat el xat a través d'un àlies o un grup en comú, verifica la codificació d'extrem a extrem comparant els números de la pantalla anterior o escanejant el codi al dispositiu de l'altra persona."
+  },
+  "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
+    "messageformat": "D'acord"
   },
   "icu:SafetyNumberNotReady__body": {
     "messageformat": "Es crearà un número de seguretat amb aquesta persona després d'intercanviar missatges amb ella."
   },
   "icu:SafetyNumberNotReady__learn-more": {
     "messageformat": "Més informació"
+  },
+  "icu:KeyTransparencyErrorDialog__Title": {
+    "messageformat": "Actualment, la verificació automàtica de claus no està disponible al teu dispositiu. Vols enviar un registre de depuració?"
+  },
+  "icu:KeyTransparencyErrorDialog__Description": {
+    "messageformat": "Els registres de depuració ens ajuden a diagnosticar i solucionar el problema i no contenen informació que pugui identificar-te."
+  },
+  "icu:KeyTransparencyErrorDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "Tanca"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label": {
+    "messageformat": "Compartir registre de depuració"
+  },
+  "icu:KeyTransparencyErrorDialog__ShareDebugLog__ViewButton": {
+    "messageformat": "Mostra"
+  },
+  "icu:KeyTransparencyErrorDialog__Submit": {
+    "messageformat": "Envia"
+  },
+  "icu:KeyTransparencyErrorDialog__Cancel": {
+    "messageformat": "No, gràcies."
+  },
+  "icu:KeyTransparencyErrorDialog__Submitting": {
+    "messageformat": "Enviant…"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Title": {
+    "messageformat": "Ara, B&A pot verificar automàticament la codificació"
+  },
+  "icu:KeyTransparencyOnboardingDialog__Description": {
+    "messageformat": "Pels contactes amb qui hagis connectat a través d'un número de telèfon, B&A pot confirmar automàticament si la connexió és segura mitjançant un procés anomenat transparència de claus. Per a més seguretat, pots continuar verificant manualment les teves connexions mitjançant un codi QR o comparant els números de seguretat."
+  },
+  "icu:KeyTransparencyOnboardingDialog__Continue": {
+    "messageformat": "Continua"
+  },
+  "icu:KeyTransparencyOnboardingDialog__LearnMore": {
+    "messageformat": "Més informació"
+  },
+  "icu:KeyTransparencyOnboardingDialog__CloseButton__AccessibilityLabel": {
+    "messageformat": "Tanca"
   },
   "icu:verified": {
     "messageformat": "Verificat"
@@ -1033,6 +1111,12 @@
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} és als contactes del teu sistema"
+  },
+  "icu:AboutContactModal__add-member-label": {
+    "messageformat": "Afegir categoria de membre"
+  },
+  "icu:AboutContactModal__your-qr-code": {
+    "messageformat": "El teu codi QR"
   },
   "icu:NotePreviewModal__Title": {
     "messageformat": "Nota"
@@ -1712,6 +1796,15 @@
   "icu:Preferences__EditChatFolderPage__CancelButton": {
     "messageformat": "Cancel·la"
   },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Label": {
+    "messageformat": "Verificació automàtica de clau"
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
+    "messageformat": "Quan aquesta opció està habilitada, B&A intentarà verificar automàticament la codificació dels xats individuals."
+  },
+  "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
+    "messageformat": "Més informació"
+  },
   "icu:initialSync": {
     "messageformat": "Sincronització de contactes i grups"
   },
@@ -2338,6 +2431,9 @@
   },
   "icu:Toast--unable-download-from-backup-tier": {
     "messageformat": "Attachment missing from backup CDN"
+  },
+  "icu:ToastManager__CannotAddMemberLabel": {
+    "messageformat": "Només els admins poden definir categories de membres en aquest grup."
   },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Els canvis només es poden realitzar fins 24 hores després d'enviar el missatge."
@@ -3753,7 +3849,7 @@
     "messageformat": "{max, plural, one {Només es pot fer {max,number} canvi en aquest missatge.} other {Només es poden fer {max,number} canvis en aquest missatge.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Perdoneu, l'enllaç baxs:// no tenia sentit!"
+    "messageformat": "Perdoneu, l'enllaç sgnl:// no tenia sentit!"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "No podeu enviar missatges a aquest grup."
@@ -4538,6 +4634,9 @@
   "icu:ContactModal--rm-admin": {
     "messageformat": "Esborra com a administrador"
   },
+  "icu:ContactModal--rm-admin--clear-label": {
+    "messageformat": "Això també eliminarà la seva categoria de membre."
+  },
   "icu:ContactModal--make-admin": {
     "messageformat": "Fes adminstrador"
   },
@@ -4556,6 +4655,18 @@
   "icu:ContactModal--voice": {
     "messageformat": "Veu"
   },
+  "icu:GroupMemberLabelInfoModal--title": {
+    "messageformat": "Categories de membres"
+  },
+  "icu:GroupMemberLabelInfoModal--description": {
+    "messageformat": "Fes servir una categoria de membre per descriure't a tu o al teu rol dins d'aquest grup. Les categories dels membres només són visibles dins d'aquest grup."
+  },
+  "icu:GroupMemberLabelInfoModal--add-label": {
+    "messageformat": "Defineix una categoria"
+  },
+  "icu:GroupMemberLabelInfoModal--edit-label": {
+    "messageformat": "Editar la teva categoria"
+  },
   "icu:showChatColorEditor": {
     "messageformat": "Color del xat"
   },
@@ -4570,6 +4681,39 @@
   },
   "icu:ConversationDetails--group-link": {
     "messageformat": "Enllaç del grup"
+  },
+  "icu:ConversationDetails--member-label": {
+    "messageformat": "Categoria de membre"
+  },
+  "icu:ConversationDetails--member-label--placeholder": {
+    "messageformat": "Introdueix la teva categoria de membre"
+  },
+  "icu:ConversationDetails--member-label--description": {
+    "messageformat": "Defineix una categoria de membre per descriure't a tu o al teu rol dins d'aquest grup. Les categories dels membres només són visibles dins d'aquest grup."
+  },
+  "icu:ConversationDetails--member-label--preview": {
+    "messageformat": "Previsualitza"
+  },
+  "icu:ConversationDetails--member-label--hello": {
+    "messageformat": "Hola!"
+  },
+  "icu:ConversationDetails--member-label--list-header": {
+    "messageformat": "Membres del grup amb categories"
+  },
+  "icu:ConversationDetails--member-label--no-members": {
+    "messageformat": "Cap altre membre té categoria"
+  },
+  "icu:ConversationDetails--member-label--saving": {
+    "messageformat": "Guardant canvis…"
+  },
+  "icu:ConversationDetails--member-label--error-title": {
+    "messageformat": "No es pot guardar la categoria de membre"
+  },
+  "icu:ConversationDetails--member-label--error-generic": {
+    "messageformat": "Comprova la connexió i torna-ho a provar."
+  },
+  "icu:ConversationDetails--member-label--error-permissions": {
+    "messageformat": "Només els admins poden definir categories de membres en aquest grup."
   },
   "icu:ConversationDetails--disappearing-messages-label": {
     "messageformat": "Missatges efímers"
@@ -4604,6 +4748,9 @@
   "icu:ConversationDetails--group-info-info": {
     "messageformat": "Trieu qui pot editar el nom del grup, la fotografia, la descripció i el temporitzador dels missatges efímers."
   },
+  "icu:ConversationDetails--group-info-info-v2": {
+    "messageformat": "Tria qui pot editar el nom, la imatge i la descripció del grup, el temporitzador dels missatges a desaparèixer i els missatges fixats."
+  },
   "icu:ConversationDetails--add-members-label": {
     "messageformat": "Qui pot afegir membres"
   },
@@ -4615,6 +4762,15 @@
   },
   "icu:ConversationDetails--announcement-info": {
     "messageformat": "Qui pot enviar missatges al grup"
+  },
+  "icu:ConversationDetails--label-clear-warning--title": {
+    "messageformat": "S'eliminaran les categories de membres"
+  },
+  "icu:ConversationDetails--label-clear-warning--description": {
+    "messageformat": "Si canvies aquest permís a \"Només admins\", s'eliminaran les categories de membres establertes pels no administradors d'aquest grup."
+  },
+  "icu:ConversationDetails--label-clear-warning--continue": {
+    "messageformat": "Continua"
   },
   "icu:ConversationDetails--requests-and-invites": {
     "messageformat": "Sol·licituds i invitacions"
@@ -4669,6 +4825,9 @@
   },
   "icu:ConversationDetailsMembershipList--add-members": {
     "messageformat": "Afegeix-hi membres"
+  },
+  "icu:ConversationDetailsMembershipList--add-member-label": {
+    "messageformat": "Afegir categoria de membre"
   },
   "icu:ConversationDetailsMembershipList--show-all": {
     "messageformat": "Mostra-ho tot"
@@ -4843,6 +5002,21 @@
   },
   "icu:DeleteMessagesModal__toast--TooManyMessagesToDeleteForEveryone": {
     "messageformat": "{count, plural, one {Només pots seleccionar {count,number} missatge per eliminar per a tothom} other {Només pots seleccionar {count,number} missatges per eliminar per a tothom}}"
+  },
+  "icu:DeleteAttachmentModal__Title": {
+    "messageformat": "Eliminar element?"
+  },
+  "icu:DeleteAttachmentModal__Body": {
+    "messageformat": "Aquesta acció esborrarà permanentment aquest element. Qualsevol missatge de text que hi estigui associat també s'esborrarà."
+  },
+  "icu:DeleteAttachmentModal__Close": {
+    "messageformat": "Tanca"
+  },
+  "icu:DeleteAttachmentModal__Delete": {
+    "messageformat": "Suprimeix"
+  },
+  "icu:DeleteAttachmentModal__Cancel": {
+    "messageformat": "Cancel·la"
   },
   "icu:SelectModeActions__toast--TooManyMessagesToForward": {
     "messageformat": "Només pots reenviar fins a 30 missatges"
@@ -5216,6 +5390,24 @@
   "icu:MediaGallery__EmptyState__description--documents-2": {
     "messageformat": "Els arxius que enviïs i rebis apareixeran aquí"
   },
+  "icu:MediaGallery__ContextMenu__ViewInChat": {
+    "messageformat": "Veure al xat"
+  },
+  "icu:MediaGallery__ContextMenu__Forward": {
+    "messageformat": "Reenvia"
+  },
+  "icu:MediaGallery__ContextMenu__Save": {
+    "messageformat": "Desa"
+  },
+  "icu:MediaGallery__ContextMenu__Send": {
+    "messageformat": "Envia el missatge"
+  },
+  "icu:MediaGallery__ContextMenu__Copy": {
+    "messageformat": "Copiar l'enllaç"
+  },
+  "icu:MediaGallery__ContextMenu__Delete": {
+    "messageformat": "Suprimeix"
+  },
   "icu:MediaQualitySelector--button": {
     "messageformat": "Seleccioneu la qualitat dels mitjans"
   },
@@ -5429,6 +5621,10 @@
   "icu:AnnouncementsOnlyGroupBanner--admins": {
     "messageformat": "administradors"
   },
+  "icu:Avatar__View": {
+    "messageformat": "Mostra",
+    "limit": 7
+  },
   "icu:AvatarEditor--choose": {
     "messageformat": "Seleccioneu un avatar"
   },
@@ -5506,15 +5702,6 @@
   },
   "icu:Preferences__button--set-up": {
     "messageformat": "Configurar"
-  },
-  "icu:Preferences__internal__local-backups": {
-    "messageformat": "Còpies de seguretat locals"
-  },
-  "icu:Preferences__internal__export-local-backup": {
-    "messageformat": "Exportar…"
-  },
-  "icu:Preferences__internal__export-local-backup--description": {
-    "messageformat": "Exportar còpia de seguretat local xifrada a una carpeta i validar-la"
   },
   "icu:Preferences__internal__validate-backup--description": {
     "messageformat": "Exportar còpia de seguretat xifrada a la memòria i executar-hi la suite de validació"
@@ -7335,6 +7522,21 @@
   "icu:PreferencesDonations__privacy-modal-content": {
     "messageformat": "<paragraph>B&A no recopila ni emmagatzema la teva informació personal quan fas una donació.</paragraph><paragraph>Utilitzem Stripe com a processador de pagaments per rebre les teves donacions. No accedim, emmagatzemem ni desem la informació que els proporciones.</paragraph><paragraph>B&A no connecta i no pot connectar la teva donació al teu compte de B&A.</paragraph><paragraph>Gràcies per comptar amb nosaltres!</paragraph>"
   },
+  "icu:PreferencesDonations__privacy-modal-intro": {
+    "messageformat": "Com a organització independent sense ànim de lucre, B&A té un compromís amb la privacitat en missatges i trucades. Sense anuncis, ni rastrejadors, ni vigilància. Fes avui una donació per ajudar a B&A."
+  },
+  "icu:PreferencesDonations__privacy-modal-list-1": {
+    "messageformat": "Aconsegueix una insígnia opcional al teu perfil quan facis una donació"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-2": {
+    "messageformat": "La teva privacitat és la nostra missió"
+  },
+  "icu:PreferencesDonations__privacy-modal-list-3": {
+    "messageformat": "B&A és una organització sense ànim de lucre."
+  },
+  "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
+    "messageformat": "Icona de cor a l'estil del logo de B&A"
+  },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "D'acord"
   },
@@ -7425,6 +7627,15 @@
   "icu:DonateFlow__discard-dialog-remove-info": {
     "messageformat": "Eliminar informació"
   },
+  "icu:DonateFlow__discard-paypal-dialog-body": {
+    "messageformat": "Si surts, es cancel·larà la teva donació."
+  },
+  "icu:DonateFlow__discard-paypal-dialog-discard": {
+    "messageformat": "Surt"
+  },
+  "icu:DonateFlow__discard-paypal-dialog-cancel": {
+    "messageformat": "Quedar-me a la pàgina"
+  },
   "icu:DonateFlow__continue": {
     "messageformat": "Continua"
   },
@@ -7470,6 +7681,15 @@
   "icu:Donations__Toast__ConfirmationNeeded": {
     "messageformat": "Tens una donació en curs que necessita confirmació."
   },
+  "icu:Donations__Toast__PaypalConfirmationNeeded": {
+    "messageformat": "Tens una donació en curs que necessita confirmació."
+  },
+  "icu:Donations__Toast__PaypalCanceled": {
+    "messageformat": "Donació a través de PayPal cancel·lada"
+  },
+  "icu:Donations__Toast__PaypalError": {
+    "messageformat": "S'ha produït un error en processar la donació a través de PayPal. No se t'ha efectuat el càrrec."
+  },
   "icu:Donations__BadgeApplicationFailed__Title": {
     "messageformat": "La donació s'ha realitzat correctament, però no hem pogut actualitzar els ajustos de la teva insígnia"
   },
@@ -7485,11 +7705,41 @@
   "icu:Donations__DonationInterrupted__RetryButton": {
     "messageformat": "Torna a provar-ho"
   },
+  "icu:Donations__PaymentMethod": {
+    "messageformat": "Mètode de pagament"
+  },
   "icu:Donations__PaymentMethodDeclined": {
     "messageformat": "Mètode de pagament rebutjat"
   },
   "icu:Donations__PaymentMethodDeclined__Description": {
     "messageformat": "Prova un altre mètode de pagament o posa't en contacte amb el banc per obtenir-ne més informació."
+  },
+  "icu:DonateFlow__PaymentCardIcon__AccessibilityLabel": {
+    "messageformat": "Icona de tarjeta de pagament"
+  },
+  "icu:DonateFlow__CreditOrDebitCard": {
+    "messageformat": "Targeta de crèdit o dèbit"
+  },
+  "icu:DonateFlow__Paypal__AccessibilityLabel": {
+    "messageformat": "PayPal"
+  },
+  "icu:DonateFlow__Paypal__Cancel": {
+    "messageformat": "Cancel·la"
+  },
+  "icu:DonateFlow__Paypal__CompleteDonation": {
+    "messageformat": "Completar donació"
+  },
+  "icu:Donations__PaypalCanceled": {
+    "messageformat": "Donació a través de PayPal cancel·lada"
+  },
+  "icu:Donations__PaypalCanceled__Description": {
+    "messageformat": "No se t'ha efectuat el càrrec. Torna-ho a provar o utilitza un altre mètode de pagament."
+  },
+  "icu:Donations__PaypalError": {
+    "messageformat": "S'ha produït un error en processar la donació a través de PayPal"
+  },
+  "icu:Donations__PaypalError__Description": {
+    "messageformat": "No se t'ha efectuat el càrrec. Torna-ho a provar o utilitza un altre mètode de pagament."
   },
   "icu:Donations__Failed3dsValidation": {
     "messageformat": "La verificació ha fallat"
@@ -7626,9 +7876,6 @@
   "icu:CallQualitySurvey__ConfirmSubmission__PageTitle": {
     "messageformat": "Ajuda'ns a millorar"
   },
-  "icu:CallQualitySurvey__ConfirmSubmission__PageDescription": {
-    "messageformat": "Això ens ajuda a tenir més informació sobre què funciona (o no) durant les trucades. Pots veure el registre de depuració abans d'enviar-lo."
-  },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
     "messageformat": "Si ho envies, compartiràs els teus comentaris juntament amb <diagnosticInfoLink>informació de diagnòstic sobre la teva trucada</diagnosticInfoLink>. Opcionalment, pots compartir un registre de depuració per ajudar-nos a millorar la qualitat de les trucades."
   },
@@ -7637,9 +7884,6 @@
   },
   "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
     "messageformat": "Mostra"
-  },
-  "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText": {
-    "messageformat": "Els registres de depuració contenen informació de baix nivell sobre l'aplicació i no revelen cap dels continguts dels teus missatges."
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote": {
     "messageformat": "La informació que comparteixis amb nosaltres conté informació de baix nivell sobre l'aplicació i no inclou el contingut de les teves trucades."
@@ -7693,10 +7937,13 @@
     "messageformat": "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar B&A!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__7.86--0": {
-    "messageformat": "Hem corregit un petit error relacionat amb l'indicador de mà aixecada a les trucades grupals."
+  "icu:WhatsNew__7.90--0": {
+    "messageformat": "Cinc nous paquets d'adhesius d'artistes oficials."
   },
-  "icu:WhatsNew__7.87--0": {
-    "messageformat": "Fes que la informació important sigui fàcilment accessible amb els missatges fixats. Les preguntes que més acostumes a respondre, la reserva per anar a sopar i els teus plans per les vacances ja són sempre el primer en què penses. Ara, també poden ser la primera cosa que apareix al xat."
+  "icu:WhatsNew__8.0--0": {
+    "messageformat": "Ja són aquí les còpies de seguretat segures de B&A! Ara pots activar còpies de seguretat automàtiques amb xifratge d’extrem a extrem per no perdre cap missatge quan canviïs de telèfon o reinstal·lis l’aplicació. Pots fer còpies de seguretat gratuïtes de tots els teus missatges i dels darrers 45 dies de contingut multimèdia, o bé pagar una petita quota mensual per disposar de 100 GB d’emmagatzematge i desar tots els teus fitxers adjunts. Per començar, ves als ajustos de B&A i toca Còpies de seguretat. Gràcies a tothom que ha ajudat a provar aquesta funció durant el període beta!"
+  },
+  "icu:WhatsNew__8.1--0": {
+    "messageformat": "Ara tens l'opció d'afegir una categoria de membre per descriure't a tu mateix o el teu rol en un xat grupal. La categoria de membre apareix al costat del teu nom de perfil al grup, i els admins decideixen qui pot afegir una categoria amb el permís \"Editar informació del grup\"."
   }
 }

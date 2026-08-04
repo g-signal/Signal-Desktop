@@ -17,6 +17,7 @@ import { UserText } from '../../UserText.dom.js';
 import { isInSystemContacts } from '../../../util/isInSystemContacts.std.js';
 import { InContactsIcon } from '../../InContactsIcon.dom.js';
 import { GextTagList } from '../../GextTagList.js';
+import type { ContactModalStateType } from '../../../state/ducks/globalModals.preload.js';
 
 export type Props = {
   areWeASubscriber: boolean;
@@ -31,7 +32,7 @@ export type Props = {
   pendingAvatarDownload: boolean;
   startAvatarDownload: () => void;
   startEditing: (isGroupTitle: boolean) => void;
-  toggleAboutContactModal: (contactId: string) => void;
+  toggleAboutContactModal: (options: ContactModalStateType) => void;
   theme: ThemeType;
 };
 
@@ -119,7 +120,6 @@ export function ConversationDetailsHeader({
         }
         setActiveModal(ConversationDetailsHeaderActiveModal.ShowingBadges);
       }}
-      sharedGroupNames={[]}
       theme={theme}
     />
   );
@@ -239,7 +239,7 @@ export function ConversationDetailsHeader({
         onClick={ev => {
           ev.preventDefault();
           ev.stopPropagation();
-          toggleAboutContactModal(conversation.id);
+          toggleAboutContactModal({ contactId: conversation.id });
         }}
         className="ConversationDetailsHeader__about-button"
       >

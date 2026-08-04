@@ -52,7 +52,6 @@ export type Contact = Pick<
   | 'isMe'
   | 'phoneNumber'
   | 'profileName'
-  | 'sharedGroupNames'
   | 'title'
 > & {
   status?: SendStatus;
@@ -173,15 +172,8 @@ export function MessageDetail({
   const messageDetailRef = useRef<HTMLDivElement>(null);
 
   function renderAvatar(contact: Contact): React.JSX.Element {
-    const {
-      avatarUrl,
-      badges,
-      color,
-      phoneNumber,
-      profileName,
-      sharedGroupNames,
-      title,
-    } = contact;
+    const { avatarUrl, badges, color, phoneNumber, profileName, title } =
+      contact;
 
     return (
       <Avatar
@@ -194,7 +186,6 @@ export function MessageDetail({
         profileName={profileName}
         theme={theme}
         title={title}
-        sharedGroupNames={sharedGroupNames}
         size={AvatarSize.THIRTY_TWO}
       />
     );

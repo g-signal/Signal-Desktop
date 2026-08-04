@@ -49,7 +49,6 @@ export type PropsData = Pick<
   | 'phoneNumber'
   | 'profileName'
   | 'removalStage'
-  | 'sharedGroupNames'
   | 'shouldShowDraft'
   | 'title'
   | 'type'
@@ -101,7 +100,6 @@ export const ConversationListItem: FunctionComponent<Props> = React.memo(
     phoneNumber,
     profileName,
     removalStage,
-    sharedGroupNames,
     shouldShowDraft,
     theme,
     title,
@@ -236,7 +234,6 @@ export const ConversationListItem: FunctionComponent<Props> = React.memo(
         onMouseDown={onMouseDownItem}
         phoneNumber={phoneNumber}
         profileName={profileName}
-        sharedGroupNames={sharedGroupNames}
         theme={theme}
         title={title}
         unreadCount={unreadCount}

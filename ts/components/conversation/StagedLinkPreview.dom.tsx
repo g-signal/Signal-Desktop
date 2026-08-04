@@ -131,7 +131,6 @@ export function Thumbnail({
           color={getColorForCallLink(getKeyFromCallLink(url))}
           conversationType="callLink"
           i18n={i18n}
-          sharedGroupNames={[]}
           size={64}
           title={title ?? i18n('icu:calling__call-link-default-title')}
         />

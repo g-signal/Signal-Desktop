@@ -20,7 +20,7 @@ import {
 } from './util/whatTypeOfConversation.dom.js';
 import {
   doesAttachmentExist,
-  deleteAttachmentData,
+  maybeDeleteAttachmentFile,
 } from './util/migrations.preload.js';
 import {
   isServiceIdString,
@@ -65,6 +65,7 @@ import type {
   PniString,
 } from './types/ServiceId.std.js';
 import { itemStorage } from './textsecure/Storage.preload.js';
+import { getSelectedConversationId } from './state/selectors/nav.std.js';
 
 const { debounce, pick, uniq, without } = lodash;
 
@@ -1456,8 +1457,7 @@ export class ConversationController {
     await migrateConversationMessages(obsoleteId, currentId);
 
     if (
-      window.reduxStore.getState().conversations.selectedConversationId ===
-      obsoleteId
+      getSelectedConversationId(window.reduxStore.getState()) === obsoleteId
     ) {
       log.warn(`${logId}: opening new conversation`);
       window.reduxActions.conversations.showConversation({
@@ -1474,8 +1474,7 @@ export class ConversationController {
     drop(current.updateLastMessage());
 
     if (
-      window.reduxStore.getState().conversations.selectedConversationId ===
-      current.id
+      getSelectedConversationId(window.reduxStore.getState()) === current.id
     ) {
       // TODO: DESKTOP-4807
       drop(current.loadNewestMessages(undefined, undefined));
@@ -1641,14 +1640,14 @@ export class ConversationController {
           drop(
             (async () => {
               if (avatarPath && (await doesAttachmentExist(avatarPath))) {
-                await deleteAttachmentData(avatarPath);
+                await maybeDeleteAttachmentFile(avatarPath);
               }
 
               if (
                 profileAvatarPath &&
                 (await doesAttachmentExist(profileAvatarPath))
               ) {
-                await deleteAttachmentData(profileAvatarPath);
+                await maybeDeleteAttachmentFile(profileAvatarPath);
               }
             })()
           );

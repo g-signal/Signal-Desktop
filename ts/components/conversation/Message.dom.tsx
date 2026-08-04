@@ -129,6 +129,7 @@ import {
 import { useGroupedAndOrderedReactions } from '../../util/groupAndOrderReactions.dom.js';
 import type { AxoMenuBuilder } from '../../axo/AxoMenuBuilder.dom.js';
 import type { RenderAudioAttachmentProps } from '../../state/smart/renderAudioAttachment.preload.js';
+import type { MemberLabelType } from '../../types/GroupMemberLabels.std.js';
 
 const { drop, take, unescape } = lodash;
 
@@ -249,6 +250,7 @@ export type PropsData = {
   id: string;
   renderingContext: RenderingContextType;
   contactNameColor?: ContactNameColorType;
+  contactLabel?: MemberLabelType;
   conversationColor: ConversationColorType;
   conversationTitle: string;
   customColor?: CustomColorType;
@@ -287,7 +289,6 @@ export type PropsData = {
     | 'isMe'
     | 'phoneNumber'
     | 'profileName'
-    | 'sharedGroupNames'
     | 'title'
   >;
   conversationType: ConversationTypeType;
@@ -308,6 +309,7 @@ export type PropsData = {
     authorPhoneNumber?: string;
     authorProfileName?: string;
     authorTitle: string;
+    authorLabel?: MemberLabelType;
     authorName?: string;
     bodyRanges?: HydratedBodyRangesType;
     referencedMessageNotFound: boolean;
@@ -1139,7 +1141,7 @@ export class Message extends React.PureComponent<Props, State> {
   }
 
   #renderAuthor(): ReactNode {
-    const { author, contactNameColor, authorGextTags, i18n, isSticker } =
+    const { author, contactLabel, contactNameColor, authorGextTags, i18n, isSticker, quote } =
       this.props;
 
     if (!this.#shouldRenderAuthor()) {
@@ -1150,9 +1152,15 @@ export class Message extends React.PureComponent<Props, State> {
     const moduleName = `module-message__author${stickerSuffix}`;
 
     return (
-      <div className={moduleName}>
+      <div
+        className={classNames(
+          moduleName,
+          quote ? 'module-message__author--with-quote' : undefined
+        )}
+      >
         <ContactName
           contactNameColor={contactNameColor}
+          contactLabel={contactLabel}
           title={author.isMe ? i18n('icu:you') : author.title}
           module={moduleName}
         />
@@ -1219,8 +1227,7 @@ export class Message extends React.PureComponent<Props, State> {
     // For attachments which aren't full-frame
     const withContentBelow = Boolean(text || attachmentDroppedDueToSize);
     const withContentAbove = Boolean(quote) || this.#shouldRenderAuthor();
-    const displayImage =
-      canDisplayImage(attachments) && !attachmentDroppedDueToSize;
+    const displayImage = canDisplayImage(attachments);
 
     // attachmentDroppedDueToSize is handled in renderAttachmentTooBig
     const isAttachmentNotAvailable =
@@ -1722,7 +1729,6 @@ export class Message extends React.PureComponent<Props, State> {
                 color={getColorForCallLink(getKeyFromCallLink(first.url))}
                 conversationType="callLink"
                 i18n={i18n}
-                sharedGroupNames={[]}
                 size={64}
                 title={title ?? i18n('icu:calling__call-link-default-title')}
               />
@@ -2132,6 +2138,7 @@ export class Message extends React.PureComponent<Props, State> {
         payment={quote.payment}
         isIncoming={isIncoming}
         authorTitle={quote.authorTitle}
+        authorLabel={quote.authorLabel}
         bodyRanges={quote.bodyRanges}
         conversationColor={conversationColor}
         conversationTitle={conversationTitle}
@@ -2344,7 +2351,6 @@ export class Message extends React.PureComponent<Props, State> {
             }}
             phoneNumber={author.phoneNumber}
             profileName={author.profileName}
-            sharedGroupNames={author.sharedGroupNames}
             size={GROUP_AVATAR_SIZE}
             theme={theme}
             title={author.title}
@@ -3260,6 +3266,7 @@ export class Message extends React.PureComponent<Props, State> {
         : null,
       isTargeted ? 'module-message__container--targeted' : null,
       lighterSelect ? 'module-message__container--targeted-lighter' : null,
+      isStickerLike ? 'module-message__container--sticker-like' : null,
       !isStickerLike ? `module-message__container--${direction}` : null,
       isEmojiOnly ? 'module-message__container--emoji' : null,
       !isStickerLike && direction === 'outgoing'

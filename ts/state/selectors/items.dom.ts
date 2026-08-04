@@ -144,6 +144,11 @@ export const getStoriesEnabled = createSelector(
   (state: ItemsStateType): boolean => !state.hasStoriesDisabled
 );
 
+export const getKeyTransparencyEnabled = createSelector(
+  getItems,
+  (state: ItemsStateType): boolean => !state.hasKeyTransparencyDisabled
+);
+
 export const getDefaultConversationColor = createSelector(
   getItems,
   (
@@ -275,12 +280,6 @@ export const getHasUnidentifiedDeliveryIndicators = createSelector(
   (state: ItemsStateType): boolean => {
     return state.unidentifiedDeliveryIndicators ?? false;
   }
-);
-
-export const getLocalDeleteWarningShown = createSelector(
-  getItems,
-  (state: ItemsStateType): boolean =>
-    Boolean(state.localDeleteWarningShown ?? false)
 );
 
 export const getBackupMediaDownloadProgress = createSelector(

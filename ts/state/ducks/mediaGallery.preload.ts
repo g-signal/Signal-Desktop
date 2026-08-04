@@ -17,7 +17,6 @@ import {
   CONVERSATION_UNLOADED,
   MESSAGE_CHANGED,
   MESSAGE_DELETED,
-  MESSAGE_EXPIRED,
 } from './conversations.preload.js';
 import { useBoundActions } from '../../hooks/useBoundActions.std.js';
 
@@ -26,7 +25,6 @@ import type {
   ConversationUnloadedActionType,
   MessageChangedActionType,
   MessageDeletedActionType,
-  MessageExpiredActionType,
 } from './conversations.preload.js';
 import type {
   MediaTabType,
@@ -121,7 +119,6 @@ type MediaGalleryActionType = ReadonlyDeep<
   | LoadMoreActionType
   | MessageChangedActionType
   | MessageDeletedActionType
-  | MessageExpiredActionType
   | SetLoadingActionType
   | SetTabActionType
   | SetSortOrderActionType
@@ -240,7 +237,7 @@ function _cleanMessage(
     receivedAtMs: message.received_at_ms,
     sentAt: message.sent_at,
     isErased: !!message.isErased,
-    errors: message.errors,
+    errors: message.errors ?? undefined,
     readStatus: message.readStatus,
     sendStateByConversationId: message.sendStateByConversationId,
   };
@@ -741,7 +738,7 @@ export function reducer(
     return state;
   }
 
-  if (action.type === MESSAGE_DELETED || action.type === MESSAGE_EXPIRED) {
+  if (action.type === MESSAGE_DELETED) {
     return {
       ...state,
       media: state.media.filter(item => item.message.id !== action.payload.id),
