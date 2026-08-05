@@ -59,9 +59,6 @@ export function About({
             {i18n('icu:privacyPolicy')}
           </a>
         </div>
-        <div className={tw('text-label-secondary')}>
-          {i18n('icu:signalNonProfit')}
-        </div>
       </div>
     </div>
   );

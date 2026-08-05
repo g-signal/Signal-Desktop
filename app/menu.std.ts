@@ -192,6 +192,26 @@ export const createTemplate = (
         //       },
         //     ]
         //   : []),
+        // Hidden: contactUs
+        // {
+        //   label: i18n('icu:contactUs'),
+        //   click: openContactUs,
+        // },
+        // Hidden: goToReleaseNotes
+        // {
+        //   label: i18n('icu:goToReleaseNotes'),
+        //   click: openReleaseNotes,
+        // },
+        // Hidden: goToForums
+        // {
+        //   label: i18n('icu:goToForums'),
+        //   click: openForums,
+        // },
+        // Hidden: goToSupportPage
+        // {
+        //   label: i18n('icu:goToSupportPage'),
+        //   click: openSupportPage,
+        // },
         {
           type: 'separator',
         },

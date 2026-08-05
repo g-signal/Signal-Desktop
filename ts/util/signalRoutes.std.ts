@@ -39,7 +39,7 @@ const SignalRouteHostnames = [
   'me.baxs.com',
   'group.baxs.com',
   'link.baxs.com',
-  'signal.art',
+  'sticker.baxs.com',
   'signaldonations.org',
 ] as const;
 
@@ -432,12 +432,12 @@ export const linkCallRoute = _route('linkCall', {
  *   packId: "123",
  *   packKey: "abc",
  * })
- * // URL { "https://signal.art/addstickers#pack_id=123&pack_key=abc" }
+ * // URL { "https://sticker.baxs.com/addstickers#pack_id=123&pack_key=abc" }
  * ```
  */
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
-    _pattern('https:', 'signal.art', '/addstickers{/}?', { hash: ':params' }),
+    _pattern('https:', 'sticker.baxs.com', '/addstickers{/}?', { hash: ':params' }),
     _pattern('baxs:', 'addstickers', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
@@ -458,7 +458,7 @@ export const artAddStickersRoute = _route('artAddStickers', {
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`https://signal.art/addstickers#${params.toString()}`);
+    return new URL(`https://sticker.baxs.com/addstickers#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({
