@@ -589,8 +589,7 @@ export function Preferences({
     setLanguageDialog(null);
     setSelectedLanguageLocale(localeOverride);
   }
-  const shouldShowBackupsPage =
-    backupFeatureEnabled || backupLocalBackupsEnabled;
+  const shouldShowBackupsPage = false; // BA: 隐藏备份菜单
 
   if (
     settingsLocation.page === SettingsPage.Backups &&
