@@ -532,11 +532,11 @@
       "uninstallerIcon": "build/icons/win/icon.ico"
     },
     "linux": {
-      "executableName": "signal-desktop",
+      "executableName": "ba-desktop",
       "category": "Network;InstantMessaging;Chat",
       "desktop": {
         "entry": {
-          "StartupWMClass": "signal"
+          "StartupWMClass": "ba"
         }
       },
       "artifactName": "${name}_${version}_${arch}.${ext}",
