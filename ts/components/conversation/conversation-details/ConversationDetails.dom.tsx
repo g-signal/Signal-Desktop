@@ -17,6 +17,7 @@ import type { SmartChooseGroupMembersModalPropsType } from '../../../state/smart
 import type { SmartConfirmAdditionsModalPropsType } from '../../../state/smart/ConfirmAdditionsModal.dom.js';
 import { assertDev } from '../../../util/assert.std.js';
 import { getMutedUntilText } from '../../../util/getMutedUntilText.std.js';
+import * as Bytes from '../../../Bytes.std.js';
 
 import type { LocalizerType, ThemeType } from '../../../types/Util.std.js';
 import type { BadgeType } from '../../../badges/types.std.js';
@@ -489,6 +490,64 @@ export function ConversationDetails({
           </Button>
         )}
       </div>
+
+      {isGroup && conversation.groupId && (
+        <PanelSection>
+          <PanelRow
+            label="Group ID"
+            right={
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 6,
+                  fontSize: 12,
+                  color: 'var(--color-gray-45)',
+                  fontFamily: 'monospace',
+                }}
+              >
+                <span
+                  style={{
+                    maxWidth: 180,
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {Bytes.toHex(Bytes.fromBase64(conversation.groupId))}
+                </span>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    color: 'var(--color-ultramarine)',
+                    fontSize: 12,
+                    padding: 0,
+                    flexShrink: 0,
+                  }}
+                  onClick={() => {
+                    void navigator.clipboard
+                      .writeText(
+                        Bytes.toHex(
+                          Bytes.fromBase64(conversation.groupId ?? '')
+                        )
+                      )
+                      .then(() => {
+                        showToast({
+                          toastType: ToastType.CopiedGroupId,
+                        });
+                      });
+                  }}
+                >
+                  {i18n('icu:copy')}
+                </button>
+              </span>
+            }
+          />
+        </PanelSection>
+      )}
 
       {isSignalConversation && (
         <>
