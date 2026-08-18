@@ -185,6 +185,11 @@ export function ConversationDetailsHeader({
             <UserText text={conversation.title} />
           </div>
         </button>
+        {conversation.gextTags && conversation.gextTags.length > 0 && (
+          <div className="ConversationDetailsHeader__tags">
+            <GextTagList tags={conversation.gextTags} height={26} />
+          </div>
+        )}
         {hasNestedButton ? (
           <div className="ConversationDetailsHeader__subtitle">{subtitle}</div>
         ) : (

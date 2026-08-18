@@ -40,9 +40,11 @@ import { useConversationsActions } from '../ducks/conversations.preload.js';
 import { useCallingActions } from '../ducks/calling.preload.js';
 import { useSearchActions } from '../ducks/search.preload.js';
 import { useGlobalModalActions } from '../ducks/globalModals.preload.js';
+import { useToastActions } from '../ducks/toast.preload.js';
 import { isSignalConversation } from '../../util/isSignalConversation.dom.js';
 import { drop } from '../../util/drop.std.js';
 import { DataReader } from '../../sql/Client.preload.js';
+import { fetchGroupGextTags } from '../../services/profiles.preload.js';
 
 const { sortBy } = lodash;
 
@@ -135,6 +137,7 @@ export const SmartConversationDetails = memo(function SmartConversationDetails({
     toggleEditNicknameAndNoteModal,
     toggleSafetyNumberModal,
   } = useGlobalModalActions();
+  const { showToast } = useToastActions();
 
   const conversation = conversationSelector(conversationId);
   assertDev(
@@ -199,6 +202,15 @@ export const SmartConversationDetails = memo(function SmartConversationDetails({
     };
   }, [conversationId]);
 
+  useEffect(() => {
+    if (conversation?.type === 'group' && conversation.groupId) {
+      const convoModel = window.ConversationController.get(conversationId);
+      if (convoModel) {
+        drop(fetchGroupGextTags(convoModel));
+      }
+    }
+  }, [conversationId, conversation?.type, conversation?.groupId]);
+
   return (
     <ConversationDetails
       acceptConversation={acceptConversation}
@@ -243,6 +255,7 @@ export const SmartConversationDetails = memo(function SmartConversationDetails({
       setMuteExpiration={setMuteExpiration}
       showContactModal={showContactModal}
       showConversation={showConversation}
+      showToast={showToast}
       startAvatarDownload={() => startAvatarDownload(conversationId)}
       theme={theme}
       toggleAboutContactModal={toggleAboutContactModal}

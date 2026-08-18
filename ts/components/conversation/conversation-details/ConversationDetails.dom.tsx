@@ -58,6 +58,8 @@ import { type CallHistoryGroup } from '../../../types/CallDisposition.std.js';
 import { NavTab } from '../../../types/Nav.std.js';
 import { ContextMenu } from '../../ContextMenu.dom.js';
 import { canHaveNicknameAndNote } from '../../../util/nicknames.dom.js';
+import type { AnyToast } from '../../../types/Toast.dom.js';
+import { ToastType } from '../../../types/Toast.dom.js';
 import { CallHistoryGroupPanelSection } from './CallHistoryGroupPanelSection.dom.js';
 import {
   InAnotherCallTooltip,
@@ -140,6 +142,7 @@ type ActionProps = {
   toggleAboutContactModal: (contactId: string) => void;
   toggleAddUserToAnotherGroupModal: (contactId?: string) => void;
   toggleSafetyNumberModal: (conversationId: string) => unknown;
+  showToast: (toast: AnyToast) => void;
   updateGroupAttributes: (
     conversationId: string,
     _: Readonly<{
@@ -213,6 +216,7 @@ export function ConversationDetails({
   setMuteExpiration,
   showContactModal,
   showConversation,
+  showToast,
   startAvatarDownload,
   theme,
   toggleAboutContactModal,
