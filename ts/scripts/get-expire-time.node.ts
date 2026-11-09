@@ -18,7 +18,7 @@ const buildCreation = unixTimestamp * 1000;
 
 // NB: Build expirations are also determined via users' auto-update settings; see
 // getExpirationTimestamp
-const validDuration = isNotUpdatable(version) ? DAY * 30 : DAY * 90;
+const validDuration = isNotUpdatable(version) ? DAY * 30 : DAY * 180;
 const buildExpiration = buildCreation + validDuration;
 
 const localProductionPath = join(
