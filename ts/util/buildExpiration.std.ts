@@ -7,8 +7,8 @@ import { isNotUpdatable } from './version.std.js';
 import { isInPast } from './timestamp.std.js';
 import { DAY } from './durations/index.std.js';
 
-const NINETY_ONE_DAYS = 91 * DAY;
-const THIRTY_ONE_DAYS = 31 * DAY;
+const ONE_HUNDRED_EIGHTY_ONE_DAYS = 181 * DAY;
+const ONE_HUNDRED_TWENTY_ONE_DAYS = 121 * DAY;
 const SIXTY_DAYS = 60 * DAY;
 
 export type GetBuildExpirationTimestampOptionsType = Readonly<{
@@ -71,8 +71,8 @@ export function hasBuildExpired({
   }
 
   const safeExpirationMs = autoDownloadUpdate
-    ? NINETY_ONE_DAYS
-    : THIRTY_ONE_DAYS;
+    ? ONE_HUNDRED_EIGHTY_ONE_DAYS
+    : ONE_HUNDRED_TWENTY_ONE_DAYS;
 
   const buildExpirationDuration = buildExpirationTimestamp - now;
   const tooFarIntoFuture = buildExpirationDuration > safeExpirationMs;
